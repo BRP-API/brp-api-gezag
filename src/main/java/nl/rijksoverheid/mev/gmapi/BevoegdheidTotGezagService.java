@@ -4,6 +4,7 @@ import nl.rijksoverheid.mev.brpadapter.service.BrpService;
 import nl.rijksoverheid.mev.common.util.BSNValidator;
 import nl.rijksoverheid.mev.exception.GezagException;
 import nl.rijksoverheid.mev.gezagsmodule.service.gezagmodule.GezagService;
+import nl.rijksoverheid.mev.logging.LoggingContext;
 import nl.rijksoverheid.mev.transaction.Transaction;
 import org.openapitools.model.AbstractGezagsrelatie;
 import org.openapitools.model.GezagRequest;
@@ -24,14 +25,17 @@ public class BevoegdheidTotGezagService {
     private final BrpService brpService;
     private final GezagService gezagService;
     private final BSNValidator bsnValidator;
+    private final LoggingContext loggingContext;
 
     public BevoegdheidTotGezagService(
         final BrpService brpService,
-        final GezagService gezagService
+        final GezagService gezagService,
+        final LoggingContext loggingContext
     ) {
         this.brpService = brpService;
         this.gezagService = gezagService;
         this.bsnValidator = new BSNValidator();
+        this.loggingContext = loggingContext;
     }
 
     /**
@@ -58,6 +62,7 @@ public class BevoegdheidTotGezagService {
         final Transaction transaction
     ) throws GezagException {
         List<String> burgerservicenummers = gezagRequest.getBurgerservicenummer();
+        loggingContext.addBurgerservicenummers(burgerservicenummers);
         if (!bsnValidator.isValid(burgerservicenummers)) {
             return Collections.emptyList();
         }

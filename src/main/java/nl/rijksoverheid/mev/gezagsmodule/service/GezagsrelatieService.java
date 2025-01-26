@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class GezagsrelatieService {
@@ -142,9 +141,10 @@ public class GezagsrelatieService {
             .minderjarige(new Minderjarige().burgerservicenummer(burgerservicenummer))
             .type(TYPE_GEZAMELIJK_GEZAG);
 
-        if (burgerservicenummerNietOuder != null) {
-            gezag.setDerde(Optional.of(new Meerderjarige().burgerservicenummer(burgerservicenummerNietOuder)));
-        }
+        var derde = burgerservicenummerNietOuder == null
+            ? new OnbekendeDerde()
+            : new Derde().burgerservicenummer(burgerservicenummerNietOuder);
+        gezag.derde(derde);
 
         if (ouder1Gezag && burgerservicenummerOuder1 != null) {
             gezag.ouder(new GezagOuder().burgerservicenummer(burgerservicenummerOuder1));

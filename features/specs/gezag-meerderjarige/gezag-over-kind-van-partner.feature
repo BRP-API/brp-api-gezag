@@ -53,6 +53,7 @@ Functionaliteit: gezamenlijk gezag van een meerderjarige over een kind van een (
       | minderjarige.burgerservicenummer | 000000036        |
       | ouder.burgerservicenummer        | 000000024        |
       | derde.burgerservicenummer        | 000000012        |
+      | derde.type                       | Derde            |
 
     Scenario: persoon heeft van rechtswege gezamenlijk gezag over het minderjarige kind van diens partners er is sprake van TweehoofdigOuderlijkGezag
       Gegeven persoon 'Linda'

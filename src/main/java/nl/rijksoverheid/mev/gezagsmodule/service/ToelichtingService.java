@@ -12,7 +12,7 @@ import java.util.Set;
 @Service
 public class ToelichtingService {
 
-    private static final String IN_ONDERZOEK = "Gezag is niet te bepalen, omdat de volgende relevante gegevens in onderzoek staan.";
+    private static final String IN_ONDERZOEK = "Bij de uitspraak zijn de volgende relevante gegevens in onderzoek geconstateerd.";
     private static final String IN_ONDERZOEK_PERSOONSVELDEN = " Persoonslijst van persoon: ";
     private static final String IN_ONDERZOEK_VELDEN_OUDER_1 = " Persoonslijst van ouder 1: ";
     private static final String IN_ONDERZOEK_VELDEN_OUDER_2 = " Persoonslijst van ouder 2: ";
@@ -29,12 +29,11 @@ public class ToelichtingService {
      */
     public String decorateToelichting(final String baseToelichting, final VeldenInOnderzoek veldenInOnderzoek, final List<String> missendeGegevens) {
         StringBuilder sb = new StringBuilder();
-        if (baseToelichting != null && !baseToelichting.isEmpty()) {
-            if (veldenInOnderzoek != null && veldenInOnderzoek.hasValues()) {
-                setInOnderzoek(sb, veldenInOnderzoek);
-            } else if (missendeGegevens != null && !missendeGegevens.isEmpty()) {
-                setMissendeGegevens(sb, baseToelichting, missendeGegevens);
-            }
+        if (veldenInOnderzoek != null && veldenInOnderzoek.hasValues()) {
+            setInOnderzoek(sb, veldenInOnderzoek);
+        } else if (baseToelichting != null && !baseToelichting.isEmpty() &&
+            missendeGegevens != null && !missendeGegevens.isEmpty()) {
+            setMissendeGegevens(sb, baseToelichting, missendeGegevens);
         }
 
         return sb.toString();

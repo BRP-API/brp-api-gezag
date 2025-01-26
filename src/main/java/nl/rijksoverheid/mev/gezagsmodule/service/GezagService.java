@@ -3,7 +3,6 @@ package nl.rijksoverheid.mev.gezagsmodule.service;
 import lombok.RequiredArgsConstructor;
 import nl.rijksoverheid.mev.exception.AfleidingsregelException;
 import nl.rijksoverheid.mev.exception.GezagException;
-import nl.rijksoverheid.mev.exception.VeldInOnderzoekException;
 import nl.rijksoverheid.mev.gezagsmodule.domain.ARAntwoordenModel;
 import nl.rijksoverheid.mev.gezagsmodule.domain.Leeftijd;
 import nl.rijksoverheid.mev.gezagsmodule.domain.Persoon;
@@ -91,38 +90,24 @@ public class GezagService {
         } catch (AfleidingsregelException ex) {
             arAntwoordenModel.setException(ex);
         }
-        boolean hasVeldenInOnderzoek = gezagsBepaling != null && gezagsBepaling.warenVeldenInOnderzoek();
-        if (hasVeldenInOnderzoek) {
-            arAntwoordenModel.setException(new VeldInOnderzoekException("Preconditie: Velden mogen niet in onderzoek staan"));
-        }
+
         route = (route == null ? beslissingsmatrixService.findMatchingRoute(arAntwoordenModel, gezagsBepaling) : route);
         arAntwoordenModel.setRoute(route);
         setConfiguredValues(arAntwoordenModel, plPersoon.isPresent());
-
-        String unformattedUitleg = arAntwoordenModel.getUitleg();
-
-        if (hasVeldenInOnderzoek) {
-            route = route + "i";
-            arAntwoordenModel.setRoute(arAntwoordenModel.getRoute() + "i");
-            arAntwoordenModel.setSoortGezag(SOORT_GEZAG_KAN_NIET_WORDEN_BEPAALD);
-            arAntwoordenModel.setGezagOuder1(DEFAULT_NEE);
-            arAntwoordenModel.setGezagOuder2(DEFAULT_NEE);
-            arAntwoordenModel.setGezagNietOuder1(DEFAULT_NEE);
-            arAntwoordenModel.setGezagNietOuder2(DEFAULT_NEE);
-            arAntwoordenModel.setUitleg(toelichtingService.decorateToelichting(unformattedUitleg, gezagsBepaling.getVeldenInOnderzoek(), null));
-        }
 
         if (gezagsBepaling != null) {
             List<String> missendeGegegevens = gezagsBepaling.getMissendeGegegevens();
             UUID errorTraceCode = gezagsBepaling.getErrorTraceCode();
 
+            String toelichting = arAntwoordenModel.getUitleg();
             if (errorTraceCode != null) {
-                String toelichting = toelichtingService.setErrorReferenceToelichting(unformattedUitleg, errorTraceCode.toString());
-                arAntwoordenModel.setUitleg(toelichting);
+                toelichting = toelichtingService.setErrorReferenceToelichting(toelichting, errorTraceCode.toString());
             } else if (!missendeGegegevens.isEmpty()) {
-                String toelichting = toelichtingService.decorateToelichting(unformattedUitleg, null, missendeGegegevens);
-                arAntwoordenModel.setUitleg(toelichting);
+                toelichting = toelichtingService.decorateToelichting(toelichting, null, missendeGegegevens);
+            } else if(gezagsBepaling.warenVeldenInOnderzoek() && !"N".equals(arAntwoordenModel.getSoortGezag()) && !"G".equals(arAntwoordenModel.getSoortGezag())) {
+                toelichting = toelichtingService.decorateToelichting(toelichting, gezagsBepaling.getVeldenInOnderzoek(), missendeGegegevens);
             }
+            arAntwoordenModel.setUitleg(toelichting);
 
             gezagsRelaties = gezagsrelatieService.bepaalGezagsrelaties(arAntwoordenModel, gezagsBepaling);
         }

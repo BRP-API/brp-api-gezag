@@ -30,6 +30,7 @@ class GezagsrelatieServiceTest {
     private static final String BURGERSERVICENUMMER_ONE = "000000012";
     private static final String BURGERSERVICENUMMER_TWO = "000000024";
     private static final String BURGERSERVICENUMMER_THREE = "000000036";
+    private static final String UITLEG = "uitleg";
 
     @BeforeEach
     public void setup() {
@@ -61,6 +62,7 @@ class GezagsrelatieServiceTest {
         ARAntwoordenModel arAntwoordenModel = new ARAntwoordenModel();
         arAntwoordenModel.setSoortGezag(OG1);
         arAntwoordenModel.setGezagOuder1(INDICATION_GEZAG);
+        arAntwoordenModel.setUitleg(UITLEG);
         GezagsBepaling gezagsBepaling = gezagsBepalingMock;
 
         List<AbstractGezagsrelatie> gezagsRelaties = classUnderTest.bepaalGezagsrelaties(arAntwoordenModel, gezagsBepaling);
@@ -73,7 +75,7 @@ class GezagsrelatieServiceTest {
         ARAntwoordenModel arAntwoordenModel = new ARAntwoordenModel();
         arAntwoordenModel.setSoortGezag(OG1);
         arAntwoordenModel.setGezagOuder1(INDICATION_GEZAG);
-
+        arAntwoordenModel.setUitleg(UITLEG);
         String minderjarige = BURGERSERVICENUMMER_ONE;
         String bevraagdePersoon = minderjarige;
         when(gezagsBepalingMock.getBurgerservicenummer()).thenReturn(minderjarige);
@@ -90,7 +92,7 @@ class GezagsrelatieServiceTest {
         ARAntwoordenModel arAntwoordenModel = new ARAntwoordenModel();
         arAntwoordenModel.setSoortGezag(OG1);
         arAntwoordenModel.setGezagOuder1(INDICATION_GEZAG);
-
+        arAntwoordenModel.setUitleg(UITLEG);
         String minderjarige = BURGERSERVICENUMMER_ONE;
         String bevraagdePersoon = minderjarige;
         String ouder1 = BURGERSERVICENUMMER_TWO;
@@ -103,8 +105,8 @@ class GezagsrelatieServiceTest {
 
         assertFalse(gezagsRelaties.isEmpty());
         EenhoofdigOuderlijkGezag gezag = (EenhoofdigOuderlijkGezag) gezagsRelaties.getFirst();
-        assertEquals(minderjarige, gezag.getMinderjarige().get().getBurgerservicenummer());
-        assertEquals(ouder1, gezag.getOuder().get().getBurgerservicenummer());
+        assertEquals(minderjarige, gezag.getMinderjarige().getBurgerservicenummer());
+        assertEquals(ouder1, gezag.getOuder().getBurgerservicenummer());
     }
 
     @Test
@@ -112,7 +114,7 @@ class GezagsrelatieServiceTest {
         ARAntwoordenModel arAntwoordenModel = new ARAntwoordenModel();
         arAntwoordenModel.setSoortGezag(OG1);
         arAntwoordenModel.setGezagOuder1(INDICATION_GEZAG);
-
+        arAntwoordenModel.setUitleg(UITLEG);
         String minderjarige = BURGERSERVICENUMMER_ONE;
         String bevraagdePersoon = minderjarige;
         String ouder2 = BURGERSERVICENUMMER_TWO;
@@ -130,7 +132,7 @@ class GezagsrelatieServiceTest {
     void bepaalGezagsrelatiesWithAntwoordenModelOG2AndHavingNoParents() {
         ARAntwoordenModel arAntwoordenModel = new ARAntwoordenModel();
         arAntwoordenModel.setSoortGezag(OG2);
-
+        arAntwoordenModel.setUitleg(UITLEG);
         String minderjarige = BURGERSERVICENUMMER_ONE;
         String bevraagdePersoon = minderjarige;
         when(gezagsBepalingMock.getBurgerservicenummer()).thenReturn(minderjarige);
@@ -141,14 +143,14 @@ class GezagsrelatieServiceTest {
 
         assertFalse(gezagsRelaties.isEmpty());
         TweehoofdigOuderlijkGezag gezag = (TweehoofdigOuderlijkGezag) gezagsRelaties.getFirst();
-        assertEquals(minderjarige, gezag.getMinderjarige().get().getBurgerservicenummer());
+        assertEquals(minderjarige, gezag.getMinderjarige().getBurgerservicenummer());
     }
 
     @Test
     void bepaalGezagsrelatiesWithAntwoordenModelOG2AndHavingOneParentAsOuder1() {
         ARAntwoordenModel arAntwoordenModel = new ARAntwoordenModel();
         arAntwoordenModel.setSoortGezag(OG2);
-
+        arAntwoordenModel.setUitleg(UITLEG);
         String minderjarige = BURGERSERVICENUMMER_ONE;
         String bevraagdePersoon = minderjarige;
         String ouder1 = BURGERSERVICENUMMER_TWO;
@@ -161,7 +163,7 @@ class GezagsrelatieServiceTest {
 
         assertFalse(gezagsRelaties.isEmpty());
         TweehoofdigOuderlijkGezag gezag = (TweehoofdigOuderlijkGezag) gezagsRelaties.getFirst();
-        assertEquals(minderjarige, gezag.getMinderjarige().get().getBurgerservicenummer());
+        assertEquals(minderjarige, gezag.getMinderjarige().getBurgerservicenummer());
         assertEquals(ouder1, gezag.getOuders().get(0).getBurgerservicenummer());
     }
 
@@ -169,7 +171,7 @@ class GezagsrelatieServiceTest {
     void bepaalGezagsrelatiesWithAntwoordenModelOG2AndHavingTwoParents() {
         ARAntwoordenModel arAntwoordenModel = new ARAntwoordenModel();
         arAntwoordenModel.setSoortGezag(OG2);
-
+        arAntwoordenModel.setUitleg(UITLEG);
         String minderjarige = BURGERSERVICENUMMER_ONE;
         String bevraagdePersoon = minderjarige;
         String ouder1 = BURGERSERVICENUMMER_TWO;
@@ -184,7 +186,7 @@ class GezagsrelatieServiceTest {
 
         assertFalse(gezagsRelaties.isEmpty());
         TweehoofdigOuderlijkGezag gezag = (TweehoofdigOuderlijkGezag) gezagsRelaties.getFirst();
-        assertEquals(minderjarige, gezag.getMinderjarige().get().getBurgerservicenummer());
+        assertEquals(minderjarige, gezag.getMinderjarige().getBurgerservicenummer());
         assertEquals(ouder1, gezag.getOuders().get(0).getBurgerservicenummer());
         assertEquals(ouder2, gezag.getOuders().get(1).getBurgerservicenummer());
     }
@@ -194,7 +196,7 @@ class GezagsrelatieServiceTest {
         ARAntwoordenModel arAntwoordenModel = new ARAntwoordenModel();
         arAntwoordenModel.setSoortGezag(V);
         arAntwoordenModel.setGezagNietOuder1(INDICATION_GEZAG);
-
+        arAntwoordenModel.setUitleg(UITLEG);
         String minderjarige = BURGERSERVICENUMMER_ONE;
         String bevraagdePersoon = minderjarige;
         String ouder1 = BURGERSERVICENUMMER_TWO;
@@ -207,7 +209,7 @@ class GezagsrelatieServiceTest {
 
         assertFalse(gezagsRelaties.isEmpty());
         Voogdij gezag = (Voogdij) gezagsRelaties.getFirst();
-        assertEquals(minderjarige, gezag.getMinderjarige().get().getBurgerservicenummer());
+        assertEquals(minderjarige, gezag.getMinderjarige().getBurgerservicenummer());
     }
 
     @Test
@@ -215,7 +217,7 @@ class GezagsrelatieServiceTest {
         ARAntwoordenModel arAntwoordenModel = new ARAntwoordenModel();
         arAntwoordenModel.setSoortGezag(V);
         arAntwoordenModel.setGezagNietOuder1(INDICATION_GEZAG);
-
+        arAntwoordenModel.setUitleg(UITLEG);
         String minderjarige = BURGERSERVICENUMMER_ONE;
         String bevraagdePersoon = minderjarige;
         String nietOuder = BURGERSERVICENUMMER_TWO;
@@ -228,8 +230,8 @@ class GezagsrelatieServiceTest {
 
         assertFalse(gezagsRelaties.isEmpty());
         Voogdij gezag = (Voogdij) gezagsRelaties.getFirst();
-        assertEquals(minderjarige, gezag.getMinderjarige().get().getBurgerservicenummer());
-        assertEquals(nietOuder, gezag.getDerden().get(0).getBurgerservicenummer().get());
+        assertEquals(minderjarige, gezag.getMinderjarige().getBurgerservicenummer());
+        assertEquals(nietOuder, gezag.getDerden().get(0).getBurgerservicenummer());
     }
 
     @Test
@@ -237,7 +239,7 @@ class GezagsrelatieServiceTest {
         ARAntwoordenModel arAntwoordenModel = new ARAntwoordenModel();
         arAntwoordenModel.setSoortGezag(V);
         arAntwoordenModel.setGezagNietOuder2(INDICATION_GEZAG);
-
+        arAntwoordenModel.setUitleg(UITLEG);
         String minderjarige = BURGERSERVICENUMMER_ONE;
         String bevraagdePersoon = minderjarige;
         String nietOuder = BURGERSERVICENUMMER_TWO;
@@ -250,8 +252,8 @@ class GezagsrelatieServiceTest {
 
         assertFalse(gezagsRelaties.isEmpty());
         Voogdij gezag = (Voogdij) gezagsRelaties.getFirst();
-        assertEquals(minderjarige, gezag.getMinderjarige().get().getBurgerservicenummer());
-        assertEquals(nietOuder, gezag.getDerden().get(0).getBurgerservicenummer().get());
+        assertEquals(minderjarige, gezag.getMinderjarige().getBurgerservicenummer());
+        assertEquals(nietOuder, gezag.getDerden().get(0).getBurgerservicenummer());
     }
 
     @Test
@@ -260,7 +262,7 @@ class GezagsrelatieServiceTest {
         arAntwoordenModel.setSoortGezag(GG);
         arAntwoordenModel.setGezagOuder1(INDICATION_GEZAG);
         arAntwoordenModel.setGezagNietOuder1(INDICATION_GEZAG);
-
+        arAntwoordenModel.setUitleg(UITLEG);
         String minderjarige = BURGERSERVICENUMMER_ONE;
         String bevraagdePersoon = minderjarige;
         String ouder1 = BURGERSERVICENUMMER_TWO;
@@ -273,8 +275,8 @@ class GezagsrelatieServiceTest {
 
         assertFalse(gezagsRelaties.isEmpty());
         GezamenlijkGezag gezag = (GezamenlijkGezag) gezagsRelaties.getFirst();
-        assertEquals(minderjarige, gezag.getMinderjarige().get().getBurgerservicenummer());
-        assertEquals(ouder1, gezag.getOuder().get().getBurgerservicenummer());
+        assertEquals(minderjarige, gezag.getMinderjarige().getBurgerservicenummer());
+        assertEquals(ouder1, gezag.getOuder().getBurgerservicenummer());
     }
 
     @Test
@@ -283,7 +285,7 @@ class GezagsrelatieServiceTest {
         arAntwoordenModel.setSoortGezag(GG);
         arAntwoordenModel.setGezagOuder1(INDICATION_GEZAG);
         arAntwoordenModel.setGezagNietOuder1(INDICATION_GEZAG);
-
+        arAntwoordenModel.setUitleg(UITLEG);
         String minderjarige = BURGERSERVICENUMMER_ONE;
         String bevraagdePersoon = minderjarige;
         String ouder1 = BURGERSERVICENUMMER_TWO;
@@ -298,8 +300,8 @@ class GezagsrelatieServiceTest {
 
         assertFalse(gezagsRelaties.isEmpty());
         GezamenlijkGezag gezag = (GezamenlijkGezag) gezagsRelaties.getFirst();
-        assertEquals(minderjarige, gezag.getMinderjarige().get().getBurgerservicenummer());
-        assertEquals(ouder1, gezag.getOuder().get().getBurgerservicenummer());
-        assertEquals(nietOuder, gezag.getDerde().get().getBurgerservicenummer().get());
+        assertEquals(minderjarige, gezag.getMinderjarige().getBurgerservicenummer());
+        assertEquals(ouder1, gezag.getOuder().getBurgerservicenummer());
+        assertEquals(nietOuder, gezag.getDerde().getBurgerservicenummer());
     }
 }

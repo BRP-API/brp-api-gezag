@@ -1,6 +1,10 @@
 package nl.rijksoverheid.mev.gezagsmodule.service;
 
 import nl.rijksoverheid.mev.gezagsmodule.domain.ARAntwoordenModel;
+import nl.rijksoverheid.mev.gezagsmodule.domain.Ouder1;
+import nl.rijksoverheid.mev.gezagsmodule.domain.Ouder2;
+import nl.rijksoverheid.mev.gezagsmodule.domain.Persoon;
+import nl.rijksoverheid.mev.gezagsmodule.domain.Persoonslijst;
 import nl.rijksoverheid.mev.gezagsmodule.domain.gezagvraag.GezagsBepaling;
 import org.openapitools.model.*;
 import org.slf4j.Logger;
@@ -9,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @Service
@@ -62,11 +67,9 @@ public class GezagsrelatieService {
                     gezagsrelaties);
                 case "GG" -> createGezamenlijkGezag(
                     burgerservicenummer,
-                    burgerservicenummerNietOuder,
                     arAntwoordenModel.hasOuder1Gezag(),
-                    burgerservicenummerOuder1,
-                    burgerservicenummerOuder2,
-                    gezagsrelaties);
+                    gezagsrelaties,
+                    gezagsBepaling);
                 case "V" -> createVoogdij(
                     bevraagdePersoonIsDeMinderjarige,
                     burgerservicenummerPersoon,
@@ -133,26 +136,59 @@ public class GezagsrelatieService {
 
     private void createGezamenlijkGezag(
         final String burgerservicenummer,
-        final String burgerservicenummerNietOuder,
         final boolean ouder1Gezag,
-        final String burgerservicenummerOuder1,
-        final String burgerservicenummerOuder2,
-        final List<AbstractGezagsrelatie> gezagsrelaties) {
-        GezamenlijkGezag gezag = new GezamenlijkGezag()
+        final List<AbstractGezagsrelatie> gezagsrelaties,
+        final GezagsBepaling gezagsBepaling
+    ) {
+        var persoonslijstPersoon = gezagsBepaling.getPlPersoon();
+        Objects.requireNonNull(persoonslijstPersoon);
+
+        var burgerservicenummerOuder1 = persoonslijstPersoon.getOuder1AsOptional()
+            .map(Ouder1::getBurgerservicenummer)
+            .orElse(null);
+        var burgerservicenummerOuder2 = persoonslijstPersoon.getOuder2AsOptional()
+            .map(Ouder2::getBurgerservicenummer)
+            .orElse(null);
+        var gezagOuder = ouder1Gezag && burgerservicenummerOuder1 != null
+            ? new GezagOuder().burgerservicenummer(burgerservicenummerOuder1)
+            : new GezagOuder().burgerservicenummer(burgerservicenummerOuder2);
+
+        var burgerservicenummerNietOuder = Optional.ofNullable(gezagsBepaling.getPlNietOuder())
+            .map(Persoonslijst::getPersoon)
+            .map(Persoon::getBurgerservicenummer)
+            .orElse(null);
+        var derde = burgerservicenummerNietOuder == null
+            ? new OnbekendeDerde()
+            : new Derde().burgerservicenummer(burgerservicenummerNietOuder);
+
+        var gezamenlijkGezag = new GezamenlijkGezag()
             .minderjarige(new Minderjarige().burgerservicenummer(burgerservicenummer))
+            .ouder(gezagOuder)
+            .derde(derde)
             .type(TYPE_GEZAMELIJK_GEZAG);
-
-        if (burgerservicenummerNietOuder != null) {
-            gezag.setDerde(Optional.of(new Meerderjarige().burgerservicenummer(burgerservicenummerNietOuder)));
+        var burgerservicenummerBevraagdePersoon = gezagsBepaling.getBurgerservicenummerPersoon();
+        if (hasGezamenlijkGezagBevraagdePersoon(gezamenlijkGezag, burgerservicenummerBevraagdePersoon)) {
+            gezagsrelaties.add(gezamenlijkGezag);
         }
+    }
 
-        if (ouder1Gezag && burgerservicenummerOuder1 != null) {
-            gezag.ouder(new GezagOuder().burgerservicenummer(burgerservicenummerOuder1));
-        } else {
-            gezag.ouder(new GezagOuder().burgerservicenummer(burgerservicenummerOuder2));
-        }
+    private boolean hasGezamenlijkGezagBevraagdePersoon(
+        GezamenlijkGezag gezamenlijkGezag,
+        String burgerservicenummerBevraagdePersoon
+    ) {
+        var minderjarige = gezamenlijkGezag.getMinderjarige().orElseThrow(); // not optional, change the OpenAPI Specification
+        if (minderjarige.getBurgerservicenummer().equals(burgerservicenummerBevraagdePersoon)) return true;
 
-        gezagsrelaties.add(gezag);
+        var gezagOuder = gezamenlijkGezag.getOuder().orElseThrow(); // not optional, change the OpenAPI Specification
+        if (gezagOuder.getBurgerservicenummer().equals(burgerservicenummerBevraagdePersoon)) return true;
+
+        return gezamenlijkGezag.getDerde()
+            .map(derde -> switch (derde) {
+                case OnbekendeDerde onbekendeDerde -> false;
+                case Derde bekendeDerde -> bekendeDerde.getBurgerservicenummer().orElseThrow().equals(burgerservicenummerBevraagdePersoon); // not optional, change the OpenAPI Specification
+                default -> throw new IllegalStateException("Unexpected value: " + derde);
+            })
+            .orElse(false);
     }
 
     private void createVoogdij(

@@ -55,7 +55,7 @@ Functionaliteit: gezamenlijk gezag van een meerderjarige over een kind van een (
       | derde.burgerservicenummer        | 000000012        |
       | derde.type                       | BekendeDerde     |
 
-    Scenario: persoon heeft van rechtswege gezamenlijk gezag over het minderjarige kind van diens partners er is sprake van TweehoofdigOuderlijkGezag
+    Scenario: persoon heeft van rechtswege gezamenlijk gezag over het minderjarige kind van diens partners er is sprake van GezamenlijkOuderlijkGezag
       Gegeven persoon 'Linda'
       * is erkend door 'Ludo' als ouder 2 met gerechtelijke vaststelling ouderschap op 01-01-2023
       Als gezag wordt gezocht met de volgende parameters
@@ -66,7 +66,7 @@ Functionaliteit: gezamenlijk gezag van een meerderjarige over een kind van een (
       | burgerservicenummer | 000000036 |
       En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
+      | type                             | GezamenlijkOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000036                 |
       En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |

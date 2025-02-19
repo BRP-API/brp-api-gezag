@@ -1168,8 +1168,8 @@ Given(/^(.*) is in een gerechtelijke uitspraak het gezag toegewezen aan beide ou
     )
 });
 
-Given(/^in een gerechtelijke uitspraak is een (voogdijinstelling|derde) tot voogd benoemd$/, function (benoemde) {
-    let indicatieGezag = (benoemde == 'voogdijinstelling') ? IndicatieGezag.VoogdijInstelling : IndicatieGezag.Derde;
+Given(/^in een gerechtelijke uitspraak is een (voogdijinstelling|derde) tot voogd benoemd$/, function (gezaghebbende) {
+    let indicatieGezag = (gezaghebbende == 'voogdijinstelling') ? IndicatieGezag.VoogdijInstelling : IndicatieGezag.Derde;
     
     createGezagsverhouding(
         getPersoon(this.context, undefined),
@@ -1180,13 +1180,12 @@ Given(/^in een gerechtelijke uitspraak is een (voogdijinstelling|derde) tot voog
     )
 });
 
-Given(/^(.*) is in een gerechtelijke uitspraak het gezag toegewezen aan een (voogdijinstelling|derde)$/, function (relatieveDatum, benoemde) {
-    let indicatieGezag = (benoemde == 'voogdijinstelling') ? IndicatieGezag.VoogdijInstelling : IndicatieGezag.Derde;
+Given(/^(.*) is in een gerechtelijke uitspraak het gezag toegewezen aan een (voogdijinstelling|derde)$/, function (relatieveDatum, gezaghebbende) {
+    let indicatieGezag = (gezaghebbende == 'voogdijinstelling') ? IndicatieGezag.VoogdijInstelling : IndicatieGezag.Derde;
     if (/(\d+) jaar geleden/.test(relatieveDatum)) {
         const years = relatieveDatum.match(/(\d+)/)[0];
         relatieveDatum = `vandaag - ${years} jaar`;
     }
-
 
     createGezagsverhouding(
         getPersoon(this.context, undefined),

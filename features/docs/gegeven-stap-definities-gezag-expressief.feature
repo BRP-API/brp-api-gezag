@@ -6,6 +6,7 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
     Gegeven de tabel 'lo3_pl' bevat geen rijen
     En de tabel 'lo3_pl_persoon' bevat geen rijen
     En de tabel 'lo3_pl_verblijfplaats' bevat geen rijen
+    En de tabel 'lo3_pl_gezagsverhouding' bevat geen rijen
 
   Regel: Een persoon benoemen we functioneel met een naam en technisch met een burgerservicenummer
     Standaard is een persoon in Nederland geboren met een Nederlandse geboorteakte.
@@ -513,7 +514,7 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
       En de persoon 'Theo' met burgerservicenummer '000000036'
       * is minderjarig
       * is geboren in Duitsland
-      En 'Theo' is op 30-11-2019 geadopteerd door 'Tosca' en 'Theo'
+      En 'Theo' is op 30-11-2019 geadopteerd door 'Tosca' en 'Arjan'
       Als de sql statements gegenereerd uit de gegeven stappen zijn uitgevoerd
       Dan heeft de persoon 'Arjan' de volgende rij in tabel 'lo3_pl'
         | pl_id | geheim_ind |
@@ -546,7 +547,7 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
       En de persoon 'Theo' met burgerservicenummer '000000036'
       * is minderjarig
       * is geboren in Duitsland
-      En 'Theo' is in het buitenland geadopteerd door 'Tosca' en 'Theo' op 30-11-2019
+      En 'Theo' is in het buitenland geadopteerd door 'Tosca' en 'Arjan' op 30-11-2019
       Als de sql statements gegenereerd uit de gegeven stappen zijn uitgevoerd
       Dan heeft de persoon 'Arjan' de volgende rij in tabel 'lo3_pl'
         | pl_id | geheim_ind |
@@ -607,14 +608,14 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         |     3 |       0 | <indicatie gezag>     | gisteren - 1 jaar      |
 
       Voorbeelden:
-        | gezag uitspraak                                     | indicatie gezag | stapdefinitie                                                                          |
-        | het gezag toegewezen aan 'Arjan'                    |               1 | in een gerechtelijke uitspraak is het gezag toegewezen aan '{naam}'                    |
-        | het gezag toegewezen aan 'Tosca'                    |               2 | in een gerechtelijke uitspraak is het gezag toegewezen aan '{naam}'                    |
-        | het gezag toegewezen aan beide ouders               |              12 | in een gerechtelijke uitspraak is het gezag toegewezen aan beide ouders                |
-        | een voogdijinstelling tot voogd benoemd             | D               | in een gerechtelijke uitspraak is een voogdijinstelling tot voogd benoemd              |
-        | een derde tot voogd benoemd                         | D               | in een gerechtelijke uitspraak is een derde tot voogd benoemd                          |
-        | het gezag toegewezen aan ouder 'Arjan' en een derde |              1D | in een gerechtelijke uitspraak is het gezag toegewezen aan ouder '{naam}' en een derde |
-        | het gezag toegewezen aan ouder 'Tosca' en een derde |              2D | in een gerechtelijke uitspraak is het gezag toegewezen aan ouder '{naam}' en een derde |
+        | gezag uitspraak                               | indicatie gezag | stapdefinitie                                                                    |
+        | het gezag toegewezen aan 'Arjan'              |               1 | in een gerechtelijke uitspraak is het gezag toegewezen aan '{naam}'              |
+        | het gezag toegewezen aan 'Tosca'              |               2 | in een gerechtelijke uitspraak is het gezag toegewezen aan '{naam}'              |
+        | het gezag toegewezen aan beide ouders         |              12 | in een gerechtelijke uitspraak is het gezag toegewezen aan beide ouders          |
+        | een voogdijinstelling tot voogd benoemd       | D               | in een gerechtelijke uitspraak is een voogdijinstelling tot voogd benoemd        |
+        | een derde tot voogd benoemd                   | D               | in een gerechtelijke uitspraak is een derde tot voogd benoemd                    |
+        | het gezag toegewezen aan 'Arjan' en een derde |              1D | in een gerechtelijke uitspraak is het gezag toegewezen aan '{naam}' en een derde |
+        | het gezag toegewezen aan 'Tosca' en een derde |              2D | in een gerechtelijke uitspraak is het gezag toegewezen aan '{naam}' en een derde |
 
     Scenario: {relatievedatum} is in een gerechtelijke uitspraak het gezag toegewezen aan <gezaghebbende in stapdefinitie>
       Gegeven de persoon 'Arjan' met burgerservicenummer '000000012'
@@ -650,13 +651,14 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         |     3 |       0 | <indicatie gezag>     | <relatieve datum>      |
 
       Voorbeelden:
-        | relatieve datum   | gezaghebbende              | indicatie gezag | gezaghebbende in stapdefinitie |
-        |    6 jaar geleden | 'Arjan'                    |               1 | '{naam}'                       |
-        | vorige maand      | 'Tosca'                    |               2 | '{naam}'                       |
-        | gisteren - 5 jaar | een voogdijinstelling      | D               | een voogdijinstelling          |
-        |    2 jaar geleden | beide ouders               |              12 | beide ouders                   |
-        |    2 jaar geleden | ouder 'Arjan' en een derde |              1D | ouder '{naam}' en een derde    |
-        |    2 jaar geleden | ouder 'Tosca' en een derde |              2D | ouder '{naam}' en een derde    |
+        | relatieve datum   | gezaghebbende         | indicatie gezag | gezaghebbende in stapdefinitie |
+        |    6 jaar geleden | 'Arjan'               |               1 | '{naam}'                       |
+        | vorige maand      | 'Tosca'               |               2 | '{naam}'                       |
+        | gisteren - 5 jaar | een voogdijinstelling | D               | een voogdijinstelling          |
+        | gisteren - 4 jaar | een derde             | D               | een derde                      |
+        |    2 jaar geleden | beide ouders          |              12 | beide ouders                   |
+        |    2 jaar geleden | 'Arjan' en een derde  |              1D | '{naam}' en een derde          |
+        |    2 jaar geleden | 'Tosca' en een derde  |              2D | '{naam}' en een derde          |
 
   Regel: Je kan de context wijzigen naar een eerder opgevoerde persoon
 

@@ -63,7 +63,6 @@ public class GezagsrelatieService {
                     arAntwoordenModel.hasOuder1Gezag(),
                     burgerservicenummerOuder1,
                     burgerservicenummerOuder2,
-                    gezagsrelaties,
                     arAntwoordenModel.isGezamenlijkGezagVanwegeGerechtelijkeUitspraak());
                 case "V" -> createVoogdij(
                     bevraagdePersoonIsDeMinderjarige,
@@ -143,7 +142,6 @@ public class GezagsrelatieService {
         final boolean ouder1Gezag,
         final String burgerservicenummerOuder1,
         final String burgerservicenummerOuder2,
-        final List<AbstractGezagsrelatie> gezagsrelaties,
         final boolean isGezamenlijkGezagVanwegeGerechtelijkeUitspraak
     ) {
         var gezagOuder = ouder1Gezag && burgerservicenummerOuder1 != null

@@ -104,13 +104,9 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - ontkenning
       Voorbeelden:
       | ouder | naam ouder | soort wijziging |
       | 1     |            | gewijzigd       |
-      | 1     | .          | gewijzigd       |
       | 1     |            | gecorrigeerd    |
-      | 1     | .          | gecorrigeerd    |
       | 2     |            | gewijzigd       |
-      | 2     | .          | gewijzigd       |
       | 2     |            | gecorrigeerd    |
-      | 2     | .          | gecorrigeerd    |
 
     Abstract Scenario: er is uitspraak gezag voor ouder 1 en ouder 2 en erkenning door ouder <ouder> is ontkend of vernietigd er is sprake van EenhoofdigOuderlijkGezag
       Gegeven voor 'Kees' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
@@ -168,10 +164,6 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - ontkenning
       Voorbeelden:
       | ouder | naam ouder | soort wijziging |
       | 1     |            | gewijzigd       |
-      | 1     | .          | gewijzigd       |
       | 1     |            | gecorrigeerd    |
-      | 1     | .          | gecorrigeerd    |
       | 2     |            | gewijzigd       |
-      | 2     | .          | gewijzigd       |
       | 2     |            | gecorrigeerd    |
-      | 2     | .          | gecorrigeerd    |

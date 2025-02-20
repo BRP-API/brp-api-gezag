@@ -42,7 +42,7 @@ public class JooqPersoonslijstFinder implements PersoonslijstFinder {
 
     @Override
     public Optional<Persoonslijst> opvragenPersoonslijst(final String burgerservicenummerString) {
-        var burgerservicenummer = new Burgerservicenummer(Long.parseLong(burgerservicenummerString));
+        var burgerservicenummer = Burgerservicenummer.from(burgerservicenummerString);
 
         return findPersoonslijst(burgerservicenummer);
     }

@@ -116,10 +116,9 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven of
       * is geboren op 14-10-2019
       * is geboren in Duitsland
       En is op 29-11-2019 geïmmigreerd
-      En 'Bert' is in het buitenland geadopteerd door 'Gerda' en 'Aart' op 30-11-2019
+      En 'Bert' is in het buitenland geadopteerd door 'Gerda' en 'Aart' op 30-11-2019 met document 'ad akte 6029'
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige in het buitenland is geboren.'
-      
 
   Regel: Het gezag kan niet worden bepaald voor een minderjarige met één ouder
 

@@ -539,7 +539,7 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         |     3 |            1 |         0 |       0 |                   | Tosca          |                    | V              |                    | 1AQ0100 |                   20191130 |
         |     3 |            2 |         0 |       0 |         000000012 | Arjan          |                    | M              |                    | 1AQ0100 |                   20191130 |
 
-    Scenario: '{naam}' is in het buitenland geadopteerd door '{naam}' en '{naam}' op {datum}
+    Scenario: '{naam}' is in het buitenland geadopteerd door '{naam}' en '{naam}' op {datum} met document '{document beschrijving}'
       Gegeven de persoon 'Arjan' met burgerservicenummer '000000012'
       * is een man
       En de persoon 'Tosca' met burgerservicenummer '000000024'
@@ -547,7 +547,7 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
       En de persoon 'Theo' met burgerservicenummer '000000036'
       * is minderjarig
       * is geboren in Duitsland
-      En 'Theo' is in het buitenland geadopteerd door 'Tosca' en 'Arjan' op 30-11-2019
+      En 'Theo' is in het buitenland geadopteerd door 'Tosca' en 'Arjan' op 30-11-2019 met document 'ad akte 6029'
       Als de sql statements gegenereerd uit de gegeven stappen zijn uitgevoerd
       Dan heeft de persoon 'Arjan' de volgende rij in tabel 'lo3_pl'
         | pl_id | geheim_ind |

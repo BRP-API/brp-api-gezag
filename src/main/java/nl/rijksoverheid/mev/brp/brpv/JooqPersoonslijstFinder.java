@@ -48,26 +48,26 @@ public class JooqPersoonslijstFinder implements PersoonslijstFinder {
     }
 
     private Optional<Persoonslijst> findPersoonslijst(Burgerservicenummer burgerservicenummer) {
-        var plPersoonPersoon = findPlPersoonByPersoonTypeIsPersoonAndBurgerservicenummer(burgerservicenummer);
-        if (plPersoonPersoon.isEmpty()) return Optional.empty();
+        var optionalLo3PlRecord = findLo3PlRecord(burgerservicenummer);
+        if (optionalLo3PlRecord.isEmpty()) return Optional.empty();
+        var lo3PlRecord = optionalLo3PlRecord.get();
 
         var result = new Persoonslijst();
+        result.addInschrijving(lo3PlRecord);
 
-        var plPersoonPersoonRecent = plPersoonPersoon.getFirst();
-        result.addPersoon(plPersoonPersoonRecent);
-        plPersoonPersoon.stream()
-            .skip(1)
-            .forEach(result::addPersoonGeschiedenis);
+        var plId = lo3PlRecord.getPlId();
+        var lo3PlPersoonRecordsByPersoonType = findPlPersoonByPlId(plId);
 
-        var plId = plPersoonPersoonRecent.getPlId();
-        loggingContext.addPlId(plId, burgerservicenummer);
+        var plPersoonPersoon = lo3PlPersoonRecordsByPersoonType.getOrDefault(PERSOON, Collections.emptyList());
+        if (!plPersoonPersoon.isEmpty()) {
+            var plPersoonPersoonRecent = plPersoonPersoon.getFirst();
+            result.addPersoon(plPersoonPersoonRecent);
+            plPersoonPersoon.stream()
+                .skip(1)
+                .forEach(result::addPersoonGeschiedenis);
+        }
 
-        var inschrijvingen = findInschrijvingen(plId);
-        inschrijvingen.forEach(result::addInschrijving);
-
-        var plPersoonByPersoonType = findPlPersoonByPersoonTypeNotPersoonAndPlId(plId);
-
-        var plPersoonOuder1 = plPersoonByPersoonType.getOrDefault(OUDER_1, Collections.emptyList());
+        var plPersoonOuder1 = lo3PlPersoonRecordsByPersoonType.getOrDefault(OUDER_1, Collections.emptyList());
         if (!plPersoonOuder1.isEmpty()) {
             var plPersoonOuder1Recent = plPersoonOuder1.getFirst();
             result.addOuder1(plPersoonOuder1Recent);
@@ -76,7 +76,7 @@ public class JooqPersoonslijstFinder implements PersoonslijstFinder {
                 .forEach(result::addOuder1Geschiedenis);
         }
 
-        var plPersoonOuder2 = plPersoonByPersoonType.getOrDefault(OUDER_2, Collections.emptyList());
+        var plPersoonOuder2 = lo3PlPersoonRecordsByPersoonType.getOrDefault(OUDER_2, Collections.emptyList());
         if (!plPersoonOuder2.isEmpty()) {
             var plPersoonOuder2Recent = plPersoonOuder2.getFirst();
             result.addOuder2(plPersoonOuder2Recent);
@@ -85,12 +85,12 @@ public class JooqPersoonslijstFinder implements PersoonslijstFinder {
                 .forEach(result::addOuder2Geschiedenis);
         }
 
-        var plPersoonKinderenMetGeschiedenis = plPersoonByPersoonType.getOrDefault(KIND, Collections.emptyList());
+        var plPersoonKinderenMetGeschiedenis = lo3PlPersoonRecordsByPersoonType.getOrDefault(KIND, Collections.emptyList());
         var plPersoonKinderenZonderGeschiedenis = plPersoonKinderenMetGeschiedenis.stream()
             .filter(it -> it.getVolgNr() == (short) 0);
         plPersoonKinderenZonderGeschiedenis.forEach(result::addKind);
 
-        var plPersoonRelaties = plPersoonByPersoonType.getOrDefault(RELATIE, Collections.emptyList());
+        var plPersoonRelaties = lo3PlPersoonRecordsByPersoonType.getOrDefault(RELATIE, Collections.emptyList());
         plPersoonRelaties.forEach(result::addRelatie);
 
         var optionalPlVerblijfplaats = findPlVerblijfplaatsByPlId(plId);
@@ -99,35 +99,28 @@ public class JooqPersoonslijstFinder implements PersoonslijstFinder {
         var optionalPlGezagsverhouding = findPlGezagsverhoudingByPlId(plId);
         optionalPlGezagsverhouding.ifPresent(result::addGezagsverhouding);
 
+        loggingContext.addPlId(plId, burgerservicenummer);
         return Optional.of(result);
     }
 
-    private List<Lo3PlRecord> findInschrijvingen(final long plId) {
-        return create.selectFrom(LO3_PL)
-            .where(LO3_PL.PL_ID.equal(plId))
-            .fetch()
-            .stream()
-            .toList();
-    }
-
-    private List<Lo3PlPersoonRecord> findPlPersoonByPersoonTypeIsPersoonAndBurgerservicenummer(
-        Burgerservicenummer burgerservicenummer
-    ) {
-        return create.selectFrom(LO3_PL_PERSOON)
+    private Optional<Lo3PlRecord> findLo3PlRecord(Burgerservicenummer burgerservicenummer) {
+        return create.select()
+            .from(LO3_PL)
+            .join(LO3_PL_PERSOON).on(LO3_PL.PL_ID.eq(LO3_PL_PERSOON.PL_ID))
             .where(LO3_PL_PERSOON.BURGER_SERVICE_NR.equal(burgerservicenummer.value())
                 .and(LO3_PL_PERSOON.PERSOON_TYPE.equal(PERSOON))
-                .and(LO3_PL_PERSOON.ONJUIST_IND.isNull())
+                .and(LO3_PL_PERSOON.STAPEL_NR.equal((short) 0))
+                .and(LO3_PL_PERSOON.VOLG_NR.equal((short) 0))
+                .and(LO3_PL.BIJHOUDING_OPSCHORT_REDEN.isNull()
+                    .or(LO3_PL.BIJHOUDING_OPSCHORT_REDEN.notIn("F", "W"))
+                )
             )
-            .orderBy(LO3_PL_PERSOON.STAPEL_NR.asc(), LO3_PL_PERSOON.VOLG_NR.asc())
-            .fetch()
-            .stream()
-            .toList();
+            .fetchOptionalInto(Lo3PlRecord.class);
     }
 
-    private Map<String, List<Lo3PlPersoonRecord>> findPlPersoonByPersoonTypeNotPersoonAndPlId(long plId) {
+    private Map<String, List<Lo3PlPersoonRecord>> findPlPersoonByPlId(long plId) {
         return create.selectFrom(LO3_PL_PERSOON)
             .where(LO3_PL_PERSOON.PL_ID.equal(plId)
-                .and(LO3_PL_PERSOON.PERSOON_TYPE.notEqual(PERSOON))
                 .and(LO3_PL_PERSOON.ONJUIST_IND.isNull())
             )
             .orderBy(LO3_PL_PERSOON.PERSOON_TYPE.asc(), LO3_PL_PERSOON.STAPEL_NR.desc(), LO3_PL_PERSOON.VOLG_NR.asc())

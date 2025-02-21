@@ -1,5 +1,14 @@
 # language: nl
 Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven of daar verbleven hebben
+  Wanneer een minderjarige een tijd een vaste verblijfplaats in het buitenland heeft gehad, kan het gezag onder buitenlands recht wijzigen.
+  In sommige situaties is het daardoor niet te bepalen wat het gezag is.
+
+  We hanteren hierbij de volgende principes:
+  - de vaste verblijfplaats van de minderjarige bepaalt onder welk recht het gezag bepaald wordt, het land waarin de ouders verblijven is niet relevant
+  - bij immigratie in Nederland valt de minderjarige onder de gezagsregels die gelden op het moment van immigratie en daardoor mogelijk niet meer onder de regels die golden bij geboorte of erkenning
+  - eens gegeven, altijd gegeven: iemand kan niet het gezag verliezen door vestiging van de minderjarige in een ander land
+  - een gerechtelijke uitspraak over gezag blijft geldig na vestiging in een ander land
+
 
   Achtergrond:
     Gegeven de persoon 'Gerda' met burgerservicenummer '000000012'
@@ -229,6 +238,14 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven of
       En 'Bert' is 3 jaar geleden geëmigreerd naar Duitsland
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige niet in Nederland woont.'
+
+    Voorbeeld: Minderjarige is voor 1-1-2023 zonder ouders geïmmigreerd
+      Gegeven persoon 'Bert'
+      * is geboren in Duitsland
+      * heeft 'Günther' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
+      * heeft 'Gertrud' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
+      En 'Bert' is 10 jaar geleden geïmmigreerd naar Nederland
+
 #
 #
 # To Do: Gezamenlijk ouderlijk gezag bij ongehuwde ouders na verblijf van minderjarige in specifieke landen (België, Spanje, ...)

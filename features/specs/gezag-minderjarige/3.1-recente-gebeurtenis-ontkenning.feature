@@ -48,17 +48,17 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - ontkenning
 
   Regel: Als vaderschap is ontkend of de erkenning is vernietigd en er was een uitspraak gezag voor die ouder, wordt het gezag van rechtswege bepaald
     
-    Abstract Scenario: er is uitspraak gezag voor ouder 1 en ouder 2 en ouderschap door ouder <ouder> is ontkend er is sprake van EenhoofdigOuderlijkGezag
+    Abstract Scenario: er is uitspraak gezag voor ouder 1 en ouder 2 en <type> door ouder <ouder> is ontkend er is sprake van EenhoofdigOuderlijkGezag
       Gegeven voor 'Kees' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
       | indicatie gezag minderjarige (32.10) | ingangsdatum geldigheid (85.10) |
       | 12                                   | morgen - 10 jaar                |
       En zijn van ouder <ouder> de volgende gegevens <soort wijziging>
       | naam                                               | waarde       |
       | burgerservicenummer (01.20)                        |              |
-      | geslachtsnaam (02.40)                              | <naam ouder> |
+      | geslachtsnaam (02.40)                              |              |
       | geboortedatum (03.10)                              |              |
       | datum ingang familierechtelijke betrekking (62.10) |              |
-      | aktenummer (81.20)                                 | 1AE0100      |
+      | aktenummer (81.20)                                 | <aktenummer> |
       Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -72,23 +72,27 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - ontkenning
       | ouder.burgerservicenummer        | <ouder bsn>              |      
 
       Voorbeelden:
-      | ouder | naam ouder | soort wijziging | ouder bsn |
-      | 1     |            | gewijzigd       | 000000024 |
-      | 1     |            | gecorrigeerd    | 000000024 |
-      | 2     |            | gewijzigd       | 000000012 |
-      | 2     |            | gecorrigeerd    | 000000012 |
- 
-    Abstract Scenario: er is uitspraak gezag voogdij en ouderschap door ouder 2 is ontkend of vernietigd er is sprake van Voogdij
+      | ouder | aktenummer | soort wijziging | ouder bsn | type       |
+      | 1     | 1AE0100    | gewijzigd       | 000000024 | ouderschap |
+      | 1     | 1AE0100    | gecorrigeerd    | 000000024 | ouderschap |
+      | 2     | 1AE0100    | gewijzigd       | 000000012 | ouderschap |
+      | 2     | 1AE0100    | gecorrigeerd    | 000000012 | ouderschap |
+      | 1     | 1AF0100    | gewijzigd       | 000000024 | erkkening  |
+      | 1     | 1AF0100    | gecorrigeerd    | 000000024 | erkkening  |
+      | 2     | 1AF0100    | gewijzigd       | 000000012 | erkkening  |
+      | 2     | 1AF0100    | gecorrigeerd    | 000000012 | erkkening  |
+
+    Abstract Scenario: er is uitspraak gezag voogdij en ouderschap door ouder <ouder> is ontkend of vernietigd er is sprake van Voogdij
       Gegeven voor 'Kees' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
       | indicatie gezag minderjarige (32.10) | ingangsdatum geldigheid (85.10) |
       | D                                    | morgen - 10 jaar                |
       En zijn van ouder <ouder> de volgende gegevens <soort wijziging>
       | naam                                               | waarde       |
       | burgerservicenummer (01.20)                        |              |
-      | geslachtsnaam (02.40)                              | <naam ouder> |
+      | geslachtsnaam (02.40)                              |              |
       | geboortedatum (03.10)                              |              |
       | datum ingang familierechtelijke betrekking (62.10) |              |
-      | aktenummer (81.20)                                 | 1AE0100      |
+      | aktenummer (81.20)                                 | <aktenummer> |
       Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -102,68 +106,12 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - ontkenning
       En heeft 'gezag' geen derden
 
       Voorbeelden:
-      | ouder | naam ouder | soort wijziging |
-      | 1     |            | gewijzigd       |
-      | 1     |            | gecorrigeerd    |
-      | 2     |            | gewijzigd       |
-      | 2     |            | gecorrigeerd    |
-
-    Abstract Scenario: er is uitspraak gezag voor ouder 1 en ouder 2 en erkenning door ouder <ouder> is ontkend of vernietigd er is sprake van EenhoofdigOuderlijkGezag
-      Gegeven voor 'Kees' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
-      | indicatie gezag minderjarige (32.10) | ingangsdatum geldigheid (85.10) |
-      | 12                                   | morgen - 10 jaar                |
-      En zijn van ouder <ouder> de volgende gegevens <soort wijziging>
-      | naam                                               | waarde       |
-      | burgerservicenummer (01.20)                        |              |
-      | geslachtsnaam (02.40)                              | <naam ouder> |
-      | geboortedatum (03.10)                              |              |
-      | datum ingang familierechtelijke betrekking (62.10) |              |
-      | aktenummer (81.20)                                 | 1AF0100      |
-      Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-      Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-      En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | <ouder bsn>              |      
-
-      Voorbeelden:
-      | ouder | naam ouder | soort wijziging | ouder bsn |
-      | 1     |            | gewijzigd       | 000000024 |
-      | 1     |            | gecorrigeerd    | 000000024 |
-      | 2     |            | gewijzigd       | 000000012 |
-      | 2     |            | gecorrigeerd    | 000000012 |
- 
-    Abstract Scenario: er is uitspraak gezag voogdij en erkenning door ouder 2 is ontkend of vernietigd er is sprake van Voogdij
-      Gegeven voor 'Kees' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
-      | indicatie gezag minderjarige (32.10) | ingangsdatum geldigheid (85.10) |
-      | D                                    | morgen - 10 jaar                |
-      En zijn van ouder <ouder> de volgende gegevens <soort wijziging>
-      | naam                                               | waarde       |
-      | burgerservicenummer (01.20)                        |              |
-      | geslachtsnaam (02.40)                              | <naam ouder> |
-      | geboortedatum (03.10)                              |              |
-      | datum ingang familierechtelijke betrekking (62.10) |              |
-      | aktenummer (81.20)                                 | 1AF0100      |
-      Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-      Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-      En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000036 |      
-      En heeft 'gezag' geen derden
-
-      Voorbeelden:
-      | ouder | naam ouder | soort wijziging |
-      | 1     |            | gewijzigd       |
-      | 1     |            | gecorrigeerd    |
-      | 2     |            | gewijzigd       |
-      | 2     |            | gecorrigeerd    |
+      | ouder | aktenummer | soort wijziging |
+      | 1     | 1AE0100    | gewijzigd       |
+      | 1     | 1AE0100    | gecorrigeerd    |
+      | 2     | 1AE0100    | gewijzigd       |
+      | 2     | 1AE0100    | gecorrigeerd    |
+      | 1     | 1AF0100    | gewijzigd       |
+      | 1     | 1AF0100    | gecorrigeerd    |
+      | 2     | 1AF0100    | gewijzigd       |
+      | 2     | 1AF0100    | gecorrigeerd    |

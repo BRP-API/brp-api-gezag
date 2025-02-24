@@ -32,6 +32,9 @@ public class JooqPersoonslijstFinder implements PersoonslijstFinder {
     private static final String OUDER_2 = "2";
     private static final String KIND = "K";
     private static final String RELATIE = "R";
+    private static final String OPSCHORT_REDEN_FOUT = "F";
+    private static final String OPSCHORT_REDEN_WISSEN = "W";
+
     private final DSLContext create;
     private final LoggingContext loggingContext;
 
@@ -112,7 +115,7 @@ public class JooqPersoonslijstFinder implements PersoonslijstFinder {
                 .and(LO3_PL_PERSOON.STAPEL_NR.equal((short) 0))
                 .and(LO3_PL_PERSOON.VOLG_NR.equal((short) 0))
                 .and(LO3_PL.BIJHOUDING_OPSCHORT_REDEN.isNull()
-                    .or(LO3_PL.BIJHOUDING_OPSCHORT_REDEN.notIn("F", "W"))
+                    .or(LO3_PL.BIJHOUDING_OPSCHORT_REDEN.notIn(OPSCHORT_REDEN_FOUT, OPSCHORT_REDEN_WISSEN))
                 )
             )
             .fetchOptionalInto(Lo3PlRecord.class);

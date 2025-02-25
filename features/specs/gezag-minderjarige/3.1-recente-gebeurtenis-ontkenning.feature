@@ -46,7 +46,7 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - ontkenning
       * heeft 'Nelly' als ouder 1
       * heeft 'Johnnie' als ouder 2
 
-  Regel: Als vaderschap is ontkend of de erkenning is vernietigd en er was een uitspraak gezag voor die ouder, wordt het gezag van rechtswege bepaald
+  Regel: Als ouderschap is ontkend of de erkenning is vernietigd en er was een uitspraak gezag voor die ouder, wordt het gezag van rechtswege bepaald
     
     Abstract Scenario: er is uitspraak gezag voor ouder 1 en ouder 2 en <type> door ouder <ouder> is ontkend er is sprake van EenhoofdigOuderlijkGezag
       Gegeven voor 'Kees' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
@@ -116,7 +116,9 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - ontkenning
       | 2     | 1AF0100    | gewijzigd       |
       | 2     | 1AF0100    | gecorrigeerd    |
 
-    Abstract Scenario: er is uitspraak gezag voor ouder 1 en ouder 2 en <type> door ouder <ouder> is ontkend er is sprake van EenhoofdigOuderlijkGezag
+  Regel: Als ouderschap of erkenning is ontkend door de ouder waar vastgesteld is dat er gezamelijk gezag is met een derde wordt gezag alleen voor de derde gegeven
+    
+    Abstract Scenario: er is sprake van gezag voor ouder samen met een derde en <type> door ouder <ouder> is ontkend er is sprake van Voogdij
       Gegeven voor 'Kees' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
       | indicatie gezag minderjarige (32.10) | ingangsdatum geldigheid (85.10) |
       | <indicatie>                          | morgen - 10 jaar                |

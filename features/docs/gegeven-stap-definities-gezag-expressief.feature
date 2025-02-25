@@ -62,6 +62,30 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         |  2 jaar geleden |
         | vorige maand    |
 
+    Scenario: '{naam}' is {relatievedatum} geboren
+      Gegeven de persoon 'Tosca' met burgerservicenummer '000000012'
+      En de persoon 'Anna' met burgerservicenummer '000000024'
+      En 'Tosca' is <relatieve datum> geboren
+      Als de sql statements gegenereerd uit de gegeven stappen zijn uitgevoerd
+      Dan heeft de persoon 'Tosca' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     1 |          0 |
+      En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_datum    | geboorte_land_code | akte_nr |
+        |     1 | P            |         0 |       0 |         000000012 | Tosca          | <relatieve datum> |               6030 | 1AA0100 |
+      En heeft de persoon 'Anna' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     2 |          0 |
+      En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr |
+        |     2 | P            |         0 |       0 |         000000024 | Anna           |               6030 | 1AA0100 |
+
+      Voorbeelden:
+        | relatieve datum |
+        | gisteren        |
+        |  2 jaar geleden |
+        | vorige maand    |
+
     Scenario: '{naam}' is geboren op {datum}
       # datum heeft formaat d-m-j, met d en m heeft 1 of 2 cijfers, j heeft 4 cijfers
       # met de (optionele) naam wijzigt de context naar deze persoon
@@ -264,7 +288,7 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         |  2 jaar geleden | Duitsland   |      6029 |
         |  2 jaar geleden | Afghanistan |      6023 |
 
-  Regel: Huwelijk wordt toegevoegd als persoon_type 'R' voor beide betrokken personen
+  Regel: Huwelijk en geregistreerd partnerschap wordt toegevoegd als persoon_type 'R' voor beide betrokken personen
     # To Do: welke gegevens van een persoon worden meegenomen - want zijn relevant - in de relatie?
     # geboortedatum, geboorteland, ...?
 
@@ -277,16 +301,16 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         | pl_id | geheim_ind |
         |     1 |          0 |
       En heeft de persoon 'Arjan' de volgende rijen in tabel 'lo3_pl_persoon'
-        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code |
-        |     1 | P            |         0 |       0 |         000000012 | Arjan          |               6030 | 1AA0100 |                     |                      |                         |
-        |     1 | R            |         0 |       0 |         000000024 | Tosca          |                    |         | gisteren - 20 jaar  |                  518 |                    6030 |
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | verbintenis_soort |
+        |     1 | P            |         0 |       0 |         000000012 | Arjan          |               6030 | 1AA0100 |                     |                      |                         |                   |
+        |     1 | R            |         0 |       0 |         000000024 | Tosca          |                    |         | gisteren - 20 jaar  |                  518 |                    6030 | H                 |
       En heeft de persoon 'Tosca' de volgende rij in tabel 'lo3_pl'
         | pl_id | geheim_ind |
         |     2 |          0 |
       En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
-        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code |
-        |     2 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | 1AA0100 |                     |                      |                         |
-        |     2 | R            |         0 |       0 |         000000012 | Arjan          |                    |         | gisteren - 20 jaar  |                  518 |                    6030 |
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | verbintenis_soort |
+        |     2 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | 1AA0100 |                     |                      |                         |                   |
+        |     2 | R            |         0 |       0 |         000000012 | Arjan          |                    |         | gisteren - 20 jaar  |                  518 |                    6030 | H                 |
 
     Scenario: '{naam1}' en '{naam2}' zijn {relatievedatum} gehuwd
       Gegeven de persoon 'Arjan' met burgerservicenummer '000000012'
@@ -297,21 +321,61 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         | pl_id | geheim_ind |
         |     1 |          0 |
       En heeft de persoon 'Arjan' de volgende rijen in tabel 'lo3_pl_persoon'
-        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code |
-        |     1 | P            |         0 |       0 |         000000012 | Arjan          |               6030 | 1AA0100 |                     |                      |                         |
-        |     1 | R            |         0 |       0 |         000000024 | Tosca          |                    |         | <relatieve datum>   |                  518 |                    6030 |
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | verbintenis_soort |
+        |     1 | P            |         0 |       0 |         000000012 | Arjan          |               6030 | 1AA0100 |                     |                      |                         |                   |
+        |     1 | R            |         0 |       0 |         000000024 | Tosca          |                    |         | <relatieve datum>   |                  518 |                    6030 | H                 |
       En heeft de persoon 'Tosca' de volgende rij in tabel 'lo3_pl'
         | pl_id | geheim_ind |
         |     2 |          0 |
       En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
-        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code |
-        |     2 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | 1AA0100 |                     |                      |                         |
-        |     2 | R            |         0 |       0 |         000000012 | Arjan          |                    |         | <relatieve datum>   |                  518 |                    6030 |
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | verbintenis_soort |
+        |     2 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | 1AA0100 |                     |                      |                         |                   |
+        |     2 | R            |         0 |       0 |         000000012 | Arjan          |                    |         | <relatieve datum>   |                  518 |                    6030 | H                 |
 
       Voorbeelden:
         | relatieve datum   |
         |    2 jaar geleden |
         | gisteren - 5 jaar |
+
+    Scenario: '{naam1}' en '{naam2}' zijn een geregistreerd partnerschap aangegaan op {datum}
+      Gegeven de persoon 'Arjan' met burgerservicenummer '000000012'
+      En de persoon 'Tosca' met burgerservicenummer '000000024'
+      En 'Arjan' en 'Tosca' zijn een geregistreerd partnerschap aangegaan op 1-3-2010
+      Als de sql statements gegenereerd uit de gegeven stappen zijn uitgevoerd
+      Dan heeft de persoon 'Arjan' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     1 |          0 |
+      En heeft de persoon 'Arjan' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | verbintenis_soort |
+        |     1 | P            |         0 |       0 |         000000012 | Arjan          |               6030 | 1AA0100 |                     |                      |                         |                   |
+        |     1 | R            |         0 |       0 |         000000024 | Tosca          |                    |         | <relatieve datum>   |                  518 |                    6030 | P                 |
+      En heeft de persoon 'Tosca' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     2 |          0 |
+      En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | verbintenis_soort |
+        |     2 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | 1AA0100 |                     |                      |                         |                   |
+        |     2 | R            |         0 |       0 |         000000012 | Arjan          |                    |         | <relatieve datum>   |                  518 |                    6030 | P                 |
+
+    Scenario: '{naam1}' en '{naam2}' zijn {relatieve datum} een geregistreerd partnerschap aangegaan
+      Gegeven de persoon 'Arjan' met burgerservicenummer '000000012'
+      En de persoon 'Tosca' met burgerservicenummer '000000024'
+      En 'Arjan' en 'Tosca' zijn 7 jaar geleden een geregistreerd partnerschap aangegaan
+      Als de sql statements gegenereerd uit de gegeven stappen zijn uitgevoerd
+      Dan heeft de persoon 'Arjan' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     1 |          0 |
+      En heeft de persoon 'Arjan' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | verbintenis_soort |
+        |     1 | P            |         0 |       0 |         000000012 | Arjan          |               6030 | 1AA0100 |                     |                      |                         |                   |
+        |     1 | R            |         0 |       0 |         000000024 | Tosca          |                    |         |      7 jaar geleden |                  518 |                    6030 | P                 |
+      En heeft de persoon 'Tosca' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     2 |          0 |
+      En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | verbintenis_soort |
+        |     2 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | 1AA0100 |                     |                      |                         |                   |
+        |     2 | R            |         0 |       0 |         000000012 | Arjan          |                    |         |      7 jaar geleden |                  518 |                    6030 | P                 |
 
     Scenario: '{naam1}' en '{naam2}' zijn {relatievedatum} gescheiden
       Gegeven de persoon 'Arjan' met burgerservicenummer '000000012'
@@ -323,23 +387,46 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         | pl_id | geheim_ind |
         |     1 |          0 |
       En heeft de persoon 'Arjan' de volgende rijen in tabel 'lo3_pl_persoon'
-        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | relatie_eind_datum | relatie_eind_plaats | relatie_eind_land_code |
-        |     1 | P            |         0 |       0 |         000000012 | Arjan          |               6030 | 1AA0100 |                     |                      |                         |                    |                     |                        |
-        |     1 | R            |         0 |       1 |         000000024 | Tosca          |                    |         | gisteren - 20 jaar  |                  518 |                    6030 |                    |                     |                        |
-        |     1 | R            |         0 |       0 |         000000024 | Tosca          |                    |         |                     |                      |                         | <relatieve datum>  |                 518 |                   6030 |
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | relatie_eind_datum | relatie_eind_plaats | relatie_eind_land_code | verbintenis_soort |
+        |     1 | P            |         0 |       0 |         000000012 | Arjan          |               6030 | 1AA0100 |                     |                      |                         |                    |                     |                        |                   |
+        |     1 | R            |         0 |       1 |         000000024 | Tosca          |                    |         | gisteren - 20 jaar  |                  518 |                    6030 |                    |                     |                        | H                 |
+        |     1 | R            |         0 |       0 |         000000024 | Tosca          |                    |         |                     |                      |                         | <relatieve datum>  |                 518 |                   6030 | H                 |
       En heeft de persoon 'Tosca' de volgende rij in tabel 'lo3_pl'
         | pl_id | geheim_ind |
         |     2 |          0 |
       En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
-        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | relatie_eind_datum | relatie_eind_plaats | relatie_eind_land_code |
-        |     2 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | 1AA0100 |                     |                      |                         |                    |                     |                        |
-        |     2 | R            |         0 |       1 |         000000012 | Arjan          |                    |         | gisteren - 20 jaar  |                  518 |                    6030 |                    |                     |                        |
-        |     2 | R            |         0 |       0 |         000000012 | Arjan          |                    |         |                     |                      |                         | <relatieve datum>  |                 518 |                   6030 |
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | relatie_eind_datum | relatie_eind_plaats | relatie_eind_land_code | verbintenis_soort |
+        |     2 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | 1AA0100 |                     |                      |                         |                    |                     |                        |                   |
+        |     2 | R            |         0 |       1 |         000000012 | Arjan          |                    |         | gisteren - 20 jaar  |                  518 |                    6030 |                    |                     |                        | H                 |
+        |     2 | R            |         0 |       0 |         000000012 | Arjan          |                    |         |                     |                      |                         | <relatieve datum>  |                 518 |                   6030 | H                 |
 
       Voorbeelden:
         | relatieve datum   |
         |    2 jaar geleden |
         | gisteren - 5 jaar |
+
+    Scenario: het geregistreerd partnerschap van '{naam1}' en '{naam2}' is {relatieve datum} ontbonden
+      Gegeven de persoon 'Arjan' met burgerservicenummer '000000012'
+      En de persoon 'Tosca' met burgerservicenummer '000000024'
+      En 'Arjan' en 'Tosca' zijn 7 jaar geleden een geregistreerd partnerschap aangegaan
+      En het geregistreerd partnerschap van 'Arjan' en 'Tosca' is 2 jaar geleden ontbonden
+      Als de sql statements gegenereerd uit de gegeven stappen zijn uitgevoerd
+      Dan heeft de persoon 'Arjan' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     1 |          0 |
+      En heeft de persoon 'Arjan' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | relatie_eind_datum | relatie_eind_plaats | relatie_eind_land_code | verbintenis_soort |
+        |     1 | P            |         0 |       0 |         000000012 | Arjan          |               6030 | 1AA0100 |                     |                      |                         |                    |                     |                        |                   |
+        |     1 | R            |         0 |       1 |         000000024 | Tosca          |                    |         |      7 jaar geleden |                  518 |                    6030 |                    |                     |                        | P                 |
+        |     1 | R            |         0 |       0 |         000000024 | Tosca          |                    |         |                     |                      |                         |     2 jaar geleden |                 518 |                   6030 | P                 |
+      En heeft de persoon 'Tosca' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     2 |          0 |
+      En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | relatie_eind_datum | relatie_eind_plaats | relatie_eind_land_code | verbintenis_soort |
+        |     2 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | 1AA0100 |                     |                      |                         |                    |                     |                        |                   |
+        |     2 | R            |         0 |       1 |         000000012 | Arjan          |                    |         |      7 jaar geleden |                  518 |                    6030 |                    |                     |                        | P                 |
+        |     2 | R            |         0 |       0 |         000000012 | Arjan          |                    |         |                     |                      |                         |     2 jaar geleden |                 518 |                   6030 | P                 |
 
     Scenario: volgende relatie: '{naam1}' en '{naam2}' zijn {relatievedatum} gehuwd
       Gegeven de persoon 'Arjan' met burgerservicenummer '000000012'
@@ -352,26 +439,48 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         | pl_id | geheim_ind |
         |     1 |          0 |
       En heeft de persoon 'Arjan' de volgende rijen in tabel 'lo3_pl_persoon'
-        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | relatie_eind_datum | relatie_eind_plaats | relatie_eind_land_code |
-        |     1 | P            |         0 |       0 |         000000012 | Arjan          |               6030 | 1AA0100 |                     |                      |                         |                    |                     |                        |
-        |     1 | R            |         0 |       1 |         000000024 | Tosca          |                    |         | gisteren - 20 jaar  |                  518 |                    6030 |                    |                     |                        |
-        |     1 | R            |         0 |       0 |         000000024 | Tosca          |                    |         |                     |                      |                         |     5 jaar geleden |                 518 |                   6030 |
-        |     1 | R            |         1 |       0 |         000000024 | Tosca          |                    |         | <relatieve datum>   |                  518 |                    6030 |                    |                     |                        |
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | relatie_eind_datum | relatie_eind_plaats | relatie_eind_land_code | verbintenis_soort |
+        |     1 | P            |         0 |       0 |         000000012 | Arjan          |               6030 | 1AA0100 |                     |                      |                         |                    |                     |                        |                   |
+        |     1 | R            |         0 |       1 |         000000024 | Tosca          |                    |         | gisteren - 20 jaar  |                  518 |                    6030 |                    |                     |                        | H                 |
+        |     1 | R            |         0 |       0 |         000000024 | Tosca          |                    |         |                     |                      |                         |     5 jaar geleden |                 518 |                   6030 | H                 |
+        |     1 | R            |         1 |       0 |         000000024 | Tosca          |                    |         | <relatieve datum>   |                  518 |                    6030 |                    |                     |                        | H                 |
       En heeft de persoon 'Tosca' de volgende rij in tabel 'lo3_pl'
         | pl_id | geheim_ind |
         |     2 |          0 |
       En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
-        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | relatie_eind_datum | relatie_eind_plaats | relatie_eind_land_code |
-        |     2 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | 1AA0100 |                     |                      |                         |                    |                     |                        |
-        |     2 | R            |         0 |       1 |         000000012 | Arjan          |                    |         | gisteren - 20 jaar  |                  518 |                    6030 |                    |                     |                        |
-        |     2 | R            |         0 |       0 |         000000012 | Arjan          |                    |         |                     |                      |                         |     5 jaar geleden |                 518 |                   6030 |
-        |     2 | R            |         1 |       0 |         000000012 | Arjan          |                    |         | <relatieve datum>   |                  518 |                    6030 |                    |                     |                        |
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | relatie_eind_datum | relatie_eind_plaats | relatie_eind_land_code | verbintenis_soort |
+        |     2 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | 1AA0100 |                     |                      |                         |                    |                     |                        |                   |
+        |     2 | R            |         0 |       1 |         000000012 | Arjan          |                    |         | gisteren - 20 jaar  |                  518 |                    6030 |                    |                     |                        | H                 |
+        |     2 | R            |         0 |       0 |         000000012 | Arjan          |                    |         |                     |                      |                         |     5 jaar geleden |                 518 |                   6030 | H                 |
+        |     2 | R            |         1 |       0 |         000000012 | Arjan          |                    |         | <relatieve datum>   |                  518 |                    6030 |                    |                     |                        | H                 |
 
       Voorbeelden:
         | relatieve datum   |
         |    2 jaar geleden |
         | gisteren - 3 jaar |
         | vorige maand      |
+
+    Scenario: '{naam1}' en '{naam2}' zijn {relatievedatum1} gehuwd en {relatievedatum2} gescheiden
+      Gegeven de persoon 'Arjan' met burgerservicenummer '000000012'
+      En de persoon 'Tosca' met burgerservicenummer '000000024'
+      En 'Arjan' en 'Tosca' zijn 6 jaar geleden gehuwd en 2 jaar geleden gescheiden
+      Als de sql statements gegenereerd uit de gegeven stappen zijn uitgevoerd
+      Dan heeft de persoon 'Arjan' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     1 |          0 |
+      En heeft de persoon 'Arjan' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | relatie_eind_datum | relatie_eind_plaats | relatie_eind_land_code | verbintenis_soort |
+        |     1 | P            |         0 |       0 |         000000012 | Arjan          |               6030 | 1AA0100 |                     |                      |                         |                    |                     |                        |                   |
+        |     1 | R            |         0 |       1 |         000000024 | Tosca          |                    |         |      6 jaar geleden |                  518 |                    6030 |                    |                     |                        | H                 |
+        |     1 | R            |         0 |       0 |         000000024 | Tosca          |                    |         |                     |                      |                         |     2 jaar geleden |                 518 |                   6030 | H                 |
+      En heeft de persoon 'Tosca' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     2 |          0 |
+      En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | relatie_eind_datum | relatie_eind_plaats | relatie_eind_land_code | verbintenis_soort |
+        |     2 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | 1AA0100 |                     |                      |                         |                    |                     |                        |                   |
+        |     2 | R            |         0 |       1 |         000000012 | Arjan          |                    |         |      6 jaar geleden |                  518 |                    6030 |                    |                     |                        | H                 |
+        |     2 | R            |         0 |       0 |         000000012 | Arjan          |                    |         |                     |                      |                         |     2 jaar geleden |                 518 |                   6030 | H                 |
 
   Regel: Ouders worden toegevoegd als persoon_type respectievelijk '1' en '2' aan de persoon en de persoon als persoon_type 'K' bij de ouders
     # To Do: welke gegevens van een persoon worden meegenomen - want zijn relevant - in de relatie?
@@ -506,6 +615,64 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         |     2 |            1 |         0 |       0 |         000000012 | Arjan          |                    |                    | 1AA0100 | gisteren - 17 jaar         |
         |     2 |            2 |         0 |       0 |                   | Tosca          | gisteren - 45 jaar |                    | 1AA0100 | gisteren - 17 jaar         |
 
+    Scenario: '{naam}' is {relatieve datum} als vondeling geboren
+      Gegeven de persoon 'Theo' met burgerservicenummer '000000036'
+      * is minderjarig
+      En 'Theo' is 3 jaar geleden als vondeling geboren
+      Als de sql statements gegenereerd uit de gegeven stappen zijn uitgevoerd
+      Dan heeft de persoon 'Theo' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     1 |          0 |
+      En heeft de persoon 'Theo' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_datum | geslachts_aand | geboorte_land_code | akte_nr | familie_betrek_start_datum |
+        |     1 | P            |         0 |       0 |         000000036 | Theo           | 3 jaar geleden |                |               6030 | 1AA0100 |                            |
+        |     1 |            1 |         0 |       0 |                   | .              |                | V              |                    | 1AA0100 |             3 jaar geleden |
+        |     1 |            2 |         0 |       0 |                   |                |                |                |                    | 1AA0100 |                            |
+
+    Scenario: '{naam}' is {relatieve datum} geadopteerd door '{naam}'
+      Gegeven de persoon 'Tosca' met burgerservicenummer '000000024'
+      En de persoon 'Theo' met burgerservicenummer '000000036'
+      * is minderjarig
+      En 'Theo' is 3 jaar geleden geadopteerd door 'Tosca'
+      Als de sql statements gegenereerd uit de gegeven stappen zijn uitgevoerd
+      Dan heeft de persoon 'Tosca' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     1 |          0 |
+      En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | geslachts_aand | akte_nr |
+        |     1 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | V              | 1AA0100 |
+        |     1 | K            |         0 |       0 |         000000036 | Theo           |                    |                | 1AQ0100 |
+      En heeft de persoon 'Theo' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     2 |          0 |
+      En heeft de persoon 'Theo' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_datum     | geslachts_aand | geboorte_land_code | akte_nr | familie_betrek_start_datum |
+        |     2 | P            |         0 |       0 |         000000036 | Theo           | gisteren - 17 jaar |                |               6029 | 1AQ0100 |                            |
+        |     2 |            1 |         0 |       0 |         000000024 | Tosca          |                    | V              |                    | 1AQ0100 |             3 jaar geleden |
+
+    Scenario: adoptie vervangt andere ouder: '{naam}' is {relatieve datum} geadopteerd door '{naam}'
+      Gegeven de persoon 'Tosca' met burgerservicenummer '000000024'
+      En de persoon 'Theo' met burgerservicenummer '000000036'
+      En 'Theo' is 4 jaar geleden als vondeling geboren
+      En 'Theo' is 3 jaar geleden geadopteerd door 'Tosca'
+      Als de sql statements gegenereerd uit de gegeven stappen zijn uitgevoerd
+      Dan heeft de persoon 'Tosca' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     1 |          0 |
+      En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | geslachts_aand | akte_nr |
+        |     1 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | V              | 1AA0100 |
+        |     1 | K            |         0 |       0 |         000000036 | Theo           |                    |                | 1AQ0100 |
+      En heeft de persoon 'Theo' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     2 |          0 |
+      En heeft de persoon 'Theo' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_datum | geslachts_aand | geboorte_land_code | akte_nr | familie_betrek_start_datum |
+        |     2 | P            |         0 |       0 |         000000036 | Theo           | 4 jaar geleden |                |               6030 | 1AQ0100 |                            |
+        |     2 |            1 |         0 |       0 |         000000024 | Tosca          |                |                |                    | 1AQ0100 |             3 jaar geleden |
+        |     2 |            1 |         0 |       1 |                   | .              |                | V              |                    | 1AA0100 |             4 jaar geleden |
+        |     2 |            2 |         0 |       0 |                   |                |                |                |                    | 1AA0100 |                            |
+
     Scenario: '{naam}' is op {datum} geadopteerd door '{naam}' en '{naam}'
       Gegeven de persoon 'Arjan' met burgerservicenummer '000000012'
       * is een man
@@ -528,7 +695,7 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         |     2 |          0 |
       En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
         | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | geslachts_aand | akte_nr |
-        |     2 | P            |         0 |       0 |         000000024 | Arjan          |               6030 | V              | 1AA0100 |
+        |     2 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | V              | 1AA0100 |
         |     2 | K            |         0 |       0 |         000000036 | Theo           |                    |                | 1AQ0100 |
       En heeft de persoon 'Theo' de volgende rij in tabel 'lo3_pl'
         | pl_id | geheim_ind |
@@ -536,7 +703,7 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
       En heeft de persoon 'Theo' de volgende rijen in tabel 'lo3_pl_persoon'
         | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_datum     | geslachts_aand | geboorte_land_code | akte_nr | familie_betrek_start_datum |
         |     3 | P            |         0 |       0 |         000000036 | Theo           | gisteren - 17 jaar |                |               6029 | 1AQ0100 |                            |
-        |     3 |            1 |         0 |       0 |                   | Tosca          |                    | V              |                    | 1AQ0100 |                   20191130 |
+        |     3 |            1 |         0 |       0 |         000000024 | Tosca          |                    | V              |                    | 1AQ0100 |                   20191130 |
         |     3 |            2 |         0 |       0 |         000000012 | Arjan          |                    | M              |                    | 1AQ0100 |                   20191130 |
 
     Scenario: '{naam}' is in het buitenland geadopteerd door '{naam}' en '{naam}' op {datum} met document '{document beschrijving}'
@@ -569,8 +736,41 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
       En heeft de persoon 'Theo' de volgende rijen in tabel 'lo3_pl_persoon'
         | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_datum     | geslachts_aand | geboorte_land_code | doc_beschrijving | familie_betrek_start_datum |
         |     3 | P            |         0 |       0 |         000000036 | Theo           | gisteren - 17 jaar |                |               6029 | ad akte 6029     |                            |
-        |     3 |            1 |         0 |       0 |                   | Tosca          |                    | V              |                    | ad akte 6029     |                   20191130 |
+        |     3 |            1 |         0 |       0 |         000000024 | Tosca          |                    | V              |                    | ad akte 6029     |                   20191130 |
         |     3 |            2 |         0 |       0 |         000000012 | Arjan          |                    | M              |                    | ad akte 6029     |                   20191130 |
+
+    Scenario: '{naam}' heeft ontkend vader te zijn van '{naam}'
+      Gegeven de persoon 'Arjan' met burgerservicenummer '000000012'
+      En de persoon 'Tosca' met burgerservicenummer '000000024'
+      En de persoon 'Theo' met burgerservicenummer '000000036'
+      * is minderjarige
+      * heeft 'Arjan' en 'Tosca' als ouders
+      En 'Arjan' heeft ontkend vader te zijn van 'Theo'
+      Als de sql statements gegenereerd uit de gegeven stappen zijn uitgevoerd
+      Dan heeft de persoon 'Arjan' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     1 |          0 |
+      En heeft de persoon 'Arjan' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr |
+        |     1 | P            |         0 |       0 |         000000012 | Arjan          |               6030 | 1AA0100 |
+        |     1 | K            |         0 |       1 |         000000036 | Theo           |                    | 1AA0100 |
+        |     1 | K            |         0 |       0 |                   |                |                    | 1AE0100 |
+      En heeft de persoon 'Tosca' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     2 |          0 |
+      En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr |
+        |     2 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | 1AA0100 |
+        |     2 | K            |         0 |       0 |         000000036 | Theo           |                    | 1AA0100 |
+      En heeft de persoon 'Theo' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     3 |          0 |
+      En heeft de persoon 'Theo' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_datum     | geboorte_land_code | akte_nr | familie_betrek_start_datum |
+        |     3 | P            |         0 |       0 |         000000036 | Theo           | gisteren - 17 jaar |               6030 | 1AA0100 |                            |
+        |     3 |            1 |         0 |       1 |         000000012 | Arjan          |                    |                    | 1AA0100 | gisteren - 17 jaar         |
+        |     3 |            1 |         0 |       0 |                   |                |                    |                    | 1AE0100 |                            |
+        |     3 |            2 |         0 |       0 |         000000024 | Tosca          |                    |                    | 1AA0100 | gisteren - 17 jaar         |
 
   Regel: Een gerechtelijke uitspraak wordt vastgelegd in de gezagsverhouding
 

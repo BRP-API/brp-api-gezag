@@ -37,14 +37,13 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - ontkenning
       * is meerderjarig, niet overleden en staat niet onder curatele
       En de persoon 'Johnnie' met burgerservicenummer '000000024'
       * is meerderjarig, niet overleden en staat niet onder curatele
-      En 'Nelly' en 'Johnnie' zijn met elkaar gehuwd
       En de persoon 'Kees' met burgerservicenummer '000000036'
       * is ingeschreven in de BRP
       * is minderjarig
       * is niet geëmigreerd geweest
       * is in Nederland geboren
       * heeft 'Nelly' als ouder 1
-      * heeft 'Johnnie' als ouder 2
+      * is erkend door 'Johnnie' als ouder 2 met erkenning bij geboorteaangifte
 
   Regel: Als ouderschap is ontkend of de erkenning is vernietigd en er was een uitspraak gezag voor die ouder, wordt het gezag van rechtswege bepaald
     

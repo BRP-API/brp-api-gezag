@@ -209,13 +209,9 @@ public class Persoonslijst {
 
     public boolean heeftTweeOuders() {
         if (ouder1 != null && ouder2 != null) {
-            return isValideGeslachtsnaam(ouder1.getGeslachtsnaam()) && isValideGeslachtsnaam(ouder2.getGeslachtsnaam());
+            return ouder1.getBurgerservicenummer() != null && ouder2.getBurgerservicenummer() != null;
         }
         return false;
-    }
-
-    public static boolean isValideGeslachtsnaam(String str) {
-        return str != null && !str.isBlank() && !str.equals(PUNTOUDER_INDICATIE);
     }
 
     public boolean ongeborenVruchtErkendOfGerechtelijkeVaststelling() {

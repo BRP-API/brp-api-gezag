@@ -44,7 +44,7 @@ Een kind kan automatisch of via de rechter een voogd krijgen:
 **Leeswijzer features**
 
 Gezag wordt bepaald door afleidingsregels (rules) in onderstaande volgorde toe te passen:
-1. Rules waarmee wordt vastgesteld dat er geen gezag is (zie de [Geen gezag functionaliteit](geen-gezag.feature))
+1. Rules waarmee wordt vastgesteld dat er tijdelijk geen gezag is (zie de [Geen gezag functionaliteit](geen-gezag.feature))
 2. Rules waarmee wordt vastgesteld of er een geldige gerechtelijke uitspraak is over gezag, en of deze wordt herzien door adoptie, een reparatiehuwelijk of ontkenning (zie de [Gerechtelijke uitspraak functionaliteit](gerechtelijke-uitspraak-feature)) 
 3. Rules waarmee het gezag wordt bepaald van een minderjarige:
     - met twee ouders met een relatie met elkaar (zie de [Twee ouders met relatie](twee-ouders-met-relatie.feature))

@@ -4,7 +4,7 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven of
   In sommige situaties is het daardoor niet te bepalen wat het gezag is.
 
   We hanteren hierbij de volgende principes:
-  - de vaste verblijfplaats van de minderjarige bepaalt onder welk recht het gezag bepaald wordt, het land waarin de ouders verblijven is niet relevant
+  - de vaste verblijfplaats van de minderjarige bepaalt onder welk recht het gezag bepaald wordt. Het land waar de ouders verblijven is niet relevant
   - bij immigratie in Nederland valt de minderjarige onder de gezagsregels die gelden op het moment van immigratie en daardoor mogelijk niet meer onder de regels die golden bij geboorte of erkenning
   - eens gegeven, altijd gegeven: iemand kan niet het gezag verliezen door vestiging van de minderjarige in een ander land
   - een gerechtelijke uitspraak over gezag blijft geldig na vestiging in een ander land

@@ -14,7 +14,7 @@ Functionaliteit: 3.2 - Achterhalen gezag na uitspraak
 
   Wat is de indicatie gezag minderjarig?
   Indicatie gezag minderjarige geeft aan of er sprake is van ouderlijk gezag (éénhoofdig of gezamenlijk ouderlijk gezag), gezamenlijk gezag
-  van een ouder en een niet ouder of van voogdij (één of twee niet-ouders).
+  van een ouder en een derde of van voogdij (één of twee derden).
   Indicatie gezag minderjarige wordt alleen gevuld op basis van een verkregen uittreksel uit het Gezagsregister van de rechtbank en is dus altijd
   tot stand gekomen vanuit een reschtsfeit.
 
@@ -127,7 +127,7 @@ Functionaliteit: 3.2 - Achterhalen gezag na uitspraak
       | minderjarige.burgerservicenummer | 000000036 |      
     En heeft 'gezag' geen derden
 
-  Scenario: De moeder heeft samen met de vader als niet ouder gezamelijk gezag over het kind resulteerd in Voogdij
+  Scenario: De moeder heeft samen met de vader als derde gezamelijk gezag over het kind resulteerd in Voogdij
     Gegeven de persoon 'Iefke' met burgerservicenummer '000000061'
     * is meerderjarig
     Gegeven de persoon 'Paul' met burgerservicenummer '000000085'
@@ -186,7 +186,7 @@ Functionaliteit: 3.2 - Achterhalen gezag na uitspraak
       | minderjarige.burgerservicenummer | 000000036 |      
     En heeft 'gezag' geen derden
 
-  Scenario: De vader als niet ouder heeft gezag over het kind resulteerd in Voogdij
+  Scenario: De vader als derde heeft gezag over het kind resulteerd in Voogdij
     Gegeven de persoon 'Iefke' met burgerservicenummer '000000061'
     * is meerderjarig
     Gegeven de persoon 'Paul' met burgerservicenummer '000000085'

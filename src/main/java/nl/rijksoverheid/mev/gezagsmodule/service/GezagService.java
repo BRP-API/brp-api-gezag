@@ -141,8 +141,8 @@ public class GezagService {
         arAntwoordenModel.setSoortGezag(configuredARAntwoordenModel.getSoortGezag());
         arAntwoordenModel.setGezagOuder1(configuredARAntwoordenModel.getGezagOuder1());
         arAntwoordenModel.setGezagOuder2(configuredARAntwoordenModel.getGezagOuder2());
-        arAntwoordenModel.setGezagNietOuder1(configuredARAntwoordenModel.getGezagNietOuder1());
-        arAntwoordenModel.setGezagNietOuder2(configuredARAntwoordenModel.getGezagNietOuder2());
+        arAntwoordenModel.setGezagDerde1(configuredARAntwoordenModel.getGezagDerde1());
+        arAntwoordenModel.setGezagDerde2(configuredARAntwoordenModel.getGezagDerde2());
         arAntwoordenModel.setUitleg((!persoonslijstExists ? TOELICHTING_ONBEKEND_PERSOON :
             configuredARAntwoordenModel.getUitleg()));
     }

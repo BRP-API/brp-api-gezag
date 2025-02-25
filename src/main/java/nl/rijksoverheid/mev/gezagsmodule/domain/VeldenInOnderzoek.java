@@ -16,7 +16,7 @@ public class VeldenInOnderzoek {
     private Set<String> persoon;
     private Set<String> ouder1;
     private Set<String> ouder2;
-    private Set<String> nietOuder;
+    private Set<String> derde;
 
     /**
      * @return velden in onderzoek voor persoon
@@ -61,17 +61,17 @@ public class VeldenInOnderzoek {
     }
 
     /**
-     * @return velden in onderzoek voor niet ouder
+     * @return velden in onderzoek voor derde
      */
-    public Set<String> getNietOuder() {
-        return Objects.requireNonNullElse(nietOuder, Collections.emptySet());
+    public Set<String> getDerde() {
+        return Objects.requireNonNullElse(derde, Collections.emptySet());
     }
 
     /**
-     * @param nietOuder velden in onderzoek voor niet ouder
+     * @param velden in onderzoek voor derde
      */
-    public void setNietOuder(final Set<String> nietOuder) {
-        this.nietOuder = nietOuder;
+    public void setDerde(final Set<String> derde) {
+        this.derde = derde;
     }
 
     /**
@@ -81,6 +81,6 @@ public class VeldenInOnderzoek {
         return persoon != null && !persoon.isEmpty()
                 || ouder1 != null && !ouder1.isEmpty()
                 || ouder2 != null && !ouder2.isEmpty()
-                || nietOuder != null && !nietOuder.isEmpty();
+                || derde != null && !derde.isEmpty();
     }
 }

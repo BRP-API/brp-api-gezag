@@ -26,7 +26,7 @@ public class GezagsBepaling {
     private final Persoonslijst plPersoon;
     private Persoonslijst plOuder1;
     private Persoonslijst plOuder2;
-    private Persoonslijst plNietOuder;
+    private Persoonslijst plDerde;
     @Getter
     private List<String> missendeGegegevens;
     @Getter
@@ -112,10 +112,10 @@ public class GezagsBepaling {
     }
 
     /**
-     * @return burgerservicenummer van niet ouder of null wanneer niet ouder geen waarde heeft
+     * @return burgerservicenummer van derde of null wanneer derde geen waarde heeft
      */
-    public String getBurgerservicenummerNietOuder() {
-        return plNietOuder != null && plNietOuder.getPersoon() != null ? plNietOuder.getPersoon()
+    public String getBurgerservicenummerDerde() {
+        return plDerde != null && plDerde.getPersoon() != null ? plDerde.getPersoon()
             .getBurgerservicenummer() : null;
     }
 
@@ -130,8 +130,8 @@ public class GezagsBepaling {
         if (plOuder2 != null) {
             veldenInOnderzoek.addAll(plOuder2.getUsedVeldenInOnderzoek());
         }
-        if (plNietOuder != null) {
-            veldenInOnderzoek.addAll(plNietOuder.getUsedVeldenInOnderzoek());
+        if (plDerde != null) {
+            veldenInOnderzoek.addAll(plDerde.getUsedVeldenInOnderzoek());
         }
         if (!veldenInOnderzoek.isEmpty()) {
             logger.info("De volgende velden zijn in onderzoek: {}", veldenInOnderzoek);
@@ -154,8 +154,8 @@ public class GezagsBepaling {
         if (plOuder2 != null) {
             velden.setOuder2(plOuder2.getUsedVeldenInOnderzoek());
         }
-        if (plNietOuder != null) {
-            velden.setNietOuder(plNietOuder.getUsedVeldenInOnderzoek());
+        if (plDerde != null) {
+            velden.setDerde(plDerde.getUsedVeldenInOnderzoek());
         }
         return velden;
     }
@@ -214,10 +214,10 @@ public class GezagsBepaling {
     }
 
     /**
-     * @return de niet ouder of null
+     * @return de derde of null
      */
-    public Persoonslijst getPlNietOuder() {
-        if (plNietOuder == null) {
+    public Persoonslijst getPlDerde() {
+        if (plDerde == null) {
             try {
                 if (!isValidPersoon(plPersoon) || !isOneParentPresent(plOuder1, plOuder2)) {
                     return null;
@@ -228,16 +228,16 @@ public class GezagsBepaling {
                 if (hopGeborenInRelatie == null) {
                     return null;
                 }
-                String burgerservicenummerNietOuder = hopGeborenInRelatie.getPartner();
-                brpService.getPersoonslijst(burgerservicenummerNietOuder)
-                    .ifPresent(nietOuder ->
-                        plNietOuder = nietOuder);
+                String burgerservicenummerDerde = hopGeborenInRelatie.getPartner();
+                brpService.getPersoonslijst(burgerservicenummerDerde)
+                    .ifPresent(derde ->
+                        plDerde = derde);
             } catch (GezagException ex) {
                 logger.debug(ex.getMessage());
                 return null;
             }
         }
-        return plNietOuder;
+        return plDerde;
     }
 
     private boolean isValidPersoon(Persoonslijst plPersoon) {

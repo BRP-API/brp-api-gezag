@@ -37,9 +37,9 @@ public class ARAntwoordenModel {
     @EqualsAndHashCode.Exclude
     private String gezagOuder2 = null;
     @EqualsAndHashCode.Exclude
-    private String gezagNietOuder1 = null;
+    private String gezagDerde1 = null;
     @EqualsAndHashCode.Exclude
-    private String gezagNietOuder2 = null;
+    private String gezagDerde2 = null;
     @EqualsAndHashCode.Exclude
     private String index = null;
     @EqualsAndHashCode.Exclude
@@ -53,9 +53,9 @@ public class ARAntwoordenModel {
         return gezagOuder2 != null && gezagOuder2.equals("Ja");
     }
 
-    public boolean hasNietOuderGezag() {
-        return (gezagNietOuder1 != null && gezagNietOuder1.equals("Ja")) ||
-            (gezagNietOuder2 != null && gezagNietOuder2.equals("Ja"));
+    public boolean hasDerdeGezag() {
+        return (gezagDerde1 != null && gezagDerde1.equals("Ja")) ||
+            (gezagDerde2 != null && gezagDerde2.equals("Ja"));
     }
 
     @Override
@@ -64,8 +64,8 @@ public class ARAntwoordenModel {
             "soortGezag='" + soortGezag + '\'' +
             ", gezagOuder1='" + gezagOuder1 + '\'' +
             ", gezagOuder2='" + gezagOuder2 + '\'' +
-            ", gezagNietOuder1='" + gezagNietOuder1 + '\'' +
-            ", gezagNietOuder2='" + gezagNietOuder2 + '\'' +
+            ", gezagDerde1='" + gezagDerde1 + '\'' +
+            ", gezagDerde2='" + gezagDerde2 + '\'' +
             ", route='" + route + '\'' +
             ", uitleg='" + uitleg + '\'' +
             ", exception=" + exception +

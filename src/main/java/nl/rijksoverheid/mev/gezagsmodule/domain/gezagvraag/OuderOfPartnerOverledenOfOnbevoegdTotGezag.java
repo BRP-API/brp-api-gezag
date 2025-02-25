@@ -19,27 +19,27 @@ public class OuderOfPartnerOverledenOfOnbevoegdTotGezag implements GezagVraag {
     private static final String V4B_1_JA_BEIDEN = "Ja_beiden";
     private static final String V4B_1_JA_OUDER1 = "Ja_ouder1";
     private static final String V4B_1_JA_OUDER2 = "Ja_ouder2";
-    private static final String V4B_1_JA_NIET_OUDER1 = "Ja_nietouder1";
-    private static final String V4B_1_JA_NIET_OUDER2 = "Ja_nietouder2";
+    private static final String V4B_1_JA_DERDE1 = "Ja_derde1";
+    private static final String V4B_1_JA_DERDE2 = "Ja_derde2";
     private static final Map<String, String> ouderOfPartnerOverledenOfOnbevoegdTotGezagMap = Map.of(
         "ouder1,true,true", V4B_1_JA_BEIDEN,
         "ouder1,true,false", V4B_1_JA_OUDER1,
-        "ouder1,false,true", V4B_1_JA_NIET_OUDER1,
+        "ouder1,false,true", V4B_1_JA_DERDE1,
         "ouder1,false,false", V4B_1_NEE,
         "ouder2,true,true", V4B_1_JA_BEIDEN,
         "ouder2,true,false", V4B_1_JA_OUDER2,
-        "ouder2,false,true", V4B_1_JA_NIET_OUDER2,
+        "ouder2,false,true", V4B_1_JA_DERDE2,
         "ouder2,false,false", V4B_1_NEE
     );
     private static final Map<String, String> JA_BEIDEN_ANTWOORDEN = Map.of(
         "cc", "Ja_beiden_onder_curatele",
-        "cm", "Ja_ouder_onder_curatele_en_niet_ouder_minderjarig",
-        "co", "Ja_ouder_onder_curatele_en_niet_ouder_overleden",
-        "mc", "Ja_ouder_minderjarig_en_niet_ouder_onder_curatele",
+        "cm", "Ja_ouder_onder_curatele_en_derde_minderjarig",
+        "co", "Ja_ouder_onder_curatele_en_derde_overleden",
+        "mc", "Ja_ouder_minderjarig_en_derde_onder_curatele",
         "mm", "Ja_beiden_minderjarig",
-        "mo", "Ja_ouder_minderjarig_en_niet_ouder_overleden",
-        "oc", "Ja_ouder_overleden_en_niet_ouder_onder_curatele",
-        "om", "Ja_ouder_overleden_en_niet_ouder_minderjarig",
+        "mo", "Ja_ouder_minderjarig_en_derde_overleden",
+        "oc", "Ja_ouder_overleden_en_derde_onder_curatele",
+        "om", "Ja_ouder_overleden_en_derde_minderjarig",
         "oo", "Ja_beiden_overleden"
     );
 
@@ -58,18 +58,18 @@ public class OuderOfPartnerOverledenOfOnbevoegdTotGezag implements GezagVraag {
                 "Preconditie: Minimaal 1 ouder moet geregistreerd staan in BRP",
                 "Voor de bevraagde persoon moet minimaal 1 ouder geregistreerd staan in BRP");
         }
-        final var persoonslijstNietOuder = gezagsBepaling.getPlNietOuder();
-        if (persoonslijstNietOuder == null) {
+        final var persoonslijstDerde = gezagsBepaling.getPlDerde();
+        if (persoonslijstDerde == null) {
             throw new AfleidingsregelException(
-                "Preconditie: niet_ouder moet geregistreerd staan in BRP",
-                "Voor de bevraagde persoon moet niet_ouder geregistreerd staan in BRP");
+                "Preconditie: derde moet geregistreerd staan in BRP",
+                "Voor de bevraagde persoon moet derde geregistreerd staan in BRP");
         }
-        final var optionalIsNietOuderOverledenOfOnbevoegdToken = persoonslijstNietOuder.isOverledenOfOnbevoegdEncoded();
-        boolean isNietOuderOverledenOfOnbevoegd = optionalIsNietOuderOverledenOfOnbevoegdToken.isPresent();
+        final var optionalIsDerdeOverledenOfOnbevoegdToken = persoonslijstDerde.isOverledenOfOnbevoegdEncoded();
+        boolean isDerdeOverledenOfOnbevoegd = optionalIsDerdeOverledenOfOnbevoegdToken.isPresent();
 
         String key = persoonslijstOuder1 != null
-            ? "ouder1," + persoonslijstOuder1.isOverledenOfOnbevoegd() + "," + isNietOuderOverledenOfOnbevoegd
-            : "ouder2," + persoonslijstOuder2.isOverledenOfOnbevoegd() + "," + isNietOuderOverledenOfOnbevoegd;
+            ? "ouder1," + persoonslijstOuder1.isOverledenOfOnbevoegd() + "," + isDerdeOverledenOfOnbevoegd
+            : "ouder2," + persoonslijstOuder2.isOverledenOfOnbevoegd() + "," + isDerdeOverledenOfOnbevoegd;
         answer = ouderOfPartnerOverledenOfOnbevoegdTotGezagMap.get(key);
 
         if (V4B_1_JA_BEIDEN.equals(answer)) {
@@ -78,9 +78,9 @@ public class OuderOfPartnerOverledenOfOnbevoegdTotGezag implements GezagVraag {
             final var isOuderOverledenOfOnbevoegdToken = persoonslijstOuder
                 .isOverledenOfOnbevoegdEncoded()
                 .orElseThrow();
-            final var isNietOuderOverledenOfOnbevoegdToken =
-                optionalIsNietOuderOverledenOfOnbevoegdToken.orElseThrow();
-            var key2 = "%c%c".formatted(isOuderOverledenOfOnbevoegdToken, isNietOuderOverledenOfOnbevoegdToken);
+            final var isDerdeOverledenOfOnbevoegdToken =
+                optionalIsDerdeOverledenOfOnbevoegdToken.orElseThrow();
+            var key2 = "%c%c".formatted(isOuderOverledenOfOnbevoegdToken, isDerdeOverledenOfOnbevoegdToken);
             answer = JA_BEIDEN_ANTWOORDEN.get(key2);
         }
 

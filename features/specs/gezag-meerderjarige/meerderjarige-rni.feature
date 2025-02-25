@@ -84,7 +84,7 @@ Functionaliteit: gezag van een meerderjarige die niet in de BRP staat ingeschrev
       | burgerservicenummer | 000000061 |
 
 
-  Regel: een persoon die in RNI staat ingeschreven met een onvolledige geboortedatum krijgt gezag niet te bepalen geleverd wanneer de persoon op de eerste dag van de onzekerheidsperiode niet ouder dan 18 jaar is
+  Regel: een persoon die in RNI staat ingeschreven met een onvolledige geboortedatum krijgt gezag niet te bepalen geleverd wanneer de persoon op de eerste dag van de onzekerheidsperiode derde dan 18 jaar is
     # leeftijd wordt berekend op basis van een fixtieve geboortedatum gelijk aan de eerste dag van de onzekerheidsperiode
     # wanneer de persoon meerderjarig is, moet geen 'gezag niet te bepalen' worden geleverd
     # 'gezag niet te bepalen' wordt alleen geleverd wanneer de persoon nog minderjarig is

@@ -24,9 +24,9 @@ class OuderOfPartnerOverledenOfOnbevoegdTotGezagTest {
     private static final String V4B_1_JA_BEIDEN_OVERLEDEN = "Ja_beiden_overleden";
     private static final String V4B_1_JA_OUDER1 = "Ja_ouder1";
     private static final String V4B_1_JA_OUDER2 = "Ja_ouder2";
-    private static final String V4B_1_JA_NIET_OUDER1 = "Ja_nietouder1";
+    private static final String V4B_1_JA_DERDE1 = "Ja_derde1";
     private static final String INDICATION_EXCEPTION_MINIMAL_ONE_PARENT = "Preconditie: Minimaal 1 ouder moet geregistreerd staan";
-    private static final String INDICATION_EXCEPTION_NIET_OUDER = "Preconditie: niet_ouder moet geregistreerd";
+    private static final String INDICATION_EXCEPTION_DERDE = "Preconditie: derde moet geregistreerd";
     @Mock
     private GezagsBepaling gezagsBepaling;
     @Mock
@@ -36,7 +36,7 @@ class OuderOfPartnerOverledenOfOnbevoegdTotGezagTest {
     @Mock
     private Persoonslijst persoonslijstOuder2;
     @Mock
-    private Persoonslijst persoonslijstNietOuder;
+    private Persoonslijst persoonslijstDerde;
     private OuderOfPartnerOverledenOfOnbevoegdTotGezag classUnderTest;
 
     @BeforeEach
@@ -59,7 +59,7 @@ class OuderOfPartnerOverledenOfOnbevoegdTotGezagTest {
         AfleidingsregelException exception = assertThrows(AfleidingsregelException.class,
             () -> classUnderTest.perform(gezagsBepaling));
 
-        assertTrue(exception.getMessage().contains(INDICATION_EXCEPTION_NIET_OUDER));
+        assertTrue(exception.getMessage().contains(INDICATION_EXCEPTION_DERDE));
     }
 
     @Test
@@ -69,14 +69,14 @@ class OuderOfPartnerOverledenOfOnbevoegdTotGezagTest {
         AfleidingsregelException exception = assertThrows(AfleidingsregelException.class,
             () -> classUnderTest.perform(gezagsBepaling));
 
-        assertTrue(exception.getMessage().contains(INDICATION_EXCEPTION_NIET_OUDER));
+        assertTrue(exception.getMessage().contains(INDICATION_EXCEPTION_DERDE));
     }
 
     @Test
-    void ouderOfPartnerOverledenOfOnbevoegdTotGezagWithOuderAndNietOuder() {
+    void ouderOfPartnerOverledenOfOnbevoegdTotGezagWithOuderAndDerde() {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
         when(gezagsBepaling.getPlOuder1()).thenReturn(persoonslijstOuder1);
-        when(gezagsBepaling.getPlNietOuder()).thenReturn(persoonslijstNietOuder);
+        when(gezagsBepaling.getPlDerde()).thenReturn(persoonslijstDerde);
 
         var antwoord = classUnderTest.perform(gezagsBepaling);
 
@@ -88,7 +88,7 @@ class OuderOfPartnerOverledenOfOnbevoegdTotGezagTest {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
         when(persoonslijstOuder1.isOverledenOfOnbevoegd()).thenReturn(true);
         when(gezagsBepaling.getPlOuder1()).thenReturn(persoonslijstOuder1);
-        when(gezagsBepaling.getPlNietOuder()).thenReturn(persoonslijstNietOuder);
+        when(gezagsBepaling.getPlDerde()).thenReturn(persoonslijstDerde);
 
         var antwoord = classUnderTest.perform(gezagsBepaling);
 
@@ -96,17 +96,17 @@ class OuderOfPartnerOverledenOfOnbevoegdTotGezagTest {
     }
 
     @Test
-    void ouderOfPartnerOverledenOfOnbevoegdTotGezagWithNietOuderOverledenOfOnbevoegd() {
+    void ouderOfPartnerOverledenOfOnbevoegdTotGezagWithDerdeOverledenOfOnbevoegd() {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
         when(persoonslijstOuder1.isOverledenOfOnbevoegd()).thenReturn(false);
-        when(persoonslijstNietOuder.isOverledenOfOnbevoegdEncoded()).thenReturn(
+        when(persoonslijstDerde.isOverledenOfOnbevoegdEncoded()).thenReturn(
             Optional.of(OVERLEDEN_TOKEN));
         when(gezagsBepaling.getPlOuder1()).thenReturn(persoonslijstOuder1);
-        when(gezagsBepaling.getPlNietOuder()).thenReturn(persoonslijstNietOuder);
+        when(gezagsBepaling.getPlDerde()).thenReturn(persoonslijstDerde);
 
         var antwoord = classUnderTest.perform(gezagsBepaling);
 
-        assertThat(antwoord.answer()).isEqualTo(V4B_1_JA_NIET_OUDER1);
+        assertThat(antwoord.answer()).isEqualTo(V4B_1_JA_DERDE1);
     }
 
     @Test
@@ -114,7 +114,7 @@ class OuderOfPartnerOverledenOfOnbevoegdTotGezagTest {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
         when(persoonslijstOuder2.isOverledenOfOnbevoegd()).thenReturn(true);
         when(gezagsBepaling.getPlOuder2()).thenReturn(persoonslijstOuder2);
-        when(gezagsBepaling.getPlNietOuder()).thenReturn(persoonslijstNietOuder);
+        when(gezagsBepaling.getPlDerde()).thenReturn(persoonslijstDerde);
 
         var antwoord = classUnderTest.perform(gezagsBepaling);
 
@@ -127,7 +127,7 @@ class OuderOfPartnerOverledenOfOnbevoegdTotGezagTest {
         when(persoonslijstOuder1.isOverledenOfOnbevoegd()).thenReturn(false);
         when(gezagsBepaling.getPlOuder1()).thenReturn(persoonslijstOuder1);
         when(gezagsBepaling.getPlOuder2()).thenReturn(persoonslijstOuder2);
-        when(gezagsBepaling.getPlNietOuder()).thenReturn(persoonslijstNietOuder);
+        when(gezagsBepaling.getPlDerde()).thenReturn(persoonslijstDerde);
 
         var antwoord = classUnderTest.perform(gezagsBepaling);
 
@@ -139,9 +139,9 @@ class OuderOfPartnerOverledenOfOnbevoegdTotGezagTest {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
         when(persoonslijstOuder1.isOverledenOfOnbevoegd()).thenReturn(true);
         when(persoonslijstOuder1.isOverledenOfOnbevoegdEncoded()).thenReturn(Optional.of(OVERLEDEN_TOKEN));
-        when(persoonslijstNietOuder.isOverledenOfOnbevoegdEncoded()).thenReturn(Optional.of(OVERLEDEN_TOKEN));
+        when(persoonslijstDerde.isOverledenOfOnbevoegdEncoded()).thenReturn(Optional.of(OVERLEDEN_TOKEN));
         when(gezagsBepaling.getPlOuder1()).thenReturn(persoonslijstOuder1);
-        when(gezagsBepaling.getPlNietOuder()).thenReturn(persoonslijstNietOuder);
+        when(gezagsBepaling.getPlDerde()).thenReturn(persoonslijstDerde);
 
         var antwoord = classUnderTest.perform(gezagsBepaling);
 

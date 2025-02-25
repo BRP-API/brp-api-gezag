@@ -14,12 +14,6 @@
                 <defaultMask>***MASKED***</defaultMask>
                 <path>authorization</path>
                 <path>burgerservicenummer</path>
-
-                <!-- burgerservicenummer mask (masks values in field "message") -->
-                <valueMask>
-                    <value>\\*"\d{9}\\*"</value>
-                    <mask>"***MASKED***"</mask>
-                </valueMask>
             </jsonGeneratorDecorator>
             <mdcEntryWriter class="net.logstash.logback.composite.loggingevent.mdc.BooleanMdcEntryWriter"/>
             <mdcEntryWriter class="net.logstash.logback.composite.loggingevent.mdc.LongMdcEntryWriter"/>

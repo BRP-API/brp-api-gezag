@@ -204,38 +204,42 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven of
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en derde 'Zoe'
 
-  Regel: Het gezag kan niet worden bepaald voor een minderjarige die een vaste verblijfplaats in het buitenland heeft of heeft gehad en waarvoor van rechtswege eenhoofdig ouderlijk gezag is bepaald
+  Regel: Het gezag kan worden bepaald voor een minderjarige die ooit Nederland als vaste verblijfplaats heeft gehad en één ouder heeft
 
-    Voorbeeld: Minderjarige en moeder zijn uit het buitenland geïmmigreerd en er is geen andere ouder
+    Voorbeeld: minderjarige is in het buitenland geboren en heeft één ouder waarbij geen huwelijk bekend is
       Gegeven persoon 'Bert'
       * is geboren in Duitsland
       * heeft 'Gerda' als ouder
       En 'Bert' is 10 jaar geleden geïmmigreerd naar Nederland
       Als gezag wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige in het buitenland is geboren.'
+      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
 
-    Voorbeeld: Minderjarige heeft als vaste verblijfplaats een adres in het buitenland
+    Voorbeeld: minderjarige is in het buitenland geboren en heeft één ouder waarbij geen huwelijk bekend is omdat ze zelf niet is ingeschreven in de BRP
+      Gegeven persoon 'Bert'
+      * is geboren in Duitsland
+      * heeft 'Gertrud' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
+      En 'Bert' is 10 jaar geleden geïmmigreerd naar Nederland
+      Als gezag wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gertrud'
+
+    Voorbeeld: Minderjarige heeft als vaste verblijfplaats een adres in het buitenland en heeft één ouder die ten tijde van de geboorte van minderjarige ongehuwd was
       Gegeven persoon 'Bert'
       * is geboren in Nederland
       * heeft 'Gerda' als ouder
       En 'Bert' is vorige maand geëmigreerd naar Duitsland
       Als gezag wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige niet in Nederland woont.'
+      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
 
-    Voorbeeld: Minderjarige heeft in het buitenland verbleven en verblijft nu weer in Nederland
-      Gegeven persoon 'Bert'
-      * is geboren in Nederland
-      * heeft 'Gerda' als ouder
-      En 'Bert' is 3 jaar geleden geëmigreerd naar Duitsland
-      En 'Bert' is 2 jaar geleden geïmmigreerd naar Nederland
-      Als gezag wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige buiten Nederland heeft verbleven.'
+  
+  Regel: Het gezag kan niet worden bepaald voor een minderjarige die een vaste verblijfplaats in het buitenland heeft of heeft gehad en twee ouders heeft en waarvoor van rechtswege eenhoofdig ouderlijk gezag is bepaald
 
     Voorbeeld: Minderjarige is geëmigreerd en van de ouders is geen huwelijk bekend
       Gegeven persoon 'Bert'
       * is geboren in Nederland
       * heeft 'Aart' en 'Gerda' als ouders
       En 'Bert' is 3 jaar geleden geëmigreerd naar Duitsland
+      En 'Gerda' is 3 jaar geleden geëmigreerd naar Duitsland
+      En 'Aart' is 3 jaar geleden geëmigreerd naar Duitsland
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige niet in Nederland woont.'
 
@@ -245,6 +249,8 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven of
       * heeft 'Günther' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
       * heeft 'Gertrud' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
       En 'Bert' is 10 jaar geleden geïmmigreerd naar Nederland
+      Als gezag wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige niet in Nederland geboren is.'
 
 #
 #

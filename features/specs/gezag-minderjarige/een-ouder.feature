@@ -22,6 +22,25 @@ Functionaliteit: Eén ouder
     * is minderjarig
     * heeft 'Gerda' als ouder
 
+  Regel: Als de minderjarige niet tijdens een huwelijk of partnerschap van de juridische ouder geboren is, dan heeft de ouder eenhoofdig ouderlijk gezag
+
+    Voorbeeld: De ouder is nooit gehuwd en had nooit een geregistreerd partnerschap bij geboorte
+      Als gezag wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+
+    Voorbeeld: De ouder was gehuwd en is gescheiden voor de geboorte van minderjarige
+      Gegeven 'Gerda' en 'Aart' zijn 7 jaar geleden gehuwd
+      En 'Gerda' en 'Aart' zijn 5 jaar geleden gescheiden
+      En 'Bert' is 2 jaar geleden geboren
+      Als gezag wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+
+    Voorbeeld: De ouder is gehuwd na geboorte van minderjarige
+      Gegeven 'Bert' is 7 jaar geleden geboren
+      En 'Gerda' en 'Aart' zijn 6 jaar geleden gehuwd
+      Als gezag wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+
   Regel: Als de minderjarige tijdens het huwelijk of partnerschap van de juridische ouder geboren is, dan hebben de ouder en diens (toenmalige) partner gezamenlijk gezag
 
     Voorbeeld: Minderjarige heeft ouder die gehuwd is met een meemoeder
@@ -48,25 +67,6 @@ Functionaliteit: Eén ouder
       En het geregistreerd partnerschap van 'Gerda' en 'Ariana' is 3 jaar geleden ontbonden
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en derde 'Ariana'
-
-  Regel: Als de minderjarige niet tijdens een huwelijk of partnerschap van de juridische ouder geboren is, dan heeft de ouder eenhoofdig ouderlijk gezag
-
-    Voorbeeld: De ouder is niet gehuwd en heeft geen geregistreerd partnerschap bij geboorte
-      Als gezag wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
-
-    Voorbeeld: De ouder was gehuwd en is gescheiden voor de geboorte van minderjarige
-      Gegeven 'Gerda' en 'Aart' zijn 7 jaar geleden gehuwd
-      En 'Gerda' en 'Aart' zijn 5 jaar geleden gescheiden
-      En 'Bert' is 2 jaar geleden geboren
-      Als gezag wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
-
-    Voorbeeld: De ouder is gehuwd na geboorte van minderjarige
-      Gegeven 'Bert' is 7 jaar geleden geboren
-      En 'Gerda' en 'Aart' zijn 6 jaar geleden gehuwd
-      Als gezag wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
 
   Regel: Als de minderjarige tijdens het huwelijk of partnerschap van de juridische ouder is geadopteerd, dan hebben de ouder en diens (toenmalige) partner gezamenlijk gezag
     De ouder was immers bij geboorte nog geen ouder. We moeten dus kijken naar de aanvang familierechtelijke betrekking en niet naar geboortedatum

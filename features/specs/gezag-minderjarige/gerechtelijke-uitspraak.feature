@@ -63,9 +63,9 @@ Functionaliteit: Gerechtelijke uitspraak
       En 2 jaar geleden is in een gerechtelijke uitspraak het gezag toegewezen aan een voogdijinstelling
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' voogdij
-  #Bespreken
 
   Regel: Als er een gerechtelijke uitspraak is dat beide ouders gezag hebben, en het ouderschap is ontkend, dan heeft de overgebleven ouder eenhoofdig ouderlijk gezag
+    #Bespreken
 
     Voorbeeld: na uitspraak over gezag aan beide ouders heeft vader ouderschap ontkend
       Gegeven persoon 'Bert'

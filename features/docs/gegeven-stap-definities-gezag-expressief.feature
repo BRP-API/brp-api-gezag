@@ -482,6 +482,51 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         |     2 | R            |         0 |       1 |         000000012 | Arjan          |                    |         |      6 jaar geleden |                  518 |                    6030 |                    |                     |                        | H                 |
         |     2 | R            |         0 |       0 |         000000012 | Arjan          |                    |         |                     |                      |                         |     2 jaar geleden |                 518 |                   6030 | H                 |
 
+    Abstracrt Scenario: '{naam1}' en '{naam2}' zijn {relatievedatum} (opnieuw) gehuwd
+      Gegeven de persoon 'Arjan' met burgerservicenummer '000000012'
+      En de persoon 'Tosca' met burgerservicenummer '000000024'
+      En de persoon 'Theo' met burgerservicenummer '000000036'
+      En de persoon 'Thea' met burgerservicenummer '000000048'
+      En 'Arjan' en 'Tosca' zijn 10 jaar geleden gehuwd
+      En 'Arjan' en 'Tosca' zijn 7 jaar geleden gescheiden
+      En 'Arjan' en 'Thea' zijn 5 jaar geleden opnieuw gehuwd
+      En 'Tosca' en 'Theo' zijn 3 jaar geleden opnieuw gehuwd
+      Als de sql statements gegenereerd uit de gegeven stappen zijn uitgevoerd
+      Dan heeft de persoon 'Arjan' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     1 |          0 |
+      En heeft de persoon 'Arjan' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | relatie_eind_datum | relatie_eind_plaats | relatie_eind_land_code | verbintenis_soort |
+        |     1 | P            |         0 |       0 |         000000012 | Arjan          |               6030 | 1AA0100 |                     |                      |                         |                    |                     |                        |                   |
+        |     1 | R            |         0 |       1 |         000000024 | Tosca          |                    |         |     10 jaar geleden |                  518 |                    6030 |                    |                     |                        | H                 |
+        |     1 | R            |         0 |       0 |         000000024 | Tosca          |                    |         |                     |                      |                         |     7 jaar geleden |                 518 |                   6030 | H                 |
+        |     1 | R            |         1 |       0 |         000000048 | Thea           |                    |         |      5 jaar geleden |                  518 |                    6030 |                    |                     |                        | H                 |
+      En heeft de persoon 'Tosca' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     2 |          0 |
+      En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | relatie_eind_datum | relatie_eind_plaats | relatie_eind_land_code | verbintenis_soort |
+        |     2 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | 1AA0100 |                     |                      |                         |                    |                     |                        |                   |
+        |     2 | R            |         0 |       1 |         000000012 | Arjan          |                    |         |     10 jaar geleden |                  518 |                    6030 |                    |                     |                        | H                 |
+        |     2 | R            |         0 |       0 |         000000012 | Arjan          |                    |         |                     |                      |                         |     7 jaar geleden |                 518 |                   6030 | H                 |
+        |     2 | R            |         1 |       0 |         000000036 | Theo           |                    |         |      3 jaar geleden |                  518 |                    6030 |                    |                     |                        | H                 |
+      En heeft de persoon 'Theo' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     3 |          0 |
+      En heeft de persoon 'Theo' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | relatie_eind_datum | relatie_eind_plaats | relatie_eind_land_code | verbintenis_soort |
+        |     3 | P            |         0 |       0 |         000000036 | Theo           |               6030 | 1AA0100 |                     |                      |                         |                    |                     |                        |                   |
+        |     3 | R            |         0 |       0 |         000000024 | Tosca          |                    |         |      3 jaar geleden |                  518 |                    6030 |                    |                     |                        | H                 |
+      En heeft de persoon 'Thea' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     3 |          0 |
+      En heeft de persoon 'Thea' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | relatie_start_datum | relatie_start_plaats | relatie_start_land_code | relatie_eind_datum | relatie_eind_plaats | relatie_eind_land_code | verbintenis_soort |
+        |     3 | P            |         0 |       0 |         000000048 | Thea           |               6030 | 1AA0100 |                     |                      |                         |                    |                     |                        |                   |
+        |     3 | R            |         0 |       0 |         000000012 | Arjan          |                    |         |      5 jaar geleden |                  518 |                    6030 |                    |                     |                        | H                 |
+
+      Voorbeelden:
+
   Regel: Ouders worden toegevoegd als persoon_type respectievelijk '1' en '2' aan de persoon en de persoon als persoon_type 'K' bij de ouders
     # To Do: welke gegevens van een persoon worden meegenomen - want zijn relevant - in de relatie?
     # geboortedatum, geboorteland, ...?
@@ -771,6 +816,39 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         |     3 |            1 |         0 |       1 |         000000012 | Arjan          |                    |                    | 1AA0100 | gisteren - 17 jaar         |
         |     3 |            1 |         0 |       0 |                   |                |                    |                    | 1AE0100 |                            |
         |     3 |            2 |         0 |       0 |         000000024 | Tosca          |                    |                    | 1AA0100 | gisteren - 17 jaar         |
+
+    Scenario: {relatieve datum} heeft '{naam}' het ouderschap ontkend
+      Gegeven de persoon 'Arjan' met burgerservicenummer '000000012'
+      En de persoon 'Tosca' met burgerservicenummer '000000024'
+      En de persoon 'Theo' met burgerservicenummer '000000036'
+      * is minderjarige
+      * heeft 'Arjan' en 'Tosca' als ouders
+      En 4 jaar geleden heeft 'Arjan' het ouderschap ontkend
+      Als de sql statements gegenereerd uit de gegeven stappen zijn uitgevoerd
+      Dan heeft de persoon 'Arjan' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     1 |          0 |
+      En heeft de persoon 'Arjan' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr |
+        |     1 | P            |         0 |       0 |         000000012 | Arjan          |               6030 | 1AA0100 |
+        |     1 | K            |         0 |       1 |         000000036 | Theo           |                    | 1AA0100 |
+        |     1 | K            |         0 |       0 |                   |                |                    | 1AE0100 |
+      En heeft de persoon 'Tosca' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     2 |          0 |
+      En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr |
+        |     2 | P            |         0 |       0 |         000000024 | Tosca          |               6030 | 1AA0100 |
+        |     2 | K            |         0 |       0 |         000000036 | Theo           |                    | 1AA0100 |
+      En heeft de persoon 'Theo' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     3 |          0 |
+      En heeft de persoon 'Theo' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_datum     | geboorte_land_code | akte_nr | familie_betrek_start_datum | geldigheid_start_datum |
+        |     3 | P            |         0 |       0 |         000000036 | Theo           | gisteren - 17 jaar |               6030 | 1AA0100 |                            |                        |
+        |     3 |            1 |         0 |       1 |         000000012 | Arjan          |                    |                    | 1AA0100 | gisteren - 17 jaar         |                        |
+        |     3 |            1 |         0 |       0 |                   |                |                    |                    | 1AE0100 |                            |         4 jaar geleden |
+        |     3 |            2 |         0 |       0 |         000000024 | Tosca          |                    |                    | 1AA0100 | gisteren - 17 jaar         |                        |
 
   Regel: Een gerechtelijke uitspraak wordt vastgelegd in de gezagsverhouding
 

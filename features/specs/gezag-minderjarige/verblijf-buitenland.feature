@@ -5,10 +5,13 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven of
 
   We hanteren hierbij de volgende principes:
   - de vaste verblijfplaats van de minderjarige bepaalt onder welk recht het gezag bepaald wordt. Het land waar de ouders verblijven is niet relevant
-  - bij immigratie in Nederland valt de minderjarige onder de gezagsregels die gelden op het moment van immigratie en daardoor mogelijk niet meer onder de regels die golden bij geboorte of erkenning
   - eens gegeven, altijd gegeven: iemand kan niet het gezag verliezen door vestiging van de minderjarige in een ander land
   - een gerechtelijke uitspraak over gezag blijft geldig na vestiging in een ander land
+  - een adoptie blijft geldig na vestiging in een ander land
 
+  Nog niet uitgewerkt in deze versie:
+  - Verkrijgen van Gezamenlijk ouderlijk gezag bij ongehuwde ouders na verblijf van minderjarige in specifieke landen (België, Spanje, ...)
+  - Bepalen dat er sprake is van buitenlandse adoptie
 
   Achtergrond:
     Gegeven de persoon 'Gerda' met burgerservicenummer '000000012'
@@ -35,29 +38,9 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven of
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'Gezag is niet te bepalen omdat minderjarige nooit een vaste verblijfplaats in Nederland heeft gehad.'
 
-  Regel: Een minderjarige die twee ouders heeft en die na 1-1-2023 is geïmmigreerd heeft gezamenlijk ouderlijk gezag
-
-    Voorbeeld: ouders van minderjarige waren nooit met elkaar gehuwd en minderjarige is geïmmigreerd na 1-1-2023
-      Gegeven persoon 'Bert'
-      * heeft 'Aart' en 'Gerda' als ouders
-      * is geboren in Duitsland
-      * is geboren op 14-10-2019
-      * is op 6-1-2023 geïmmigreerd
-      Als gezag wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
-
-    Voorbeeld: ouders van minderjarige waren nooit met elkaar gehuwd en minderjarige is na 1-1-2023 geremigreerd naar Nederland
-      Gegeven persoon 'Bert'
-      * heeft 'Aart' en 'Gerda' als ouders
-      * is geboren op 14-10-2019
-      En 'Bert' is 5 jaar geleden geëmmigreerd naar Duitsland
-      En is op 6-1-2023 geïmmigreerd
-      Als gezag wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
-
   Regel: Een gerechtelijke uitspraak over het gezag voor een minderjarige blijft geldig wanneer de minderjarige een vaste verblijfplaats in het buitenland heeft of heeft gehad
 
-    Voorbeeld: Minderjarige is geïmmigreerd en daarna is er in een gerechtelijke uitspraak gezag toegewezen
+    Voorbeeld: minderjarige is geïmmigreerd en daarna is er in een gerechtelijke uitspraak gezag toegewezen
       Gegeven persoon 'Bert'
       * heeft 'Aart' en 'Gerda' als ouders
       * is geboren in Duitsland
@@ -179,6 +162,25 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven of
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
 
+    Voorbeeld: ouders van minderjarige waren nooit met elkaar gehuwd en minderjarige is in het buitenland geboren na 1-1-2023 en daarna geïmmigreerd
+      Gegeven persoon 'Bert'
+      * is geboren op 6-1-2023
+      * is geboren in Duitsland
+      * heeft 'Aart' en 'Gerda' als ouders
+      En 'Bert' is 1 jaar geleden geëmmigreerd naar Duitsland
+      Als gezag wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
+
+    Voorbeeld: ouders van minderjarige waren nooit met elkaar gehuwd en minderjarige is in het buitenland geboren voor 1-1-2023 en door vader erkend na 1-1-2023 en daarna geïmmigreerd
+      Gegeven persoon 'Bert'
+      * is geboren op 14-12-2022
+      * heeft 'Gerda' als ouder vanaf de geboortedatum
+      * heeft 'Aart' als ouder vanaf 3-1-2023
+      * is geboren in Duitsland
+      En 'Bert' is 1 jaar geleden geëmmigreerd naar Duitsland
+      Als gezag wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
+
     Voorbeeld: minderjarige is geëmigreerd en heeft twee ouders die gescheiden zijn en in het buitenland is het gezag toegewezen aan de moeder
       # wordt indicatie gezag wel bijgewerkt als de gerechtelijke uitspraak wel wordt ingeschreven in het gezagsregister wanneer de minderjarige in RNI staat?
       Gegeven 'Gerda' en 'Aart' zijn met elkaar gehuwd
@@ -206,9 +208,6 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven of
       En 'Gerda' is vorige maand geïmmigreerd naar Nederland
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
-
-      
-
 
   Regel: Het gezag kan worden bepaald voor een minderjarige die ooit Nederland als vaste verblijfplaats heeft gehad en gezamenlijk gezag heeft
 
@@ -249,7 +248,7 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven of
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gertrud'
 
-    Voorbeeld: Minderjarige heeft als vaste verblijfplaats een adres in het buitenland en heeft één ouder die ten tijde van de geboorte van minderjarige ongehuwd was
+    Voorbeeld: minderjarige heeft als vaste verblijfplaats een adres in het buitenland en heeft één ouder die ten tijde van de geboorte van minderjarige ongehuwd was
       Gegeven persoon 'Bert'
       * is geboren in Nederland
       * heeft 'Gerda' als ouder
@@ -257,10 +256,9 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven of
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
 
-  
   Regel: Het gezag kan niet worden bepaald voor een minderjarige die een vaste verblijfplaats in het buitenland heeft of heeft gehad en twee ouders heeft en waarvoor van rechtswege eenhoofdig ouderlijk gezag is bepaald
 
-    Voorbeeld: Minderjarige is geëmigreerd en van de ouders is geen huwelijk bekend
+    Voorbeeld: minderjarige is geëmigreerd en van de ouders is geen huwelijk bekend
       Gegeven persoon 'Bert'
       * is geboren in Nederland
       * heeft 'Aart' en 'Gerda' als ouders
@@ -270,22 +268,18 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven of
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige niet in Nederland woont.'
 
-    Voorbeeld: Minderjarige is voor 1-1-2023 zonder ouders geïmmigreerd
+    Voorbeeld: minderjarige is zonder ouders geïmmigreerd
       Gegeven persoon 'Bert'
+      * is geboren op 14-10-2019
       * is geboren in Duitsland
       * heeft 'Günther' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
       * heeft 'Gertrud' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
-      En 'Bert' is 10 jaar geleden geïmmigreerd naar Nederland
+      En 'Bert' is 1 jaar geleden geïmmigreerd naar Nederland
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige niet in Nederland geboren is.'
 
     Voorbeeld: minderjarige is geboren in het buitenland en in het buitenland geadopteerd door ongehuwde ouders
-      # Kan je uit het feit dat er geen Nederlandse geboorteakte is en wel twee ouders die in Nederland woonden ten tijde van de geboorte 
-      # en minderjarige is in het buitenland geboren en beide ouders zijn pas ouders geworden na de geboorte
-      # Kan je dan niet concluderen dat er sprake moet zijn van buitenlandse adoptie?
-      # Ziet deze situatie er in de BRP dus anders uit dan wanneer het kind van Nederlandse ouders bijv. tijdens vakantie in het buitenland geboren is?
-      # Evt. herkennen aan document omschrijving bevat "adoptie" of bevat "ad akte" of bevat "adopta"
-      # Nu parkeren, later oppakken als dit grote groep blijkt te zijn
+      # Wordt nog niet herkend als adoptie, later oppakken als dit grote groep blijkt te zijn
       Gegeven persoon 'Bert'
       * is geboren op 14-10-2019
       * is geboren in Duitsland
@@ -294,35 +288,27 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven of
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige in het buitenland is geboren.'
 
-#
-#
-# To Do: Gezamenlijk ouderlijk gezag bij ongehuwde ouders na verblijf van minderjarige in specifieke landen (België, Spanje, ...)
-  # buitenland > nl
-  #   geboorteland immigratieland   geboortedatum immigratiedatum   gezag
-  #   duitsland    duitsland        <2023         <2023             moeder --> gezag niet te bepalen omdat onzeker is wat de tussentijdse verblijfplaats was tussen geboorte en immigratie zijn geweest
-  #   duitsland    duitsland        <2023         >2023             beide ouders
-  #   duitsland    Spanje           <2023         <2023             beide ouders
-  #   Spanje       Spanje           <2023         <2023             beide ouders
-  #   Spanje       duitsland        <2023         <2023             beide ouders
-  # nl > buitenland
-  #   emigratieland gezag
-  #   duitsland     moeder --> gezag niet te bepalen
-  #   spanje        beide ouders
-  # nl > buitenland > nl
-  #   geboortedatum immigratiedatum   emigratieland gezag
-  #   <2023         <2023             duitsland     moeder --> gezag niet te bepalen
-  #   <2023         <2023             Spanje        beide ouders
-  #   <2023         >2023             duitsland     beide ouders       
-  # buitenland > nl > buitenland
-  #   geboorteland  immigratieland   geboortedatum   immigratiedatum   emigratieland  gezag
-  #   duitsland     duitsland        <2023           <2023            duitsland       moeder --> gezag niet te bepalen
-  #   spanje        duitsland        <2023           <2023            duitsland       beide ouders
-  #   duitsland     spanje           <2023           <2023            duitsland       beide ouders
-  #   duitsland     duitsland        <2023           <2023            spanje          beide ouders
-  # Regel: Een minderjarige geboren voor 2023 met twee ouders die nooit gehuwd waren en minderjarige is geëmigreerd (geweest) naar een land waarvan bekend is dat de vader gezag krijgt, heeft gezamenlijk ouderlijk gezag
-  #   # lijst waar we weten dat vader gezag krijgt (Spanje)
-  # Regel: Een minderjarige geboren voor 2023 met twee ouders die nooit gehuwd waren en minderjarige is geëmigreerd (geweest) naar een land waarvan bekend is dat de vader geen gezag krijgt, heeft de moeder eenhoofdig ouderlijk ouderlijk gezag
-  #   # lijst waar we weten dat vader geen gezag krijgt
-  # Regel: Het gezag kan niet worden bepaald voor een minderjarige geboren voor 2023 met twee ouders en minderjarige is geëmigreerd (geweest) naar een land waarvan niet bekend is of de vader gezag krijgt
-  #   # niet op een van beide lijsten: gezag niet te bepalen
-  #   Voorbeeld: Minderjarige geboren voor 2023 en moeder zijn naar het buitenland geëmigreerd en moeder was tot emigratie nooit met de vader gehuwd
+    Voorbeeld: ouders van minderjarige waren nooit met elkaar gehuwd en minderjarige is erkend voor 1-1-2023 en geïmmigreerd na 1-1-2023
+      Gegeven persoon 'Bert'
+      * is geboren op 14-10-2019
+      * heeft 'Gerda' als ouder
+      En 'Bert' is erkend door 'Aart' op 30-11-2019
+      * is geboren in Duitsland
+      * is op 6-1-2023 geïmmigreerd
+      Als gezag wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige in het buitenland is geboren.'
+
+    Voorbeeld: ouders van minderjarige waren nooit met elkaar gehuwd en minderjarige is erkend voor 1-1-2023 en is na 1-1-2023 geremigreerd naar Nederland
+      Gegeven persoon 'Bert'
+      * is geboren op 14-10-2019
+      * heeft 'Gerda' als ouder
+      En 'Bert' is erkend door 'Aart' op 30-11-2019
+      En 'Bert' is 5 jaar geleden geëmmigreerd naar <land>
+      En is op 6-11-2024 geïmmigreerd
+      Als gezag wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige in het buitenland heeft verbleven.'
+
+      Voorbeelden:
+        | land      | omschrijving land                                                                          |
+        | Duitsland | een land waar volgens het recht van dat land geen gezamenlijk gezag ontstaat bij erkenning |
+        | Spanje    | een waar door erkenning wel gezamenlijk gezag ontstaat                                     |

@@ -229,6 +229,24 @@ Functionaliteit: Gezag niet te bepalen
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
 
+    Voorbeeld: minderjarige geboren voor 1-1-2023 en is zonder de ouders geïmmigreerd uit Afghanistan
+      Gegeven persoon 'Bert'
+      * is geboren op 14-10-2019
+      * is geboren in Duitsland
+      * heeft 'Günther' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
+      * heeft 'Gertrud' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
+      En 'Bert' is 1 jaar geleden geïmmigreerd naar Nederland
+      Als gezag wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag niet te bepalen omdat niet kan worden bepaald of de ouders getrouwd zijn geweest.'
+
+    Voorbeeld: minderjarige is in het buitenland geboren en heeft één ouder waarbij geen huwelijk bekend is omdat ze zelf niet is ingeschreven in de BRP
+      Gegeven persoon 'Bert'
+      * is geboren in Duitsland
+      * heeft 'Gertrud' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
+      En 'Bert' is 10 jaar geleden geïmmigreerd naar Nederland
+      Als gezag wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag niet te bepalen omdat niet kan worden bepaald of de ouder getrouwd is geweest.'
+
   @nieuw
   Regel: minderjarige met één ouder die ongehuwd was bij geboorte heeft eenhoofdig ouderlijk gezag
 

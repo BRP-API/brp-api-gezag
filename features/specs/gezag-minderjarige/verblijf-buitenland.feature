@@ -1,5 +1,5 @@
 # language: nl
-Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven of daar verbleven hebben
+Functionaliteit: Gezag bepalen voor personen die in het buitenland verbleven hebben
   Wanneer een minderjarige een tijd een vaste verblijfplaats in het buitenland heeft gehad, kan het gezag onder buitenlands recht wijzigen.
   In sommige situaties is het daardoor niet te bepalen wat het gezag is.
 

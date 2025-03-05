@@ -44,12 +44,12 @@ Een kind kan automatisch of via de rechter een voogd krijgen:
 **Leeswijzer features**
 
 Gezag wordt bepaald door afleidingsregels (rules) in onderstaande volgorde toe te passen:
-1. Rules waarmee wordt vastgesteld dat er geen gezag is (zie de [Geen gezag functionaliteit](geen-gezag.feature))
-2. Rules waarmee wordt vastgesteld of er een geldige gerechtelijke uitspraak is over gezag, en of deze wordt herzien door adoptie, een reparatiehuwelijk of ontkenning (zie de [Gerechtelijke uitspraak functionaliteit](gerechtelijke-uitspraak-feature)) 
-3. Rules waarmee het gezag wordt bepaald van een minderjarige:
+1. Rules waarmee wordt vastgesteld of het gezag niet te bepalen is wanneer minderjarige de vaste verblijfplaats in het buitenland heeft (zie de [Gezag bepalen voor personen die in het buitenland verblijven](gezag-niet-te-bepalen.feature))
+2. Rules waarmee wordt vastgesteld dat er geen gezag is (zie de [Geen gezag functionaliteit](geen-gezag.feature))
+3. Rules waarmee wordt vastgesteld of er een geldige gerechtelijke uitspraak is over gezag, en of deze wordt herzien door adoptie, een reparatiehuwelijk of ontkenning (zie de [Gerechtelijke uitspraak functionaliteit](gerechtelijke-uitspraak-feature)) 
+4. Rules waarmee het gezag wordt bepaald van een minderjarige:
     - met twee ouders met een relatie met elkaar (zie de [Twee ouders met relatie](twee-ouders-met-relatie.feature))
     - met twee ouders zonder een relatie met elkaar (zie de [Twee ouders geen relatie](twee-ouders-geen-relatie.feature))
     - met één ouder (zie de [Eén ouder functionaliteit](één-ouder.feature))
     - zonder ouders (zie de [Geen ouder functionaliteit](geen-ouder.feature))
-4. Rules waarmee wordt vastgesteld of het gezag niet te bepalen is wanneer minderjarige de vaste verblijfplaats in het buitenland heeft of had (zie de [Gezag bepalen voor personen die in het buitenland verblijven of daar verbleven hebben](verblijf-buitenland.feature))
 5. Rules waarmee het gezag wordt bepaald wanneer gezaghouder(s) niet bevoegd of overleden zijn (zie de [Bevoegdheid tot gezag functionaliteit](bevoegdheid-tot-gezag.feature)).

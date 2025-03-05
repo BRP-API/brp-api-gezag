@@ -25,51 +25,6 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verbleven heb
     En de persoon 'Zoe' met burgerservicenummer '000000048'
     * is meerderjarig
 
-  Regel: Het gezag kan niet worden bepaald voor een minderjarige die een vaste verblijfplaats in het buitenland heeft
-    Dit betreft 2 soorten situaties:
-    - een minderjarige die nooit een vaste verblijfplaats in Nederland heeft gehad
-    - een minderjarige die geëmigreerd is: we weten niet wat er in het buitenland gebeurd is
-    
-    Voor niet-ingezeten personen worden gegevens over gerelateerden (ouders) en over gezagsuitspraken niet bijgehouden.
-
-    Voorbeeld: minderjarige staat ingeschreven als niet-ingezetene en heeft nooit een vaste verblijfplaats in Nederland gehad
-      Gegeven persoon 'Bert'
-      * is ingeschreven als niet-ingezetene met een verblijfplaats in België
-      Als gezag wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige niet Nederland als vaste verblijfplaats heeft.'
-
-    Voorbeeld: minderjarige is nooit ingezetene van Nederland geweest en heeft een tijdelijke verblijfplaats in Nederland
-      Gegeven persoon 'Bert'
-      * is ingeschreven als niet-ingezetene met een verblijfplaats in België
-      * is ingeschreven met een tijdelijke verblijfplaats in Nederland
-      Als gezag wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige niet Nederland als vaste verblijfplaats heeft.'
-
-    Voorbeeld: minderjarige is geëmigreerd naar het buitenland en heeft twee ouders die op het moment van emigratie met elkaar gehuwd waren
-      Gegeven 'Gerda' en 'Aart' zijn met elkaar gehuwd
-      En persoon 'Bert'
-      * heeft 'Aart' en 'Gerda' als ouders
-      * is geboren in Nederland
-      En 'Bert' is 1 jaar geleden geëmigreerd naar Duitsland
-      Als gezag wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige niet Nederland als vaste verblijfplaats heeft.'
-
-    Voorbeeld: Er is in een gerechtelijke uitspraak gezag toegewezen en daarna is de minderjarige geëmigreerd
-      Gegeven persoon 'Bert'
-      * heeft 'Aart' en 'Gerda' als ouders
-      En er is 2 jaar geleden een gerechtelijke uitspraak over het gezag geweest waarbij het gezag over 'Bert' is toegewezen aan <toegewezen aan>
-      En 'Bert' is 1 jaar geleden geëmigreerd naar België
-      Als gezag wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige niet Nederland als vaste verblijfplaats heeft.'
-
-      Voorbeelden:
-        | toegewezen aan             | gezag uitspraak in Nederland                                  |
-        | 'Gerda'                    | eenhoofdig ouderlijk gezag met ouder 'Gerda'                  |
-        | 'Aart'                     | eenhoofdig ouderlijk gezag met ouder 'Aart'                   |
-        | beide ouders               | gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart' |
-        | een voogdijinstelling      | voogdij                                                       |
-        | ouder 'Gerda' en een derde | gezamenlijk gezag met ouder 'Gerda' en een onbekende derde    |
-        | ouder 'Aart' en een derde  | gezamenlijk gezag met ouder 'Aart' en een onbekende derde     |
 
   Regel: Het gezag kan (nog) niet worden bepaald voor een minderjarige die een vaste verblijfplaats in het buitenland heeft gehad, met twee ouders en waarbij volgens de gegevens in de BRP van rechtswege eenhoofdig ouderlijk gezag zou worden bepaald
     Het gezag is niet te bepalen omdat:

@@ -192,7 +192,7 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven of
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en derde 'Zoe'
 
-  Regel: Het gezag kan worden bepaald voor een minderjarige een vaste verblijfplaats in het buitenland heeft gehad en één ouder heeft
+  Regel: Het gezag kan worden bepaald voor een minderjarige die een vaste verblijfplaats in het buitenland heeft gehad en één ouder heeft
 
     Voorbeeld: minderjarige is in het buitenland geboren en heeft één ouder waarbij geen huwelijk bekend is
       Gegeven persoon 'Bert'

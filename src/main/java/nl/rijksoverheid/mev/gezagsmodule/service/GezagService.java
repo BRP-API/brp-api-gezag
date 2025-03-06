@@ -19,7 +19,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-import static net.logstash.logback.argument.StructuredArguments.value;
+import static net.logstash.logback.marker.Markers.appendEntries;
 
 /**
  * Service voor bepalen gezag
@@ -122,13 +122,17 @@ public class GezagService {
         if (logger.isInfoEnabled()) {
             var gezagResultaat = new GezagResultaat(
                 loggingContext.getPlIdBy(burgerservicenummer),
+                burgerservicenummer,
                 arAntwoordenModel.getSoortGezag(),
                 arAntwoordenModel.getUitleg(),
                 route
             );
-            logger.info("Gezag bepaald voor persoon \"{}\": {} {}",
-                burgerservicenummer, value("gezag_resultaat", gezagResultaat),
-                value("antwoorden_model", arAntwoordenModel)
+            logger.info(
+                appendEntries(Map.of(
+                    "gezag_resultaat", gezagResultaat,
+                    "antwoorden_model", arAntwoordenModel
+                )),
+                "Gezag bepaald voor persoon"
             );
         }
         return gezagsRelaties;

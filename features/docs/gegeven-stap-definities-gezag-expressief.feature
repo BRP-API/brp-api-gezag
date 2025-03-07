@@ -208,6 +208,20 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         | pl_id | volg_nr | inschrijving_gemeente_code | vertrek_land_code |
         |     1 |       0 |                       1999 |              0000 |
 
+    Scenario: is ingeschreven met een tijdelijke verblijfplaats in Nederland
+      Gegeven de persoon 'Tosca' met burgerservicenummer '000000012'
+      * is ingeschreven met een tijdelijke verblijfplaats in Nederland
+      Als de sql statements gegenereerd uit de gegeven stappen zijn uitgevoerd
+      Dan heeft de persoon 'Tosca' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     1 |          0 |
+      En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr |
+        |     1 | P            |         0 |       0 |         000000012 | Tosca          |               6030 | 1AA0100 |
+      En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_tijdelijke_verblijfplaats'
+        | pl_id | volg_nr | inschrijving_gemeente_code | inschrijving_datum |
+        |     1 |       0 |                       0518 | gisteren - 1 jaar  |
+
     Scenario: de gemeente heeft vastgesteld dat de minderjarige niet op het adres verblijft
       Gegeven de persoon 'Tosca' met burgerservicenummer '000000012'
       * is ingeschreven in een Nederlandse gemeente

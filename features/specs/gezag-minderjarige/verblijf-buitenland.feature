@@ -75,7 +75,7 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verbleven heb
       * heeft 'Aart' en 'Gerda' als ouders
       * is geboren in Duitsland
       En is op 29-11-2022 geïmmigreerd
-      En er is 2 jaar geleden een gerechtelijke uitspraak over het gezag geweest waarbij het gezag over 'Bert' is toegewezen aan <toegewezen aan>
+      En 2 jaar geleden is in een gerechtelijke uitspraak het gezag toegewezen aan <toegewezen aan>
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' <gezag uitspraak>
 
@@ -91,7 +91,7 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verbleven heb
     Voorbeeld: Er is een gerechtelijke uitspraak gezag toegewezen, daarna is de minderjarige geëmigreerd en vervolgens weer geïmmigreerd
       Gegeven persoon 'Bert'
       * heeft 'Aart' en 'Gerda' als ouders
-      En er is 2 jaar geleden een gerechtelijke uitspraak over het gezag geweest waarbij het gezag over 'Bert' is toegewezen aan <toegewezen aan>
+      En 2 jaar geleden is in een gerechtelijke uitspraak het gezag toegewezen aan <toegewezen aan>
       En 'Bert' is 1 jaar geleden geëmigreerd naar België
       En 'Bert' is vorige maand geïmmigreerd naar Nederland
       Als gezag wordt gevraagd van 'Bert'

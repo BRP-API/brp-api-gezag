@@ -46,7 +46,7 @@ Regel: Het gezag kan niet worden bepaald voor een minderjarige die een vaste ver
     Voorbeeld: Er is in een gerechtelijke uitspraak gezag toegewezen en daarna is de minderjarige geëmigreerd
       Gegeven persoon 'Bert'
       * heeft 'Aart' en 'Gerda' als ouders
-      En is 2 jaar geleden is in een gerechtelijke uitspraak het gezag toegewezen aan <toegewezen aan>
+      En 2 jaar geleden is in een gerechtelijke uitspraak het gezag toegewezen aan <toegewezen aan>
       En 'Bert' is 1 jaar geleden geëmigreerd naar België
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige niet Nederland als vaste verblijfplaats heeft.'

@@ -19,7 +19,7 @@ Functionaliteit: Bevoegdheid tot gezag
   Regel: Er is sprake van eenhoofdig ouderlijk gezag als één van de ouders met gezamenlijk ouderlijk gezag overleden of niet bevoegd is
 
     Voorbeeld: Minderjarige heeft twee ouders en één van de ouders staat onder curatele
-      Gegeven 'Gerda' en 'Aart' zijn gehuwd
+      Gegeven 'Gerda' en 'Aart' zijn met elkaar gehuwd
       En persoon 'Bert'
       * heeft 'Gerda' als ouder
       * heeft 'Aart' als ouder
@@ -31,7 +31,7 @@ Functionaliteit: Bevoegdheid tot gezag
     #Bespreken: een ouder of beide ouders minderjarig met meerderjarigheidsverklaring - kunnnen we meerderjarigheidsverklaring herkennen of aannemen in de BRP?
 
     Voorbeeld: Minderjarige heeft twee ouders en beide ouders staan onder curatele
-      Gegeven 'Gerda' en 'Aart' zijn gehuwd
+      Gegeven 'Gerda' en 'Aart' zijn met elkaar gehuwd
       En persoon 'Bert'
       * heeft 'Gerda' als ouder
       * heeft 'Aart' als ouder

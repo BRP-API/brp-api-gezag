@@ -172,6 +172,32 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         """
       Dan is het gezag over 'Bert' voogdij
 
+  Regel: Dan is het gezag over '{aanduiding minderjarige}' voogdij met derde '{aanduiding derde}'
+
+    Scenario: voogdij met een bekende derde wordt verwacht
+      Gegeven de response body is gelijk aan
+        """
+        {
+          "personen": [
+            {
+              "gezag": [
+                {
+                  "type": "Voogdij",
+                  "minderjarige": {
+                    "burgerservicenummer": "000000036"
+                  },
+                  "derde": {
+                    "type": "BekendeDerde",
+                    "burgerservicenummer": "000000024"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+        """
+      Dan is het gezag over 'Bert' voogdij met derde 'Aart'
+
   Regel: Dan is er tijdelijk geen gezag over '{aanduiding minderjarige}' met de toelichting '{toelichting}'
 
     Scenario: tijdelijk geen gezag wordt verwacht

@@ -58,7 +58,7 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verbleven heb
       * is geboren op 14-10-2019
       * heeft 'Gerda' als ouder
       En 'Bert' is erkend door 'Aart' op 30-11-2019
-      En 'Bert' is 5 jaar geleden geëmmigreerd naar <land>
+      En 'Bert' is 5 jaar geleden geëmigreerd naar <land>
       En is op 6-11-2024 geïmmigreerd
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige in het buitenland heeft verbleven en onbekend is of de andere ouder dan de geboortemoeder daar gezag heeft gekregen.'

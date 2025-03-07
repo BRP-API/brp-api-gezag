@@ -993,6 +993,9 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         | pl_id | geheim_ind |
         |     2 |          0 |
       En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_datum     | geboorte_land_code | akte_nr |
+        |     1 | P            |         0 |       0 |         000000024 | Tosca          |                    |               6030 | 1AA0100 |
+        |     1 | K            |         0 |       1 |         000000036 | Theo           | gisteren - 17 jaar |                    | 1AA0100 |
       En heeft de persoon 'Theo' de volgende rij in tabel 'lo3_pl'
         | pl_id | geheim_ind |
         |     3 |          0 |

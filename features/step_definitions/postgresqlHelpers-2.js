@@ -1,4 +1,5 @@
 const { tableNameMap } = require('./brp');
+const { toDateOrString } = require('./brpDatum');
 
 function mustLog(result) {
     return (result.rowCount === null || result.rowCount === 0) && global.scenario.tags.some(t => ['@protocollering'].includes(t));
@@ -78,18 +79,19 @@ async function select(tableName, dataTable) {
         return;
     }
 
-    let columnNames = dataTable.rawTable[0];
-    let columnValues = dataTable.rawTable[1];
-    let plIdIndex = columnNames.indexOf('pl_id');
-    let whereColumn = columnNames[plIdIndex];
-    let whereValue = columnValues[plIdIndex];
-
     const client = await global.pool.connect();
-    let result = [];
+    const results = [];
+
     try {
         await client.query('BEGIN');
 
-        result = await executeAndLogStatement(client, selectStatement(tableName, columnNames, whereColumn, whereValue));
+        dataTable.hashes().forEach(async (row) => {
+            let result = await executeAndLogStatement(client, selectStatement(tableName, Object.keys(row), Object.values(row)));
+            results.push( {
+                result: result,
+                row: row
+            });
+        });
 
         await client.query('COMMIT');
     }
@@ -101,30 +103,7 @@ async function select(tableName, dataTable) {
         client?.release();
     }
 
-    return result;
-}
-
-async function selectFirstOrDefault(tabelNaam, columnNames, whereColumnName, whereValue, defaultValue='') {
-    let statement = selectStatement(tabelNaam, columnNames, whereColumnName, `'${whereValue}'`);
-
-    const client = await global.pool.connect();
-    let result = [];
-    try {
-        await client.query('BEGIN');
-
-        result = await executeAndLogStatement(client, statement);
-
-        await client.query('COMMIT');
-    }
-    catch (ex) {
-        global.logger.error(ex.message);
-        await client.query('ROLLBACK');
-    }
-    finally {
-        client?.release();
-    }
-
-    return result.rows ? result.rows[0][columnNames[0]] + '' : defaultValue;
+    return results;
 }
 
 async function execute(sqlStatements) {
@@ -152,11 +131,15 @@ async function execute(sqlStatements) {
     }
 }
 
-function selectStatement(tabelNaam, columnNames, whereColumn='pl_id', whereValue='1') {
+function selectStatement(tabelNaam, columns, values) {
+    values = values.map((v) => toDateOrString(v));
+    const whereColumns = columns.map((column, index) => column + `=$${index+1}`);
+
     return {
-        text: `SELECT ${columnNames.join(', ')} FROM public.${tabelNaam} WHERE ${whereColumn} = ${whereValue}`,
-        values: []
-    }
+        text: `SELECT ${columns.join()} FROM public.${tabelNaam} WHERE ${whereColumns.join(` AND `)}`,
+        categorie: tabelNaam,
+        values: values
+    };
 }
 
 function deleteStatement(tabelNaam, id = undefined) {
@@ -334,6 +317,5 @@ module.exports = {
     execute,
     rollback,
     truncate,
-    select,
-    selectFirstOrDefault
+    select
 }

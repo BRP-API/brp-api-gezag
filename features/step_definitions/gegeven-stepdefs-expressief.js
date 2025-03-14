@@ -422,10 +422,6 @@ Given(/^'(.*)' en '(.*)' zijn met elkaar gehuwd$/, function (aanduiding1, aandui
 });
 
 Given(/^'(.*)' en '(.*)' zijn (?!met elkaar)(.*) gehuwd$/, function (aanduiding1, aanduiding2, relatieveDatum) {
-    if (/(\d+) jaar geleden/.test(relatieveDatum)) {
-        const years = relatieveDatum.match(/(\d+)/)[0];
-        relatieveDatum = `vandaag - ${years} jaar`;
-    }
     const plaatsHuwelijk = '0518';
     const landHuwelijk = '6030';
 
@@ -483,10 +479,6 @@ Given(/^'(.*)' en '(.*)' zijn gescheiden$/, function (aanduiding1, aanduiding2) 
 });
 
 Given(/^'(.*)' en '(.*)' zijn (.*) gescheiden$/, function (aanduiding1, aanduiding2, relatieveDatum) {
-    if (/(\d+) jaar geleden/.test(relatieveDatum)) {
-        const years = relatieveDatum.match(/(\d+)/)[0];
-        relatieveDatum = `vandaag - ${years} jaar`;
-    }
     const plaatsScheiding = '0518';
     const landScheiding = '6030';
 
@@ -858,10 +850,6 @@ Given(/^(?:de persoon(?: '(.*)')? )?is op (\d*)-(\d*)-(\d*) geïmmigreerd?$/, fu
 });
 
 Given(/^(?:(?:de persoon )?'(.*)' )?is (.*) geïmmigreerd naar Nederland$/, function (aanduiding, relatieveDatum) {
-    if (/(\d+) jaar geleden/.test(relatieveDatum)) {
-        const years = relatieveDatum.match(/(\d+)/)[0];
-        relatieveDatum = `vandaag - ${years} jaar`;
-    }
 
     let brpDatum = toDateOrString(relatieveDatum);
     const gemeenteVanInschrijving = '0518';
@@ -877,10 +865,6 @@ Given(/^(?:(?:de persoon )?'(.*)' )?is (.*) geïmmigreerd naar Nederland$/, func
 });
 
 Given(/^(?:(?:de persoon )?'(.*)' )?is (.*) geëmigreerd naar (.*)$/, async function (aanduiding, relatieveDatum, landNaam) {
-    if (/(\d+) jaar geleden/.test(relatieveDatum)) {
-        const years = relatieveDatum.match(/(\d+)/)[0];
-        relatieveDatum = `vandaag - ${years} jaar`;
-    }
 
     let brpDatum = toDateOrString(relatieveDatum);
     let codeVanLand = await selectFirstOrDefault('lo3_land', ['land_code'], 'land_naam', landNaam, '6030');
@@ -1026,10 +1010,6 @@ Given(/^(?:'(.*)' )?is geboren op (\d*)-(\d*)-(\d*)$/, function (aanduiding, dag
 });
 
 Given(/^is (?!in\b)(.*) geboren$/, function (relatieveDatum) {
-    if (/(\d+) jaar geleden/.test(relatieveDatum)) {
-        const years = relatieveDatum.match(/(\d+)/)[0];
-        relatieveDatum = `vandaag - ${years} jaar`;
-    }
 
     let brpDatum = toDateOrString(relatieveDatum);
 
@@ -1106,10 +1086,6 @@ Given(/^in een gerechtelijke uitspraak is het gezag toegewezen aan '(.*)'$/, fun
 
 Given(/^(.*) is in een gerechtelijke uitspraak het gezag toegewezen aan '(.*)'$/, function (relatieveDatum, aanduiding) {
     let indicatieGezag = getIndicatieGezag(this.context, aanduiding);
-    if (/(\d+) jaar geleden/.test(relatieveDatum)) {
-        const years = relatieveDatum.match(/(\d+)/)[0];
-        relatieveDatum = `vandaag - ${years} jaar`;
-    }
 
     createGezagsverhouding(
         getPersoon(this.context, undefined),
@@ -1138,10 +1114,6 @@ Given(/^(.*) is in een gerechtelijke uitspraak het gezag toegewezen aan '(.*)' e
     let indicatieGezag = (getIndicatieGezag(this.context, aanduiding) == IndicatieGezag.Ouder1) 
         ? IndicatieGezag.Ouder1Derde 
         : IndicatieGezag.Ouder2Derde;
-    if (/(\d+) jaar geleden/.test(relatieveDatum)) {
-        const years = relatieveDatum.match(/(\d+)/)[0];            
-        relatieveDatum = `vandaag - ${years} jaar`;
-    }
 
     createGezagsverhouding(
         getPersoon(this.context, undefined),
@@ -1166,10 +1138,6 @@ Given(/^in een gerechtelijke uitspraak is het gezag toegewezen aan beide ouders$
 
 Given(/^(.*) is in een gerechtelijke uitspraak het gezag toegewezen aan beide ouders$/, function (relatieveDatum) {
     let indicatieGezag = IndicatieGezag.BeideOuders;
-    if (/(\d+) jaar geleden/.test(relatieveDatum)) {
-        const years = relatieveDatum.match(/(\d+)/)[0];
-        relatieveDatum = `vandaag - ${years} jaar`;
-    }
 
     createGezagsverhouding(
         getPersoon(this.context, undefined),
@@ -1194,10 +1162,6 @@ Given(/^in een gerechtelijke uitspraak is een (voogdijinstelling|derde) tot voog
 
 Given(/^(.*) is in een gerechtelijke uitspraak het gezag toegewezen aan een (voogdijinstelling|derde)$/, function (relatieveDatum, gezaghebbende) {
     let indicatieGezag = (gezaghebbende == 'voogdijinstelling') ? IndicatieGezag.VoogdijInstelling : IndicatieGezag.Derde;
-    if (/(\d+) jaar geleden/.test(relatieveDatum)) {
-        const years = relatieveDatum.match(/(\d+)/)[0];
-        relatieveDatum = `vandaag - ${years} jaar`;
-    }
 
     createGezagsverhouding(
         getPersoon(this.context, undefined),

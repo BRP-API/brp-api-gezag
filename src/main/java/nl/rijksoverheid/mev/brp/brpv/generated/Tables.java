@@ -4,10 +4,7 @@
 package nl.rijksoverheid.mev.brp.brpv.generated;
 
 
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.Lo3Pl;
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.Lo3PlGezagsverhouding;
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.Lo3PlPersoon;
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.Lo3PlVerblijfplaats;
+import nl.rijksoverheid.mev.brp.brpv.generated.tables.*;
 
 
 /**
@@ -35,4 +32,9 @@ public class Tables {
      * The table <code>public.lo3_pl_verblijfplaats</code>.
      */
     public static final Lo3PlVerblijfplaats LO3_PL_VERBLIJFPLAATS = Lo3PlVerblijfplaats.LO3_PL_VERBLIJFPLAATS;
+
+    /**
+     * The table <code>public.lo3_titel_predicaat</code>.
+     */
+    public static final Lo3TitelPredicaat LO3_TITEL_PREDICAAT = Lo3TitelPredicaat.LO3_TITEL_PREDICAAT;
 }

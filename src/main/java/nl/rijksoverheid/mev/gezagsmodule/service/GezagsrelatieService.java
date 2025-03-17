@@ -2,7 +2,7 @@ package nl.rijksoverheid.mev.gezagsmodule.service;
 
 import nl.rijksoverheid.mev.gezagsmodule.domain.ARAntwoordenModel;
 import nl.rijksoverheid.mev.gezagsmodule.domain.gezagvraag.GezagsBepaling;
-import org.openapitools.model.*;
+import nl.rijksoverheid.mev.web.api.v1.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

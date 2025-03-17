@@ -8,6 +8,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.util.Optional;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.verify;
@@ -194,8 +196,8 @@ class ErkenningNa01012023Test {
     @Test
     void erkenningNa01012023HavingBeenBornBeforeAndParentsNotHavingGeslachtsAand() {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
-        when(ouder1.getGeslachtsAanduiding()).thenReturn(null);
-        when(ouder2.getGeslachtsAanduiding()).thenReturn(null);
+        when(ouder1.getGeslachtsAanduiding()).thenReturn(Optional.empty());
+        when(ouder2.getGeslachtsAanduiding()).thenReturn(Optional.empty());
         when(ouder1.getDatumIngangFamiliebetrekking()).thenReturn(DATE_BEFORE_01012023);
         when(ouder2.getDatumIngangFamiliebetrekking()).thenReturn(DATE_BEFORE_01012023);
         persoonslijst.setOuder1(ouder1);
@@ -211,8 +213,8 @@ class ErkenningNa01012023Test {
     @Test
     void erkenningNa01012023HavingBeenBornBeforeAndParentsHavingEmptyGeslachtsAand() {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
-        when(ouder1.getGeslachtsAanduiding()).thenReturn("");
-        when(ouder2.getGeslachtsAanduiding()).thenReturn("");
+        when(ouder1.getGeslachtsAanduiding()).thenReturn(Optional.of(""));
+        when(ouder2.getGeslachtsAanduiding()).thenReturn(Optional.of(""));
         when(ouder1.getDatumIngangFamiliebetrekking()).thenReturn(DATE_BEFORE_01012023);
         when(ouder2.getDatumIngangFamiliebetrekking()).thenReturn(DATE_BEFORE_01012023);
         persoonslijst.setOuder1(ouder1);
@@ -228,8 +230,8 @@ class ErkenningNa01012023Test {
     @Test
     void erkenningNa01012023HavingBeenBornBeforeAndParentsHavingUnknownGeslachtsAand() {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
-        when(ouder1.getGeslachtsAanduiding()).thenReturn(GESLACHT_AANDUIDING_UNKNOWN);
-        when(ouder2.getGeslachtsAanduiding()).thenReturn(GESLACHT_AANDUIDING_UNKNOWN);
+        when(ouder1.getGeslachtsAanduiding()).thenReturn(Optional.of(GESLACHT_AANDUIDING_UNKNOWN));
+        when(ouder2.getGeslachtsAanduiding()).thenReturn(Optional.of(GESLACHT_AANDUIDING_UNKNOWN));
         when(ouder1.getDatumIngangFamiliebetrekking()).thenReturn(DATE_BEFORE_01012023);
         when(ouder2.getDatumIngangFamiliebetrekking()).thenReturn(DATE_BEFORE_01012023);
         persoonslijst.setOuder1(ouder1);
@@ -245,7 +247,7 @@ class ErkenningNa01012023Test {
     @Test
     void erkenningNa01012023HavingBeenBornBeforeAndOneParentHavingWomanGeslachtsAand() {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
-        when(ouder1.getGeslachtsAanduiding()).thenReturn(GESLACHT_AANDUIDING_WOMAN);
+        when(ouder1.getGeslachtsAanduiding()).thenReturn(Optional.of(GESLACHT_AANDUIDING_WOMAN));
         when(ouder1.getDatumIngangFamiliebetrekking()).thenReturn(DATE_BEFORE_01012023);
         when(ouder2.getDatumIngangFamiliebetrekking()).thenReturn(DATE_BEFORE_01012023);
         persoonslijst.setOuder1(ouder1);
@@ -261,7 +263,7 @@ class ErkenningNa01012023Test {
     @Test
     void erkenningNa01012023HavingBeenBornBeforeAndSecondParentHavingWomanGeslachtsAand() {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
-        when(ouder2.getGeslachtsAanduiding()).thenReturn(GESLACHT_AANDUIDING_WOMAN);
+        when(ouder2.getGeslachtsAanduiding()).thenReturn(Optional.of(GESLACHT_AANDUIDING_WOMAN));
         when(ouder1.getDatumIngangFamiliebetrekking()).thenReturn(DATE_BEFORE_01012023);
         when(ouder2.getDatumIngangFamiliebetrekking()).thenReturn(DATE_BEFORE_01012023);
         persoonslijst.setOuder1(ouder1);
@@ -277,8 +279,8 @@ class ErkenningNa01012023Test {
     @Test
     void erkenningNa01012023HavingBeenBornBeforeAndBothParentHavingManGeslachtsAand() {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
-        when(ouder1.getGeslachtsAanduiding()).thenReturn(GESLACHT_AANDUIDING_MAN);
-        when(ouder2.getGeslachtsAanduiding()).thenReturn(GESLACHT_AANDUIDING_MAN);
+        when(ouder1.getGeslachtsAanduiding()).thenReturn(Optional.of(GESLACHT_AANDUIDING_MAN));
+        when(ouder2.getGeslachtsAanduiding()).thenReturn(Optional.of(GESLACHT_AANDUIDING_MAN));
         when(ouder1.getDatumIngangFamiliebetrekking()).thenReturn(DATE_BEFORE_01012023);
         when(ouder2.getDatumIngangFamiliebetrekking()).thenReturn(DATE_BEFORE_01012023);
         persoonslijst.setOuder1(ouder1);

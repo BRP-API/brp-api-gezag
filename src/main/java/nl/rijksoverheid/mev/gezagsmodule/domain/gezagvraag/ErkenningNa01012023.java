@@ -127,8 +127,8 @@ public class ErkenningNa01012023 implements GezagVraag {
     private String bepaalGezagOpBasisVanGeboortemoeder(
         final Ouder1 persoonOuder1,
         final Ouder2 persoonOuder2) {
-        boolean isOuder1Vrouw = isVrouw(persoonOuder1.getGeslachtsAanduiding());
-        boolean isOuder2Vrouw = isVrouw(persoonOuder2.getGeslachtsAanduiding());
+        boolean isOuder1Vrouw = persoonOuder1.getGeslachtsAanduiding().map(this::isVrouw).orElse(false);
+        boolean isOuder2Vrouw = persoonOuder2.getGeslachtsAanduiding().map(this::isVrouw).orElse(false);
 
         if (eenVanDeOudersVrouw(isOuder1Vrouw, isOuder2Vrouw)) {
             return isOuder1Vrouw ? V2A_3_VOOR_OUDER1 : V2A_3_VOOR_OUDER2;

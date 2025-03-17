@@ -237,6 +237,10 @@ public class GezagsBepaling {
         return plNietOuder;
     }
 
+    public Optional<Persoonslijst> fetchPersoonslijstVanNietOuder() {
+        return Optional.ofNullable(getPlNietOuder());
+    }
+
     private boolean isValidPersoon(Persoonslijst plPersoon) {
         return plPersoon != null && plPersoon.getPersoon() != null
             && plPersoon.getPersoon().getGeboortedatum() != null;

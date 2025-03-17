@@ -1,11 +1,9 @@
 package nl.rijksoverheid.mev.gezagsmodule.domain;
 
+import jakarta.annotation.Nullable;
 import lombok.Getter;
 import lombok.Setter;
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.Lo3PlGezagsverhoudingRecord;
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.Lo3PlPersoonRecord;
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.Lo3PlRecord;
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.Lo3PlVerblijfplaatsRecord;
+import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.*;
 import nl.rijksoverheid.mev.exception.AfleidingsregelException;
 
 import java.time.LocalDate;
@@ -72,32 +70,44 @@ public class Persoonslijst {
         verblijfplaats = new Verblijfplaats(lo3PlVerblijfplaatsRecord);
     }
 
-    public void addRelatie(final Lo3PlPersoonRecord lo3PlPersoonRecord) {
-        huwelijkOfPartnerschappen.add(new HuwelijkOfPartnerschap(lo3PlPersoonRecord));
+    public void addRelatie(
+        Lo3PlPersoonRecord lo3PlPersoonRecord,
+        @Nullable Lo3TitelPredicaatRecord lo3TitelPredicaatRecord
+    ) {
+        huwelijkOfPartnerschappen.add(new HuwelijkOfPartnerschap(lo3PlPersoonRecord, lo3TitelPredicaatRecord));
     }
 
     public void addKind(final Lo3PlPersoonRecord lo3PlPersoonRecord) {
         kinderen.add(new Kind(lo3PlPersoonRecord));
     }
 
-    public void addOuder1(final Lo3PlPersoonRecord lo3PlPersoonRecord) {
-        ouder1 = new Ouder1(lo3PlPersoonRecord);
+    public void addOuder1(
+        Lo3PlPersoonRecord lo3PlPersoonRecord,
+        @Nullable Lo3TitelPredicaatRecord lo3TitelPredicaatRecord
+    ) {
+        ouder1 = new Ouder1(lo3PlPersoonRecord, lo3TitelPredicaatRecord);
     }
 
     public void addOuder1Geschiedenis(final Lo3PlPersoonRecord lo3PlPersoonRecord) {
         geschiedenisOuder1.add(new GeschiedenisOuder1(lo3PlPersoonRecord));
     }
 
-    public void addOuder2(final Lo3PlPersoonRecord lo3PlPersoonRecord) {
-        ouder2 = new Ouder2(lo3PlPersoonRecord);
+    public void addOuder2(
+        Lo3PlPersoonRecord lo3PlPersoonRecord,
+        @Nullable Lo3TitelPredicaatRecord lo3TitelPredicaatRecord
+    ) {
+        ouder2 = new Ouder2(lo3PlPersoonRecord, lo3TitelPredicaatRecord);
     }
 
     public void addOuder2Geschiedenis(final Lo3PlPersoonRecord lo3PlPersoonRecord) {
         geschiedenisOuder2.add(new GeschiedenisOuder2(lo3PlPersoonRecord));
     }
 
-    public void addPersoon(final Lo3PlPersoonRecord lo3PlPersoonRecord) {
-        persoon = new Persoon(lo3PlPersoonRecord);
+    public void addPersoon(
+        Lo3PlPersoonRecord lo3PlPersoonRecord,
+        @Nullable Lo3TitelPredicaatRecord lo3TitelPredicaatRecord
+    ) {
+        persoon = new Persoon(lo3PlPersoonRecord, lo3TitelPredicaatRecord);
     }
 
     public void addPersoonGeschiedenis(final Lo3PlPersoonRecord lo3PlPersoonRecord) {

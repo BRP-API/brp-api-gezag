@@ -1,10 +1,11 @@
-package nl.rijksoverheid.mev.gmapi;
+package nl.rijksoverheid.mev.web.api;
 
 import nl.rijksoverheid.mev.exception.GezagException;
-import org.openapitools.api.GezagsmoduleInterfaceApiDelegate;
-import org.openapitools.model.GezagRequest;
-import org.openapitools.model.GezagResponse;
-import org.openapitools.model.Persoon;
+import nl.rijksoverheid.mev.gmapi.BevoegdheidTotGezagService;
+import nl.rijksoverheid.mev.web.api.v1.GezagRequest;
+import nl.rijksoverheid.mev.web.api.v1.GezagResponse;
+import nl.rijksoverheid.mev.web.api.v1.GezagsmoduleInterfaceApiDelegate;
+import nl.rijksoverheid.mev.web.api.v1.Persoon;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.ExceptionHandler;

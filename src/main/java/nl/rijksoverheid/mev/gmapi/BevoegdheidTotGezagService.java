@@ -4,9 +4,9 @@ import nl.rijksoverheid.mev.exception.GezagException;
 import nl.rijksoverheid.mev.gezagsmodule.service.BrpService;
 import nl.rijksoverheid.mev.gezagsmodule.service.GezagService;
 import nl.rijksoverheid.mev.logging.LoggingContext;
-import org.openapitools.model.AbstractGezagsrelatie;
-import org.openapitools.model.GezagRequest;
-import org.openapitools.model.Persoon;
+import nl.rijksoverheid.mev.web.api.v1.AbstractGezagsrelatie;
+import nl.rijksoverheid.mev.web.api.v1.GezagRequest;
+import nl.rijksoverheid.mev.web.api.v1.Persoon;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

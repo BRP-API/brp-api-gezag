@@ -76,22 +76,10 @@ jooq {
     }
 }
 
-openApiGenerate {
-    generatorName = "spring"
-    inputSpec = "${projectDir}/src/main/resources/brp-api-gezag.yaml"
-
-    configOptions.put("delegatePattern", "true")
-    configOptions.put("documentationProvider", "none")
-    configOptions.put("implicitHeaders", "true")
-    configOptions.put("useOptional", "true")
-    configOptions.put("useSpringBoot3", "true")
-    configOptions.put("useTags", "true")
-}
-
 sourceSets {
     main {
         java {
-            srcDir("${layout.buildDirectory.get()}/generate-resources/main/src/main/java")
+            srcDir("${layout.buildDirectory.get()}/generate-resources/openapi/v1/src/main/java")
         }
     }
 }
@@ -145,6 +133,26 @@ springBoot {
             )
         }
     }
+}
+
+openApiGenerate {
+    generatorName = "spring"
+    inputSpec = "${projectDir}/src/main/resources/brp-api-gezag.yaml"
+    outputDir = "${buildDir}/generate-resources/openapi/v1"
+
+    configOptions.put("apiPackage", "nl.rijksoverheid.mev.web.api.v1")
+    configOptions.put("configPackage", "nl.rijksoverheid.mev.web.api.v1.configuration")
+    configOptions.put("invokerPackage", "nl.rijksoverheid.mev.web.api.v1")
+    configOptions.put("modelPackage", "nl.rijksoverheid.mev.web.api.v1")
+    configOptions.put("packageName", "nl.rijksoverheid.mev.web.api.v1")
+
+    configOptions.put("delegatePattern", "true")
+    configOptions.put("documentationProvider", "none")
+    configOptions.put("implicitHeaders", "true")
+    configOptions.put("useOptional", "true")
+    configOptions.put("useSpringBoot3", "true")
+    configOptions.put("useTags", "true")
+    configOptions.put("useSwaggerUI", "false")
 }
 
 tasks.withType<JavaCompile> {

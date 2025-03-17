@@ -4,9 +4,9 @@ import nl.rijksoverheid.mev.exception.GezagException;
 import nl.rijksoverheid.mev.gezagsmodule.service.BrpService;
 import nl.rijksoverheid.mev.gezagsmodule.service.GezagService;
 import nl.rijksoverheid.mev.logging.LoggingContext;
-import nl.rijksoverheid.mev.web.api.v1.AbstractGezagsrelatie;
-import nl.rijksoverheid.mev.web.api.v1.GezagRequest;
-import nl.rijksoverheid.mev.web.api.v1.Persoon;
+import nl.rijksoverheid.mev.web.api.v2.Gezagsrelatie;
+import nl.rijksoverheid.mev.web.api.v2.GezagRequest;
+import nl.rijksoverheid.mev.web.api.v2.Persoon;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -71,7 +71,7 @@ public class BevoegdheidTotGezagService {
             .gezag(gezagsrelaties);
     }
 
-    private Stream<AbstractGezagsrelatie> vindGezagsrelatiesVoorKinderen(final String burgerservicenummerPersoon) throws GezagException {
+    private Stream<Gezagsrelatie> vindGezagsrelatiesVoorKinderen(final String burgerservicenummerPersoon) throws GezagException {
         Set<String> kinderen = brpService.getBsnsMinderjarigeKinderenOuderEnPartners(burgerservicenummerPersoon);
 
         return gezagService.getGezag(kinderen, burgerservicenummerPersoon).stream();

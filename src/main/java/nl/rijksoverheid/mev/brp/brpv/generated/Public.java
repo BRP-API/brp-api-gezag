@@ -4,10 +4,7 @@
 package nl.rijksoverheid.mev.brp.brpv.generated;
 
 
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.Lo3Pl;
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.Lo3PlGezagsverhouding;
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.Lo3PlPersoon;
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.Lo3PlVerblijfplaats;
+import nl.rijksoverheid.mev.brp.brpv.generated.tables.*;
 import org.jooq.Catalog;
 import org.jooq.Table;
 import org.jooq.impl.SchemaImpl;
@@ -50,6 +47,11 @@ public class Public extends SchemaImpl {
     public final Lo3PlVerblijfplaats LO3_PL_VERBLIJFPLAATS = Lo3PlVerblijfplaats.LO3_PL_VERBLIJFPLAATS;
 
     /**
+     * The table <code>public.lo3_titel_predicaat</code>.
+     */
+    public final Lo3TitelPredicaat LO3_TITEL_PREDICAAT = Lo3TitelPredicaat.LO3_TITEL_PREDICAAT;
+
+    /**
      * No further instances allowed
      */
     private Public() {
@@ -68,7 +70,8 @@ public class Public extends SchemaImpl {
             Lo3Pl.LO3_PL,
             Lo3PlGezagsverhouding.LO3_PL_GEZAGSVERHOUDING,
             Lo3PlPersoon.LO3_PL_PERSOON,
-            Lo3PlVerblijfplaats.LO3_PL_VERBLIJFPLAATS
+            Lo3PlVerblijfplaats.LO3_PL_VERBLIJFPLAATS,
+            Lo3TitelPredicaat.LO3_TITEL_PREDICAAT
         );
     }
 }

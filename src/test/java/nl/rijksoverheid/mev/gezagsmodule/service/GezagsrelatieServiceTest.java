@@ -2,7 +2,7 @@ package nl.rijksoverheid.mev.gezagsmodule.service;
 
 import nl.rijksoverheid.mev.gezagsmodule.domain.ARAntwoordenModel;
 import nl.rijksoverheid.mev.gezagsmodule.domain.gezagvraag.GezagsBepaling;
-import nl.rijksoverheid.mev.web.api.v1.*;
+import nl.rijksoverheid.mev.web.api.v2.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

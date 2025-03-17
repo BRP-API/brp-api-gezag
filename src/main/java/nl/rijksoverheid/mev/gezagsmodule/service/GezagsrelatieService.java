@@ -2,7 +2,7 @@ package nl.rijksoverheid.mev.gezagsmodule.service;
 
 import nl.rijksoverheid.mev.gezagsmodule.domain.ARAntwoordenModel;
 import nl.rijksoverheid.mev.gezagsmodule.domain.gezagvraag.GezagsBepaling;
-import nl.rijksoverheid.mev.web.api.v1.*;
+import nl.rijksoverheid.mev.web.api.v2.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -49,21 +49,10 @@ public class GezagsrelatieService {
                 case "OG1" -> createEenhoofdelijkOuderlijkGezag(
                     arAntwoordenModel,
                     bevraagdePersoonIsDeMinderjarige,
-                    burgerservicenummerOuder1,
-                    burgerservicenummerOuder2,
-                    burgerservicenummer,
-                    burgerservicenummerPersoon);
-                case "OG2" -> createTweehoofdigOuderlijkGezag(
-                    burgerservicenummer,
-                    burgerservicenummerOuder1,
-                    burgerservicenummerOuder2);
-                case "GG" -> createGezamenlijkGezag(
-                    burgerservicenummer,
-                    burgerservicenummerNietOuder,
-                    arAntwoordenModel.hasOuder1Gezag(),
-                    burgerservicenummerOuder1,
-                    burgerservicenummerOuder2,
-                    arAntwoordenModel.isGezamenlijkGezagVanwegeGerechtelijkeUitspraak());
+                    gezagsBepaling
+                );
+                case "OG2" -> createTweehoofdigOuderlijkGezag(gezagsBepaling);
+                case "GG" -> createGezamenlijkGezag(arAntwoordenModel, gezagsBepaling);
                 case "V" -> createVoogdij(
                     bevraagdePersoonIsDeMinderjarige,
                     burgerservicenummerPersoon,
@@ -105,19 +94,32 @@ public class GezagsrelatieService {
     private AbstractGezagsrelatie createEenhoofdelijkOuderlijkGezag(
         final ARAntwoordenModel arAntwoordenModel,
         final boolean bevraagdePersoonIsDeMinderjarige,
-        final String burgerservicenummerOuder1,
-        final String burgerservicenummerOuder2,
-        final String burgerservicenummer,
-        final String burgerservicenummerPersoon) {
+        final GezagsBepaling gezagsBepaling
+    ) {
+        String burgerservicenummer = gezagsBepaling.getBurgerservicenummer();
+        String burgerservicenummerPersoon = gezagsBepaling.getBurgerservicenummerPersoon();
+        String burgerservicenummerOuder1 = gezagsBepaling.getBurgerservicenummerOuder1();
+        String burgerservicenummerOuder2 = gezagsBepaling.getBurgerservicenummerOuder2();
+
         if (arAntwoordenModel.hasOuder1Gezag() && burgerservicenummerOuder1 != null && (bevraagdePersoonIsDeMinderjarige || burgerservicenummerPersoon.equals(burgerservicenummerOuder1))) {
+            var ouder1 = gezagsBepaling.getPlPersoon().getOuder1AsOptional().orElseThrow();
+            var geslachtsnaam = ouder1.getGeslachtsnaam();
+
             return new EenhoofdigOuderlijkGezag()
-                .ouder(new GezagOuder().burgerservicenummer(burgerservicenummerOuder1))
+                .ouder(new GezagOuder()
+                    .burgerservicenummer(burgerservicenummerOuder1)
+                    .naam(new NaamVolledigeNaam().volledigeNaam(geslachtsnaam)))
                 .minderjarige(new Minderjarige().burgerservicenummer(burgerservicenummer))
                 .type(TYPE_EENHOOFDIG_OUDERLIJK_GEZAG);
         }
         if (arAntwoordenModel.hasOuder2Gezag() && burgerservicenummerOuder2 != null && (bevraagdePersoonIsDeMinderjarige || burgerservicenummerPersoon.equals(burgerservicenummerOuder2))) {
+            var ouder2 = gezagsBepaling.getPlPersoon().getOuder2AsOptional().orElseThrow();
+            var geslachtsnaam = ouder2.getGeslachtsnaam();
+
             return new EenhoofdigOuderlijkGezag()
-                .ouder(new GezagOuder().burgerservicenummer(burgerservicenummerOuder2))
+                .ouder(new GezagOuder()
+                    .burgerservicenummer(burgerservicenummerOuder1)
+                    .naam(new NaamVolledigeNaam().volledigeNaam(geslachtsnaam)))
                 .minderjarige(new Minderjarige().burgerservicenummer(burgerservicenummer))
                 .type(TYPE_EENHOOFDIG_OUDERLIJK_GEZAG);
         }
@@ -125,28 +127,55 @@ public class GezagsrelatieService {
         return null;
     }
 
-    private AbstractGezagsrelatie createTweehoofdigOuderlijkGezag(
-        final String burgerservicenummer,
-        final String burgerservicenummerOuder1,
-        final String burgerservicenummerOuder2) {
+    private AbstractGezagsrelatie createTweehoofdigOuderlijkGezag(GezagsBepaling gezagsBepaling) {
+        String burgerservicenummer = gezagsBepaling.getBurgerservicenummer();
+        String burgerservicenummerOuder1 = gezagsBepaling.getBurgerservicenummerOuder1();
+        String burgerservicenummerOuder2 = gezagsBepaling.getBurgerservicenummerOuder2();
+
+        var ouder1 = gezagsBepaling.getPlPersoon().getOuder1AsOptional().orElseThrow();
+        var ouder1Geslachtsnaam = ouder1.getGeslachtsnaam();
+        var ouder2 = gezagsBepaling.getPlPersoon().getOuder2AsOptional().orElseThrow();
+        var ouder2Geslachtsnaam = ouder2.getGeslachtsnaam();
+
         return new TweehoofdigOuderlijkGezag()
             .minderjarige(new Minderjarige().burgerservicenummer(burgerservicenummer))
-            .addOudersItem(new GezagOuder().burgerservicenummer(burgerservicenummerOuder1))
-            .addOudersItem(new GezagOuder().burgerservicenummer(burgerservicenummerOuder2))
+            .addOudersItem(new GezagOuder()
+                .burgerservicenummer(burgerservicenummerOuder1)
+                .naam(new NaamVolledigeNaam().volledigeNaam(ouder1Geslachtsnaam))
+            )
+            .addOudersItem(new GezagOuder()
+                .burgerservicenummer(burgerservicenummerOuder2)
+                .naam(new NaamVolledigeNaam().volledigeNaam(ouder2Geslachtsnaam))
+            )
             .type(TYPE_TWEEHOOFDIG_OUDERLIJK_GEZAG);
     }
 
     private AbstractGezagsrelatie createGezamenlijkGezag(
-        final String burgerservicenummer,
-        final String burgerservicenummerNietOuder,
-        final boolean ouder1Gezag,
-        final String burgerservicenummerOuder1,
-        final String burgerservicenummerOuder2,
-        final boolean isGezamenlijkGezagVanwegeGerechtelijkeUitspraak
+        ARAntwoordenModel arAntwoordenModel,
+        GezagsBepaling gezagsBepaling
     ) {
-        var gezagOuder = ouder1Gezag && burgerservicenummerOuder1 != null
-            ? new GezagOuder().burgerservicenummer(burgerservicenummerOuder1)
-            : new GezagOuder().burgerservicenummer(burgerservicenummerOuder2);
+        String burgerservicenummer = gezagsBepaling.getBurgerservicenummer();
+        String burgerservicenummerOuder1 = gezagsBepaling.getBurgerservicenummerOuder1();
+        String burgerservicenummerOuder2 = gezagsBepaling.getBurgerservicenummerOuder2();
+        String burgerservicenummerNietOuder = gezagsBepaling.getBurgerservicenummerNietOuder();
+
+        var ouder1 = gezagsBepaling.getPlPersoon().getOuder1AsOptional().orElseThrow();
+        var ouder1Geslachtsnaam = ouder1.getGeslachtsnaam();
+        var ouder2 = gezagsBepaling.getPlPersoon().getOuder2AsOptional().orElseThrow();
+        var ouder2Geslachtsnaam = ouder2.getGeslachtsnaam();
+
+        var hasOuder1Gezag = arAntwoordenModel.hasOuder1Gezag();
+        // @formatter:off
+        var gezagOuder = hasOuder1Gezag && burgerservicenummerOuder1 != null
+            ? new GezagOuder()
+                .burgerservicenummer(burgerservicenummerOuder1)
+                .naam(new NaamVolledigeNaam().volledigeNaam(ouder1Geslachtsnaam))
+            : new GezagOuder()
+                .burgerservicenummer(burgerservicenummerOuder2)
+                .naam(new NaamVolledigeNaam().volledigeNaam(ouder2Geslachtsnaam));
+        // @formatter:on
+
+        var isGezamenlijkGezagVanwegeGerechtelijkeUitspraak = arAntwoordenModel.isGezamenlijkGezagVanwegeGerechtelijkeUitspraak();
         var derde = burgerservicenummerNietOuder == null || isGezamenlijkGezagVanwegeGerechtelijkeUitspraak
             ? new OnbekendeDerde()
             : new BekendeDerde().burgerservicenummer(burgerservicenummerNietOuder);

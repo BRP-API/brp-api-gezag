@@ -356,8 +356,8 @@ Ja,Ja,Nee,Nee,,Nee,1_of_2_puntouders,,,,,,,,,,,38,N,Nee,Nee,Nee,Nee,3850,gezag i
 Ja,Ja,Nee,Ja,Ja,Nee,1_of_2_puntouders,,,,,,,,,,,38a,N,Nee,Nee,Nee,Nee,3851,gezag is niet te bepalen omdat één of meer ouders van minderjarige onbekend is.
 Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,,,,,,,,39e,N,Nee,Nee,Nee,Nee,3900,gezag is niet te bepalen omdat bij het bepalen van huwelijk/partnerschap van de ouder(s) relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,,,,,,,,39ae,N,Nee,Nee,Nee,Nee,3901,gezag is niet te bepalen omdat bij het bepalen van huwelijk/partnerschap van de ouder(s) relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Nee,,,,,,,39ee,N,Nee,Nee,Nee,Nee,3910,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Nee,,,,,,,39aee,N,Nee,Nee,Nee,Nee,3911,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Nee,,,,,,,39ee,N,Nee,Nee,Nee,Nee,3910,gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van bevoegdheid. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Nee,,,,,,,39aee,N,Nee,Nee,Nee,Nee,3911,gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van bevoegdheid. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Nee,,,,Ja_ouder_overleden,,,39o,G,Nee,Nee,Nee,Nee,3950,Tijdelijk geen gezag omdat de ouder overleden is.
 Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Nee,,,,Ja_ouder_onder_curatele,,,39c,G,Nee,Nee,Nee,Nee,3950,Tijdelijk geen gezag omdat de ouder onder curatele staat.
 Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Nee,,,,Ja_ouder_minderjarig,,,39m,G,Nee,Nee,Nee,Nee,3950,Tijdelijk geen gezag omdat de ouder minderjarig is.

@@ -168,6 +168,10 @@ public class GezagsBepaling {
         missendeGegegevens.add(missendGegegeven);
     }
 
+    public Optional<Persoonslijst> fetchPersoonslijstVanOuder1() {
+        return Optional.ofNullable(getPlOuder1());
+    }
+
     /**
      * @return ouder 1 of null
      */
@@ -189,6 +193,10 @@ public class GezagsBepaling {
             }
         }
         return plOuder1;
+    }
+
+    public Optional<Persoonslijst> fetchPersoonslijstVanOuder2() {
+        return Optional.ofNullable(getPlOuder2());
     }
 
     /**

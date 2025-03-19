@@ -8,6 +8,7 @@ import nl.rijksoverheid.mev.web.api.Gezagsrelaties;
 import nl.rijksoverheid.mev.web.api.v2.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -46,6 +47,8 @@ public class GezagsrelatieService {
         String burgerservicenummerNietOuder = gezagsBepaling.getBurgerservicenummerNietOuder();
 
         boolean bevraagdePersoonIsDeMinderjarige = burgerservicenummer.equals(burgerservicenummerPersoon);
+        MDC.put("isBevraagdePersoonDeMinderjarige", String.valueOf(bevraagdePersoonIsDeMinderjarige));
+
         if (tenminsteEenRelatieMetPersoon(bevraagdePersoonIsDeMinderjarige, burgerservicenummerPersoon, burgerservicenummerOuder1, burgerservicenummerOuder2, burgerservicenummerNietOuder, arAntwoordenModel)) {
             String soortGezag = arAntwoordenModel.getSoortGezag();
             Gezagsrelatie gezag = switch (soortGezag) {

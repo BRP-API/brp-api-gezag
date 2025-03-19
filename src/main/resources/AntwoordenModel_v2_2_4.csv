@@ -159,8 +159,8 @@ Ja,Ja,Nee,Nee,,Ja,Geen_ouders,,,,,Ja,,,,,,15,G,Nee,Nee,Nee,Nee,1550,Tijdelijk ge
 Ja,Ja,Nee,Ja,Ja,Ja,Geen_ouders,,,,,Ja,,,,,,15a,G,Nee,Nee,Nee,Nee,1551,Tijdelijk geen gezag omdat beide ouders onbekend zijn.
 Ja,Ja,Nee,Nee,,Ja,Twee_ouders,,,,,Ja,,,,,,16e,N,Nee,Nee,Nee,Nee,1600,gezag is niet te bepalen omdat relevante gegevens ontbreken bij het bepalen van huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,,,,,Ja,,,,,,16ae,N,Nee,Nee,Nee,Nee,1601,gezag is niet te bepalen omdat relevante gegevens ontbreken bij het bepalen van huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Nee,,Ja,1_of_2_puntouders,,,,,Ja,,,,,,16,N,Nee,Nee,Nee,Nee,1650,gezag is niet te bepalen omdat één of meer ouders van minderjarige onbekend is.
-Ja,Ja,Nee,Ja,Ja,Ja,1_of_2_puntouders,,,,,Ja,,,,,,16a,N,Nee,Nee,Nee,Nee,1651,gezag is niet te bepalen omdat één of meer ouders van minderjarige onbekend is.
+Ja,Ja,Nee,Nee,,Ja,1_of_2_puntouders,,,,,Ja,,,,,,16,N,Nee,Nee,Nee,Nee,1650,gezag is niet te bepalen omdat één of meer ouders van minderjarige onbekend zijn.
+Ja,Ja,Nee,Ja,Ja,Ja,1_of_2_puntouders,,,,,Ja,,,,,,16a,N,Nee,Nee,Nee,Nee,1651,gezag is niet te bepalen omdat één of meer ouders van minderjarige onbekend zijn.
 Ja,Ja,Nee,Nee,,Ja,Een_ouder,,,,,Ja,,,,,,17e,N,Nee,Nee,Nee,Nee,1700,gezag is niet te bepalen omdat relevante gegevens ontbreken bij het bepalen van huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,,Ja,,,,,,17ae,N,Nee,Nee,Nee,Nee,1701,gezag is niet te bepalen omdat relevante gegevens ontbreken bij het bepalen van huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Ja,Een_ouder,,,,Nee,Ja,,,,,,17ee,N,Nee,Nee,Nee,Nee,1710,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid van een ouder relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s

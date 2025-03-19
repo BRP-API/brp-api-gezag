@@ -2,7 +2,6 @@ package nl.rijksoverheid.mev.gezagsmodule.domain.gezagvraag;
 
 import nl.rijksoverheid.mev.gezagsmodule.domain.HuwelijkOfPartnerschap;
 import nl.rijksoverheid.mev.gezagsmodule.domain.Persoonslijst;
-import nl.rijksoverheid.mev.gezagsmodule.domain.PreconditieChecker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -30,13 +29,11 @@ public class ZijnJuridischeOudersNuMetElkaarGehuwdOfPartners implements GezagVra
     @Override
     public GezagVraagResult perform(final GezagsBepaling gezagsBepaling) {
         final var plPersoon = gezagsBepaling.getPlPersoon();
-        final var geboortedatumKind = plPersoon.getPersoon().getGeboortedatum();
-        PreconditieChecker.preconditieCheckOudersGeregistreerd(gezagsBepaling);
-
         final var plOuder1 = gezagsBepaling.getPlOuder1();
         final var plOuder2 = gezagsBepaling.getPlOuder2();
         final var hopOuder1 = getOuderHuwelijkOfPartnerschap(plOuder1, plOuder2);
         final var hopOuder2 = getOuderHuwelijkOfPartnerschap(plOuder2, plOuder1);
+        final var geboortedatumKind = plPersoon.getPersoon().getGeboortedatum();
         String answer;
         if (hopOuder1 == null || hopOuder2 == null) {
             answer = V2A_1_NEE_NA_GEBOORTE_NOOIT_GEHUWD_PARTNERS_GEWEEST_MET_ELKAAR;

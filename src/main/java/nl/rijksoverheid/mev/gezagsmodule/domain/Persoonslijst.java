@@ -141,6 +141,26 @@ public class Persoonslijst {
             .filter(Objects::nonNull);
     }
 
+    public boolean heeftHuwelijkMet(Ouder1 ouder1) {
+        String geslachtsnaam = ouder1.getGeslachtsnaam();
+        String geboortedatum = ouder1.getGeboortedatum();
+
+        return heeftHuwelijkMet(geslachtsnaam, geboortedatum);
+    }
+
+    public boolean heeftHuwelijkMet(Ouder2 ouder2) {
+        String geslachtsnaam = ouder2.getGeslachtsnaam();
+        String geboortedatum = ouder2.getGeboortedatum();
+
+        return heeftHuwelijkMet(geslachtsnaam, geboortedatum);
+    }
+
+    private boolean heeftHuwelijkMet(String geslachtsnaam, String geboortedatum) {
+        return huwelijkOfPartnerschappen.stream()
+            .filter(it -> it.getGeslachtsnaam().equals(geslachtsnaam))
+            .anyMatch(it -> it.getGeboortedatum().equals(geboortedatum));
+    }
+
     /**
      * Controleer huwelijk of partnerschap relaties
      * <p>

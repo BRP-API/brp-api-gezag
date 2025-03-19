@@ -35,9 +35,25 @@ public class ZijnJuridischeOudersNuMetElkaarGehuwdOfPartners implements GezagVra
 
         final var plOuder1 = gezagsBepaling.getPlOuder1();
         final var plOuder2 = gezagsBepaling.getPlOuder2();
+        String answer = null;
+
+        if (plOuder1 != null && plOuder2 == null) {
+            answer = plPersoon.getOuder2AsOptional().map(plOuder1::heeftHuwelijkMet).orElse(false)
+                ? V2A_1_JA_GEHUWD_OF_PARTNERS
+                : V2A_1_NEE_NA_GEBOORTE_NOOIT_GEHUWD_PARTNERS_GEWEEST_MET_ELKAAR;
+        }
+        if (plOuder1 == null && plOuder2 != null) {
+            answer = plPersoon.getOuder1AsOptional().map(plOuder2::heeftHuwelijkMet).orElse(false)
+                ? V2A_1_JA_GEHUWD_OF_PARTNERS
+                : V2A_1_NEE_NA_GEBOORTE_NOOIT_GEHUWD_PARTNERS_GEWEEST_MET_ELKAAR;
+        }
+        if (answer != null) {
+            gezagsBepaling.getArAntwoordenModel().setV02A01(answer);
+            return new GezagVraagResult(QUESTION_ID, answer);
+        }
+
         final var hopOuder1 = getOuderHuwelijkOfPartnerschap(plOuder1, plOuder2);
         final var hopOuder2 = getOuderHuwelijkOfPartnerschap(plOuder2, plOuder1);
-        String answer;
         if (hopOuder1 == null || hopOuder2 == null) {
             answer = V2A_1_NEE_NA_GEBOORTE_NOOIT_GEHUWD_PARTNERS_GEWEEST_MET_ELKAAR;
         } else if (isHuwelijkOfPartnerschapTussenOudersActueel(hopOuder1, hopOuder2)) {

@@ -1,11 +1,20 @@
 package nl.rijksoverheid.mev.web.api;
 
+import nl.rijksoverheid.mev.web.api.v1.AbstractGezagsrelatie;
 import nl.rijksoverheid.mev.web.api.v2.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
+
+import java.util.Objects;
+import java.util.Optional;
 
 /**
  * Enables backwards compatibility between v2 and v1 of the OpenApi Specification of this system.
  */
 class BackwardsCompatibility {
+
+    private static final Logger logger = LoggerFactory.getLogger(BackwardsCompatibility.class);
 
     private BackwardsCompatibility() {
     }
@@ -30,6 +39,7 @@ class BackwardsCompatibility {
     static nl.rijksoverheid.mev.web.api.v1.Persoon downgrade(Persoon persoon) {
         var gezagsrelaties = persoon.getGezag().stream()
             .map(BackwardsCompatibility::downgrade)
+            .flatMap(Optional::stream)
             .toList();
 
         var result = new nl.rijksoverheid.mev.web.api.v1.Persoon();
@@ -39,7 +49,10 @@ class BackwardsCompatibility {
         return result;
     }
 
-    private static nl.rijksoverheid.mev.web.api.v1.AbstractGezagsrelatie downgrade(Gezagsrelatie gezagsrelatie) {
+    private static Optional<AbstractGezagsrelatie> downgrade(Gezagsrelatie gezagsrelatie) {
+        var isEenOuderNietGeregistreerdMissendVeld = MDC.get("isEenOuderNietGeregistreerdMissendVeld");
+        MDC.remove("isEenOuderNietGeregistreerdMissendVeld");
+
         nl.rijksoverheid.mev.web.api.v1.AbstractGezagsrelatie result;
         try {
             result = switch (gezagsrelatie) {
@@ -52,18 +65,24 @@ class BackwardsCompatibility {
                 default ->
                     throw new IllegalArgumentException("Unexpected gezagsrelatie type: " + gezagsrelatie.getClass().getName());
             };
-        } catch (BurgerservicenummerVanOuderAbsent e) {
+        } catch (BurgerservicenummerAbsentException e) {
+            var isBevraagdePersoonMeerderjarig = Objects.equals(MDC.get("isBevraagdePersoonDeMinderjarige"), "false");
+            MDC.remove("isBevraagdePersoonDeMinderjarige");
+            if (isBevraagdePersoonMeerderjarig) return Optional.empty();
+            logger.info("Transformeer gezag uitspraak {} (v2) naar GezagNietTeBepalen (v1) omdat een ouder van de minderjarige het burgerservicenummer mist", gezagsrelatie.getType());
+
             var minderjarige = BackwardsCompatibility.downgrade(gezagsrelatie.getMinderjarige());
+            var toelichting = "Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: " + isEenOuderNietGeregistreerdMissendVeld;
 
             result = new nl.rijksoverheid.mev.web.api.v1.GezagNietTeBepalen()
                 .minderjarige(minderjarige)
-                .toelichting("Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder van bevraagde persoon is niet in BRP geregistreerd.");
+                .toelichting(toelichting);
         }
 
         result.setType(gezagsrelatie.getType());
         result.setInOnderzoek(gezagsrelatie.getInOnderzoek());
 
-        return result;
+        return Optional.of(result);
     }
 
     private static nl.rijksoverheid.mev.web.api.v1.TweehoofdigOuderlijkGezag downgrade(
@@ -103,9 +122,12 @@ class BackwardsCompatibility {
     }
 
     private static nl.rijksoverheid.mev.web.api.v1.GezagOuder downgrade(GezagOuder gezagOuder) {
-        var burgerservicenummer = gezagOuder.getBurgerservicenummer().orElseThrow(BurgerservicenummerVanOuderAbsent::new);
+        var burgerservicenummer = gezagOuder.getBurgerservicenummer().orElseThrow(BurgerservicenummerAbsentException::new);
         return new nl.rijksoverheid.mev.web.api.v1.GezagOuder()
             .burgerservicenummer(burgerservicenummer);
+    }
+
+    private static class BurgerservicenummerAbsentException extends RuntimeException {
     }
 
     private static nl.rijksoverheid.mev.web.api.v1.Derde downgrade(Derde derde) {
@@ -121,9 +143,6 @@ class BackwardsCompatibility {
             .type(onbekendeDerde.getType());
     }
 
-    private static class BurgerservicenummerVanOuderAbsent extends RuntimeException {
-    }
-
     private static nl.rijksoverheid.mev.web.api.v1.Voogdij downgrade(Voogdij voogdij) {
         var minderjarige = BackwardsCompatibility.downgrade(voogdij.getMinderjarige());
         var bekendeDerden = voogdij.getDerden().stream()
@@ -136,7 +155,7 @@ class BackwardsCompatibility {
     }
 
     private static nl.rijksoverheid.mev.web.api.v1.BekendeDerde downgrade(BekendeDerde bekendeDerde) {
-        var burgerservicenummer = bekendeDerde.getBurgerservicenummer().orElseThrow(BurgerservicenummerVanOuderAbsent::new);
+        var burgerservicenummer = bekendeDerde.getBurgerservicenummer().orElseThrow(BurgerservicenummerAbsentException::new);
         return new nl.rijksoverheid.mev.web.api.v1.BekendeDerde()
             .type(bekendeDerde.getType())
             .burgerservicenummer(burgerservicenummer);

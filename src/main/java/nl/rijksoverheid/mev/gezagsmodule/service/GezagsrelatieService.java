@@ -8,6 +8,7 @@ import nl.rijksoverheid.mev.web.api.Gezagsrelaties;
 import nl.rijksoverheid.mev.web.api.v2.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -46,6 +47,8 @@ public class GezagsrelatieService {
         String burgerservicenummerNietOuder = gezagsBepaling.getBurgerservicenummerNietOuder();
 
         boolean bevraagdePersoonIsDeMinderjarige = burgerservicenummer.equals(burgerservicenummerPersoon);
+        MDC.put("isBevraagdePersoonDeMinderjarige", String.valueOf(bevraagdePersoonIsDeMinderjarige));
+
         if (tenminsteEenRelatieMetPersoon(bevraagdePersoonIsDeMinderjarige, burgerservicenummerPersoon, burgerservicenummerOuder1, burgerservicenummerOuder2, burgerservicenummerNietOuder, arAntwoordenModel)) {
             String soortGezag = arAntwoordenModel.getSoortGezag();
             Gezagsrelatie gezag = switch (soortGezag) {
@@ -99,7 +102,7 @@ public class GezagsrelatieService {
         String burgerservicenummerOuder2 = gezagsBepaling.getBurgerservicenummerOuder2();
         var minderjarige = gezagsBepaling.getPlPersoon().getPersoon();
 
-        if (arAntwoordenModel.hasOuder1Gezag() && burgerservicenummerOuder1 != null && (bevraagdePersoonIsDeMinderjarige || burgerservicenummerPersoon.equals(burgerservicenummerOuder1))) {
+        if (arAntwoordenModel.hasOuder1Gezag() && bevraagdePersoonIsDeMinderjarige || burgerservicenummerPersoon.equals(burgerservicenummerOuder1) || burgerservicenummerOuder1 == null) {
             var ouder1 = gezagsBepaling.getPlPersoon().getOuder1AsOptional().orElseThrow();
 
             return new EenhoofdigOuderlijkGezag()
@@ -107,7 +110,7 @@ public class GezagsrelatieService {
                 .minderjarige(Gezagsrelaties.Minderjarigen.from(minderjarige))
                 .type(TYPE_EENHOOFDIG_OUDERLIJK_GEZAG);
         }
-        if (arAntwoordenModel.hasOuder2Gezag() && burgerservicenummerOuder2 != null && (bevraagdePersoonIsDeMinderjarige || burgerservicenummerPersoon.equals(burgerservicenummerOuder2))) {
+        if (arAntwoordenModel.hasOuder2Gezag() && bevraagdePersoonIsDeMinderjarige || burgerservicenummerPersoon.equals(burgerservicenummerOuder2) || burgerservicenummerOuder2 == null) {
             var ouder2 = gezagsBepaling.getPlPersoon().getOuder2AsOptional().orElseThrow();
 
             return new EenhoofdigOuderlijkGezag()
@@ -144,10 +147,15 @@ public class GezagsrelatieService {
             ? ouder1.map(Gezagsrelaties.GezagOuders::from).orElseThrow()
             : ouder2.map(Gezagsrelaties.GezagOuders::from).orElseThrow();
 
-        var isGezamenlijkGezagVanwegeGerechtelijkeUitspraak = arAntwoordenModel.isGezamenlijkGezagVanwegeGerechtelijkeUitspraak();
-        var derde = burgerservicenummerNietOuder == null || isGezamenlijkGezagVanwegeGerechtelijkeUitspraak
-            ? Gezagsrelaties.Derden.from()
-            : Gezagsrelaties.Derden.from(gezagsBepaling.getPlNietOuder().getPersoon());
+        var nietOuder = gezagsBepaling.getNietOuder();
+        Derde derde;
+        if (nietOuder != null) {
+            derde = Gezagsrelaties.Derden.from(nietOuder);
+        } else {
+            derde = burgerservicenummerNietOuder == null || arAntwoordenModel.isGezamenlijkGezagVanwegeGerechtelijkeUitspraak()
+                ? Gezagsrelaties.Derden.from()
+                : Gezagsrelaties.Derden.from(gezagsBepaling.getPlNietOuder().getPersoon());
+        }
 
         return new GezamenlijkGezag()
             .minderjarige(Gezagsrelaties.Minderjarigen.from(minderjarige))

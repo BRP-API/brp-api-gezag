@@ -73,6 +73,19 @@ public class Gezagsrelaties {
         private Derden() {
         }
 
+        public static BekendeDerde from(nl.rijksoverheid.mev.gezagsmodule.domain.HuwelijkOfPartnerschap huwelijkOfPartnerschap) {
+            var naam = huwelijkOfPartnerschap.getNaam().map(Namen::from).orElseThrow();
+            var optionalBurgerservicenummer = huwelijkOfPartnerschap.getBurgerservicenummer();
+            var optionalGeslachtsaanduiding = huwelijkOfPartnerschap.getGeslachtsaanduiding().map(Geslachtsaanduidingen::from);
+
+            var result = new BekendeDerde()
+                .type("BekendeDerde")
+                .naam(naam);
+            result.setBurgerservicenummer(optionalBurgerservicenummer);
+            result.setGeslacht(optionalGeslachtsaanduiding);
+            return result;
+        }
+
         public static BekendeDerde from(nl.rijksoverheid.mev.gezagsmodule.domain.Persoon derde) {
             var burgerservicenummer = derde.getBurgerservicenummer();
             var naam = derde.getNaam().map(Namen::from).orElseThrow();

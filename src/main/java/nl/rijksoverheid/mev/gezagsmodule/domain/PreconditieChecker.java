@@ -3,11 +3,16 @@ package nl.rijksoverheid.mev.gezagsmodule.domain;
 import nl.rijksoverheid.mev.exception.AfleidingsregelException;
 import nl.rijksoverheid.mev.exception.GezagException;
 import nl.rijksoverheid.mev.gezagsmodule.domain.gezagvraag.GezagsBepaling;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 
 /**
  * Controleerd of aan verschillende precondities is voldaan
  */
 public class PreconditieChecker {
+
+    private static final Logger logger = LoggerFactory.getLogger(PreconditieChecker.class);
 
     private PreconditieChecker() {}
 
@@ -25,8 +30,19 @@ public class PreconditieChecker {
                 "Van de bevraagde persoon zijn geen twee ouders bekend"
             );
         }
-        preconditieCheckGeregistreerd("ouder1", gezagsBepaling.getPlOuder1());
-        preconditieCheckGeregistreerd("ouder2", gezagsBepaling.getPlOuder2());
+        var persoonslijstOuder1 = gezagsBepaling.getPlOuder1();
+        if (persoonslijstOuder1 == null) {
+            MDC.put("isEenOuderNietGeregistreerdMissendVeld", "ouder1 van bevraagde persoon is niet in BRP geregistreerd");
+            return;
+        }
+        var persoonslijstOuder2 = gezagsBepaling.getPlOuder2();
+        if (persoonslijstOuder2 == null) {
+            MDC.put("isEenOuderNietGeregistreerdMissendVeld", "ouder2 van bevraagde persoon is niet in BRP geregistreerd");
+            return;
+        }
+
+        preconditieCheckGeregistreerd("ouder1", persoonslijstOuder1);
+        preconditieCheckGeregistreerd("ouder2", persoonslijstOuder2);
     }
 
     /**
@@ -34,9 +50,9 @@ public class PreconditieChecker {
      *
      * @param beschrijving de type persoon om te controleren
      * @param plOuder de persoonslijst van de ouder
-     * @throws GezagException wanneer de ouder niet is geregistreerd
+     * @throws AfleidingsregelException wanneer de ouder niet is geregistreerd
      */
-    public static void preconditieCheckGeregistreerd(final String beschrijving, final Persoonslijst plOuder) throws GezagException {
+    public static void preconditieCheckGeregistreerd(final String beschrijving, final Persoonslijst plOuder) throws AfleidingsregelException {
         boolean ouderGeregistreerdInBrp =
             plOuder != null
                 && plOuder.isNietIngeschrevenInRNI()

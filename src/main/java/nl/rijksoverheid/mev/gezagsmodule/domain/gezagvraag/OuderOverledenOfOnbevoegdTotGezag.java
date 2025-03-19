@@ -55,29 +55,36 @@ public class OuderOverledenOfOnbevoegdTotGezag implements GezagVraag {
             );
         }
 
-        final var persoonslijstOuder1 = gezagsBepaling.getPlOuder1();
-        final var persoonslijstOuder2 = gezagsBepaling.getPlOuder2();
-        if (persoonslijstOuder1 == null && persoonslijstOuder2 == null) {
+        var optionalPersoonslijstOuder1 = gezagsBepaling.fetchPersoonslijstVanOuder1();
+        var optionalPersoonslijstOuder2 = gezagsBepaling.fetchPersoonslijstVanOuder2();
+        if (optionalPersoonslijstOuder1.isEmpty() && optionalPersoonslijstOuder2.isEmpty()) {
             throw new AfleidingsregelException(
                 "Preconditie: Ouder moet geregistreerd staan in het BRP",
                 "Minimaal 1 ouder van de bevraagde persoon moet geregistreerd staan in het BRP"
             );
         }
-        if (persoonslijstOuder1 != null && !persoonslijstOuder1.isOverledenOfOnbevoegd()) {
+
+        boolean isOuder1OverledenOfOnbevoegd = optionalPersoonslijstOuder1
+            .map(Persoonslijst::isOverledenOfOnbevoegd)
+            .orElse(true);
+        if (gezagsBepaling.isOuder1AanwezigMaarNietIngeschreven() || !isOuder1OverledenOfOnbevoegd) {
             answer = V4A_3_NEE_OUDER1;
         }
 
-        if (persoonslijstOuder2 != null && !persoonslijstOuder2.isOverledenOfOnbevoegd()) {
+        boolean isOuder2OverledenOfOnbevoegd = optionalPersoonslijstOuder2
+            .map(Persoonslijst::isOverledenOfOnbevoegd)
+            .orElse(true);
+        if (gezagsBepaling.isOuder2AanwezigMaarNietIngeschreven() || !isOuder2OverledenOfOnbevoegd) {
             if (V4A_3_NEE_OUDER1.equals(answer)) {
                 answer = V4A_3_NEE;
             } else {
                 answer = V4A_3_NEE_OUDER2;
             }
         } else if (answer == null) {
-            final var isOuder1OverledenOfOnbevoegdToken = Optional.ofNullable(persoonslijstOuder1)
+            final var isOuder1OverledenOfOnbevoegdToken = optionalPersoonslijstOuder1
                 .flatMap(Persoonslijst::isOverledenOfOnbevoegdEncoded)
                 .orElse('?');
-            final var isOuder2OverledenOfOnbevoegdToken = Optional.ofNullable(persoonslijstOuder2)
+            final var isOuder2OverledenOfOnbevoegdToken = optionalPersoonslijstOuder2
                 .flatMap(Persoonslijst::isOverledenOfOnbevoegdEncoded)
                 .orElse('?');
             final var tokenArray = new char[]{isOuder1OverledenOfOnbevoegdToken,

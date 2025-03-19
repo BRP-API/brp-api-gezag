@@ -38,6 +38,7 @@ public class GezagsBepaling {
     private final Map<String, GezagVraag> vragenMap;
     @Getter
     private final ARAntwoordenModel arAntwoordenModel;
+    private HuwelijkOfPartnerschap nietOuder;
 
     public GezagsBepaling(
         final String burgerservicenummer,
@@ -168,6 +169,18 @@ public class GezagsBepaling {
         missendeGegegevens.add(missendGegegeven);
     }
 
+    public boolean isOuder1AanwezigMaarNietIngeschreven() {
+        return plPersoon.getOuder1AsOptional().isPresent() && fetchPersoonslijstVanOuder1().isEmpty();
+    }
+
+    public boolean isOuder2AanwezigMaarNietIngeschreven() {
+        return plPersoon.getOuder2AsOptional().isPresent() && fetchPersoonslijstVanOuder2().isEmpty();
+    }
+
+    public Optional<Persoonslijst> fetchPersoonslijstVanOuder1() {
+        return Optional.ofNullable(getPlOuder1());
+    }
+
     /**
      * @return ouder 1 of null
      */
@@ -189,6 +202,10 @@ public class GezagsBepaling {
             }
         }
         return plOuder1;
+    }
+
+    public Optional<Persoonslijst> fetchPersoonslijstVanOuder2() {
+        return Optional.ofNullable(getPlOuder2());
     }
 
     /**
@@ -254,6 +271,14 @@ public class GezagsBepaling {
         var hopRelaties = ouder.getHopRelaties();
         if (hopRelaties == null) return Optional.empty();
 
-        return Optional.ofNullable(hopRelaties.geborenInRelatie(geboortedatum));
+        return Optional.ofNullable(hopRelaties.findRelatieByDate(geboortedatum));
+    }
+
+    public HuwelijkOfPartnerschap getNietOuder() {
+        return nietOuder;
+    }
+
+    public void setNietOuder(HuwelijkOfPartnerschap nietOuder) {
+        this.nietOuder = nietOuder;
     }
 }

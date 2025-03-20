@@ -179,7 +179,11 @@ public class LoggingFilter extends OncePerRequestFilter implements ApplicationCo
     private Map<String, String> headersToMap(Collection<String> headerNames, UnaryOperator<String> headerValueResolver) {
         return headerNames.stream()
             .map(headerName -> Map.entry(headerName, headerValueResolver.apply(headerName)))
-            .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+            .collect(Collectors.toMap(
+                Map.Entry::getKey,
+                Map.Entry::getValue,
+                (v1, v2) -> v1 + "," + v2
+            ));
     }
 
     @Override

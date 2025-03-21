@@ -114,7 +114,7 @@ Functionaliteit: Twee ouders geen relatie
     Vindt er vóór de geboorte géén erkenning plaats, dan heeft het kind vanaf de geboorte alleen een geboortemoeder en hebben beide moeders (geboortemoeder en haar partner) gezamenlijk het gezag (1:253sa BW). 
     De partner of de bekende donor kan daarna erkennen. Het gezag blijft bij de meemoeder en de moeder.
 
-    # Check Vraag: de dag van erkenning maakt hier niet uit, kan ook de geboortedag zijn.
+    De dag van erkenning maakt hier niet uit, kan ook de geboortedag zijn.
 
     Voorbeeld: Minderjarige is na 1 januari 2023 en bij geboorteaangifte erkend door de bekende donor en moeder is gehuwd met een vrouw
       Gegeven 'Gerda' en 'Ariana' zijn 2 jaar geleden gehuwd
@@ -133,7 +133,6 @@ Functionaliteit: Twee ouders geen relatie
       Dan is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en derde 'Ariana'
 
   Regel: Als minderjarige na de geboorte en na 1 januari 2023 is erkend door de partner van de moeder, dan hebben de moeder en de partner van de moeder gezamenlijk ouderlijk gezag
-    # Check Vraag: is het dan nog steeds gezamenlijk gezag, of wordt het door erkenning gezamenlijk ouderlijk gezag?
 
     Voorbeeld: Minderjarige is na 1 januari 2023 en na de geboorte erkend door de vrouwelijke partner van de moeder (meemoeder)
       Gegeven 'Gerda' en 'Ariana' zijn 2 jaar geleden gehuwd

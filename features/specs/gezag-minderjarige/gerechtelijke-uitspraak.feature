@@ -15,8 +15,7 @@ Functionaliteit: Gerechtelijke uitspraak
     * is meerderjarig
 
   Regel: Als er een gerechtelijke uitspraak is dat één ouder het gezag heeft, en de ouders zijn daarna (opnieuw) met elkaar gehuwd, dan is er gezamenlijk ouderlijk gezag
-    # bespreken
-    # opmerking Heidi: dit is niet altijd zo. als het gezag is beëindigd door een gezagsbeëindigende maatregel van de kinderrechter, dan herstelt het reparatiehuwelijk het gezag niet
+    Opmerking: dit is niet altijd zo. als het gezag is beëindigd door een gezagsbeëindigende maatregel van de kinderrechter, dan herstelt het reparatiehuwelijk het gezag niet
 
     Voorbeeld: ouders zijn opnieuw met elkaar gehuwd (reparatiehuwelijk) na de gerechtelijke uitspraak
       Gegeven 'Gerda' en 'Aart' zijn 20 jaar geleden gehuwd
@@ -62,7 +61,6 @@ Functionaliteit: Gerechtelijke uitspraak
       Dan is het gezag over 'Bert' voogdij
 
   Regel: Als er een gerechtelijke uitspraak is dat beide ouders gezag hebben, en het ouderschap is ontkend, dan heeft de overgebleven ouder eenhoofdig ouderlijk gezag
-    #Bespreken
 
     Voorbeeld: na uitspraak over gezag aan beide ouders heeft vader ouderschap ontkend
       Gegeven persoon 'Bert'

@@ -30,14 +30,14 @@ Functionaliteit: Twee ouders met relatie
     Voorbeeld: Beide ouders waren gehuwd voor geboorte van het kind en zijn na geboorte gescheiden
       Gegeven 'Bert' is 7 jaar geleden geboren
       En 'Gerda' en 'Aart' zijn 8 jaar geleden gehuwd
-      En 'Gerda' en 'Bert' zijn 2 jaar geleden gescheiden
+      En 'Gerda' en 'Aart' zijn 2 jaar geleden gescheiden
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
 
     Voorbeeld: Beide ouders waren gehuwd en zijn gescheiden voor geboorte van het kind en zijn na geboorte opnieuw gehuwd
       Gegeven 'Bert' is 5 jaar geleden geboren
       En 'Gerda' en 'Aart' zijn 8 jaar geleden gehuwd
-      En 'Gerda' en 'Bert' zijn 6 jaar geleden gescheiden
+      En 'Gerda' en 'Aart' zijn 6 jaar geleden gescheiden
       En 'Gerda' en 'Aart' zijn 2 jaar geleden gehuwd
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
@@ -45,7 +45,7 @@ Functionaliteit: Twee ouders met relatie
     Voorbeeld: Beide ouders waren gehuwd na geboorte van het kind en zijn na geboorte gescheiden
       Gegeven 'Bert' is 7 jaar geleden geboren
       En 'Gerda' en 'Aart' zijn 5 jaar geleden gehuwd
-      En 'Gerda' en 'Bert' zijn 2 jaar geleden gescheiden
+      En 'Gerda' en 'Aart' zijn 2 jaar geleden gescheiden
       Als gezag wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
  

@@ -868,12 +868,14 @@ Given(/^(?:(?:de persoon )?'(.*)' )?is (.*) geëmigreerd naar (.*)$/, async func
 
     let brpDatum = toDateOrString(relatieveDatum);
     let codeVanLand = await selectFirstOrDefault('lo3_land', ['land_code'], 'land_naam', landNaam, '6030');
+    let gemeenteVanInschrijving = '1999';
 
     wijzigVerblijfplaats(
         getPersoon(this.context, aanduiding),
         arrayOfArraysToDataTable([
-            ['land vanwaar ingeschreven (14.10)', codeVanLand],
+            ['land adres buitenland (13.10)', codeVanLand],
             ['datum aanvang adres buitenland (13.20)', brpDatum],
+            ['gemeente van inschrijving (09.10)', gemeenteVanInschrijving]
         ]),
         false
     );

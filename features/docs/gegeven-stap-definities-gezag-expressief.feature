@@ -304,14 +304,11 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         | pl_id | geheim_ind |
         |     1 |          0 |
       En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
-        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code |
-        |     1 | P            |         0 |       0 |         000000012 | Tosca          |               5010 |
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr |
+        |     1 | P            |         0 |       0 |         000000012 | Tosca          |               6030 | 1AA0100 |
       En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_verblijfplaats'
-        | pl_id | volg_nr | inschrijving_gemeente_code | vestiging_datum   |
-        |     1 |       0 |                       0518 | <relatieve datum> |
-      En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_verblijfplaats'
-        | pl_id | volg_nr | inschrijving_gemeente_code | vestiging_datum   |
-        |     1 |       0 |                       0518 | <relatieve datum> |
+        | pl_id | volg_nr | vestiging_land_code | vertrek_datum     |
+        |     1 |       0 |         <land code> | <relatieve datum> |
 
       Voorbeelden:
         | relatieve datum | land naam   | land code |

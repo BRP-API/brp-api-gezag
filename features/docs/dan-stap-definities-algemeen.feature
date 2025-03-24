@@ -1,13 +1,17 @@
 #language: nl
 
-@skip-verify
+@stap-documentatie @skip-verify
 Functionaliteit: Geen javascript fout bij ongeldig response
 
   Scenario: naam veld in de response heeft de waarde null
     Gegeven de response body is gelijk aan
     """
     {
-      "personen": [ ]
+      "personen": [
+        {
+          "naam": null
+        }
+      ]
     }
     """
     Dan heeft de response geen personen
@@ -16,7 +20,11 @@ Functionaliteit: Geen javascript fout bij ongeldig response
     Gegeven de response body is gelijk aan
     """
     {
-      "personen": [ ]
+      "personen": [
+        {
+          "naam": undefined
+        }
+      ]
     }
     """
     Dan heeft de response geen personen

@@ -284,8 +284,8 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         | pl_id | geheim_ind |
         |     1 |          0 |
       En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
-        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code |
-        |     1 | P            |         0 |       0 |         000000012 | Tosca          |               5010 |
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam |
+        |     1 | P            |         0 |       0 |         000000012 | Tosca          |
       En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_verblijfplaats'
         | pl_id | volg_nr | inschrijving_gemeente_code | vestiging_datum   |
         |     1 |       0 |                       0518 | <relatieve datum> |
@@ -304,14 +304,11 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         | pl_id | geheim_ind |
         |     1 |          0 |
       En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
-        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code |
-        |     1 | P            |         0 |       0 |         000000012 | Tosca          |               5010 |
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam |
+        |     1 | P            |         0 |       0 |         000000012 | Tosca          |
       En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_verblijfplaats'
-        | pl_id | volg_nr | inschrijving_gemeente_code | vestiging_datum   |
-        |     1 |       0 |                       0518 | <relatieve datum> |
-      En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_verblijfplaats'
-        | pl_id | volg_nr | inschrijving_gemeente_code | vestiging_datum   |
-        |     1 |       0 |                       0518 | <relatieve datum> |
+        | pl_id | volg_nr | inschrijving_gemeente_code | vertrek_datum     | vertrek_land_code |
+        |     1 |       0 |                       1999 | <relatieve datum> | <land code>       |
 
       Voorbeelden:
         | relatieve datum | land naam   | land code |
@@ -319,6 +316,29 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         |  2 jaar geleden | Spanje      |      6037 |
         |  2 jaar geleden | Duitsland   |      6029 |
         |  2 jaar geleden | Afghanistan |      6023 |
+
+    Scenario: neem land mee van vorige verblijfplaats: '{naam}' is {relatievedatum} geïmmigreerd naar Nederland
+      Gegeven de persoon 'Tosca' met burgerservicenummer '000000012'
+      En 'Tosca' is 2 jaar geleden geëmigreerd naar <land naam>
+      En 'Tosca' is 1 jaar geleden geïmmigreerd naar Nederland
+      Als de sql statements gegenereerd uit de gegeven stappen zijn uitgevoerd
+      Dan heeft de persoon 'Tosca' de volgende rij in tabel 'lo3_pl'
+        | pl_id | geheim_ind |
+        |     1 |          0 |
+      En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_persoon'
+        | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam |
+        |     1 | P            |         0 |       0 |         000000012 | Tosca          |
+      En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_verblijfplaats'
+        | pl_id | volg_nr | inschrijving_gemeente_code | vertrek_datum  | vertrek_land_code | vestiging_datum | vestiging_land_code |
+        |     1 |       0 |                       0518 |                |                   |  1 jaar geleden | <land code>         |
+        |     1 |       1 |                       1999 | 2 jaar geleden | <land code>       |                 |                     |
+
+      Voorbeelden:
+        | land naam   | land code |
+        | België      |      5010 |
+        | Spanje      |      6037 |
+        | Duitsland   |      6029 |
+        | Afghanistan |      6023 |
 
   Regel: Huwelijk en geregistreerd partnerschap wordt toegevoegd als persoon_type 'R' voor beide betrokken personen
     # To Do: welke gegevens van een persoon worden meegenomen - want zijn relevant - in de relatie?
@@ -579,7 +599,7 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam | geboorte_land_code | akte_nr | familie_betrek_start_datum |
         |     2 | P            |         0 |       0 |         000000036 | Theo           |               6030 | 1AA0100 |                            |
         |     2 |            1 |         0 |       0 |         000000012 | Arjan          |                    | 1AA0100 | gisteren - 17 jaar         |
-    
+
     Scenario: heeft '{naam}' als ouder vanaf de geboortedatum
       # deze stap is volledig identiek aan stap "heeft '{naam}' als ouder"
       # toevoeging is alleen bedoeld om aan lezer te benadrukken dat de ouder op de geboorteakte staat en familierechtelijke betrekking gelijk is aan geboortedatum

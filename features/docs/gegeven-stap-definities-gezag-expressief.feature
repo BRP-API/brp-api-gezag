@@ -307,8 +307,8 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         | pl_id | persoon_type | stapel_nr | volg_nr | burger_service_nr | geslachts_naam |
         |     1 | P            |         0 |       0 |         000000012 | Tosca          |
       En heeft de persoon 'Tosca' de volgende rijen in tabel 'lo3_pl_verblijfplaats'
-        | pl_id | volg_nr  | vertrek_datum     | vertrek_land_code |
-        |     1 |       0  | <relatieve datum> | <land code>       |
+        | pl_id | volg_nr  | inschrijving_gemeente_code | vertrek_datum     | vertrek_land_code |
+        |     1 |       0  | 1999                       | <relatieve datum> | <land code>       |
 
       Voorbeelden:
         | relatieve datum | land naam   | land code |

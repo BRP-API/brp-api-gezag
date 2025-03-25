@@ -24,7 +24,7 @@ Functionaliteit: Bevoegdheid tot gezag
       * heeft 'Gerda' als ouder
       * heeft 'Aart' als ouder
       En 'Gerda' staat onder curatele
-      Als gezag wordt gevraagd van 'Bert'
+      Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Aart'
 
   Regel: Er is tijdelijk geen gezag als beide ouders met gezamenlijk ouderlijk gezag overleden of niet bevoegd zijn
@@ -37,7 +37,7 @@ Functionaliteit: Bevoegdheid tot gezag
       * heeft 'Aart' als ouder
       En 'Gerda' <bevoegdheid Gerda>
       En 'Aart' <bevoegdheid Aart>
-      Als gezag wordt gevraagd van 'Bert'
+      Als 'gezag' wordt gevraagd van 'Bert'
       Dan is er tijdelijk geen gezag over 'Bert' met de toelichting '<toelichting>.'
 
       Voorbeelden:
@@ -55,7 +55,7 @@ Functionaliteit: Bevoegdheid tot gezag
       Gegeven persoon 'Bert'
       * heeft 'Gerda' als ouder
       En 'Gerda' is overleden
-      Als gezag wordt gevraagd van 'Bert'
+      Als 'gezag' wordt gevraagd van 'Bert'
       Dan is er tijdelijk geen gezag over 'Bert' met de toelichting 'Tijdelijk geen gezag omdat de ouder overleden is.'
 
   Regel: De partner heeft voogdij als de ouder met gezamenlijk gezag overleden of niet bevoegd is
@@ -66,7 +66,7 @@ Functionaliteit: Bevoegdheid tot gezag
       * is geboren op 1-1-2012
       * heeft 'Gerda' als ouder
       En 'Gerda' staat onder curatele
-      Als gezag wordt gevraagd van 'Bert'
+      Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' voogdij met derde 'Ariana'
 
   Regel: Er is sprake van voogdij als de ouder met gezamenlijk gezag met een derde overleden of niet bevoegd is
@@ -77,7 +77,7 @@ Functionaliteit: Bevoegdheid tot gezag
       * heeft 'Aart' als ouder
       En in een gerechtelijke uitspraak is het gezag toegewezen aan ouder 'Gerda' en een derde
       En 'Gerda' is overleden
-      Als gezag wordt gevraagd van 'Bert'
+      Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' voogdij
 
   Regel: Er is sprake van eenhoofdig ouderlijk gezag als de partner met gezamenlijk gezag overleden of niet bevoegd is
@@ -88,7 +88,7 @@ Functionaliteit: Bevoegdheid tot gezag
       * is geboren op 1-1-2012
       * heeft 'Gerda' als ouder
       En 'Ariana' staat onder curatele
-      Als gezag wordt gevraagd van 'Bert'
+      Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
 
   Regel: Er is tijdelijk geen gezag als de ouder en de partner met gezamenlijk gezag overleden of niet bevoegd zijn
@@ -100,5 +100,5 @@ Functionaliteit: Bevoegdheid tot gezag
       * heeft 'Gerda' als ouder
       En 'Gerda' staat onder curatele
       En 'Ariana' staat onder curatele
-      Als gezag wordt gevraagd van 'Bert'
+      Als 'gezag' wordt gevraagd van 'Bert'
       Dan is er tijdelijk geen gezag over 'Bert' met de toelichting 'Tijdelijk geen gezag omdat ouder en partner onder curatele staan.'

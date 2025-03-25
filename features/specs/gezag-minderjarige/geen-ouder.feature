@@ -13,11 +13,11 @@ Functionaliteit: Geen ouder
     Voorbeeld: De ouders zijn onbekend
       Gegeven persoon 'Bert'
       * is met onbekende ouders ingeschreven
-      Als gezag wordt gevraagd van 'Bert'
+      Als 'gezag' wordt gevraagd van 'Bert'
       Dan is er tijdelijk geen gezag over 'Bert' met de toelichting 'Tijdelijk geen gezag omdat beide ouders onbekend zijn'
 
     Voorbeeld: Er is een onbekende ouder
       Gegeven persoon 'Bert'
       * is als vondeling ingeschreven
-      Als gezag wordt gevraagd van 'Bert'
+      Als 'gezag' wordt gevraagd van 'Bert'
       Dan is er tijdelijk geen gezag over 'Bert' met de toelichting 'Tijdelijk geen gezag omdat beide ouders onbekend zijn'

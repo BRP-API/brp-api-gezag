@@ -121,7 +121,7 @@ function gegevenDePersoonMetBsn(context, aanduiding, burgerservicenummer, dataTa
     );
 }
 
-Given(/^(?:de )?persoon '([a-zA-Z0-9]*)'$/, function (aanduiding, dataTable) {
+Given(/^de persoon '([a-zA-Z0-9]*)' met$/, function (aanduiding, dataTable) {
     gegevenDePersoonMetBsn(this.context, aanduiding, undefined, dataTable);
 
     global.logger.info(`gegeven persoon '${aanduiding}'`, getPersoon(this.context, aanduiding));
@@ -129,6 +129,22 @@ Given(/^(?:de )?persoon '([a-zA-Z0-9]*)'$/, function (aanduiding, dataTable) {
 
 Given(/^(?:de persoon(?: '(.*)')? )?met burgerservicenummer '(\d*)'$/, function (aanduiding, burgerservicenummer) {
     gegevenDePersoonMetBsn(this.context, aanduiding, burgerservicenummer, undefined);
+});
+
+function wijzigPersoonContext(context, aanduiding) {
+    const persoonId = `persoon-${aanduiding}`;
+    const index = context.data.personen.findIndex(element => element.id === persoonId);
+
+    if (index !== -1) {
+        const [element] = context.data.personen.splice(index, 1);
+        context.data.personen.push(element);
+    }
+}
+
+Given(/^persoon '([a-zA-Z0-9]*)'$/, function (aanduiding) {
+    wijzigPersoonContext(this.context, aanduiding);
+
+    global.logger.info(`gegeven persoon '${aanduiding}'`, getPersoon(this.context, aanduiding));
 });
 
 Given(/^adres '([a-zA-Z0-9]*)'$/, function (aanduiding, dataTable) {

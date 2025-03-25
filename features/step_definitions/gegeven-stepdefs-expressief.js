@@ -3,6 +3,7 @@ const { objectToDataTable, arrayOfArraysToDataTable } = require('./dataTableFact
 const { createPersoon,
         aanvullenPersoon,
         wijzigPersoon,
+        wijzigGeadopteerdPersoon,
         createKind,
         createOuder,
         wijzigOuder,

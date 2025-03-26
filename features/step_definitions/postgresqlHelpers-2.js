@@ -147,7 +147,10 @@ async function selectFirstOrDefault(tabelNaam, columnNames, whereColumnName, whe
 function setAdresIdForVerblijfplaatsen(persoon, adressen) {
     for(let statement of persoon.statements) {
         if(statement.categorie === 'verblijfplaats') {
-            statement.values[2] = adressen[statement.values[2]].adresId;
+            const adres = adressen[statement.values[2]];
+            if(adres) {
+                statement.values[2] = adres.adresId;
+            }
         }
     }
 }

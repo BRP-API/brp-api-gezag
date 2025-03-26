@@ -255,11 +255,11 @@ Given(/^heeft de volgende persoon zonder burgerservicenummer als ouder ([1-2])$/
     global.logger.info(`heeft de volgende persoon zonder burgerservicenummer als ouder ${ouderType}`, getPersoon(this.context, undefined));
 });
 
-Given(/^is minderjarig/, function () {
+Given(/^(?:'(.*)' )?is minderjarig/, function (aanduiding) {
     const datumGeboorte = 'gisteren - 17 jaar';
 
     aanvullenPersoon(
-        getPersoon(this.context, undefined),
+        getPersoon(this.context, aanduiding),
         arrayOfArraysToDataTable([
             ['geboortedatum (03.10)', datumGeboorte]
         ])
@@ -494,6 +494,38 @@ Given(/^'(.*)' en '(.*)' zijn met elkaar gehuwd$/, function (aanduiding1, aandui
     gegevenDePersonenZijnGehuwd(this.context, aanduiding1, aanduiding2, huwelijkData);
 });
 
+Given(/^'(.*)' en '(.*)' zijn een geregistreerd partnerschap aangegaan op (\d*)-(\d*)-(\d*)$/, function (aanduiding1, aanduiding2, dag, maand, jaar) {
+    const datumHuwelijk = toBRPDate(dag, maand, jaar);
+    const plaatsHuwelijk = '0518';
+    const landHuwelijk = '6030';
+    const verbintenisSoort = 'P';
+
+    const huwelijkData = arrayOfArraysToDataTable([
+        ['datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)', datumHuwelijk],
+        ['plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20)', plaatsHuwelijk],
+        ['land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)', landHuwelijk],
+        ['soort verbintenis (15.10)', verbintenisSoort]
+    ]);
+
+    gegevenDePersonenZijnGehuwd(this.context, aanduiding1, aanduiding2, huwelijkData);
+});
+
+Given(/^'(.*)' en '(.*)' zijn een geregistreerd partnerschap aangegaan$/, function (aanduiding1, aanduiding2, dag, maand, jaar) {
+    const datumHuwelijk = toBRPDate(dag, maand, jaar);
+    const plaatsHuwelijk = '0518';
+    const landHuwelijk = '6030';
+    const verbintenisSoort = 'P';
+
+    const huwelijkData = arrayOfArraysToDataTable([
+        ['datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)', datumHuwelijk],
+        ['plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20)', plaatsHuwelijk],
+        ['land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)', landHuwelijk],
+        ['soort verbintenis (15.10)', verbintenisSoort]
+    ]);
+
+    gegevenDePersonenZijnGehuwd(this.context, aanduiding1, aanduiding2, huwelijkData);
+});
+
 Given(/^'(.*)' en '(.*)' zijn met elkaar gehuwd met de volgende gegevens$/, function (aanduiding1, aanduiding2, dataTable) {
     gegevenDePersonenZijnGehuwd(this.context, aanduiding1, aanduiding2, dataTable);
 });
@@ -671,7 +703,7 @@ Given(/^de adoptie van '(.*)' is herroepen voor '(.*)' als ouder ([1-2])$/, func
     ]);
 
     gegevenAdoptieVanKindIsHerroepenVoorOuder(this.context, kind, aanduidingOuder, ouderType, adoptieOuderData);
-  });
+});
 
 Given(/^is niet in Nederland geadopteerd$/, function () {
     // doe niets

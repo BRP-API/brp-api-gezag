@@ -48,7 +48,7 @@ Functionaliteit: Wie is de geboortemoeder van het kind?
         | naam                             | waarde                                                                                            | 
         | type                             | GezagNietTeBepalen                                                                                |
         | minderjarige.burgerservicenummer | 000000036                                                                                         |
-        | toelichting                      | gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is. |
+        | toelichting                      | Gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is. |
 
     Scenario: Voor een kind waarvan beide ouders een onbekende geslachtsaanduiding hebben, kan niet worden bepaald wie gezag heeft er is sprake van GezagNietTeBepalen
       Gegeven persoon 'Vanessa'
@@ -68,7 +68,7 @@ Functionaliteit: Wie is de geboortemoeder van het kind?
         | naam                             | waarde                                                                                            | 
         | type                             | GezagNietTeBepalen                                                                                |
         | minderjarige.burgerservicenummer | 000000036                                                                                         |
-        | toelichting                      | gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is. |
+        | toelichting                      | Gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is. |
 
     Scenario: Voor een kind waarvan een ouder de geslachtsaanduiding vrouw heeft, kan worden bepaald wie gezag heeft er is sprake van EenhoofdigOuderlijkGezag
       Gegeven persoon 'Vanessa'
@@ -144,7 +144,7 @@ Functionaliteit: Wie is de geboortemoeder van het kind?
         | naam                             | waarde                                                                                            | 
         | type                             | GezagNietTeBepalen                                                                                |
         | minderjarige.burgerservicenummer | 000000036                                                                                         |
-        | toelichting                      | gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is. |
+        | toelichting                      | Gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is. |
 
   Regel: een kind geboren na 01-01-2023
     

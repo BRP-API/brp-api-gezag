@@ -156,4 +156,4 @@ Functionaliteit: 1.3b - is geadopteerd met nederlandse akte
       | naam                             | waarde                                                                    |
       | type                             | GezagNietTeBepalen                                                        |
       | minderjarige.burgerservicenummer | 000000036                                                                 |
-      | toelichting                      | gezag is niet te bepalen omdat minderjarige in het buitenland is geboren. |
+      | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren. |

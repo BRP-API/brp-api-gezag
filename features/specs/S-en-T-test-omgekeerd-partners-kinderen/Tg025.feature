@@ -418,7 +418,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | naam                             | waarde                                                                    |
       | type                             | GezagNietTeBepalen                                                        |
       | minderjarige.burgerservicenummer | 000000048                                                                 |
-      | toelichting                      | gezag is niet te bepalen omdat minderjarige in het buitenland is geboren. |
+      | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren. |
       | inOnderzoek                      | true                                                                      |
 
   Scenario: Lg01_138 - kind geboren tijdens huwelijk, overleden, gezag is niet van toepassing

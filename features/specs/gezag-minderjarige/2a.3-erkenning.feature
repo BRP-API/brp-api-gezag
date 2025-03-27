@@ -90,7 +90,7 @@ Functionaliteit: 2a.3 - erkenning
       | naam                             | waarde                                                                                            | 
       | type                             | GezagNietTeBepalen                                                                                |
       | minderjarige.burgerservicenummer | 000000036                                                                                         |
-      | toelichting                      | gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is. |
+      | toelichting                      | Gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is. |
 
   Scenario: Eén van de ouders heeft het kind erkend met de geboorteaangifte er is sprake van EenhoofdigOuderlijkGezag
     Gegeven persoon 'Filip'

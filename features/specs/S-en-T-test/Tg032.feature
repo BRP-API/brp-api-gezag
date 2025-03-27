@@ -133,7 +133,7 @@ Functionaliteit: Tg032 - Oostingh - Alleen maar minderjarigen incl. moeder
       | naam                             | waarde                                                                                                                                                                                                             |
       | type                             | GezagNietTeBepalen                                                                                                                                                                                                 |
       | minderjarige.burgerservicenummer | 000000012                                                                                                                                                                                                          |
-      | toelichting                      | gezag is niet te bepalen omdat bij het bepalen van huwelijk/partnerschap van de ouder(s) relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd |
+      | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd |
 
   Scenario: Lg01_174 - minderjarige moeder, geen categorie 11
     # Route: 39 - Wie heeft gezag?: tijdelijk geen gezag (G)

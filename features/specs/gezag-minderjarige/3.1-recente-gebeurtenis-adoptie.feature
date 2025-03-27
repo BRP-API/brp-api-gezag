@@ -208,7 +208,7 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - adoptie
       | naam                             | waarde                                                                                                                  |
       | type                             | GezagNietTeBepalen                                                                                                      |
       | minderjarige.burgerservicenummer | 000000036                                                                                                               |
-      | toelichting                      | gezag is niet te bepalen omdat de volgende relevante gegevens ontbreken: ingangsdatum geldigheid van gezagsverhouding   |
+      | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ingangsdatum geldigheid van gezagsverhouding   |
 
   Regel: Als de datum van de gerechtelijke uitspraak over gezag gedeeltelijk onbekend is, wordt de eerste dag van de maand van de onzekerheidsperiode aangenomen
 

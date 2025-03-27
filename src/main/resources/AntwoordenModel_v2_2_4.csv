@@ -1,20 +1,20 @@
 v0101,v0102,v0103,v0103A,v0103B,v0104,v0201,v02A01,v02A02,v02A03,v02B01,v0301,v0302,v04A02,V04A03,V04B01,Exception,route,soortGezag,gezag_ouder1,gezag_ouder2,gezag_niet_ouder1,gezag_niet_ouder2,Index,Uitleg
-,,,,,,,,,,,,,,,,,0,N,Nee,Nee,Nee,Nee,0,Gezag is niet te bepalen. Neem contact op met RvIG via info@RvIG onder vermelding van BRP API gezag met de volgende foutcode: %s
-,,,,,,,,,,,,,,,,,0e,N,Nee,Nee,Nee,Nee,0,gezag is niet te bepalen omdat de volgende relevante gegevens ontbreken: %s
-Nee,,,,,,,,,,,,,,,,,1,N,Nee,Nee,Nee,Nee,150,gezag is niet te bepalen omdat minderjarige niet in Nederland woont.
-Ja,,,,,,,,,,,,,,,,,2e,N,Nee,Nee,Nee,Nee,200,gezag is niet te bepalen omdat de geboortedatum van persoon niet bekend is.
+,,,,,,,,,,,,,,,,,0,N,Nee,Nee,Nee,Nee,0,Gezag kan niet worden bepaald. Neem contact op met RvIG via info@RvIG onder vermelding van BRP API gezag met de volgende foutcode: %s
+,,,,,,,,,,,,,,,,,0e,N,Nee,Nee,Nee,Nee,0,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Nee,,,,,,,,,,,,,,,,,1,N,Nee,Nee,Nee,Nee,150,Gezag kan niet worden bepaald omdat minderjarige niet in Nederland woont.
+Ja,,,,,,,,,,,,,,,,,2e,N,Nee,Nee,Nee,Nee,200,Gezag kan niet worden bepaald omdat de geboortedatum van persoon niet bekend is.
 Ja,Nee_meerderjarig,,,,,,,,,,,,,,,,2m,NVT,Nee,Nee,Nee,Nee,210,Ingezeten - meerderjarig - soort gezag is NVT - gezag is niet van toepassing
 Ja,Nee_overleden,,,,,,,,,,,,,,,,2o,NVT,Nee,Nee,Nee,Nee,220,Ingezeten - minderjarig overleden - soort gezag is NVT - gezag is niet van toepassing
-Ja,Ja,,,,,,,,,,,,,,,,3e,N,Nee,Nee,Nee,Nee,300,gezag is niet te bepalen omdat niet kan worden vastgesteld of de persoon naar het buitenland geëmigreerd geweest is omdat de volgende relevante gegevens ontbreken: %s
-Ja,Ja,Nee,Ja,,,,,,,,,,,,,,3ae,N,Nee,Nee,Nee,Nee,301,gezag is niet te bepalen omdat bij het bepalen van adoptie relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Ja,,,,,,,,,,,,,,,3,N,Nee,Nee,Nee,Nee,350,gezag is niet te bepalen omdat minderjarige buiten Nederland heeft verbleven.
-Ja,Ja,Nee,Ja,Nee,,,,,,,,,,,,,3a,N,Nee,Nee,Nee,Nee,351,gezag is niet te bepalen omdat minderjarige in het buitenland is geboren.
-Ja,Ja,Nee,Nee,,,,,,,,,,,,,,4e,N,Nee,Nee,Nee,Nee,400,gezag is niet te bepalen omdat de volgende relevante gegevens ontbreken: %s
-Ja,Ja,Nee,Ja,Ja,,,,,,,,,,,,,4ae,N,Nee,Nee,Nee,Nee,401,gezag is niet te bepalen omdat de volgende relevante gegevens ontbreken: %s
-Ja,Ja,Nee,Nee,,Ja,,,,,,,,,,,,4ee,N,Nee,Nee,Nee,Nee,420,gezag is niet te bepalen omdat de volgende relevante gegevens ontbreken: %s
-Ja,Ja,Nee,Ja,Ja,Ja,,,,,,,,,,,,4aee,N,Nee,Nee,Nee,Nee,421,gezag is niet te bepalen omdat de volgende relevante gegevens ontbreken: %s
-Ja,Ja,Nee,Nee,,Ja,,,,,,Nee,,,,,,4eee,N,Nee,Nee,Nee,Nee,430,gezag is niet te bepalen omdat de volgende relevante gegevens ontbreken: %s
-Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,,,,,,4aeee,N,Nee,Nee,Nee,Nee,431,gezag is niet te bepalen omdat de volgende relevante gegevens ontbreken: %s
+Ja,Ja,,,,,,,,,,,,,,,,3e,N,Nee,Nee,Nee,Nee,300,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen of de persoon naar het buitenland geëmigreerd is geweest. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,,,,,,,,,,,,,,3ae,N,Nee,Nee,Nee,Nee,301,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de adoptie. Het gaat om de volgende gegevens: %s
+Ja,Ja,Ja,,,,,,,,,,,,,,,3,N,Nee,Nee,Nee,Nee,350,Gezag kan niet worden bepaald omdat minderjarige buiten Nederland heeft verbleven.
+Ja,Ja,Nee,Ja,Nee,,,,,,,,,,,,,3a,N,Nee,Nee,Nee,Nee,351,Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren.
+Ja,Ja,Nee,Nee,,,,,,,,,,,,,,4e,N,Nee,Nee,Nee,Nee,400,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,,,,,,,,,,,,,4ae,N,Nee,Nee,Nee,Nee,401,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Ja,,,,,,,,,,,,4ee,N,Nee,Nee,Nee,Nee,420,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,,,,,,,,,,,,4aee,N,Nee,Nee,Nee,Nee,421,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Ja,,,,,,Nee,,,,,,4eee,N,Nee,Nee,Nee,Nee,430,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,,,,,,4aeee,N,Nee,Nee,Nee,Nee,431,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Ja,,,,,,Nee,1D,,,Nee,,4n,GG,Ja,Nee,Nee,Ja,450,Ingezeten - minderjarig - categorie 11 ouder1 en een derde - soort gezag is GG - Er is sprake van gezamenlijk gezag n.a.v. een gerechtelijke uitspraak over gezag
 Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,1D,,,Nee,,4an,GG,Ja,Nee,Nee,Ja,451,Ingezeten - minderjarig - adoptie NL akte - categorie 11 ouder1 en een derde - soort gezag is GG - Er is sprake van gezamenlijk gezag n.a.v. een gerechtelijke uitspraak over gezag na adoptie
 Ja,Ja,Nee,Nee,,Ja,,,,,,Nee,1D,,,Ja_nietouder1,,4no1,OG1,Nee,Ja,Nee,Nee,450,Ingezeten - minderjarig - categorie 11 ouder1 en een derde - soort gezag is GG - Er is sprake van gezamenlijk gezag n.a.v. een gerechtelijke uitspraak over gezag - niet-ouder1 overleden of onbevoegd
@@ -73,8 +73,8 @@ Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,2D,,,Ja_ouder_minderjarig_en_niet_ouder_onder_curate
 Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,2D,,,Ja_beiden_minderjarig,,5amm,G,Nee,Nee,Nee,Nee,551,Tijdelijk geen gezag omdat beide ouders minderjarig zijn.
 Ja,Ja,Nee,Nee,,Ja,,,,,,Nee,D,,,,,6,V,Nee,Nee,Nee,Nee,650,Ingezeten - minderjarig - categorie 11 een derde - soort gezag is V - Er is sprake van voogdij n.a.v. een gerechtelijke uitspraak over gezag
 Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,D,,,,,6a,V,Nee,Nee,Nee,Nee,651,Ingezeten - minderjarig - adoptie NL akte - categorie 11 een derde - soort gezag is V - Er is sprake van voogdij n.a.v. een gerechtelijke uitspraak over gezag na adoptie
-Ja,Ja,Nee,Nee,,Ja,,,,,,Nee,12,,,,,7e,N,Nee,Nee,Nee,Nee,700,gezag is niet te bepalen omdat de volgende relevante gegevens ontbreken: %s
-Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,12,,,,,7ae,N,Nee,Nee,Nee,Nee,701,gezag is niet te bepalen omdat de volgende relevante gegevens ontbreken: %s
+Ja,Ja,Nee,Nee,,Ja,,,,,,Nee,12,,,,,7e,N,Nee,Nee,Nee,Nee,700,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,12,,,,,7ae,N,Nee,Nee,Nee,Nee,701,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Ja,,,,,,Nee,12,Nee,,,,7,OG2,Ja,Ja,Nee,Nee,750,Ingezeten - minderjarig - categorie 11 ouder1 en ouder2 - beide ouders bevoegd - soort gezag is OG2 - Op basis van een gerechtelijke uitspraak hebben beide ouders gezag
 Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,12,Nee,,,,7a,OG2,Ja,Ja,Nee,Nee,751,Ingezeten - minderjarig - adoptie NL akte - categorie 11 ouder1 en ouder2 - beide ouders bevoegd - soort gezag is OG2 - Beide ouders hebben gezag op basis van een gerechtelijke uitspraak na adoptie
 Ja,Ja,Nee,Nee,,Ja,,,,,,Nee,12,Ja_ouder1,,,,8,OG1,Nee,Ja,Nee,Nee,850,Ingezeten - minderjarig - categorie 11 ouder1 en ouder2 - ouder1 onbevoegd - soort gezag is OG1 - Eén ouder heeft het gezag omdat de andere ouder [is overleden] [onder curatele staat]
@@ -93,8 +93,8 @@ Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,12,Ja_ouder_overleden_en_andere_ouder_minderjarig,,,
 Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,12,Ja_beiden_onder_curatele,,,,10acc,G,Nee,Nee,Nee,Nee,1051,Tijdelijk geen gezag omdat beide ouders onder curatele staan.
 Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,12,Ja_ouder_onder_curatele_en_andere_ouder_minderjarig,,,,10acm,G,Nee,Nee,Nee,Nee,1051,Tijdelijk geen gezag omdat een ouder onder curatele staat en de andere ouder minderjarig is.
 Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,12,Ja_beiden_minderjarig,,,,10amm,G,Nee,Nee,Nee,Nee,1051,Tijdelijk geen gezag omdat beide ouders minderjarig zijn.
-Ja,Ja,Nee,Nee,,Ja,,,,,,Nee,1,,,,,11e,N,Nee,Nee,Nee,Nee,1100,gezag is niet te bepalen omdat de volgende relevante gegevens ontbreken: %s
-Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,1,,,,,11ae,N,Nee,Nee,Nee,Nee,1101,gezag is niet te bepalen omdat de volgende relevante gegevens ontbreken: %s
+Ja,Ja,Nee,Nee,,Ja,,,,,,Nee,1,,,,,11e,N,Nee,Nee,Nee,Nee,1100,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,1,,,,,11ae,N,Nee,Nee,Nee,Nee,1101,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Ja,,,,,,Nee,1,,Nee,,,11,OG1,Ja,Nee,Nee,Nee,1150,Ingezeten - minderjarig - categorie 11 ouder1 - beide ouders bevoegd - soort gezag is OG1 
 Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,1,,Nee,,,11a,OG1,Ja,Nee,Nee,Nee,1151,Ingezeten - minderjarig - adoptie NL akte - categorie 11 ouder1 - beide ouders bevoegd - soort gezag is OG1 
 Ja,Ja,Nee,Nee,,Ja,,,,,,Nee,1,,Nee_ouder1,,,11o1,OG1,Ja,Nee,Nee,Nee,1160,Ingezeten - minderjarig - categorie 11 ouder1 - ouder1 bevoegd - soort gezag is OG1 
@@ -123,8 +123,8 @@ Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,1,,Ja_ouder_overleden_en_andere_ouder_minderjarig,,,
 Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,1,,Ja_beiden_onder_curatele,,,12acc,G,Nee,Nee,Nee,Nee,1251,Tijdelijk geen gezag omdat beide ouders onder curatele staan.
 Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,1,,Ja_ouder_onder_curatele_en_andere_ouder_minderjarig,,,12acm,G,Nee,Nee,Nee,Nee,1251,Tijdelijk geen gezag omdat een ouder onder curatele staat en de andere ouder minderjarig is.
 Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,1,,Ja_beiden_minderjarig,,,12amm,G,Nee,Nee,Nee,Nee,1251,Tijdelijk geen gezag omdat beide ouders minderjarig zijn.
-Ja,Ja,Nee,Nee,,Ja,,,,,,Nee,2,,,,,13e,N,Nee,Nee,Nee,Nee,1300,gezag is niet te bepalen omdat de volgende relevante gegevens ontbreken: %s
-Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,2,,,,,13ae,N,Nee,Nee,Nee,Nee,1301,gezag is niet te bepalen omdat de volgende relevante gegevens ontbreken: %s
+Ja,Ja,Nee,Nee,,Ja,,,,,,Nee,2,,,,,13e,N,Nee,Nee,Nee,Nee,1300,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,2,,,,,13ae,N,Nee,Nee,Nee,Nee,1301,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Ja,,,,,,Nee,2,,Nee,,,13,OG1,Nee,Ja,Nee,Nee,1350,Ingezeten - minderjarig - categorie 11 ouder2 - beide ouders bevoegd - soort gezag is OG1 
 Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,2,,Nee,,,13a,OG1,Nee,Ja,Nee,Nee,1351,Ingezeten - minderjarig - adoptie NL akte - categorie 11 ouder2 - beide ouders bevoegd - soort gezag is OG1 
 Ja,Ja,Nee,Nee,,Ja,,,,,,Nee,2,,Nee_ouder1,,,13o1,G,Nee,Nee,Nee,Nee,1360,Tijdelijk geen gezag omdat de ouder overleden is.
@@ -153,32 +153,32 @@ Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,2,,Ja_ouder_overleden_en_andere_ouder_minderjarig,,,
 Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,2,,Ja_beiden_onder_curatele,,,14acc,G,Nee,Nee,Nee,Nee,1451,Tijdelijk geen gezag omdat beide ouders onder curatele staan.
 Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,2,,Ja_ouder_onder_curatele_en_andere_ouder_minderjarig,,,14acm,G,Nee,Nee,Nee,Nee,1451,Tijdelijk geen gezag omdat een ouder onder curatele staat en de andere ouder minderjarig is.
 Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Nee,2,,Ja_beiden_minderjarig,,,14amm,G,Nee,Nee,Nee,Nee,1451,Tijdelijk geen gezag omdat beide ouders minderjarig zijn.
-Ja,Ja,Nee,Nee,,Ja,,,,,,Ja,,,,,,15e,N,Nee,Nee,Nee,Nee,1500,gezag niet bepalen omdat relevante gegevens ontbreken bij het bepalen van het aantal ouders. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Ja,,,,,,15ae,N,Nee,Nee,Nee,Nee,1501,gezag niet bepalen omdat relevante gegevens ontbreken bij het bepalen van het aantal ouders. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Ja,,,,,,Ja,,,,,,15e,N,Nee,Nee,Nee,Nee,1500,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het aantal ouders. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,,,,,,Ja,,,,,,15ae,N,Nee,Nee,Nee,Nee,1501,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het aantal ouders. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Ja,Geen_ouders,,,,,Ja,,,,,,15,G,Nee,Nee,Nee,Nee,1550,Tijdelijk geen gezag omdat beide ouders onbekend zijn.
 Ja,Ja,Nee,Ja,Ja,Ja,Geen_ouders,,,,,Ja,,,,,,15a,G,Nee,Nee,Nee,Nee,1551,Tijdelijk geen gezag omdat beide ouders onbekend zijn.
-Ja,Ja,Nee,Nee,,Ja,Twee_ouders,,,,,Ja,,,,,,16e,N,Nee,Nee,Nee,Nee,1600,gezag is niet te bepalen omdat relevante gegevens ontbreken bij het bepalen van huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,,,,,Ja,,,,,,16ae,N,Nee,Nee,Nee,Nee,1601,gezag is niet te bepalen omdat relevante gegevens ontbreken bij het bepalen van huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Nee,,Ja,1_of_2_puntouders,,,,,Ja,,,,,,16,N,Nee,Nee,Nee,Nee,1650,gezag is niet te bepalen omdat één of meer ouders van minderjarige onbekend zijn.
-Ja,Ja,Nee,Ja,Ja,Ja,1_of_2_puntouders,,,,,Ja,,,,,,16a,N,Nee,Nee,Nee,Nee,1651,gezag is niet te bepalen omdat één of meer ouders van minderjarige onbekend zijn.
-Ja,Ja,Nee,Nee,,Ja,Een_ouder,,,,,Ja,,,,,,17e,N,Nee,Nee,Nee,Nee,1700,gezag is niet te bepalen omdat relevante gegevens ontbreken bij het bepalen van huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,,Ja,,,,,,17ae,N,Nee,Nee,Nee,Nee,1701,gezag is niet te bepalen omdat relevante gegevens ontbreken bij het bepalen van huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Nee,,Ja,Een_ouder,,,,Nee,Ja,,,,,,17ee,N,Nee,Nee,Nee,Nee,1710,gezag is niet te bepalen omdat bij het bepalen van de bevoegdheid van een ouder relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,Nee,Ja,,,,,,17aee,N,Nee,Nee,Nee,Nee,1711,gezag is niet te bepalen omdat bij het bepalen van de bevoegdheid van een ouder relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Ja,Twee_ouders,,,,,Ja,,,,,,16e,N,Nee,Nee,Nee,Nee,1600,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,,,,,Ja,,,,,,16ae,N,Nee,Nee,Nee,Nee,1601,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Ja,1_of_2_puntouders,,,,,Ja,,,,,,16,N,Nee,Nee,Nee,Nee,1650,Gezag kan niet worden bepaald omdat één of meer ouders van minderjarige onbekend zijn.
+Ja,Ja,Nee,Ja,Ja,Ja,1_of_2_puntouders,,,,,Ja,,,,,,16a,N,Nee,Nee,Nee,Nee,1651,Gezag kan niet worden bepaald omdat één of meer ouders van minderjarige onbekend zijn.
+Ja,Ja,Nee,Nee,,Ja,Een_ouder,,,,,Ja,,,,,,17e,N,Nee,Nee,Nee,Nee,1700,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,,Ja,,,,,,17ae,N,Nee,Nee,Nee,Nee,1701,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Ja,Een_ouder,,,,Nee,Ja,,,,,,17ee,N,Nee,Nee,Nee,Nee,1710,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,Nee,Ja,,,,,,17aee,N,Nee,Nee,Nee,Nee,1711,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Ja,Een_ouder,,,,Nee,Ja,,,Ja_ouder_overleden,,,17o,G,Nee,Nee,Nee,Nee,1750,Tijdelijk geen gezag omdat de ouder overleden is.
 Ja,Ja,Nee,Nee,,Ja,Een_ouder,,,,Nee,Ja,,,Ja_ouder_onder_curatele,,,17c,G,Nee,Nee,Nee,Nee,1750,Tijdelijk geen gezag omdat de ouder onder curatele staat.
 Ja,Ja,Nee,Nee,,Ja,Een_ouder,,,,Nee,Ja,,,Ja_ouder_minderjarig,,,17m,G,Nee,Nee,Nee,Nee,1750,Tijdelijk geen gezag omdat de ouder minderjarig is.
 Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,Nee,Ja,,,Ja_ouder_overleden,,,17ao,G,Nee,Nee,Nee,Nee,1751,Tijdelijk geen gezag omdat de ouder overleden is.
 Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,Nee,Ja,,,Ja_ouder_onder_curatele,,,17ac,G,Nee,Nee,Nee,Nee,1751,Tijdelijk geen gezag omdat de ouder onder curatele staat.
 Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,Nee,Ja,,,Ja_ouder_minderjarig,,,17am,G,Nee,Nee,Nee,Nee,1751,Tijdelijk geen gezag omdat de ouder minderjarig is.
-Ja,Ja,Nee,Nee,,Ja,Een_ouder,,,,Nee,Ja,,,Nee,,,18,N,Nee,Nee,Nee,Nee,1850,gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is.
-Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,Nee,Ja,,,Nee,,,18a,N,Nee,Nee,Nee,Nee,1851,gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is.
+Ja,Ja,Nee,Nee,,Ja,Een_ouder,,,,Nee,Ja,,,Nee,,,18,N,Nee,Nee,Nee,Nee,1850,Gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is.
+Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,Nee,Ja,,,Nee,,,18a,N,Nee,Nee,Nee,Nee,1851,Gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is.
 Ja,Ja,Nee,Nee,,Ja,Een_ouder,,,,Nee,Ja,,,Nee_ouder1,,,18o1,OG1,Ja,Nee,Nee,Nee,1860,Ingezeten - minderjarig - categorie 11 en recentere gebeurtenis(sen) - heeft één ouder - ouder ongehuwd/geen partnerschap - soort gezag is OG1 
 Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,Nee,Ja,,,Nee_ouder1,,,18ao1,OG1,Ja,Nee,Nee,Nee,1861,Ingezeten - minderjarig - adoptie NL akte - categorie 11 en recentere gebeurtenis(sen) - heeft één ouder - ouder ongehuwd/geen partnerschap - soort gezag is OG1 
 Ja,Ja,Nee,Nee,,Ja,Een_ouder,,,,Nee,Ja,,,Nee_ouder2,,,18o2,OG1,Nee,Ja,Nee,Nee,1870,Ingezeten - minderjarig - categorie 11 en recentere gebeurtenis(sen) - heeft één ouder - ouder ongehuwd/geen partnerschap - soort gezag is OG1 
 Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,Nee,Ja,,,Nee_ouder2,,,18ao2,OG1,Nee,Ja,Nee,Nee,1871,Ingezeten - minderjarig - adoptie NL akte - categorie 11 en recentere gebeurtenis(sen) - heeft één ouder - ouder ongehuwd/geen partnerschap - soort gezag is OG1 
-Ja,Ja,Nee,Nee,,Ja,Een_ouder,,,,Ja,Ja,,,,,,19e,N,Nee,Nee,Nee,Nee,1900,gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van bevoegdheid. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,Ja,Ja,,,,,,19ae,N,Nee,Nee,Nee,Nee,1901,gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van bevoegdheid. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Ja,Een_ouder,,,,Ja,Ja,,,,,,19e,N,Nee,Nee,Nee,Nee,1900,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,Ja,Ja,,,,,,19ae,N,Nee,Nee,Nee,Nee,1901,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Ja,Een_ouder,,,,Ja,Ja,,,,Nee,,19,GG,Ja,Ja,Ja,Ja,1950,Ingezeten - minderjarig - categorie 11 en recentere gebeurtenis(sen) - heeft één ouder - ouder is gehuwd of partnerschap - ouder en partner zijn bevoegd tot gezag - soort gezag is GG 
 Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,Ja,Ja,,,,Nee,,19a,GG,Ja,Ja,Ja,Ja,1951,Ingezeten - minderjarig - adoptie NL akte - categorie 11 en recentere gebeurtenis(sen) - heeft één ouder - ouder is gehuwd of partnerschap - ouder en partner zijn bevoegd tot gezag - soort gezag is GG 
 Ja,Ja,Nee,Nee,,Ja,Een_ouder,,,,Ja,Ja,,,,Ja_nietouder1,,20no1,OG1,Ja,Nee,Nee,Nee,2060,Ingezeten - minderjarig - categorie 11 en recentere gebeurtenis(sen) - heeft één ouder - ouder gehuwd/partnerschap - partner is onbevoegd tot gezag - soort gezag is OG1 
@@ -207,9 +207,9 @@ Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,Ja,Ja,,,,Ja_ouder_onder_curatele_en_niet_ouder_m
 Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,Ja,Ja,,,,Ja_ouder_minderjarig_en_niet_ouder_overleden,,22amo,G,Nee,Nee,Nee,Nee,2266,Tijdelijk geen gezag omdat ouder minderjarig is en niet-ouder overleden is.
 Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,Ja,Ja,,,,Ja_ouder_minderjarig_en_niet_ouder_onder_curatele,,22amc,G,Nee,Nee,Nee,Nee,2267,Tijdelijk geen gezag omdat ouder minderjarig is en niet-ouder onder curatele staat.
 Ja,Ja,Nee,Ja,Ja,Ja,Een_ouder,,,,Ja,Ja,,,,Ja_beiden_minderjarig,,22amm,G,Nee,Nee,Nee,Nee,2268,Tijdelijk geen gezag omdat beide ouders minderjarig zijn.
-Ja,Ja,Nee,Nee,,Ja,Twee_ouders,,,,,,,,,,,23e,N,Nee,Nee,Nee,Nee,2300,gezag is niet te bepalen omdat relevante gegevens ontbreken bij het bepalen van gezag. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee,,,,Ja,,,,,,23ee,N,Nee,Nee,Nee,Nee,2310,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee,,,,Ja,,,,,,23aee,N,Nee,Nee,Nee,Nee,2311,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Ja,Twee_ouders,,,,,,,,,,,23e,N,Nee,Nee,Nee,Nee,2300,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee,,,,Ja,,,,,,23ee,N,Nee,Nee,Nee,Nee,2310,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee,,,,Ja,,,,,,23aee,N,Nee,Nee,Nee,Nee,2311,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee,,,,Ja,,Nee,,,,23,OG2,Ja,Ja,Nee,Nee,2350,Ingezeten - minderjarig - categorie 11 en recentere gebeurtenis(sen) - heeft twee ouders - huwelijk/partnerschap ouders nietig verklaard dan wel ontbonden door echtscheiding of ontbinding of overlijden - beide ouders bevoegd - soort gezag is OG2 
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee,,,,Ja,,Nee,,,,23a,OG2,Ja,Ja,Nee,Nee,2351,Ingezeten - minderjarig - adoptie NL akte - categorie 11 en recentere gebeurtenis(sen) - heeft twee ouders - huwelijk/partnerschap ouders nietig verklaard dan wel ontbonden door echtscheiding of ontbinding of overlijden - beide ouders bevoegd - soort gezag is OG2 
 Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee,,,,Ja,,Ja_ouder1,,,,24,OG1,Nee,Ja,Nee,Nee,2450,Ingezeten - minderjarig - categorie 11 en recentere gebeurtenis(sen) - heeft twee ouders - huwelijk/partnerschap vernietigd; of ontbonden door scheiding of overlijden - ouder1 onbevoegd - soort gezag is OG1 
@@ -228,8 +228,8 @@ Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee,,,,Ja,,Ja_ouder_overleden_en_andere_ouder_min
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee,,,,Ja,,Ja_beiden_onder_curatele,,,,26acc,G,Nee,Nee,Nee,Nee,2651,Tijdelijk geen gezag omdat beide ouders onder curatele staan.
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee,,,,Ja,,Ja_ouder_onder_curatele_en_andere_ouder_minderjarig,,,,26acm,G,Nee,Nee,Nee,Nee,2651,Tijdelijk geen gezag omdat een ouder onder curatele staat en de andere ouder minderjarig is.
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee,,,,Ja,,Ja_beiden_minderjarig,,,,26amm,G,Nee,Nee,Nee,Nee,2651,Tijdelijk geen gezag omdat beide ouders minderjarig zijn.
-Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Ja,,,,Ja,,,,,,27e,N,Nee,Nee,Nee,Nee,2700,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Ja,,,,Ja,,,,,,27ae,N,Nee,Nee,Nee,Nee,2701,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Ja,,,,Ja,,,,,,27e,N,Nee,Nee,Nee,Nee,2700,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Ja,,,,Ja,,,,,,27ae,N,Nee,Nee,Nee,Nee,2701,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Ja,,,,Ja,,Nee,,,,27,OG2,Ja,Ja,Nee,Nee,2750,Ingezeten - minderjarig - categorie 11 en recentere gebeurtenis(sen) - heeft twee ouders - ouders gehuwd/partnerschap - beide ouders bevoegd - soort gezag is OG2 
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Ja,,,,Ja,,Nee,,,,27a,OG2,Ja,Ja,Nee,Nee,2751,Ingezeten - minderjarig - adoptie NL akte - categorie 11 en recentere gebeurtenis(sen) - heeft twee ouders - ouders gehuwd/partnerschap - beide ouders bevoegd - soort gezag is OG2 
 Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Ja,,,,Ja,,Ja_ouder1,,,,28,OG1,Nee,Ja,Nee,Nee,2850,Ingezeten - minderjarig - categorie 11 en recentere gebeurtenis(sen) - heeft twee ouders - ouders gehuwd/partnerschap - ouder1 onbevoegd - soort gezag is OG1 
@@ -248,15 +248,15 @@ Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Ja,,,,Ja,,Ja_ouder_overleden_en_andere_ouder_mind
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Ja,,,,Ja,,Ja_beiden_onder_curatele,,,,30acc,G,Nee,Nee,Nee,Nee,3051,Tijdelijk geen gezag omdat beide ouders onder curatele staan.
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Ja,,,,Ja,,Ja_ouder_onder_curatele_en_andere_ouder_minderjarig,,,,30acm,G,Nee,Nee,Nee,Nee,3051,Tijdelijk geen gezag omdat een ouder onder curatele staat en de andere ouder minderjarig is.
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Ja,,,,Ja,,Ja_beiden_minderjarig,,,,30amm,G,Nee,Nee,Nee,Nee,3051,Tijdelijk geen gezag omdat beide ouders minderjarig zijn.
-Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,,,,Ja,,,,,,31e,N,Nee,Nee,Nee,Nee,3100,gezag is niet te bepalen omdat bij het bepalen van adoptie relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,,,Ja,,,,,,31ee,N,Nee,Nee,Nee,Nee,3110,gezag is niet te bepalen omdat bij het bepalen van erkenning relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Nee,,,Ja,,,,,,31aee,N,Nee,Nee,Nee,Nee,3111,gezag is niet te bepalen omdat bij het bepalen van erkenning relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,Voor_ouder1,,Ja,,,,,,31v1eee,N,Nee,Nee,Nee,Nee,3120,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,Voor_ouder2,,Ja,,,,,,31v2eee,N,Nee,Nee,Nee,Nee,3120,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,Voor,,Ja,,,,,,31eee,N,Nee,Nee,Nee,Nee,3120,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Nee,Voor_ouder1,,Ja,,,,,,31v1aeee,N,Nee,Nee,Nee,Nee,3121,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Nee,Voor_ouder2,,Ja,,,,,,31v2aeee,N,Nee,Nee,Nee,Nee,3121,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Nee,Voor,,Ja,,,,,,31aeee,N,Nee,Nee,Nee,Nee,3121,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,,,,Ja,,,,,,31e,N,Nee,Nee,Nee,Nee,3100,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de adoptie. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,,,Ja,,,,,,31ee,N,Nee,Nee,Nee,Nee,3110,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de erkenning. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Nee,,,Ja,,,,,,31aee,N,Nee,Nee,Nee,Nee,3111,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de erkenning. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,Voor_ouder1,,Ja,,,,,,31v1eee,N,Nee,Nee,Nee,Nee,3120,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,Voor_ouder2,,Ja,,,,,,31v2eee,N,Nee,Nee,Nee,Nee,3120,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,Voor,,Ja,,,,,,31eee,N,Nee,Nee,Nee,Nee,3120,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Nee,Voor_ouder1,,Ja,,,,,,31v1aeee,N,Nee,Nee,Nee,Nee,3121,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Nee,Voor_ouder2,,Ja,,,,,,31v2aeee,N,Nee,Nee,Nee,Nee,3121,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Nee,Voor,,Ja,,,,,,31aeee,N,Nee,Nee,Nee,Nee,3121,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,Na,,Ja,,Nee,,,,31nn,OG2,Ja,Ja,Nee,Nee,3150,Ingezeten - minderjarig - categorie 11 en recentere gebeurtenis(sen) - heeft twee ouders - ouders ongehuwd/geen partnerschap - erkenning na 20230101 - beide ouders bevoegd - soort gezag is OG2 
 Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,Voor_ouder1,,Ja,,,Ja_beiden_overleden,,,31v1oo,G,Nee,Nee,Nee,Nee,3150,Tijdelijk geen gezag omdat beide ouders overleden zijn.
 Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,Voor_ouder1,,Ja,,,Ja_ouder_overleden_en_andere_ouder_onder_curatele,,,31v1oc,G,Nee,Nee,Nee,Nee,3150,Tijdelijk geen gezag omdat een ouder overleden is en de andere ouder onder curatele staat.
@@ -277,8 +277,8 @@ Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,Voor,,Ja,,,Ja_beiden_onder_curatele,
 Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,Voor,,Ja,,,Ja_ouder_onder_curatele_en_andere_ouder_minderjarig,,,31cm,G,Nee,Nee,Nee,Nee,3150,Tijdelijk geen gezag omdat een ouder onder curatele staat en de andere ouder minderjarig is.
 Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,Voor,,Ja,,,Ja_beiden_minderjarig,,,31mm,G,Nee,Nee,Nee,Nee,3150,Tijdelijk geen gezag omdat beide ouders minderjarig zijn.
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Nee,Na,,Ja,,Nee,,,,31ann,OG2,Ja,Ja,Nee,Nee,3151,Ingezeten - minderjarig - adoptie NL akte - categorie 11 en recentere gebeurtenis(sen) - heeft twee ouders - ouders ongehuwd/geen partnerschap - erkenning na 20230101 - beide ouders bevoegd - soort gezag is OG2 
-Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,Na,,Ja,,,,,,31ne,N,Nee,Nee,Nee,Nee,3160,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Nee,Na,,Ja,,,,,,31ane,N,Nee,Nee,Nee,Nee,3161,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,Na,,Ja,,,,,,31ne,N,Nee,Nee,Nee,Nee,3160,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Nee,Na,,Ja,,,,,,31ane,N,Nee,Nee,Nee,Nee,3161,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Nee,Na,,Ja,,Ja_beiden_overleden,,,,31anboo,G,Nee,Nee,Nee,Nee,3162,Tijdelijk geen gezag omdat beide ouders overleden zijn.
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Nee,Na,,Ja,,Ja_ouder_overleden_en_andere_ouder_onder_curatele,,,,31anboc,G,Nee,Nee,Nee,Nee,3162,Tijdelijk geen gezag omdat een ouder overleden is en de andere ouder onder curatele staat.
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Nee,Na,,Ja,,Ja_ouder_overleden_en_andere_ouder_minderjarig,,,,31anbom,G,Nee,Nee,Nee,Nee,3162,Tijdelijk geen gezag omdat een ouder overleden is en de andere ouder minderjarig is.
@@ -327,9 +327,9 @@ Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,Voor_ouder2,,Ja,,,Nee_ouder2,,,32v2o
 Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Nee,Voor,,Ja,,,Nee_ouder2,,,32o2,OG1,Nee,Ja,Nee,Nee,3270,Ingezeten - minderjarig - categorie 11 en recentere gebeurtenis(sen) - heeft twee ouders - ouders ongehuwd/geen partnerschap - erkenning voor 20230101 - ouder2 is bevoegd tot gezag - soort gezag is OG1
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Nee,Voor,,Ja,,,Nee_ouder1,,,32ao1,OG1,Ja,Nee,Nee,Nee,3271,Ingezeten - minderjarig - adoptie NL akte - categorie 11 en recentere gebeurtenis(sen) - heeft twee ouders - ouders ongehuwd/geen partnerschap - erkenning voor 20230101 - ouder2 is bevoegd tot gezag - soort gezag is OG1
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Nee,Voor,,Ja,,,Nee_ouder2,,,32ao2,OG1,Nee,Ja,Nee,Nee,3281,Ingezeten - minderjarig - adoptie NL akte - categorie 11 en recentere gebeurtenis(sen) - heeft twee ouders - ouders ongehuwd/geen partnerschap - erkenning voor 20230101 - ouder2 is bevoegd tot gezag - soort gezag is OG1
-Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Ja,,,Ja,,,,,,33e,N,Nee,Nee,Nee,Nee,3300,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,,,,Ja,,,,,,33ae,N,Nee,Nee,Nee,Nee,3301,gezag is niet te bepalen omdat bij het bepalen van de adoptie relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Ja,,,Ja,,,,,,33aee,N,Nee,Nee,Nee,Nee,3311,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Ja,,,Ja,,,,,,33e,N,Nee,Nee,Nee,Nee,3300,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,,,,Ja,,,,,,33ae,N,Nee,Nee,Nee,Nee,3301,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de adoptie. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Ja,,,Ja,,,,,,33aee,N,Nee,Nee,Nee,Nee,3311,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Ja,,,Ja,,Nee,,,,33,OG2,Ja,Ja,Nee,Nee,3350,Ingezeten - minderjarig - categorie 11 en recentere gebeurtenis(sen) - heeft twee ouders - ouders ongehuwd/geen partnerschap - geadopteerd - beide ouders bevoegd - soort gezag is OG2
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Ja,,,Ja,,Nee,,,,33a,OG2,Ja,Ja,Nee,Nee,3351,Ingezeten - minderjarig - adoptie NL akte - categorie 11 en recentere gebeurtenis(sen) - heeft twee ouders - ouders ongehuwd/geen partnerschap - geadopteerd - beide ouders bevoegd - soort gezag is OG2
 Ja,Ja,Nee,Nee,,Ja,Twee_ouders,Nee_nooit,Ja,,,Ja,,Ja_ouder1,,,,34,OG1,Nee,Ja,Nee,Nee,3450,Ingezeten - minderjarig - categorie 11 en recentere gebeurtenis(sen) - heeft twee ouders - ouders ongehuwd/geen partnerschap - geadopteerd - ouder2 is bevoegd tot gezag - soort gezag is OG1
@@ -348,30 +348,30 @@ Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Ja,,,Ja,,Ja_ouder_overleden_en_andere_o
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Ja,,,Ja,,Ja_beiden_onder_curatele,,,,36acc,G,Nee,Nee,Nee,Nee,3651,Tijdelijk geen gezag omdat beide ouders onder curatele staan.
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Ja,,,Ja,,Ja_ouder_onder_curatele_en_andere_ouder_minderjarig,,,,36acm,G,Nee,Nee,Nee,Nee,3651,Tijdelijk geen gezag omdat een ouder onder curatele staat en de andere ouder minderjarig is.
 Ja,Ja,Nee,Ja,Ja,Ja,Twee_ouders,Nee_nooit,Ja,,,Ja,,Ja_beiden_minderjarig,,,,36amm,G,Nee,Nee,Nee,Nee,3651,Tijdelijk geen gezag omdat beide ouders minderjarig zijn.
-Ja,Ja,Nee,Nee,,Nee,,,,,,,,,,,,37e,N,Nee,Nee,Nee,Nee,3700,gezag is niet te bepalen omdat bij het bepalen van het aantal ouders relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Nee,,,,,,,,,,,,37ae,N,Nee,Nee,Nee,Nee,3701,gezag is niet te bepalen omdat bij het bepalen van het aantal ouders relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Nee,,,,,,,,,,,,37e,N,Nee,Nee,Nee,Nee,3700,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het aantal ouders. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Nee,,,,,,,,,,,,37ae,N,Nee,Nee,Nee,Nee,3701,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het aantal ouders. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Nee,Geen_ouders,,,,,,,,,,,37,G,Nee,Nee,Nee,Nee,3750,Tijdelijk geen gezag omdat beide ouders onbekend zijn.
 Ja,Ja,Nee,Ja,Ja,Nee,Geen_ouders,,,,,,,,,,,37a,G,Nee,Nee,Nee,Nee,3751,Tijdelijk geen gezag omdat beide ouders onbekend zijn.
-Ja,Ja,Nee,Nee,,Nee,1_of_2_puntouders,,,,,,,,,,,38,N,Nee,Nee,Nee,Nee,3850,gezag is niet te bepalen omdat één of meer ouders van minderjarige onbekend is.
-Ja,Ja,Nee,Ja,Ja,Nee,1_of_2_puntouders,,,,,,,,,,,38a,N,Nee,Nee,Nee,Nee,3851,gezag is niet te bepalen omdat één of meer ouders van minderjarige onbekend is.
-Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,,,,,,,,39e,N,Nee,Nee,Nee,Nee,3900,gezag is niet te bepalen omdat bij het bepalen van huwelijk/partnerschap van de ouder(s) relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,,,,,,,,39ae,N,Nee,Nee,Nee,Nee,3901,gezag is niet te bepalen omdat bij het bepalen van huwelijk/partnerschap van de ouder(s) relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Nee,,,,,,,39ee,N,Nee,Nee,Nee,Nee,3910,gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van bevoegdheid. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Nee,,,,,,,39aee,N,Nee,Nee,Nee,Nee,3911,gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van bevoegdheid. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Nee,1_of_2_puntouders,,,,,,,,,,,38,N,Nee,Nee,Nee,Nee,3850,Gezag kan niet worden bepaald omdat één of meer ouders van minderjarige onbekend zijn.
+Ja,Ja,Nee,Ja,Ja,Nee,1_of_2_puntouders,,,,,,,,,,,38a,N,Nee,Nee,Nee,Nee,3851,Gezag kan niet worden bepaald omdat één of meer ouders van minderjarige onbekend zijn.
+Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,,,,,,,,39e,N,Nee,Nee,Nee,Nee,3900,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,,,,,,,,39ae,N,Nee,Nee,Nee,Nee,3901,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Nee,,,,,,,39ee,N,Nee,Nee,Nee,Nee,3910,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Nee,,,,,,,39aee,N,Nee,Nee,Nee,Nee,3911,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Nee,,,,Ja_ouder_overleden,,,39o,G,Nee,Nee,Nee,Nee,3950,Tijdelijk geen gezag omdat de ouder overleden is.
 Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Nee,,,,Ja_ouder_onder_curatele,,,39c,G,Nee,Nee,Nee,Nee,3950,Tijdelijk geen gezag omdat de ouder onder curatele staat.
 Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Nee,,,,Ja_ouder_minderjarig,,,39m,G,Nee,Nee,Nee,Nee,3950,Tijdelijk geen gezag omdat de ouder minderjarig is.
 Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Nee,,,,Ja_ouder_overleden,,,39ao,G,Nee,Nee,Nee,Nee,3951,Tijdelijk geen gezag omdat de ouder overleden is.
 Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Nee,,,,Ja_ouder_onder_curatele,,,39ac,G,Nee,Nee,Nee,Nee,3951,Tijdelijk geen gezag omdat de ouder onder curatele staat.
 Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Nee,,,,Ja_ouder_minderjarig,,,39am,G,Nee,Nee,Nee,Nee,3951,Tijdelijk geen gezag omdat de ouder minderjarig is.
-Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Nee,,,,Nee,,,40,N,Nee,Nee,Nee,Nee,4050,Neem contact op met RvIG info@rvig.nl onder vermelding van gezag BRP API route 40.
-Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Nee,,,,Nee,,,40a,N,Nee,Nee,Nee,Nee,4051,Neem contact op met RvIG info@rvig.nl onder vermelding van gezag BRP API route 40a.
+Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Nee,,,,Nee,,,40,N,Nee,Nee,Nee,Nee,4050,Gezag kan niet worden bepaald. Neem contact op met RvIG info@rvig.nl onder vermelding van gezag BRP API route 40.
+Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Nee,,,,Nee,,,40a,N,Nee,Nee,Nee,Nee,4051,Gezag kan niet worden bepaald. Neem contact op met RvIG info@rvig.nl onder vermelding van gezag BRP API route 40a.
 Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Nee,,,,Nee_ouder1,,,40o1,OG1,Ja,Nee,Nee,Nee,4060,Ingezeten - minderjarig - heeft één ouder - ouder ongehuwd/geen partnerschap - soort gezag is OG1
 Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Nee,,,,Nee_ouder1,,,40ao1,OG1,Ja,Nee,Nee,Nee,4061,Ingezeten - minderjarig - adoptie NL akte - heeft één ouder - ouder ongehuwd/geen partnerschap - soort gezag is OG1
 Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Nee,,,,Nee_ouder2,,,40o2,OG1,Nee,Ja,Nee,Nee,4070,Ingezeten - minderjarig - heeft één ouder - ouder ongehuwd/geen partnerschap - ouder2 is bevoegd tot gezag - soort gezag is OG1
 Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Nee,,,,Nee_ouder2,,,40ao2,OG1,Nee,Ja,Nee,Nee,4071,Ingezeten - minderjarig - adoptie NL akte - heeft één ouder - ouder ongehuwd/geen partnerschap - soort gezag is OG1
-Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Ja,,,,,,,41e,N,Nee,Nee,Nee,Nee,4100,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Ja,,,,,,,41ae,N,Nee,Nee,Nee,Nee,4101,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Ja,,,,,,,41e,N,Nee,Nee,Nee,Nee,4100,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Ja,,,,,,,41ae,N,Nee,Nee,Nee,Nee,4101,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Ja,,,,,Nee,,41,GG,Ja,Ja,Ja,Ja,4150,Ingezeten - minderjarig - heeft één ouder - gehuwd/partnerschap - ouder en partner zijn bevoegd tot gezag - soort gezag is GG
 Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Ja,,,,,Nee,,41a,GG,Ja,Ja,Ja,Ja,4151,Ingezeten - minderjarig - adoptie NL akte - heeft één ouder - gehuwd/partnerschap - ouder en partner zijn bevoegd tot gezag - soort gezag is GG
 Ja,Ja,Nee,Nee,,Nee,Een_ouder,,,,Ja,,,,,Ja_nietouder1,,42no1,OG1,Ja,Nee,Nee,Nee,4260,Ingezeten - minderjarig - heeft één ouder - ouder ongehuwd/geen partnerschap - partner is onbevoegd tot gezag - soort gezag is OG1
@@ -400,10 +400,10 @@ Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Ja,,,,,Ja_ouder_onder_curatele_en_niet_ouder_mi
 Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Ja,,,,,Ja_ouder_minderjarig_en_niet_ouder_overleden,,44amo,G,Nee,Nee,Nee,Nee,4451,Tijdelijk geen gezag omdat ouder minderjarig is en niet-ouder overleden is.
 Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Ja,,,,,Ja_ouder_minderjarig_en_niet_ouder_onder_curatele,,44amc,G,Nee,Nee,Nee,Nee,4451,Tijdelijk geen gezag omdat ouder minderjarig is en niet-ouder onder curatele staat.
 Ja,Ja,Nee,Ja,Ja,Nee,Een_ouder,,,,Ja,,,,,Ja_beiden_minderjarig,,44amm,G,Nee,Nee,Nee,Nee,4451,Tijdelijk geen gezag omdat beide ouders minderjarig zijn.
-Ja,Ja,Nee,Nee,,Nee,Twee_ouders,,,,,,,,,,,45e,N,Nee,Nee,Nee,Nee,4500,gezag is niet te bepalen omdat bij het bepalen van huwelijk/partnerschap van de ouder(s) relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,,,,,,,,,,,45ae,N,Nee,Nee,Nee,Nee,4501,gezag is niet te bepalen omdat bij het bepalen van huwelijk/partnerschap van de ouder(s) relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee,,,,,,,,,,45ee,N,Nee,Nee,Nee,Nee,4510,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee,,,,,,,,,,45aee,N,Nee,Nee,Nee,Nee,4511,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Nee,Twee_ouders,,,,,,,,,,,45e,N,Nee,Nee,Nee,Nee,4500,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,,,,,,,,,,,45ae,N,Nee,Nee,Nee,Nee,4501,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee,,,,,,,,,,45ee,N,Nee,Nee,Nee,Nee,4510,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee,,,,,,,,,,45aee,N,Nee,Nee,Nee,Nee,4511,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee,,,,,,Nee,,,,45,OG2,Ja,Ja,Nee,Nee,4550,Ingezeten - minderjarig - heeft twee ouders - huwelijk/partnerschap ouders nietig verklaard dan wel ontbonden door echtscheiding of ontbinding of overlijden - beide ouders bevoegd - soort gezag is OG2
 Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee,,,,,,Nee,,,,45a,OG2,Ja,Ja,Nee,Nee,4551,Ingezeten - minderjarig - adoptie NL akte - heeft twee ouders - huwelijk/partnerschap ouders nietig verklaard dan wel ontbonden door echtscheiding of ontbinding of overlijden - beide ouders bevoegd - soort gezag is OG2
 Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee,,,,,,Ja_ouder1,,,,46,OG1,Nee,Ja,Nee,Nee,4650,Ingezeten - minderjarig - heeft twee ouders - huwelijk/partnerschap ouders nietig verklaard dan wel ontbonden door echtscheiding of ontbinding of overlijden - ouder1 onbevoegd - soort gezag is OG1
@@ -422,8 +422,8 @@ Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee,,,,,,Ja_ouder_overleden_en_andere_ouder_mind
 Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee,,,,,,Ja_beiden_onder_curatele,,,,48acc,G,Nee,Nee,Nee,Nee,4851,Tijdelijk geen gezag omdat beide ouders onder curatele staan.
 Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee,,,,,,Ja_ouder_onder_curatele_en_andere_ouder_minderjarig,,,,48acm,G,Nee,Nee,Nee,Nee,4851,Tijdelijk geen gezag omdat een ouder onder curatele staat en de andere ouder minderjarig is.
 Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee,,,,,,Ja_beiden_minderjarig,,,,48amm,G,Nee,Nee,Nee,Nee,4851,Tijdelijk geen gezag omdat beide ouders minderjarig zijn.
-Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Ja,,,,,,,,,,49e,N,Nee,Nee,Nee,Nee,4900,gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van bevoegdheid. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Ja,,,,,,,,,,49ae,N,Nee,Nee,Nee,Nee,4901,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Ja,,,,,,,,,,49e,N,Nee,Nee,Nee,Nee,4900,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Ja,,,,,,,,,,49ae,N,Nee,Nee,Nee,Nee,4901,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Ja,,,,,,Nee,,,,49,OG2,Ja,Ja,Nee,Nee,4950,Ingezeten - minderjarig - heeft twee ouders - gehuwd/partnerschap - beide ouders bevoegd - soort gezag is OG2 - beide ouders gezag
 Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Ja,,,,,,Nee,,,,49a,OG2,Ja,Ja,Nee,Nee,4951,Ingezeten - minderjarig - adoptie NL akte - heeft twee ouders - gehuwd/partnerschap - beide ouders bevoegd - soort gezag is OG2
 Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Ja,,,,,,Ja_ouder1,,,,50,OG1,Nee,Ja,Nee,Nee,5050,Ingezeten - minderjarig - heeft twee ouders - gehuwd/partnerschap - ouder1 onbevoegd - soort gezag is OG1 - ouder2 heeft gezag
@@ -442,16 +442,16 @@ Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Ja,,,,,,Ja_ouder_overleden_en_andere_ouder_minde
 Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Ja,,,,,,Ja_beiden_onder_curatele,,,,52acc,G,Nee,Nee,Nee,Nee,5251,Tijdelijk geen gezag omdat beide ouders onder curatele staan.
 Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Ja,,,,,,Ja_ouder_onder_curatele_en_andere_ouder_minderjarig,,,,52acm,G,Nee,Nee,Nee,Nee,5251,Tijdelijk geen gezag omdat een ouder onder curatele staat en de andere ouder minderjarig is.
 Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Ja,,,,,,Ja_beiden_minderjarig,,,,52amm,G,Nee,Nee,Nee,Nee,5251,Tijdelijk geen gezag omdat beide ouders minderjarig zijn.
-Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,,,,,,,,,,53e,N,Nee,Nee,Nee,Nee,5300,gezag is niet te bepalen omdat bij het bepalen van adoptie relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,,,,,,,,,,53ae,N,Nee,Nee,Nee,Nee,5301,gezag is niet te bepalen omdat bij het bepalen van adoptie relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,,,,,,,,,53ee,N,Nee,Nee,Nee,Nee,5310,gezag is niet te bepalen omdat bij het bepalen van erkenning relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,,,,,,,,,53aee,N,Nee,Nee,Nee,Nee,5311,gezag is niet te bepalen omdat bij het bepalen van erkenning relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Voor_ouder1,,,,,,,,53v1eee,N,Nee,Nee,Nee,Nee,5320,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Voor_ouder2,,,,,,,,53v2eee,N,Nee,Nee,Nee,Nee,5320,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Voor,,,,,,,,53eee,N,Nee,Nee,Nee,Nee,5320,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Voor_ouder1,,,,,,,,53v1aeee,N,Nee,Nee,Nee,Nee,5321,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Voor_ouder2,,,,,,,,53v2aeee,N,Nee,Nee,Nee,Nee,5321,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Voor,,,,,,,,53aeee,N,Nee,Nee,Nee,Nee,5321,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,,,,,,,,,,53e,N,Nee,Nee,Nee,Nee,5300,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de adoptie. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,,,,,,,,,,53ae,N,Nee,Nee,Nee,Nee,5301,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de adoptie. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,,,,,,,,,53ee,N,Nee,Nee,Nee,Nee,5310,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de erkenning. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,,,,,,,,,53aee,N,Nee,Nee,Nee,Nee,5311,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de erkenning. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Voor_ouder1,,,,,,,,53v1eee,N,Nee,Nee,Nee,Nee,5320,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Voor_ouder2,,,,,,,,53v2eee,N,Nee,Nee,Nee,Nee,5320,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Voor,,,,,,,,53eee,N,Nee,Nee,Nee,Nee,5320,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Voor_ouder1,,,,,,,,53v1aeee,N,Nee,Nee,Nee,Nee,5321,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Voor_ouder2,,,,,,,,53v2aeee,N,Nee,Nee,Nee,Nee,5321,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Voor,,,,,,,,53aeee,N,Nee,Nee,Nee,Nee,5321,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Voor_ouder1,,,,,Ja_beiden_overleden,,,53v1oo,G,Nee,Nee,Nee,Nee,5350,Tijdelijk geen gezag omdat beide ouders overleden zijn.
 Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Voor_ouder1,,,,,Ja_ouder_overleden_en_andere_ouder_onder_curatele,,,53v1oc,G,Nee,Nee,Nee,Nee,5350,Tijdelijk geen gezag omdat een ouder overleden is en de andere ouder onder curatele staat.
 Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Voor_ouder1,,,,,Ja_ouder_overleden_en_andere_ouder_minderjarig,,,53v1om,G,Nee,Nee,Nee,Nee,5350,Tijdelijk geen gezag omdat een ouder overleden is en de andere ouder minderjarig is.
@@ -488,8 +488,8 @@ Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Voor,,,,,Ja_ouder_overleden_en_and
 Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Voor,,,,,Ja_beiden_onder_curatele,,,53acc,G,Nee,Nee,Nee,Nee,5351,Tijdelijk geen gezag omdat beide ouders onder curatele staan.
 Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Voor,,,,,Ja_ouder_onder_curatele_en_andere_ouder_minderjarig,,,53acm,G,Nee,Nee,Nee,Nee,5351,Tijdelijk geen gezag omdat een ouder onder curatele staat en de andere ouder minderjarig is.
 Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Voor,,,,,Ja_beiden_minderjarig,,,53amm,G,Nee,Nee,Nee,Nee,5351,Tijdelijk geen gezag omdat beide ouders minderjarig zijn.
-Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Na,,,,,,,,53ne,N,Nee,Nee,Nee,Nee,5360,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid van een ouder relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Na,,,,,,,,53ane,N,Nee,Nee,Nee,Nee,5361,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid van een ouder relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Na,,,,,,,,53ne,N,Nee,Nee,Nee,Nee,5360,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Na,,,,,,,,53ane,N,Nee,Nee,Nee,Nee,5361,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Na,,,,Ja_ouder1,,,,53n1,OG1,Nee,Ja,Nee,Nee,5370,Ingezeten - minderjarig - heeft twee ouders - ouders ongehuwd/geen partnerschap - erkenning na 20230101 - ouder1 onbevoegd - soort gezag is OG1
 Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Na,,,,Ja_ouder1,,,,53an1,OG1,Nee,Ja,Nee,Nee,5371,Ingezeten - minderjarig - adoptie NL akte - heeft twee ouders - ouders ongehuwd/geen partnerschap - erkenning na 20230101 - ouder1 onbevoegd - soort gezag is OG1
 Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Na,,,,Ja_ouder2,,,,53n2,OG1,Ja,Nee,Nee,Nee,5380,Ingezeten - minderjarig - heeft twee ouders - ouders ongehuwd/geen partnerschap - erkenning na 20230101 - ouder2 is onbevoegd - soort gezag is OG1
@@ -508,8 +508,8 @@ Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Na,,,,Ja_ouder_onder_curatele_en_a
 Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Na,,,,Ja_beiden_minderjarig,,,,53anbmm,G,Nee,Nee,Nee,Nee,5391,Tijdelijk geen gezag omdat beide ouders minderjarig zijn.
 Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Voor_ouder1,,,,,Nee,,,54v1,OG1,Ja,Nee,Nee,Nee,5450,Ingezeten - minderjarig - heeft twee ouders - ouders ongehuwd/geen partnerschap - erkenning  voor 20230101 door ouder2; ouder1 heeft van rechtswege het ouderlijk gezag - beiden bevoegd - soort gezag is OG1
 Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Voor_ouder2,,,,,Nee,,,54v2,OG1,Nee,Ja,Nee,Nee,5450,Ingezeten - minderjarig - heeft twee ouders - ouders ongehuwd/geen partnerschap - erkenning voor 20230101 door ouder1; ouder2 heeft van rechtswege het ouderlijk gezag  - beiden bevoegd - soort gezag is OG1
-Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Voor,,,,,Nee,,,54,N,Nee,Nee,Nee,Nee,5450,gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is.
-Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Voor,,,,,Nee,,,54a,N,Nee,Nee,Nee,Nee,5451,gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is.
+Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Voor,,,,,Nee,,,54,N,Nee,Nee,Nee,Nee,5450,Gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is.
+Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Voor,,,,,Nee,,,54a,N,Nee,Nee,Nee,Nee,5451,Gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is.
 Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Voor_ouder1,,,,,Nee_ouder1,,,54v1o1,OG1,Ja,Nee,Nee,Nee,5460,Ingezeten - minderjarig - heeft twee ouders - ouders ongehuwd/geen partnerschap - erkenning  voor 20230101 door ouder2; ouder1 heeft van rechtswege het ouderlijk gezag - ouder1 is bevoegd - soort gezag is OG1
 Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Voor_ouder2,,,,,Nee_ouder1,,,54v2o1,G,Nee,Nee,Nee,Nee,5460,Tijdelijk geen gezag omdat de ouder overleden of onbevoegd is.
 Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Voor,,,,,Nee_ouder1,,,54o1,OG1,Ja,Nee,Nee,Nee,5460,Ingezeten - minderjarig - heeft twee ouders - ouders ongehuwd/geen partnerschap - erkenning voor 20230101 - ouder1 met ingangsdatum familierechtelijke betrekking gelijk geboortedatum kind heeft het gezag - soort gezag is OG1
@@ -520,8 +520,8 @@ Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Voor,,,,,Nee_ouder2,,,54o2,OG1,Nee,
 Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Voor,,,,,Nee_ouder2,,,54a02,OG1,Nee,Ja,Nee,Nee,5471,Ingezeten - minderjarig - adoptie NL akte - heeft twee ouders - ouders ongehuwd/geen partnerschap - erkenning voor 20230101 - ouder2 met ingangsdatum familierechtelijke betrekking gelijk geboortedatum kind heeft het gezag - soort gezag is OG1 
 Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Nee,Na,,,,Nee,,,,54n,OG2,Ja,Ja,Nee,Nee,5480,Ingezeten - minderjarig - heeft twee ouders - ouders ongehuwd/geen partnerschap - erkenning na 20230101 - beide ouders bevoegd - soort gezag is OG2 
 Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Nee,Na,,,,Nee,,,,54an,OG2,Ja,Ja,Nee,Nee,5481,Ingezeten - minderjarig - adoptie NL akte - heeft twee ouders - ouders ongehuwd/geen partnerschap - erkenning na 20230101 - beide ouders bevoegd - soort gezag is OG2 
-Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Ja,,,,,,,,,55e,N,Nee,Nee,Nee,Nee,5500,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
-Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Ja,,,,,,,,,55ae,N,Nee,Nee,Nee,Nee,5501,gezag is niet te bepalen omdat bij het bepalen van bevoegdheid relevante gegevens ontbreken. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Ja,,,,,,,,,55e,N,Nee,Nee,Nee,Nee,5500,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
+Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Ja,,,,,,,,,55ae,N,Nee,Nee,Nee,Nee,5501,Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: %s
 Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Ja,,,,,Nee,,,,55,OG2,Ja,Ja,Nee,Nee,5550,Ingezeten - minderjarig - heeft twee ouders - ouders ongehuwd/geen partnerschap - geadopteerd - beide ouders bevoegd - soort gezag is OG2 
 Ja,Ja,Nee,Ja,Ja,Nee,Twee_ouders,Nee_nooit,Ja,,,,,Nee,,,,55a,OG2,Ja,Ja,Nee,Nee,5551,Ingezeten - minderjarig - adoptie NL akte - heeft twee ouders - ouders ongehuwd/geen partnerschap - geadopteerd - beide ouders bevoegd - soort gezag is OG2 
 Ja,Ja,Nee,Nee,,Nee,Twee_ouders,Nee_nooit,Ja,,,,,Ja_ouder1,,,,56,OG1,Nee,Ja,Nee,Nee,5650,Ingezeten - minderjarig - heeft twee ouders - ouders ongehuwd/geen partnerschap - geadopteerd - ouder1 onbevoegd - soort gezag is OG1 

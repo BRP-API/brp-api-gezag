@@ -762,7 +762,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | naam                             | waarde                                                               |
       | type                             | GezagNietTeBepalen                                                   |
       | minderjarige.burgerservicenummer | 000000061                                                            |
-      | toelichting                      | gezag is niet te bepalen omdat minderjarige niet in Nederland woont. |
+      | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige niet in Nederland woont. |
 
   Scenario: Lg01_046 - actueel gehuwd en gescheiden, 1 meerderjarig kind, 1 minderjarig erkend kind
     # Meerderjarig
@@ -835,4 +835,4 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | naam                             | waarde                                                                    |
       | type                             | GezagNietTeBepalen                                                        |
       | minderjarige.burgerservicenummer | 000000103                                                                 |
-      | toelichting                      | gezag is niet te bepalen omdat minderjarige in het buitenland is geboren. |
+      | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren. |

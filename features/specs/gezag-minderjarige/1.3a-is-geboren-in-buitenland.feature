@@ -44,7 +44,7 @@ Functionaliteit: 1.3a - is geboren in het buitenland
       | naam                             | waarde                                                                    |
       | type                             | GezagNietTeBepalen                                                        |
       | minderjarige.burgerservicenummer | 000000036                                                                 |
-      | toelichting                      | gezag is niet te bepalen omdat minderjarige in het buitenland is geboren. |
+      | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren. |
 
   Scenario: Een in Nederland geboren kind met twee ouders heeft tweehoofdig ouder gezag
     Gegeven persoon 'Nona'
@@ -77,4 +77,4 @@ Functionaliteit: 1.3a - is geboren in het buitenland
       | naam                             | waarde                                                                                                                                                                                                 |
       | type                             | GezagNietTeBepalen                                                                                                                                                                                     |
       | minderjarige.burgerservicenummer | 000000036                                                                                                                                                                                              |
-      | toelichting                      | gezag is niet te bepalen omdat niet kan worden vastgesteld of de persoon naar het buitenland geëmigreerd geweest is omdat de volgende relevante gegevens ontbreken: Geboorteland van bevraagde persoon |
+      | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen of de persoon naar het buitenland geëmigreerd is geweest. Het gaat om de volgende gegevens: Geboorteland van bevraagde persoon |

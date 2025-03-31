@@ -409,4 +409,4 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | naam                             | waarde                                                                                            |
       | type                             | GezagNietTeBepalen                                                                                |
       | minderjarige.burgerservicenummer | 000000061                                                                                         |
-      | toelichting                      | gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is. |
+      | toelichting                      | Gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is. |

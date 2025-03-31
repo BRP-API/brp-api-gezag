@@ -30,7 +30,7 @@ public class GezagService {
 
     private static final Logger logger = LoggerFactory.getLogger(GezagService.class);
     private static final String ROUTE_MEERDERJARIG = "2m";
-    private static final String TOELICHTING_ONBEKEND_PERSOON = "Voor het opgegeven burgerservicenummer kon geen persoonslijst worden gevonden";
+    private static final String TOELICHTING_ONBEKEND_PERSOON = "Gezag kan niet worden bepaald omdat er geen persoonslijst is gevonden bij het opgegeven burgerservicenummer.";
     private final GezagsrelatieService gezagsrelatieService;
     private final VragenlijstService vragenlijstService;
     private final BrpService brpService;

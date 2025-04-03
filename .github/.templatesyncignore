@@ -4,4 +4,8 @@
 :!features/docs
 :!features/step_definitions
 :!cucumber.js
+:!.docker/scripts/*.*
+:!.docker/db.yml
+:!.docker/db-ci.yml
+:!.docker/Dockerfile
 *

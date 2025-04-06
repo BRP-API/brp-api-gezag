@@ -264,6 +264,20 @@ Given(/^(?:'(.*)' )?is minderjarig/, function (aanduiding) {
     global.logger.info(`gegeven persoon '${aanduiding}' is minderjarig`, getPersoon(this.context, aanduiding));
 });
 
+/**
+ * resulteerd in een geboortedatum die valt in de wetgeving na 01-01-2023
+ */
+Given(/^is pas geboren/, function () {
+    const datumGeboorte = 'gisteren';
+
+    aanvullenPersoon(
+        getPersoon(this.context, undefined),
+        arrayOfArraysToDataTable([
+            ['geboortedatum (03.10)', datumGeboorte]
+        ])
+    );
+});
+
 Given(/^is meerderjarig(?:, niet overleden en staat niet onder curatele)?$/, function () {
     const datumGeboorte = 'gisteren - 45 jaar';
 

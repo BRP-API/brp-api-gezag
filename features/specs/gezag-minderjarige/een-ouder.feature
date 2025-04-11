@@ -93,3 +93,18 @@ Functionaliteit: Eén ouder
       En 'Aart' heeft ontkend vader te zijn van 'Bert'
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+
+  Regel: De partner behoudt gezag ook na nietigverklaring van het huwelijk
+    De nietigverklaring heeft terugwerkende kracht tot het tijdstip van de huwelijkssluiting of het aangaan van het geregistreerde partnerschap.
+    Het huwelijk of het geregistreerde partnerschap wordt geacht niet te hebben bestaan.
+    Een rechtsfeit dat heeft plaatsgevonden voor de nietigverklaring, behoudt het rechtsgevolg.
+
+    Een nietigverklaring van een huwelijk is ongelijk aan een nietig huwelijk.
+    Een nietig huwelijk of geregistreerd partnerschap heeft geen enkel rechtsgevolg.
+
+    Voorbeeld: Het huwelijk is na geboorte van de minderjarige nietig verklaard
+      Gegeven 'Gerda' en 'Ariana' zijn 7 jaar geleden gehuwd
+      En 'Bert' is 6 jaar geleden geboren
+      En het huwelijk van 'Gerda' en 'Ariana' is 5 jaar geleden nietig verklaard
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'

@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg002 - Ouderlozen – Puntouder(s) - Geen ouders
 
 

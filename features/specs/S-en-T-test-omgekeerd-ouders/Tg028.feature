@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
 
 

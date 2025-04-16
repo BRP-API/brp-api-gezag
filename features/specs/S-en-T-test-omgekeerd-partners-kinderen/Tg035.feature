@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg035 - Saasveld-Suijdema - Vanuit gezamenlijk gezag komt moeder te overlijden
 
 

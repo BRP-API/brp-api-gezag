@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaangifte en ongehuwde ouders en vaststelling vaderschap. Erkenning voor en na 2023-01-01. Cat.11 na erkenning en bij aangifte geboorte.
 
 

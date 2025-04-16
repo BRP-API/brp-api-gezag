@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
 
 

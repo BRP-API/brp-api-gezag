@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg032 - Oostingh - Alleen maar minderjarigen incl. moeder
 
 

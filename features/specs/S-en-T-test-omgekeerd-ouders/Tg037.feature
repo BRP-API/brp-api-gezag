@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huwelijk en 1 kind geboren binnen dit huwelijk
 
 

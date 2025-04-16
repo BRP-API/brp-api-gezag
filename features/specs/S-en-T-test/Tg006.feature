@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg006 - Elbertsen-Eizenga
 
 

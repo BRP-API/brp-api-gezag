@@ -32,12 +32,13 @@ module.exports = {
     worldParameters: {
       apiUrl: 'http://localhost:5002/haalcentraal/api',
       api: 'info-api',
+      tagScenariosAsDeprecated: true,
       logger: {
         level: 'warn'
       },
       addAcceptGezagVersionHeader: false
     },
-    tags: '@deprecated and ((not @gezag-api and not @data-api) or @info-api)'
+    tags: 'not @skip-verify and ((@deprecated and ((not @data-api and not @gezag-api) or @info-api)) or (not @deprecated and not @nieuw and ((not @data-api and not @gezag-api) or @info-api)))'
   },
   DataApi: {
     worldParameters: {
@@ -54,12 +55,13 @@ module.exports = {
     worldParameters: {
       apiUrl: 'http://localhost:8000/haalcentraal/api',
       api: 'data-api',
+      tagScenariosAsDeprecated: true,
       logger: {
-        level: 'info'
+        level: 'warn'
       },
       addAcceptGezagVersionHeader: false
     },
-    tags: '@deprecated and ((not @gezag-api and not @info-api) or @data-api)'
+    tags: 'not @skip-verify and ((@deprecated and ((not @gezag-api and not @info-api) or @data-api)) or (not @deprecated and not @nieuw and ((not @gezag-api and not @info-api) or @data-api)))'
   },
   GezagApi: {
     worldParameters: {
@@ -76,11 +78,12 @@ module.exports = {
     worldParameters: {
       apiUrl: 'http://localhost:8080/api/v1/opvragenBevoegdheidTotGezag',
       api: 'gezag-api',
+      tagScenariosAsDeprecated: true,
       logger: {
         level: 'warn'
       },
       addAcceptGezagVersionHeader: false
     },
-    tags: '@deprecated and ((not @data-api and not @info-api) or @gezag-api)'
+    tags: 'not @skip-verify and ((@deprecated and ((not @data-api and not @info-api) or @gezag-api)) or (not @deprecated and not @nieuw and ((not @data-api and not @info-api) or @gezag-api)))'
   }
 }

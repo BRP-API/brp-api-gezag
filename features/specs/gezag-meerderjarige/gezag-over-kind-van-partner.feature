@@ -79,7 +79,7 @@ Functionaliteit: gezamenlijk gezag van een meerderjarige over een kind van een (
 
     Scenario: de partner van ouder onder curatele heeft gezag over een binnen het huwelijk geboren niet-erkend kind er is sprake van Voogdij
       Gegeven persoon 'Laura'
-      * is onder curatele gesteld
+      * staat onder curatele
       En 'Laura' en 'Ludo' zijn met elkaar gehuwd
       Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
@@ -98,7 +98,7 @@ Functionaliteit: gezamenlijk gezag van een meerderjarige over een kind van een (
 
     Scenario: de ex-partner van ouder onder curatele heeft gezag over een binnen het huwelijk geboren niet-erkend kind er is sprake van Voogdij
       Gegeven persoon 'Laura'
-      * is onder curatele gesteld
+      * staat onder curatele
       En 'Laura' en 'Ludo' zijn met elkaar gehuwd met de volgende gegevens
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10) |
       | gisteren - 19 jaar                                                 |

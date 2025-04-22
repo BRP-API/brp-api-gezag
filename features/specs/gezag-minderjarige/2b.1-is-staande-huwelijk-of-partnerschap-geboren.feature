@@ -168,4 +168,113 @@ Functionaliteit: 2b.1 - is staande huwelijk of partnerschap geboren
       | naam                             | waarde                   |
       | type                             | EenhoofdigOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+      | ouder.burgerservicenummer        | 000000012                |      
+
+  Regel: Kind is geboren tijdens het huwelijk maar een ouder heeft ontkend
+
+    Abstract Scenario: er is uitspraak gezag voor ouder 1 en ouder 2 en <type> door ouder <ouder> is ontkend er is sprake van EenhoofdigOuderlijkGezag
+      Gegeven 'Saskia' en 'Maarten' zijn met elkaar gehuwd 
+      En voor 'Rachel' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
+      | indicatie gezag minderjarige (32.10) | ingangsdatum geldigheid (85.10) |
+      | 12                                   | morgen - 10 jaar                |
+      En zijn van ouder <ouder> de volgende gegevens <soort wijziging>
+      | naam                                               | waarde       |
+      | burgerservicenummer (01.20)                        |              |
+      | geslachtsnaam (02.40)                              |              |
+      | geboortedatum (03.10)                              |              |
+      | datum ingang familierechtelijke betrekking (62.10) |              |
+      | aktenummer (81.20)                                 | <aktenummer> |
+      Als gezag wordt gezocht met de volgende parameters
+      | naam                | waarde    |
+      | burgerservicenummer | 000000036 |
+      Dan heeft de response een persoon met de volgende gegevens
+      | naam                | waarde    |
+      | burgerservicenummer | 000000036 |
+      En heeft de persoon een 'gezag' met de volgende gegevens
+      | naam                             | waarde                   |
+      | type                             | EenhoofdigOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000036                |
+      | ouder.burgerservicenummer        | <ouder bsn>              |
+
+      Voorbeelden:
+      | ouder | aktenummer | soort wijziging | ouder bsn | type       |
+      | 1     | 1AE0100    | gewijzigd       | 000000024 | ouderschap |
+      | 1     | 1AE0100    | gecorrigeerd    | 000000024 | ouderschap |
+      | 2     | 1AE0100    | gewijzigd       | 000000012 | ouderschap |
+      | 2     | 1AE0100    | gecorrigeerd    | 000000012 | ouderschap |
+      | 1     | 1AF0100    | gewijzigd       | 000000024 | erkkening  |
+      | 1     | 1AF0100    | gecorrigeerd    | 000000024 | erkkening  |
+      | 2     | 1AF0100    | gewijzigd       | 000000012 | erkkening  |
+      | 2     | 1AF0100    | gecorrigeerd    | 000000012 | erkkening  |
+
+    Abstract Scenario: er is uitspraak gezag voogdij en ouderschap door ouder <ouder> is ontkend of vernietigd er is sprake van Voogdij
+      Gegeven 'Saskia' en 'Maarten' zijn met elkaar gehuwd 
+      En voor 'Rachel' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
+      | indicatie gezag minderjarige (32.10) | ingangsdatum geldigheid (85.10) |
+      | D                                    | morgen - 10 jaar                |
+      En zijn van ouder <ouder> de volgende gegevens <soort wijziging>
+      | naam                                               | waarde       |
+      | burgerservicenummer (01.20)                        |              |
+      | geslachtsnaam (02.40)                              |              |
+      | geboortedatum (03.10)                              |              |
+      | datum ingang familierechtelijke betrekking (62.10) |              |
+      | aktenummer (81.20)                                 | <aktenummer> |
+      Als gezag wordt gezocht met de volgende parameters
+      | naam                | waarde    |
+      | burgerservicenummer | 000000036 |
+      Dan heeft de response een persoon met de volgende gegevens
+      | naam                | waarde    |
+      | burgerservicenummer | 000000036 |
+      En heeft de persoon een 'gezag' met de volgende gegevens
+      | naam                             | waarde    |
+      | type                             | Voogdij   |
+      | minderjarige.burgerservicenummer | 000000036 |
+      En heeft 'gezag' geen derden
+
+      Voorbeelden:
+      | ouder | aktenummer | soort wijziging |
+      | 1     | 1AE0100    | gewijzigd       |
+      | 1     | 1AE0100    | gecorrigeerd    |
+      | 2     | 1AE0100    | gewijzigd       |
+      | 2     | 1AE0100    | gecorrigeerd    |
+      | 1     | 1AF0100    | gewijzigd       |
+      | 1     | 1AF0100    | gecorrigeerd    |
+      | 2     | 1AF0100    | gewijzigd       |
+      | 2     | 1AF0100    | gecorrigeerd    |
+
+  Regel: Als de minderjarige tijdens het huwelijk is geboren maar ouderschap of erkenning is ontkend door de ouder waar vastgesteld is dat er gezamelijk gezag is met een derde wordt gezag alleen voor de derde gegeven
+    
+    Abstract Scenario: er is sprake van gezag voor ouder samen met een derde en <type> door ouder <ouder> is ontkend er is sprake van Voogdij
+      Gegeven 'Saskia' en 'Maarten' zijn met elkaar gehuwd 
+      En voor 'Rachel' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
+      | indicatie gezag minderjarige (32.10) | ingangsdatum geldigheid (85.10) |
+      | <indicatie>                          | morgen - 10 jaar                |
+      En zijn van ouder <ouder> de volgende gegevens <soort wijziging>
+      | naam                                               | waarde       |
+      | burgerservicenummer (01.20)                        |              |
+      | geslachtsnaam (02.40)                              |              |
+      | geboortedatum (03.10)                              |              |
+      | datum ingang familierechtelijke betrekking (62.10) |              |
+      | aktenummer (81.20)                                 | <aktenummer> |
+      Als gezag wordt gezocht met de volgende parameters
+      | naam                | waarde    |
+      | burgerservicenummer | 000000036 |
+      Dan heeft de response een persoon met de volgende gegevens
+      | naam                | waarde    |
+      | burgerservicenummer | 000000036 |
+      En heeft de persoon een 'gezag' met de volgende gegevens
+      | naam                             | waarde    |
+      | type                             | Voogdij   |
+      | minderjarige.burgerservicenummer | 000000036 |
+      En heeft 'gezag' geen derden
+
+      Voorbeelden:
+      | ouder | aktenummer | soort wijziging | type       | indicatie   |
+      | 1     | 1AE0100    | gewijzigd       | ouderschap | 1D          |
+      | 1     | 1AE0100    | gecorrigeerd    | ouderschap | 1D          |
+      | 2     | 1AE0100    | gewijzigd       | ouderschap | 2D          |
+      | 2     | 1AE0100    | gecorrigeerd    | ouderschap | 2D          |
+      | 1     | 1AF0100    | gewijzigd       | erkkening  | 1D          |
+      | 1     | 1AF0100    | gecorrigeerd    | erkkening  | 1D          |
+      | 2     | 1AF0100    | gewijzigd       | erkkening  | 2D          |
+      | 2     | 1AF0100    | gecorrigeerd    | erkkening  | 2D          |

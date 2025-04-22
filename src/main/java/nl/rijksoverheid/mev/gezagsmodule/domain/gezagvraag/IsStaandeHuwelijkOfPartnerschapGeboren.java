@@ -8,8 +8,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import static nl.rijksoverheid.mev.gezagsmodule.domain.Persoonslijst.isValideGeslachtsnaam;
-
 /**
  * v2b_1 "Ja" als kind staande huwelijk of partnerschap geboren is, anders "Nee".
  * <p>
@@ -41,19 +39,21 @@ public class IsStaandeHuwelijkOfPartnerschapGeboren implements GezagVraag {
         String geboorteDatumKind = plPersoon.getPersoon().getGeboortedatum();
         Ouder1 lOuder1 = plPersoon.getOuder1();
         Ouder2 lOuder2 = plPersoon.getOuder2();
-        if (lOuder1 != null && isValideGeslachtsnaam(lOuder1.getGeslachtsnaam())) {
+        if (lOuder1 != null && lOuder1.getBurgerservicenummer() != null) {
             final var plOuder1 = gezagsBepaling.getPlOuder1();
             PreconditieChecker.preconditieCheckGeregistreerd(OUDER_1, plOuder1);
             if (heeftOuderRelatieBijGeboorteKind(plOuder1, geboorteDatumKind)
-                && !plPersoon.ontkenningOuderschapDoorOuder2()) {
+                && !plPersoon.ontkenningOuderschapDoorOuder2()
+                && !plPersoon.ontkenningErkenningDoorOuder2()) {
                 answer = V2B_1_JA;
             }
         }
-        if (lOuder2 != null && isValideGeslachtsnaam(lOuder2.getGeslachtsnaam())) {
+        if (lOuder2 != null && lOuder2.getBurgerservicenummer() != null) {
             final var plOuder2 = gezagsBepaling.getPlOuder2();
             PreconditieChecker.preconditieCheckGeregistreerd(OUDER_2, plOuder2);
             if (heeftOuderRelatieBijGeboorteKind(plOuder2, geboorteDatumKind)
-                && !plPersoon.ontkenningOuderschapDoorOuder1()) {
+                && !plPersoon.ontkenningOuderschapDoorOuder1()
+                && !plPersoon.ontkenningErkenningDoorOuder1()) {
                 answer = V2B_1_JA;
             }
         }

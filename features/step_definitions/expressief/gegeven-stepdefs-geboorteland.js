@@ -49,7 +49,7 @@ Given(/^is in het buitenland geboren$/, function () {
     global.logger.info(`gegeven persoon is in het buitenland geboren`, getPersoon(this.context, undefined));
 });
 
-Given(/^is geboren in (.*)/, async function (landNaam) {
+Given(/^is geboren in (?!het)(.*)/, async function (landNaam) {
     const codeVanLand = await selectFirstOrDefault('lo3_land', ['land_code'], 'land_naam', landNaam, '6030');
 
     aanvullenPersoon(

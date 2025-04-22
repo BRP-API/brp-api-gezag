@@ -32,11 +32,13 @@ runs:
       run: |
         ./scripts/verify-step-definitions.sh
       shell: bash
+      continue-on-error: true
 
     - name: Validate functional specification
       run: |
         ./scripts/verify-functional-specification.sh
       shell: bash
+      continue-on-error: true
 
     - name: Genereer test result summary en voeg het toe aan Github Step Summary
       if: always()

@@ -214,7 +214,7 @@ Functionaliteit: 4b.1 - Ouder of partner overleden of onbevoegd tot gezag
   Scenario: De moeder is onder curatele er is sprake van Voogdij
     Gegeven persoon 'Quincy'
     * is meerderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     Gegeven persoon 'Mees'
     * is meerderjarig
     Als gezag wordt gezocht met de volgende parameters
@@ -237,7 +237,7 @@ Functionaliteit: 4b.1 - Ouder of partner overleden of onbevoegd tot gezag
     * is meerderjarig
     Gegeven persoon 'Mees'
     * is meerderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -255,10 +255,10 @@ Functionaliteit: 4b.1 - Ouder of partner overleden of onbevoegd tot gezag
   Scenario: De moeder en partner zijn onder curatele er is sprake van TijdelijkGeenGezag
     Gegeven persoon 'Quincy'
     * is meerderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     Gegeven persoon 'Mees'
     * is meerderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -338,7 +338,7 @@ Functionaliteit: 4b.1 - Ouder of partner overleden of onbevoegd tot gezag
   Scenario: De moeder is minderjarig en overleden er is sprake van Voogdij
     Gegeven persoon 'Quincy'
     * is minderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     En persoon 'Mees'
     * is meerderjarig
     Als gezag wordt gezocht met de volgende parameters
@@ -361,7 +361,7 @@ Functionaliteit: 4b.1 - Ouder of partner overleden of onbevoegd tot gezag
     * is meerderjarig
     En persoon 'Mees'
     * is minderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -379,10 +379,10 @@ Functionaliteit: 4b.1 - Ouder of partner overleden of onbevoegd tot gezag
   Scenario: De moeder is minderjarig en overleden er is sprake van TijdelijkGeenGezag
     Gegeven persoon 'Quincy'
     * is minderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     Gegeven persoon 'Mees'
     * is minderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -400,7 +400,7 @@ Functionaliteit: 4b.1 - Ouder of partner overleden of onbevoegd tot gezag
   Scenario: De moeder is minderjarig en overleden er is sprake van Voogdij
     Gegeven persoon 'Quincy'
     * is meerderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     * is overleden
     En persoon 'Mees'
     * is meerderjarig
@@ -424,7 +424,7 @@ Functionaliteit: 4b.1 - Ouder of partner overleden of onbevoegd tot gezag
     * is meerderjarig
     En persoon 'Mees'
     * is meerderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     * is overleden
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
@@ -443,11 +443,11 @@ Functionaliteit: 4b.1 - Ouder of partner overleden of onbevoegd tot gezag
   Scenario: De moeder en partner zijn onder curatele en overleden er is sprake van TijdelijkGeenGezag
     Gegeven persoon 'Quincy'
     * is meerderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     * is overleden
     Gegeven persoon 'Mees'
     * is meerderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     * is overleden
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
@@ -466,7 +466,7 @@ Functionaliteit: 4b.1 - Ouder of partner overleden of onbevoegd tot gezag
   Scenario: De moeder is minderjarig, onder curatele en overleden er is sprake van Voogdij
     Gegeven persoon 'Quincy'
     * is minderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     * is overleden
     Gegeven persoon 'Mees'
     * is meerderjarig
@@ -490,7 +490,7 @@ Functionaliteit: 4b.1 - Ouder of partner overleden of onbevoegd tot gezag
     * is meerderjarig
     Gegeven persoon 'Mees'
     * is minderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     * is overleden
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
@@ -509,11 +509,11 @@ Functionaliteit: 4b.1 - Ouder of partner overleden of onbevoegd tot gezag
   Scenario: De moeder is minderjarig, onder curatele en overleden er is sprake van TijdelijkGeenGezag
     Gegeven persoon 'Quincy'
     * is minderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     * is overleden
     Gegeven persoon 'Mees'
     * is minderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     * is overleden
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |

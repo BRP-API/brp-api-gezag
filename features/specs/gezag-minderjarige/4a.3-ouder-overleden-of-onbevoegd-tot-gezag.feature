@@ -161,11 +161,11 @@ Functionaliteit: 4a.3 - Ouder overleden of onbevoegd tot gezag
       | minderjarige.burgerservicenummer | 000000061                                           |
       | toelichting                      | Tijdelijk geen gezag omdat de ouder minderjarig is. |
 
-  Regel: De ouder is onder curatele gesteld
+  Regel: De ouder staat onder curatele
 
   Scenario: De moeder (ouder 1 van 'Ronald') is onder curatele er is TijdelijkGeenGezag
     Gegeven persoon 'Lieke'
-    * is onder curatele gesteld
+    * staat onder curatele
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -180,7 +180,7 @@ Functionaliteit: 4a.3 - Ouder overleden of onbevoegd tot gezag
 
   Scenario: De vader (ouder 2 van 'Thea') is onder curatele er is TijdelijkGeenGezag
     Gegeven persoon 'Rik'
-    * is onder curatele gesteld
+    * staat onder curatele
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000061 |
@@ -227,7 +227,7 @@ Functionaliteit: 4a.3 - Ouder overleden of onbevoegd tot gezag
       | minderjarige.burgerservicenummer | 000000061                                         |
       | toelichting                      | Tijdelijk geen gezag omdat de ouder overleden is. |
 
-  Regel: De ouder is onder curatele gesteld en overleden
+  Regel: De ouder staat onder curatele en overleden
 
   Scenario: De moeder (ouder 1 van 'Ronald') is onder curatele en overleden er is TijdelijkGeenGezag
     Gegeven persoon 'Lieke'
@@ -261,12 +261,12 @@ Functionaliteit: 4a.3 - Ouder overleden of onbevoegd tot gezag
       | minderjarige.burgerservicenummer | 000000061                                         |
       | toelichting                      | Tijdelijk geen gezag omdat de ouder overleden is. |
 
-  Regel: De ouder is onder curatele gesteld, overleden en minderjarig
+  Regel: De ouder staat onder curatele, overleden en minderjarig
 
   Scenario: De moeder (ouder 1 van 'Ronald') is onder curatele, overleden en minderjarig er is TijdelijkGeenGezag
     Gegeven persoon 'Lieke'
     * is minderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     * is overleden
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
@@ -283,7 +283,7 @@ Functionaliteit: 4a.3 - Ouder overleden of onbevoegd tot gezag
   Scenario: De vader (ouder 2 van 'Thea') is onder curatele, overleden en minderjarig er is TijdelijkGeenGezag
     Gegeven persoon 'Rik'
     * is minderjarig
-    * is onder curatele gesteld
+    * staat onder curatele
     * is overleden
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |

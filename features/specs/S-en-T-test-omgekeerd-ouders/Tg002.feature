@@ -98,9 +98,9 @@ Functionaliteit: Tg002 - Ouderlozen – Puntouder(s) - Geen ouders
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                    |
-      | type                             | GezagNietTeBepalen                                                        |
-      | minderjarige.burgerservicenummer | 000000012                                                                 |
+      | naam                             | waarde                                                                         |
+      | type                             | GezagNietTeBepalen                                                             |
+      | minderjarige.burgerservicenummer | 000000012                                                                      |
       | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren. |
 
   Scenario: Lg01_008 - vondeling in Nederland, puntmoeder (onbekende ouder), lege categorie 03 (juridisch geen ouder), geen categorie 11
@@ -112,9 +112,9 @@ Functionaliteit: Tg002 - Ouderlozen – Puntouder(s) - Geen ouders
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                          |
-      | type                             | GezagNietTeBepalen                                                              |
-      | minderjarige.burgerservicenummer | 000000024                                                                       |
+      | naam                             | waarde                                                                                 |
+      | type                             | GezagNietTeBepalen                                                                     |
+      | minderjarige.burgerservicenummer | 000000024                                                                              |
       | toelichting                      | Gezag kan niet worden bepaald omdat één of meer ouders van minderjarige onbekend zijn. |
 
   Scenario: Lg01_009 - vondeling in China, juridisch geen ouders, geen categorie 11
@@ -126,7 +126,7 @@ Functionaliteit: Tg002 - Ouderlozen – Puntouder(s) - Geen ouders
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                    |
-      | type                             | GezagNietTeBepalen                                                        |
-      | minderjarige.burgerservicenummer | 000000036                                                                 |
+      | naam                             | waarde                                                                         |
+      | type                             | GezagNietTeBepalen                                                             |
+      | minderjarige.burgerservicenummer | 000000036                                                                      |
       | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren. |

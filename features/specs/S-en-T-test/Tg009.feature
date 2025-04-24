@@ -691,8 +691,8 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | burgerservicenummer | 000000012 |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |      
+      | type                             | GezamenlijkOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000036                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -711,8 +711,8 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | burgerservicenummer | 000000024 |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |      
+      | type                             | GezamenlijkOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000036                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -730,8 +730,8 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |      
+      | type                             | GezamenlijkOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000036                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -759,9 +759,9 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | naam                | waarde    |
       | burgerservicenummer | 000000061 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                               |
-      | type                             | GezagNietTeBepalen                                                   |
-      | minderjarige.burgerservicenummer | 000000061                                                            |
+      | naam                             | waarde                                                                    |
+      | type                             | GezagNietTeBepalen                                                        |
+      | minderjarige.burgerservicenummer | 000000061                                                                 |
       | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige niet in Nederland woont. |
 
   Scenario: Lg01_046 - actueel gehuwd en gescheiden, 1 meerderjarig kind, 1 minderjarig erkend kind
@@ -775,8 +775,8 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | burgerservicenummer | 000000073 |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000097                 |      
+      | type                             | GezamenlijkOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000097                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
       | burgerservicenummer | 000000085 |
@@ -795,8 +795,8 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | burgerservicenummer | 000000085 |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000097                 |      
+      | type                             | GezamenlijkOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000097                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
       | burgerservicenummer | 000000085 |
@@ -814,8 +814,8 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | burgerservicenummer | 000000097 |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000097                 |      
+      | type                             | GezamenlijkOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000097                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
       | burgerservicenummer | 000000085 |
@@ -832,7 +832,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | naam                | waarde    |
       | burgerservicenummer | 000000103 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                    |
-      | type                             | GezagNietTeBepalen                                                        |
-      | minderjarige.burgerservicenummer | 000000103                                                                 |
+      | naam                             | waarde                                                                         |
+      | type                             | GezagNietTeBepalen                                                             |
+      | minderjarige.burgerservicenummer | 000000103                                                                      |
       | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren. |

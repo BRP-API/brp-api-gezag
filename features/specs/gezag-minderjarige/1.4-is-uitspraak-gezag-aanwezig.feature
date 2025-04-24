@@ -41,7 +41,7 @@ Functionaliteit: 1.4 - is uitspraak gezag aanwezig
 
   Regel: Geen uitspraak gezag van toepassing
 
-  Scenario: Voor het kind is geen uitspraak gezag aanwezig er is sprake van TweehoofdigOuderlijkGezag
+  Scenario: Voor het kind is geen uitspraak gezag aanwezig er is sprake van GezamenlijkOuderlijkGezag
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -50,8 +50,8 @@ Functionaliteit: 1.4 - is uitspraak gezag aanwezig
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |      
+      | type                             | GezamenlijkOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000036                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -59,7 +59,7 @@ Functionaliteit: 1.4 - is uitspraak gezag aanwezig
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
 
-  Scenario: Voor het kind een uitspraak gedaan maar is geen indicatie betreft gezag er is sprake van TweehoofdigOuderlijkGezag
+  Scenario: Voor het kind een uitspraak gedaan maar is geen indicatie betreft gezag er is sprake van GezamenlijkOuderlijkGezag
     Gegeven voor 'Babette' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
       | naam                               | waarde   |
       | indicatie curateleregister (33.10) | 1        |
@@ -72,8 +72,8 @@ Functionaliteit: 1.4 - is uitspraak gezag aanwezig
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |      
+      | type                             | GezamenlijkOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000036                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -106,11 +106,11 @@ Functionaliteit: 1.4 - is uitspraak gezag aanwezig
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                         |
-      | type                             | EenhoofdigOuderlijkGezag       |
-      | minderjarige.burgerservicenummer | 000000036                      |
-      | ouder.burgerservicenummer        | 000000012                      |  
-      | inOnderzoek                      | true                           |
+      | naam                             | waarde                   |
+      | type                             | EenhoofdigOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000036                |
+      | ouder.burgerservicenummer        | 000000012                |
+      | inOnderzoek                      | true                     |
 
   Scenario: Voor het kind een uitspraak gedaan, deze uitspraak stond in onderzoek er is sprake van EenhoofdigOuderlijkGezag
     Gegeven voor 'Babette' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
@@ -130,7 +130,7 @@ Functionaliteit: 1.4 - is uitspraak gezag aanwezig
       | naam                             | waarde                   |
       | type                             | EenhoofdigOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |      
+      | ouder.burgerservicenummer        | 000000012                |
 
   Regel: Uitspraak gezag is aanwezig
 

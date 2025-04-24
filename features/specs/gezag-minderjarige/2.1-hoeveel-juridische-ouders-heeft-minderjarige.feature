@@ -44,7 +44,7 @@ Functionaliteit: 2.1 - hoeveel juridische ouders heeft minderjarige
 
   Regel: Kind heeft twee juridische ouders
 
-  Scenario: Beide ouders staan geregistreerd voor het kind er is sprake van TweehoofdigOuderlijkGezag
+  Scenario: Beide ouders staan geregistreerd voor het kind er is sprake van GezamenlijkOuderlijkGezag
     Gegeven 'Gertruda' en 'Gerrit' zijn met elkaar gehuwd
     Gegeven persoon 'Gert'
     * heeft 'Gertruda' als ouder 1
@@ -57,8 +57,8 @@ Functionaliteit: 2.1 - hoeveel juridische ouders heeft minderjarige
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |      
+      | type                             | GezamenlijkOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000036                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -81,7 +81,7 @@ Functionaliteit: 2.1 - hoeveel juridische ouders heeft minderjarige
       | naam                             | waarde                   |
       | type                             | EenhoofdigOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |      
+      | ouder.burgerservicenummer        | 000000012                |
 
   Scenario: Voor het kind is 1 ouder bekend als ouder 2 er is sprake van EenhoofdigOuderlijkGezag
     Gegeven  persoon 'Gert'
@@ -96,7 +96,7 @@ Functionaliteit: 2.1 - hoeveel juridische ouders heeft minderjarige
       | naam                             | waarde                   |
       | type                             | EenhoofdigOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000024                |      
+      | ouder.burgerservicenummer        | 000000024                |
 
   Regel: Kind heeft geen juridische ouders
 
@@ -127,9 +127,9 @@ Functionaliteit: 2.1 - hoeveel juridische ouders heeft minderjarige
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                          |
-      | type                             | GezagNietTeBepalen                                                              |
-      | minderjarige.burgerservicenummer | 000000036                                                                       |
+      | naam                             | waarde                                                                                 |
+      | type                             | GezagNietTeBepalen                                                                     |
+      | minderjarige.burgerservicenummer | 000000036                                                                              |
       | toelichting                      | Gezag kan niet worden bepaald omdat één of meer ouders van minderjarige onbekend zijn. |
 
   Scenario: Voor het kind is ouder 2 onbekend er is sprake van GezagNietTeBepalen
@@ -144,9 +144,9 @@ Functionaliteit: 2.1 - hoeveel juridische ouders heeft minderjarige
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                          |
-      | type                             | GezagNietTeBepalen                                                              |
-      | minderjarige.burgerservicenummer | 000000036                                                                       |
+      | naam                             | waarde                                                                                 |
+      | type                             | GezagNietTeBepalen                                                                     |
+      | minderjarige.burgerservicenummer | 000000036                                                                              |
       | toelichting                      | Gezag kan niet worden bepaald omdat één of meer ouders van minderjarige onbekend zijn. |
 
   Scenario: Voor het kind zijn beide ouders onbekend er is sprake van GezagNietTeBepalen
@@ -166,7 +166,7 @@ Functionaliteit: 2.1 - hoeveel juridische ouders heeft minderjarige
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                          |
-      | type                             | GezagNietTeBepalen                                                              |
-      | minderjarige.burgerservicenummer | 000000036                                                                       |
+      | naam                             | waarde                                                                                 |
+      | type                             | GezagNietTeBepalen                                                                     |
+      | minderjarige.burgerservicenummer | 000000036                                                                              |
       | toelichting                      | Gezag kan niet worden bepaald omdat één of meer ouders van minderjarige onbekend zijn. |

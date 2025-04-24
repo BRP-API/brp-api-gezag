@@ -174,9 +174,9 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                                                                                                                                             |
-      | type                             | GezagNietTeBepalen                                                                                                                                                                                                 |
-      | minderjarige.burgerservicenummer | 000000012                                                                                                                                                                                                          |
+      | naam                             | waarde                                                                                                                                                                                                                      |
+      | type                             | GezagNietTeBepalen                                                                                                                                                                                                          |
+      | minderjarige.burgerservicenummer | 000000012                                                                                                                                                                                                                   |
       | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd |
 
   Scenario: Lg01_014 - minderjarig niet erkend kind, moeder ook minderjarig, geen categorie 11
@@ -206,7 +206,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | naam                             | waarde                   |
       | type                             | EenhoofdigOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000048                |
-      | ouder.burgerservicenummer        | 000000036                |      
+      | ouder.burgerservicenummer        | 000000036                |
 
   Scenario: Lg01_016 - minderjarig niet erkend kind, moeder minderjarig, bij geboorte, inmiddels meerderjarig, geen categorie 11
     # Route: 40o1 - Wie heeft gezag?: Ouder1 eenhoofdig ouderlijk gezag (OG1)

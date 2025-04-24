@@ -30,9 +30,9 @@ Functionaliteit: gezag van een meerderjarige die niet in de BRP staat ingeschrev
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                               |
-      | type                             | GezagNietTeBepalen                                                   |
-      | minderjarige.burgerservicenummer | 000000036                                                            |
+      | naam                             | waarde                                                                    |
+      | type                             | GezagNietTeBepalen                                                        |
+      | minderjarige.burgerservicenummer | 000000036                                                                 |
       | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige niet in Nederland woont. |
 
   Scenario: een meerderjarig persoon in RNI en zonder kinderen
@@ -106,9 +106,9 @@ Functionaliteit: gezag van een meerderjarige die niet in de BRP staat ingeschrev
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                               |
-      | type                             | GezagNietTeBepalen                                                   |
-      | minderjarige.burgerservicenummer | 000000036                                                            |
+      | naam                             | waarde                                                                    |
+      | type                             | GezagNietTeBepalen                                                        |
+      | minderjarige.burgerservicenummer | 000000036                                                                 |
       | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige niet in Nederland woont. |
 
     Voorbeelden:

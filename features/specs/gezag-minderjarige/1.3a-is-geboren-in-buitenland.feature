@@ -24,7 +24,7 @@ Functionaliteit: 1.3a - is geboren in het buitenland
     En 'Regina' en 'Paul' zijn met elkaar gehuwd
     En de persoon 'Nona' heeft de volgende gegevens
       | burgerservicenummer (01.20) |
-      |                   000000036 |
+      | 000000036                   |
     * is ingeschreven in de BRP
     * is minderjarig
     * heeft 'Regina' als ouder 1
@@ -43,9 +43,9 @@ Functionaliteit: 1.3a - is geboren in het buitenland
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                    |
-      | type                             | GezagNietTeBepalen                                                        |
-      | minderjarige.burgerservicenummer | 000000036                                                                 |
+      | naam                             | waarde                                                                         |
+      | type                             | GezagNietTeBepalen                                                             |
+      | minderjarige.burgerservicenummer | 000000036                                                                      |
       | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren. |
 
   Scenario: Een in Nederland geboren kind met twee ouders heeft tweehoofdig ouder gezag
@@ -69,7 +69,7 @@ Functionaliteit: 1.3a - is geboren in het buitenland
       | burgerservicenummer | 000000024 |
 
   Scenario: Van een kind met onbekend geboorteland kan het gezag niet worden bepaald
-    Gegeven persoon 'Nona' 
+    Gegeven persoon 'Nona'
     * heeft de volgende gegevens
       | geboorteland (03.30) |
       |                      |
@@ -80,7 +80,7 @@ Functionaliteit: 1.3a - is geboren in het buitenland
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                                                                                                                                 |
-      | type                             | GezagNietTeBepalen                                                                                                                                                                                     |
-      | minderjarige.burgerservicenummer | 000000036                                                                                                                                                                                              |
+      | naam                             | waarde                                                                                                                                                                                                          |
+      | type                             | GezagNietTeBepalen                                                                                                                                                                                              |
+      | minderjarige.burgerservicenummer | 000000036                                                                                                                                                                                                       |
       | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen of de persoon naar het buitenland geëmigreerd is geweest. Het gaat om de volgende gegevens: Geboorteland van bevraagde persoon |

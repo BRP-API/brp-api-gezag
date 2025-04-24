@@ -65,7 +65,7 @@ Functionaliteit: 1.3 - is naar buitenland geëmigreerd geweest
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                        |
-      | type                             | GezagNietTeBepalen                                                            |
-      | minderjarige.burgerservicenummer | 000000036                                                                     |
+      | naam                             | waarde                                                                             |
+      | type                             | GezagNietTeBepalen                                                                 |
+      | minderjarige.burgerservicenummer | 000000036                                                                          |
       | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige buiten Nederland heeft verbleven. |

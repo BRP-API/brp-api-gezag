@@ -418,9 +418,9 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                                                             |
-      | type                             | GezagNietTeBepalen                                                                                                                 |
-      | minderjarige.burgerservicenummer | 000000048                                                                                                                          |
+      | naam                             | waarde                                                                                                                                                        |
+      | type                             | GezagNietTeBepalen                                                                                                                                            |
+      | minderjarige.burgerservicenummer | 000000048                                                                                                                                                     |
       | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd |
 
   Scenario: Lg01_129 - erkend categorie 03 op PL kind met Anr/BSN, categorie 09 ontbreekt bij vader, indicatie gezag 12

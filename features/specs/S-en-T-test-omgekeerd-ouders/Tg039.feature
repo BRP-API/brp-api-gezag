@@ -328,9 +328,9 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | type                             | Voogdij   |
       | minderjarige.burgerservicenummer | 000000061 |
     En heeft 'gezag' een 'derde' met de volgende gegevens
-      | naam                | waarde    |
+      | naam                | waarde       |
       | type                | BekendeDerde |
-      | burgerservicenummer | 000000012 |
+      | burgerservicenummer | 000000012    |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde    |
       | type                             | Voogdij   |

@@ -336,7 +336,8 @@ Functionaliteit: Tg020 - Carolussen-Charbon
       | minderjarige.burgerservicenummer | 000000048        |
       | ouder.burgerservicenummer        | 000000024        |
       | derde.burgerservicenummer        | 000000012        |
-| derde.type                       | BekendeDerde     |
+      | derde.type                       | BekendeDerde     |
+
   Scenario: Lg01_118 - ouders geregistreerd partnerschap na 01-04-2014, 2 ouders
     # Route: 49 - Wie heeft gezag?: beide ouders (OG2)
     Als gezag wordt gezocht met de volgende parameters

@@ -38,9 +38,9 @@ Functionaliteit: 1.1 - Staat het kind (minderjarige) als ingezetene in de BRP?
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                               |
-      | type                             | GezagNietTeBepalen                                                   |
-      | minderjarige.burgerservicenummer | 000000036                                                            |
+      | naam                             | waarde                                                                    |
+      | type                             | GezagNietTeBepalen                                                        |
+      | minderjarige.burgerservicenummer | 000000036                                                                 |
       | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige niet in Nederland woont. |
 
   Scenario: een ingezeten kind met twee ouders er is sprake van GezamenlijkOuderlijkGezag
@@ -73,9 +73,9 @@ Functionaliteit: 1.1 - Staat het kind (minderjarige) als ingezetene in de BRP?
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                                        |
-      | type                             | GezagNietTeBepalen                                                                                            |
-      | minderjarige.burgerservicenummer | 000000036                                                                                                     |
+      | naam                             | waarde                                                                                                                                   |
+      | type                             | GezagNietTeBepalen                                                                                                                       |
+      | minderjarige.burgerservicenummer | 000000036                                                                                                                                |
       | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: verblijfplaats van bevraagde persoon |
 
   Scenario: Van een kind met een onbekende gemeente van inschrijving kan geen gezag worden bepaald er is sprake van GezagNietTeBepalen
@@ -88,7 +88,7 @@ Functionaliteit: 1.1 - Staat het kind (minderjarige) als ingezetene in de BRP?
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                                                   |
-      | type                             | GezagNietTeBepalen                                                                                                       |
-      | minderjarige.burgerservicenummer | 000000036                                                                                                                |
+      | naam                             | waarde                                                                                                                                              |
+      | type                             | GezagNietTeBepalen                                                                                                                                  |
+      | minderjarige.burgerservicenummer | 000000036                                                                                                                                           |
       | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: gemeente van inschrijving van bevraagde persoon |

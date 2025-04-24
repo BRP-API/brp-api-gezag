@@ -75,11 +75,11 @@ Functionaliteit: 2a.3 - erkenning
     Gegeven persoon 'Filip'
     * is geboren op 1-12-2022
     * heeft 'Lotte' als ouder 1 met de volgende gegevens
-      | geslachtsaanduiding (04.10)     | datum ingang familierechtelijke betrekking (62.10)  |
-      | O                               | gisteren - 17 jaar                                  |
+      | geslachtsaanduiding (04.10) | datum ingang familierechtelijke betrekking (62.10) |
+      | O                           | gisteren - 17 jaar                                 |
     * heeft 'Dirk' als ouder 2 met de volgende gegevens
-      | geslachtsaanduiding (04.10)     | datum ingang familierechtelijke betrekking (62.10)  |
-      | O                               | gisteren - 17 jaar                                  |
+      | geslachtsaanduiding (04.10) | datum ingang familierechtelijke betrekking (62.10) |
+      | O                           | gisteren - 17 jaar                                 |
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -310,7 +310,7 @@ Functionaliteit: 2a.3 - erkenning
       | minderjarige.burgerservicenummer | 000000036                |
       | ouder.burgerservicenummer        | 000000012                |
 
-  Voorbeelden:
+    Voorbeelden:
       | geboorte-datum |
       | 1-1-2023       |
       | 6-4-2023       |
@@ -337,7 +337,7 @@ Functionaliteit: 2a.3 - erkenning
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
 
-      Voorbeelden:
+    Voorbeelden:
       | geboorte-datum |
       | 1-1-2023       |
       | 6-4-2023       |
@@ -364,7 +364,7 @@ Functionaliteit: 2a.3 - erkenning
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
 
-      Voorbeelden:
+    Voorbeelden:
       | geboorte-datum |
       | 1-1-2023       |
       | 6-4-2023       |
@@ -391,7 +391,7 @@ Functionaliteit: 2a.3 - erkenning
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
 
-      Voorbeelden:
+    Voorbeelden:
       | geboorte-datum |
       | 1-1-2023       |
       | 6-4-2023       |
@@ -418,7 +418,7 @@ Functionaliteit: 2a.3 - erkenning
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
 
-      Voorbeelden:
+    Voorbeelden:
       | geboorte-datum |
       | 1-1-2023       |
       | 6-4-2023       |
@@ -445,7 +445,7 @@ Functionaliteit: 2a.3 - erkenning
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
 
-      Voorbeelden:
+    Voorbeelden:
       | geboorte-datum |
       | 1-1-2023       |
       | 6-4-2023       |

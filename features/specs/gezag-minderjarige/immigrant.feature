@@ -1,6 +1,6 @@
 # language: nl
 Functionaliteit: Gezag bepalen voor personen die in het buitenland verbleven hebben
-  Wanneer een minderjarige een tijd een gewone verblijfplaats in het buitenland heeft gehad, kan het gezag dat is ontstaan door toepassing van buitenlands recht wijzigen.
+  Wanneer een minderjarige een tijd een gewone verblijfplaats in het buitenland heeft gehad, kan het gezag onder de toepassing van buitenlands recht wijzigen.
   In sommige situaties is het daardoor niet te bepalen wat het gezag is.
 
   We hanteren hierbij de volgende principes:
@@ -28,7 +28,12 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verbleven heb
     * is minderjarig
     En de persoon 'Zoe' met burgerservicenummer '000000048'
     * is meerderjarig
+    En de persoon 'Giovanni' zonder burgerservicenummer
+    * is meerderjarig
+    En de persoon 'Ariana' zonder burgerservicenummer
+    * is meerderjarig
 
+  @to-do @skip-verify
   Regel: Het gezag kan (nog) niet worden bepaald voor een minderjarige die een gewone verblijfplaats in het buitenland heeft gehad, met twee ouders en waarbij volgens de gegevens in de BRP van rechtswege eenhoofdig ouderlijk gezag zou worden bepaald
     Het gezag is niet te bepalen omdat:
     - We weten (nog) niet of beide ouders in het buitenland gezamenlijk ouderlijk gezag hebben gekregen. In sommige landen (België, Spanje, ...) krijgt de vader ook gezag wanneer ouders niet gehuwd zijn. De lijst met landen waar dit het geval is, is nog niet bekend.
@@ -69,6 +74,7 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verbleven heb
         | Duitsland | een land waar volgens het recht van dat land geen gezamenlijk gezag ontstaat bij erkenning |
         | Spanje    | een waar door erkenning wel gezamenlijk gezag ontstaat                                     |
 
+  @to-do @skip-verify
   Regel: Een gerechtelijke uitspraak over het gezag voor een minderjarige blijft geldig wanneer de minderjarige een gewone verblijfplaats in het buitenland heeft gehad
 
     Voorbeeld: minderjarige is geïmmigreerd en daarna is er in een gerechtelijke uitspraak gezag toegewezen
@@ -82,12 +88,12 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verbleven heb
 
       Voorbeelden:
         | toegewezen aan             | gezag uitspraak                                               |
-        | 'Gerda'                    | eenhoofdig ouderlijk gezag met ouder 'Gerda'                  |
         | 'Aart'                     | eenhoofdig ouderlijk gezag met ouder 'Aart'                   |
+        | 'Gerda'                    | eenhoofdig ouderlijk gezag met ouder 'Gerda'                  |
         | beide ouders               | gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart' |
         | een voogdijinstelling      | voogdij                                                       |
-        | ouder 'Gerda' en een derde | gezamenlijk gezag met ouder 'Gerda' en een onbekende derde    |
         | ouder 'Aart' en een derde  | gezamenlijk gezag met ouder 'Aart' en een onbekende derde     |
+        | ouder 'Gerda' en een derde | gezamenlijk gezag met ouder 'Gerda' en een onbekende derde    |
 
     Voorbeeld: Er is een gerechtelijke uitspraak gezag toegewezen, daarna is de minderjarige geëmigreerd en vervolgens weer geïmmigreerd
       Gegeven persoon 'Bert'
@@ -100,15 +106,15 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verbleven heb
 
       Voorbeelden:
         | toegewezen aan             | gezag uitspraak                                               |
-        | 'Gerda'                    | eenhoofdig ouderlijk gezag met ouder 'Gerda'                  |
         | 'Aart'                     | eenhoofdig ouderlijk gezag met ouder 'Aart'                   |
+        | 'Gerda'                    | eenhoofdig ouderlijk gezag met ouder 'Gerda'                  |
         | beide ouders               | gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart' |
         | een voogdijinstelling      | voogdij                                                       |
-        | ouder 'Gerda' en een derde | gezamenlijk gezag met ouder 'Gerda' en een onbekende derde    |
         | ouder 'Aart' en een derde  | gezamenlijk gezag met ouder 'Aart' en een onbekende derde     |
+        | ouder 'Gerda' en een derde | gezamenlijk gezag met ouder 'Gerda' en een onbekende derde    |
 
   Regel: Het gezag kan worden bepaald voor een minderjarige die een gewone verblijfplaats in het buitenland heeft gehad en gezamenlijk ouderlijk gezag heeft
-
+    @nieuw
     Voorbeeld: minderjarige is in het buitenland geboren en heeft twee ouders die met elkaar gehuwd zijn
       Gegeven 'Gerda' en 'Aart' zijn met elkaar gehuwd
       En persoon 'Bert'
@@ -127,6 +133,7 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verbleven heb
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
 
+    @nieuw
     Voorbeeld: minderjarige heeft zijn gewone verblijfplaats in het buitenland gehad en heeft twee ouders die met elkaar gehuwd zijn
       Gegeven 'Gerda' en 'Aart' zijn met elkaar gehuwd
       En persoon 'Bert'
@@ -137,6 +144,7 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verbleven heb
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
 
+  @to-do @skip-verify
   Regel: Het gezag kan worden bepaald voor een minderjarige die een gewone verblijfplaats in het buitenland heeft gehad en gezamenlijk gezag heeft
     Nederland erkent ook huwelijk van homoparen in het buitenland. Een buitenlands huwelijk heeft dus voor het bepalen van gezag dezelfde status als een huwelijk in Nederland (1:253sa BW).
 
@@ -146,10 +154,11 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verbleven heb
       * heeft 'Gerda' als ouder
       * is geboren in Duitsland
       * is 5 jaar geleden geboren
-      * is 3 jaar geleden geïmmigreerd
+      * is 3 jaar geleden geïmmigreerd naar Nederland
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en derde 'Zoe'
 
+  @to-do @skip-verify
   Regel: Het gezag kan worden bepaald voor een minderjarige die een gewone verblijfplaats in het buitenland heeft gehad en één ouder heeft
 
     Voorbeeld: minderjarige is in het buitenland geboren en heeft één ouder waarbij geen huwelijk bekend is
@@ -160,6 +169,7 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verbleven heb
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
 
+  @nieuw
   Regel: het gezag kan worden bepaald voor een minderjarige waarvan een of beide gezaghebbenden niet staan ingeschreven in de BRP
     In dat geval weten we niet met zekerheid of er iets is veranderd in de situatie van deze ouder(s). Bijvoorbeeld of een ouder uit de ouderlijke macht is ontzet of de ouder is overleden.
     Het gezag wordt in dat geval bepaald op basis van de gegevens van de ouders zoals die bekend zijn. Daarbij wordt dan een toelichting geleverd waarin wordt aangegeven dat de persoon gewijzigd gezag kan laten opnemen in het gezagsregister.
@@ -168,32 +178,65 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verbleven heb
     Voorbeeld: minderjarige is in Nederland geboren en een van de ouders is niet ingeschreven in de BRP
       Gegeven persoon 'Bert'
       * is 1 jaar geleden geboren
+      * is ingeschreven in een Nederlandse gemeente
       * heeft 'Gerda' als ouder
-      * heeft 'Günther Schmidt' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
+      * heeft 'Giovanni' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
       Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Günther Schmidt' met de toelichting 'gezag is bepaald op basis van onvolledige gegevens van Günther Schmidt. Feiten die bepalend zijn voor het gezag van Günther Schmidt kunnen betrokkenen in het gezagsregister dan wel bij je woongemeente laten inschrijven, zodat zij worden meegenomen in de gezagsbepaling van minderjarige.'
+      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Giovanni'
+
+    @to-do @skip-verify
+    Voorbeeld: minderjarige is in Nederland geboren en een van de ouders is niet ingeschreven in de BRP
+      Gegeven persoon 'Bert'
+      * is 1 jaar geleden geboren
+      * is ingeschreven in een Nederlandse gemeente
+      * heeft 'Gerda' als ouder
+      * heeft 'Giovanni' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Giovanni' met de toelichting 'gezag is bepaald op basis van onvolledige gegevens van Giovanni. Feiten die bepalend zijn voor het gezag van Giovanni kunnen betrokkenen in het gezagsregister dan wel bij je woongemeente laten inschrijven, zodat zij worden meegenomen in de gezagsbepaling van minderjarige.'
 
     Voorbeeld: minderjarige is in Nederland geboren en een van de ouders is niet ingeschreven in de BRP
       Gegeven persoon 'Bert'
       * is 10 jaar geleden geboren
+      * is ingeschreven in een Nederlandse gemeente
       * heeft 'Gerda' als ouder
-      * heeft 'Günther Schmidt' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
+      * heeft 'Giovanni' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
 
     Voorbeeld: minderjarige is in Nederland geboren en een van de ouders is niet ingeschreven in de BRP en de ouders zijn met elkaar gehuwd
       Gegeven persoon 'Bert'
       * is 10 jaar geleden geboren
+      * is ingeschreven in een Nederlandse gemeente
       * heeft 'Gerda' als ouder
-      * heeft 'Günther Schmidt' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
-      En 'Gerda' en 'Günther Schmidt' zijn met elkaar gehuwd
+      * heeft 'Giovanni' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
+      En 'Gerda' en 'Giovanni' zijn met elkaar gehuwd
       Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Günther Schmidt' met de toelichting 'gezag is bepaald op basis van onvolledige gegevens van Günther Schmidt. Feiten die bepalend zijn voor het gezag van Günther Schmidt kunnen betrokkenen in het gezagsregister dan wel bij je woongemeente laten inschrijven, zodat zij worden meegenomen in de gezagsbepaling van minderjarige.'
+      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Giovanni'
+
+    @to-do @skip-verify
+    Voorbeeld: minderjarige is in Nederland geboren en een van de ouders is niet ingeschreven in de BRP en de ouders zijn met elkaar gehuwd
+      Gegeven persoon 'Bert'
+      * is 10 jaar geleden geboren
+      * is ingeschreven in een Nederlandse gemeente
+      * heeft 'Gerda' als ouder
+      * heeft 'Giovanni' als ouder die niet met burgerservicenummer is ingeschreven in de BRP
+      En 'Gerda' en 'Giovanni' zijn met elkaar gehuwd
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Giovanni' met de toelichting 'gezag is bepaald op basis van onvolledige gegevens van Giovanni. Feiten die bepalend zijn voor het gezag van Giovanni kunnen betrokkenen in het gezagsregister dan wel bij je woongemeente laten inschrijven, zodat zij worden meegenomen in de gezagsbepaling van minderjarige.'
 
     Voorbeeld: minderjarige is in Nederland geboren en de ouder was op het moment van geboorte gehuwd en partner is niet ingeschreven in de BRP
-      Gegeven 'Gerda' is 12 jaar geleden gehuwd met 'Ariana Schmidt' die niet met burgerservicenummer is ingeschreven in de BRP
+      Gegeven 'Gerda' is 12 jaar geleden gehuwd met 'Ariana' die niet met burgerservicenummer is ingeschreven in de BRP
       En persoon 'Bert'
       * is 10 jaar geleden geboren
       * heeft 'Gerda' als ouder
       Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en derde 'Ariana Schmidt' met de toelichting 'gezag is bepaald op basis van onvolledige gegevens van Ariana Schmidt. Feiten die bepalend zijn voor het gezag van Ariana Schmidt kunnen in het gezagsregister worden opgenomen, zodat zij worden meegenomen in de gezagsbepaling van minderjarige.'
+      Dan is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en derde 'Ariana'
+
+    @to-do @skip-verify
+    Voorbeeld: minderjarige is in Nederland geboren en de ouder was op het moment van geboorte gehuwd en partner is niet ingeschreven in de BRP
+      Gegeven 'Gerda' is 12 jaar geleden gehuwd met 'Ariana' die niet met burgerservicenummer is ingeschreven in de BRP
+      En persoon 'Bert'
+      * is 10 jaar geleden geboren
+      * heeft 'Gerda' als ouder
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en derde 'Ariana' met de toelichting 'gezag is bepaald op basis van onvolledige gegevens van Ariana Schmidt. Feiten die bepalend zijn voor het gezag van Ariana Schmidt kunnen in het gezagsregister worden opgenomen, zodat zij worden meegenomen in de gezagsbepaling van minderjarige.'

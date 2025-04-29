@@ -302,7 +302,6 @@ Functionaliteit: Tg012 - Loon-Liebeek
 
   Scenario: Lg01_065 - ongehuwde vrouw, 3 minderjarige kinderen samen met ongehuwde vrouw
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -332,7 +331,6 @@ Functionaliteit: Tg012 - Loon-Liebeek
 
   Scenario: Lg01_066 - ongehuwde vrouw, 3 minderjarige kinderen samen met ongehuwde vrouw
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -361,7 +359,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | burgerservicenummer | 000000024 |
 
   Scenario: Lg01_067 - geboorte uit ongehuwde vrouw, adoptie met terugwerkende kracht tot geboortedatum door duo-moeder
-    # Route: 55 - Wie heeft gezag?: beide ouders (OG2)
+    # Route: 55
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -380,7 +378,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | burgerservicenummer | 000000012 |
 
   Scenario: Lg01_068 - geboorte uit ongehuwde vrouw, erkenning bij geboorteaangifte (ná dag geboorte) door meemoeder, categorie 11 met 12
-    # Route: 7 - Wie heeft gezag?: beide ouders (OG2)
+    # Route: 7
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |
@@ -399,7 +397,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | burgerservicenummer | 000000024 |
 
   Scenario: Lg01_069 - geboorte uit ongehuwde vrouw, erkenning ongeboren vrucht door meemoeder, geen categorie 11
-    # Route: 54 - Wie heeft gezag?: moeder, maar valt niet te achterhalen (N)
+    # Route: 54
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000061 |

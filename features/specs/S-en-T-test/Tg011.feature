@@ -781,7 +781,6 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
 
   Scenario: Lg01_055 - 3x gehuwd (1x reparatiehuwelijk), 2x gescheiden, 5 minderjarige kinderen
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -801,7 +800,6 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
 
   Scenario: Lg01_056 - 2x gehuwd (1x reparatiehuwelijk), 1x partnerschap. 1x gescheiden, 1x weduwe, 7 minderjarige kinderen waarvan 2 geboren buiten de huwelijken om
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -840,7 +838,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | ouder.burgerservicenummer        | 000000024                |
 
   Scenario: Lg01_057 - onder gezag derde, geldigheid vóór scheiding ouders
-    # Route: 6 - Wie heeft gezag?: Derde heeft gezag (V)
+    # Route: 6
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -854,7 +852,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
     En heeft 'gezag' geen derden
 
   Scenario: Lg01_058 - gezag ouder1, datum geldigheid standaardwaarde
-    # Route: 4ee - Wie heeft gezag?: moeder (N)
+    # Route: 4ee
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |
@@ -868,7 +866,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ingangsdatum geldigheid van gezagsverhouding |
 
   Scenario: Lg01_059 - gezag ouder2, geldigheid ná datum reparatiehuwelijk
-    # Route: 13 - Wie heeft gezag?: moeder (OG1)
+    # Route: 13
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000061 |
@@ -882,7 +880,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | ouder.burgerservicenummer        | 000000024                |
 
   Scenario: Lg01_060 - gezag ouder1, datum geldigheid vóór reparatiehuwelijk
-    # Route: 27 - Wie heeft gezag?: beide ouders (OG2)
+    # Route: 27
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000073 |
@@ -902,7 +900,6 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
 
   Scenario: Lg01_061 - partnerschap, overleden, 1 minderjarig kind
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000085 |
@@ -912,7 +909,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
     En heeft de persoon geen gezag
 
   Scenario: Lg01_062 - vader overleden, moeder gezag van rechtswege
-    # Route: 46 - Wie heeft gezag?: moeder (OG1)
+    # Route: 46
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000097 |
@@ -927,7 +924,6 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
 
   Scenario: Lg01_063 - gescheiden, 1 minderjarig kind
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000103 |
@@ -941,7 +937,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | ouder.burgerservicenummer        | 000000103                |
 
   Scenario: Lg01_064 - ouders gescheiden, moeder gezag vóór scheiding
-    # Route: 13 - Wie heeft gezag?: moeder (OG1)
+    # Route: 13
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000115 |
@@ -955,7 +951,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | ouder.burgerservicenummer        | 000000103                |
 
   Scenario: Lg01_207 - geboren tussen verschillende (ontbonden) huwelijken moeder, juridisch 1 ouder. Moeder in categorie 02
-    # Route: 40o1 - Wie heeft gezag?: moeder (OG1)
+    # Route: 40o1
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000127 |
@@ -969,7 +965,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | ouder.burgerservicenummer        | 000000024                |
 
   Scenario: Lg01_208 - geboren tussen verschillende (ontbonden) huwelijken moeder, juridisch 1 ouder. Moeder in categorie 03
-    # Route: 40o2 - Wie heeft gezag?: moeder (OG1)
+    # Route: 40o2
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000139 |

@@ -65,7 +65,7 @@ Functionaliteit: Tg017 - Rooyakkers-Ros - Getrouwd met kind in Cat.11 1D
       | aktenummer (81.20)              | 1AA0104    |
       | ingangsdatum geldigheid (85.10) | 20120501   |
     
-    # Lg01_098 - gehuwd, 1 minderjarig kind
+    # Lg01_098 - gehuwd, 1 minderjarig kind, gerechtelijke uitspraak 1D
     Gegeven de persoon met burgerservicenummer '000000024' heeft de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Rianne   |
@@ -167,7 +167,6 @@ Functionaliteit: Tg017 - Rooyakkers-Ros - Getrouwd met kind in Cat.11 1D
 
   Scenario: Lg01_097 - gehuwd, 1 minderjarig kind
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -192,7 +191,7 @@ Functionaliteit: Tg017 - Rooyakkers-Ros - Getrouwd met kind in Cat.11 1D
       | derde.type                       | OnbekendeDerde   |
 
   Scenario: Lg01_099 - ouders gehuwd, indicatie gezag 1D
-    # Route: 4 - Wie heeft gezag?: voogdij (V)
+    # Route: 4
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |

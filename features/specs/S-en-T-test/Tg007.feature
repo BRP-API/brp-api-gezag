@@ -222,7 +222,6 @@ Functionaliteit: Tg007 - Frederiks-Faassen
 
   Scenario: Lg01_028 - gehuwd, 1 minderjarig kind erkend vóór huwelijk, 1 minderjarig kind geboren ná huwelijk, echtgenoot onder curatele
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -242,7 +241,6 @@ Functionaliteit: Tg007 - Frederiks-Faassen
 
   Scenario: Lg01_029 - gehuwd, 1 minderjarig kind erkend vóór huwelijk, 1 minderjarig kind geboren ná huwelijk, onder curatele
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -252,7 +250,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
     En heeft de persoon geen gezag
 
   Scenario: Lg01_030 - minderjarige kind, geboren tijdens huwelijk ouders, vader (Ouder2) onder curatele
-    # Route: 51 - Wie heeft gezag?: moeder (OG1)
+    # Route: 51
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -266,7 +264,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | ouder.burgerservicenummer        | 000000012                |
 
   Scenario: Lg01_031 - minderjarig erkend kind, ouders inmiddels gehuwd, vader (Ouder2) onder curatele
-    # Route: 51 - Wie heeft gezag?: moeder (OG1)
+    # Route: 51
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |

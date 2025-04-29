@@ -676,7 +676,6 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
 
   Scenario: Lg01_032 - gescheiden, 1 minderjarig kind erkend vóór huwelijk, 1 minderjarig kind tijdens huwelijk
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -706,7 +705,6 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
 
   Scenario: Lg01_033 - gescheiden, 1 minderjarig kind erkend vóór huwelijk, 1 minderjarig kind tijdens huwelijk
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -735,7 +733,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | burgerservicenummer | 000000024 |
 
   Scenario: Lg01_034 - minderjarig kind, erkend ná de geboorte, ouders vervolgens gehuwd en weer gescheiden, categorie 11 met 12 vóór huwelijk ouders
-    # Route: 7 - Wie heeft gezag?: beide ouders (OG2)
+    # Route: 7
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -754,7 +752,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | burgerservicenummer | 000000024 |
 
   Scenario: Lg01_035 - minderjarig kind, geboren tijdens huwelijk ouders, ouders inmiddels gescheiden, geen categorie 11
-    # Route: 45 - Wie heeft gezag?: beide ouders (OG2)
+    # Route: 45
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |
@@ -774,7 +772,6 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
 
   Scenario: Lg01_036 - gescheiden, 1 minderjarig erkend kind geboren ná de echtscheiding
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000061 |
@@ -799,7 +796,6 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
 
   Scenario: Lg01_037 - gescheiden, 1 minderjarig erkend kind geboren ná de echtscheiding
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000073 |
@@ -818,7 +814,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | burgerservicenummer | 000000073 |
 
   Scenario: Lg01_038 - erkend kind, ouders gescheiden vóór de geboortedatum, geen categorie 11
-    # Route: 54v2 - Wie heeft gezag?: moeder (OG1)
+    # Route: 54v2
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000085 |
@@ -832,7 +828,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | ouder.burgerservicenummer        | 000000061                |
 
   Scenario: Lg01_039 - erkend kind, ouders gescheiden vóór de geboortedatum, in categorie 11 aanduiding '12'
-    # Route: 7 - Wie heeft gezag?: beide ouders (OG2)
+    # Route: 7
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000097 |
@@ -851,7 +847,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | burgerservicenummer | 000000073 |
 
   Scenario: Lg01_040 - erkend als ongeboren vrucht, ouders gescheiden vóór de geboortedatum, in 11 aanduiding 'D'
-    # Route: 6 - Wie heeft gezag?: gezag bij een derde (V)
+    # Route: 6
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000103 |

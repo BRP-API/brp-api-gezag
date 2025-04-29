@@ -859,7 +859,6 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
 
   Scenario: Lg01_070 - ongehuwde vrouw met 1 minderjarig kind (erkend, erkenning vernietigd en opnieuw erkend)
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -874,7 +873,6 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
 
   Scenario: Lg01_071 - ongehuwde man met vernietiging erkenning
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -884,7 +882,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
     En heeft de persoon geen gezag
 
   Scenario: Lg01_072 - minderjarig kind, erkenning, vernietiging erkenning, nieuwe erkenning, cat 11 in historie 12, actueel leeg (vernietiging erkenning)
-    # Route: 54v1 - Wie heeft gezag?: moeder (OG1)
+    # Route: 54v1
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -899,7 +897,6 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
 
   Scenario: Lg01_073 - ongehuwde man met erkend kind
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |
@@ -910,7 +907,6 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
 
   Scenario: Lg01_074 - gescheiden vrouw, relatielegging ná ontbinding huwelijk, 1 minderjarig kind, correctie geboorte en erkenning (gehuwd op datum geboorte kind), ontkenning vaderschap, opnieuw erkenning door eerste erkenner, vervolgens een kind wat ontkend is (en niet opnieuw erkend) en 2 kinderen waarbij ouderschap vastgesteld is.
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000061 |
@@ -945,7 +941,6 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
 
   Scenario: Lg01_075 - ongehuwde man, kind erkend, geboorteakte kind gecorrigeerd (erkenning daardoor onjuist), na ontkenning vaderschap opnieuw erkend
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000073 |
@@ -955,7 +950,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
     En heeft de persoon geen gezag
 
   Scenario: Lg01_076 - minderjarig kind bij geboorte alleen moeder, vervolgens erkend, geboorte en erkenning onjuist moeder bleek gehuwd op datum geboorte, ontkenning vaderschap door (ex)huwelijkspartner moeder, vervolgens opnieuw erkend door eerste erkenner, geen categorie 11
-    # Route: 54v2 - Wie heeft gezag?: moeder (OG1)
+    # Route: 54v2
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000085 |
@@ -970,7 +965,6 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
 
   Scenario: Lg01_077 - latere vestiging in Nederland, gescheiden, vaderschap ontkend van 2 minderjarige kinderen, bij 2 kinderen ouderschap vastgesteld
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000097 |
@@ -989,7 +983,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | burgerservicenummer | 000000097 |
 
   Scenario: Lg01_166 - ontkenning vaderschap, juridisch geen ouder1, wel ouder2
-    # Route: 40o2 - Wie heeft gezag?: moeder (OG1)
+    # Route: 40o2
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000103 |
@@ -1003,7 +997,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | ouder.burgerservicenummer        | 000000061                |
 
   Scenario: Lg01_167 - vaststelling ouderschap, geen categorie 11
-    # Route: 54v1 - Wie heeft gezag?: moeder (OG1)
+    # Route: 54v1
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000115 |
@@ -1017,7 +1011,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | ouder.burgerservicenummer        | 000000061                |
 
   Scenario: Lg01_168 - vaststelling ouderschap, wel categorie 11
-    # Route: 7 - Wie heeft gezag?: beide ouders (OG2)
+    # Route: 7
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000127 |

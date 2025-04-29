@@ -367,7 +367,6 @@ Functionaliteit: Tg003 - Bloem-Berendsen-Bolder - Ongehuwd met niet-erkende kind
 
   Scenario: Lg01_010 - ongehuwde meerderjarige moeder met 2 minderjarige niet erkende kinderen
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -386,7 +385,7 @@ Functionaliteit: Tg003 - Bloem-Berendsen-Bolder - Ongehuwd met niet-erkende kind
       | ouder.burgerservicenummer        | 000000012                |
 
   Scenario: Lg01_011 - moeder opgenomen in categorie 02, categorie 03 leeg, geen categorie 11
-    # Route: 40o1 - Wie heeft gezag?: moeder (OG1)
+    # Route: 40o1
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -400,7 +399,7 @@ Functionaliteit: Tg003 - Bloem-Berendsen-Bolder - Ongehuwd met niet-erkende kind
       | ouder.burgerservicenummer        | 000000012                |
 
   Scenario: Lg01_012 - moeder opgenomen in categorie 03, categorie 02 leeg, geen categorie 11
-    # Route: 40o2 - Wie heeft gezag?: moeder (OG1)
+    # Route: 40o2
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -415,7 +414,6 @@ Functionaliteit: Tg003 - Bloem-Berendsen-Bolder - Ongehuwd met niet-erkende kind
 
   Scenario: Lg01_106 - overleden
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |
@@ -426,7 +424,6 @@ Functionaliteit: Tg003 - Bloem-Berendsen-Bolder - Ongehuwd met niet-erkende kind
 
   Scenario: Lg01_107 - onder curatele
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000061 |
@@ -436,7 +433,7 @@ Functionaliteit: Tg003 - Bloem-Berendsen-Bolder - Ongehuwd met niet-erkende kind
     En heeft de persoon geen gezag
 
   Scenario: Lg01_108 - vader overleden, moeder onder curatele, geen categorie 11
-    # Route: 48oc - Wie heeft gezag?: geen gezag (G)
+    # Route: 48oc
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000073 |
@@ -450,7 +447,7 @@ Functionaliteit: Tg003 - Bloem-Berendsen-Bolder - Ongehuwd met niet-erkende kind
       | toelichting                      | Tijdelijk geen gezag omdat een ouder overleden is en de andere ouder onder curatele staat. |
 
   Scenario: Lg01_109 - vader overleden, moeder onder curatele, kind categorie 11 gezag bij derde
-    # Route: 6 - Wie heeft gezag?: voogdij (V)
+    # Route: 6
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000085 |

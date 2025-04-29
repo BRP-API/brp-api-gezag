@@ -90,7 +90,7 @@ Functionaliteit: Tg002 - Ouderlozen – Puntouder(s) - Geen ouders
 
 
   Scenario: Lg01_007 - minderjarige asielzoeker, puntouders (onbekende ouders), geen categorie 11
-    # Route: 3a - Wie heeft gezag?: gezag niet te bepalen (N)
+    # Route: 3a
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -104,7 +104,7 @@ Functionaliteit: Tg002 - Ouderlozen – Puntouder(s) - Geen ouders
       | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren. |
 
   Scenario: Lg01_008 - vondeling in Nederland, puntmoeder (onbekende ouder), lege categorie 03 (juridisch geen ouder), geen categorie 11
-    # Route: 38 - Wie heeft gezag?: gezag niet te bepalen (N)
+    # Route: 38
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -118,7 +118,7 @@ Functionaliteit: Tg002 - Ouderlozen – Puntouder(s) - Geen ouders
       | toelichting                      | Gezag kan niet worden bepaald omdat één of meer ouders van minderjarige onbekend zijn. |
 
   Scenario: Lg01_009 - vondeling in China, juridisch geen ouders, geen categorie 11
-    # Route: 3a - Wie heeft gezag?: gezag niet te bepalen (N)
+    # Route: 3a
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |

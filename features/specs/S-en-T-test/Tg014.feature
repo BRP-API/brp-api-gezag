@@ -321,7 +321,6 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
 
   Scenario: Lg01_078 - geregistreerd partnerschap en minderjarig kind geboren vóór 01-04-2014, overleden
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -332,7 +331,6 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
 
   Scenario: Lg01_079 - geregistreerd partnerschap, partner heeft minderjarig, niet erkend kind geboren vóór 01-04-2014, partner overleden
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -349,7 +347,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | burgerservicenummer | 000000024    |
 
   Scenario: Lg01_080 - moeder geregistreerd partnerschap, niet erkend, geen categorie 11, moeder overleden geregistreerd partner van moeder automatisch gezag
-    # Route: 43o1 - Wie heeft gezag?: geregistreerd partner van overleden moeder gezag (V)
+    # Route: 43o1
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -367,7 +365,6 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
 
   Scenario: Lg01_081 - huwelijk personen gelijk geslacht (V), 1 minderjarig kind erkend als ongeboren vrucht door vader
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |
@@ -382,7 +379,6 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
 
   Scenario: Lg01_082 - huwelijk personen gelijk geslacht (V), echtgenote 1 minderjarig kind erkend als ongeboren vrucht door vader
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000061 |
@@ -391,7 +387,8 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | burgerservicenummer | 000000061 |
     En heeft de persoon geen gezag
 
-  Scenario: Lg01_083 - geboren uit huwelijk 2 vrouwen, als ongeboren vrucht erkend door vader (huwelijkspartner moeder is daardoor geen ouder) gezag voor de geboortemoeder
+  Scenario: Lg01_083 - geboren uit huwelijk 2 vrouwen, als ongeboren vrucht erkend door vader (huwelijkspartner moeder is daardoor geen ouder), geen categorie 11
+    # Route: 54
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000073 |

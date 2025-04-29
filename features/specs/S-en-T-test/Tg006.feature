@@ -247,7 +247,6 @@ Functionaliteit: Tg006 - Elbertsen-Eizenga
 
   Scenario: Lg01_024 - gehuwd, echtgenoot overleden, 2 minderjarige kinderen
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -262,7 +261,6 @@ Functionaliteit: Tg006 - Elbertsen-Eizenga
 
   Scenario: Lg01_025 - gehuwd, 2 minderjarige kinderen, overleden
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -272,7 +270,7 @@ Functionaliteit: Tg006 - Elbertsen-Eizenga
     En heeft de persoon geen gezag
 
   Scenario: Lg01_026 - minderjarig kind, geboren tijdens huwelijk ouders, vader (Ouder2) overleden, onder voogdij D
-    # Route: 6 - Wie heeft gezag?: Derde heeft gezag (V)
+    # Route: 6
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -286,7 +284,7 @@ Functionaliteit: Tg006 - Elbertsen-Eizenga
     En heeft 'gezag' geen derden
 
   Scenario: Lg01_027 - minderjarig kind, geboren tijdens huwelijk ouders, vader (Ouder1) overleden, geen categorie 11
-    # Route: 46 - Wie heeft gezag?: moeder (OG1)
+    # Route: 46
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |

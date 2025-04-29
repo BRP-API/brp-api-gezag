@@ -166,7 +166,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
 
 
   Scenario: Lg01_013 - ongehuwde minderjarige moeder met 1 minderjarig niet erkend kind
-    # Route: 39e - Wie heeft gezag?: gezag niet te bepalen (N)
+    # Route: 39e
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -180,7 +180,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd |
 
   Scenario: Lg01_014 - minderjarig niet erkend kind, moeder ook minderjarig, geen categorie 11
-    # Route: 39m - Wie heeft gezag?: geen gezag (tijdelijk) (G)
+    # Route: 39m
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -195,7 +195,6 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
 
   Scenario: Lg01_015 - ongehuwde meerderjarige moeder met 1 minderjarig niet-erkend kind,bij geboorte minderjarig inmiddels meerderjarig
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -209,7 +208,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | ouder.burgerservicenummer        | 000000036                |
 
   Scenario: Lg01_016 - minderjarig niet erkend kind, moeder minderjarig, bij geboorte, inmiddels meerderjarig, geen categorie 11
-    # Route: 40o1 - Wie heeft gezag?: Ouder1 eenhoofdig ouderlijk gezag (OG1)
+    # Route: 40o1
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |

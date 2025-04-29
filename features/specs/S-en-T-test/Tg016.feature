@@ -556,7 +556,6 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
 
   Scenario: Lg01_087 - geregistreerd partnerschap, overleden
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -567,7 +566,6 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
 
   Scenario: Lg01_088 - geregistreerd partnerschap, overleden
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -577,7 +575,7 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
     En heeft de persoon geen gezag
 
   Scenario: Lg01_089 - niet erkend minderjarig kind, moeder geregistreerd partnerschap voor 01-04-2014, zowel moeder als geregistreerd partner moeder overleden
-    # Route: 44 - Wie heeft gezag?: geen gezag (G)
+    # Route: 44oo
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -591,7 +589,7 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
       | toelichting                      | Tijdelijk geen gezag omdat beide ouders overleden zijn. |
 
   Scenario: Lg01_090 - niet erkend minderjarig kind, moeder geregistreerd partnerschap voor 01-04-2014, zowel moeder als geregistreerd partner moeder overleden, gezag 1D opgenomen vóór overlijden moeder
-    # Route: 4 - Wie heeft gezag?: voogdij (V)
+    # Route: 4
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |
@@ -606,7 +604,6 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
 
   Scenario: Lg01_091 - huwelijk tussen 2 vrouwen vóór 01-04-2014, huwelijkspartner niet automatisch ouder van kind, partner overleden
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000061 |
@@ -621,7 +618,6 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
 
   Scenario: Lg01_092 - huwelijk tussen 2 vrouwen vóór 01-04-2014, huwelijkspartner niet automatisch ouder van kind, overleden
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000073 |
@@ -631,7 +627,7 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
     En heeft de persoon geen gezag
 
   Scenario: Lg01_093 - moeder gehuwd met vrouw vóór 01-04-2014, partner moeder geen ouder maar wel gezamenlijk gezag, partner moeder overleden
-    # Route: 42no1 - Wie heeft gezag?: moeder (OG1)
+    # Route: 42no1
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000085 |
@@ -646,7 +642,6 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
 
   Scenario: Lg01_094 - gehuwd, overleden
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000097 |
@@ -657,7 +652,6 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
 
   Scenario: Lg01_095 - gehuwd, overleden
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000103 |
@@ -667,7 +661,7 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
     En heeft de persoon geen gezag
 
   Scenario: Lg01_096 - minderjarig kind van gehuwde ouders, beide ouders overleden, geen gezagsverhouding in cat 11
-    # Route: 48 - Wie heeft gezag?: geen gezag (G)
+    # Route: 48oo
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000115 |

@@ -19,15 +19,23 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
 
-    - name: Setup Gradle
+    - name: Setup Gradle with cache
       uses: gradle/actions/setup-gradle@v4
+    - name: Cache SonarQube packages
+      uses: actions/cache@v4
+      with:
+        path: ~/.sonar/cache
+        key: ${{ runner.os }}-sonar
+        restore-keys: ${{ runner.os }}-sonar
 
     - name: Generate and submit dependency graph
       uses: gradle/actions/dependency-submission@v4
       if: github.ref == 'refs/heads/main'
 
-    - name: Build with Gradle
-      run: ./gradlew build
+    - name: Build JAR and analyze with Sonar
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      run: ./gradlew build sonar
 
     - name: Build OCI image
       if: github.ref != 'refs/heads/main'

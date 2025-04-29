@@ -11,6 +11,7 @@ plugins {
     id("org.jooq.jooq-codegen-gradle") version "3.19.15"
     id("org.openapi.generator") version "7.10.0"
 //    id("org.owasp.dependencycheck") version "10.0.3"
+    id("org.sonarqube") version "6.1.0.5360"
     id("org.springframework.boot") version "3.4.1"
 }
 
@@ -120,6 +121,19 @@ tasks.withType<BootBuildImage> {
             username.set(System.getenv("GITHUB_ACTOR"))
             password.set(System.getenv("GITHUB_TOKEN"))
         }
+    }
+}
+
+sonar {
+    properties {
+        property("sonar.cpd.exclusions", listOf(
+            "**/*Persoon.java",
+            "**/*Ouder1.java",
+            "**/*Ouder2.java",
+        ))
+        property("sonar.host.url", "https://sonarcloud.io")
+        property("sonar.organization", "brp-api")
+        property("sonar.projectKey", "BRP-API_brp-api-gezag")
     }
 }
 

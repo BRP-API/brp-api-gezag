@@ -145,7 +145,6 @@ Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
 
   Scenario: Lg01_153 - onvolledige geboortedatum, namenreeks, gehuwd, 1 minderjarig kind met namenreeks
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -165,7 +164,6 @@ Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
 
   Scenario: Lg01_154 - onvolledige geboortedatum, namenreeks, gehuwd, 1 minderjarig kind met namenreeks
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -184,7 +182,7 @@ Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
       | burgerservicenummer | 000000012 |
 
   Scenario: Lg01_155 - in Nederland geboren kind met namenreeks, ouders onvolledige geboortedatum
-    # Route: 49 - Wie heeft gezag?: beide ouders (OG2)
+    # Route: 49
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |

@@ -399,7 +399,6 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
 
   Scenario: Lg01_156 - vrouw, huwelijk met vrouw, 2 kinderen maar echtgenote geen duomoeder, echtgenote wel gezag, echtgenote overleden, kinderen worden in 2023 erkend
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -429,7 +428,6 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
 
   Scenario: Lg01_157 - vrouw, huwelijk met vrouw, echtgenote krijgt 2 kinderen (geen anonieme donor), overleden
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -439,7 +437,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
     En heeft de persoon geen gezag
 
   Scenario: Lg01_158 - alleen moeder, moeder wel gehuwd maar geen anonieme donor, na overlijden huwelijkspartner moeder erkend in 2023, akteaanduiding C in actuele categorie bij persoon en ouder2
-    # Route: 54n - Wie heeft gezag?: moeder en erkenner (OG2)
+    # Route: 54n
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -459,7 +457,6 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
 
   Scenario: Lg01_159 - erkenner van 2 kinderen waarvan de moeder gehuwd was met een vrouw die niet de meemoeder is van de kinderen (geen anonieme donor). Huwelijkspartner moeder overleden
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |
@@ -488,7 +485,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | burgerservicenummer | 000000048 |
 
   Scenario: Lg01_160 - alleen moeder, moeder wel gehuwd maar geen anonieme donor, na overlijden huwelijkspartner moeder erkend in 2023, akteaanduiding C in historische categorie bij persoon en ouder2
-    # Route: 54n - Wie heeft gezag?: moeder en erkenner (OG2)
+    # Route: 54n
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000061 |

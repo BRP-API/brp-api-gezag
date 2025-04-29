@@ -334,7 +334,6 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
 
   Scenario: Lg01_176 - vrouw gehuwd met vrouw, 4 kinderen (2 van bekende donor tijdens huwelijken 1 voor het huwelijk en 1 na 01-01-2023 erkend voor geboorte door ander dan partner))
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -348,6 +347,12 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | ouder.burgerservicenummer        | 000000012        |
       | derde.burgerservicenummer        | 000000024        |
       | derde.type                       | BekendeDerde     |
+    En heeft de persoon een 'gezag' met de volgende gegevens
+      | naam                             | waarde           |
+      | type                             | GezamenlijkGezag |
+      | minderjarige.burgerservicenummer | 000000048        |
+      | ouder.burgerservicenummer        | 000000012        |
+      | derde.type                       | OnbekendeDerde   |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                   |
       | type                             | EenhoofdigOuderlijkGezag |
@@ -363,16 +368,9 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
       | burgerservicenummer | 000000085 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde           |
-      | type                             | GezamenlijkGezag |
-      | minderjarige.burgerservicenummer | 000000048        |
-      | ouder.burgerservicenummer        | 000000012        |
-      | derde.type                       | OnbekendeDerde   |
 
   Scenario: Lg01_177 - huwelijkspartner van vrouw, geen meemoeder van de kinderen, bij 1 kind gezamenlijk gezag
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -388,7 +386,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | derde.type                       | BekendeDerde     |
 
   Scenario: Lg01_178 - 1 ouder, moeder gehuwd, gezamenlijk gezag moeder en meemoeder
-    # Route: 41 - Wie heeft gezag?: moeder en meemoeder (GG)
+    # Route: 41
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -403,8 +401,8 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | derde.burgerservicenummer        | 000000024        |
       | derde.type                       | BekendeDerde     |
 
-  Scenario: Lg01_179 - 1 ouder, moeder gehuwd, indicatie gezag 1D, gezamenlijk gezag moeder en meemoeder
-    # Route: 4 - Wie heeft gezag?: moeder en derde (V)
+  Scenario: Lg01_179 - 1 ouder, moeder gehuwd, indicatie gezag 1D geen gezamenlijk gezag moeder en meemoeder
+    # Route: 4
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |
@@ -419,7 +417,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | derde.type                       | OnbekendeDerde   |
 
   Scenario: Lg01_180 - 1 ouder, moeder gehuwd na geboorte kind, geen gezamenlijk gezag
-    # Route: 40o1 - Wie heeft gezag?: moeder (OG1)
+    # Route: 40o1
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000061 |
@@ -433,7 +431,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | ouder.burgerservicenummer        | 000000012                |
 
   Scenario: Lg01_198 - minderjarige geboren na 01-01-2023 uit gehuwde moeder en bekende donor, erkend voor geboorte door ander dan partner
-    # Route: 54n - Wie heeft gezag?: moeder (OG2)
+    # Route: 54n
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000073 |
@@ -453,7 +451,6 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
 
   Scenario: Lg01_199 - erkenner (voor geboorte) van minderjarig kind van gehuwde moeder en bekende donor
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000085 |

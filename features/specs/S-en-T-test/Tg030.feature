@@ -333,7 +333,6 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
 
   Scenario: Lg01_162 - voogd van 2 minderjarige kinderen (1D), 1 kind door hem later erkend
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -344,7 +343,6 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
 
   Scenario: Lg01_163 - erkenner van minderjarig kind wat eerder onder gezag (1D) is geplaatst
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -354,6 +352,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
     En heeft de persoon geen gezag
 
   Scenario: Lg01_164 - minderjarig kind onder gezag 1D, erkend
+    # Route: 4
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |
@@ -368,7 +367,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | derde.type                       | OnbekendeDerde   |
 
   Scenario: Lg01_165 - minderjarig kind onder gezag 1D, erkend  door voogd
-    # Route: 4 - Wie heeft gezag?: voogd (V)
+    # Route: 4
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000061 |

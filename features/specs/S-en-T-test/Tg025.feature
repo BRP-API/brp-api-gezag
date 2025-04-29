@@ -184,7 +184,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | aktenummer (81.20)              | 1AA0108   |
       | ingangsdatum geldigheid (85.10) | 20211012  |
     
-    # Lg01_136 - kind geboren tijdens huwelijk, in onderzoek 010310, 026210, 030210, 080920, 613210
+    # Lg01_136 - kind geboren tijdens huwelijk, in onderzoek 010310, 026210, 030210, 080920, 613210, historische indicatie gezag
     Gegeven de persoon met burgerservicenummer '000000036' heeft de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Gerdien  |
@@ -349,7 +349,9 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20211012 |
 
+
   Scenario: Lg01_134 - gehuwd, kinderen, in onderzoek 010300, 020000, 030310, 050610, 089999, 090000, 090300
+    # Meerderjarig
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -369,6 +371,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | burgerservicenummer | 000000024 |
 
   Scenario: Lg01_135 - gehuwd, kinderen, in onderzoek 026210, 030000, 050200, 080000, 090330
+    # Meerderjarig
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -387,7 +390,8 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
 
-  Scenario: Lg01_136 - kind geboren tijdens huwelijk, in onderzoek 010310, 026210, 030210, 080920, 613210
+  Scenario: Lg01_136 - kind geboren tijdens huwelijk, in onderzoek 010310, 026210, 030210, 080920, 613210, historische indicatie gezag
+    # Route: 49i
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -407,7 +411,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | burgerservicenummer | 000000024 |
 
   Scenario: Lg01_137 - kind geboren tijdens huwelijk in onderzoek 010330 (voorvoegsel ontbreekt), 040510, 081420, 113210
-    # Route: 3ai - Wie heeft gezag?: niet te bepalen (N )
+    # Route: 3ai
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |
@@ -422,7 +426,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | inOnderzoek                      | true                                                                           |
 
   Scenario: Lg01_138 - kind geboren tijdens huwelijk, overleden, gezag is niet van toepassing
-    # Route: 2o - Wie heeft gezag?: overleden, gezag is niet van toepassing (NVT)
+    # Route: 2o
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000061 |

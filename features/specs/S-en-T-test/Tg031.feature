@@ -277,7 +277,6 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
 
   Scenario: Lg01_169 - vrouw niet gehuwd/GP, 1 minderjarig kind geadopteerd, 1 minderjarig kind erkend en later erkenning vernietigd
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -302,7 +301,6 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
 
   Scenario: Lg01_170 - man niet gehuwd/GP, 1 minderjarig kind geadopteerd, 1 minderjarig kind erkend en later erkenning vernietigd
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -321,7 +319,7 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | burgerservicenummer | 000000024 |
 
   Scenario: Lg01_171 - kind, geboren uit alleen moeder, vervolgens gezag 1D, later geactualiseerd in 1, en vervolgens 1-ouder adoptie
-    # Route: 33 - Wie heeft gezag?: beide ouders (OG2)
+    # Route: 33
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -340,7 +338,7 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | burgerservicenummer | 000000024 |
 
   Scenario: Lg01_172 - kind geboren uit alleen moeder, erkend door vader, vervolgens gezag 12 en daarna vernietiging erkenning
-    # Route: 18o1 - Wie heeft gezag?: moeder (OG1)
+    # Route: 18o1
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |

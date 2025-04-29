@@ -199,7 +199,6 @@ Functionaliteit: Tg034 - Ruijgrok-Rademaker – Twee gehuwde vrouwen met 2 kinde
 
   Scenario: Lg01_181 - vrouw gehuwd met vrouw, 1 kind (bekende donor) huwelijkspartner geen meemoeder kind, onder curatele
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -210,7 +209,6 @@ Functionaliteit: Tg034 - Ruijgrok-Rademaker – Twee gehuwde vrouwen met 2 kinde
 
   Scenario: Lg01_182 - huwelijkspartner van vrouw geen meemoeder van kind, eenhoofdig gezag (moeder onder curatele)
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -227,7 +225,7 @@ Functionaliteit: Tg034 - Ruijgrok-Rademaker – Twee gehuwde vrouwen met 2 kinde
       | burgerservicenummer | 000000024    |
 
   Scenario: Lg01_183 - 1 ouder, moeder gehuwd, huwelijkspartner moeder alleen gezag (moeder onder curatele)
-    # Route: 43o1 - Wie heeft gezag?: meemoeder (V)
+    # Route: 43o1
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -244,7 +242,7 @@ Functionaliteit: Tg034 - Ruijgrok-Rademaker – Twee gehuwde vrouwen met 2 kinde
       | burgerservicenummer | 000000024    |
 
   Scenario: Lg01_184 - 1 ouder, moeder gehuwd, huwelijkspartner moeder geen gezag (moeder onder curatele, indicatie gezag 1
-    # Route: 12 - Wie heeft gezag?: niet te bepalen (G )
+    # Route: 12c
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |

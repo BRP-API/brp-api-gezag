@@ -330,7 +330,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
 
 
   Scenario: Lg01_139 - test op inlezen in de toekomst met geboortejaar 2023 (is inlezen in toekomst mogelijk)
-    # Route: 45e - Wie heeft gezag?: exceptie 1, geen BSN ouders (N)
+    # Route: 45e
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -345,7 +345,6 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
 
   Scenario: Lg01_140 - 3 kinderen in 2023, 1 erkend als ongeboren vrucht, 1 erkend bij geboorteaangifte, 1 erkend na geboorteaangifte
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -385,7 +384,6 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
 
   Scenario: Lg01_141 - 3 kinderen in 2023, 1 erkend als ongeboren vrucht, 1 erkend bij geboorteaangifte, 1 erkend na geboorteaangifte
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -424,7 +422,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | burgerservicenummer | 000000036 |
 
   Scenario: Lg01_142 - kind geboren uit ongehuwde ouders in 2023, erkenning na de geboorteaangifte (akteaanduiding C)
-    # Route: 54n - Wie heeft gezag?: beide ouders (OG2)
+    # Route: 54n
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |
@@ -443,7 +441,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | burgerservicenummer | 000000036 |
 
   Scenario: Lg01_143 - kind geboren uit ongehuwde ouders in 2023, erkenning bij geboorteaangifte (akteaanduiding B)
-    # Route: 54n - Wie heeft gezag?: beide ouders (OG2)
+    # Route: 54n
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000061 |
@@ -462,7 +460,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | burgerservicenummer | 000000036 |
 
   Scenario: Lg01_144 - kind geboren uit ongehuwde ouders in januari 2023, erkenning ongeboren vrucht, geen indicatie gezag
-    # Route: 54n - Wie heeft gezag?: beide ouders (OG2)
+    # Route: 54n
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000073 |

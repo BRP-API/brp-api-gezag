@@ -260,7 +260,6 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
 
   Scenario: Lg01_203 - ongehuwd, 2 kinderen (1 geboren en erkend voor 01-01-2023 en 1 geboren en erkend na 01-01-2023
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -271,7 +270,6 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
 
   Scenario: Lg01_204 - ongehuwd, 2 kinderen (1 g erkend voor 01-01-2023 en 1 erkend na 01-01-2023
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -290,7 +288,7 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
       | ouder.burgerservicenummer        | 000000024                |
 
   Scenario: Lg01_205 - geadopteerd door niet gehuwde ouders, indicatie gezag 12,  adoptiemoeder overleden,  indicatie gezag 12
-    # Route: 8 - Wie heeft gezag?: vader (OG1)
+    # Route: 8
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -304,7 +302,7 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
       | ouder.burgerservicenummer        | 000000024                |
 
   Scenario: Lg01_206 - geboren en erkend na 01-01-2023, moeder overleden, geen indicatie gezag
-    # Route: 53n1 - Wie heeft gezag?: vader (OG1)
+    # Route: 53n1
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |

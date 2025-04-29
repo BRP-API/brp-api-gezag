@@ -306,7 +306,6 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
 
   Scenario: Lg01_209 - geregistreerd partnerschap met vrouw, partner overleden, minderjarig kind van bekende donor
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -342,7 +341,6 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
 
   Scenario: Lg01_210 - geregistreerd partnerschap met vrouw, overleden
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -352,7 +350,7 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
     En heeft de persoon geen gezag
 
   Scenario: Lg01_211 - juridisch alleen moeder, geregistreerd partner van moeder overleden, moeder categorie 02
-    # Route: 42no1 - Wie heeft gezag?: moeder (OG1)
+    # Route: 42no1
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -366,7 +364,7 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | ouder.burgerservicenummer        | 000000012                |
 
   Scenario: Lg01_212 - juridisch alleen moeder, geregistreerd partner van moeder overleden, moeder categorie 03
-    # Route: 42no2 - Wie heeft gezag?: moeder (OG1)
+    # Route: 42no2
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |
@@ -380,7 +378,7 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | ouder.burgerservicenummer        | 000000012                |
 
   Scenario: Lg01_213 - juridisch alleen moeder, moeder overleden, geregistreerd partner moeder geen ouder wel gezag, moeder categorie 02
-    # Route: 43o1 - Wie heeft gezag?: partner moeder (V)
+    # Route: 43o1
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000061 |
@@ -397,7 +395,7 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | burgerservicenummer | 000000012    |
 
   Scenario: Lg01_214 - juridisch alleen moeder, moeder overleden, geregistreerd partner moeder geen ouder wel gezag, moeder categorie 03
-    # Route: 43o2 - Wie heeft gezag?: partner moeder (V)
+    # Route: 43o2
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000073 |

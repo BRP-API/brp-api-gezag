@@ -206,7 +206,6 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
 
   Scenario: Lg01_188 - moeder van minderjarig kind, 010100 in onderzoek
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT )
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -216,27 +215,28 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                   |
       | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000061                |
-      | ouder.burgerservicenummer        | 000000012                |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000024                |
       | ouder.burgerservicenummer        | 000000012                |
       | inOnderzoek                      | true                     |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                   |
       | type                             | EenhoofdigOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000036                |
+      | ouder.burgerservicenummer        | 000000012                |
+    En heeft de persoon een 'gezag' met de volgende gegevens
+      | naam                             | waarde                   |
+      | type                             | EenhoofdigOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000048                |
       | ouder.burgerservicenummer        | 000000012                |
       | inOnderzoek                      | true                     |
+    En heeft de persoon een 'gezag' met de volgende gegevens
+      | naam                             | waarde                   |
+      | type                             | EenhoofdigOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000061                |
+      | ouder.burgerservicenummer        | 000000012                |
 
   Scenario: Lg01_189 - minderjarig kind, 010000 in onderzoek
+    # Route: 40o1i
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -251,7 +251,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | inOnderzoek                      | true                     |
 
   Scenario: Lg01_190 - minderjarig kind, 080000 in onderzoek
-    # Route: 40o1 - Wie heeft gezag?: moeder (OG1)
+    # Route: 40o1
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -265,6 +265,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | ouder.burgerservicenummer        | 000000012                |
 
   Scenario: Lg01_191 - minderjarig kind, 020000 in onderzoek
+    # Route: 40o1i
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |
@@ -279,7 +280,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | inOnderzoek                      | true                     |
 
   Scenario: Lg01_192 - minderjarig kind, 010320 in onderzoek
-    # Route: 40o1 - Wie heeft gezag?: moeder (OG1)
+    # Route: 40o1
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000061 |
@@ -290,4 +291,4 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | naam                             | waarde                   |
       | type                             | EenhoofdigOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000061                |
-      | ouder.burgerservicenummer        | 000000012                |      
+      | ouder.burgerservicenummer        | 000000012                |

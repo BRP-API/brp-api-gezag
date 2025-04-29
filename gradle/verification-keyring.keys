@@ -1764,16 +1764,3 @@ j4jha+/RkLmTDyUXS6PuwGie6zE48UvMRD2v7+V3n5yF+Ov4J/9g+08C1GWAyjQx
 dYCakvW/secZI7gBi6Y/jM6OAlNN4YTO5PnD2aKpVT5+bWB++A==
 =ImPV
 -----END PGP PUBLIC KEY BLOCK-----
-
-pub (4)dsa1024/2bcbdd0f23ea1cafcc11d4860374cf2e8dd1bdfd 2009-02-27T17:56:31Z
-sig revok 0374cf2e8dd1bdfd 2024-01-04T20:49:18Z ____________________ ____________________ [selfsig]
-
-uid Sonatype, Inc. (Sonatype release key) <dev@sonatype.com>
-sig cert  0374cf2e8dd1bdfd 2009-02-27T17:56:31Z ____________________ ____________________ [selfsig]
-sig cert  30e6f80434a72a7f 2009-02-27T21:30:00Z ____________________ ____________________ 30e6f80434a72a7f
-sig cert  9b1fda9f3c062231 2009-03-04T01:44:02Z ____________________ ____________________ 9b1fda9f3c062231
-sig cert  6128aacef978d84f 2009-03-04T01:45:19Z ____________________ ____________________ 6128aacef978d84f
-sig cert  961293d7f426baa1 2020-12-01T02:46:14Z ____________________ ____________________ 961293d7f426baa1
-
-sub (4)elgE2048/988bbff52c742b219b9ddf2ef2e4de8fa750e060 2009-02-27T17:56:31Z
-sig sbind  0374cf2e8dd1bdfd 2009-02-27T17:56:31Z ____________________ ____________________ []

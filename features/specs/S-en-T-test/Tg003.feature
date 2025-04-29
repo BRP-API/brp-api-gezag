@@ -436,7 +436,7 @@ Functionaliteit: Tg003 - Bloem-Berendsen-Bolder - Ongehuwd met niet-erkende kind
     En heeft de persoon geen gezag
 
   Scenario: Lg01_108 - vader overleden, moeder onder curatele, geen categorie 11
-    # Route: 48 - Wie heeft gezag?: geen gezag (G)
+    # Route: 48oc - Wie heeft gezag?: geen gezag (G)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000073 |

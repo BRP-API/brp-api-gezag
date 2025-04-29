@@ -980,4 +980,4 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | naam                             | waarde                   |
       | type                             | EenhoofdigOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000139                |
-      | ouder.burgerservicenummer        | 000000024                |      
+      | ouder.burgerservicenummer        | 000000024                |

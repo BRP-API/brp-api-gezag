@@ -281,7 +281,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
     
-    # Lg01_083 - geboren uit huwelijk 2 vrouwen, als ongeboren vrucht erkend door vader (huwelijkspartner moeder is daardoor geen ouder), geen categorie 11
+    # Lg01_083 - geboren uit huwelijk 2 vrouwen, als ongeboren vrucht erkend door vader (huwelijkspartner moeder is daardoor geen ouder), geen categorie 11, gezag voor de geboortemoeder
     Gegeven de persoon met burgerservicenummer '000000073' heeft de volgende gegevens
       | naam                            | waarde     |
       | voornamen (02.10)               | Noralie    |
@@ -387,7 +387,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | burgerservicenummer | 000000061 |
     En heeft de persoon geen gezag
 
-  Scenario: Lg01_083 - geboren uit huwelijk 2 vrouwen, als ongeboren vrucht erkend door vader (huwelijkspartner moeder is daardoor geen ouder), geen categorie 11
+  Scenario: Lg01_083 - geboren uit huwelijk 2 vrouwen, als ongeboren vrucht erkend door vader (huwelijkspartner moeder is daardoor geen ouder), geen categorie 11, gezag voor de geboortemoeder
     # Route: 54
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |

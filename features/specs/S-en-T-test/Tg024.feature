@@ -307,7 +307,6 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
 
   Scenario: Lg01_130 - kind geboren tijdens huwelijk dat later nietig is verklaard, ander kind erkend en erkenning is vernietigd
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -327,7 +326,6 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
 
   Scenario: Lg01_131 - kind geboren tijdens huwelijk dat later nietig is verklaard, ander kind erkend en erkenning is vernietigd
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -351,7 +349,7 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
       | ouder.burgerservicenummer        | 000000024                |
 
   Scenario: Lg01_132 - geboren uit huwelijk ouders wat later nietig is verklaard
-    # Route: 45 - Wie heeft gezag?: beide ouders (OG2)
+    # Route: 45
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -370,7 +368,7 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
       | burgerservicenummer | 000000012 |
 
   Scenario: Lg01_133 - erkend, maar erkenning is vernietigd
-    # Route: 40o1 - Wie heeft gezag?: moeder (OG1)
+    # Route: 40o1
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |

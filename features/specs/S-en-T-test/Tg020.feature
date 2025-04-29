@@ -240,7 +240,6 @@ Functionaliteit: Tg020 - Carolussen-Charbon
 
   Scenario: Lg01_114 - geregistreerd partnerschap vóór 01-04-2014, 2 minderjarige kinderen vóór 01-04-2014 en 1 minderjarig kind daarna
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -274,7 +273,6 @@ Functionaliteit: Tg020 - Carolussen-Charbon
 
   Scenario: Lg01_115 - geregistreerd partnerschap vóór 01-04-2014, 2 minderjarige kinderen vóór 01-04-2014 en 1 minderjarig kind daarna
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -307,7 +305,7 @@ Functionaliteit: Tg020 - Carolussen-Charbon
       | burgerservicenummer | 000000012 |
 
   Scenario: Lg01_116 - ouders geregistreerd partnerschap vóór 01-04-204, alleen Ouder1 gevuld
-    # Route: 41 - Wie heeft gezag?: Ouder1 + partner (GG)
+    # Route: 41
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |
@@ -323,7 +321,7 @@ Functionaliteit: Tg020 - Carolussen-Charbon
       | derde.type                       | BekendeDerde     |
 
   Scenario: Lg01_117 - ouders geregistreerd partnerschap vóór 01-04-204, alleen Ouder2 gevuld
-    # Route: 41 - Wie heeft gezag?: Ouder2 + partner (GG)
+    # Route: 41
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |
@@ -339,7 +337,7 @@ Functionaliteit: Tg020 - Carolussen-Charbon
       | derde.type                       | BekendeDerde     |
 
   Scenario: Lg01_118 - ouders geregistreerd partnerschap na 01-04-2014, 2 ouders
-    # Route: 49 - Wie heeft gezag?: beide ouders (OG2)
+    # Route: 49
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000061 |

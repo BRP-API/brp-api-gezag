@@ -150,7 +150,6 @@ Functionaliteit: Tg022 - Barakat-Idilbi - Ouders met een onvolledige huwelijksda
 
   Scenario: Lg01_122 - alleen huwelijksjaar bekend
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -170,7 +169,6 @@ Functionaliteit: Tg022 - Barakat-Idilbi - Ouders met een onvolledige huwelijksda
 
   Scenario: Lg01_123 - alleen huwelijksjaar bekend
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
@@ -189,7 +187,7 @@ Functionaliteit: Tg022 - Barakat-Idilbi - Ouders met een onvolledige huwelijksda
       | burgerservicenummer | 000000024 |
 
   Scenario: Lg01_124 - ouders geboren en gehuwd in buitenland, alleen jaar bekend, kind in Nederland geboren
-    # Route: 49 - Wie heeft gezag?: beide ouders (OG2)
+    # Route: 49
     Als gezag wordt gezocht met de volgende parameters
       | naam                | waarde    |
       | burgerservicenummer | 000000036 |

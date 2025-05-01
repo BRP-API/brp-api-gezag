@@ -359,29 +359,25 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Govert'
     Dan is het gezag over 'Gerdien' gezamenlijk ouderlijk gezag met ouder 'Govert' en ouder 'Grada'
-      | inOnderzoek                      | true                      |
+    En is het gezag in onderzoek
 
   Scenario: Lg01_135 - gehuwd, kinderen, in onderzoek 026210, 030000, 050200, 080000, 090330
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Grada'
     Dan is het gezag over 'Gerdien' gezamenlijk ouderlijk gezag met ouder 'Govert' en ouder 'Grada'
-      | inOnderzoek                      | true                      |
+    En is het gezag in onderzoek
 
   Scenario: Lg01_136 - kind geboren tijdens huwelijk, in onderzoek 010310, 026210, 030210, 080920, 613210, historische indicatie gezag
     # Route: 49i
     Als 'gezag' wordt gevraagd van 'Gerdien'
     Dan is het gezag over 'Gerdien' gezamenlijk ouderlijk gezag met ouder 'Govert' en ouder 'Grada'
-      | inOnderzoek                      | true                      |
+    En is het gezag in onderzoek
 
   Scenario: Lg01_137 - kind geboren tijdens huwelijk in onderzoek 010330 (voorvoegsel ontbreekt), 040510, 081420, 113210
     # Route: 3ai
     Als 'gezag' wordt gevraagd van 'Gijs'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                         |
-      | type                             | GezagNietTeBepalen                                                             |
-      | minderjarige.burgerservicenummer | 000000048                                                                      |
-      | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren. |
-      | inOnderzoek                      | true                                                                           |
+    Dan is het gezag over 'Gijs' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren.'
+    En is het gezag in onderzoek
 
   Scenario: Lg01_138 - kind geboren tijdens huwelijk, overleden, gezag is niet van toepassing
     # Route: 2o

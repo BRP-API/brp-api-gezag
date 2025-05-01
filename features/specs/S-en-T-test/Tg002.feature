@@ -95,26 +95,14 @@ Functionaliteit: Tg002 - Ouderlozen – Puntouder(s) - Geen ouders
   Scenario: Lg01_007 - minderjarige asielzoeker, puntouders (onbekende ouders), geen categorie 11
     # Route: 3a
     Als 'gezag' wordt gevraagd van 'Adil'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                         |
-      | type                             | GezagNietTeBepalen                                                             |
-      | minderjarige.burgerservicenummer | 000000012                                                                      |
-      | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren. |
+    Dan is het gezag over 'Adil' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren.'
 
   Scenario: Lg01_008 - vondeling in Nederland, puntmoeder (onbekende ouder), lege categorie 03 (juridisch geen ouder), geen categorie 11
     # Route: 38
     Als 'gezag' wordt gevraagd van 'Alberta'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                 |
-      | type                             | GezagNietTeBepalen                                                                     |
-      | minderjarige.burgerservicenummer | 000000024                                                                              |
-      | toelichting                      | Gezag kan niet worden bepaald omdat één of meer ouders van minderjarige onbekend zijn. |
+    Dan is het gezag over 'Alberta' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat één of meer ouders van minderjarige onbekend zijn.'
 
   Scenario: Lg01_009 - vondeling in China, juridisch geen ouders, geen categorie 11
     # Route: 3a
     Als 'gezag' wordt gevraagd van 'An'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                         |
-      | type                             | GezagNietTeBepalen                                                             |
-      | minderjarige.burgerservicenummer | 000000036                                                                      |
-      | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren. |
+    Dan is het gezag over 'An' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren.'

@@ -97,8 +97,4 @@ Functionaliteit: Tg015 - Oei
   Scenario: Lg01_086 - minderjarig kind, niet erkend, moeder overleden
     # Route: 39o
     Als 'gezag' wordt gevraagd van 'Olinka'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                            |
-      | type                             | TijdelijkGeenGezag                                |
-      | minderjarige.burgerservicenummer | 000000024                                         |
-      | toelichting                      | Tijdelijk geen gezag omdat de ouder overleden is. |
+    Dan is het gezag over 'Olinka' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat de ouder overleden is.'

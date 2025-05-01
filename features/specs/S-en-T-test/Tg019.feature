@@ -377,26 +377,14 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
   Scenario: Lg01_103 - gehuwde ouders beiden overleden, geen categorie 11
     # Route: 48oo
     Als 'gezag' wordt gevraagd van 'Annabel'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                  |
-      | type                             | TijdelijkGeenGezag                                      |
-      | minderjarige.burgerservicenummer | 000000036                                               |
-      | toelichting                      | Tijdelijk geen gezag omdat beide ouders overleden zijn. |
+    Dan is het gezag over 'Annabel' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat beide ouders overleden zijn.'
 
   Scenario: Lg01_104 - gehuwde ouders beiden overleden, indicatie gezag 1 geplaatst vóór overlijden Ouder1
     # Route: 12oo
     Als 'gezag' wordt gevraagd van 'Annalies'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                  |
-      | type                             | TijdelijkGeenGezag                                      |
-      | minderjarige.burgerservicenummer | 000000048                                               |
-      | toelichting                      | Tijdelijk geen gezag omdat beide ouders overleden zijn. |
+    Dan is het gezag over 'Annalies' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat beide ouders overleden zijn.'
 
   Scenario: Lg01_105 - gehuwde ouders beiden overleden, indicatie D geplaatst ná overlijden Ouders
     # Route: 6
     Als 'gezag' wordt gevraagd van 'Annajet'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000061 |
-    En heeft 'gezag' geen derden
+    Dan is het gezag over 'Annajet' voogdij

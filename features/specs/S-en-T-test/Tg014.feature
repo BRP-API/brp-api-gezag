@@ -333,26 +333,12 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
   Scenario: Lg01_079 - geregistreerd partnerschap, partner heeft minderjarig, niet erkend kind geboren vóór 01-04-2014, partner overleden
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Nout'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000036 |
-    En heeft 'gezag' een 'derde' met de volgende gegevens
-      | naam                | waarde       |
-      | type                | BekendeDerde |
-      | burgerservicenummer | 000000024    |
+    Dan is het gezag over 'Naomi' voogdij met derde 'Nout'
 
   Scenario: Lg01_080 - moeder geregistreerd partnerschap, niet erkend, geen categorie 11, moeder overleden geregistreerd partner van moeder automatisch gezag
     # Route: 43o1
     Als 'gezag' wordt gevraagd van 'Naomi'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000036 |
-    En heeft 'gezag' een 'derde' met de volgende gegevens
-      | naam                | waarde       |
-      | type                | BekendeDerde |
-      | burgerservicenummer | 000000024    |
+    Dan is het gezag over 'Naomi' voogdij met derde 'Nout'
 
   Scenario: Lg01_081 - huwelijk personen gelijk geslacht (V), 1 minderjarig kind erkend als ongeboren vrucht door vader
     # Meerderjarig

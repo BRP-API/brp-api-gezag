@@ -367,7 +367,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | datum opschorting bijhouding (67.10) | 20181201 |
       | reden opschorting bijhouding (67.20) | E        |
       | indicatie geheim (70.10)             | 0        |
-    En de persoon is ingeschreven op een buitenlands adres met de volgende gegevens
+    En is ingeschreven op een buitenlands adres met de volgende gegevens
       | naam                                   | waarde   |
       | gemeente van inschrijving (09.10)      | 1999     |
       | land (13.10)                           | 6016     |
@@ -424,7 +424,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | datum opschorting bijhouding (67.10) | 20181201 |
       | reden opschorting bijhouding (67.20) | E        |
       | indicatie geheim (70.10)             | 0        |
-    En de persoon is ingeschreven op een buitenlands adres met de volgende gegevens
+    En is ingeschreven op een buitenlands adres met de volgende gegevens
       | naam                                   | waarde   |
       | gemeente van inschrijving (09.10)      | 1999     |
       | land (13.10)                           | 6016     |
@@ -712,11 +712,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
   Scenario: Lg01_045 - minderjarige, emigratie
     # Route: 1
     Als 'gezag' wordt gevraagd van 'Hanna'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                    |
-      | type                             | GezagNietTeBepalen                                                        |
-      | minderjarige.burgerservicenummer | 000000061                                                                 |
-      | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige niet in Nederland woont. |
+    Dan is het gezag over 'Hanna' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat minderjarige niet in Nederland woont.'
 
   Scenario: Lg01_046 - actueel gehuwd en gescheiden, 1 meerderjarig kind, 1 minderjarig erkend kind
     # Meerderjarig
@@ -736,8 +732,4 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
   Scenario: Lg01_049 - minderjarige, juridisch geen vader, 2 vreemde nationaliteiten
     # Route: 3a
     Als 'gezag' wordt gevraagd van 'Isidoros'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                         |
-      | type                             | GezagNietTeBepalen                                                             |
-      | minderjarige.burgerservicenummer | 000000103                                                                      |
-      | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren. |
+    Dan is het gezag over 'Isidoros' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren.'

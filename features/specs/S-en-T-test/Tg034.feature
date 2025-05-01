@@ -209,32 +209,14 @@ Functionaliteit: Tg034 - Ruijgrok-Rademaker – Twee gehuwde vrouwen met 2 kinde
   Scenario: Lg01_182 - huwelijkspartner van vrouw geen meemoeder van kind, eenhoofdig gezag (moeder onder curatele)
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Rowena'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000036 |
-    En heeft 'gezag' een 'derde' met de volgende gegevens
-      | naam                | waarde       |
-      | type                | BekendeDerde |
-      | burgerservicenummer | 000000024    |
+    Dan is het gezag over 'Rollo' voogdij met derde 'Rowena'
 
   Scenario: Lg01_183 - 1 ouder, moeder gehuwd, huwelijkspartner moeder alleen gezag (moeder onder curatele)
     # Route: 43o1
     Als 'gezag' wordt gevraagd van 'Rollo'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000036 |
-    En heeft 'gezag' een 'derde' met de volgende gegevens
-      | naam                | waarde       |
-      | type                | BekendeDerde |
-      | burgerservicenummer | 000000024    |
+    Dan is het gezag over 'Rollo' voogdij met derde 'Rowena'
 
   Scenario: Lg01_184 - 1 ouder, moeder gehuwd, huwelijkspartner moeder geen gezag (moeder onder curatele, indicatie gezag 1
     # Route: 12c
     Als 'gezag' wordt gevraagd van 'Rex'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                    |
-      | type                             | TijdelijkGeenGezag                                        |
-      | minderjarige.burgerservicenummer | 000000048                                                 |
-      | toelichting                      | Tijdelijk geen gezag omdat de ouder onder curatele staat. |
+    Dan is het gezag over 'Rex' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat de ouder onder curatele staat.'

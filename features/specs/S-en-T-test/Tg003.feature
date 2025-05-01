@@ -401,17 +401,9 @@ Functionaliteit: Tg003 - Bloem-Berendsen-Bolder - Ongehuwd met niet-erkende kind
   Scenario: Lg01_108 - vader overleden, moeder onder curatele, geen categorie 11
     # Route: 48oc
     Als 'gezag' wordt gevraagd van 'Boudewijn'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                     |
-      | type                             | TijdelijkGeenGezag                                                                         |
-      | minderjarige.burgerservicenummer | 000000073                                                                                  |
-      | toelichting                      | Tijdelijk geen gezag omdat een ouder overleden is en de andere ouder onder curatele staat. |
+    Dan is het gezag over 'Boudewijn' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat een ouder overleden is en de andere ouder onder curatele staat.'
 
   Scenario: Lg01_109 - vader overleden, moeder onder curatele, kind categorie 11 gezag bij derde
     # Route: 6
     Als 'gezag' wordt gevraagd van 'Bertram'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000085 |
-    En heeft 'gezag' geen derden
+    Dan is het gezag over 'Bertram' voogdij

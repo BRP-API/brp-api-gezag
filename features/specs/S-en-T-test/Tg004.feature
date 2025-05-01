@@ -172,20 +172,12 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
   Scenario: Lg01_013 - ongehuwde minderjarige moeder met 1 minderjarig niet erkend kind
     # Route: 39e
     Als 'gezag' wordt gevraagd van 'Cindy'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                                                                                                                                                      |
-      | type                             | GezagNietTeBepalen                                                                                                                                                                                                          |
-      | minderjarige.burgerservicenummer | 000000012                                                                                                                                                                                                                   |
-      | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd |
+    Dan is het gezag over 'Cindy' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd'
 
   Scenario: Lg01_014 - minderjarig niet erkend kind, moeder ook minderjarig, geen categorie 11
     # Route: 39m
     Als 'gezag' wordt gevraagd van 'Chrissy'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                              |
-      | type                             | TijdelijkGeenGezag                                  |
-      | minderjarige.burgerservicenummer | 000000024                                           |
-      | toelichting                      | Tijdelijk geen gezag omdat de ouder minderjarig is. |
+    Dan is het gezag over 'Chrissy' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat de ouder minderjarig is.'
 
   Scenario: Lg01_015 - ongehuwde meerderjarige moeder met 1 minderjarig niet-erkend kind,bij geboorte minderjarig inmiddels meerderjarig
     # Meerderjarig

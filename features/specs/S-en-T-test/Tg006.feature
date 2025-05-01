@@ -262,11 +262,7 @@ Functionaliteit: Tg006 - Elbertsen-Eizenga
   Scenario: Lg01_026 - minderjarig kind, geboren tijdens huwelijk ouders, vader (Ouder2) overleden, onder voogdij D
     # Route: 6
     Als 'gezag' wordt gevraagd van 'Eline'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000036 |
-    En heeft 'gezag' geen derden
+    Dan is het gezag over 'Eline' voogdij
 
   Scenario: Lg01_027 - minderjarig kind, geboren tijdens huwelijk ouders, vader (Ouder1) overleden, geen categorie 11
     # Route: 46

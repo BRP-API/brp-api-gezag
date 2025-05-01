@@ -163,23 +163,9 @@ Functionaliteit: Tg035 - Saasveld-Suijdema - Vanuit gezamenlijk gezag komt moede
   Scenario: Lg01_186 - huwelijkspartner van vrouw, van rechtswege gezag
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Saskia'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000036 |
-    En heeft 'gezag' een 'derde' met de volgende gegevens
-      | naam                | waarde       |
-      | type                | BekendeDerde |
-      | burgerservicenummer | 000000024    |
+    Dan is het gezag over 'Sanne' voogdij met derde 'Saskia'
 
   Scenario: Lg01_187 - 1 ouder, moeder gehuwd, meemoeder geen ouder, moeder overleden
     # Route: 43o1
     Als 'gezag' wordt gevraagd van 'Sanne'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000036 |
-    En heeft 'gezag' een 'derde' met de volgende gegevens
-      | naam                | waarde       |
-      | type                | BekendeDerde |
-      | burgerservicenummer | 000000024    |
+    Dan is het gezag over 'Sanne' voogdij met derde 'Saskia'

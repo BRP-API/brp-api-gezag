@@ -241,7 +241,7 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
       | ingangsdatum geldigheid (85.10)   | 20140801 |
     
     # Lg01_133 - erkend, maar erkenning is vernietigd
-    Gegeven de persoon 'Fabiënne' met burgerservicenummer '000000048'
+    Gegeven de persoon 'Fabienne' met burgerservicenummer '000000048'
     * heeft de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Fabienne |
@@ -318,7 +318,7 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Francien'
     Dan is het gezag over 'Felicia' gezamenlijk ouderlijk gezag met ouder 'Francien' en ouder 'Frederik'
-    Dan is het gezag over 'Fabiënne' eenhoofdig ouderlijk gezag met ouder 'Francien'
+    Dan is het gezag over 'Fabienne' eenhoofdig ouderlijk gezag met ouder 'Francien'
 
   Scenario: Lg01_132 - geboren uit huwelijk ouders wat later nietig is verklaard
     # Route: 45
@@ -327,5 +327,5 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
 
   Scenario: Lg01_133 - erkend, maar erkenning is vernietigd
     # Route: 40o1
-    Als 'gezag' wordt gevraagd van 'Fabiënne'
-    Dan is het gezag over 'Fabiënne' eenhoofdig ouderlijk gezag met ouder 'Francien'
+    Als 'gezag' wordt gevraagd van 'Fabienne'
+    Dan is het gezag over 'Fabienne' eenhoofdig ouderlijk gezag met ouder 'Francien'

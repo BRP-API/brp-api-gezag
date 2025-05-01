@@ -235,7 +235,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | datum opschorting bijhouding (67.10) | 20200801 |
       | reden opschorting bijhouding (67.20) | E        |
       | indicatie geheim (70.10)             | 0        |
-    En de persoon is ingeschreven op een buitenlands adres met de volgende gegevens
+    En is ingeschreven op een buitenlands adres met de volgende gegevens
       | naam                                   | waarde   |
       | gemeente van inschrijving (09.10)      | 1999     |
       | land (13.10)                           | 6027     |
@@ -354,7 +354,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | datum opschorting bijhouding (67.10) | 20200801 |
       | reden opschorting bijhouding (67.20) | E        |
       | indicatie geheim (70.10)             | 0        |
-    En de persoon is ingeschreven op een buitenlands adres met de volgende gegevens
+    En is ingeschreven op een buitenlands adres met de volgende gegevens
       | naam                                   | waarde   |
       | gemeente van inschrijving (09.10)      | 1999     |
       | land (13.10)                           | 6027     |
@@ -448,11 +448,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
   Scenario: Lg01_018 - minderjarig kind, geboren tijdens huwelijk ouders, geen categorie 11, vader niet ingeschreven in BRP, kind Nederlandse nationaliteit + Beëindigde vreemde nationaliteit
     # Route: 45e
     Als 'gezag' wordt gevraagd van 'Daryl'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                                                                                                                                                      |
-      | type                             | GezagNietTeBepalen                                                                                                                                                                                                          |
-      | minderjarige.burgerservicenummer | 000000024                                                                                                                                                                                                                   |
-      | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd |
+    Dan is het gezag over 'Daryl' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd'
 
   Scenario: Lg01_019 - gehuwd, 3 minderjarige kinderen geboren tijdens huwelijk ouders, echtgenoot en 2 kinderen geëmigreerd (RNI), 1 kind weer teruggekeerd (immigratie)
     # Meerderjarig
@@ -467,35 +463,19 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
   Scenario: Lg01_021 - minderjarig kind, geboren tijdens huwelijk ouders, geen categorie 11, vader ingeschreven in RNI, kind Nederlandse nationaliteit
     # Route: 45e
     Als 'gezag' wordt gevraagd van 'Darian'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                                                                                                                                                      |
-      | type                             | GezagNietTeBepalen                                                                                                                                                                                                          |
-      | minderjarige.burgerservicenummer | 000000061                                                                                                                                                                                                                   |
-      | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd |
+    Dan is het gezag over 'Darian' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd'
 
   Scenario: Lg01_022 - minderjarig kind, geboren tijdens huwelijk ouders, geen categorie 11, geëmigreerd, ingeschreven in RNI evenals vader
     # Route: 1
     Als 'gezag' wordt gevraagd van 'Ditmar'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                    |
-      | type                             | GezagNietTeBepalen                                                        |
-      | minderjarige.burgerservicenummer | 000000073                                                                 |
-      | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige niet in Nederland woont. |
+    Dan is het gezag over 'Ditmar' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat minderjarige niet in Nederland woont.'
 
   Scenario: Lg01_023 - minderjarig kind, geboren tijdens huwelijk ouders, geen categorie 11, vader ingeschreven in de RNI, kind Nederlandse nationaliteit, geëmigreerd geweest en geïmmigreerd
     # Route: 3
     Als 'gezag' wordt gevraagd van 'Duko'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                             |
-      | type                             | GezagNietTeBepalen                                                                 |
-      | minderjarige.burgerservicenummer | 000000085                                                                          |
-      | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige buiten Nederland heeft verbleven. |
+    Dan is het gezag over 'Duko' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat minderjarige buiten Nederland heeft verbleven.'
 
   Scenario: Lg01_197 - minderjarig kind, geboren in Nederland, moeder ingezetene, vader RNI
     # Route: 45e
     Als 'gezag' wordt gevraagd van 'Dorian'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                                                                                                                                                      |
-      | type                             | GezagNietTeBepalen                                                                                                                                                                                                          |
-      | minderjarige.burgerservicenummer | 000000097                                                                                                                                                                                                                   |
-      | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd |
+    Dan is het gezag over 'Dorian' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd'

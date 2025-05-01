@@ -808,20 +808,12 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
   Scenario: Lg01_057 - onder gezag derde, geldigheid vóór scheiding ouders
     # Route: 6
     Als 'gezag' wordt gevraagd van 'Kerwin'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000036 |
-    En heeft 'gezag' geen derden
+    Dan is het gezag over 'Kerwin' voogdij
 
   Scenario: Lg01_058 - gezag ouder1, datum geldigheid standaardwaarde
     # Route: 4ee
     Als 'gezag' wordt gevraagd van 'Kevin'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                                                                           |
-      | type                             | GezagNietTeBepalen                                                                                                                               |
-      | minderjarige.burgerservicenummer | 000000048                                                                                                                                        |
-      | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ingangsdatum geldigheid van gezagsverhouding |
+    Dan is het gezag over 'Kevin' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ingangsdatum geldigheid van gezagsverhouding'
 
   Scenario: Lg01_059 - gezag ouder2, geldigheid ná datum reparatiehuwelijk
     # Route: 13

@@ -355,11 +355,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
   Scenario: Lg01_128 - erkend, categorie 03 op PL kind zonder SoFi-nr/BSN, wel A-nr/BSN in categorie 09 PL vader/erkenner, indicatie gezag 12
     # Route: 7e
     Als 'gezag' wordt gevraagd van 'Eveline'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                                                                                        |
-      | type                             | GezagNietTeBepalen                                                                                                                                            |
-      | minderjarige.burgerservicenummer | 000000048                                                                                                                                                     |
-      | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd |
+    Dan is het gezag over 'Eveline' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd'
 
   Scenario: Lg01_129 - erkend categorie 03 op PL kind met Anr/BSN, categorie 09 ontbreekt bij vader, indicatie gezag 12
     # Route: 7

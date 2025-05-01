@@ -609,7 +609,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | ingangsdatum geldigheid (85.10)   | 20181201 |
     
     # Lg01_193 - buitenland geboren, geadopteerd met Nederlandse Q-akte in historie
-    Gegeven de persoon 'Jasmin-Jin' met burgerservicenummer '000000085'
+    Gegeven de persoon 'Jasmin Jin' met burgerservicenummer '000000085'
     * heeft de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Jin      |
@@ -992,9 +992,9 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
     Dan is het gezag over 'Jorik' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
     Dan is het gezag over 'Li' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
     Dan is het gezag over 'Jasper' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    Dan is het gezag over 'Jasmin-Jin' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
+    Dan is het gezag over 'Jasmin Jin' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
     Dan is het gezag over 'Jiali' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-      | inOnderzoek                      | true                      |
+    En is het gezag in onderzoek
     Dan is het gezag over 'Jia' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
     Dan is het gezag over 'Jinthe' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
 
@@ -1004,9 +1004,9 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
     Dan is het gezag over 'Jorik' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
     Dan is het gezag over 'Li' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
     Dan is het gezag over 'Jasper' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    Dan is het gezag over 'Jasmin-Jin' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
+    Dan is het gezag over 'Jasmin Jin' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
     Dan is het gezag over 'Jiali' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-      | inOnderzoek                      | true                      |
+    En is het gezag in onderzoek
     Dan is het gezag over 'Jia' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
     Dan is het gezag over 'Jinthe' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
 
@@ -1022,14 +1022,14 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
 
   Scenario: Lg01_193 - buitenland geboren, geadopteerd met Nederlandse Q-akte in historie
     # Route: 49a
-    Als 'gezag' wordt gevraagd van 'Jasmin-Jin'
-    Dan is het gezag over 'Jasmin-Jin' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
+    Als 'gezag' wordt gevraagd van 'Jasmin Jin'
+    Dan is het gezag over 'Jasmin Jin' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
 
   Scenario: Lg01_194 - buitenland geboren, geadopteerd met Nederlandse Q-akte in historie, onderzoek in 018120
     # Route: 49a
     Als 'gezag' wordt gevraagd van 'Jiali'
     Dan is het gezag over 'Jiali' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-      | inOnderzoek                      | true                      |
+    En is het gezag in onderzoek
 
   Scenario: Lg01_195 - buitenland geboren, geadopteerd met Nederlandse Q-akte in historie, onderzoek in 536200
     # Route: 49a

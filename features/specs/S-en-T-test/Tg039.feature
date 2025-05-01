@@ -315,22 +315,8 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
     Als 'gezag' wordt gevraagd van 'Tina'
     Dan is het gezag over 'Trinette' eenhoofdig ouderlijk gezag met ouder 'Tina'
     Dan is het gezag over 'Trudetty' eenhoofdig ouderlijk gezag met ouder 'Tina'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000061 |
-    En heeft 'gezag' een 'derde' met de volgende gegevens
-      | naam                | waarde       |
-      | type                | BekendeDerde |
-      | burgerservicenummer | 000000012    |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000073 |
-    En heeft 'gezag' een 'derde' met de volgende gegevens
-      | naam                | waarde       |
-      | type                | BekendeDerde |
-      | burgerservicenummer | 000000012    |
+    Dan is het gezag over 'Tim' voogdij met derde 'Tina'
+    Dan is het gezag over 'Tom' voogdij met derde 'Tina'
 
   Scenario: Lg01_210 - geregistreerd partnerschap met vrouw, overleden
     # Meerderjarig
@@ -350,23 +336,9 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
   Scenario: Lg01_213 - juridisch alleen moeder, moeder overleden, geregistreerd partner moeder geen ouder wel gezag, moeder categorie 02
     # Route: 43o1
     Als 'gezag' wordt gevraagd van 'Tim'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000061 |
-    En heeft 'gezag' een 'derde' met de volgende gegevens
-      | naam                | waarde       |
-      | type                | BekendeDerde |
-      | burgerservicenummer | 000000012    |
+    Dan is het gezag over 'Tim' voogdij met derde 'Tina'
 
   Scenario: Lg01_214 - juridisch alleen moeder, moeder overleden, geregistreerd partner moeder geen ouder wel gezag, moeder categorie 03
     # Route: 43o2
     Als 'gezag' wordt gevraagd van 'Tom'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000073 |
-    En heeft 'gezag' een 'derde' met de volgende gegevens
-      | naam                | waarde       |
-      | type                | BekendeDerde |
-      | burgerservicenummer | 000000012    |
+    Dan is het gezag over 'Tom' voogdij met derde 'Tina'

@@ -36,8 +36,4 @@ Functionaliteit: Tg018 - Vondeling - Kind zonder ouders
   Scenario: Lg01_100 - vondeling, juridisch geen ouders (is fout in BRP opgenomen)
     # Route: 37
     Als 'gezag' wordt gevraagd van 'Zacharias'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                 |
-      | type                             | TijdelijkGeenGezag                                     |
-      | minderjarige.burgerservicenummer | 000000012                                              |
-      | toelichting                      | Tijdelijk geen gezag omdat beide ouders onbekend zijn. |
+    Dan is het gezag over 'Zacharias' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat beide ouders onbekend zijn.'

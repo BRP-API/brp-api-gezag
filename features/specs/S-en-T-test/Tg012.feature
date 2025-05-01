@@ -330,8 +330,4 @@ Functionaliteit: Tg012 - Loon-Liebeek
   Scenario: Lg01_069 - geboorte uit ongehuwde vrouw, erkenning ongeboren vrucht door meemoeder, geen categorie 11
     # Route: 54
     Als 'gezag' wordt gevraagd van 'Lux'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                            |
-      | type                             | GezagNietTeBepalen                                                                                |
-      | minderjarige.burgerservicenummer | 000000061                                                                                         |
-      | toelichting                      | Gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is. |
+    Dan is het gezag over 'Lux' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is.'

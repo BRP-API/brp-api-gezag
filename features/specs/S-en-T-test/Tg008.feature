@@ -412,7 +412,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | ingangsdatum geldigheid (85.10) | 20140801  |
     
     # Lg01_037 - gescheiden, 1 minderjarig erkend kind geboren ná de echtscheiding
-    Gegeven de persoon 'Gert-Jan' met burgerservicenummer '000000073'
+    Gegeven de persoon 'Gert Jan' met burgerservicenummer '000000073'
     * heeft de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Gert-Jan |
@@ -709,12 +709,12 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Gerda'
     Dan is het gezag over 'Gigi' eenhoofdig ouderlijk gezag met ouder 'Gerda'
-    Dan is het gezag over 'Gina' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Gert-Jan'
+    Dan is het gezag over 'Gina' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Gert Jan'
 
   Scenario: Lg01_037 - gescheiden, 1 minderjarig erkend kind geboren ná de echtscheiding
     # Meerderjarig
-    Als 'gezag' wordt gevraagd van 'Gert-Jan'
-    Dan is het gezag over 'Gina' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Gert-Jan'
+    Als 'gezag' wordt gevraagd van 'Gert Jan'
+    Dan is het gezag over 'Gina' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Gert Jan'
 
   Scenario: Lg01_038 - erkend kind, ouders gescheiden vóór de geboortedatum, geen categorie 11
     # Route: 54v2
@@ -724,13 +724,9 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
   Scenario: Lg01_039 - erkend kind, ouders gescheiden vóór de geboortedatum, in categorie 11 aanduiding '12'
     # Route: 7
     Als 'gezag' wordt gevraagd van 'Gina'
-    Dan is het gezag over 'Gina' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Gert-Jan'
+    Dan is het gezag over 'Gina' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Gert Jan'
 
   Scenario: Lg01_040 - erkend als ongeboren vrucht, ouders gescheiden vóór de geboortedatum, in 11 aanduiding 'D'
     # Route: 6
     Als 'gezag' wordt gevraagd van 'Guido'
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000103 |
-    En heeft 'gezag' geen derden
+    Dan is het gezag over 'Guido' voogdij

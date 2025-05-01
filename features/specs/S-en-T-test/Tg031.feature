@@ -46,7 +46,7 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | geboorteland (03.30)            | 6030         |
       | aktenummer (81.20)              | 1AA0001      |
       | ingangsdatum geldigheid (85.10) | 20190101     |
-    En het kind is gecorrigeerd naar de volgende gegevens
+    En het kind is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Niels     |
@@ -56,7 +56,7 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0001   |
       | ingangsdatum geldigheid (85.10) | 20210101  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde       |
       | burgerservicenummer (01.20)     | 000000048    |
       | voornamen (02.10)               | Niels        |
@@ -126,7 +126,7 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0001   |
       | ingangsdatum geldigheid (85.10) | 20210101  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AN0001  |
       | ingangsdatum geldigheid (85.10) | 20210101 |

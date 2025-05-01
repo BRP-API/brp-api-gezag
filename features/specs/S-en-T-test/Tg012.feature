@@ -126,7 +126,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20120501  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Luc       |

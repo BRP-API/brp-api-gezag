@@ -53,7 +53,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20081201  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de partner is gewijzigd naar de volgende gegevens
+    En de partner is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde          |
       | beschrijving document (82.30)   | nietig huwelijk |
       | ingangsdatum geldigheid (85.10) | 20081201        |
@@ -70,7 +70,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | geboorteland (03.30)            | 6030       |
       | aktenummer (81.20)              | 1AA0150    |
       | ingangsdatum geldigheid (85.10) | 20090801   |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0150  |
       | ingangsdatum geldigheid (85.10) | 20090801 |
@@ -120,7 +120,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20081201   |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518       |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030       |
-    En de partner is gewijzigd naar de volgende gegevens
+    En de partner is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde          |
       | beschrijving document (82.30)   | nietig huwelijk |
       | ingangsdatum geldigheid (85.10) | 20081201        |
@@ -137,7 +137,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | geboorteland (03.30)            | 6030       |
       | aktenummer (81.20)              | 1AA0150    |
       | ingangsdatum geldigheid (85.10) | 20090801   |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Ronny     |

@@ -193,7 +193,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0501   |
       | ingangsdatum geldigheid (85.10) | 20200601  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000103 |
       | voornamen (02.10)               | Joy       |
@@ -211,7 +211,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0500   |
       | ingangsdatum geldigheid (85.10) | 20200601  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Johanna   |

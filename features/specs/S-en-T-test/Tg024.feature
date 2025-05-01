@@ -92,7 +92,7 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0106   |
       | ingangsdatum geldigheid (85.10) | 20190201  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AN0106  |
       | ingangsdatum geldigheid (85.10) | 20190201 |
@@ -180,7 +180,7 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0106   |
       | ingangsdatum geldigheid (85.10) | 20180601  |
-    En het kind is gecorrigeerd naar de volgende gegevens
+    En het kind is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Fabienne  |
@@ -190,7 +190,7 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0106   |
       | ingangsdatum geldigheid (85.10) | 20190201  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Fabienne  |

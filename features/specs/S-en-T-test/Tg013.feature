@@ -58,7 +58,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20140201  |
-    En het kind is gecorrigeerd naar de volgende gegevens
+    En het kind is gewijzigd naar de volgende gegevens
       | naam                            | waarde     |
       | burgerservicenummer (01.20)     | 000000036  |
       | voornamen (02.10)               | Mark       |
@@ -67,7 +67,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030       |
       | aktenummer (81.20)              | 1AC0100    |
       | ingangsdatum geldigheid (85.10) | 20140301   |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Mark      |
@@ -132,7 +132,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030       |
       | aktenummer (81.20)              | 1AC0100    |
       | ingangsdatum geldigheid (85.10) | 20140301   |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AN0100  |
       | ingangsdatum geldigheid (85.10) | 20140301 |
@@ -398,7 +398,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20150201  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Mirthe    |
@@ -407,7 +407,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AE0100   |
       | ingangsdatum geldigheid (85.10) | 20150201  |
-    En het kind is gecorrigeerd naar de volgende gegevens
+    En het kind is gewijzigd naar de volgende gegevens
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000085   |
       | voornamen (02.10)               | Mirthe      |
@@ -417,7 +417,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030        |
       | aktenummer (81.20)              | 1AC0100     |
       | ingangsdatum geldigheid (85.10) | 20150401    |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000085   |
       | voornamen (02.10)               | Mirthe      |
@@ -475,7 +475,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030        |
       | aktenummer (81.20)              | 1AC0100     |
       | ingangsdatum geldigheid (85.10) | 20150401    |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde                 |
       | beschrijving document (82.30)   | ten onrechte opgenomen |
       | ingangsdatum geldigheid (85.10) | 20150401               |
@@ -701,7 +701,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20150201  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AE0100  |
       | ingangsdatum geldigheid (85.10) | 20150201 |

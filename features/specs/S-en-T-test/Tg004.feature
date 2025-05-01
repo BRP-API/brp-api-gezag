@@ -4,12 +4,13 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
 
 
   Achtergrond:
-    Gegeven adres 'A1' heeft de volgende gegevens
+    Gegeven adres 'A1'
       | gemeentecode (92.10) | straatnaam (11.10) | huisnummer (11.20) | identificatiecode nummeraanduiding (11.90) |
       | 518                  | Turfmarkt          | 5                  | 0518200000583529                           |
     
     # Lg01_013 - ongehuwde minderjarige moeder met 1 minderjarig niet erkend kind
-    Gegeven de persoon met burgerservicenummer '000000012' heeft de volgende gegevens
+    Gegeven de persoon 'Cindy' met burgerservicenummer '000000012'
+    * heeft de volgende gegevens
       | naam                            | waarde           |
       | voornamen (02.10)               | Cindy            |
       | geslachtsnaam (02.40)           | Custers          |
@@ -18,7 +19,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | geslachtsaanduiding (04.10)     | V                |
       | aktenummer (81.20)              | 1AA0100          |
       | ingangsdatum geldigheid (85.10) | morgen - 18 jaar |
-    En de persoon is gewijzigd naar de volgende gegevens
+    En persoon is gewijzigd naar de volgende gegevens
       | naam                            | waarde                         |
       | burgerservicenummer (01.20)     | 000000012                      |
       | voornamen (02.10)               | Cindy                          |
@@ -28,7 +29,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | geslachtsaanduiding (04.10)     | V                              |
       | beschrijving document (82.30)   | Melding Minister van Financiën |
       | ingangsdatum geldigheid (85.10) | 20060410                       |
-    En de persoon heeft een ouder '1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde           |
       | voornamen (02.10)                                  | Carola           |
       | geslachtsnaam (02.40)                              | Custers          |
@@ -38,15 +39,15 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | aktenummer (81.20)                                 | 1AA0100          |
       | ingangsdatum geldigheid (85.10)                    | morgen - 18 jaar |
       | datum ingang familierechtelijke betrekking (62.10) | morgen - 18 jaar |
-    En de persoon heeft een ouder '2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde           |
       | aktenummer (81.20)              | 1AA0100          |
       | ingangsdatum geldigheid (85.10) | morgen - 18 jaar |
-    En de persoon is ingeschreven op adres 'A1' met de volgende gegevens
+    En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En de persoon heeft een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000024 |
       | voornamen (02.10)               | Chrissy   |
@@ -57,7 +58,8 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | ingangsdatum geldigheid (85.10) | 20210401  |
     
     # Lg01_014 - minderjarig niet erkend kind, moeder ook minderjarig, geen categorie 11
-    Gegeven de persoon met burgerservicenummer '000000024' heeft de volgende gegevens
+    Gegeven de persoon 'Chrissy' met burgerservicenummer '000000024'
+    * heeft de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Chrissy  |
       | geslachtsnaam (02.40)           | Custers  |
@@ -66,7 +68,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20210401 |
-    En de persoon heeft een ouder '1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde           |
       | burgerservicenummer (01.20)                        | 000000012        |
       | voornamen (02.10)                                  | Cindy            |
@@ -77,17 +79,18 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | aktenummer (81.20)                                 | 1AA0100          |
       | ingangsdatum geldigheid (85.10)                    | 20210401         |
       | datum ingang familierechtelijke betrekking (62.10) | 20210401         |
-    En de persoon heeft een ouder '2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20210401 |
-    En de persoon is ingeschreven op adres 'A1' met de volgende gegevens
+    En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20210401 |
     
     # Lg01_015 - ongehuwde meerderjarige moeder met 1 minderjarig niet-erkend kind,bij geboorte minderjarig inmiddels meerderjarig
-    Gegeven de persoon met burgerservicenummer '000000036' heeft de volgende gegevens
+    Gegeven de persoon 'Carice' met burgerservicenummer '000000036'
+    * heeft de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Carice   |
       | geslachtsnaam (02.40)           | Custers  |
@@ -96,7 +99,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20020501 |
-    En de persoon is gewijzigd naar de volgende gegevens
+    En persoon is gewijzigd naar de volgende gegevens
       | naam                            | waarde                         |
       | burgerservicenummer (01.20)     | 000000036                      |
       | voornamen (02.10)               | Carice                         |
@@ -106,7 +109,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | geslachtsaanduiding (04.10)     | V                              |
       | beschrijving document (82.30)   | Melding Minister van Financiën |
       | ingangsdatum geldigheid (85.10) | 20020510                       |
-    En de persoon heeft een ouder '1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Carola   |
       | geslachtsnaam (02.40)                              | Custers  |
@@ -116,15 +119,15 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | aktenummer (81.20)                                 | 1AA0100  |
       | ingangsdatum geldigheid (85.10)                    | 20020501 |
       | datum ingang familierechtelijke betrekking (62.10) | 20020501 |
-    En de persoon heeft een ouder '2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20020501 |
-    En de persoon is ingeschreven op adres 'A1' met de volgende gegevens
+    En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En de persoon heeft een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Carlijn   |
@@ -135,7 +138,8 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | ingangsdatum geldigheid (85.10) | 20190501  |
     
     # Lg01_016 - minderjarig niet erkend kind, moeder minderjarig, bij geboorte, inmiddels meerderjarig, geen categorie 11
-    Gegeven de persoon met burgerservicenummer '000000048' heeft de volgende gegevens
+    Gegeven de persoon 'Carlijn' met burgerservicenummer '000000048'
+    * heeft de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Carlijn  |
       | geslachtsnaam (02.40)           | Custers  |
@@ -144,7 +148,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20190501 |
-    En de persoon heeft een ouder '1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000036 |
       | voornamen (02.10)                                  | Carice    |
@@ -155,11 +159,11 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | aktenummer (81.20)                                 | 1AA0100   |
       | ingangsdatum geldigheid (85.10)                    | 20190501  |
       | datum ingang familierechtelijke betrekking (62.10) | 20190501  |
-    En de persoon heeft een ouder '2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20190501 |
-    En de persoon is ingeschreven op adres 'A1' met de volgende gegevens
+    En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20190501 |
@@ -167,12 +171,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
 
   Scenario: Lg01_013 - ongehuwde minderjarige moeder met 1 minderjarig niet erkend kind
     # Route: 39e
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
+    Als 'gezag' wordt gevraagd van 'Cindy'
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                                                                                                                                                                                                                      |
       | type                             | GezagNietTeBepalen                                                                                                                                                                                                          |
@@ -181,12 +180,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
 
   Scenario: Lg01_014 - minderjarig niet erkend kind, moeder ook minderjarig, geen categorie 11
     # Route: 39m
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Chrissy'
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                                              |
       | type                             | TijdelijkGeenGezag                                  |
@@ -195,28 +189,10 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
 
   Scenario: Lg01_015 - ongehuwde meerderjarige moeder met 1 minderjarig niet-erkend kind,bij geboorte minderjarig inmiddels meerderjarig
     # Meerderjarig
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000048                |
-      | ouder.burgerservicenummer        | 000000036                |
+    Als 'gezag' wordt gevraagd van 'Carice'
+    Dan is het gezag over 'Carlijn' eenhoofdig ouderlijk gezag met ouder 'Carice'
 
   Scenario: Lg01_016 - minderjarig niet erkend kind, moeder minderjarig, bij geboorte, inmiddels meerderjarig, geen categorie 11
     # Route: 40o1
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000048                |
-      | ouder.burgerservicenummer        | 000000036                |
+    Als 'gezag' wordt gevraagd van 'Carlijn'
+    Dan is het gezag over 'Carlijn' eenhoofdig ouderlijk gezag met ouder 'Carice'

@@ -190,7 +190,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20120501 |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 is gecorrigeerd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Leonie    |

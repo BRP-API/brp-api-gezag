@@ -190,7 +190,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | aktenummer (81.20)                                 | 1AA0150    |
       | ingangsdatum geldigheid (85.10)                    | 20090801   |
       | datum ingang familierechtelijke betrekking (62.10) | 20090801   |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0150  |
       | ingangsdatum geldigheid (85.10) | 20090801 |

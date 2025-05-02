@@ -252,7 +252,7 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0001  |
       | ingangsdatum geldigheid (85.10) | 20190101 |
-    En ouder 2 is gecorrigeerd naar de volgende gegevens
+    En ouder 2 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Nicodemus |
@@ -264,7 +264,7 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | aktenummer (81.20)                                 | 1AC0001   |
       | ingangsdatum geldigheid (85.10)                    | 20210101  |
       | datum ingang familierechtelijke betrekking (62.10) | 20200101  |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AN0001  |
       | ingangsdatum geldigheid (85.10) | 20210101 |

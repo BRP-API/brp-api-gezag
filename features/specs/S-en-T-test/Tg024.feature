@@ -287,7 +287,7 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0106  |
       | ingangsdatum geldigheid (85.10) | 20180601 |
-    En ouder 2 is gecorrigeerd naar de volgende gegevens
+    En ouder 2 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Frederik  |
@@ -299,7 +299,7 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
       | aktenummer (81.20)                                 | 1AC0106   |
       | ingangsdatum geldigheid (85.10)                    | 20190201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20190201  |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AN0106  |
       | ingangsdatum geldigheid (85.10) | 20190201 |

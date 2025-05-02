@@ -488,7 +488,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 is gecorrigeerd naar de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Wei      |
       | geslachtsnaam (02.40)                              | Yu       |
@@ -513,7 +513,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | beschrijving document (82.30)   | ga 6022  |
       | ingangsdatum geldigheid (85.10) | 20150101 |
@@ -655,7 +655,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1VA0700  |
       | ingangsdatum geldigheid (85.10) | 20150101 |
@@ -676,7 +676,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1VA0700  |
       | ingangsdatum geldigheid (85.10) | 20150101 |
@@ -752,7 +752,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1VA0700  |
       | ingangsdatum geldigheid (85.10) | 20150101 |
@@ -773,7 +773,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1VA0700  |
       | ingangsdatum geldigheid (85.10) | 20150101 |
@@ -832,7 +832,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1VA0701  |
       | ingangsdatum geldigheid (85.10) | 20150101 |
@@ -853,7 +853,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1VA0701  |
       | ingangsdatum geldigheid (85.10) | 20150101 |
@@ -920,7 +920,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1VA0700  |
       | aanduiding in onderzoek (83.10) | 26200    |
@@ -947,7 +947,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1VA0700  |
       | aanduiding in onderzoek (83.10) | 36200    |

@@ -194,7 +194,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20140201 |
-    En ouder 2 is gecorrigeerd naar de volgende gegevens
+    En ouder 2 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000024  |
       | voornamen (02.10)                                  | Maurits    |
@@ -205,7 +205,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | aktenummer (81.20)                                 | 1AC0100    |
       | ingangsdatum geldigheid (85.10)                    | 20140301   |
       | datum ingang familierechtelijke betrekking (62.10) | 20140301   |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AN0100  |
       | ingangsdatum geldigheid (85.10) | 20140301 |
@@ -557,11 +557,11 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | aktenummer (81.20)                                 | 1AA0100  |
       | ingangsdatum geldigheid (85.10)                    | 20150201 |
       | datum ingang familierechtelijke betrekking (62.10) | 20150201 |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AE0100  |
       | ingangsdatum geldigheid (85.10) | 20150201 |
-    En ouder 1 is gecorrigeerd naar de volgende gegevens
+    En ouder 1 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde      |
       | burgerservicenummer (01.20)                        | 000000073   |
       | voornamen (02.10)                                  | Menno       |
@@ -573,7 +573,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | aktenummer (81.20)                                 | 1AC0100     |
       | ingangsdatum geldigheid (85.10)                    | 20150401    |
       | datum ingang familierechtelijke betrekking (62.10) | 20150401    |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 is gecorrigeerd naar de volgende gegevens
       | naam                                               | waarde      |
       | burgerservicenummer (01.20)                        | 000000073   |
       | voornamen (02.10)                                  | Menno       |
@@ -738,7 +738,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | aktenummer (81.20)                                 | 1AA0101   |
       | ingangsdatum geldigheid (85.10)                    | 20150201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20150201  |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AE0101  |
       | ingangsdatum geldigheid (85.10) | 20150201 |
@@ -794,7 +794,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0102  |
       | ingangsdatum geldigheid (85.10) | 20170101 |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 is gecorrigeerd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000097 |
       | voornamen (02.10)                                  | Manfred   |
@@ -846,7 +846,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0103  |
       | ingangsdatum geldigheid (85.10) | 20170101 |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 is gecorrigeerd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000097 |
       | voornamen (02.10)                                  | Manfred   |

@@ -356,7 +356,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0500  |
       | ingangsdatum geldigheid (85.10) | 20200601 |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 is gecorrigeerd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Joop      |
@@ -558,7 +558,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0501  |
       | ingangsdatum geldigheid (85.10) | 20200601 |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 is gecorrigeerd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Joop      |

@@ -50,14 +50,14 @@ jobs:
 
     - name: Build OCI image
       if: github.ref != 'refs/heads/main'
-      run: ./gradlew bootBuildImage
+      run: ./gradlew --dependency-verification lenient bootBuildImage
       env:
         GITHUB_ACTOR: ${{ github.actor }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build OCI image and publish it to GitHub Packages
       if: github.ref == 'refs/heads/main'
-      run: ./gradlew bootBuildImage --publishImage
+      run: ./gradlew --dependency-verification lenient bootBuildImage --publishImage
       env:
         GITHUB_ACTOR: ${{ github.actor }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

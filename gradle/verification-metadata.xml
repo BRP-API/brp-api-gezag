@@ -55,13 +55,16 @@
       </ignored-keys>
       <trusted-keys>
          <trusted-key id="077E8893A6DCC33DD4A4D5B256E73BA9A0B592D0" group="^org[.]apache[.]logging($|([.].*))" regex="true"/>
+         <trusted-key id="0785B3EFF60B1B1BEA94E0BB7C25280EAE63EBE5" group="^org[.]apache[.]httpcomponents($|([.].*))" regex="true"/>
          <trusted-key id="07E20F0103D9DFC697C490D0368557390486F2C5" group="org.awaitility"/>
          <trusted-key id="0CC641C3A62453AB390066C4A41F13C999945293" group="commons-logging" name="commons-logging" version="1.2"/>
+         <trusted-key id="0D35D3F60078655126908E8AF3D1600878E85A3D" group="io.netty"/>
          <trusted-key id="1452F35849B50750F6A3BBB4B54011358B352F85" group="org.hibernate.validator"/>
          <trusted-key id="147B691A19097624902F4EA9689CBE64F4BC997F" group="org.mockito"/>
          <trusted-key id="1F6774B9D58C5EA6BF84D534704514F6556102E5" group="io.swagger"/>
          <trusted-key id="28118C070CB22A0175A2E8D43D12CA2AC19F3181" group="^com[.]fasterxml($|([.].*))" regex="true"/>
          <trusted-key id="28AB6EB572779C2AD196BE22D44C1D8DB1606F22" group="com.github.joschi.jackson" name="jackson-datatype-threetenbp" version="2.15.2"/>
+         <trusted-key id="29BEA2A645F2D6CED7FB12E02B172E3E156466E8" group="org.apache.maven.resolver"/>
          <trusted-key id="2B1042677FD8190C7B9FC0DC2161D72E7DCD4258" group="^org[.]sonarsource($|([.].*))" regex="true"/>
          <trusted-key id="2DB4F1EF0FA761ECC4EA935C86FDC7E2A11262CB">
             <trusting group="commons-codec"/>
@@ -73,6 +76,7 @@
          <trusted-key id="34441E504A937F43EB0DAEF96A65176A0FB1CD0B" group="org.apache.groovy" name="groovy-bom"/>
          <trusted-key id="3E61D8C230332482009D7F0EDB901B24CAD38BC4" group="^io[.]swagger($|([.].*))" regex="true"/>
          <trusted-key id="3F05DDA9F317301E927136D417A27CE7A60FF5F0" group="^io[.]opentelemetry($|([.].*))" regex="true"/>
+         <trusted-key id="475F3B8E59E6E63AA78067482C7B12F2A511E325" group="org.slf4j"/>
          <trusted-key id="477E62A656AD5475A1882855C809CA3C41BA6E96" group="jakarta.validation" name="jakarta.validation-api" version="2.0.2"/>
          <trusted-key id="47FF105DF431FF5416B821FEAECDB81D38EA9C89" group="org.commonmark"/>
          <trusted-key id="48B086A7D843CFA258E83286928FBF39003C0425">
@@ -81,26 +85,38 @@
             <trusting group="^io[.]projectreactor($|([.].*))" regex="true"/>
             <trusting group="^org[.]springframework($|([.].*))" regex="true"/>
          </trusted-key>
+         <trusted-key id="4BDE772C338BA540E1057D0C8EA48D105232855D" group="com.github.jknack"/>
          <trusted-key id="517B94F8D0A46317A28D8AB30DA8A5EC02D11EAD" group="net.sf.jopt-simple" name="jopt-simple" version="5.0.4"/>
          <trusted-key id="5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4" group="^org[.]eclipse[.]jetty($|([.].*))" regex="true"/>
+         <trusted-key id="60200AC4AE761F1614D6C46766D68DAA073BE985">
+            <trusting group="ch.qos.logback"/>
+            <trusting group="org.slf4j"/>
+         </trusted-key>
          <trusted-key id="6EC715BC3C95E279DAF65531C09C9F4F39ECC176" group="org.openapitools"/>
          <trusted-key id="6F538074CCEBF35F28AF9B066A0975F8B1127B83" group="org.jetbrains.kotlin"/>
          <trusted-key id="7B121B76A7ED6CE6E60AD51784E913A8E3A748C0" group="org.bouncycastle" name="bcprov-jdk18on" version="1.78.1"/>
+         <trusted-key id="7C7271B83AAE727A2941690666F8E4860BF74983" group="org.jooq"/>
+         <trusted-key id="7E22D50A7EBD9D2CD269B2D4056ACA74D46000BF" group="io.netty"/>
          <trusted-key id="80F6D6B0D90C6747753344CAB5A9E81B565E89E0" group="org.tomlj" name="tomlj" version="1.0.0"/>
          <trusted-key id="84789D24DF77A32433CE1F079EB80E92EB2135B1" group="^org[.]apache($|([.].*))" regex="true"/>
          <trusted-key id="890A711ECEFC9F46E7DC9A004083A52B1E69FF28" group="com.github.mifmif" name="generex" version="1.0.2"/>
+         <trusted-key id="9579802DC3E15DE9C389239FC0D48A119CE7EE7B" group="com.zaxxer" name="HikariCP"/>
          <trusted-key id="A7892505CF1A58076453E52D7999BEFBA1039E8B" group="net.bytebuddy"/>
          <trusted-key id="B6E73D84EA4FCC47166087253FAAD2CD5ECBB314">
             <trusting group="commons-cli"/>
             <trusting group="org.apache.commons"/>
          </trusted-key>
+         <trusted-key id="BDB5FA4FE719D787FB3D3197F6D4A1D411E9D1AE" group="com.google.guava"/>
          <trusted-key id="BE685132AFD2740D9095F9040CC0B712FEE75827" group="org.assertj"/>
          <trusted-key id="C7BE5BCC9FEC15518CFDA882B0F3710FA64900E7" group="com.google.code.gson"/>
          <trusted-key id="D421D1DF4570BFB13E485D0BF95ADD0A28D2F139" group="org.projectlombok" name="lombok"/>
          <trusted-key id="D54A395B5CF3F86EB45F6E426B1B008864323B92" group="org.antlr"/>
+         <trusted-key id="DBD744ACE7ADE6AA50DD591F66B50994442D2D40" group="^com[.]squareup($|([.].*))" regex="true"/>
          <trusted-key id="EA0B70B5050192C98CFA7E4F3F36885C24DF4B75" group="org.mozilla" name="rhino" version="1.7.7.2"/>
          <trusted-key id="EF6AD6684034B0CB67A9B5714406B84C1661DCD1" group="io.r2dbc"/>
+         <trusted-key id="F0E31196852A34F8855710BD4A6CE7EBC7F4F54B" group="io.prometheus"/>
          <trusted-key id="FA77DCFEF2EE6EB2DEBEDD2C012579464D01C06A" group="org.apache" name="apache"/>
+         <trusted-key id="FA7929F83AD44C4590F6CC6815C71C0A4E0B8EDD" group="net.java.dev.jna"/>
          <trusted-key id="FF6E2C001948C5F2F38B0CC385911F425EC61B51" group="^org[.]junit($|([.].*))" regex="true"/>
       </trusted-keys>
    </configuration>
@@ -240,6 +256,7 @@
       </component>
       <component group="com.github.curious-odd-man" name="rgxgen" version="1.4">
          <artifact name="rgxgen-1.4.jar">
+            <pgp value="90493B3B543CB717F9DD6EEE10C81B79DBFF09EA"/>
             <sha256 value="b13b074bf04578a39100417087446648a079e2d626cd841f9794e34e68a6e8ec" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="rgxgen-1.4.pom">
@@ -288,6 +305,7 @@
       </component>
       <component group="com.github.java-json-tools" name="json-schema-validator" version="2.2.14">
          <artifact name="json-schema-validator-2.2.14.jar">
+            <pgp value="3C9A036491949AF8FE42A640F4C0FE6A926F14D8"/>
             <sha256 value="cd9e3c599bb32296517fd3ac38beeac709f0a6ab81b2d4289495d0361ba59899" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="json-schema-validator-2.2.14.pom">
@@ -346,6 +364,7 @@
       </component>
       <component group="com.google.code.findbugs" name="jsr305" version="3.0.2">
          <artifact name="jsr305-3.0.2.jar">
+            <pgp value="7616EB882DAF57A11477AAF559A252FB1199D873"/>
             <sha256 value="766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="jsr305-3.0.2.pom">
@@ -359,6 +378,7 @@
       </component>
       <component group="com.google.errorprone" name="error_prone_annotations" version="2.27.0">
          <artifact name="error_prone_annotations-2.27.0.jar">
+            <pgp value="EE0CA873074092F806F59B65D364ABAA39A47320"/>
             <sha256 value="24c923372c58e35d0b9f16a028929bb9aedc77521867c274f2bd0735df5ba1f5" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="error_prone_annotations-2.27.0.pom">
@@ -377,6 +397,7 @@
       </component>
       <component group="com.google.guava" name="failureaccess" version="1.0.1">
          <artifact name="failureaccess-1.0.1.jar">
+            <pgp value="694621A7227D8D5289699830ABE9F3126BB741C1"/>
             <sha256 value="a171ee4c734dd2da837e4b16be9df4661afab72a41adaf31eb84dfdaf936ca26" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="failureaccess-1.0.1.pom">
@@ -411,6 +432,7 @@
       </component>
       <component group="com.googlecode.libphonenumber" name="libphonenumber" version="8.11.1">
          <artifact name="libphonenumber-8.11.1.jar">
+            <pgp value="42F1F5F3531B34660A81F7B05D95290D111CF7FF"/>
             <sha256 value="f430c92394c2053f168715853da96d99996e94e34e5a291b97c5c86a5ad62a98" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="libphonenumber-8.11.1.pom">
@@ -432,6 +454,7 @@
       </component>
       <component group="com.opencsv" name="opencsv" version="5.9">
          <artifact name="opencsv-5.9.jar">
+            <pgp value="AB1DC33940689C44669107094989E0E939C2999B"/>
             <sha256 value="2023969b86ce968ad8ae549648ac587d141c19ae684a9a5c67c9105f37ab0d1c" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="opencsv-5.9.pom">
@@ -445,6 +468,7 @@
       </component>
       <component group="com.samskivert" name="jmustache" version="1.15">
          <artifact name="jmustache-1.15.jar">
+            <pgp value="6D2CEFAF48CADC28E644B22BBA9255C2CA445309"/>
             <sha256 value="1aeb96b9dc17bc29540b8c3342e8e91ee974d5c604165ecd469dd76b041c250c" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="jmustache-1.15.pom">
@@ -530,6 +554,7 @@
       </component>
       <component group="dk.brics.automaton" name="automaton" version="1.11-8">
          <artifact name="automaton-1.11-8.jar">
+            <pgp value="5FF31904EDB5FA70567E9C1425ECEFD55FCEB2F9"/>
             <sha256 value="a24475f6ccfe1cc7a4fe9e34e05ce687b0ce0c6e8cb781e0eced3b186482c61e" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="automaton-1.11-8.pom">
@@ -538,6 +563,7 @@
       </component>
       <component group="io.freefair.gradle" name="lombok-plugin" version="8.11">
          <artifact name="lombok-plugin-8.11.jar">
+            <pgp value="F0C6F963AE4C1E0465E5EF4B2E55C136C4729D19"/>
             <sha256 value="1e0d07f6d6bf37de9e1a371b1e4ee5fe74d48783e2de49d4ebf65b95a061cde9" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="lombok-plugin-8.11.module">
@@ -551,6 +577,7 @@
       </component>
       <component group="io.github.hakky54" name="sslcontext-kickstart" version="8.3.6">
          <artifact name="sslcontext-kickstart-8.3.6.jar">
+            <pgp value="E5138A8E9F2E7E42D38B14D99AEE152CDCCEBFCB"/>
             <sha256 value="e5fa688a7026676f970933838f603523347d84047d21e7b7bfecf422b32f27f0" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="sslcontext-kickstart-8.3.6.pom">
@@ -846,6 +873,7 @@
       </component>
       <component group="jakarta.activation" name="jakarta.activation-api" version="2.1.0">
          <artifact name="jakarta.activation-api-2.1.0.jar">
+            <pgp value="6DD3B8C64EF75253BEB2C53AD908A43FB7EC07AC"/>
             <sha256 value="56e8d994095fe49c28138c60291482f66f18d12ac2b720e938697dce6a3135c7" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="jakarta.activation-api-2.1.0.pom">
@@ -888,6 +916,7 @@
       </component>
       <component group="jakarta.xml.bind" name="jakarta.xml.bind-api" version="4.0.0">
          <artifact name="jakarta.xml.bind-api-4.0.0.jar">
+            <pgp value="FC411CD3CB7DCB0ABC9801058118B3BCDB1A5000"/>
             <sha256 value="57e3796ad5753640088f5f9d3c53c183f2c250b7dad90529ea3e19a5515aa122" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="jakarta.xml.bind-api-4.0.0.pom">
@@ -927,6 +956,7 @@
       </component>
       <component group="joda-time" name="joda-time" version="2.12.7">
          <artifact name="joda-time-2.12.7.jar">
+            <pgp value="B41089A2DA79B0FA5810252872385FF0AF338D52"/>
             <sha256 value="385282b005818cfaccdbe8bd2429811e7e641782f2b88932a6b8ff51d668f616" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="joda-time-2.12.7.pom">
@@ -961,6 +991,7 @@
       </component>
       <component group="net.logstash.logback" name="logstash-logback-encoder" version="8.0">
          <artifact name="logstash-logback-encoder-8.0.jar">
+            <pgp value="B14A66F050D04940305B700EBD93646C69851AA9"/>
             <sha256 value="81fcbde1b5a7d673d6c0d0d4f1e0f79b676f948e6b92b912e9e0b75097458bd3" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="logstash-logback-encoder-8.0.pom">
@@ -1241,6 +1272,7 @@
       </component>
       <component group="org.checkerframework" name="checker-qual" version="3.37.0">
          <artifact name="checker-qual-3.37.0.jar">
+            <pgp value="19BEAB2D799C020F17C69126B16698A4ADF4D638"/>
             <sha256 value="e4ce1376cc2735e1dde220b62ad0913f51297704daad155a33f386bc5db0d9f7" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="checker-qual-3.37.0.module">
@@ -1295,6 +1327,7 @@
       </component>
       <component group="org.hdrhistogram" name="HdrHistogram" version="2.2.2">
          <artifact name="HdrHistogram-2.2.2.jar">
+            <pgp value="E113159331A1F87BFC2A93D0960D2E8635A91268"/>
             <sha256 value="22d1d4316c4ec13a68b559e98c8256d69071593731da96136640f864fa14fad8" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="HdrHistogram-2.2.2.pom">
@@ -1527,6 +1560,7 @@
       </component>
       <component group="org.postgresql" name="postgresql" version="42.7.4">
          <artifact name="postgresql-42.7.4.jar">
+            <pgp value="3750777B9C4B7D233B9D0C40307A96FBA0292109"/>
             <sha256 value="188976721ead8e8627eb6d8389d500dccc0c9bebd885268a3047180274a6031e" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="postgresql-42.7.4.pom">
@@ -1535,6 +1569,7 @@
       </component>
       <component group="org.reactivestreams" name="reactive-streams" version="1.0.3">
          <artifact name="reactive-streams-1.0.3.jar">
+            <pgp value="A33A0B49A4C1AB590B0A4DDC1364C5E2DF3E99C5"/>
             <sha256 value="1dee0481072d19c929b623e155e14d2f6085dc011529a0a0dbefc84cf571d865" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="reactive-streams-1.0.3.pom">
@@ -1556,6 +1591,7 @@
       </component>
       <component group="org.skyscreamer" name="jsonassert" version="1.5.3">
          <artifact name="jsonassert-1.5.3.jar">
+            <pgp value="C89074FC8BE681B7C7EAAB6E4C5EED3C53B75933"/>
             <sha256 value="719095c07d4203961320da593441d8b3b643c18eb1d81aa98ea933bb7eb351ba" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="jsonassert-1.5.3.pom">
@@ -1692,6 +1728,7 @@
       </component>
       <component group="org.threeten" name="threetenbp" version="1.6.8">
          <artifact name="threetenbp-1.6.8.jar">
+            <pgp value="B41089A2DA79B0FA5810252872385FF0AF338D52"/>
             <sha256 value="e4b1eb3d90c38a54c7f3384fda957e0b5bf0b41b40672a44ae8b03cb6c87ce06" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="threetenbp-1.6.8.pom">
@@ -1700,6 +1737,7 @@
       </component>
       <component group="org.xmlunit" name="xmlunit-core" version="2.10.0">
          <artifact name="xmlunit-core-2.10.0.jar">
+            <pgp value="CE8075A251547BEE249BC151A2115AE15F6B8B72"/>
             <sha256 value="3f89b0a629d3d9cca66e15f8dde5e0947852fa44172bc77ea26edf96e3e4fcf8" origin="Generated by Gradle" reason="A key couldn't be downloaded"/>
          </artifact>
          <artifact name="xmlunit-core-2.10.0.pom">

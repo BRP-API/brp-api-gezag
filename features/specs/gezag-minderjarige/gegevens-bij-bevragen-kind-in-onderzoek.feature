@@ -20,23 +20,10 @@ Functionaliteit: wanneer gegevens van het kind in onderzoek staan wordt een geza
     * heeft 'Jorine' als ouder 1
     * heeft 'Bastiaan' als ouder 2
     En 'Jorine' en 'Bastiaan' zijn met elkaar gehuwd
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-      | inOnderzoek                      | true                      |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Nandy'
+
+    Dan is het gezag over 'Nandy' gezamenlijk ouderlijk gezag met ouder 'Jorine' en ouder 'Bastiaan'
+    En is het gezag in onderzoek
 
     Voorbeelden:
       | aanduiding onderzoek | omschrijving   |
@@ -51,23 +38,9 @@ Functionaliteit: wanneer gegevens van het kind in onderzoek staan wordt een geza
       | 018120                          |
     * heeft 'Jorine' als ouder 1
     * is geadopteerd door 'Bastiaan' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-      | inOnderzoek                      | true                      |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Nandy'
+    Dan is het gezag over 'Nandy' gezamenlijk ouderlijk gezag met ouder 'Jorine' en ouder 'Bastiaan'
+    En is het gezag in onderzoek
 
   Scenario: gezag wordt bepaald met historisch aktenummer van persoon in onderzoek er is sprake van GezamenlijkOuderlijkGezag
     Gegeven persoon 'Nandy'
@@ -79,23 +52,9 @@ Functionaliteit: wanneer gegevens van het kind in onderzoek staan wordt een geza
       |                                 |
     * heeft 'Jorine' als ouder 1
     * is geadopteerd door 'Bastiaan' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-      | inOnderzoek                      | true                      |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Nandy'
+    Dan is het gezag over 'Nandy' gezamenlijk ouderlijk gezag met ouder 'Jorine' en ouder 'Bastiaan'
+    En is het gezag in onderzoek
 
   Abstract Scenario: gezag wordt bepaald met gegeven van huwelijk: <omschrijving> in onderzoek er is sprake van GezamenlijkOuderlijkGezag
     Gegeven 'Jorine' en 'Bastiaan' zijn met elkaar gehuwd met de volgende gegevens
@@ -104,23 +63,9 @@ Functionaliteit: wanneer gegevens van het kind in onderzoek staan wordt een geza
     Gegeven persoon 'Nandy'
     * heeft 'Jorine' als ouder 1
     * heeft 'Bastiaan' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-      | inOnderzoek                      | true                      |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Nandy'
+    Dan is het gezag over 'Nandy' gezamenlijk ouderlijk gezag met ouder 'Jorine' en ouder 'Bastiaan'
+    En is het gezag in onderzoek
 
     Voorbeelden:
       | aanduiding onderzoek | omschrijving                                |
@@ -138,23 +83,9 @@ Functionaliteit: wanneer gegevens van het kind in onderzoek staan wordt een geza
     Gegeven persoon 'Nandy'
     * heeft 'Jorine' als ouder 1
     * heeft 'Bastiaan' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-      | inOnderzoek                      | true                      |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Nandy'
+    Dan is het gezag over 'Nandy' gezamenlijk ouderlijk gezag met ouder 'Jorine' en ouder 'Bastiaan'
+    En is het gezag in onderzoek
 
     Voorbeelden:
       | aanduiding onderzoek | omschrijving                              |
@@ -169,23 +100,9 @@ Functionaliteit: wanneer gegevens van het kind in onderzoek staan wordt een geza
     En persoon 'Nandy'
     * heeft 'Jorine' als ouder 1
     * heeft 'Bastiaan' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-      | inOnderzoek                      | true                      |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Nandy'
+    Dan is het gezag over 'Nandy' gezamenlijk ouderlijk gezag met ouder 'Jorine' en ouder 'Bastiaan'
+    En is het gezag in onderzoek
 
     Voorbeelden:
       | aanduiding onderzoek | omschrijving                  |
@@ -202,18 +119,9 @@ Functionaliteit: wanneer gegevens van het kind in onderzoek staan wordt een geza
       | indicatie curateleregister (33.10) | 1                      |
       | ingangsdatum geldigheid (85.10)    | gisteren - 2 jaar      |
       | aanduiding in onderzoek (83.10)    | <aanduiding onderzoek> |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000024                |
-      | inOnderzoek                      | true                     |
+    Als 'gezag' wordt gevraagd van 'Nandy'
+    Dan is het gezag over 'Nandy' eenhoofdig ouderlijk gezag met ouder 'Bastiaan'
+    En is het gezag in onderzoek
 
     Voorbeelden:
       | aanduiding onderzoek | omschrijving                |
@@ -229,18 +137,9 @@ Functionaliteit: wanneer gegevens van het kind in onderzoek staan wordt een geza
       | indicatie curateleregister (33.10) | 1                      |
       | ingangsdatum geldigheid (85.10)    | gisteren - 2 jaar      |
       | aanduiding in onderzoek (83.10)    | <aanduiding onderzoek> |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
-      | inOnderzoek                      | true                     |
+    Als 'gezag' wordt gevraagd van 'Nandy'
+    Dan is het gezag over 'Nandy' eenhoofdig ouderlijk gezag met ouder 'Jorine'
+    En is het gezag in onderzoek
 
     Voorbeelden:
       | aanduiding onderzoek | omschrijving                |
@@ -253,23 +152,9 @@ Functionaliteit: wanneer gegevens van het kind in onderzoek staan wordt een geza
       | aanduiding in onderzoek (83.10) | datum ingang familierechtelijke betrekking (62.10) |
       | <aanduiding onderzoek>          | gisteren - 2 jaar                                  |
     * heeft 'Bastiaan' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-      | inOnderzoek                      | true                      |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Nandy'
+    Dan is het gezag over 'Nandy' gezamenlijk ouderlijk gezag met ouder 'Jorine' en ouder 'Bastiaan'
+    En is het gezag in onderzoek
 
     Voorbeelden:
       | aanduiding onderzoek | omschrijving                               |
@@ -284,23 +169,9 @@ Functionaliteit: wanneer gegevens van het kind in onderzoek staan wordt een geza
     * heeft 'Bastiaan' als ouder 2 met de volgende gegevens
       | aanduiding in onderzoek (83.10) | datum ingang familierechtelijke betrekking (62.10) |
       | <aanduiding onderzoek>          | gisteren - 2 jaar                                  |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-      | inOnderzoek                      | true                      |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Nandy'
+    Dan is het gezag over 'Nandy' gezamenlijk ouderlijk gezag met ouder 'Jorine' en ouder 'Bastiaan'
+    En is het gezag in onderzoek
 
     Voorbeelden:
       | aanduiding onderzoek | omschrijving                               |
@@ -317,18 +188,9 @@ Functionaliteit: wanneer gegevens van het kind in onderzoek staan wordt een geza
     * heeft 'Bastiaan' als ouder 2 met de volgende gegevens
       | geslachtsaanduiding (04.10) | datum ingang familierechtelijke betrekking (62.10) |
       | M                           | gisteren - 17 jaar                                 |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | ouder.burgerservicenummer        | 000000012                |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | inOnderzoek                      | true                     |
+    Als 'gezag' wordt gevraagd van 'Nandy'
+    Dan is het gezag over 'Nandy' eenhoofdig ouderlijk gezag met ouder 'Jorine'
+    En is het gezag in onderzoek
 
   Scenario: gezag wordt bepaald met gegeven geslachtsnaam van ouder 2 in onderzoek, er is sprake van EenhoofdigOuderlijkGezag
     Gegeven persoon 'Nandy'
@@ -338,18 +200,9 @@ Functionaliteit: wanneer gegevens van het kind in onderzoek staan wordt een geza
     * heeft 'Bastiaan' als ouder 2 met de volgende gegevens
       | geslachtsaanduiding (04.10) | datum ingang familierechtelijke betrekking (62.10) | aanduiding in onderzoek (83.10) |
       | M                           | gisteren - 17 jaar                                 | 030410                          |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | ouder.burgerservicenummer        | 000000012                |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | inOnderzoek                      | true                     |
+    Als 'gezag' wordt gevraagd van 'Nandy'
+    Dan is het gezag over 'Nandy' eenhoofdig ouderlijk gezag met ouder 'Jorine'
+    En is het gezag in onderzoek
 
   Scenario: gezag wordt bepaald met historich aktenummer van ouder 1 in onderzoek er is sprake van EenhoofdigOuderlijkGezag
     Gegeven persoon 'Nandy'
@@ -361,18 +214,9 @@ Functionaliteit: wanneer gegevens van het kind in onderzoek staan wordt een geza
       | aanduiding in onderzoek (83.10) | datum ingang familierechtelijke betrekking (62.10) |
       |                                 | gisteren - 17 jaar                                 |
     * heeft 'Bastiaan' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | inOnderzoek                      | true                     |
-      | ouder.burgerservicenummer        | 000000024                |
+    Als 'gezag' wordt gevraagd van 'Nandy'
+    Dan is het gezag over 'Nandy' eenhoofdig ouderlijk gezag met ouder 'Bastiaan'
+    En is het gezag in onderzoek
 
   Scenario: gezag wordt bepaald met historich aktenummer van ouder 2 in onderzoek er is sprake van EenhoofdigOuderlijkGezag
     Gegeven persoon 'Nandy'
@@ -384,15 +228,6 @@ Functionaliteit: wanneer gegevens van het kind in onderzoek staan wordt een geza
     * zijn van ouder 2 de volgende gegevens gewijzigd
       | aanduiding in onderzoek (83.10) | datum ingang familierechtelijke betrekking (62.10) |
       |                                 | gisteren - 17 jaar                                 |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | inOnderzoek                      | true                     |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Nandy'
+    Dan is het gezag over 'Nandy' eenhoofdig ouderlijk gezag met ouder 'Jorine'
+    En is het gezag in onderzoek

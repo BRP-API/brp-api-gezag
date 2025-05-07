@@ -79,44 +79,16 @@ Functionaliteit: 2a.2 - adoptief ouders
     Gegeven persoon 'Jaimy'
     * is geadopteerd door 'Ingrid' als ouder 1
     * is geadopteerd door 'Henk' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Jaimy'
+    Dan is het gezag over 'Jaimy' gezamenlijk ouderlijk gezag met ouder 'Ingrid' en ouder 'Henk'
 
   Scenario: het kind is geadopteerd door twee personen die met elkaar gehuwd zijn er is sprake van GezamenlijkOuderlijkGezag
     Gegeven 'Ingrid' en 'Henk' zijn met elkaar gehuwd
     Gegeven persoon 'Jaimy'
     * is geadopteerd door 'Ingrid' als ouder 1
     * is geadopteerd door 'Henk' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Jaimy'
+    Dan is het gezag over 'Jaimy' gezamenlijk ouderlijk gezag met ouder 'Ingrid' en ouder 'Henk'
 
   Scenario: het kind is geadopteerd door twee personen die gehuwd waren bij de adoptie maar nu zijn gescheiden er is sprake van GezamenlijkOuderlijkGezag
     Gegeven 'Ingrid' en 'Henk' zijn met elkaar gehuwd
@@ -124,54 +96,22 @@ Functionaliteit: 2a.2 - adoptief ouders
     * is geadopteerd door 'Ingrid' als ouder 1
     * is geadopteerd door 'Henk' als ouder 2
     Gegeven 'Ingrid' en 'Henk' zijn gescheiden
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Jaimy'
+    Dan is het gezag over 'Jaimy' gezamenlijk ouderlijk gezag met ouder 'Ingrid' en ouder 'Henk'
 
   Regel: Een kind is geadopteerd door één persoon
 
   Scenario: het kind is geadopteerd door een alleenstaand persoon als ouder 1 er is sprake van EenhoofdigOuderlijkGezag
     Gegeven persoon 'Jaimy'
     * is geadopteerd door 'Ingrid' als ouder 1
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Jaimy'
+    Dan is het gezag over 'Jaimy' eenhoofdig ouderlijk gezag met ouder 'Ingrid'
 
   Scenario: het kind is geadopteerd door een alleenstaand persoon als ouder 2 er is sprake van EenhoofdigOuderlijkGezag
     Gegeven persoon 'Jaimy'
     * is geadopteerd door 'Henk' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000024                |
+    Als 'gezag' wordt gevraagd van 'Jaimy'
+    Dan is het gezag over 'Jaimy' eenhoofdig ouderlijk gezag met ouder 'Henk'
 
   Scenario: het kind is geadopteerd door een persoon die is gehuwd er is sprake van EenhoofdigOuderlijkGezag
     Gegeven 'Ingrid' en 'Henk' zijn met elkaar gehuwd met de volgende gegevens
@@ -179,17 +119,8 @@ Functionaliteit: 2a.2 - adoptief ouders
       | morgen - 5 jaar                                                    |
     Gegeven persoon 'Jaimy'
     * is geadopteerd door 'Ingrid' als ouder 1
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Jaimy'
+    Dan is het gezag over 'Jaimy' eenhoofdig ouderlijk gezag met ouder 'Ingrid'
 
   Regel: Een kind heeft al een ouder en wordt geadopteerd door een persoon
 
@@ -202,22 +133,8 @@ Functionaliteit: 2a.2 - adoptief ouders
     Gegeven 'Jaimy' is geadopteerd door 'Henk' als ouder 2 met de volgende gegevens
       | datum ingang familierechtelijke betrekking (62.10) |
       | vorige maand                                       |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Jaimy'
+    Dan is het gezag over 'Jaimy' gezamenlijk ouderlijk gezag met ouder 'Ingrid' en ouder 'Henk'
 
   Scenario: het kind wordt geadopteerd door de partner van de moeder zonder huwelijk er is sprake van GezamenlijkOuderlijkGezag
     Gegeven persoon 'Jaimy'
@@ -225,22 +142,8 @@ Functionaliteit: 2a.2 - adoptief ouders
     Gegeven 'Jaimy' is geadopteerd door 'Henk' als ouder 2 met de volgende gegevens
       | datum ingang familierechtelijke betrekking (62.10) |
       | vorige maand                                       |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Jaimy'
+    Dan is het gezag over 'Jaimy' gezamenlijk ouderlijk gezag met ouder 'Ingrid' en ouder 'Henk'
 
   Scenario: het kind wordt geadopteerd door de huwelijks partner van de moeder en de partner en moeder zijn later weer gescheiden er is sprake van GezamenlijkOuderlijkGezag
     Gegeven 'Ingrid' en 'Henk' zijn met elkaar gehuwd met de volgende gegevens
@@ -254,19 +157,5 @@ Functionaliteit: 2a.2 - adoptief ouders
     Gegeven 'Ingrid' en 'Henk' zijn gescheiden met de volgende gegevens
       | datum ontbinding huwelijk/geregistreerd partnerschap (07.10) |
       | gisteren                                                     |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Jaimy'
+    Dan is het gezag over 'Jaimy' gezamenlijk ouderlijk gezag met ouder 'Ingrid' en ouder 'Henk'

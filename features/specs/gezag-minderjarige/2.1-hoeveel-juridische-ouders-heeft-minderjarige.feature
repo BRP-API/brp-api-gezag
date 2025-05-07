@@ -49,69 +49,28 @@ Functionaliteit: 2.1 - hoeveel juridische ouders heeft minderjarige
     Gegeven persoon 'Gert'
     * heeft 'Gertruda' als ouder 1
     * heeft 'Gerrit' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Gert'
+    Dan is het gezag over 'Gert' gezamenlijk ouderlijk gezag met ouder 'Gertruda' en ouder 'Gerrit'
 
   Regel: Kind heeft een juridisch ouder
 
   Scenario: Voor het kind is 1 ouder bekend als ouder 1 er is sprake van EenhoofdigOuderlijkGezag
     Gegeven  persoon 'Gert'
     * heeft 'Gertruda' als ouder 1
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Gert'
+    Dan is het gezag over 'Gert' eenhoofdig ouderlijk gezag met ouder 'Gertruda'
 
   Scenario: Voor het kind is 1 ouder bekend als ouder 2 er is sprake van EenhoofdigOuderlijkGezag
     Gegeven  persoon 'Gert'
     * heeft 'Gerrit' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000024                |
+    Als 'gezag' wordt gevraagd van 'Gert'
+    Dan is het gezag over 'Gert' eenhoofdig ouderlijk gezag met ouder 'Gerrit'
 
   Regel: Kind heeft geen juridische ouders
 
   Scenario: Voor het kind is geen van de ouders bekend er is sprake van TijdelijkGeenGezag
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                 |
-      | type                             | TijdelijkGeenGezag                                     |
-      | minderjarige.burgerservicenummer | 000000036                                              |
-      | toelichting                      | Tijdelijk geen gezag omdat beide ouders onbekend zijn. |
+    Als 'gezag' wordt gevraagd van 'Gert'
+    Dan is het gezag over 'Gert' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat beide ouders onbekend zijn.'
 
   Regel: Kind heeft puntouders
 
@@ -120,34 +79,16 @@ Functionaliteit: 2.1 - hoeveel juridische ouders heeft minderjarige
     Gegeven  persoon 'Gert'
     * heeft '.' als ouder 1
     * heeft 'Gerrit' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                 |
-      | type                             | GezagNietTeBepalen                                                                     |
-      | minderjarige.burgerservicenummer | 000000036                                                                              |
-      | toelichting                      | Gezag kan niet worden bepaald omdat één of meer ouders van minderjarige onbekend zijn. |
+    Als 'gezag' wordt gevraagd van 'Gert'
+    Dan is het gezag over 'Gert' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat één of meer ouders van minderjarige onbekend zijn.'
 
   Scenario: Voor het kind is ouder 2 onbekend er is sprake van GezagNietTeBepalen
     Gegeven de persoon '.' met burgerservicenummer '000000048'
     Gegeven  persoon 'Gert'
     * heeft 'Gertruda' als ouder 1
     * heeft '.' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                 |
-      | type                             | GezagNietTeBepalen                                                                     |
-      | minderjarige.burgerservicenummer | 000000036                                                                              |
-      | toelichting                      | Gezag kan niet worden bepaald omdat één of meer ouders van minderjarige onbekend zijn. |
+    Als 'gezag' wordt gevraagd van 'Gert'
+    Dan is het gezag over 'Gert' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat één of meer ouders van minderjarige onbekend zijn.'
 
   Scenario: Voor het kind zijn beide ouders onbekend er is sprake van GezagNietTeBepalen
     Gegeven de persoon 'Gertruda' met burgerservicenummer '000000048'
@@ -159,14 +100,5 @@ Functionaliteit: 2.1 - hoeveel juridische ouders heeft minderjarige
     * heeft 'Gerrit' als ouder 2 met de volgende gegevens
       | naam                  | waarde |
       | geslachtsnaam (02.40) | .      |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                 |
-      | type                             | GezagNietTeBepalen                                                                     |
-      | minderjarige.burgerservicenummer | 000000036                                                                              |
-      | toelichting                      | Gezag kan niet worden bepaald omdat één of meer ouders van minderjarige onbekend zijn. |
+    Als 'gezag' wordt gevraagd van 'Gert'
+    Dan is het gezag over 'Gert' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat één of meer ouders van minderjarige onbekend zijn.'

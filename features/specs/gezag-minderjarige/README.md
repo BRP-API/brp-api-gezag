@@ -1,6 +1,6 @@
 **Wat is gezag?** 
-Iedereen in Nederland die jonger is dan 18 jaar staat onder gezag. Dit betekent dat zij sommige beslissingen niet zelfstandig mogen nemen. Iemand die gezag heeft over een kind is verantwoordelijk voor de verzorging en opvoeding van het kind en beheert het geld en de spullen van het kind. De gezaghouder is ook de wettelijk vertegenwoordiger van het kind. Kinderen mogen vaak niet zelf officiële handelingen doen. De wettelijk vertegenwoordiger doet dit dan voor het kind, bijvoorbeeld door een handtekening te zetten.
-De wettelijk vertegenwoordiger is ook vaak wettelijk aansprakelijk voor wat het kind doet. Gezag gaat veel verder dan alleen een recht op omgang. De ouder met gezag mag namelijk belangrijke beslissingen nemen over het leven van het kind, zoals een schoolkeuze, medische beslissingen, een verhuizing, een vakantie naar het buitenland of het aanvragen van een reisdocument. Een ouder die alleen het gezag uitoefent, heeft bij het nemen van deze beslissingen geen toestemming nodig van de andere (juridische) ouder zonder gezag.
+Iedereen in Nederland die jonger is dan 18 jaar staat onder gezag. Dit betekent dat zij sommige beslissingen niet zelfstandig mogen nemen. Iemand die gezag heeft over een minderjarige is verantwoordelijk voor de verzorging en opvoeding van de minderjarige en beheert het geld en de spullen van de minderjarige. De gezaghouder is ook de wettelijk vertegenwoordiger van de minderjarige. Minderjarigen mogen vaak niet zelf officiële handelingen doen. De wettelijk vertegenwoordiger doet dit dan voor de minderjarige, bijvoorbeeld door een handtekening te zetten.
+De wettelijk vertegenwoordiger is ook vaak wettelijk aansprakelijk voor wat de minderjarige doet. Gezag gaat veel verder dan alleen een recht op omgang. De ouder met gezag mag namelijk belangrijke beslissingen nemen over het leven van het kind, zoals een schoolkeuze, medische beslissingen, een verhuizing, een vakantie naar het buitenland of het aanvragen van een reisdocument. Een ouder die alleen het gezag uitoefent, heeft bij het nemen van deze beslissingen geen toestemming nodig van de andere (juridische) ouder zonder gezag.
 
 Iedereen die 18 jaar of ouder is en niet onder curatele staat of een geestelijke stoornis heeft kan gezag hebben over een minderjarige. Meestal hebben de ouders het gezag. Het gezag stopt automatisch als het kind 18 jaar wordt. Een minderjarige kan niet meer dan 2 ouders hebben. Over een minderjarige kan het gezag niet door meer dan 2 personen worden uitgeoefend.
 
@@ -33,24 +33,24 @@ Met niet-ouder bedoelen we:
 **Wat is voogdij?**
 Voogdij is het gezag van niet-ouders. Iedereen die 18 jaar of ouder is, niet onder curatele staat en geen geestelijke stoornis heeft, kan voogd worden. Ook een jeugdzorgorganisatie (bijvoorbeeld Bureau Jeugdzorg) kan als voogd worden benoemd.
 
-Wanneer krijgt een kind een voogd?
+Wanneer krijgt een minderjarige een voogd?
 - wanneer de ouders zijn overleden;
 - wanneer de ouders geen gezag (meer) hebben.
 
-Een kind kan automatisch of via de rechter een voogd krijgen:
-- Een gezaghouder met gezamenlijk gezag wordt automatisch voogd als de andere gezaghebbende ouder overlijdt of onbevoegd raakt tot de uitoefening van gezag (bijvoorbeeld omdat die ouder onder curatele staat). Zie [Bevoegdheid tot gezag functionaliteit](bevoegdheid-tot-gezag.feature).
-- Vaak benoemt de rechter een voogd in een gerechtelijke uitspraak. Ook ouders kunnen in hun testament of door een aantekening in het gezagsregister één of twee personen als voogd aanwijzen. De voogdij begint pas als de ouders overleden zijn, het kind nog geen 18 jaar is en de voogd bij de griffie van de rechtbank verklaard heeft dat de voogdij wordt aanvaard. Als de gevraagde persoon toch geen voogd wil zijn, bepaalt de rechter wie de voogd wordt. Zie [Gerechtelijke uitspraak functionaliteit](gerechtelijke-uitspraak-feature).
+Een minderjarige kan automatisch of via de rechter een voogd krijgen:
+- Een gezaghouder met gezamenlijk gezag wordt automatisch voogd als de andere gezaghebbende ouder overlijdt of onbevoegd raakt tot de uitoefening van gezag, bijvoorbeeld omdat die ouder onder curatele staat.
+- Vaak benoemt de rechter een voogd in een gerechtelijke uitspraak. Ook ouders kunnen in hun testament of door een aantekening in het gezagsregister één of twee personen als voogd aanwijzen. De voogdij begint pas als de ouders overleden zijn, het kind nog geen 18 jaar is en de voogd bij de griffie van de rechtbank verklaard heeft dat de voogdij wordt aanvaard. Als de gevraagde persoon toch geen voogd wil zijn, bepaalt de rechter wie de voogd wordt.
 
-**Leeswijzer features**
+**Leeswijzer afleidingsregels**
 
 Gezag wordt bepaald door afleidingsregels in onderstaande volgorde toe te passen:
-1. Regels waarmee wordt vastgesteld of het gezag niet te bepalen is wanneer minderjarige de vaste verblijfplaats in het buitenland heeft (zie de [Gezag bepalen voor personen die in het buitenland verblijven](niet-ingezetene.feature))
-2. Regels waarmee wordt vastgesteld dat er geen gezag is (zie de [Geen gezag functionaliteit](geen-gezag.feature))
-3. Regels waarmee wordt vastgesteld of er een geldige gerechtelijke uitspraak is over gezag, en of deze wordt herzien door adoptie, een reparatiehuwelijk of ontkenning (zie de [Gerechtelijke uitspraak functionaliteit](gerechtelijke-uitspraak-feature)) 
-4. Regels waarmee het gezag wordt bepaald van een minderjarige:
-    - met twee ouders met een relatie met elkaar (zie de [Twee ouders met relatie](twee-ouders-met-relatie.feature))
-    - met twee ouders zonder een relatie met elkaar (zie de [Twee ouders geen relatie](twee-ouders-geen-relatie.feature))
-    - met één ouder (zie de [Eén ouder functionaliteit](één-ouder.feature))
-    - zonder ouders (zie de [Geen ouder functionaliteit](geen-ouder.feature))
-5. Regels waarmee wordt vastgesteld of het gezag te bepalen is wanneer minderjarige de gewone verblijfplaats in het buitenland heeft gehad  (zie [Gezag bepalen voor personen die in het buitenland verbleven hebben](immigrant.feature))
-6. Regels waarmee het gezag wordt bepaald wanneer gezaghouder(s) niet bevoegd of overleden zijn (zie de [Bevoegdheid tot gezag functionaliteit](bevoegdheid-tot-gezag.feature)).
+1. Wanneer minderjarige de vaste verblijfplaats in het buitenland heeft is het gezag niet te bepalen. Lees de afleidingsregels voor [Gezag bepalen voor minderjarigen die in het buitenland verblijven](niet-ingezetene.feature)
+2. Er wordt vastgesteld dat geen gezag is. Lees de afleidingsregels voor [Geen gezag functionaliteit](geen-gezag.feature))
+3. Er is een gerechtelijke uitspraak over gezag, die kan worden herzien door adoptie, een reparatiehuwelijk of ontkenning. Lees de afleidnigsregels voor [Gerechtelijke uitspraak](gerechtelijke-uitspraak-feature)) 
+4. Gezag wordt bepaald van een minderjarige:
+    - met twee ouders met een relatie met elkaar. Lees de afleidingsregels voor een [minderjarige met twee ouders met relatie](twee-ouders-met-relatie.feature))
+    - met twee ouders zonder een relatie met elkaar. Lees de afleidingsregels voor een [minderjarige met twee ouders zonder relatie](twee-ouders-geen-relatie.feature))
+    - met één ouder. Lees de afleidingsregels voor een [minderjarige met één ouder](één-ouder.feature)
+    - zonder ouders. Lees de afleidingsregels voor een [minderjarige zonder ouder](geen-ouder.feature)
+5. Minderjarige heeft de de gewone verblijfplaats in het buitenland gehad. Lees de afleidingsregels voor [minderjarige die in het buitenland heeft verbleven](immigrant.feature)
+6. Gezaghouder(s) zijn niet bevoegd of overleden. Lees de afleidingsregels voor [Bevoegdheid tot gezag](bevoegdheid-tot-gezag.feature).

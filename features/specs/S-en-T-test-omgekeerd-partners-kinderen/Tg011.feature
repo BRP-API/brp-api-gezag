@@ -790,7 +790,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | burgerservicenummer | 000000012 |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
+      | type                             | GezamenlijkOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000073                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
@@ -815,7 +815,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | ouder.burgerservicenummer        | 000000024                |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
+      | type                             | GezamenlijkOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000073                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
@@ -862,9 +862,9 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | naam                | waarde    |
       | burgerservicenummer | 000000048 |
     En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                                                |
-      | type                             | GezagNietTeBepalen                                                                                                    |
-      | minderjarige.burgerservicenummer | 000000048                                                                                                             |
+      | naam                             | waarde                                                                                                                                           |
+      | type                             | GezagNietTeBepalen                                                                                                                               |
+      | minderjarige.burgerservicenummer | 000000048                                                                                                                                        |
       | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ingangsdatum geldigheid van gezagsverhouding |
 
   Scenario: Lg01_059 - gezag ouder2, geldigheid ná datum reparatiehuwelijk
@@ -891,7 +891,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | burgerservicenummer | 000000073 |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
+      | type                             | GezamenlijkOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000073                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |

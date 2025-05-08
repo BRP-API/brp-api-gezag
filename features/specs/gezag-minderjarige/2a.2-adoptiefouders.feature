@@ -75,7 +75,7 @@ Functionaliteit: 2a.2 - adoptief ouders
 
   Regel: Een kind is geadopteerd door twee personen
 
-  Scenario: het kind is geadopteerd door twee personen die ongehuwd zijn/geen partnerschap hebben er is sprake van TweehoofdigOuderlijkGezag
+  Scenario: het kind is geadopteerd door twee personen die ongehuwd zijn/geen partnerschap hebben er is sprake van GezamenlijkOuderlijkGezag
     Gegeven persoon 'Jaimy'
     * is geadopteerd door 'Ingrid' als ouder 1
     * is geadopteerd door 'Henk' als ouder 2
@@ -87,8 +87,8 @@ Functionaliteit: 2a.2 - adoptief ouders
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |      
+      | type                             | GezamenlijkOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000036                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -96,7 +96,7 @@ Functionaliteit: 2a.2 - adoptief ouders
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
 
-  Scenario: het kind is geadopteerd door twee personen die met elkaar gehuwd zijn er is sprake van TweehoofdigOuderlijkGezag
+  Scenario: het kind is geadopteerd door twee personen die met elkaar gehuwd zijn er is sprake van GezamenlijkOuderlijkGezag
     Gegeven 'Ingrid' en 'Henk' zijn met elkaar gehuwd
     Gegeven persoon 'Jaimy'
     * is geadopteerd door 'Ingrid' als ouder 1
@@ -109,8 +109,8 @@ Functionaliteit: 2a.2 - adoptief ouders
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |      
+      | type                             | GezamenlijkOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000036                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -118,7 +118,7 @@ Functionaliteit: 2a.2 - adoptief ouders
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
 
-  Scenario: het kind is geadopteerd door twee personen die gehuwd waren bij de adoptie maar nu zijn gescheiden er is sprake van TweehoofdigOuderlijkGezag
+  Scenario: het kind is geadopteerd door twee personen die gehuwd waren bij de adoptie maar nu zijn gescheiden er is sprake van GezamenlijkOuderlijkGezag
     Gegeven 'Ingrid' en 'Henk' zijn met elkaar gehuwd
     Gegeven persoon 'Jaimy'
     * is geadopteerd door 'Ingrid' als ouder 1
@@ -132,8 +132,8 @@ Functionaliteit: 2a.2 - adoptief ouders
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |      
+      | type                             | GezamenlijkOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000036                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -156,7 +156,7 @@ Functionaliteit: 2a.2 - adoptief ouders
       | naam                             | waarde                   |
       | type                             | EenhoofdigOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |      
+      | ouder.burgerservicenummer        | 000000012                |
 
   Scenario: het kind is geadopteerd door een alleenstaand persoon als ouder 2 er is sprake van EenhoofdigOuderlijkGezag
     Gegeven persoon 'Jaimy'
@@ -171,7 +171,7 @@ Functionaliteit: 2a.2 - adoptief ouders
       | naam                             | waarde                   |
       | type                             | EenhoofdigOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000024                |      
+      | ouder.burgerservicenummer        | 000000024                |
 
   Scenario: het kind is geadopteerd door een persoon die is gehuwd er is sprake van EenhoofdigOuderlijkGezag
     Gegeven 'Ingrid' en 'Henk' zijn met elkaar gehuwd met de volgende gegevens
@@ -189,11 +189,11 @@ Functionaliteit: 2a.2 - adoptief ouders
       | naam                             | waarde                   |
       | type                             | EenhoofdigOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |      
+      | ouder.burgerservicenummer        | 000000012                |
 
   Regel: Een kind heeft al een ouder en wordt geadopteerd door een persoon
 
-  Scenario: het kind wordt geadopteerd door de huwelijks partner van de moeder er is sprake van TweehoofdigOuderlijkGezag
+  Scenario: het kind wordt geadopteerd door de huwelijks partner van de moeder er is sprake van GezamenlijkOuderlijkGezag
     Gegeven 'Ingrid' en 'Henk' zijn met elkaar gehuwd met de volgende gegevens
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10) |
       | vandaag - 1 jaar                                                   |
@@ -210,8 +210,8 @@ Functionaliteit: 2a.2 - adoptief ouders
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |      
+      | type                             | GezamenlijkOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000036                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -219,7 +219,7 @@ Functionaliteit: 2a.2 - adoptief ouders
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
 
-  Scenario: het kind wordt geadopteerd door de partner van de moeder zonder huwelijk er is sprake van TweehoofdigOuderlijkGezag
+  Scenario: het kind wordt geadopteerd door de partner van de moeder zonder huwelijk er is sprake van GezamenlijkOuderlijkGezag
     Gegeven persoon 'Jaimy'
     * heeft 'Ingrid' als ouder 1
     Gegeven 'Jaimy' is geadopteerd door 'Henk' als ouder 2 met de volgende gegevens
@@ -233,8 +233,8 @@ Functionaliteit: 2a.2 - adoptief ouders
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |      
+      | type                             | GezamenlijkOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000036                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |
@@ -242,7 +242,7 @@ Functionaliteit: 2a.2 - adoptief ouders
       | naam                | waarde    |
       | burgerservicenummer | 000000024 |
 
-  Scenario: het kind wordt geadopteerd door de huwelijks partner van de moeder en de partner en moeder zijn later weer gescheiden er is sprake van TweehoofdigOuderlijkGezag
+  Scenario: het kind wordt geadopteerd door de huwelijks partner van de moeder en de partner en moeder zijn later weer gescheiden er is sprake van GezamenlijkOuderlijkGezag
     Gegeven 'Ingrid' en 'Henk' zijn met elkaar gehuwd met de volgende gegevens
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10) |
       | vandaag - 1 jaar                                                   |
@@ -262,8 +262,8 @@ Functionaliteit: 2a.2 - adoptief ouders
       | burgerservicenummer | 000000036 |
     En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |      
+      | type                             | GezamenlijkOuderlijkGezag |
+      | minderjarige.burgerservicenummer | 000000036                 |
     En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
       | burgerservicenummer | 000000012 |

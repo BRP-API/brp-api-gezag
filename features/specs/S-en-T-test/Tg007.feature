@@ -4,12 +4,13 @@ Functionaliteit: Tg007 - Frederiks-Faassen
 
 
   Achtergrond:
-    Gegeven adres 'A1' heeft de volgende gegevens
+    Gegeven adres 'A1'
       | gemeentecode (92.10) | straatnaam (11.10) | huisnummer (11.20) | identificatiecode nummeraanduiding (11.90) |
       | 518                  | Turfmarkt          | 11                 | 0518200000583533                           |
     
     # Lg01_028 - gehuwd, 1 minderjarig kind erkend vóór huwelijk, 1 minderjarig kind geboren ná huwelijk, echtgenoot onder curatele
-    Gegeven de persoon met burgerservicenummer '000000012' heeft de volgende gegevens
+    Gegeven de persoon 'Fieke' met burgerservicenummer '000000012'
+    * heeft de volgende gegevens
       | naam                            | waarde    |
       | voornamen (02.10)               | Fieke     |
       | geslachtsnaam (02.40)           | Frederiks |
@@ -18,7 +19,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | geslachtsaanduiding (04.10)     | V         |
       | beschrijving document (82.30)   | PKA       |
       | ingangsdatum geldigheid (85.10) | 0         |
-    En de persoon heeft een ouder '1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Fiona    |
       | geslachtsnaam (02.40)                              | Franssen |
@@ -28,7 +29,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En de persoon heeft een ouder '2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Filip     |
       | geslachtsnaam (02.40)                              | Frederiks |
@@ -38,7 +39,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En de persoon heeft een 'partner' met de volgende gegevens
+    En heeft een partner met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Fabian    |
@@ -51,11 +52,11 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20080501  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de persoon is ingeschreven op adres 'A1' met de volgende gegevens
+    En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En de persoon heeft een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Frits     |
@@ -64,7 +65,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0300   |
       | ingangsdatum geldigheid (85.10) | 20171201  |
-    En de persoon heeft nog een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Frans     |
@@ -75,7 +76,8 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | ingangsdatum geldigheid (85.10) | 20181201  |
     
     # Lg01_029 - gehuwd, 1 minderjarig kind erkend vóór huwelijk, 1 minderjarig kind geboren ná huwelijk, onder curatele
-    Gegeven de persoon met burgerservicenummer '000000024' heeft de volgende gegevens
+    Gegeven de persoon 'Fabian' met burgerservicenummer '000000024'
+    * heeft de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Fabian   |
       | geslachtsnaam (02.40)           | Faassen  |
@@ -84,7 +86,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | geslachtsaanduiding (04.10)     | M        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En de persoon heeft een ouder '1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Francisca |
       | geslachtsnaam (02.40)                              | Fabel     |
@@ -94,7 +96,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En de persoon heeft een ouder '2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Frederik |
       | geslachtsnaam (02.40)                              | Faassen  |
@@ -104,7 +106,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En de persoon heeft een 'partner' met de volgende gegevens
+    En heeft een partner met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Fieke     |
@@ -117,11 +119,11 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20080501  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de persoon is ingeschreven op adres 'A1' met de volgende gegevens
+    En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En de persoon heeft een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Frits     |
@@ -130,7 +132,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0300   |
       | ingangsdatum geldigheid (85.10) | 20171201  |
-    En de persoon heeft nog een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Frans     |
@@ -139,14 +141,15 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0300   |
       | ingangsdatum geldigheid (85.10) | 20181201  |
-    En de persoon heeft de volgende 'gezagsverhouding' gegevens
+    En heeft gezagsverhouding met de volgende gegevens
       | naam                               | waarde                      |
       | indicatie curateleregister (33.10) | 1                           |
       | beschrijving document (82.30)      | uittreksel curateleregister |
       | ingangsdatum geldigheid (85.10)    | 20210301                    |
     
     # Lg01_030 - minderjarige kind, geboren tijdens huwelijk ouders, vader (Ouder2) onder curatele
-    Gegeven de persoon met burgerservicenummer '000000036' heeft de volgende gegevens
+    Gegeven de persoon 'Frans' met burgerservicenummer '000000036'
+    * heeft de volgende gegevens
       | naam                            | waarde    |
       | voornamen (02.10)               | Frans     |
       | geslachtsnaam (02.40)           | Frederiks |
@@ -155,7 +158,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AA0300   |
       | ingangsdatum geldigheid (85.10) | 20181201  |
-    En de persoon heeft een ouder '1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Fieke     |
@@ -166,7 +169,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | aktenummer (81.20)                                 | 1AA0300   |
       | ingangsdatum geldigheid (85.10)                    | 20181201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20181201  |
-    En de persoon heeft een ouder '2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Fabian    |
@@ -177,13 +180,14 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | aktenummer (81.20)                                 | 1AA0300   |
       | ingangsdatum geldigheid (85.10)                    | 20181201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20181201  |
-    En de persoon is ingeschreven op adres 'A1' met de volgende gegevens
+    En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20181201 |
     
     # Lg01_031 - minderjarig erkend kind, ouders inmiddels gehuwd, vader (Ouder2) onder curatele
-    Gegeven de persoon met burgerservicenummer '000000048' heeft de volgende gegevens
+    Gegeven de persoon 'Frits' met burgerservicenummer '000000048'
+    * heeft de volgende gegevens
       | naam                            | waarde    |
       | voornamen (02.10)               | Frits     |
       | geslachtsnaam (02.40)           | Frederiks |
@@ -192,7 +196,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AA0300   |
       | ingangsdatum geldigheid (85.10) | 20171201  |
-    En de persoon heeft een ouder '1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Fieke     |
@@ -203,7 +207,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | aktenummer (81.20)                                 | 1AA0300   |
       | ingangsdatum geldigheid (85.10)                    | 20171201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20171201  |
-    En de persoon heeft een ouder '2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Fabian    |
@@ -214,7 +218,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | aktenummer (81.20)                                 | 1AA0300   |
       | ingangsdatum geldigheid (85.10)                    | 20171201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20171201  |
-    En de persoon is ingeschreven op adres 'A1' met de volgende gegevens
+    En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20171201 |
@@ -222,59 +226,21 @@ Functionaliteit: Tg007 - Frederiks-Faassen
 
   Scenario: Lg01_028 - gehuwd, 1 minderjarig kind erkend vóór huwelijk, 1 minderjarig kind geboren ná huwelijk, echtgenoot onder curatele
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000048                |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Fieke'
+    Dan is het gezag over 'Frans' eenhoofdig ouderlijk gezag met ouder 'Fieke'
+    Dan is het gezag over 'Frits' eenhoofdig ouderlijk gezag met ouder 'Fieke'
 
   Scenario: Lg01_029 - gehuwd, 1 minderjarig kind erkend vóór huwelijk, 1 minderjarig kind geboren ná huwelijk, onder curatele
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
-    En heeft de persoon geen gezag
+    Als 'gezag' wordt gevraagd van 'Fabian'
+    Dan heeft 'Fabian' geen gezaghouder
 
   Scenario: Lg01_030 - minderjarige kind, geboren tijdens huwelijk ouders, vader (Ouder2) onder curatele
-    # Route: 51 - Wie heeft gezag?: moeder (OG1)
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+    # Route: 51
+    Als 'gezag' wordt gevraagd van 'Frans'
+    Dan is het gezag over 'Frans' eenhoofdig ouderlijk gezag met ouder 'Fieke'
 
   Scenario: Lg01_031 - minderjarig erkend kind, ouders inmiddels gehuwd, vader (Ouder2) onder curatele
-    # Route: 51 - Wie heeft gezag?: moeder (OG1)
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000048                |
-      | ouder.burgerservicenummer        | 000000012                |      
+    # Route: 51
+    Als 'gezag' wordt gevraagd van 'Frits'
+    Dan is het gezag over 'Frits' eenhoofdig ouderlijk gezag met ouder 'Fieke'

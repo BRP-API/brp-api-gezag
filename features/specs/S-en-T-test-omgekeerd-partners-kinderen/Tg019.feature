@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
 
 

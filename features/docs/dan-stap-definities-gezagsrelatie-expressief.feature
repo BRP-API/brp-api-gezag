@@ -573,7 +573,7 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
       Dan heeft 'Bert' geen gezaghouder
 
   Regel: De response kan meerdere gezagsrelaties bevatten
-
+    
     @deprecated @gezag-api
     Scenario: meerdere gezagsrelaties van één persoon
       Gegeven de response body is gelijk aan

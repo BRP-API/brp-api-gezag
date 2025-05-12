@@ -4,12 +4,13 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
 
 
   Achtergrond:
-    Gegeven adres 'A1' heeft de volgende gegevens
+    Gegeven adres 'A1'
       | gemeentecode (92.10) | straatnaam (11.10) | huisnummer (11.20) | identificatiecode nummeraanduiding (11.90) |
       | 518                  | Turfmarkt          | 61                 | 0518200000583561                           |
     
     # Lg01_145 - ongehuwde ouders met 6 kinderen geboren voor en na 01-01-2023, 5 kinderen erkend, 2 kinderen vaststelling vaderschap
-    Gegeven de persoon met burgerservicenummer '000000012' heeft de volgende gegevens
+    Gegeven de persoon 'Joop' met burgerservicenummer '000000012'
+    * heeft de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Joop     |
       | geslachtsnaam (02.40)           | Janssen  |
@@ -18,11 +19,11 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | M        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En de persoon heeft een ouder '2' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde |
       | beschrijving document (82.30)   | PK     |
       | ingangsdatum geldigheid (85.10) | 0      |
-    En de persoon heeft een ouder '1' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Joke     |
       | geslachtsnaam (02.40)                              | Janssen  |
@@ -32,11 +33,11 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En de persoon is ingeschreven op adres 'A1' met de volgende gegevens
+    En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En de persoon heeft een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Jettie    |
@@ -45,7 +46,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0502   |
       | ingangsdatum geldigheid (85.10) | 20211231  |
-    En de persoon heeft nog een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Janneke   |
@@ -54,7 +55,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0501   |
       | ingangsdatum geldigheid (85.10) | 20230105  |
-    En de persoon heeft nog een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | Jantina   |
@@ -63,7 +64,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0500   |
       | ingangsdatum geldigheid (85.10) | 20230105  |
-    En de persoon heeft nog een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000103 |
       | voornamen (02.10)               | Joy       |
@@ -72,7 +73,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AV0501   |
       | ingangsdatum geldigheid (85.10) | 20200601  |
-    En de persoon heeft nog een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Johanna   |
@@ -81,7 +82,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AV0500   |
       | ingangsdatum geldigheid (85.10) | 20200601  |
-    En de persoon heeft nog een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Jolanda   |
@@ -90,7 +91,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0011   |
       | ingangsdatum geldigheid (85.10) | 20230106  |
-    En de persoon heeft nog een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Jacoba    |
@@ -101,7 +102,8 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | ingangsdatum geldigheid (85.10) | 20230106  |
     
     # Lg01_146 - ongehuwde ouders met 6 kinderen geboren voor en na 01-01-2023, 5 kinderen erkend, 2 kinderen vaststelling vaderschap
-    Gegeven de persoon met burgerservicenummer '000000024' heeft de volgende gegevens
+    Gegeven de persoon 'Josephien' met burgerservicenummer '000000024'
+    * heeft de volgende gegevens
       | naam                            | waarde    |
       | voornamen (02.10)               | Josephien |
       | geslachtsnaam (02.40)           | Joosten   |
@@ -110,11 +112,11 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V         |
       | beschrijving document (82.30)   | PKA       |
       | ingangsdatum geldigheid (85.10) | 0         |
-    En de persoon heeft een ouder '2' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde |
       | beschrijving document (82.30)   | PK     |
       | ingangsdatum geldigheid (85.10) | 0      |
-    En de persoon heeft een ouder '1' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Josje    |
       | geslachtsnaam (02.40)                              | Joosten  |
@@ -124,11 +126,11 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En de persoon is ingeschreven op adres 'A1' met de volgende gegevens
+    En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En de persoon heeft een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Jettie    |
@@ -137,7 +139,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0502   |
       | ingangsdatum geldigheid (85.10) | 20211201  |
-    En het 'kind' is gewijzigd naar de volgende gegevens
+    En het kind is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Jettie    |
@@ -146,7 +148,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0502   |
       | ingangsdatum geldigheid (85.10) | 20211231  |
-    En de persoon heeft nog een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Janneke   |
@@ -155,7 +157,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0501   |
       | ingangsdatum geldigheid (85.10) | 20211201  |
-    En het 'kind' is gewijzigd naar de volgende gegevens
+    En het kind is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Janneke   |
@@ -164,7 +166,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0501   |
       | ingangsdatum geldigheid (85.10) | 20230105  |
-    En de persoon heeft nog een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | Jantina   |
@@ -173,7 +175,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0500   |
       | ingangsdatum geldigheid (85.10) | 20211201  |
-    En het 'kind' is gewijzigd naar de volgende gegevens
+    En het kind is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | Jantina   |
@@ -182,7 +184,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0500   |
       | ingangsdatum geldigheid (85.10) | 20230105  |
-    En de persoon heeft nog een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000103 |
       | voornamen (02.10)               | Joy       |
@@ -191,7 +193,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0501   |
       | ingangsdatum geldigheid (85.10) | 20200601  |
-    En het 'kind' is gewijzigd naar de volgende gegevens
+    En het kind is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000103 |
       | voornamen (02.10)               | Joy       |
@@ -200,7 +202,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AV0501   |
       | ingangsdatum geldigheid (85.10) | 20200601  |
-    En de persoon heeft nog een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Johanna   |
@@ -209,7 +211,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0500   |
       | ingangsdatum geldigheid (85.10) | 20200601  |
-    En het 'kind' is gewijzigd naar de volgende gegevens
+    En het kind is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Johanna   |
@@ -218,7 +220,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AV0500   |
       | ingangsdatum geldigheid (85.10) | 20200601  |
-    En de persoon heeft nog een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Jolanda   |
@@ -227,7 +229,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0011   |
       | ingangsdatum geldigheid (85.10) | 20230106  |
-    En de persoon heeft nog een 'kind' met de volgende gegevens
+    En heeft een kind met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Jacoba    |
@@ -238,7 +240,8 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | ingangsdatum geldigheid (85.10) | 20230106  |
     
     # Lg01_147 - kind geboren uit ongehuwde ouders na 01-01- 2023, erkenning ongeboren vrucht,  indicatie gezag
-    Gegeven de persoon met burgerservicenummer '000000036' heeft de volgende gegevens
+    Gegeven de persoon 'Jacoba' met burgerservicenummer '000000036'
+    * heeft de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Jacoba   |
       | geslachtsnaam (02.40)           | Janssen  |
@@ -247,7 +250,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0010  |
       | ingangsdatum geldigheid (85.10) | 20230106 |
-    En de persoon heeft een ouder '2' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Joop      |
@@ -258,7 +261,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | aktenummer (81.20)                                 | 1AA0010   |
       | ingangsdatum geldigheid (85.10)                    | 20230106  |
       | datum ingang familierechtelijke betrekking (62.10) | 20230106  |
-    En de persoon heeft een ouder '1' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Josephien |
@@ -269,18 +272,19 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | aktenummer (81.20)                                 | 1AA0010   |
       | ingangsdatum geldigheid (85.10)                    | 20230106  |
       | datum ingang familierechtelijke betrekking (62.10) | 20230106  |
-    En de persoon is ingeschreven op adres 'A1' met de volgende gegevens
+    En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20230106 |
-    En de persoon heeft de volgende 'gezagsverhouding' gegevens
+    En heeft gezagsverhouding met de volgende gegevens
       | naam                                 | waarde            |
-      | indicatie gezag minderjarige (32.10) | 1                 |
+      | indicatie gezag minderjarige (32.10) | 2                 |
       | beschrijving document (82.30)        | overgangsregeling |
       | ingangsdatum geldigheid (85.10)      | 20230106          |
     
     # Lg01_148 - kind geboren uit ongehuwde ouders na 01-01- 2023, erkenning ongeboren vrucht,  geen indicatie gezag
-    Gegeven de persoon met burgerservicenummer '000000048' heeft de volgende gegevens
+    Gegeven de persoon 'Jolanda' met burgerservicenummer '000000048'
+    * heeft de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Jolanda  |
       | geslachtsnaam (02.40)           | Janssen  |
@@ -289,7 +293,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0011  |
       | ingangsdatum geldigheid (85.10) | 20230106 |
-    En de persoon heeft een ouder '2' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Joop      |
@@ -300,7 +304,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | aktenummer (81.20)                                 | 1AA0011   |
       | ingangsdatum geldigheid (85.10)                    | 20230106  |
       | datum ingang familierechtelijke betrekking (62.10) | 20230106  |
-    En de persoon heeft een ouder '1' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Josephien |
@@ -311,13 +315,14 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | aktenummer (81.20)                                 | 1AA0011   |
       | ingangsdatum geldigheid (85.10)                    | 20230106  |
       | datum ingang familierechtelijke betrekking (62.10) | 20230106  |
-    En de persoon is ingeschreven op adres 'A1' met de volgende gegevens
+    En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20230106 |
     
     # Lg01_149 - kind geboren uit ongehuwde ouders voor 01-01-2023, vaststelling ouderschap
-    Gegeven de persoon met burgerservicenummer '000000061' heeft de volgende gegevens
+    Gegeven de persoon 'Johanna' met burgerservicenummer '000000061'
+    * heeft de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Johanna  |
       | geslachtsnaam (02.40)           | Joosten  |
@@ -326,7 +331,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0500  |
       | ingangsdatum geldigheid (85.10) | 20200601 |
-    En de persoon is gewijzigd naar de volgende gegevens
+    En persoon is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Johanna   |
@@ -336,11 +341,11 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AV0500   |
       | ingangsdatum geldigheid (85.10) | 20200601  |
-    En de persoon heeft een ouder '2' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0500  |
       | ingangsdatum geldigheid (85.10) | 20200601 |
-    En de ouder '2' is gewijzigd naar de volgende gegevens
+    En ouder 1 is gecorrigeerd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Joop      |
@@ -351,7 +356,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | aktenummer (81.20)                                 | 1AV0500   |
       | ingangsdatum geldigheid (85.10)                    | 20200601  |
       | datum ingang familierechtelijke betrekking (62.10) | 20200601  |
-    En de persoon heeft een ouder '1' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Josephien |
@@ -362,13 +367,14 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | aktenummer (81.20)                                 | 1AA0500   |
       | ingangsdatum geldigheid (85.10)                    | 20200601  |
       | datum ingang familierechtelijke betrekking (62.10) | 20200601  |
-    En de persoon is ingeschreven op adres 'A1' met de volgende gegevens
+    En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20200601 |
     
     # Lg01_150 - kind geboren uit ongehuwde ouders voor 01-01-2023, erkenning na 01-01-2023, aantekening gezag
-    Gegeven de persoon met burgerservicenummer '000000073' heeft de volgende gegevens
+    Gegeven de persoon 'Jantina' met burgerservicenummer '000000073'
+    * heeft de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Jantina  |
       | geslachtsnaam (02.40)           | Joosten  |
@@ -377,7 +383,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0500  |
       | ingangsdatum geldigheid (85.10) | 20211201 |
-    En de persoon is gewijzigd naar de volgende gegevens
+    En persoon is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | Jantina   |
@@ -387,11 +393,11 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AC0500   |
       | ingangsdatum geldigheid (85.10) | 20230105  |
-    En de persoon heeft een ouder '2' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0500  |
       | ingangsdatum geldigheid (85.10) | 20211201 |
-    En de ouder '2' is gewijzigd naar de volgende gegevens
+    En ouder 1 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Joop      |
@@ -402,7 +408,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | aktenummer (81.20)                                 | 1AC0500   |
       | ingangsdatum geldigheid (85.10)                    | 20230105  |
       | datum ingang familierechtelijke betrekking (62.10) | 20230105  |
-    En de persoon heeft een ouder '1' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Josephien |
@@ -413,18 +419,19 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | aktenummer (81.20)                                 | 1AA0500   |
       | ingangsdatum geldigheid (85.10)                    | 20211201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20211201  |
-    En de persoon is ingeschreven op adres 'A1' met de volgende gegevens
+    En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20211201 |
-    En de persoon heeft de volgende 'gezagsverhouding' gegevens
+    En heeft gezagsverhouding met de volgende gegevens
       | naam                                 | waarde             |
-      | indicatie gezag minderjarige (32.10) | 1                  |
+      | indicatie gezag minderjarige (32.10) | 2                  |
       | beschrijving document (82.30)        | kennisgeving gezag |
       | ingangsdatum geldigheid (85.10)      | 20230210           |
     
     # Lg01_151 - kind geboren uit ongehuwde ouders voor 01-01-2023, erkenning na 01-01-2023, geen aantekening gezag
-    Gegeven de persoon met burgerservicenummer '000000085' heeft de volgende gegevens
+    Gegeven de persoon 'Janneke' met burgerservicenummer '000000085'
+    * heeft de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Janneke  |
       | geslachtsnaam (02.40)           | Joosten  |
@@ -433,7 +440,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0501  |
       | ingangsdatum geldigheid (85.10) | 20211201 |
-    En de persoon is gewijzigd naar de volgende gegevens
+    En persoon is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Janneke   |
@@ -443,11 +450,11 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AC0501   |
       | ingangsdatum geldigheid (85.10) | 20230105  |
-    En de persoon heeft een ouder '2' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0501  |
       | ingangsdatum geldigheid (85.10) | 20211201 |
-    En de ouder '2' is gewijzigd naar de volgende gegevens
+    En ouder 1 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Joop      |
@@ -458,7 +465,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | aktenummer (81.20)                                 | 1AC0501   |
       | ingangsdatum geldigheid (85.10)                    | 20230105  |
       | datum ingang familierechtelijke betrekking (62.10) | 20230105  |
-    En de persoon heeft een ouder '1' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Josephien |
@@ -469,13 +476,14 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | aktenummer (81.20)                                 | 1AA0501   |
       | ingangsdatum geldigheid (85.10)                    | 20211201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20211201  |
-    En de persoon is ingeschreven op adres 'A1' met de volgende gegevens
+    En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20211201 |
     
     # Lg01_152 - kind geboren uit ongehuwde ouders voor 01-01-2023, erkenning voor 01-01-2023, geen aantekening gezag
-    Gegeven de persoon met burgerservicenummer '000000097' heeft de volgende gegevens
+    Gegeven de persoon 'Jettie' met burgerservicenummer '000000097'
+    * heeft de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Jettie   |
       | geslachtsnaam (02.40)           | Joosten  |
@@ -484,7 +492,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0502  |
       | ingangsdatum geldigheid (85.10) | 20211201 |
-    En de persoon is gewijzigd naar de volgende gegevens
+    En persoon is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Jettie    |
@@ -494,11 +502,11 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AC0502   |
       | ingangsdatum geldigheid (85.10) | 20211231  |
-    En de persoon heeft een ouder '2' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0502  |
       | ingangsdatum geldigheid (85.10) | 20211201 |
-    En de ouder '2' is gewijzigd naar de volgende gegevens
+    En ouder 1 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Joop      |
@@ -509,7 +517,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | aktenummer (81.20)                                 | 1AC0502   |
       | ingangsdatum geldigheid (85.10)                    | 20211231  |
       | datum ingang familierechtelijke betrekking (62.10) | 20211231  |
-    En de persoon heeft een ouder '1' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Josephien |
@@ -520,13 +528,14 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | aktenummer (81.20)                                 | 1AA0502   |
       | ingangsdatum geldigheid (85.10)                    | 20211201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20211201  |
-    En de persoon is ingeschreven op adres 'A1' met de volgende gegevens
+    En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20211201 |
     
     # Lg01_215 - kind geboren uit ongehuwde ouders voor 01-01-2023, vaststelling ouderschap, moeder categorie 02
-    Gegeven de persoon met burgerservicenummer '000000103' heeft de volgende gegevens
+    Gegeven de persoon 'Joy' met burgerservicenummer '000000103'
+    * heeft de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Joy      |
       | geslachtsnaam (02.40)           | Joosten  |
@@ -535,7 +544,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0501  |
       | ingangsdatum geldigheid (85.10) | 20200601 |
-    En de persoon is gewijzigd naar de volgende gegevens
+    En persoon is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000103 |
       | voornamen (02.10)               | Joy       |
@@ -545,7 +554,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AV0501   |
       | ingangsdatum geldigheid (85.10) | 20200601  |
-    En de persoon heeft een ouder '2' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Josephien |
@@ -556,11 +565,11 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | aktenummer (81.20)                                 | 1AA0501   |
       | ingangsdatum geldigheid (85.10)                    | 20200601  |
       | datum ingang familierechtelijke betrekking (62.10) | 20200601  |
-    En de persoon heeft een ouder '1' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0501  |
       | ingangsdatum geldigheid (85.10) | 20200601 |
-    En de ouder '1' is gewijzigd naar de volgende gegevens
+    En ouder 2 is gecorrigeerd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Joop      |
@@ -571,7 +580,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | aktenummer (81.20)                                 | 1AV0501   |
       | ingangsdatum geldigheid (85.10)                    | 20200601  |
       | datum ingang familierechtelijke betrekking (62.10) | 20200601  |
-    En de persoon is ingeschreven op adres 'A1' met de volgende gegevens
+    En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20200601 |
@@ -579,193 +588,52 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
 
   Scenario: Lg01_145 - ongehuwde ouders met 6 kinderen geboren voor en na 01-01-2023, 5 kinderen erkend, 2 kinderen vaststelling vaderschap
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000048                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000085                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
+    Als 'gezag' wordt gevraagd van 'Joop'
+    Dan is het gezag over 'Jolanda' gezamenlijk ouderlijk gezag met ouder 'Josephien' en ouder 'Joop'
+    Dan is het gezag over 'Janneke' gezamenlijk ouderlijk gezag met ouder 'Josephien' en ouder 'Joop'
 
   Scenario: Lg01_146 - ongehuwde ouders met 6 kinderen geboren voor en na 01-01-2023, 5 kinderen erkend, 2 kinderen vaststelling vaderschap
     # Meerderjarig
-    # Route: 2m - Wie heeft gezag?: meerderjarig, gezag is niet van toepassing (NVT)
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000024                |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000048                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000061                |
-      | ouder.burgerservicenummer        | 000000024                |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000073                |
-      | ouder.burgerservicenummer        | 000000024                |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000085                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000097                |
-      | ouder.burgerservicenummer        | 000000024                |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000103                |
-      | ouder.burgerservicenummer        | 000000024                |
+    Als 'gezag' wordt gevraagd van 'Josephien'
+    Dan is het gezag over 'Jacoba' eenhoofdig ouderlijk gezag met ouder 'Josephien'
+    Dan is het gezag over 'Jolanda' gezamenlijk ouderlijk gezag met ouder 'Josephien' en ouder 'Joop'
+    Dan is het gezag over 'Johanna' eenhoofdig ouderlijk gezag met ouder 'Josephien'
+    Dan is het gezag over 'Jantina' eenhoofdig ouderlijk gezag met ouder 'Josephien'
+    Dan is het gezag over 'Janneke' gezamenlijk ouderlijk gezag met ouder 'Josephien' en ouder 'Joop'
+    Dan is het gezag over 'Jettie' eenhoofdig ouderlijk gezag met ouder 'Josephien'
+    Dan is het gezag over 'Joy' eenhoofdig ouderlijk gezag met ouder 'Josephien'
 
   Scenario: Lg01_147 - kind geboren uit ongehuwde ouders na 01-01- 2023, erkenning ongeboren vrucht,  indicatie gezag
-    # Route: 11 - Wie heeft gezag?: moeder (OG1)
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000024                |
+    # Route: 11
+    Als 'gezag' wordt gevraagd van 'Jacoba'
+    Dan is het gezag over 'Jacoba' eenhoofdig ouderlijk gezag met ouder 'Josephien'
 
   Scenario: Lg01_148 - kind geboren uit ongehuwde ouders na 01-01- 2023, erkenning ongeboren vrucht,  geen indicatie gezag
-    # Route: 54n - Wie heeft gezag?: beide ouders (OG2)
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000048                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
+    # Route: 54n
+    Als 'gezag' wordt gevraagd van 'Jolanda'
+    Dan is het gezag over 'Jolanda' gezamenlijk ouderlijk gezag met ouder 'Josephien' en ouder 'Joop'
 
   Scenario: Lg01_149 - kind geboren uit ongehuwde ouders voor 01-01-2023, vaststelling ouderschap
-    # Route: 54v1 - Wie heeft gezag?: moeder (OG1)
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000061 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000061 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000061                |
-      | ouder.burgerservicenummer        | 000000024                |
+    # Route: 54v1
+    Als 'gezag' wordt gevraagd van 'Johanna'
+    Dan is het gezag over 'Johanna' eenhoofdig ouderlijk gezag met ouder 'Josephien'
 
   Scenario: Lg01_150 - kind geboren uit ongehuwde ouders voor 01-01-2023, erkenning na 01-01-2023, aantekening gezag
-    # Route: 11 - Wie heeft gezag?: moeder (OG1)
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000073 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000073 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000073                |
-      | ouder.burgerservicenummer        | 000000024                |
+    # Route: 11
+    Als 'gezag' wordt gevraagd van 'Jantina'
+    Dan is het gezag over 'Jantina' eenhoofdig ouderlijk gezag met ouder 'Josephien'
 
   Scenario: Lg01_151 - kind geboren uit ongehuwde ouders voor 01-01-2023, erkenning na 01-01-2023, geen aantekening gezag
-    # Route: 54n - Wie heeft gezag?: beide ouders (OG2)
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000085 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000085 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000085                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
+    # Route: 54n
+    Als 'gezag' wordt gevraagd van 'Janneke'
+    Dan is het gezag over 'Janneke' gezamenlijk ouderlijk gezag met ouder 'Josephien' en ouder 'Joop'
 
   Scenario: Lg01_152 - kind geboren uit ongehuwde ouders voor 01-01-2023, erkenning voor 01-01-2023, geen aantekening gezag
-    # Route: 54v1 - Wie heeft gezag?: moeder (OG1)
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000097 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000097 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000097                |
-      | ouder.burgerservicenummer        | 000000024                |
+    # Route: 54v1
+    Als 'gezag' wordt gevraagd van 'Jettie'
+    Dan is het gezag over 'Jettie' eenhoofdig ouderlijk gezag met ouder 'Josephien'
 
   Scenario: Lg01_215 - kind geboren uit ongehuwde ouders voor 01-01-2023, vaststelling ouderschap, moeder categorie 02
-    # Route: 54v2 - Wie heeft gezag?: moeder (OG1)
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000103 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000103 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000103                |
-      | ouder.burgerservicenummer        | 000000024                |
+    # Route: 54v2
+    Als 'gezag' wordt gevraagd van 'Joy'
+    Dan is het gezag over 'Joy' eenhoofdig ouderlijk gezag met ouder 'Josephien'

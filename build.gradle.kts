@@ -125,6 +125,7 @@ sonar {
         property("sonar.host.url", "https://sonarcloud.io")
         property("sonar.organization", "brp-api")
         property("sonar.projectKey", "BRP-API_brp-api-gezag")
+        property("sonar.coverage.exclusions", "/src/main/java/**.java")
     }
 }
 

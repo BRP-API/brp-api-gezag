@@ -216,7 +216,7 @@ Functionaliteit: het gezag kan worden bepaald voor een minderjarige waarvan een 
       Als 'gezag' wordt gevraagd van 'Minderjarige'
       Dan is het gezag over 'Minderjarige' gezamenlijk ouderlijk gezag met ouder 'Moeder' en ouder 'Vader'
 
-  Regel: minderjarige één ouder heeft en staande huwelijk is geboren dan hebben geboortemoeder en haar partner het gezag
+  Regel: als minderjarige één ouder heeft en staande huwelijk is geboren, dan hebben geboortemoeder en haar partner het gezag
 
     Voorbeeld: minderjarige heeft één ouder en is staande huwelijk geboren en partner van moeder staat niet ingeschreven in de BRP
       Gegeven de persoon 'Moeder' met burgerservicenummer '000000012'

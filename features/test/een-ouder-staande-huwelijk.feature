@@ -3,6 +3,7 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met één ouder die ten t
   Test dat de functionaliteit rond bepalen gezag voor een minderjarige met één ouder correct werkt.
 
   Alleen routes die ook geraakt zijn in productie worden getest.
+  # Daarom zijn er voor bepaalde regels hieronder nog geen scenario's gemaakt.
 
   Regel: Als de minderjarige tijdens het huwelijk of partnerschap van de juridische ouder geboren is, dan hebben de ouder en diens (toenmalige) partner gezamenlijk gezag
     | vraag | logische situatie                                         | verwacht route | verwacht resultaat         |

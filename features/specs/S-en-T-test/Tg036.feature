@@ -21,13 +21,13 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | aanduiding in onderzoek (83.10) | 10100    |
       | datum ingang onderzoek (83.20)  | 20200202 |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | beschrijving document (82.30)                      | .      |
@@ -39,7 +39,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | land vanwaar ingeschreven (14.10)    | 7009     |
       | datum vestiging in Nederland (14.20) | 20090101 |
       | ingangsdatum geldigheid (85.10)      | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Thaliya' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Thaliya   |
@@ -48,7 +48,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0153   |
       | ingangsdatum geldigheid (85.10) | 20100316  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Tamineh' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Tamineh   |
@@ -57,7 +57,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0152   |
       | ingangsdatum geldigheid (85.10) | 20100316  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Tayeh' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Tayeh     |
@@ -66,7 +66,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0151   |
       | ingangsdatum geldigheid (85.10) | 20100316  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Thurayya' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000024 |
       | voornamen (02.10)               | Thurayya  |
@@ -89,7 +89,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | aanduiding in onderzoek (83.10) | 10000    |
       | datum ingang onderzoek (83.20)  | 20200202 |
       | ingangsdatum geldigheid (85.10) | 20100316 |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Tasnim    |
@@ -100,7 +100,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | aktenummer (81.20)                                 | 1AA0150   |
       | ingangsdatum geldigheid (85.10)                    | 20100316  |
       | datum ingang familierechtelijke betrekking (62.10) | 20100316  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0150  |
       | ingangsdatum geldigheid (85.10) | 20100316 |
@@ -120,7 +120,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0151  |
       | ingangsdatum geldigheid (85.10) | 20100316 |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Tasnim    |
@@ -131,7 +131,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | aktenummer (81.20)                                 | 1AA0151   |
       | ingangsdatum geldigheid (85.10)                    | 20100316  |
       | datum ingang familierechtelijke betrekking (62.10) | 20100316  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0151  |
       | ingangsdatum geldigheid (85.10) | 20100316 |
@@ -153,7 +153,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0152  |
       | ingangsdatum geldigheid (85.10) | 20100316 |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Tasnim    |
@@ -166,7 +166,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | datum ingang onderzoek (83.20)                     | 20220202  |
       | ingangsdatum geldigheid (85.10)                    | 20100316  |
       | datum ingang familierechtelijke betrekking (62.10) | 20100316  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0152  |
       | ingangsdatum geldigheid (85.10) | 20100316 |
@@ -188,7 +188,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | aanduiding in onderzoek (83.10) | 10320    |
       | datum ingang onderzoek (83.20)  | 20220202 |
       | ingangsdatum geldigheid (85.10) | 20100316 |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Tasnim    |
@@ -199,7 +199,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | aktenummer (81.20)                                 | 1AA0153   |
       | ingangsdatum geldigheid (85.10)                    | 20100316  |
       | datum ingang familierechtelijke betrekking (62.10) | 20100316  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0153  |
       | ingangsdatum geldigheid (85.10) | 20100316 |

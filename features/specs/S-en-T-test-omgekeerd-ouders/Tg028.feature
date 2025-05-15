@@ -18,21 +18,21 @@ Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
       | geslachtsaanduiding (04.10)     | M                      |
       | beschrijving document (82.30)   | PKA                    |
       | ingangsdatum geldigheid (85.10) | 0                      |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | geslachtsaanduiding (04.10)                        | M      |
       | beschrijving document (82.30)                      | PK     |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | geslachtsaanduiding (04.10)                        | V      |
       | beschrijving document (82.30)                      | PK     |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'partner-1' met de volgende gegevens
       | naam                                                                | waarde                |
       | burgerservicenummer (01.20)                                         | 000000024             |
       | geslachtsnaam (02.40)                                               | Amina Hassan Mohammed |
@@ -50,7 +50,7 @@ Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
       | land vanwaar ingeschreven (14.10)    | 7054     |
       | datum vestiging in Nederland (14.20) | 19920412 |
       | ingangsdatum geldigheid (85.10)      | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'kind-1' met de volgende gegevens
       | naam                            | waarde                |
       | burgerservicenummer (01.20)     | 000000036             |
       | geslachtsnaam (02.40)           | Kamal Mohammed Farroq |
@@ -69,21 +69,21 @@ Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
       | geslachtsaanduiding (04.10)     | V                     |
       | beschrijving document (82.30)   | PKA                   |
       | ingangsdatum geldigheid (85.10) | 0                     |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | geslachtsaanduiding (04.10)                        | M      |
       | beschrijving document (82.30)                      | PK     |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | geslachtsaanduiding (04.10)                        | V      |
       | beschrijving document (82.30)                      | PK     |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'partner-1' met de volgende gegevens
       | naam                                                                | waarde                 |
       | burgerservicenummer (01.20)                                         | 000000012              |
       | geslachtsnaam (02.40)                                               | Mohamed Farooq Hussein |
@@ -101,7 +101,7 @@ Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
       | land vanwaar ingeschreven (14.10)    | 7054     |
       | datum vestiging in Nederland (14.20) | 19920412 |
       | ingangsdatum geldigheid (85.10)      | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'kind-1' met de volgende gegevens
       | naam                            | waarde                |
       | burgerservicenummer (01.20)     | 000000036             |
       | geslachtsnaam (02.40)           | Kamal Mohammed Farroq |
@@ -120,7 +120,7 @@ Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
       | geslachtsaanduiding (04.10)     | M                     |
       | aktenummer (81.20)              | 1AA0800               |
       | ingangsdatum geldigheid (85.10) | 20071201              |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde                 |
       | burgerservicenummer (01.20)                        | 000000012              |
       | geslachtsnaam (02.40)                              | Mohamed Farooq Hussein |
@@ -130,7 +130,7 @@ Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
       | aktenummer (81.20)                                 | 1AA0800                |
       | ingangsdatum geldigheid (85.10)                    | 20071201               |
       | datum ingang familierechtelijke betrekking (62.10) | 20071201               |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde                |
       | burgerservicenummer (01.20)                        | 000000024             |
       | geslachtsnaam (02.40)                              | Amina Hassan Mohammed |

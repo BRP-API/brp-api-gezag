@@ -19,7 +19,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | geslachtsaanduiding (04.10)     | V          |
       | beschrijving document (82.30)   | PKA        |
       | ingangsdatum geldigheid (85.10) | 0          |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Noor     |
       | geslachtsnaam (02.40)                              | Nokhoff  |
@@ -29,7 +29,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Norbert  |
       | geslachtsnaam (02.40)                              | Noteboom |
@@ -39,7 +39,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Nout' met de volgende gegevens
       | naam                                                                | waarde           |
       | burgerservicenummer (01.20)                                         | 000000024        |
       | voornamen (02.10)                                                   | Nout             |
@@ -66,7 +66,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Naomi' met de volgende gegevens
       | naam                            | waarde     |
       | burgerservicenummer (01.20)     | 000000036  |
       | voornamen (02.10)               | Naomi      |
@@ -87,7 +87,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | geslachtsaanduiding (04.10)     | M                |
       | beschrijving document (82.30)   | PKA              |
       | ingangsdatum geldigheid (85.10) | 0                |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Nel      |
       | geslachtsnaam (02.40)                              | Noort    |
@@ -97,7 +97,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde           |
       | voornamen (02.10)                                  | Noll             |
       | geslachtsnaam (02.40)                              | Niemandsverdriet |
@@ -107,7 +107,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | beschrijving document (82.30)                      | PK               |
       | ingangsdatum geldigheid (85.10)                    | 0                |
       | datum ingang familierechtelijke betrekking (62.10) | 0                |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Nicolien' met de volgende gegevens
       | naam                                                                | waarde     |
       | burgerservicenummer (01.20)                                         | 000000012  |
       | voornamen (02.10)                                                   | Nicolien   |
@@ -120,7 +120,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20120901   |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518       |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030       |
-    En de partner is gewijzigd naar de volgende gegevens
+    En de partner 'Nicolien' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde     |
       | burgerservicenummer (01.20)                                   | 000000012  |
       | voornamen (02.10)                                             | Nicolien   |
@@ -138,7 +138,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Noralie' met de volgende gegevens
       | naam                            | waarde     |
       | burgerservicenummer (01.20)     | 000000073  |
       | voornamen (02.10)               | Noralie    |
@@ -159,7 +159,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | geslachtsaanduiding (04.10)     | V          |
       | aktenummer (81.20)              | 1AA0100    |
       | ingangsdatum geldigheid (85.10) | 20130901   |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000012  |
       | voornamen (02.10)                                  | Nicolien   |
@@ -170,7 +170,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | aktenummer (81.20)                                 | 1AA0100    |
       | ingangsdatum geldigheid (85.10)                    | 20130901   |
       | datum ingang familierechtelijke betrekking (62.10) | 20130901   |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20130901 |
@@ -190,7 +190,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | geslachtsaanduiding (04.10)     | V          |
       | beschrijving document (82.30)   | PKA        |
       | ingangsdatum geldigheid (85.10) | 0          |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Noor     |
       | geslachtsnaam (02.40)                              | Nokhoff  |
@@ -200,7 +200,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Norbert  |
       | geslachtsnaam (02.40)                              | Noteboom |
@@ -210,7 +210,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Nienke' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000061 |
       | voornamen (02.10)                                                   | Nienke    |
@@ -227,7 +227,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Noralie' met de volgende gegevens
       | naam                            | waarde     |
       | burgerservicenummer (01.20)     | 000000073  |
       | voornamen (02.10)               | Noralie    |
@@ -248,7 +248,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Naatje   |
       | geslachtsnaam (02.40)                              | Nauta    |
@@ -258,7 +258,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Nicolaas |
       | geslachtsnaam (02.40)                              | Nijman   |
@@ -268,7 +268,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Norah' met de volgende gegevens
       | naam                                                                | waarde     |
       | burgerservicenummer (01.20)                                         | 000000048  |
       | voornamen (02.10)                                                   | Norah      |
@@ -297,7 +297,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | geslachtsaanduiding (04.10)     | V          |
       | aktenummer (81.20)              | 1AA0100    |
       | ingangsdatum geldigheid (85.10) | 20151201   |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000048  |
       | voornamen (02.10)                                  | Norah      |
@@ -308,7 +308,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | aktenummer (81.20)                                 | 1AA0100    |
       | ingangsdatum geldigheid (85.10)                    | 20151201   |
       | datum ingang familierechtelijke betrekking (62.10) | 20151201   |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde           |
       | burgerservicenummer (01.20)                        | 000000024        |
       | voornamen (02.10)                                  | Nout             |

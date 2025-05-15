@@ -19,7 +19,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | geslachtsaanduiding (04.10)     | V         |
       | beschrijving document (82.30)   | PKA       |
       | ingangsdatum geldigheid (85.10) | 0         |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Fiona    |
       | geslachtsnaam (02.40)                              | Franssen |
@@ -29,7 +29,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Filip     |
       | geslachtsnaam (02.40)                              | Frederiks |
@@ -39,7 +39,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Fabian' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Fabian    |
@@ -56,7 +56,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Frits' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Frits     |
@@ -65,7 +65,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0300   |
       | ingangsdatum geldigheid (85.10) | 20171201  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Frans' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Frans     |
@@ -86,7 +86,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | geslachtsaanduiding (04.10)     | M        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Francisca |
       | geslachtsnaam (02.40)                              | Fabel     |
@@ -96,7 +96,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Frederik |
       | geslachtsnaam (02.40)                              | Faassen  |
@@ -106,7 +106,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Fieke' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Fieke     |
@@ -123,7 +123,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Frits' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Frits     |
@@ -132,7 +132,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0300   |
       | ingangsdatum geldigheid (85.10) | 20171201  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Frans' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Frans     |
@@ -158,7 +158,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AA0300   |
       | ingangsdatum geldigheid (85.10) | 20181201  |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Fieke     |
@@ -169,7 +169,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | aktenummer (81.20)                                 | 1AA0300   |
       | ingangsdatum geldigheid (85.10)                    | 20181201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20181201  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Fabian    |
@@ -196,7 +196,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AA0300   |
       | ingangsdatum geldigheid (85.10) | 20171201  |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Fieke     |
@@ -207,7 +207,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | aktenummer (81.20)                                 | 1AA0300   |
       | ingangsdatum geldigheid (85.10)                    | 20171201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20171201  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Fabian    |

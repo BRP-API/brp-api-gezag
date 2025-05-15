@@ -22,7 +22,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | geslachtsaanduiding (04.10)     | M        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Engel    |
       | geslachtsnaam (02.40)                              | Egberts  |
@@ -32,7 +32,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Evertje  |
       | geslachtsnaam (02.40)                              | Esveld   |
@@ -46,7 +46,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Esmee' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Esmee     |
@@ -55,7 +55,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0104   |
       | ingangsdatum geldigheid (85.10) | 20210301  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Esther' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Esther    |
@@ -64,7 +64,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0102   |
       | ingangsdatum geldigheid (85.10) | 20161001  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Eveline' met de volgende gegevens
       | naam                            | waarde   |
       | voornamen (02.10)               | Eveline  |
       | geslachtsnaam (02.40)           | Ederveen |
@@ -84,7 +84,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Eduard   |
       | geslachtsnaam (02.40)                              | Ederveen |
@@ -94,7 +94,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Eibeltje |
       | geslachtsnaam (02.40)                              | Eekhoorn |
@@ -108,7 +108,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Esther' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Esther    |
@@ -117,7 +117,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0102   |
       | ingangsdatum geldigheid (85.10) | 20150801  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind 'Esther' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Esther    |
@@ -126,7 +126,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0102   |
       | ingangsdatum geldigheid (85.10) | 20161001  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Eveline' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Eveline   |
@@ -135,7 +135,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0103   |
       | ingangsdatum geldigheid (85.10) | 20180401  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind 'Eveline' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Eveline   |
@@ -144,7 +144,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0103   |
       | ingangsdatum geldigheid (85.10) | 20190601  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Esmee' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Esmee     |
@@ -153,7 +153,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0104   |
       | ingangsdatum geldigheid (85.10) | 20200501  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind 'Esmee' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Esmee     |
@@ -184,11 +184,11 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AC0102   |
       | ingangsdatum geldigheid (85.10) | 20161001  |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0102  |
       | ingangsdatum geldigheid (85.10) | 20150801 |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Ewald     |
@@ -199,7 +199,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | aktenummer (81.20)                                 | 1AC0102   |
       | ingangsdatum geldigheid (85.10)                    | 20161001  |
       | datum ingang familierechtelijke betrekking (62.10) | 20161001  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Edwina    |
@@ -241,11 +241,11 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AC0103   |
       | ingangsdatum geldigheid (85.10) | 20190601  |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0103  |
       | ingangsdatum geldigheid (85.10) | 20180401 |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Ewald    |
       | geslachtsnaam (02.40)                              | Egberts  |
@@ -255,7 +255,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | aktenummer (81.20)                                 | 1AC0103  |
       | ingangsdatum geldigheid (85.10)                    | 20190601 |
       | datum ingang familierechtelijke betrekking (62.10) | 20190601 |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Edwina    |
@@ -297,12 +297,12 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AC0104   |
       | ingangsdatum geldigheid (85.10) | 20210301  |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | aktenummer (81.20)                                 | 1AA0104  |
       | ingangsdatum geldigheid (85.10)                    | 20200501 |
       | datum ingang familierechtelijke betrekking (62.10) | 20200501 |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Ewald     |
@@ -313,7 +313,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | aktenummer (81.20)                                 | 1AC0104   |
       | ingangsdatum geldigheid (85.10)                    | 20210301  |
       | datum ingang familierechtelijke betrekking (62.10) | 20021030  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Edwina    |

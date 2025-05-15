@@ -20,7 +20,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Lara     |
       | geslachtsnaam (02.40)                              | Leeflang |
@@ -30,7 +30,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Leonardus |
       | voorvoegsel (02.30)                                | van       |
@@ -45,7 +45,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Luc' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Luc       |
@@ -54,7 +54,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AQ0100   |
       | ingangsdatum geldigheid (85.10) | 20120501  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Lex' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Lex       |
@@ -63,7 +63,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20140501  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind 'Lex' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Lex       |
@@ -72,7 +72,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AB0100   |
       | ingangsdatum geldigheid (85.10) | 20140502  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Lux' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Lux       |
@@ -93,7 +93,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Laura    |
       | geslachtsnaam (02.40)                              | Los      |
@@ -103,7 +103,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Lodevicus |
       | geslachtsnaam (02.40)                              | Liebeek   |
@@ -117,7 +117,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Luc' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Luc       |
@@ -126,7 +126,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20120501  |
-    En het kind is gecorrigeerd naar de volgende gegevens
+    En het kind 'Luc' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Luc       |
@@ -135,7 +135,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AQ0100   |
       | ingangsdatum geldigheid (85.10) | 20120501  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Lex' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Lex       |
@@ -144,7 +144,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AB0100   |
       | ingangsdatum geldigheid (85.10) | 20140502  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Lux' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Lux       |
@@ -175,7 +175,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AQ0100   |
       | ingangsdatum geldigheid (85.10) | 20120501  |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Lieke     |
@@ -186,11 +186,11 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | aktenummer (81.20)                                 | 1AA0100   |
       | ingangsdatum geldigheid (85.10)                    | 20120501  |
       | datum ingang familierechtelijke betrekking (62.10) | 20120501  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20120501 |
-    En ouder 2 is gecorrigeerd naar de volgende gegevens
+    En ouder 2 'O2' is gecorrigeerd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Leonie    |
@@ -228,7 +228,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AB0100   |
       | ingangsdatum geldigheid (85.10) | 20140502  |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Leonie    |
@@ -240,11 +240,11 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | aktenummer (81.20)                                 | 1AA0100   |
       | ingangsdatum geldigheid (85.10)                    | 20140501  |
       | datum ingang familierechtelijke betrekking (62.10) | 20140501  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20140501 |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Lieke     |
@@ -276,7 +276,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20160501 |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Lieke     |
@@ -287,7 +287,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | aktenummer (81.20)                                 | 1AA0100   |
       | ingangsdatum geldigheid (85.10)                    | 20160501  |
       | datum ingang familierechtelijke betrekking (62.10) | 20160501  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Leonie    |

@@ -32,7 +32,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | V                              |
       | beschrijving document (82.30)   | Melding Minister van Financiën |
       | ingangsdatum geldigheid (85.10) | 19971210                       |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 999998729 |
       | voornamen (02.10)                                  | Hedwig    |
@@ -43,7 +43,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | aktenummer (81.20)                                 | 1AA0100   |
       | ingangsdatum geldigheid (85.10)                    | 19971201  |
       | datum ingang familierechtelijke betrekking (62.10) | 19971201  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 999998766 |
       | voornamen (02.10)                                  | Harald    |
@@ -58,7 +58,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'William' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | William   |
@@ -67,11 +67,11 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0101   |
       | ingangsdatum geldigheid (85.10) | 20161201  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind 'William' is gewijzigd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AQ0101  |
       | ingangsdatum geldigheid (85.10) | 20191201 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Harry' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000024 |
       | voornamen (02.10)               | Harry     |
@@ -80,7 +80,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20161201  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind 'Harry' is gewijzigd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AQ0100  |
       | ingangsdatum geldigheid (85.10) | 20191201 |
@@ -116,7 +116,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AM0100   |
       | ingangsdatum geldigheid (85.10) | 20200105  |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Helena    |
@@ -127,7 +127,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | aktenummer (81.20)                                 | 1AA0100   |
       | ingangsdatum geldigheid (85.10)                    | 20161201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20161201  |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000036 |
       | voornamen (02.10)                                  | Jaqueline |
@@ -138,11 +138,11 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | aktenummer (81.20)                                 | 1AQ0100   |
       | ingangsdatum geldigheid (85.10)                    | 20191201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20191201  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20161201 |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000048 |
       | voornamen (02.10)                                  | Jeroen    |
@@ -174,7 +174,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | V         |
       | beschrijving document (82.30)   | PKA       |
       | ingangsdatum geldigheid (85.10) | 0         |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Janny    |
       | voorvoegsel (02.30)                                | de       |
@@ -185,7 +185,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Jacob    |
       | geslachtsnaam (02.40)                              | Jozefs   |
@@ -195,7 +195,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Jeroen' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000048 |
       | voornamen (02.10)                                                   | Jeroen    |
@@ -212,7 +212,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Jinthe' met de volgende gegevens
       | naam                            | waarde       |
       | burgerservicenummer (01.20)     | 000000115    |
       | voornamen (02.10)               | Jinthe Jiang |
@@ -221,7 +221,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6022         |
       | aktenummer (81.20)              | 1VQ0700      |
       | ingangsdatum geldigheid (85.10) | 20180101     |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Jia' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000103 |
       | voornamen (02.10)               | Jia       |
@@ -230,7 +230,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6022      |
       | aktenummer (81.20)              | 1VQ0701   |
       | ingangsdatum geldigheid (85.10) | 20190101  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Jiali' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Jiali     |
@@ -239,7 +239,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6022      |
       | aktenummer (81.20)              | 1VQ0700   |
       | ingangsdatum geldigheid (85.10) | 20180101  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind 'Jiali' is gewijzigd naar de volgende gegevens
       | naam                            | waarde     |
       | burgerservicenummer (01.20)     | 000000097  |
       | voornamen (02.10)               | Jiali Jade |
@@ -248,7 +248,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6022       |
       | aktenummer (81.20)              | 1VM0700    |
       | ingangsdatum geldigheid (85.10) | 20190510   |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Jin' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Jin       |
@@ -257,7 +257,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6022      |
       | aktenummer (81.20)              | 1VQ0700   |
       | ingangsdatum geldigheid (85.10) | 20190101  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind 'Jin' is gewijzigd naar de volgende gegevens
       | naam                            | waarde     |
       | burgerservicenummer (01.20)     | 000000085  |
       | voornamen (02.10)               | Jasmin-Jin |
@@ -266,7 +266,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6022       |
       | aktenummer (81.20)              | 1VM0700    |
       | ingangsdatum geldigheid (85.10) | 20190510   |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Li' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Li        |
@@ -275,7 +275,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6022      |
       | aktenummer (81.20)              | 1VQ0700   |
       | ingangsdatum geldigheid (85.10) | 20180101  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'William' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | William   |
@@ -284,7 +284,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AQ0101   |
       | ingangsdatum geldigheid (85.10) | 20191201  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind 'William' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | Jasper    |
@@ -293,7 +293,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AM0101   |
       | ingangsdatum geldigheid (85.10) | 20200105  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Harry' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000024 |
       | voornamen (02.10)               | Harry     |
@@ -302,7 +302,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AQ0100   |
       | ingangsdatum geldigheid (85.10) | 20191201  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind 'Harry' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000024 |
       | voornamen (02.10)               | Jorik     |
@@ -323,7 +323,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | M        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Judith   |
       | geslachtsnaam (02.40)                              | Jaarsma  |
@@ -333,7 +333,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Jurgen   |
       | geslachtsnaam (02.40)                              | Janssen  |
@@ -343,7 +343,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Jaqueline' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000036 |
       | voornamen (02.10)                                                   | Jaqueline |
@@ -360,7 +360,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Jinthe' met de volgende gegevens
       | naam                            | waarde       |
       | burgerservicenummer (01.20)     | 000000115    |
       | voornamen (02.10)               | Jinthe Jiang |
@@ -369,7 +369,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6022         |
       | aktenummer (81.20)              | 1VQ0700      |
       | ingangsdatum geldigheid (85.10) | 20180101     |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Jia' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000103 |
       | voornamen (02.10)               | Jia       |
@@ -378,7 +378,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6022      |
       | aktenummer (81.20)              | 1VQ0701   |
       | ingangsdatum geldigheid (85.10) | 20190101  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Jiali' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Jiali     |
@@ -387,7 +387,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6022      |
       | aktenummer (81.20)              | 1VQ0700   |
       | ingangsdatum geldigheid (85.10) | 20180101  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind 'Jiali' is gewijzigd naar de volgende gegevens
       | naam                            | waarde     |
       | burgerservicenummer (01.20)     | 000000097  |
       | voornamen (02.10)               | Jiali Jade |
@@ -396,7 +396,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6022       |
       | aktenummer (81.20)              | 1VM0700    |
       | ingangsdatum geldigheid (85.10) | 20190510   |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Jin' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Jin       |
@@ -405,7 +405,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6022      |
       | aktenummer (81.20)              | 1VQ0700   |
       | ingangsdatum geldigheid (85.10) | 20190101  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Li' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Li        |
@@ -414,7 +414,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6022      |
       | aktenummer (81.20)              | 1VQ0700   |
       | ingangsdatum geldigheid (85.10) | 20180101  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'William' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | William   |
@@ -423,7 +423,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AQ0101   |
       | ingangsdatum geldigheid (85.10) | 20191201  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind 'William' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | Jasper    |
@@ -432,7 +432,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AM0101   |
       | ingangsdatum geldigheid (85.10) | 20200105  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Harry' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000024 |
       | voornamen (02.10)               | Harry     |
@@ -441,7 +441,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AQ0100   |
       | ingangsdatum geldigheid (85.10) | 20191201  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En het kind 'Harry' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000024 |
       | voornamen (02.10)               | Jorik     |
@@ -482,13 +482,13 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1VQ0700   |
       | ingangsdatum geldigheid (85.10) | 20180101  |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 1 is gecorrigeerd naar de volgende gegevens
+    En ouder 1 'O1' is gecorrigeerd naar de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Wei      |
       | geslachtsnaam (02.40)                              | Yu       |
@@ -496,7 +496,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | beschrijving document (82.30)                      | ga 6022  |
       | ingangsdatum geldigheid (85.10)                    | 20150101 |
       | datum ingang familierechtelijke betrekking (62.10) | 20150101 |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000036 |
       | voornamen (02.10)                                  | Jaqueline |
@@ -507,17 +507,17 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | aktenummer (81.20)                                 | 1VQ0700   |
       | ingangsdatum geldigheid (85.10)                    | 20180101  |
       | datum ingang familierechtelijke betrekking (62.10) | 20180101  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 2 is gecorrigeerd naar de volgende gegevens
+    En ouder 2 'O2' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | beschrijving document (82.30)   | ga 6022  |
       | ingangsdatum geldigheid (85.10) | 20150101 |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000048 |
       | voornamen (02.10)                                  | Jeroen    |
@@ -566,7 +566,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AM0101   |
       | ingangsdatum geldigheid (85.10) | 20200105  |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Helena    |
@@ -577,7 +577,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | aktenummer (81.20)                                 | 1AA0101   |
       | ingangsdatum geldigheid (85.10)                    | 20161201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20161201  |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000036 |
       | voornamen (02.10)                                  | Jaqueline |
@@ -588,11 +588,11 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | aktenummer (81.20)                                 | 1AQ0101   |
       | ingangsdatum geldigheid (85.10)                    | 20191201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20191201  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0101  |
       | ingangsdatum geldigheid (85.10) | 20161201 |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000048 |
       | voornamen (02.10)                                  | Jeroen    |
@@ -649,17 +649,17 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | V          |
       | aktenummer (81.20)              | 1VM0700    |
       | ingangsdatum geldigheid (85.10) | 20190510   |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 1 is gecorrigeerd naar de volgende gegevens
+    En ouder 1 'O1' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1VA0700  |
       | ingangsdatum geldigheid (85.10) | 20150101 |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000036 |
       | voornamen (02.10)                                  | Jaqueline |
@@ -670,17 +670,17 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | aktenummer (81.20)                                 | 1VQ0700   |
       | ingangsdatum geldigheid (85.10)                    | 20190101  |
       | datum ingang familierechtelijke betrekking (62.10) | 20190101  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 2 is gecorrigeerd naar de volgende gegevens
+    En ouder 2 'O2' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1VA0700  |
       | ingangsdatum geldigheid (85.10) | 20150101 |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000048 |
       | voornamen (02.10)                                  | Jeroen    |
@@ -746,17 +746,17 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | datum ingang onderzoek (83.20)  | 20190501   |
       | datum einde onderzoek (83.30)   | 20220202   |
       | ingangsdatum geldigheid (85.10) | 20190510   |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 1 is gecorrigeerd naar de volgende gegevens
+    En ouder 1 'O1' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1VA0700  |
       | ingangsdatum geldigheid (85.10) | 20150101 |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000036 |
       | voornamen (02.10)                                  | Jaqueline |
@@ -767,17 +767,17 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | aktenummer (81.20)                                 | 1VQ0700   |
       | ingangsdatum geldigheid (85.10)                    | 20190101  |
       | datum ingang familierechtelijke betrekking (62.10) | 20190101  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 2 is gecorrigeerd naar de volgende gegevens
+    En ouder 2 'O2' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1VA0700  |
       | ingangsdatum geldigheid (85.10) | 20150101 |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000048 |
       | voornamen (02.10)                                  | Jeroen    |
@@ -826,17 +826,17 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1VQ0701   |
       | ingangsdatum geldigheid (85.10) | 20190101  |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 1 is gecorrigeerd naar de volgende gegevens
+    En ouder 1 'O1' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1VA0701  |
       | ingangsdatum geldigheid (85.10) | 20150101 |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000036 |
       | voornamen (02.10)                                  | Jaqueline |
@@ -847,17 +847,17 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | aktenummer (81.20)                                 | 1VQ0701   |
       | ingangsdatum geldigheid (85.10)                    | 20190101  |
       | datum ingang familierechtelijke betrekking (62.10) | 20190101  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 2 is gecorrigeerd naar de volgende gegevens
+    En ouder 2 'O2' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1VA0701  |
       | ingangsdatum geldigheid (85.10) | 20150101 |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000048 |
       | voornamen (02.10)                                  | Jeroen    |
@@ -914,20 +914,20 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | datum ingang onderzoek (83.20)  | 20190501     |
       | datum einde onderzoek (83.30)   | 20220202     |
       | ingangsdatum geldigheid (85.10) | 20180101     |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 1 is gecorrigeerd naar de volgende gegevens
+    En ouder 1 'O1' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1VA0700  |
       | aanduiding in onderzoek (83.10) | 26200    |
       | datum ingang onderzoek (83.20)  | 20190501 |
       | datum einde onderzoek (83.30)   | 20220202 |
       | ingangsdatum geldigheid (85.10) | 20150101 |
-    En ouder 1 is gewijzigd naar de volgende gegevens
+    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000036 |
       | voornamen (02.10)                                  | Jaqueline |
@@ -941,20 +941,20 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | datum einde onderzoek (83.30)                      | 20220202  |
       | ingangsdatum geldigheid (85.10)                    | 20190101  |
       | datum ingang familierechtelijke betrekking (62.10) | 20190101  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En ouder 2 is gecorrigeerd naar de volgende gegevens
+    En ouder 2 'O2' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1VA0700  |
       | aanduiding in onderzoek (83.10) | 36200    |
       | datum ingang onderzoek (83.20)  | 20190501 |
       | datum einde onderzoek (83.30)   | 20220202 |
       | ingangsdatum geldigheid (85.10) | 20150101 |
-    En ouder 2 is gewijzigd naar de volgende gegevens
+    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000048 |
       | voornamen (02.10)                                  | Jeroen    |

@@ -22,7 +22,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Deborah  |
       | geslachtsnaam (02.40)                              | Dekkers  |
@@ -32,7 +32,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 19900301 |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Dirk     |
       | geslachtsnaam (02.40)                              | Donkers  |
@@ -42,7 +42,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 19900301 |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Damon' met de volgende gegevens
       | naam                                                                | waarde        |
       | voornamen (02.10)                                                   | Damon         |
       | geslachtsnaam (02.40)                                               | Dangor        |
@@ -58,7 +58,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Daryl' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000024 |
       | voornamen (02.10)               | Daryl     |
@@ -79,7 +79,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20140301 |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Desiree   |
@@ -90,7 +90,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | aktenummer (81.20)                                 | 1AA0100   |
       | ingangsdatum geldigheid (85.10)                    | 20140301  |
       | datum ingang familierechtelijke betrekking (62.10) | 20140301  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Damon    |
       | geslachtsnaam (02.40)                              | Dangor   |
@@ -116,7 +116,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Deborah  |
       | geslachtsnaam (02.40)                              | Dekkers  |
@@ -126,7 +126,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 19900301 |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Dirk     |
       | geslachtsnaam (02.40)                              | Donkers  |
@@ -136,7 +136,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 19900301 |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Dag' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000048 |
       | voornamen (02.10)                                                   | Dag       |
@@ -153,7 +153,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Ditmar' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | Ditmar    |
@@ -162,7 +162,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0150   |
       | ingangsdatum geldigheid (85.10) | 20160801  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Darian' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Darian    |
@@ -171,7 +171,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0200   |
       | ingangsdatum geldigheid (85.10) | 20171201  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Duko' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Duko      |
@@ -180,7 +180,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0200   |
       | ingangsdatum geldigheid (85.10) | 20181201  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Dorian' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Dorian    |
@@ -201,7 +201,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | geslachtsaanduiding (04.10)     | M        |
       | beschrijving document (82.30)   | ga 6027  |
       | ingangsdatum geldigheid (85.10) | 19821201 |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Dagmar   |
       | geslachtsnaam (02.40)                              | Digerud  |
@@ -209,7 +209,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | beschrijving document (82.30)                      | ga 6027  |
       | ingangsdatum geldigheid (85.10)                    | 19821201 |
       | datum ingang familierechtelijke betrekking (62.10) | 19821201 |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Dellingr |
       | geslachtsnaam (02.40)                              | Dass     |
@@ -217,7 +217,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | beschrijving document (82.30)                      | ga 6027  |
       | ingangsdatum geldigheid (85.10)                    | 19821201 |
       | datum ingang familierechtelijke betrekking (62.10) | 19821201 |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Donna' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000036 |
       | voornamen (02.10)                                                   | Donna     |
@@ -241,7 +241,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | land (13.10)                           | 6027     |
       | datum aanvang adres buitenland (13.20) | 20200801 |
       | ingangsdatum geldigheid (85.10)        | 20200801 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Ditmar' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | Ditmar    |
@@ -250,7 +250,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0150   |
       | ingangsdatum geldigheid (85.10) | 20160801  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Darian' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Darian    |
@@ -259,7 +259,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0200   |
       | ingangsdatum geldigheid (85.10) | 20171201  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Duko' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Duko      |
@@ -268,7 +268,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0200   |
       | ingangsdatum geldigheid (85.10) | 20181201  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Dorian' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Dorian    |
@@ -289,7 +289,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0200  |
       | ingangsdatum geldigheid (85.10) | 20171201 |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000048 |
       | voornamen (02.10)                                  | Dag       |
@@ -300,7 +300,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | aktenummer (81.20)                                 | 1AA0200   |
       | ingangsdatum geldigheid (85.10)                    | 20171201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20171201  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000036 |
       | voornamen (02.10)                                  | Donna     |
@@ -327,7 +327,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0150  |
       | ingangsdatum geldigheid (85.10) | 20160801 |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000036 |
       | voornamen (02.10)                                  | Donna     |
@@ -338,7 +338,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | aktenummer (81.20)                                 | 1AA0150   |
       | ingangsdatum geldigheid (85.10)                    | 20160801  |
       | datum ingang familierechtelijke betrekking (62.10) | 20160801  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000048 |
       | voornamen (02.10)                                  | Dag       |
@@ -372,7 +372,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0200  |
       | ingangsdatum geldigheid (85.10) | 20181201 |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000036 |
       | voornamen (02.10)                                  | Donna     |
@@ -383,7 +383,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | aktenummer (81.20)                                 | 1AA0220   |
       | ingangsdatum geldigheid (85.10)                    | 20181201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20181201  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000048 |
       | voornamen (02.10)                                  | Dag       |
@@ -412,7 +412,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0201  |
       | ingangsdatum geldigheid (85.10) | 20181201 |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000036 |
       | voornamen (02.10)                                  | Donna     |
@@ -423,7 +423,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | aktenummer (81.20)                                 | 1AA0221   |
       | ingangsdatum geldigheid (85.10)                    | 20181201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20181201  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000048 |
       | voornamen (02.10)                                  | Dag       |

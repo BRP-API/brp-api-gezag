@@ -22,7 +22,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geslachtsaanduiding (04.10)     | M           |
       | beschrijving document (82.30)   | PKA         |
       | ingangsdatum geldigheid (85.10) | 0           |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Klazien  |
       | geslachtsnaam (02.40)                              | Kraan    |
@@ -32,7 +32,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde      |
       | voornamen (02.10)                                  | Kees        |
       | geslachtsnaam (02.40)                              | Kornelissen |
@@ -42,7 +42,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | beschrijving document (82.30)                      | PK          |
       | ingangsdatum geldigheid (85.10)                    | 0           |
       | datum ingang familierechtelijke betrekking (62.10) | 0           |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Koosje' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Koosje    |
@@ -56,7 +56,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20110401  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de partner is gewijzigd naar de volgende gegevens
+    En de partner 'Koosje' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000024 |
       | voornamen (02.10)                                             | Koosje    |
@@ -71,7 +71,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | plaats ontbinding huwelijk/geregistreerd partnerschap (07.20) | 0518      |
       | land ontbinding huwelijk/geregistreerd partnerschap (07.30)   | 6030      |
       | reden ontbinding huwelijk/geregistreerd partnerschap (07.40)  | S         |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Karolien' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000103 |
       | voornamen (02.10)                                                   | Karolien  |
@@ -84,7 +84,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20180401  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de partner is gewijzigd naar de volgende gegevens
+    En de partner 'Karolien' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000103 |
       | voornamen (02.10)                                             | Karolien  |
@@ -98,7 +98,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | plaats ontbinding huwelijk/geregistreerd partnerschap (07.20) | 0518      |
       | land ontbinding huwelijk/geregistreerd partnerschap (07.30)   | 6030      |
       | reden ontbinding huwelijk/geregistreerd partnerschap (07.40)  | S         |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Koosje' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Koosje    |
@@ -116,7 +116,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Kerwin' met de volgende gegevens
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000036   |
       | voornamen (02.10)               | Kerwin      |
@@ -125,7 +125,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geboorteland (03.30)            | 6030        |
       | beschrijving document (82.30)   | PL kind     |
       | ingangsdatum geldigheid (85.10) | 20120401    |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Kevin' met de volgende gegevens
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000048   |
       | voornamen (02.10)               | Kevin       |
@@ -134,7 +134,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geboorteland (03.30)            | 6030        |
       | beschrijving document (82.30)   | PL kind     |
       | ingangsdatum geldigheid (85.10) | 20130401    |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Kelvin' met de volgende gegevens
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000061   |
       | voornamen (02.10)               | Kelvin      |
@@ -143,7 +143,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geboorteland (03.30)            | 6030        |
       | beschrijving document (82.30)   | PL kind     |
       | ingangsdatum geldigheid (85.10) | 20140401    |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Kylian' met de volgende gegevens
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000073   |
       | voornamen (02.10)               | Kylian      |
@@ -152,7 +152,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geboorteland (03.30)            | 6030        |
       | beschrijving document (82.30)   | PL kind     |
       | ingangsdatum geldigheid (85.10) | 20150401    |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Kyona' met de volgende gegevens
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000115   |
       | voornamen (02.10)               | Kyona       |
@@ -174,7 +174,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Karolien |
       | geslachtsnaam (02.40)                              | Klaassen |
@@ -184,7 +184,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Koert    |
       | voorvoegsel (02.30)                                | van      |
@@ -195,7 +195,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Karel' met de volgende gegevens
       | naam                                                                | waarde      |
       | burgerservicenummer (01.20)                                         | 000000012   |
       | voornamen (02.10)                                                   | Karel       |
@@ -208,7 +208,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20110401    |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518        |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030        |
-    En de partner is gewijzigd naar de volgende gegevens
+    En de partner 'Karel' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde      |
       | burgerservicenummer (01.20)                                   | 000000012   |
       | voornamen (02.10)                                             | Karel       |
@@ -222,7 +222,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | plaats ontbinding huwelijk/geregistreerd partnerschap (07.20) | 0518        |
       | land ontbinding huwelijk/geregistreerd partnerschap (07.30)   | 6030        |
       | reden ontbinding huwelijk/geregistreerd partnerschap (07.40)  | S           |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Kobus' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000085 |
       | voornamen (02.10)                                                   | Kobus     |
@@ -235,7 +235,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20190401  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de partner is gewijzigd naar de volgende gegevens
+    En de partner 'Kobus' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000085 |
       | voornamen (02.10)                                             | Kobus     |
@@ -249,7 +249,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | plaats ontbinding huwelijk/geregistreerd partnerschap (07.20) | 0518      |
       | land ontbinding huwelijk/geregistreerd partnerschap (07.30)   | 6030      |
       | reden ontbinding huwelijk/geregistreerd partnerschap (07.40)  | O         |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Karel' met de volgende gegevens
       | naam                                                                | waarde      |
       | burgerservicenummer (01.20)                                         | 000000012   |
       | voornamen (02.10)                                                   | Karel       |
@@ -266,7 +266,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Kerwin' met de volgende gegevens
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000036   |
       | voornamen (02.10)               | Kerwin      |
@@ -275,7 +275,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geboorteland (03.30)            | 6030        |
       | beschrijving document (82.30)   | PL kind     |
       | ingangsdatum geldigheid (85.10) | 20120401    |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Kevin' met de volgende gegevens
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000048   |
       | voornamen (02.10)               | Kevin       |
@@ -284,7 +284,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geboorteland (03.30)            | 6030        |
       | beschrijving document (82.30)   | PL kind     |
       | ingangsdatum geldigheid (85.10) | 20130401    |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Kelvin' met de volgende gegevens
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000061   |
       | voornamen (02.10)               | Kelvin      |
@@ -293,7 +293,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geboorteland (03.30)            | 6030        |
       | beschrijving document (82.30)   | PL kind     |
       | ingangsdatum geldigheid (85.10) | 20140401    |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Kylian' met de volgende gegevens
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000073   |
       | voornamen (02.10)               | Kylian      |
@@ -302,7 +302,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geboorteland (03.30)            | 6030        |
       | beschrijving document (82.30)   | PL kind     |
       | ingangsdatum geldigheid (85.10) | 20150401    |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Kaylee' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000139 |
       | voornamen (02.10)               | Kaylee    |
@@ -312,7 +312,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0199   |
       | ingangsdatum geldigheid (85.10) | 20180401  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Kyra' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Kyra      |
@@ -321,7 +321,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20200301  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Karina' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000127 |
       | voornamen (02.10)               | Karina    |
@@ -343,7 +343,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geslachtsaanduiding (04.10)     | M           |
       | aktenummer (81.20)              | 1AA0100     |
       | ingangsdatum geldigheid (85.10) | 20120401    |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Koosje    |
@@ -355,7 +355,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | aktenummer (81.20)                                 | 1AA0100   |
       | ingangsdatum geldigheid (85.10)                    | 20120401  |
       | datum ingang familierechtelijke betrekking (62.10) | 20120401  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde      |
       | burgerservicenummer (01.20)                        | 000000012   |
       | voornamen (02.10)                                  | Karel       |
@@ -387,7 +387,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geslachtsaanduiding (04.10)     | M           |
       | aktenummer (81.20)              | 1AA0101     |
       | ingangsdatum geldigheid (85.10) | 20130401    |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Koosje    |
@@ -399,7 +399,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | aktenummer (81.20)                                 | 1AA0101   |
       | ingangsdatum geldigheid (85.10)                    | 20130401  |
       | datum ingang familierechtelijke betrekking (62.10) | 20130401  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde      |
       | burgerservicenummer (01.20)                        | 000000012   |
       | voornamen (02.10)                                  | Karel       |
@@ -431,7 +431,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geslachtsaanduiding (04.10)     | M           |
       | aktenummer (81.20)              | 1AA0102     |
       | ingangsdatum geldigheid (85.10) | 20140401    |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde      |
       | burgerservicenummer (01.20)                        | 000000012   |
       | voornamen (02.10)                                  | Karel       |
@@ -442,7 +442,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | aktenummer (81.20)                                 | 1AA0102     |
       | ingangsdatum geldigheid (85.10)                    | 20140401    |
       | datum ingang familierechtelijke betrekking (62.10) | 20140401    |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Koosje    |
@@ -480,7 +480,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geslachtsaanduiding (04.10)     | M           |
       | aktenummer (81.20)              | 1AA0103     |
       | ingangsdatum geldigheid (85.10) | 20150401    |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde      |
       | burgerservicenummer (01.20)                        | 000000012   |
       | voornamen (02.10)                                  | Karel       |
@@ -491,7 +491,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | aktenummer (81.20)                                 | 1AA0103     |
       | ingangsdatum geldigheid (85.10)                    | 20150401    |
       | datum ingang familierechtelijke betrekking (62.10) | 20150401    |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Koosje    |
@@ -524,7 +524,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geslachtsaanduiding (04.10)     | M         |
       | beschrijving document (82.30)   | PKA       |
       | ingangsdatum geldigheid (85.10) | 0         |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Koba      |
       | geslachtsnaam (02.40)                              | Krelissen |
@@ -534,11 +534,11 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                            | waarde |
       | beschrijving document (82.30)   | PK     |
       | ingangsdatum geldigheid (85.10) | 0      |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Koosje' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Koosje    |
@@ -566,7 +566,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Kyra' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Kyra      |
@@ -587,7 +587,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20200301  |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000085 |
       | voornamen (02.10)                                  | Kobus     |
@@ -598,7 +598,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | aktenummer (81.20)                                 | 1AA0100   |
       | ingangsdatum geldigheid (85.10)                    | 20200301  |
       | datum ingang familierechtelijke betrekking (62.10) | 20200301  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Koosje    |
@@ -626,7 +626,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Kaat     |
       | geslachtsnaam (02.40)                              | Kozijn   |
@@ -636,11 +636,11 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                            | waarde |
       | beschrijving document (82.30)   | PK     |
       | ingangsdatum geldigheid (85.10) | 0      |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Karel' met de volgende gegevens
       | naam                                                                | waarde      |
       | burgerservicenummer (01.20)                                         | 000000012   |
       | voornamen (02.10)                                                   | Karel       |
@@ -653,7 +653,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20180401    |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518        |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030        |
-    En de partner is gewijzigd naar de volgende gegevens
+    En de partner 'Karel' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde      |
       | burgerservicenummer (01.20)                                   | 000000012   |
       | voornamen (02.10)                                             | Karel       |
@@ -671,7 +671,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Kyona' met de volgende gegevens
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000115   |
       | voornamen (02.10)               | Kyona       |
@@ -692,7 +692,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geslachtsaanduiding (04.10)     | V           |
       | aktenummer (81.20)              | 1AA0100     |
       | ingangsdatum geldigheid (85.10) | 20190401    |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde      |
       | burgerservicenummer (01.20)                        | 000000012   |
       | voornamen (02.10)                                  | Karel       |
@@ -703,7 +703,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | aktenummer (81.20)                                 | 1AA0100     |
       | ingangsdatum geldigheid (85.10)                    | 20190401    |
       | datum ingang familierechtelijke betrekking (62.10) | 20190401    |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000103 |
       | voornamen (02.10)                                  | Karolien  |
@@ -736,7 +736,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0200  |
       | ingangsdatum geldigheid (85.10) | 20210201 |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Koosje    |
@@ -748,7 +748,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | aktenummer (81.20)                                 | 1AA0200   |
       | ingangsdatum geldigheid (85.10)                    | 20210201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20210201  |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0200  |
       | ingangsdatum geldigheid (85.10) | 20210201 |
@@ -769,11 +769,11 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0199  |
       | ingangsdatum geldigheid (85.10) | 20180401 |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0199  |
       | ingangsdatum geldigheid (85.10) | 20180401 |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Koosje    |

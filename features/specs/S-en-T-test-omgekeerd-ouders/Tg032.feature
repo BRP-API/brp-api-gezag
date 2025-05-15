@@ -19,11 +19,11 @@ Functionaliteit: Tg032 - Oostingh - Alleen maar minderjarigen incl. moeder
       | geslachtsaanduiding (04.10)     | V                |
       | aktenummer (81.20)              | 1AA0001          |
       | ingangsdatum geldigheid (85.10) | morgen - 18 jaar |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                            | waarde           |
       | aktenummer (81.20)              | 1AA0001          |
       | ingangsdatum geldigheid (85.10) | morgen - 18 jaar |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde           |
       | voornamen (02.10)                                  | Ophelia          |
       | geslachtsnaam (02.40)                              | Oostingh         |
@@ -37,7 +37,7 @@ Functionaliteit: Tg032 - Oostingh - Alleen maar minderjarigen incl. moeder
       | naam                              | waarde           |
       | gemeente van inschrijving (09.10) | 518              |
       | ingangsdatum geldigheid (85.10)   | morgen - 18 jaar |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Onne' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Onne      |
@@ -46,7 +46,7 @@ Functionaliteit: Tg032 - Oostingh - Alleen maar minderjarigen incl. moeder
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0011   |
       | ingangsdatum geldigheid (85.10) | 20220202  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Olle' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000024 |
       | voornamen (02.10)               | Olle      |
@@ -67,11 +67,11 @@ Functionaliteit: Tg032 - Oostingh - Alleen maar minderjarigen incl. moeder
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0010  |
       | ingangsdatum geldigheid (85.10) | 20220202 |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0010  |
       | ingangsdatum geldigheid (85.10) | 20220202 |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde           |
       | burgerservicenummer (01.20)                        | 000000012        |
       | voornamen (02.10)                                  | Olga             |
@@ -98,11 +98,11 @@ Functionaliteit: Tg032 - Oostingh - Alleen maar minderjarigen incl. moeder
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0011  |
       | ingangsdatum geldigheid (85.10) | 20220202 |
-    En heeft een ouder 1 met de volgende gegevens
+    En heeft een ouder 1 'O1' met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0011  |
       | ingangsdatum geldigheid (85.10) | 20220202 |
-    En heeft een ouder 2 met de volgende gegevens
+    En heeft een ouder 2 'O2' met de volgende gegevens
       | naam                                               | waarde           |
       | burgerservicenummer (01.20)                        | 000000012        |
       | voornamen (02.10)                                  | Olga             |

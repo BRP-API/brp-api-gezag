@@ -234,7 +234,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | geslachtsaanduiding (04.10)     | V                |
       | aktenummer (81.20)              | 1AA0101          |
       | ingangsdatum geldigheid (85.10) | morgen - 18 jaar |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde                           |
       | burgerservicenummer (01.20)     | 000000036                        |
       | voornamen (02.10)               | Annabel                          |

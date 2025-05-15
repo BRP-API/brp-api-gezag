@@ -331,7 +331,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0500  |
       | ingangsdatum geldigheid (85.10) | 20200601 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Johanna   |
@@ -383,7 +383,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0500  |
       | ingangsdatum geldigheid (85.10) | 20211201 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | Jantina   |
@@ -440,7 +440,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0501  |
       | ingangsdatum geldigheid (85.10) | 20211201 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Janneke   |
@@ -492,7 +492,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0502  |
       | ingangsdatum geldigheid (85.10) | 20211201 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Jettie    |
@@ -544,7 +544,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0501  |
       | ingangsdatum geldigheid (85.10) | 20200601 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000103 |
       | voornamen (02.10)               | Joy       |

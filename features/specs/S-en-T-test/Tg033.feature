@@ -20,7 +20,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | geslachtsaanduiding (04.10)     | V          |
       | aktenummer (81.20)              | 1AA0200    |
       | ingangsdatum geldigheid (85.10) | 19981201   |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde                         |
       | burgerservicenummer (01.20)     | 000000012                      |
       | voornamen (02.10)               | Petronella                     |

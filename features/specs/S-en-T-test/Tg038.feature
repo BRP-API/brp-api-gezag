@@ -149,7 +149,7 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
       | geslachtsaanduiding (04.10)     | V          |
       | aktenummer (81.20)              | 1AA0300    |
       | ingangsdatum geldigheid (85.10) | 20220601   |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000036   |
       | voornamen (02.10)               | Sjoukje     |
@@ -218,7 +218,7 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
       | geslachtsaanduiding (04.10)     | M          |
       | aktenummer (81.20)              | 1AA0301    |
       | ingangsdatum geldigheid (85.10) | 20230601   |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000048   |
       | voornamen (02.10)               | Sytse       |

@@ -158,7 +158,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | geslachtsaanduiding (04.10)     | M          |
       | aktenummer (81.20)              | 1AA0150    |
       | ingangsdatum geldigheid (85.10) | 20090801   |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Ronny     |

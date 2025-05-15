@@ -152,7 +152,7 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | geslachtsaanduiding (04.10)     | M            |
       | aktenummer (81.20)              | 1AA0001      |
       | ingangsdatum geldigheid (85.10) | 20200101     |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Nicolas   |
@@ -216,7 +216,7 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | geslachtsaanduiding (04.10)     | M            |
       | aktenummer (81.20)              | 1AA0001      |
       | ingangsdatum geldigheid (85.10) | 20190101     |
-    En persoon is gecorrigeerd naar de volgende gegevens
+    En zijn de volgende gegevens gecorrigeerd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Niels     |
@@ -227,7 +227,7 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AC0001   |
       | ingangsdatum geldigheid (85.10) | 20210101  |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde       |
       | burgerservicenummer (01.20)     | 000000048    |
       | voornamen (02.10)               | Niels        |

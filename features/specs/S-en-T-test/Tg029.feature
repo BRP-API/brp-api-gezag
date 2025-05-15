@@ -205,7 +205,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0900  |
       | ingangsdatum geldigheid (85.10) | 20211030 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Kyrolina  |
@@ -216,7 +216,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AM0900   |
       | ingangsdatum geldigheid (85.10) | 20220808  |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Kyrolina  |
@@ -337,7 +337,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0700  |
       | ingangsdatum geldigheid (85.10) | 20221205 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Karo      |
@@ -348,7 +348,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AC0700   |
       | ingangsdatum geldigheid (85.10) | 20230120  |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Karolina  |

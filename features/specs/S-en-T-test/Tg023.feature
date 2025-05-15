@@ -174,7 +174,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0102  |
       | ingangsdatum geldigheid (85.10) | 20150801 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Esther    |
@@ -231,7 +231,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0103  |
       | ingangsdatum geldigheid (85.10) | 20180401 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Eveline   |
@@ -287,7 +287,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0104  |
       | ingangsdatum geldigheid (85.10) | 20200501 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Esmee     |

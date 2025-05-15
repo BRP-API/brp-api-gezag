@@ -19,7 +19,7 @@ Functionaliteit: Tg035 - Saasveld-Suijdema - Vanuit gezamenlijk gezag komt moede
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0202  |
       | ingangsdatum geldigheid (85.10) | 19981201 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde                         |
       | burgerservicenummer (01.20)     | 000000012                      |
       | voornamen (02.10)               | Simone                         |

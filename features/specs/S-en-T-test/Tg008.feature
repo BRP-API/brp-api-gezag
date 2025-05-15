@@ -210,7 +210,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AA0200   |
       | ingangsdatum geldigheid (85.10) | 20100801  |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Gabriel   |
@@ -535,7 +535,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20120801  |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Gigi      |
@@ -589,7 +589,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20130801  |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Gina      |

@@ -20,7 +20,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | geslachtsaanduiding (04.10)     | V          |
       | aktenummer (81.20)              | 1AA0750    |
       | ingangsdatum geldigheid (85.10) | 20031224   |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde                         |
       | burgerservicenummer (01.20)     | 000000012                      |
       | voornamen (02.10)               | Laurentien                     |
@@ -152,7 +152,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0300  |
       | ingangsdatum geldigheid (85.10) | 20010225 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde                         |
       | burgerservicenummer (01.20)     | 000000036                      |
       | voornamen (02.10)               | Leroy                          |
@@ -208,7 +208,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0600  |
       | ingangsdatum geldigheid (85.10) | 20220901 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Larissa   |
@@ -267,7 +267,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0601  |
       | ingangsdatum geldigheid (85.10) | 20220901 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Laeticia  |

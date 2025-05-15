@@ -22,7 +22,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 19971201 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde                         |
       | burgerservicenummer (01.20)     | 000000012                      |
       | voornamen (02.10)               | Helena                         |
@@ -96,7 +96,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20161201 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000024 |
       | voornamen (02.10)               | Harry     |
@@ -106,7 +106,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AQ0100   |
       | ingangsdatum geldigheid (85.10) | 20191201  |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000024 |
       | voornamen (02.10)               | Jorik     |
@@ -462,7 +462,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | pas 6022 |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Li        |
@@ -472,7 +472,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1VA0700   |
       | ingangsdatum geldigheid (85.10) | 20150101  |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Li        |
@@ -546,7 +546,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0101  |
       | ingangsdatum geldigheid (85.10) | 20161201 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | William   |
@@ -556,7 +556,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AQ0101   |
       | ingangsdatum geldigheid (85.10) | 20191201  |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | Jasper    |
@@ -619,7 +619,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | pas 6022 |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Jin       |
@@ -629,7 +629,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1VA0700   |
       | ingangsdatum geldigheid (85.10) | 20150101  |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Jin       |
@@ -639,7 +639,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1VQ0700   |
       | ingangsdatum geldigheid (85.10) | 20190101  |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde     |
       | burgerservicenummer (01.20)     | 000000085  |
       | voornamen (02.10)               | Jasmin-Jin |
@@ -709,7 +709,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | pas 6022 |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Jiali     |
@@ -721,7 +721,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | aanduiding in onderzoek (83.10) | 518120    |
       | datum ingang onderzoek (83.20)  | 20190501  |
       | ingangsdatum geldigheid (85.10) | 0         |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Jiali     |
@@ -733,7 +733,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | aanduiding in onderzoek (83.10) | 518120    |
       | datum ingang onderzoek (83.20)  | 20190501  |
       | ingangsdatum geldigheid (85.10) | 20180101  |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde     |
       | burgerservicenummer (01.20)     | 000000097  |
       | voornamen (02.10)               | Jiali Jade |
@@ -806,7 +806,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | pas 6022 |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000103 |
       | voornamen (02.10)               | Jia       |
@@ -816,7 +816,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1VA0701   |
       | ingangsdatum geldigheid (85.10) | 0         |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000103 |
       | voornamen (02.10)               | Jia       |
@@ -888,7 +888,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | pas 6022 |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000115 |
       | voornamen (02.10)               | Jiang     |
@@ -901,7 +901,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | datum ingang onderzoek (83.20)  | 20190501  |
       | datum einde onderzoek (83.30)   | 20220202  |
       | ingangsdatum geldigheid (85.10) | 0         |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde       |
       | burgerservicenummer (01.20)     | 000000115    |
       | voornamen (02.10)               | Jinthe Jiang |

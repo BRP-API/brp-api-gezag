@@ -251,7 +251,7 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0106  |
       | ingangsdatum geldigheid (85.10) | 20180601 |
-    En persoon is gecorrigeerd naar de volgende gegevens
+    En zijn de volgende gegevens gecorrigeerd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Fabienne  |
@@ -262,7 +262,7 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AC0106   |
       | ingangsdatum geldigheid (85.10) | 20190201  |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Fabienne  |

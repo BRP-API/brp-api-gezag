@@ -494,7 +494,7 @@ Functionaliteit: Tg001 - Adema-Arendsen - Gehuwd met kinderen geboren voor en na
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0107  |
       | ingangsdatum geldigheid (85.10) | 20100601 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Ariana    |
@@ -551,7 +551,7 @@ Functionaliteit: Tg001 - Adema-Arendsen - Gehuwd met kinderen geboren voor en na
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0108  |
       | ingangsdatum geldigheid (85.10) | 20100601 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000103 |
       | voornamen (02.10)               | Astrid    |
@@ -608,7 +608,7 @@ Functionaliteit: Tg001 - Adema-Arendsen - Gehuwd met kinderen geboren voor en na
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0109  |
       | ingangsdatum geldigheid (85.10) | 20100601 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000115 |
       | voornamen (02.10)               | Xandra    |

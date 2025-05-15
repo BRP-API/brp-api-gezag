@@ -203,7 +203,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0112  |
       | ingangsdatum geldigheid (85.10) | 20231118 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Harold    |
@@ -255,7 +255,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0111  |
       | ingangsdatum geldigheid (85.10) | 20231118 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Harm      |

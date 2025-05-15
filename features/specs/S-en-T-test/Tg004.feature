@@ -19,7 +19,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | geslachtsaanduiding (04.10)     | V                |
       | aktenummer (81.20)              | 1AA0100          |
       | ingangsdatum geldigheid (85.10) | morgen - 18 jaar |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde                         |
       | burgerservicenummer (01.20)     | 000000012                      |
       | voornamen (02.10)               | Cindy                          |
@@ -47,7 +47,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Chrissy' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000024 |
       | voornamen (02.10)               | Chrissy   |
@@ -99,7 +99,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20020501 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde                         |
       | burgerservicenummer (01.20)     | 000000036                      |
       | voornamen (02.10)               | Carice                         |
@@ -127,7 +127,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Carlijn' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Carlijn   |

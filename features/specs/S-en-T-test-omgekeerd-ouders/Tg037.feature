@@ -40,7 +40,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Ria' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Ria       |
@@ -53,7 +53,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20081201  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de partner is gecorrigeerd naar de volgende gegevens
+    En partner 'Ria' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde          |
       | beschrijving document (82.30)   | nietig huwelijk |
       | ingangsdatum geldigheid (85.10) | 20081201        |
@@ -61,7 +61,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Ronny' met de volgende gegevens
       | naam                            | waarde     |
       | burgerservicenummer (01.20)     | 000000036  |
       | voornamen (02.10)               | Ronny      |
@@ -70,7 +70,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | geboorteland (03.30)            | 6030       |
       | aktenummer (81.20)              | 1AA0150    |
       | ingangsdatum geldigheid (85.10) | 20090801   |
-    En het kind is gecorrigeerd naar de volgende gegevens
+    En kind 'Ronny' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0150  |
       | ingangsdatum geldigheid (85.10) | 20090801 |
@@ -107,7 +107,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Richard' met de volgende gegevens
       | naam                                                                | waarde     |
       | burgerservicenummer (01.20)                                         | 000000012  |
       | voornamen (02.10)                                                   | Richard    |
@@ -120,7 +120,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20081201   |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518       |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030       |
-    En de partner is gecorrigeerd naar de volgende gegevens
+    En partner 'Richard' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde          |
       | beschrijving document (82.30)   | nietig huwelijk |
       | ingangsdatum geldigheid (85.10) | 20081201        |
@@ -128,7 +128,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Ronny' met de volgende gegevens
       | naam                            | waarde     |
       | burgerservicenummer (01.20)     | 000000036  |
       | voornamen (02.10)               | Ronny      |
@@ -137,7 +137,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | geboorteland (03.30)            | 6030       |
       | aktenummer (81.20)              | 1AA0150    |
       | ingangsdatum geldigheid (85.10) | 20090801   |
-    En het kind is gecorrigeerd naar de volgende gegevens
+    En kind 'Ronny' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Ronny     |
@@ -158,7 +158,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | geslachtsaanduiding (04.10)     | M          |
       | aktenummer (81.20)              | 1AA0150    |
       | ingangsdatum geldigheid (85.10) | 20090801   |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Ronny     |

@@ -20,7 +20,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | geslachtsaanduiding (04.10)     | V          |
       | aktenummer (81.20)              | 1AA0200    |
       | ingangsdatum geldigheid (85.10) | 19981201   |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde                         |
       | burgerservicenummer (01.20)     | 000000012                      |
       | voornamen (02.10)               | Petronella                     |
@@ -46,7 +46,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0200  |
       | ingangsdatum geldigheid (85.10) | 19981201 |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Pia' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Pia       |
@@ -63,7 +63,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Pep' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Pep       |
@@ -73,7 +73,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0102   |
       | ingangsdatum geldigheid (85.10) | 20160501  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Pelle' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Pelle     |
@@ -83,7 +83,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0101   |
       | ingangsdatum geldigheid (85.10) | 20170901  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Peet' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Peet      |
@@ -93,7 +93,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20181201  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Pero' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | Pero      |
@@ -129,7 +129,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | naam                            | waarde |
       | beschrijving document (82.30)   | PK     |
       | ingangsdatum geldigheid (85.10) | 0      |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Petronella' met de volgende gegevens
       | naam                                                                | waarde     |
       | burgerservicenummer (01.20)                                         | 000000012  |
       | voornamen (02.10)                                                   | Petronella |
@@ -327,7 +327,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Pero' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | Pero      |

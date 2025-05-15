@@ -102,7 +102,7 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met één ouder die ten t
     
     Deze regel is nog niet geïmplementeerd!
 
-    @nieuw
+    @to-do @skip-verify
     Scenario: huwelijk is na geboorte nietig verklaard
       Gegeven de persoon 'partner' met burgerservicenummer '000000024'
       * is meerderjarig

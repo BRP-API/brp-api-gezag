@@ -1,8 +1,8 @@
 # language: nl
 Functionaliteit: het gezag kan worden bepaald voor een minderjarige waarvan een of beide gezaghebbenden niet staan ingeschreven in de BRP
-    In dat geval weten we niet met zekerheid of er iets is veranderd in de situatie van deze ouder(s). Bijvoorbeeld of een ouder uit de ouderlijke macht is ontzet of de ouder is overleden.
-    Het gezag wordt in dat geval bepaald op basis van de gegevens van de ouders zoals die bekend zijn. Daarbij wordt dan een toelichting geleverd waarin wordt aangegeven dat de persoon gewijzigd gezag kan laten opnemen in het gezagsregister.
-    De situatie dat beide ouders niet in de BRP staan heeft altijd tot gevolg dat er voogdij wordt uitgesproken.
+    In dat geval hebben we weinig informatie over de ouder. We weten niet of een ouder uit de ouderlijke macht is ontzet, onder curatele staat, of is overleden.
+    Het gezag wordt dan bepaald op basis van de gegevens van de ouders zoals die bekend zijn. Daarbij wordt dan een toelichting geleverd waarin wordt aangegeven dat de persoon gewijzigd gezag kan laten opnemen in het gezagsregister.
+    Wanneer beide ouders niet in de BRP staan, wordt altijd voogdij uitgesproken.
 
     Relevante situaties:
     - er zijn 2 ouders en 1 van de ouders heeft geen burgerservicenummer, de ouder met burgerservicenummer was bij geboorte minderjarige niet gehuwd, erkend voor 1-1-2023 --> eenhoofdig ouderlijk gezag

@@ -20,7 +20,7 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | geslachtsaanduiding (04.10)     | V         |
       | beschrijving document (82.30)   | PKA       |
       | ingangsdatum geldigheid (85.10) | 0         |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Teunis    |
       | voorvoegsel (02.30)                                | van       |
@@ -31,7 +31,7 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Toos     |
       | geslachtsnaam (02.40)                              | Triest   |
@@ -55,7 +55,7 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20200201  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de partner 'Trudy' is gewijzigd naar de volgende gegevens
+    En partner 'Trudy' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000024 |
       | voornamen (02.10)                                             | Trudy     |
@@ -107,7 +107,7 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Tobias   |
       | voorvoegsel (02.30)                                | van      |
@@ -118,7 +118,7 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Teuntje   |
       | geslachtsnaam (02.40)                              | Tollenaar |
@@ -189,11 +189,11 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AA0300   |
       | ingangsdatum geldigheid (85.10) | 20230201  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0300  |
       | ingangsdatum geldigheid (85.10) | 20230201 |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Tina      |
@@ -222,7 +222,7 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AA0301   |
       | ingangsdatum geldigheid (85.10) | 20230201  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Tina      |
@@ -234,7 +234,7 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | aktenummer (81.20)                                 | 1AA0301   |
       | ingangsdatum geldigheid (85.10)                    | 20230201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20230201  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0301  |
       | ingangsdatum geldigheid (85.10) | 20230201 |
@@ -255,11 +255,11 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0400  |
       | ingangsdatum geldigheid (85.10) | 20221001 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0400  |
       | ingangsdatum geldigheid (85.10) | 20221001 |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Trudy     |
@@ -288,7 +288,7 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0401  |
       | ingangsdatum geldigheid (85.10) | 20221001 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Trudy     |
@@ -300,7 +300,7 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | aktenummer (81.20)                                 | 1AA0401   |
       | ingangsdatum geldigheid (85.10)                    | 20221001  |
       | datum ingang familierechtelijke betrekking (62.10) | 20221001  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0401  |
       | ingangsdatum geldigheid (85.10) | 20221001 |

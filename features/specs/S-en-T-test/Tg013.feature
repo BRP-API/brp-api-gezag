@@ -25,7 +25,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Mona     |
       | geslachtsnaam (02.40)                              | Manziek  |
@@ -35,7 +35,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Mees     |
       | geslachtsnaam (02.40)                              | Maasland |
@@ -58,7 +58,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20140201  |
-    En het kind 'Mark' is gewijzigd naar de volgende gegevens
+    En kind 'Mark' is gewijzigd naar de volgende gegevens
       | naam                            | waarde     |
       | burgerservicenummer (01.20)     | 000000036  |
       | voornamen (02.10)               | Mark       |
@@ -67,7 +67,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030       |
       | aktenummer (81.20)              | 1AC0100    |
       | ingangsdatum geldigheid (85.10) | 20140301   |
-    En het kind 'Mark' is gecorrigeerd naar de volgende gegevens
+    En kind 'Mark' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Mark      |
@@ -76,7 +76,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AN0100   |
       | ingangsdatum geldigheid (85.10) | 20140301  |
-    En het kind 'Mark' is gewijzigd naar de volgende gegevens
+    En kind 'Mark' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Mark      |
@@ -98,7 +98,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geslachtsaanduiding (04.10)     | M          |
       | beschrijving document (82.30)   | PKA        |
       | ingangsdatum geldigheid (85.10) | 0          |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde     |
       | voornamen (02.10)                                  | Mina       |
       | voorvoegsel (02.30)                                | van        |
@@ -109,7 +109,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | beschrijving document (82.30)                      | PK         |
       | ingangsdatum geldigheid (85.10)                    | 0          |
       | datum ingang familierechtelijke betrekking (62.10) | 0          |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde     |
       | voornamen (02.10)                                  | Mathias    |
       | geslachtsnaam (02.40)                              | Meindersma |
@@ -132,7 +132,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030       |
       | aktenummer (81.20)              | 1AC0100    |
       | ingangsdatum geldigheid (85.10) | 20140301   |
-    En het kind 'Mark' is gecorrigeerd naar de volgende gegevens
+    En kind 'Mark' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AN0100  |
       | ingangsdatum geldigheid (85.10) | 20140301 |
@@ -179,7 +179,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AC0100   |
       | ingangsdatum geldigheid (85.10) | 20160201  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Monique   |
@@ -190,11 +190,11 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | aktenummer (81.20)                                 | 1AA0100   |
       | ingangsdatum geldigheid (85.10)                    | 20140201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20140201  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20140201 |
-    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
+    En ouder 2 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000024  |
       | voornamen (02.10)                                  | Maurits    |
@@ -205,11 +205,11 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | aktenummer (81.20)                                 | 1AC0100    |
       | ingangsdatum geldigheid (85.10)                    | 20140301   |
       | datum ingang familierechtelijke betrekking (62.10) | 20140301   |
-    En ouder 2 'O2' is gecorrigeerd naar de volgende gegevens
+    En ouder 2 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AN0100  |
       | ingangsdatum geldigheid (85.10) | 20140301 |
-    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
+    En ouder 2 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000048 |
       | voornamen (02.10)                                  | Mike      |
@@ -242,7 +242,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geslachtsaanduiding (04.10)     | M        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Meike    |
       | voorvoegsel (02.30)                                | van      |
@@ -253,7 +253,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Machiel  |
       | voorvoegsel (02.30)                                | van der  |
@@ -290,7 +290,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Mona     |
       | geslachtsnaam (02.40)                              | Manziek  |
@@ -300,7 +300,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Mees     |
       | geslachtsnaam (02.40)                              | Maasland |
@@ -322,7 +322,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20140201      |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | Altleiningen  |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 9089          |
-    En de partner 'Manfred' is gewijzigd naar de volgende gegevens
+    En partner 'Manfred' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde   |
       | voornamen (02.10)                                             | Manfred  |
       | geslachtsnaam (02.40)                                         | Mann     |
@@ -335,7 +335,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | plaats ontbinding huwelijk/geregistreerd partnerschap (07.20) | 0518     |
       | land ontbinding huwelijk/geregistreerd partnerschap (07.30)   | 6030     |
       | reden ontbinding huwelijk/geregistreerd partnerschap (07.40)  | S        |
-    En de partner 'Manfred' is gewijzigd naar de volgende gegevens
+    En partner 'Manfred' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde          |
       | burgerservicenummer (01.20)                                   | 000000097       |
       | voornamen (02.10)                                             | Manfred         |
@@ -389,7 +389,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20150201  |
-    En het kind 'Mirthe' is gecorrigeerd naar de volgende gegevens
+    En kind 'Mirthe' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Mirthe    |
@@ -398,7 +398,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20150201  |
-    En het kind 'Mirthe' is gecorrigeerd naar de volgende gegevens
+    En kind 'Mirthe' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Mirthe    |
@@ -407,7 +407,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AE0100   |
       | ingangsdatum geldigheid (85.10) | 20150201  |
-    En het kind 'Mirthe' is gewijzigd naar de volgende gegevens
+    En kind 'Mirthe' is gewijzigd naar de volgende gegevens
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000085   |
       | voornamen (02.10)               | Mirthe      |
@@ -417,7 +417,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030        |
       | aktenummer (81.20)              | 1AC0100     |
       | ingangsdatum geldigheid (85.10) | 20150401    |
-    En het kind 'Mirthe' is gecorrigeerd naar de volgende gegevens
+    En kind 'Mirthe' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000085   |
       | voornamen (02.10)               | Mirthe      |
@@ -440,7 +440,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geslachtsaanduiding (04.10)     | M           |
       | beschrijving document (82.30)   | PKA         |
       | ingangsdatum geldigheid (85.10) | 0           |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Maaike   |
       | geslachtsnaam (02.40)                              | Mol      |
@@ -450,7 +450,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde      |
       | voornamen (02.10)                                  | Maarten     |
       | voorvoegsel (02.30)                                | van de      |
@@ -475,11 +475,11 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030        |
       | aktenummer (81.20)              | 1AC0100     |
       | ingangsdatum geldigheid (85.10) | 20150401    |
-    En het kind 'Mirthe' is gecorrigeerd naar de volgende gegevens
+    En kind 'Mirthe' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde                 |
       | beschrijving document (82.30)   | ten onrechte opgenomen |
       | ingangsdatum geldigheid (85.10) | 20150401               |
-    En het kind 'Mirthe' is gewijzigd naar de volgende gegevens
+    En kind 'Mirthe' is gewijzigd naar de volgende gegevens
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000085   |
       | voornamen (02.10)               | Mirthe      |
@@ -543,11 +543,11 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geslachtsaanduiding (04.10)     | V           |
       | aktenummer (81.20)              | 1AC0100     |
       | ingangsdatum geldigheid (85.10) | 20160801    |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20150201 |
-    En ouder 1 'O1' is gecorrigeerd naar de volgende gegevens
+    En ouder 1 is gecorrigeerd naar de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Manfred  |
       | geslachtsnaam (02.40)                              | Mann     |
@@ -557,11 +557,11 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | aktenummer (81.20)                                 | 1AA0100  |
       | ingangsdatum geldigheid (85.10)                    | 20150201 |
       | datum ingang familierechtelijke betrekking (62.10) | 20150201 |
-    En ouder 1 'O1' is gecorrigeerd naar de volgende gegevens
+    En ouder 1 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AE0100  |
       | ingangsdatum geldigheid (85.10) | 20150201 |
-    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
+    En ouder 1 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde      |
       | burgerservicenummer (01.20)                        | 000000073   |
       | voornamen (02.10)                                  | Menno       |
@@ -573,7 +573,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | aktenummer (81.20)                                 | 1AC0100     |
       | ingangsdatum geldigheid (85.10)                    | 20150401    |
       | datum ingang familierechtelijke betrekking (62.10) | 20150401    |
-    En ouder 1 'O1' is gecorrigeerd naar de volgende gegevens
+    En ouder 1 is gecorrigeerd naar de volgende gegevens
       | naam                                               | waarde      |
       | burgerservicenummer (01.20)                        | 000000073   |
       | voornamen (02.10)                                  | Menno       |
@@ -585,7 +585,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | aktenummer (81.20)                                 | 1AC0100     |
       | ingangsdatum geldigheid (85.10)                    | 20160801    |
       | datum ingang familierechtelijke betrekking (62.10) | 20160801    |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000061 |
       | voornamen (02.10)                                  | Manon     |
@@ -612,7 +612,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geslachtsaanduiding (04.10)     | M        |
       | beschrijving document (82.30)   | ga 9089  |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Mauzie   |
       | geslachtsnaam (02.40)                              | Mann     |
@@ -622,7 +622,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | beschrijving document (82.30)                      | ga 9089  |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Matz     |
       | geslachtsnaam (02.40)                              | Mann     |
@@ -645,7 +645,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20140201      |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | Altleiningen  |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 9089          |
-    En de partner 'Manon' is gewijzigd naar de volgende gegevens
+    En partner 'Manon' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000061 |
       | voornamen (02.10)                                             | Manon     |
@@ -692,7 +692,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0101   |
       | ingangsdatum geldigheid (85.10) | 20150201  |
-    En het kind 'Maya' is gecorrigeerd naar de volgende gegevens
+    En kind 'Maya' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Mirthe    |
@@ -701,7 +701,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20150201  |
-    En het kind 'Maya' is gecorrigeerd naar de volgende gegevens
+    En kind 'Maya' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AE0100  |
       | ingangsdatum geldigheid (85.10) | 20150201 |
@@ -727,7 +727,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AE0101   |
       | ingangsdatum geldigheid (85.10) | 20150201  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000097 |
       | voornamen (02.10)                                  | Manfred   |
@@ -738,11 +738,11 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | aktenummer (81.20)                                 | 1AA0101   |
       | ingangsdatum geldigheid (85.10)                    | 20150201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20150201  |
-    En ouder 1 'O1' is gecorrigeerd naar de volgende gegevens
+    En ouder 1 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AE0101  |
       | ingangsdatum geldigheid (85.10) | 20150201 |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000061 |
       | voornamen (02.10)                                  | Manon     |
@@ -779,7 +779,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AV0102   |
       | ingangsdatum geldigheid (85.10) | 20170101  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000061 |
       | voornamen (02.10)                                  | Manon     |
@@ -790,11 +790,11 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | aktenummer (81.20)                                 | 1AA0102   |
       | ingangsdatum geldigheid (85.10)                    | 20170101  |
       | datum ingang familierechtelijke betrekking (62.10) | 20170101  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0102  |
       | ingangsdatum geldigheid (85.10) | 20170101 |
-    En ouder 2 'O2' is gecorrigeerd naar de volgende gegevens
+    En ouder 2 is gecorrigeerd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000097 |
       | voornamen (02.10)                                  | Manfred   |
@@ -831,7 +831,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AV0103   |
       | ingangsdatum geldigheid (85.10) | 20170101  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000061 |
       | voornamen (02.10)                                  | Manon     |
@@ -842,11 +842,11 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | aktenummer (81.20)                                 | 1AA0103   |
       | ingangsdatum geldigheid (85.10)                    | 20170101  |
       | datum ingang familierechtelijke betrekking (62.10) | 20170101  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0103  |
       | ingangsdatum geldigheid (85.10) | 20170101 |
-    En ouder 2 'O2' is gecorrigeerd naar de volgende gegevens
+    En ouder 2 is gecorrigeerd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000097 |
       | voornamen (02.10)                                  | Manfred   |

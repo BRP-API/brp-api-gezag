@@ -22,7 +22,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geslachtsaanduiding (04.10)     | V          |
       | aktenummer (81.20)              | 1AA0109    |
       | ingangsdatum geldigheid (85.10) | 20230101   |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Hiske    |
       | geslachtsnaam (02.40)                              | Hamersma |
@@ -32,7 +32,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | aktenummer (81.20)                                 | 1AA0108  |
       | ingangsdatum geldigheid (85.10)                    | 20230101 |
       | datum ingang familierechtelijke betrekking (62.10) | 20230101 |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde     |
       | voornamen (02.10)                                  | Harald     |
       | geslachtsnaam (02.40)                              | Hendrikman |
@@ -58,7 +58,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geslachtsaanduiding (04.10)     | M        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Heiltje  |
       | voorvoegsel (02.30)                                | de       |
@@ -69,7 +69,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Hadriaan |
       | geslachtsnaam (02.40)                              | Hamersma |
@@ -122,7 +122,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Halina   |
       | geslachtsnaam (02.40)                              | Helger   |
@@ -132,7 +132,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Hannes   |
       | geslachtsnaam (02.40)                              | Huisman  |
@@ -164,7 +164,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0111   |
       | ingangsdatum geldigheid (85.10) | 20231118  |
-    En het kind 'Harm' is gewijzigd naar de volgende gegevens
+    En kind 'Harm' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Harm      |
@@ -182,7 +182,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0112   |
       | ingangsdatum geldigheid (85.10) | 20231118  |
-    En het kind 'Harold' is gewijzigd naar de volgende gegevens
+    En kind 'Harold' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Harold    |
@@ -213,7 +213,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AC0112   |
       | ingangsdatum geldigheid (85.10) | 20231120  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000036 |
       | voornamen (02.10)                                  | Helga     |
@@ -224,11 +224,11 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | aktenummer (81.20)                                 | 1AA0112   |
       | ingangsdatum geldigheid (85.10)                    | 20231118  |
       | datum ingang familierechtelijke betrekking (62.10) | 20231118  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0112  |
       | ingangsdatum geldigheid (85.10) | 20231118 |
-    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
+    En ouder 2 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Hans      |
@@ -265,7 +265,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AB0111   |
       | ingangsdatum geldigheid (85.10) | 20231119  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000036 |
       | voornamen (02.10)                                  | Helga     |
@@ -276,11 +276,11 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | aktenummer (81.20)                                 | 1AA0111   |
       | ingangsdatum geldigheid (85.10)                    | 20231118  |
       | datum ingang familierechtelijke betrekking (62.10) | 20231118  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0111  |
       | ingangsdatum geldigheid (85.10) | 20231118 |
-    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
+    En ouder 2 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Hans      |
@@ -307,7 +307,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0110  |
       | ingangsdatum geldigheid (85.10) | 20230110 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000036 |
       | voornamen (02.10)                                  | Helga     |
@@ -318,7 +318,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | aktenummer (81.20)                                 | 1AA0110   |
       | ingangsdatum geldigheid (85.10)                    | 20230110  |
       | datum ingang familierechtelijke betrekking (62.10) | 20230110  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Hans      |

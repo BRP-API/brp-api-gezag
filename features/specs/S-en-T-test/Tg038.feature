@@ -19,7 +19,7 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
       | geslachtsaanduiding (04.10)     | V          |
       | beschrijving document (82.30)   | PKA        |
       | ingangsdatum geldigheid (85.10) | 0          |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde     |
       | voornamen (02.10)                                  | Sijke      |
       | geslachtsnaam (02.40)                              | Savelskoul |
@@ -29,7 +29,7 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
       | beschrijving document (82.30)                      | PK         |
       | ingangsdatum geldigheid (85.10)                    | 0          |
       | datum ingang familierechtelijke betrekking (62.10) | 0          |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde |
       | beschrijving document (82.30)   | PK     |
       | ingangsdatum geldigheid (85.10) | 0      |
@@ -56,7 +56,7 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
       | geboorteland (03.30)            | 6030       |
       | aktenummer (81.20)              | 1AA0300    |
       | ingangsdatum geldigheid (85.10) | 20220601   |
-    En het kind 'Sjoukje' is gewijzigd naar de volgende gegevens
+    En kind 'Sjoukje' is gewijzigd naar de volgende gegevens
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000036   |
       | voornamen (02.10)               | Sjoukje     |
@@ -75,7 +75,7 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
       | geboorteland (03.30)            | 6030       |
       | aktenummer (81.20)              | 1AA0301    |
       | ingangsdatum geldigheid (85.10) | 20230601   |
-    En het kind 'Sytse' is gewijzigd naar de volgende gegevens
+    En kind 'Sytse' is gewijzigd naar de volgende gegevens
       | naam                            | waarde      |
       | burgerservicenummer (01.20)     | 000000048   |
       | voornamen (02.10)               | Sytse       |
@@ -98,7 +98,7 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
       | geslachtsaanduiding (04.10)     | M           |
       | beschrijving document (82.30)   | PKA         |
       | ingangsdatum geldigheid (85.10) | 0           |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde      |
       | voornamen (02.10)                                  | Sonja       |
       | voorvoegsel (02.30)                                | van         |
@@ -109,7 +109,7 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
       | beschrijving document (82.30)                      | PK          |
       | ingangsdatum geldigheid (85.10)                    | 0           |
       | datum ingang familierechtelijke betrekking (62.10) | 0           |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde |
       | beschrijving document (82.30)   | PK     |
       | ingangsdatum geldigheid (85.10) | 0      |
@@ -160,7 +160,7 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
       | geslachtsaanduiding (04.10)     | V           |
       | aktenummer (81.20)              | 1AQ0300     |
       | ingangsdatum geldigheid (85.10) | 20230201    |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde     |
       | voornamen (02.10)                                  | Susannah   |
       | geslachtsnaam (02.40)                              | Saroutakia |
@@ -170,7 +170,7 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
       | aktenummer (81.20)                                 | 1AA0300    |
       | ingangsdatum geldigheid (85.10)                    | 20220601   |
       | datum ingang familierechtelijke betrekking (62.10) | 20220601   |
-    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
+    En ouder 1 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000012  |
       | voornamen (02.10)                                  | Simone     |
@@ -181,11 +181,11 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
       | aktenummer (81.20)                                 | 1AQ0300    |
       | ingangsdatum geldigheid (85.10)                    | 20230201   |
       | datum ingang familierechtelijke betrekking (62.10) | 20230201   |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0300  |
       | ingangsdatum geldigheid (85.10) | 20220601 |
-    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
+    En ouder 2 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde      |
       | burgerservicenummer (01.20)                        | 000000024   |
       | voornamen (02.10)                                  | Sjoerd      |
@@ -229,7 +229,7 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
       | geslachtsaanduiding (04.10)     | M           |
       | aktenummer (81.20)              | 1AJ0301     |
       | ingangsdatum geldigheid (85.10) | 20230801    |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000012  |
       | voornamen (02.10)                                  | Simone     |
@@ -240,11 +240,11 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
       | aktenummer (81.20)                                 | 1AA0301    |
       | ingangsdatum geldigheid (85.10)                    | 20230601   |
       | datum ingang familierechtelijke betrekking (62.10) | 20230601   |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0301  |
       | ingangsdatum geldigheid (85.10) | 20230601 |
-    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
+    En ouder 2 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde      |
       | burgerservicenummer (01.20)                        | 000000024   |
       | voornamen (02.10)                                  | Sjoerd      |

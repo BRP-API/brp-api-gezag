@@ -19,7 +19,7 @@ Functionaliteit: Tg017 - Rooyakkers-Ros - Getrouwd met kind in Cat.11 1D
       | geslachtsaanduiding (04.10)     | M          |
       | beschrijving document (82.30)   | PKA        |
       | ingangsdatum geldigheid (85.10) | 0          |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Roberta  |
       | geslachtsnaam (02.40)                              | Raasdonk |
@@ -29,7 +29,7 @@ Functionaliteit: Tg017 - Rooyakkers-Ros - Getrouwd met kind in Cat.11 1D
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 19700201 |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde     |
       | voornamen (02.10)                                  | Ronald     |
       | geslachtsnaam (02.40)                              | Rooyakkers |
@@ -77,7 +77,7 @@ Functionaliteit: Tg017 - Rooyakkers-Ros - Getrouwd met kind in Cat.11 1D
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Ria      |
       | geslachtsnaam (02.40)                              | Robberts |
@@ -87,7 +87,7 @@ Functionaliteit: Tg017 - Rooyakkers-Ros - Getrouwd met kind in Cat.11 1D
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 19821101 |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Rijk     |
       | geslachtsnaam (02.40)                              | Ros      |
@@ -135,7 +135,7 @@ Functionaliteit: Tg017 - Rooyakkers-Ros - Getrouwd met kind in Cat.11 1D
       | geslachtsaanduiding (04.10)     | V          |
       | aktenummer (81.20)              | 1AA0104    |
       | ingangsdatum geldigheid (85.10) | 20120501   |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Rianne    |
@@ -146,7 +146,7 @@ Functionaliteit: Tg017 - Rooyakkers-Ros - Getrouwd met kind in Cat.11 1D
       | aktenummer (81.20)                                 | 1AA0104   |
       | ingangsdatum geldigheid (85.10)                    | 20120501  |
       | datum ingang familierechtelijke betrekking (62.10) | 20120501  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000012  |
       | voornamen (02.10)                                  | Reinier    |

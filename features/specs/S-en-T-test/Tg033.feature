@@ -31,7 +31,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | geslachtsaanduiding (04.10)     | V                              |
       | beschrijving document (82.30)   | Melding Minister van Financien |
       | ingangsdatum geldigheid (85.10) | 19981212                       |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Pleuni   |
       | voorvoegsel (02.30)                                | van      |
@@ -42,7 +42,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | aktenummer (81.20)                                 | 1AA0200  |
       | ingangsdatum geldigheid (85.10)                    | 19981201 |
       | datum ingang familierechtelijke betrekking (62.10) | 19981201 |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0200  |
       | ingangsdatum geldigheid (85.10) | 19981201 |
@@ -115,7 +115,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Phea     |
       | geslachtsnaam (02.40)                              | Pauw     |
@@ -125,7 +125,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde |
       | beschrijving document (82.30)   | PK     |
       | ingangsdatum geldigheid (85.10) | 0      |
@@ -160,7 +160,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20181201 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000012  |
       | voornamen (02.10)                                  | Petronella |
@@ -172,7 +172,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | aktenummer (81.20)                                 | 1AA0100    |
       | ingangsdatum geldigheid (85.10)                    | 20181201   |
       | datum ingang familierechtelijke betrekking (62.10) | 20181201   |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20181201 |
@@ -193,7 +193,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0101  |
       | ingangsdatum geldigheid (85.10) | 20170901 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000012  |
       | voornamen (02.10)                                  | Petronella |
@@ -205,7 +205,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | aktenummer (81.20)                                 | 1AA0101    |
       | ingangsdatum geldigheid (85.10)                    | 20170901   |
       | datum ingang familierechtelijke betrekking (62.10) | 20170901   |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0101  |
       | ingangsdatum geldigheid (85.10) | 20170901 |
@@ -231,7 +231,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0102  |
       | ingangsdatum geldigheid (85.10) | 20160501 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000012  |
       | voornamen (02.10)                                  | Petronella |
@@ -243,7 +243,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | aktenummer (81.20)                                 | 1AA0102    |
       | ingangsdatum geldigheid (85.10)                    | 20160501   |
       | datum ingang familierechtelijke betrekking (62.10) | 20160501   |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0102  |
       | ingangsdatum geldigheid (85.10) | 20160501 |
@@ -264,7 +264,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20230201 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000012  |
       | voornamen (02.10)                                  | Petronella |
@@ -276,7 +276,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | aktenummer (81.20)                                 | 1AA0100    |
       | ingangsdatum geldigheid (85.10)                    | 20230201   |
       | datum ingang familierechtelijke betrekking (62.10) | 20230201   |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000085 |
       | voornamen (02.10)                                  | Peterjan  |
@@ -303,7 +303,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | geslachtsaanduiding (04.10)     | M        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Piadora  |
       | geslachtsnaam (02.40)                              | Pattel   |
@@ -313,7 +313,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Peter    |
       | geslachtsnaam (02.40)                              | Pluym    |

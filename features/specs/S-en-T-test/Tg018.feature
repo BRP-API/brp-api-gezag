@@ -19,11 +19,11 @@ Functionaliteit: Tg018 - Vondeling - Kind zonder ouders
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AA1000   |
       | ingangsdatum geldigheid (85.10) | 20210801  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA1000  |
       | ingangsdatum geldigheid (85.10) | 20210801 |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA1000  |
       | ingangsdatum geldigheid (85.10) | 20210801 |

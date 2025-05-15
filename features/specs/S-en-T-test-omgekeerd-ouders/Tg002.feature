@@ -19,13 +19,13 @@ Functionaliteit: Tg002 - Ouderlozen – Puntouder(s) - Geen ouders
       | geslachtsaanduiding (04.10)     | M        |
       | beschrijving document (82.30)   | voe      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | beschrijving document (82.30)                      | voe    |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | beschrijving document (82.30)                      | voe    |
@@ -49,11 +49,11 @@ Functionaliteit: Tg002 - Ouderlozen – Puntouder(s) - Geen ouders
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AA0001   |
       | ingangsdatum geldigheid (85.10) | 20210101  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0001  |
       | ingangsdatum geldigheid (85.10) | 20210101 |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | geslachtsnaam (02.40)                              | .        |
       | geslachtsaanduiding (04.10)                        | V        |
@@ -76,11 +76,11 @@ Functionaliteit: Tg002 - Ouderlozen – Puntouder(s) - Geen ouders
       | geslachtsaanduiding (04.10)     | V             |
       | beschrijving document (82.30)   | geb.akte 6022 |
       | ingangsdatum geldigheid (85.10) | 0             |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde        |
       | beschrijving document (82.30)   | geb.akte 6022 |
       | ingangsdatum geldigheid (85.10) | 0             |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde        |
       | beschrijving document (82.30)   | geb.akte 6022 |
       | ingangsdatum geldigheid (85.10) | 0             |

@@ -20,7 +20,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Kornelia |
       | geslachtsnaam (02.40)                              | Kuijken  |
@@ -30,7 +30,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Karel    |
       | voorvoegsel (02.30)                                | van      |
@@ -54,7 +54,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20180920  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de partner 'Karla' is gewijzigd naar de volgende gegevens
+    En partner 'Karla' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000024 |
       | voornamen (02.10)                                             | Karla     |
@@ -82,7 +82,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0900   |
       | ingangsdatum geldigheid (85.10) | 20211030  |
-    En het kind 'Kira' is gewijzigd naar de volgende gegevens
+    En kind 'Kira' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Kyrolina  |
@@ -92,7 +92,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AM0900   |
       | ingangsdatum geldigheid (85.10) | 20220808  |
-    En het kind 'Kira' is gewijzigd naar de volgende gegevens
+    En kind 'Kira' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Kyrolina  |
@@ -112,7 +112,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0700   |
       | ingangsdatum geldigheid (85.10) | 20221205  |
-    En het kind 'Karo' is gewijzigd naar de volgende gegevens
+    En kind 'Karo' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Karo      |
@@ -122,7 +122,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0700   |
       | ingangsdatum geldigheid (85.10) | 20230120  |
-    En het kind 'Karo' is gewijzigd naar de volgende gegevens
+    En kind 'Karo' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Karolina  |
@@ -144,7 +144,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | geslachtsaanduiding (04.10)     | V         |
       | beschrijving document (82.30)   | PKA       |
       | ingangsdatum geldigheid (85.10) | 0         |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Koosje    |
       | geslachtsnaam (02.40)                              | Klootwijk |
@@ -154,7 +154,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Kees      |
       | geslachtsnaam (02.40)                              | Kruiswijk |
@@ -227,7 +227,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AC0900   |
       | ingangsdatum geldigheid (85.10) | 20230120  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Kim       |
@@ -239,11 +239,11 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | aktenummer (81.20)                                 | 1AA0900   |
       | ingangsdatum geldigheid (85.10)                    | 20211030  |
       | datum ingang familierechtelijke betrekking (62.10) | 20211030  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0900  |
       | ingangsdatum geldigheid (85.10) | 20211030 |
-    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
+    En ouder 2 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000048 |
       | voornamen (02.10)                                  | Kees      |
@@ -270,7 +270,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | geslachtsaanduiding (04.10)     | M        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Karin    |
       | geslachtsnaam (02.40)                              | Koetsier |
@@ -280,7 +280,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Koenraad |
       | geslachtsnaam (02.40)                              | Klapwijk |
@@ -314,7 +314,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0700   |
       | ingangsdatum geldigheid (85.10) | 20230120  |
-    En het kind 'Karo' is gewijzigd naar de volgende gegevens
+    En kind 'Karo' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Karolina  |
@@ -359,7 +359,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AM0700   |
       | ingangsdatum geldigheid (85.10) | 20230201  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Kim       |
@@ -371,11 +371,11 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | aktenummer (81.20)                                 | 1AA0700   |
       | ingangsdatum geldigheid (85.10)                    | 20221205  |
       | datum ingang familierechtelijke betrekking (62.10) | 20221205  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0700  |
       | ingangsdatum geldigheid (85.10) | 20221205 |
-    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
+    En ouder 2 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Kees     |
       | geslachtsnaam (02.40)                              | Klapwijk |
@@ -385,7 +385,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | aktenummer (81.20)                                 | 1AC0700  |
       | ingangsdatum geldigheid (85.10)                    | 20230120 |
       | datum ingang familierechtelijke betrekking (62.10) | 20230120 |
-    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
+    En ouder 2 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde          |
       | burgerservicenummer (01.20)                        | 000000048       |
       | voornamen (02.10)                                  | Kees            |

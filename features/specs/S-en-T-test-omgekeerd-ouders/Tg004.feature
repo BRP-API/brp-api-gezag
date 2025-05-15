@@ -29,11 +29,11 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | geslachtsaanduiding (04.10)     | V                              |
       | beschrijving document (82.30)   | Melding Minister van Financiën |
       | ingangsdatum geldigheid (85.10) | 20060410                       |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde           |
       | aktenummer (81.20)              | 1AA0100          |
       | ingangsdatum geldigheid (85.10) | morgen - 18 jaar |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde           |
       | voornamen (02.10)                                  | Carola           |
       | geslachtsnaam (02.40)                              | Custers          |
@@ -68,11 +68,11 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20210401 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20210401 |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde           |
       | burgerservicenummer (01.20)                        | 000000012        |
       | voornamen (02.10)                                  | Cindy            |
@@ -109,11 +109,11 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | geslachtsaanduiding (04.10)     | V                              |
       | beschrijving document (82.30)   | Melding Minister van Financiën |
       | ingangsdatum geldigheid (85.10) | 20020510                       |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20020501 |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Carola   |
       | geslachtsnaam (02.40)                              | Custers  |
@@ -148,11 +148,11 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20190501 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20190501 |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000036 |
       | voornamen (02.10)                                  | Carice    |

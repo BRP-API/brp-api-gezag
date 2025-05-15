@@ -20,7 +20,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | geslachtsaanduiding (04.10)     | M        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Anja      |
       | geslachtsnaam (02.40)                              | Adriaanse |
@@ -30,7 +30,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Anton    |
       | voorvoegsel (02.30)                                | van der  |
@@ -97,7 +97,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | geboorteland (03.30)            | 6030             |
       | aktenummer (81.20)              | 1AA0101          |
       | ingangsdatum geldigheid (85.10) | morgen - 18 jaar |
-    En het kind 'Annabel' is gewijzigd naar de volgende gegevens
+    En kind 'Annabel' is gewijzigd naar de volgende gegevens
       | naam                            | waarde                           |
       | burgerservicenummer (01.20)     | 000000036                        |
       | voornamen (02.10)               | Annabel                          |
@@ -119,7 +119,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Anna      |
       | geslachtsnaam (02.40)                              | Andriesen |
@@ -129,7 +129,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Allard   |
       | geslachtsnaam (02.40)                              | Abels    |
@@ -153,7 +153,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20001020  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de partner 'Arend' is gewijzigd naar de volgende gegevens
+    En partner 'Arend' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000012 |
       | voornamen (02.10)                                             | Arend     |
@@ -211,7 +211,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | geboorteland (03.30)            | 6030             |
       | aktenummer (81.20)              | 1AA0101          |
       | ingangsdatum geldigheid (85.10) | morgen - 18 jaar |
-    En het kind 'Annabel' is gewijzigd naar de volgende gegevens
+    En kind 'Annabel' is gewijzigd naar de volgende gegevens
       | naam                            | waarde                           |
       | burgerservicenummer (01.20)     | 000000036                        |
       | voornamen (02.10)               | Annabel                          |
@@ -245,7 +245,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | geslachtsaanduiding (04.10)     | V                                |
       | beschrijving document (82.30)   | Melding Ministerie van Financiën |
       | ingangsdatum geldigheid (85.10) | 20050308                         |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde           |
       | burgerservicenummer (01.20)                        | 000000024        |
       | voornamen (02.10)                                  | Astrid           |
@@ -256,7 +256,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | aktenummer (81.20)                                 | 1AA0101          |
       | ingangsdatum geldigheid (85.10)                    | morgen - 18 jaar |
       | datum ingang familierechtelijke betrekking (62.10) | morgen - 18 jaar |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde           |
       | burgerservicenummer (01.20)                        | 000000012        |
       | voornamen (02.10)                                  | Arend            |
@@ -285,7 +285,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0102  |
       | ingangsdatum geldigheid (85.10) | 20080116 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Astrid    |
@@ -296,7 +296,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | aktenummer (81.20)                                 | 1AA0102   |
       | ingangsdatum geldigheid (85.10)                    | 20080116  |
       | datum ingang familierechtelijke betrekking (62.10) | 20080116  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Arend     |
@@ -330,7 +330,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0103  |
       | ingangsdatum geldigheid (85.10) | 20111023 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Astrid    |
@@ -341,7 +341,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | aktenummer (81.20)                                 | 1AA0103   |
       | ingangsdatum geldigheid (85.10)                    | 20111023  |
       | datum ingang familierechtelijke betrekking (62.10) | 20111023  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Arend     |

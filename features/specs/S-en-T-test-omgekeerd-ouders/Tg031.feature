@@ -19,11 +19,11 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | geslachtsaanduiding (04.10)     | V            |
       | beschrijving document (82.30)   | PKA          |
       | ingangsdatum geldigheid (85.10) | 0            |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde |
       | beschrijving document (82.30)   | PK     |
       | ingangsdatum geldigheid (85.10) | 0      |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde       |
       | voornamen (02.10)                                  | Naatje       |
       | geslachtsnaam (02.40)                              | Nooitgedacht |
@@ -46,7 +46,7 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | geboorteland (03.30)            | 6030         |
       | aktenummer (81.20)              | 1AA0001      |
       | ingangsdatum geldigheid (85.10) | 20190101     |
-    En het kind 'Niels' is gewijzigd naar de volgende gegevens
+    En kind 'Niels' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Niels     |
@@ -56,7 +56,7 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0001   |
       | ingangsdatum geldigheid (85.10) | 20210101  |
-    En het kind 'Niels' is gecorrigeerd naar de volgende gegevens
+    En kind 'Niels' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde       |
       | burgerservicenummer (01.20)     | 000000048    |
       | voornamen (02.10)               | Niels        |
@@ -74,7 +74,7 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | geboorteland (03.30)            | 6030         |
       | aktenummer (81.20)              | 1AA0001      |
       | ingangsdatum geldigheid (85.10) | 20200101     |
-    En het kind 'Nicolas' is gewijzigd naar de volgende gegevens
+    En kind 'Nicolas' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Nicolas   |
@@ -97,11 +97,11 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | geslachtsaanduiding (04.10)     | M         |
       | beschrijving document (82.30)   | PKA       |
       | ingangsdatum geldigheid (85.10) | 0         |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde |
       | beschrijving document (82.30)   | PK     |
       | ingangsdatum geldigheid (85.10) | 0      |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Nola     |
       | voorvoegsel (02.30)                                | van      |
@@ -126,7 +126,7 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AC0001   |
       | ingangsdatum geldigheid (85.10) | 20210101  |
-    En het kind 'Niels' is gecorrigeerd naar de volgende gegevens
+    En kind 'Niels' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AN0001  |
       | ingangsdatum geldigheid (85.10) | 20210101 |
@@ -163,11 +163,11 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AQ0001   |
       | ingangsdatum geldigheid (85.10) | 20221101  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0001  |
       | ingangsdatum geldigheid (85.10) | 20200101 |
-    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
+    En ouder 1 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Nicodemus |
@@ -179,7 +179,7 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | aktenummer (81.20)                                 | 1AQ0001   |
       | ingangsdatum geldigheid (85.10)                    | 20221101  |
       | datum ingang familierechtelijke betrekking (62.10) | 20221101  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde       |
       | burgerservicenummer (01.20)                        | 000000012    |
       | voornamen (02.10)                                  | Nicolette    |
@@ -237,11 +237,11 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | geslachtsaanduiding (04.10)     | M            |
       | aktenummer (81.20)              | 1AN0001      |
       | ingangsdatum geldigheid (85.10) | 20210101     |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0001  |
       | ingangsdatum geldigheid (85.10) | 20190101 |
-    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
+    En ouder 1 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Nicodemus |
@@ -253,11 +253,11 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | aktenummer (81.20)                                 | 1AC0001   |
       | ingangsdatum geldigheid (85.10)                    | 20210101  |
       | datum ingang familierechtelijke betrekking (62.10) | 20200101  |
-    En ouder 1 'O1' is gecorrigeerd naar de volgende gegevens
+    En ouder 1 is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AN0001  |
       | ingangsdatum geldigheid (85.10) | 20210101 |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde       |
       | burgerservicenummer (01.20)                        | 000000012    |
       | voornamen (02.10)                                  | Nicolette    |

@@ -22,7 +22,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Herman   |
       | geslachtsnaam (02.40)                              | Harmsen  |
@@ -32,7 +32,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Hendrika |
       | geslachtsnaam (02.40)                              | Holwerda |
@@ -55,7 +55,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 19950601  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de partner 'Harald' is gewijzigd naar de volgende gegevens
+    En partner 'Harald' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000073 |
       | voornamen (02.10)                                             | Harald    |
@@ -83,7 +83,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20020701  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de partner 'Hendrik' is gewijzigd naar de volgende gegevens
+    En partner 'Hendrik' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000048 |
       | voornamen (02.10)                                             | Hendrik   |
@@ -124,7 +124,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 19910501 |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518     |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030     |
-    En de partner 'Hans' is gewijzigd naar de volgende gegevens
+    En partner 'Hans' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde   |
       | voornamen (02.10)                                             | Hans     |
       | geslachtsnaam (02.40)                                         | Hovink   |
@@ -137,7 +137,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | plaats ontbinding huwelijk/geregistreerd partnerschap (07.20) | 0518     |
       | land ontbinding huwelijk/geregistreerd partnerschap (07.30)   | 6030     |
       | reden ontbinding huwelijk/geregistreerd partnerschap (07.40)  | S        |
-    En de partner 'Hans' is gewijzigd naar de volgende gegevens
+    En partner 'Hans' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde          |
       | burgerservicenummer (01.20)                                   | 999998730       |
       | voornamen (02.10)                                             | Hans            |
@@ -171,7 +171,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | geboorteland (03.30)            | 6030     |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 19971201 |
-    En het kind 'Helena' is gewijzigd naar de volgende gegevens
+    En kind 'Helena' is gewijzigd naar de volgende gegevens
       | naam                            | waarde          |
       | burgerservicenummer (01.20)     | 999998857       |
       | voornamen (02.10)               | Helena          |
@@ -213,7 +213,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | geslachtsaanduiding (04.10)     | M          |
       | beschrijving document (82.30)   | PKA        |
       | ingangsdatum geldigheid (85.10) | 0          |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde     |
       | voornamen (02.10)                                  | Hadrianus  |
       | voorvoegsel (02.30)                                | van        |
@@ -224,7 +224,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | beschrijving document (82.30)                      | PK         |
       | ingangsdatum geldigheid (85.10)                    | 0          |
       | datum ingang familierechtelijke betrekking (62.10) | 0          |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Hildegard |
       | geslachtsnaam (02.40)                              | Heesters  |
@@ -274,7 +274,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | geslachtsaanduiding (04.10)     | V          |
       | aktenummer (81.20)              | 1AA0100    |
       | ingangsdatum geldigheid (85.10) | 20131201   |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000024  |
       | voornamen (02.10)                                  | Hessel     |
@@ -286,7 +286,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | aktenummer (81.20)                                 | 1AA0100    |
       | ingangsdatum geldigheid (85.10)                    | 20131201   |
       | datum ingang familierechtelijke betrekking (62.10) | 20131201   |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Hedwig    |
@@ -314,7 +314,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | geslachtsaanduiding (04.10)     | M        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Hero     |
       | voorvoegsel (02.30)                                | van      |
@@ -325,7 +325,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Henriette |
       | geslachtsnaam (02.40)                              | Hazelhoff |
@@ -348,7 +348,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20020701  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de partner 'Hedwig' is gewijzigd naar de volgende gegevens
+    En partner 'Hedwig' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000012 |
       | voornamen (02.10)                                             | Hedwig    |
@@ -396,7 +396,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20101201 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000048 |
       | voornamen (02.10)                                  | Hendrik   |
@@ -408,7 +408,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | aktenummer (81.20)                                 | 1AA0100   |
       | ingangsdatum geldigheid (85.10)                    | 20101201  |
       | datum ingang familierechtelijke betrekking (62.10) | 20101201  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Hedwig    |
@@ -442,7 +442,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | geslachtsaanduiding (04.10)     | M        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Helmut   |
       | geslachtsnaam (02.40)                              | Hansen   |
@@ -452,7 +452,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Hadewich  |
       | geslachtsnaam (02.40)                              | Heijliger |
@@ -475,7 +475,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 19950601  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de partner 'Hedwig' is gewijzigd naar de volgende gegevens
+    En partner 'Hedwig' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000012 |
       | voornamen (02.10)                                             | Hedwig    |
@@ -514,7 +514,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | geboorteland (03.30)            | 6030     |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 19971201 |
-    En het kind 'Helena' is gewijzigd naar de volgende gegevens
+    En kind 'Helena' is gewijzigd naar de volgende gegevens
       | naam                            | waarde          |
       | burgerservicenummer (01.20)     | 999998857       |
       | voornamen (02.10)               | Helena          |
@@ -544,13 +544,13 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | geslachtsaanduiding (04.10)     | V        |
       | beschrijving document (82.30)   | pas 6003 |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde |
       | geslachtsnaam (02.40)                              | .      |
       | beschrijving document (82.30)                      | .      |
@@ -593,7 +593,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20130501  |
-    En het kind 'Ioanna' is gewijzigd naar de volgende gegevens
+    En kind 'Ioanna' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Ioanna    |
@@ -624,11 +624,11 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AC0100   |
       | ingangsdatum geldigheid (85.10) | 20131001  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20130501 |
-    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
+    En ouder 1 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000073 |
       | voornamen (02.10)                                  | Harald    |
@@ -639,7 +639,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | aktenummer (81.20)                                 | 1AC0100   |
       | ingangsdatum geldigheid (85.10)                    | 20131001  |
       | datum ingang familierechtelijke betrekking (62.10) | 20131001  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000085 |
       | voornamen (02.10)                                  | Irini     |
@@ -666,11 +666,11 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | geslachtsaanduiding (04.10)     | M         |
       | beschrijving document (82.30)   | ga 6003   |
       | ingangsdatum geldigheid (85.10) | 0         |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde  |
       | beschrijving document (82.30)   | ga 6003 |
       | ingangsdatum geldigheid (85.10) | 0       |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000085 |
       | voornamen (02.10)                                  | Irini     |

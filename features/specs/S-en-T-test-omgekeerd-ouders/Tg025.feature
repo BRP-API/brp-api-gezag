@@ -22,7 +22,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | aanduiding in onderzoek (83.10) | 10300    |
       | datum ingang onderzoek (83.20)  | 20220825 |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Gerrit   |
       | voorvoegsel (02.30)                                | de       |
@@ -35,7 +35,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | datum ingang onderzoek (83.20)                     | 20220825 |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Geurtje  |
       | voorvoegsel (02.30)                                | van der  |
@@ -114,13 +114,13 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | geslachtsaanduiding (04.10)     | V          |
       | beschrijving document (82.30)   | PKA        |
       | ingangsdatum geldigheid (85.10) | 0          |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | beschrijving document (82.30)   | PK       |
       | aanduiding in onderzoek (83.10) | 20000    |
       | datum ingang onderzoek (83.20)  | 20220825 |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde     |
       | voornamen (02.10)                                  | Graciala   |
       | geslachtsnaam (02.40)                              | Goverwelle |
@@ -200,7 +200,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | aanduiding in onderzoek (83.10) | 10310    |
       | datum ingang onderzoek (83.20)  | 20220825 |
       | ingangsdatum geldigheid (85.10) | 20160607 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000024  |
       | voornamen (02.10)                                  | Grada      |
@@ -213,7 +213,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | datum ingang onderzoek (83.20)                     | 20220825   |
       | ingangsdatum geldigheid (85.10)                    | 20160607   |
       | datum ingang familierechtelijke betrekking (62.10) | 20160607   |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Govert    |
@@ -257,7 +257,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | aanduiding in onderzoek (83.10) | 10330    |
       | datum ingang onderzoek (83.20)  | 20220825 |
       | ingangsdatum geldigheid (85.10) | 20191205 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Govert    |
@@ -269,7 +269,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | beschrijving document (82.30)                      | ga 5010   |
       | ingangsdatum geldigheid (85.10)                    | 20191205  |
       | datum ingang familierechtelijke betrekking (62.10) | 20191205  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000024  |
       | voornamen (02.10)                                  | Grada      |
@@ -310,7 +310,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | aanduiding in onderzoek (83.10) | 18120    |
       | datum ingang onderzoek (83.20)  | 20220825 |
       | ingangsdatum geldigheid (85.10) | 20211012 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000024  |
       | voornamen (02.10)                                  | Grada      |
@@ -323,7 +323,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | datum ingang onderzoek (83.20)                     | 20220825   |
       | ingangsdatum geldigheid (85.10)                    | 20211012   |
       | datum ingang familierechtelijke betrekking (62.10) | 20211012   |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Govert    |

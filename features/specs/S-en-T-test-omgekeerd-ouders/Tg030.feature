@@ -31,7 +31,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | geslachtsaanduiding (04.10)     | V                              |
       | beschrijving document (82.30)   | Melding Minister van Financien |
       | ingangsdatum geldigheid (85.10) | 20040102                       |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Lars     |
       | voorvoegsel (02.30)                                | van      |
@@ -42,7 +42,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | aktenummer (81.20)                                 | 1AA0750  |
       | ingangsdatum geldigheid (85.10)                    | 20031224 |
       | datum ingang familierechtelijke betrekking (62.10) | 20031224 |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Lenie    |
       | voorvoegsel (02.30)                                | van      |
@@ -67,7 +67,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0601   |
       | ingangsdatum geldigheid (85.10) | 20220901  |
-    En het kind 'Laeticia' is gewijzigd naar de volgende gegevens
+    En kind 'Laeticia' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Laeticia  |
@@ -86,7 +86,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0600   |
       | ingangsdatum geldigheid (85.10) | 20220901  |
-    En het kind 'Larissa' is gewijzigd naar de volgende gegevens
+    En kind 'Larissa' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Larissa   |
@@ -107,7 +107,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | geslachtsaanduiding (04.10)     | M        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Leen     |
       | geslachtsnaam (02.40)                              | Luiten   |
@@ -117,7 +117,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Lucia    |
       | geslachtsnaam (02.40)                              | Liebeek  |
@@ -162,7 +162,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | geslachtsaanduiding (04.10)     | M                              |
       | beschrijving document (82.30)   | Melding Minister van Financien |
       | ingangsdatum geldigheid (85.10) | 20010301                       |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Lucas    |
       | geslachtsnaam (02.40)                              | Leijten  |
@@ -172,7 +172,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | aktenummer (81.20)                                 | 1AA0300  |
       | ingangsdatum geldigheid (85.10)                    | 20010225 |
       | datum ingang familierechtelijke betrekking (62.10) | 20010225 |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Liesbeth |
       | geslachtsnaam (02.40)                              | Lanen    |
@@ -218,11 +218,11 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AC0600   |
       | ingangsdatum geldigheid (85.10) | 20230131  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0600  |
       | ingangsdatum geldigheid (85.10) | 20220901 |
-    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
+    En ouder 1 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000036 |
       | voornamen (02.10)                                  | Leroy     |
@@ -233,7 +233,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | aktenummer (81.20)                                 | 1AC0600   |
       | ingangsdatum geldigheid (85.10)                    | 20230131  |
       | datum ingang familierechtelijke betrekking (62.10) | 20230131  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000012  |
       | voornamen (02.10)                                  | Laurentien |
@@ -277,11 +277,11 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AC0601   |
       | ingangsdatum geldigheid (85.10) | 20230125  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0601  |
       | ingangsdatum geldigheid (85.10) | 20220901 |
-    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
+    En ouder 1 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Louis     |
@@ -292,7 +292,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | aktenummer (81.20)                                 | 1AC0601   |
       | ingangsdatum geldigheid (85.10)                    | 20230125  |
       | datum ingang familierechtelijke betrekking (62.10) | 20230125  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000012  |
       | voornamen (02.10)                                  | Laurentien |

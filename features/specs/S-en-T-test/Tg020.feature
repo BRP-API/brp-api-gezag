@@ -19,7 +19,7 @@ Functionaliteit: Tg020 - Carolussen-Charbon
       | geslachtsaanduiding (04.10)     | M          |
       | beschrijving document (82.30)   | PKA        |
       | ingangsdatum geldigheid (85.10) | 0          |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Clivia   |
       | geslachtsnaam (02.40)                              | Clements |
@@ -29,7 +29,7 @@ Functionaliteit: Tg020 - Carolussen-Charbon
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde     |
       | voornamen (02.10)                                  | Cees       |
       | geslachtsnaam (02.40)                              | Carolussen |
@@ -77,7 +77,7 @@ Functionaliteit: Tg020 - Carolussen-Charbon
       | geslachtsaanduiding (04.10)     | V         |
       | beschrijving document (82.30)   | PKA       |
       | ingangsdatum geldigheid (85.10) | 0         |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde      |
       | voornamen (02.10)                                  | Caroline    |
       | geslachtsnaam (02.40)                              | Courvoisier |
@@ -87,7 +87,7 @@ Functionaliteit: Tg020 - Carolussen-Charbon
       | beschrijving document (82.30)                      | PK          |
       | ingangsdatum geldigheid (85.10)                    | 0           |
       | datum ingang familierechtelijke betrekking (62.10) | 0           |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Charles  |
       | geslachtsnaam (02.40)                              | Charbon  |
@@ -153,7 +153,7 @@ Functionaliteit: Tg020 - Carolussen-Charbon
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0101  |
       | ingangsdatum geldigheid (85.10) | 20110601 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Charlotte |
@@ -164,7 +164,7 @@ Functionaliteit: Tg020 - Carolussen-Charbon
       | aktenummer (81.20)                                 | 1AA0101   |
       | ingangsdatum geldigheid (85.10)                    | 20110601  |
       | datum ingang familierechtelijke betrekking (62.10) | 20110601  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0101  |
       | ingangsdatum geldigheid (85.10) | 20110601 |
@@ -184,11 +184,11 @@ Functionaliteit: Tg020 - Carolussen-Charbon
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0102  |
       | ingangsdatum geldigheid (85.10) | 20120801 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0102  |
       | ingangsdatum geldigheid (85.10) | 20120801 |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Charlotte |
@@ -215,7 +215,7 @@ Functionaliteit: Tg020 - Carolussen-Charbon
       | geslachtsaanduiding (04.10)     | M          |
       | aktenummer (81.20)              | 1AA0103    |
       | ingangsdatum geldigheid (85.10) | 20150901   |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Charlotte |
@@ -226,7 +226,7 @@ Functionaliteit: Tg020 - Carolussen-Charbon
       | aktenummer (81.20)                                 | 1AA0103   |
       | ingangsdatum geldigheid (85.10)                    | 20150901  |
       | datum ingang familierechtelijke betrekking (62.10) | 20150901  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde     |
       | burgerservicenummer (01.20)                        | 000000012  |
       | voornamen (02.10)                                  | Carel      |

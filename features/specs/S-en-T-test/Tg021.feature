@@ -19,7 +19,7 @@ Functionaliteit: Tg021 - Doornenbal-Doodewaard
       | geslachtsaanduiding (04.10)     | M          |
       | beschrijving document (82.30)   | PKA        |
       | ingangsdatum geldigheid (85.10) | 0          |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Daatje   |
       | voorvoegsel (02.30)                                | van      |
@@ -30,7 +30,7 @@ Functionaliteit: Tg021 - Doornenbal-Doodewaard
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde     |
       | voornamen (02.10)                                  | Diederick  |
       | geslachtsnaam (02.40)                              | Doornenbal |
@@ -54,7 +54,7 @@ Functionaliteit: Tg021 - Doornenbal-Doodewaard
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20021201   |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518       |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030       |
-    En de partner 'Delilah' is gewijzigd naar de volgende gegevens
+    En partner 'Delilah' is gewijzigd naar de volgende gegevens
       | naam                                                                | waarde           |
       | burgerservicenummer (01.20)                                         | 000000024        |
       | voornamen (02.10)                                                   | Delilah          |
@@ -85,7 +85,7 @@ Functionaliteit: Tg021 - Doornenbal-Doodewaard
       | geslachtsaanduiding (04.10)     | V          |
       | beschrijving document (82.30)   | PKA        |
       | ingangsdatum geldigheid (85.10) | 0          |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde     |
       | voornamen (02.10)                                  | Dina       |
       | geslachtsnaam (02.40)                              | Dusseldorf |
@@ -95,7 +95,7 @@ Functionaliteit: Tg021 - Doornenbal-Doodewaard
       | beschrijving document (82.30)                      | PK         |
       | ingangsdatum geldigheid (85.10)                    | 0          |
       | datum ingang familierechtelijke betrekking (62.10) | 0          |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde     |
       | voornamen (02.10)                                  | Dolf       |
       | voorvoegsel (02.30)                                | van        |
@@ -119,7 +119,7 @@ Functionaliteit: Tg021 - Doornenbal-Doodewaard
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20021201   |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518       |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030       |
-    En de partner 'Daniel' is gewijzigd naar de volgende gegevens
+    En partner 'Daniel' is gewijzigd naar de volgende gegevens
       | naam                                                                | waarde           |
       | burgerservicenummer (01.20)                                         | 000000012        |
       | voornamen (02.10)                                                   | Daniel           |
@@ -157,7 +157,7 @@ Functionaliteit: Tg021 - Doornenbal-Doodewaard
       | geslachtsaanduiding (04.10)     | M                |
       | aktenummer (81.20)              | 1AA0101          |
       | ingangsdatum geldigheid (85.10) | morgen - 18 jaar |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde           |
       | burgerservicenummer (01.20)                        | 000000024        |
       | voornamen (02.10)                                  | Daan             |
@@ -169,7 +169,7 @@ Functionaliteit: Tg021 - Doornenbal-Doodewaard
       | aktenummer (81.20)                                 | 1AA0101          |
       | ingangsdatum geldigheid (85.10)                    | morgen - 18 jaar |
       | datum ingang familierechtelijke betrekking (62.10) | morgen - 18 jaar |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde           |
       | aktenummer (81.20)              | 1AA0101          |
       | ingangsdatum geldigheid (85.10) | morgen - 18 jaar |

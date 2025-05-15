@@ -22,7 +22,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geslachtsaanduiding (04.10)     | V         |
       | beschrijving document (82.30)   | PKA       |
       | ingangsdatum geldigheid (85.10) | 0         |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Gerrit    |
       | geslachtsnaam (02.40)                              | Gerritsen |
@@ -32,7 +32,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Gerritje |
       | geslachtsnaam (02.40)                              | Gaastra  |
@@ -56,7 +56,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20120801  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de partner 'Govert' is gewijzigd naar de volgende gegevens
+    En partner 'Govert' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000024 |
       | voornamen (02.10)                                             | Govert    |
@@ -84,7 +84,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0200   |
       | ingangsdatum geldigheid (85.10) | 20100801  |
-    En het kind 'Gabriel' is gewijzigd naar de volgende gegevens
+    En kind 'Gabriel' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Gabriel   |
@@ -117,7 +117,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geslachtsaanduiding (04.10)     | M         |
       | beschrijving document (82.30)   | PKA       |
       | ingangsdatum geldigheid (85.10) | 0         |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Gijsbert  |
       | voorvoegsel (02.30)                                | van       |
@@ -128,7 +128,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Goverdina |
       | geslachtsnaam (02.40)                              | Guitema   |
@@ -151,7 +151,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20120801  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de partner 'Gea' is gewijzigd naar de volgende gegevens
+    En partner 'Gea' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000012 |
       | voornamen (02.10)                                             | Gea       |
@@ -178,7 +178,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0200   |
       | ingangsdatum geldigheid (85.10) | 20100801  |
-    En het kind 'Gabriel' is gewijzigd naar de volgende gegevens
+    En kind 'Gabriel' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Gabriel   |
@@ -221,11 +221,11 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AC0200   |
       | ingangsdatum geldigheid (85.10) | 20100901  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0200  |
       | ingangsdatum geldigheid (85.10) | 20100801 |
-    En ouder 1 'O1' is gewijzigd naar de volgende gegevens
+    En ouder 1 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Govert    |
@@ -237,7 +237,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | aktenummer (81.20)                                 | 1AC0200   |
       | ingangsdatum geldigheid (85.10)                    | 20100901  |
       | datum ingang familierechtelijke betrekking (62.10) | 20100901  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Gea       |
@@ -270,7 +270,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geslachtsaanduiding (04.10)     | M         |
       | aktenummer (81.20)              | 1AA0200   |
       | ingangsdatum geldigheid (85.10) | 20130801  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
       | voornamen (02.10)                                  | Govert    |
@@ -282,7 +282,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | aktenummer (81.20)                                 | 1AA0200   |
       | ingangsdatum geldigheid (85.10)                    | 20130801  |
       | datum ingang familierechtelijke betrekking (62.10) | 20130801  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
       | voornamen (02.10)                                  | Gea       |
@@ -309,7 +309,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geslachtsaanduiding (04.10)     | V         |
       | beschrijving document (82.30)   | PKA       |
       | ingangsdatum geldigheid (85.10) | 0         |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | voornamen (02.10)                                  | Gerrit    |
       | geslachtsnaam (02.40)                              | Gerritsen |
@@ -319,7 +319,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Gerritje |
       | geslachtsnaam (02.40)                              | Gaastra  |
@@ -343,7 +343,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20060801  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de partner 'Gert-Jan' is gewijzigd naar de volgende gegevens
+    En partner 'Gert-Jan' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000073 |
       | voornamen (02.10)                                             | Gert-Jan  |
@@ -371,7 +371,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20120801  |
-    En het kind 'Gigi' is gewijzigd naar de volgende gegevens
+    En kind 'Gigi' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Gigi      |
@@ -390,7 +390,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20130801  |
-    En het kind 'Gina' is gewijzigd naar de volgende gegevens
+    En kind 'Gina' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Gina      |
@@ -423,7 +423,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geslachtsaanduiding (04.10)     | M        |
       | beschrijving document (82.30)   | PKA      |
       | ingangsdatum geldigheid (85.10) | 0        |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Gaart    |
       | voorvoegsel (02.30)                                | van      |
@@ -434,7 +434,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde   |
       | voornamen (02.10)                                  | Grada    |
       | geslachtsnaam (02.40)                              | Goudsmit |
@@ -457,7 +457,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20060801  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de partner 'Gerda' is gewijzigd naar de volgende gegevens
+    En partner 'Gerda' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000061 |
       | voornamen (02.10)                                             | Gerda     |
@@ -484,7 +484,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20120801  |
-    En het kind 'Gigi' is gewijzigd naar de volgende gegevens
+    En kind 'Gigi' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000085 |
       | voornamen (02.10)               | Gigi      |
@@ -503,7 +503,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0100   |
       | ingangsdatum geldigheid (85.10) | 20130801  |
-    En het kind 'Gina' is gewijzigd naar de volgende gegevens
+    En kind 'Gina' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000097 |
       | voornamen (02.10)               | Gina      |
@@ -546,7 +546,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AB0100   |
       | ingangsdatum geldigheid (85.10) | 20120803  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000061 |
       | voornamen (02.10)                                  | Gerda     |
@@ -557,11 +557,11 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | aktenummer (81.20)                                 | 1AA0100   |
       | ingangsdatum geldigheid (85.10)                    | 20120801  |
       | datum ingang familierechtelijke betrekking (62.10) | 20120801  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20120801 |
-    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
+    En ouder 2 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000073 |
       | voornamen (02.10)                                  | Gert-Jan  |
@@ -600,7 +600,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geslachtsaanduiding (04.10)     | V         |
       | aktenummer (81.20)              | 1AB0100   |
       | ingangsdatum geldigheid (85.10) | 20130803  |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000061 |
       | voornamen (02.10)                                  | Gerda     |
@@ -611,11 +611,11 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | aktenummer (81.20)                                 | 1AA0100   |
       | ingangsdatum geldigheid (85.10)                    | 20130801  |
       | datum ingang familierechtelijke betrekking (62.10) | 20130801  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20130801 |
-    En ouder 2 'O2' is gewijzigd naar de volgende gegevens
+    En ouder 2 is gewijzigd naar de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000073 |
       | voornamen (02.10)                                  | Gert-Jan  |
@@ -649,7 +649,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0100  |
       | ingangsdatum geldigheid (85.10) | 20140801 |
-    En heeft een ouder 1 'O1' met de volgende gegevens
+    En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000073 |
       | voornamen (02.10)                                  | Gert-Jan  |
@@ -661,7 +661,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | aktenummer (81.20)                                 | 1AA0100   |
       | ingangsdatum geldigheid (85.10)                    | 20140801  |
       | datum ingang familierechtelijke betrekking (62.10) | 20140801  |
-    En heeft een ouder 2 'O2' met de volgende gegevens
+    En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000061 |
       | voornamen (02.10)                                  | Gerda     |

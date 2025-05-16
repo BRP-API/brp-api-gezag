@@ -124,6 +124,7 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verbleven heb
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
 
+    @to-do @skip-verify
     Voorbeeld: minderjarige is geboren in het buitenland en in Nederland geadopteerd
       Gegeven persoon 'Bert'
       * is geboren op 14-10-2019

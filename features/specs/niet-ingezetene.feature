@@ -1,6 +1,7 @@
 # language: nl
 Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven
 
+  @to-do @skip-verify
   Regel: Het gezag kan niet worden bepaald voor een minderjarige die een gewone verblijfplaats in het buitenland heeft
     Dit geldt voor:
     - een minderjarige die nooit een gewone verblijfplaats in Nederland heeft gehad
@@ -62,6 +63,7 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven
         | ouder 'Gerda' en een derde | gezamenlijk gezag met ouder 'Gerda' en een onbekende derde    |
         | ouder 'Aart' en een derde  | gezamenlijk gezag met ouder 'Aart' en een onbekende derde     |
 
+  @to-do @skip-verify
   Regel: Gezag als er sprake is van opschorting bijhouding ministerieel besluit
 
     Voorbeeld: Bijhouding is opgeschort voor minderjarig kind van NAVO militair

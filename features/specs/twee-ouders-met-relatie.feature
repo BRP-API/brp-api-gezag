@@ -11,6 +11,7 @@ Functionaliteit: Twee ouders met relatie
     En de persoon 'Aart' met burgerservicenummer '000000024'
     * is meerderjarig
     En de persoon 'Bert' met burgerservicenummer '000000036'
+    * is ingeschreven in de BRP
     * heeft 'Aart' en 'Gerda' als ouders
 
   Regel: Als de ouders na de geboorte van minderjarige een periode met elkaar gehuwd zijn (geweest) of partnerschap hebben (gehad), dan hebben de ouders gezamenlijk ouderlijk gezag

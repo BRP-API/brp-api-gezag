@@ -53,7 +53,7 @@ Gezag wordt bepaald door afleidingsregels in onderstaande volgorde toe te passen
 
 1. Wanneer minderjarige de vaste verblijfplaats in het buitenland heeft, is het gezag niet te bepalen. Lees de afleidingsregels voor [gezag bepalen voor minderjarigen die in het buitenland verblijven](niet-ingezetene.feature)
 2. Er wordt vastgesteld dat geen gezag is. Lees de afleidingsregels voor [geen gezag functionaliteit](geen-gezag.feature)
-3. Er is een gerechtelijke uitspraak over gezag, die kan worden herzien door adoptie, een reparatiehuwelijk of ontkenning. Lees de afleidnigsregels voor [gerechtelijke uitspraak](gerechtelijke-uitspraak-feature)
+3. Er is een gerechtelijke uitspraak over gezag, die kan worden herzien door adoptie, een reparatiehuwelijk of ontkenning. Lees de afleidingsregels voor [gerechtelijke uitspraak](gerechtelijke-uitspraak-feature)
 4. Gezag wordt bepaald van een minderjarige:
     - met twee ouders met een relatie met elkaar. Lees de afleidingsregels voor een [minderjarige met twee ouders met relatie](twee-ouders-met-relatie.feature)
     - met twee ouders zonder een relatie met elkaar. Lees de afleidingsregels voor een [minderjarige met twee ouders zonder relatie](twee-ouders-geen-relatie.feature)

@@ -42,44 +42,16 @@ Functionaliteit: 1.4 - is uitspraak gezag aanwezig
   Regel: Geen uitspraak gezag van toepassing
 
   Scenario: Voor het kind is geen uitspraak gezag aanwezig er is sprake van GezamenlijkOuderlijkGezag
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Babette'
+    Dan is het gezag over 'Babette' gezamenlijk ouderlijk gezag met ouder 'Rianne' en ouder 'Adriaan'
 
   Scenario: Voor het kind een uitspraak gedaan maar is geen indicatie betreft gezag er is sprake van GezamenlijkOuderlijkGezag
     Gegeven voor 'Babette' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
       | naam                               | waarde   |
       | indicatie curateleregister (33.10) | 1        |
       | ingangsdatum geldigheid (85.10)    | 20210701 |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Babette'
+    Dan is het gezag over 'Babette' gezamenlijk ouderlijk gezag met ouder 'Rianne' en ouder 'Adriaan'
 
 #    Scenario: Voor het kind een uitspraak gedaan maar de indicatie betreft gezag is nog niet ingegaan
 #    Niet ondersteund, issue voor deze functionaliteit: https://github.com/BRP-API/brp-api-gezag/issues/171
@@ -99,18 +71,8 @@ Functionaliteit: 1.4 - is uitspraak gezag aanwezig
       | ingangsdatum geldigheid (85.10)      | 20230101 |
       | aanduiding in onderzoek (83.10)      | 113210   |
       | datum ingang onderzoek (83.20)       | 20230101 |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
-      | inOnderzoek                      | true                     |
+    Als 'gezag' wordt gevraagd van 'Babette'
+    Dan is het gezag over 'Babette' eenhoofdig ouderlijk gezag met ouder 'Rianne'
 
   Scenario: Voor het kind een uitspraak gedaan, deze uitspraak stond in onderzoek er is sprake van EenhoofdigOuderlijkGezag
     Gegeven voor 'Babette' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
@@ -120,17 +82,8 @@ Functionaliteit: 1.4 - is uitspraak gezag aanwezig
       | aanduiding in onderzoek (83.10)      | 113210   |
       | datum ingang onderzoek (83.20)       | 20230101 |
       | datum einde onderzoek (83.30)        | 20231001 |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Babette'
+    Dan is het gezag over 'Babette' eenhoofdig ouderlijk gezag met ouder 'Rianne'
 
   Regel: Uitspraak gezag is aanwezig
 
@@ -139,14 +92,5 @@ Functionaliteit: 1.4 - is uitspraak gezag aanwezig
       | naam                                 | waarde   |
       | indicatie gezag minderjarige (32.10) | 2        |
       | ingangsdatum geldigheid (85.10)      | 20230101 |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000024                |      
+    Als 'gezag' wordt gevraagd van 'Babette'
+    Dan is het gezag over 'Babette' eenhoofdig ouderlijk gezag met ouder 'Adriaan'

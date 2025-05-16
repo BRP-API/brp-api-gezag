@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
 
 
@@ -443,12 +444,12 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
   Scenario: Lg01_017 - gehuwd, echtgenoot niet ingeschreven in Nederland, minderjarig kind geboren tijdens huwelijk
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Desiree'
-    Dan heeft 'Desiree' geen gezaghouder
+    Dan heeft 'Daryl' eenhoofdig ouderlijk gezag met ouder 'Desiree'
 
   Scenario: Lg01_018 - minderjarig kind, geboren tijdens huwelijk ouders, geen categorie 11, vader niet ingeschreven in BRP, kind Nederlandse nationaliteit + Beëindigde vreemde nationaliteit
     # Route: 45e
     Als 'gezag' wordt gevraagd van 'Daryl'
-    Dan is het gezag over 'Daryl' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd'
+    Dan heeft 'Daryl' eenhoofdig ouderlijk gezag met ouder 'Desiree'
 
   Scenario: Lg01_019 - gehuwd, 3 minderjarige kinderen geboren tijdens huwelijk ouders, echtgenoot en 2 kinderen geëmigreerd (RNI), 1 kind weer teruggekeerd (immigratie)
     # Meerderjarig

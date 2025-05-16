@@ -102,32 +102,14 @@ Functionaliteit: 4a.2 - Ouders overleden of onbevoegd tot gezag
   Scenario: Moeder is overleden er is sprake van EenhoofdigOuderlijkGezag voor de vader
     Gegeven persoon 'Trudy'
     * is overleden
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000024                |
+    Als 'gezag' wordt gevraagd van 'Lucas'
+    Dan is het gezag over 'Lucas' eenhoofdig ouderlijk gezag met ouder 'Kees'
 
   Scenario: Vader is overleden er is sprake van EenhoofdigOuderlijkGezag voor de moeder
     Gegeven persoon 'Kees'
     * is overleden
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Lucas'
+    Dan is het gezag over 'Lucas' eenhoofdig ouderlijk gezag met ouder 'Trudy'
 
   Regel: Beide ouders zijn overleden
 
@@ -136,17 +118,8 @@ Functionaliteit: 4a.2 - Ouders overleden of onbevoegd tot gezag
     * is overleden
     Gegeven persoon 'Kees'
     * is overleden
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                  |
-      | type                             | TijdelijkGeenGezag                                      |
-      | minderjarige.burgerservicenummer | 000000036                                               |
-      | toelichting                      | Tijdelijk geen gezag omdat beide ouders overleden zijn. |
+    Als 'gezag' wordt gevraagd van 'Lucas'
+    Dan is het gezag over 'Lucas' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat beide ouders overleden zijn.'
 
   Regel: Eén van de ouders is minderjarig
 
@@ -161,17 +134,8 @@ Functionaliteit: 4a.2 - Ouders overleden of onbevoegd tot gezag
     * is ingeschreven in de BRP
     * heeft 'Lieve' als ouder 1
     * is erkend door 'Wijnand' als ouder 2 met erkenning bij geboorteaangifte
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000048                |
-      | ouder.burgerservicenummer        | 000000073                |
+    Als 'gezag' wordt gevraagd van 'Lana'
+    Dan is het gezag over 'Lana' eenhoofdig ouderlijk gezag met ouder 'Wijnand'
 
   Scenario: Vader is minderjarig er is sprake van EenhoofdigOuderlijkGezag voor de moeder
     Gegeven de persoon 'Lieve' met burgerservicenummer '000000061'
@@ -184,17 +148,8 @@ Functionaliteit: 4a.2 - Ouders overleden of onbevoegd tot gezag
     * is ingeschreven in de BRP
     * heeft 'Lieve' als ouder 1
     * is erkend door 'Wijnand' als ouder 2 met erkenning bij geboorteaangifte
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000048                |
-      | ouder.burgerservicenummer        | 000000061                |
+    Als 'gezag' wordt gevraagd van 'Lana'
+    Dan is het gezag over 'Lana' eenhoofdig ouderlijk gezag met ouder 'Lieve'
 
   Regel: Beide ouders zijn minderjarig
 
@@ -209,64 +164,28 @@ Functionaliteit: 4a.2 - Ouders overleden of onbevoegd tot gezag
     * is ingeschreven in de BRP
     * heeft 'Lieve' als ouder 1
     * is erkend door 'Wijnand' als ouder 2 met erkenning bij geboorteaangifte
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                    |
-      | type                             | TijdelijkGeenGezag                                        |
-      | minderjarige.burgerservicenummer | 000000048                                                 |
-      | toelichting                      | Tijdelijk geen gezag omdat beide ouders minderjarig zijn. |
+    Als 'gezag' wordt gevraagd van 'Lana'
+    Dan is het gezag over 'Lana' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat beide ouders minderjarig zijn.'
 
   Regel: Eén van de ouders staat onder curatele
 
   Scenario: Moeder staat onder curatele er is sprake van EenhoofdigOuderlijkGezag voor de vader
     Gegeven 'Trudy' staat onder curatele
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000024                |
+    Als 'gezag' wordt gevraagd van 'Lucas'
+    Dan is het gezag over 'Lucas' eenhoofdig ouderlijk gezag met ouder 'Kees'
 
   Scenario: Vader staat onder curatele er is sprake van EenhoofdigOuderlijkGezag voor de moeder
     Gegeven 'Kees' staat onder curatele
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Lucas'
+    Dan is het gezag over 'Lucas' eenhoofdig ouderlijk gezag met ouder 'Trudy'
 
   Regel: Beide van de ouders zijn onder curatele gesteld
 
   Scenario: Moeder en vader zijn onder curatele gesteld er is sprake van TijdelijkGeenGezag
     Gegeven 'Trudy' staat onder curatele
     En 'Kees' staat onder curatele
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                        |
-      | type                             | TijdelijkGeenGezag                                            |
-      | minderjarige.burgerservicenummer | 000000036                                                     |
-      | toelichting                      | Tijdelijk geen gezag omdat beide ouders onder curatele staan. |
+    Als 'gezag' wordt gevraagd van 'Lucas'
+    Dan is het gezag over 'Lucas' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat beide ouders onder curatele staan.'
 
   Regel: Eén van de ouders is als minderjarige overleden
 
@@ -282,17 +201,8 @@ Functionaliteit: 4a.2 - Ouders overleden of onbevoegd tot gezag
     * is ingeschreven in de BRP
     * heeft 'Lieve' als ouder 1
     * is erkend door 'Wijnand' als ouder 2 met erkenning bij geboorteaangifte
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000048                |
-      | ouder.burgerservicenummer        | 000000073                |
+    Als 'gezag' wordt gevraagd van 'Lana'
+    Dan is het gezag over 'Lana' eenhoofdig ouderlijk gezag met ouder 'Wijnand'
 
   Scenario: Vader is minderjarig en overleden er is sprake van EenhoofdigOuderlijkGezag voor de moeder
     Gegeven de persoon 'Lieve' met burgerservicenummer '000000061'
@@ -306,17 +216,8 @@ Functionaliteit: 4a.2 - Ouders overleden of onbevoegd tot gezag
     * is ingeschreven in de BRP
     * heeft 'Lieve' als ouder 1
     * is erkend door 'Wijnand' als ouder 2 met erkenning bij geboorteaangifte
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000048                |
-      | ouder.burgerservicenummer        | 000000061                |
+    Als 'gezag' wordt gevraagd van 'Lana'
+    Dan is het gezag over 'Lana' eenhoofdig ouderlijk gezag met ouder 'Lieve'
 
   Regel: Beide ouders zijn als minderjarige overleden
 
@@ -333,17 +234,8 @@ Functionaliteit: 4a.2 - Ouders overleden of onbevoegd tot gezag
     * is ingeschreven in de BRP
     * heeft 'Lieve' als ouder 1
     * is erkend door 'Wijnand' als ouder 2 met erkenning bij geboorteaangifte
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                  |
-      | type                             | TijdelijkGeenGezag                                      |
-      | minderjarige.burgerservicenummer | 000000048                                               |
-      | toelichting                      | Tijdelijk geen gezag omdat beide ouders overleden zijn. |
+    Als 'gezag' wordt gevraagd van 'Lana'
+    Dan is het gezag over 'Lana' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat beide ouders overleden zijn.'
 
   Regel: Eén van de ouders staat onder curatele en overleden
 
@@ -351,33 +243,15 @@ Functionaliteit: 4a.2 - Ouders overleden of onbevoegd tot gezag
     Gegeven persoon 'Trudy'
     * staat onder curatele
     * is overleden
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000024                |
+    Als 'gezag' wordt gevraagd van 'Lucas'
+    Dan is het gezag over 'Lucas' eenhoofdig ouderlijk gezag met ouder 'Kees'
 
   Scenario: Vader staat onder curatele en overleden er is sprake van EenhoofdigOuderlijkGezag voor de moeder
     Gegeven persoon 'Kees'
     * staat onder curatele
     * is overleden
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Lucas'
+    Dan is het gezag over 'Lucas' eenhoofdig ouderlijk gezag met ouder 'Trudy'
 
   Regel: Beide ouders zijn onder curatele gesteld en overleden
 
@@ -388,17 +262,8 @@ Functionaliteit: 4a.2 - Ouders overleden of onbevoegd tot gezag
     Gegeven persoon 'Kees'
     * staat onder curatele
     * is overleden
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                  |
-      | type                             | TijdelijkGeenGezag                                      |
-      | minderjarige.burgerservicenummer | 000000036                                               |
-      | toelichting                      | Tijdelijk geen gezag omdat beide ouders overleden zijn. |
+    Als 'gezag' wordt gevraagd van 'Lucas'
+    Dan is het gezag over 'Lucas' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat beide ouders overleden zijn.'
 
   Regel: Eén van de ouders staat onder curatele, overleden en minderjarig
 
@@ -415,17 +280,8 @@ Functionaliteit: 4a.2 - Ouders overleden of onbevoegd tot gezag
     * is ingeschreven in de BRP
     * heeft 'Lieve' als ouder 1
     * is erkend door 'Wijnand' als ouder 2 met erkenning bij geboorteaangifte
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000048                |
-      | ouder.burgerservicenummer        | 000000073                |
+    Als 'gezag' wordt gevraagd van 'Lana'
+    Dan is het gezag over 'Lana' eenhoofdig ouderlijk gezag met ouder 'Wijnand'
 
   Scenario: Vader is minderjarig, overleden en onder curatele er is sprake van EenhoofdigOuderlijkGezag voor de moeder
     Gegeven de persoon 'Lieve' met burgerservicenummer '000000061'
@@ -440,17 +296,8 @@ Functionaliteit: 4a.2 - Ouders overleden of onbevoegd tot gezag
     * is ingeschreven in de BRP
     * heeft 'Lieve' als ouder 1
     * is erkend door 'Wijnand' als ouder 2 met erkenning bij geboorteaangifte
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000048                |
-      | ouder.burgerservicenummer        | 000000061                |
+    Als 'gezag' wordt gevraagd van 'Lana'
+    Dan is het gezag over 'Lana' eenhoofdig ouderlijk gezag met ouder 'Lieve'
 
   Regel: Beide ouders zijn onder curatele gesteld, overleden en minderjarig
 
@@ -469,14 +316,5 @@ Functionaliteit: 4a.2 - Ouders overleden of onbevoegd tot gezag
     * is ingeschreven in de BRP
     * heeft 'Lieve' als ouder 1
     * is erkend door 'Wijnand' als ouder 2 met erkenning bij geboorteaangifte
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                  |
-      | type                             | TijdelijkGeenGezag                                      |
-      | minderjarige.burgerservicenummer | 000000048                                               |
-      | toelichting                      | Tijdelijk geen gezag omdat beide ouders overleden zijn. |
+    Als 'gezag' wordt gevraagd van 'Lana'
+    Dan is het gezag over 'Lana' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat beide ouders overleden zijn.'

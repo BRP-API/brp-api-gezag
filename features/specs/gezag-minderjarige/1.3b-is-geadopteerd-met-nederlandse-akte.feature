@@ -33,51 +33,19 @@ Functionaliteit: 1.3b - is geadopteerd met nederlandse akte
 
   Scenario: Het kind is geadopteerd door één ouder als ouder 1 er is sprake van EenhoofdigOuderlijkGezag
     Gegeven 'Carlo' is geadopteerd door 'Fabia' als ouder 1
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Carlo'
+    Dan is het gezag over 'Carlo' eenhoofdig ouderlijk gezag met ouder 'Fabia'
 
   Scenario: Het kind is geadopteerd door één ouder als ouder 2 er is sprake van EenhoofdigOuderlijkGezag
     Gegeven 'Carlo' is geadopteerd door 'Mohammed' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000024                |
+    Als 'gezag' wordt gevraagd van 'Carlo'
+    Dan is het gezag over 'Carlo' eenhoofdig ouderlijk gezag met ouder 'Mohammed'
 
   Scenario: Het kind is geadopteerd door twee ouders er is sprake van GezamenlijkOuderlijkGezag
     Gegeven 'Carlo' is geadopteerd door 'Fabia' als ouder 1
     En 'Carlo' is geadopteerd door 'Mohammed' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Carlo'
+    Dan is het gezag over 'Carlo' gezamenlijk ouderlijk gezag met ouder 'Fabia' en ouder 'Mohammed'
 
   Scenario: Het kind is geadopteerd door één ouder, de adoptie is als historisch gegeven opgenomen er is sprake van EenhoofdigOuderlijkGezag
     Gegeven 'Carlo' is geadopteerd door 'Fabia' als ouder 1
@@ -85,17 +53,8 @@ Functionaliteit: 1.3b - is geadopteerd met nederlandse akte
     * zijn de volgende gegevens gewijzigd
       | naam               | waarde |
       | aktenummer (81.20) |        |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Carlo'
+    Dan is het gezag over 'Carlo' eenhoofdig ouderlijk gezag met ouder 'Fabia'
 
   Scenario: Het kind is geadopteerd door twee ouders, de adoptie is als historisch gegeven opgenomen er is sprake van GezamenlijkOuderlijkGezag
     Gegeven 'Carlo' is geadopteerd door 'Fabia' als ouder 1
@@ -104,56 +63,19 @@ Functionaliteit: 1.3b - is geadopteerd met nederlandse akte
     * zijn de volgende gegevens gewijzigd
       | naam               | waarde |
       | aktenummer (81.20) |        |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Carlo'
+    Dan is het gezag over 'Carlo' gezamenlijk ouderlijk gezag met ouder 'Fabia' en ouder 'Mohammed'
 
   Scenario: Het kind is geëmigreerd geweest en geadopteerd door twee ouders er is sprake van GezamenlijkOuderlijkGezag
     Gegeven 'Carlo' is geadopteerd door 'Fabia' als ouder 1
     En 'Carlo' is geadopteerd door 'Mohammed' als ouder 2
     En persoon 'Carlo'
     * is geëmigreerd geweest
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Carlo'
+    Dan is het gezag over 'Carlo' gezamenlijk ouderlijk gezag met ouder 'Fabia' en ouder 'Mohammed'
 
   Regel: Kind is niet geadopteerd met nederlandse akte
 
   Scenario: Het kind niet geadopteerd er is sprake van GezagNietTeBepalen
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                         |
-      | type                             | GezagNietTeBepalen                                                             |
-      | minderjarige.burgerservicenummer | 000000036                                                                      |
-      | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren. |
+    Als 'gezag' wordt gevraagd van 'Carlo'
+    Dan is het gezag over 'Carlo' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren.'

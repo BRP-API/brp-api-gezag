@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg020 - Carolussen-Charbon
 
 

@@ -36,51 +36,19 @@ Functionaliteit: 1.3a - is geboren in het buitenland
     Gegeven persoon 'Nona'
     * is in het buitenland geboren
     * is niet in Nederland geadopteerd
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                         |
-      | type                             | GezagNietTeBepalen                                                             |
-      | minderjarige.burgerservicenummer | 000000036                                                                      |
-      | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren. |
+    Als 'gezag' wordt gevraagd van 'Nona'
+    Dan is het gezag over 'Nona' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren.'
 
   Scenario: Een in Nederland geboren kind met twee ouders heeft tweehoofdig ouder gezag
     Gegeven persoon 'Nona'
     * is in Nederland geboren
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Nona'
+    Dan is het gezag over 'Nona' gezamenlijk ouderlijk gezag met ouder 'Regina' en ouder 'Paul'
 
   Scenario: Van een kind met onbekend geboorteland kan het gezag niet worden bepaald
     Gegeven persoon 'Nona'
     * heeft de volgende gegevens
       | geboorteland (03.30) |
       |                      |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                                                                                                                                                          |
-      | type                             | GezagNietTeBepalen                                                                                                                                                                                              |
-      | minderjarige.burgerservicenummer | 000000036                                                                                                                                                                                                       |
-      | toelichting                      | Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen of de persoon naar het buitenland geëmigreerd is geweest. Het gaat om de volgende gegevens: Geboorteland van bevraagde persoon |
+    Als 'gezag' wordt gevraagd van 'Nona'
+    Dan is het gezag over 'Nona' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen of de persoon naar het buitenland geëmigreerd is geweest. Het gaat om de volgende gegevens: Geboorteland van bevraagde persoon'

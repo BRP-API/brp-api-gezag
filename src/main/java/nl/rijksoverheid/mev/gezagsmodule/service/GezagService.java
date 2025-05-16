@@ -11,8 +11,8 @@ import nl.rijksoverheid.mev.gezagsmodule.domain.gezagvraag.GezagsBepaling;
 import nl.rijksoverheid.mev.gezagsmodule.domain.gezagvraag.GezagsVragenMapFactory;
 import nl.rijksoverheid.mev.logging.GezagResultaat;
 import nl.rijksoverheid.mev.logging.LoggingContext;
-import org.openapitools.model.AbstractGezagsrelatie;
-import org.openapitools.model.GezagNietTeBepalen;
+import nl.rijksoverheid.mev.web.api.v2.Gezagsrelatie;
+import nl.rijksoverheid.mev.web.api.v2.GezagNietTeBepalen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -47,9 +47,9 @@ public class GezagService {
      *                                   bepaling voor plaats vind
      * @return lijst gezagsrelaties of lijst gezagsrelatie 'N'
      */
-    public List<AbstractGezagsrelatie> getGezag(final Set<String> burgerservicenummers,
+    public List<Gezagsrelatie> getGezag(final Set<String> burgerservicenummers,
                                                 final String burgerservicenummerPersoon) {
-        List<AbstractGezagsrelatie> gezagsRelaties = new ArrayList<>();
+        List<Gezagsrelatie> gezagsRelaties = new ArrayList<>();
         for (String burgerservicenummer : burgerservicenummers) {
             try {
                 gezagsRelaties.addAll(
@@ -74,10 +74,10 @@ public class GezagService {
      * @return gezagsafleidingsresultaat
      * @throws AfleidingsregelException wanneer gezag niet kan worden bepaald
      */
-    public List<AbstractGezagsrelatie> getGezagResultaat(final String burgerservicenummer,
+    public List<Gezagsrelatie> getGezagResultaat(final String burgerservicenummer,
                                                          final String burgerservicenummerPersoon) throws GezagException {
         ARAntwoordenModel arAntwoordenModel = new ARAntwoordenModel();
-        List<AbstractGezagsrelatie> gezagsRelaties = new ArrayList<>();
+        List<Gezagsrelatie> gezagsRelaties = new ArrayList<>();
         String route = null;
         Optional<Persoonslijst> plPersoon = Optional.empty();
         GezagsBepaling gezagsBepaling = null;

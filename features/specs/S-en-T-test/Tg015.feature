@@ -47,7 +47,7 @@ Functionaliteit: Tg015 - Oei
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Olinka' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000024 |
       | voornamen (02.10)               | Olinka    |

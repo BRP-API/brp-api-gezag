@@ -39,7 +39,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Nout' met de volgende gegevens
       | naam                                                                | waarde           |
       | burgerservicenummer (01.20)                                         | 000000024        |
       | voornamen (02.10)                                                   | Nout             |
@@ -66,7 +66,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Naomi' met de volgende gegevens
       | naam                            | waarde     |
       | burgerservicenummer (01.20)     | 000000036  |
       | voornamen (02.10)               | Naomi      |
@@ -107,7 +107,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Nicolien' met de volgende gegevens
       | naam                                                                | waarde     |
       | burgerservicenummer (01.20)                                         | 000000012  |
       | voornamen (02.10)                                                   | Nicolien   |
@@ -120,7 +120,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20120901   |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518       |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030       |
-    En de partner is gewijzigd naar de volgende gegevens
+    En partner 'Nicolien' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde     |
       | burgerservicenummer (01.20)                                   | 000000012  |
       | voornamen (02.10)                                             | Nicolien   |
@@ -138,7 +138,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Noralie' met de volgende gegevens
       | naam                            | waarde     |
       | burgerservicenummer (01.20)     | 000000073  |
       | voornamen (02.10)               | Noralie    |
@@ -210,7 +210,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Nienke' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000061 |
       | voornamen (02.10)                                                   | Nienke    |
@@ -227,7 +227,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Noralie' met de volgende gegevens
       | naam                            | waarde     |
       | burgerservicenummer (01.20)     | 000000073  |
       | voornamen (02.10)               | Noralie    |
@@ -268,7 +268,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Norah' met de volgende gegevens
       | naam                                                                | waarde     |
       | burgerservicenummer (01.20)                                         | 000000048  |
       | voornamen (02.10)                                                   | Norah      |

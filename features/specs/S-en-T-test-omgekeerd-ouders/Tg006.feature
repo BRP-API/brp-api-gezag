@@ -40,7 +40,7 @@ Functionaliteit: Tg006 - Elbertsen-Eizenga
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 19801001 |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Evert' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Evert     |
@@ -53,7 +53,7 @@ Functionaliteit: Tg006 - Elbertsen-Eizenga
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20060601  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En de partner is gewijzigd naar de volgende gegevens
+    En partner 'Evert' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000024 |
       | voornamen (02.10)                                             | Evert     |
@@ -71,7 +71,7 @@ Functionaliteit: Tg006 - Elbertsen-Eizenga
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Emilia' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Emilia    |
@@ -80,7 +80,7 @@ Functionaliteit: Tg006 - Elbertsen-Eizenga
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0150   |
       | ingangsdatum geldigheid (85.10) | 20111001  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Eline' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Eline     |
@@ -121,7 +121,7 @@ Functionaliteit: Tg006 - Elbertsen-Eizenga
       | beschrijving document (82.30)                      | PK         |
       | ingangsdatum geldigheid (85.10)                    | 0          |
       | datum ingang familierechtelijke betrekking (62.10) | 19781001   |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Erica' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Erica     |
@@ -148,7 +148,7 @@ Functionaliteit: Tg006 - Elbertsen-Eizenga
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Emilia' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Emilia    |
@@ -157,7 +157,7 @@ Functionaliteit: Tg006 - Elbertsen-Eizenga
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0150   |
       | ingangsdatum geldigheid (85.10) | 20111001  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Eline' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Eline     |

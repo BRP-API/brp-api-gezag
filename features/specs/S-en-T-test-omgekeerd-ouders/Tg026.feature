@@ -83,7 +83,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Harry' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | Harry     |
@@ -92,7 +92,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0110   |
       | ingangsdatum geldigheid (85.10) | 20230110  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Harm' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Harm      |
@@ -101,7 +101,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AB0111   |
       | ingangsdatum geldigheid (85.10) | 20231119  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Harold' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Harold    |
@@ -146,7 +146,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Harry' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000073 |
       | voornamen (02.10)               | Harry     |
@@ -155,7 +155,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0110   |
       | ingangsdatum geldigheid (85.10) | 20230110  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Harm' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Harm      |
@@ -164,7 +164,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0111   |
       | ingangsdatum geldigheid (85.10) | 20231118  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En kind 'Harm' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Harm      |
@@ -173,7 +173,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AB0111   |
       | ingangsdatum geldigheid (85.10) | 20231119  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Harold' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Harold    |
@@ -182,7 +182,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0112   |
       | ingangsdatum geldigheid (85.10) | 20231118  |
-    En het kind is gewijzigd naar de volgende gegevens
+    En kind 'Harold' is gewijzigd naar de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Harold    |
@@ -203,7 +203,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0112  |
       | ingangsdatum geldigheid (85.10) | 20231118 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Harold    |
@@ -255,7 +255,7 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | geslachtsaanduiding (04.10)     | M        |
       | aktenummer (81.20)              | 1AA0111  |
       | ingangsdatum geldigheid (85.10) | 20231118 |
-    En persoon is gewijzigd naar de volgende gegevens
+    En zijn de volgende gegevens gewijzigd
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Harm      |

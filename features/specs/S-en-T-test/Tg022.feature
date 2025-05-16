@@ -31,7 +31,7 @@ Functionaliteit: Tg022 - Barakat-Idilbi - Ouders met een onvolledige huwelijksda
       | beschrijving document (82.30)                      | voe    |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Maryana' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Maryana   |
@@ -50,7 +50,7 @@ Functionaliteit: Tg022 - Barakat-Idilbi - Ouders met een onvolledige huwelijksda
       | land vanwaar ingeschreven (14.10)    | 7009     |
       | datum vestiging in Nederland (14.20) | 20131201 |
       | ingangsdatum geldigheid (85.10)      | 20131201 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Salim' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Salim     |
@@ -83,7 +83,7 @@ Functionaliteit: Tg022 - Barakat-Idilbi - Ouders met een onvolledige huwelijksda
       | beschrijving document (82.30)                      | voe    |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En heeft een partner met de volgende gegevens
+    En heeft een partner 'Saadallah' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Saadallah |
@@ -102,7 +102,7 @@ Functionaliteit: Tg022 - Barakat-Idilbi - Ouders met een onvolledige huwelijksda
       | land vanwaar ingeschreven (14.10)    | 7009     |
       | datum vestiging in Nederland (14.20) | 20131201 |
       | ingangsdatum geldigheid (85.10)      | 20131201 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Salim' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Salim     |

@@ -39,7 +39,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | land vanwaar ingeschreven (14.10)    | 7009     |
       | datum vestiging in Nederland (14.20) | 20090101 |
       | ingangsdatum geldigheid (85.10)      | 20111101 |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Thaliya' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000061 |
       | voornamen (02.10)               | Thaliya   |
@@ -48,7 +48,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0153   |
       | ingangsdatum geldigheid (85.10) | 20100316  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Tamineh' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000048 |
       | voornamen (02.10)               | Tamineh   |
@@ -57,7 +57,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0152   |
       | ingangsdatum geldigheid (85.10) | 20100316  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Tayeh' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000036 |
       | voornamen (02.10)               | Tayeh     |
@@ -66,7 +66,7 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0151   |
       | ingangsdatum geldigheid (85.10) | 20100316  |
-    En heeft een kind met de volgende gegevens
+    En heeft een kind 'Thurayya' met de volgende gegevens
       | naam                            | waarde    |
       | burgerservicenummer (01.20)     | 000000024 |
       | voornamen (02.10)               | Thurayya  |

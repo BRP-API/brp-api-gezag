@@ -107,7 +107,7 @@ val customVersion = "$nonSnapshotVersion-$timestamp"
 
 tasks.withType<BootBuildImage> {
     builder.set("paketobuildpacks/builder-jammy-buildpackless-tiny")
-    buildpacks.add("gcr.io/paketo-buildpacks/java")
+    buildpacks.add("docker.io/paketobuildpacks/java")
 
     imageName.set("ghcr.io/brp-api/${project.name}:latest")
     tags.set(listOf(

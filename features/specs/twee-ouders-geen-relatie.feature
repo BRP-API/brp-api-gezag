@@ -60,7 +60,6 @@ Functionaliteit: Twee ouders geen relatie
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
 
-    @to-do @skip-verify
     Voorbeeld: Ouders waren met elkaar gehuwd en zijn voor geboorte van de minderjarige gescheiden
       Gegeven 'Gerda' en 'Aart' zijn gehuwd op 1-6-2015
       En 'Gerda' en 'Aart' zijn op 1-7-2020 gescheiden

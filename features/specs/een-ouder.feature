@@ -22,6 +22,8 @@ Functionaliteit: Eén ouder
     * is minderjarig
     * is ingeschreven in de BRP
     * heeft 'Gerda' als ouder
+    En de persoon 'Ernie' met burgerservicenummer '000000061'
+    * is ingeschreven in de BRP
 
   Regel: Als de minderjarige niet tijdens een huwelijk of partnerschap van de juridische ouder geboren is, dan heeft de ouder eenhoofdig ouderlijk gezag
 
@@ -74,31 +76,33 @@ Functionaliteit: Eén ouder
 
     @to-do @skip-verify
     Voorbeeld: adoptieouder was niet gehuwd op geboortedatum van de minderjarige maar wel gehuwd ten tijde van de adoptiedatum
-      Gegeven 'Gerda' en 'Aart' zijn 6 jaar geleden gehuwd en 2 jaar geleden gescheiden
-      En persoon 'Bert'
+      Gegeven 'Gerda' en 'Aart' zijn 6 jaar geleden gehuwd
+      En persoon 'Ernie'
       * is 7 jaar geleden als vondeling geboren
-      En 'Bert' is 5 jaar geleden geadopteerd door 'Gerda'
-      Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en derde 'Aart'
+      En 'Ernie' is 5 jaar geleden geadopteerd door 'Gerda'
+      Als 'gezag' wordt gevraagd van 'Ernie'
+      Dan is het gezag over 'Ernie' gezamenlijk gezag met ouder 'Gerda' en derde 'Aart'
 
     @to-do @skip-verify
     Voorbeeld: adoptieouder was gehuwd op geboortedatum van de minderjarige maar niet gehuwd ten tijde van de adoptiedatum
-      Gegeven 'Gerda' en 'Aart' zijn 6 jaar geleden gehuwd en 2 jaar geleden gescheiden
-      En persoon 'Bert'
+      Gegeven 'Gerda' en 'Aart' zijn 6 jaar geleden gehuwd
+      En 'Gerda' en 'Aart' zijn 2 jaar geleden gescheiden
+      En persoon 'Ernie'
       * is 3 jaar geleden als vondeling geboren
-      En 'Bert' is 1 jaar geleden geadopteerd door 'Gerda'
-      Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+      En 'Ernie' is 1 jaar geleden geadopteerd door 'Gerda'
+      Als 'gezag' wordt gevraagd van 'Ernie'
+      Dan is het gezag over 'Ernie' eenhoofdig ouderlijk gezag met ouder 'Gerda'
 
   Regel: Als de minderjarige tijdens het huwelijk of partnerschap van de juridische ouder geboren is en er sprake is van ontkenning vaderschap, dan heeft de ouder eenhoofdig ouderlijk gezag
 
-    @to-do @skip-verify
     Voorbeeld: Minderjarige heeft ouder die gehuwd is en de partner heeft het vaderschap ontkend
       Gegeven 'Gerda' en 'Aart' zijn 7 jaar geleden gehuwd
-      En 'Bert' is 1 jaar geleden geboren
-      En 'Aart' heeft ontkend vader te zijn van 'Bert'
-      Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+      En persoon 'Ernie'
+      * is 1 jaar geleden geboren
+      En heeft 'Gerda' en 'Aart' als ouders
+      En 'Aart' heeft ontkend vader te zijn van 'Ernie'
+      Als 'gezag' wordt gevraagd van 'Ernie'
+      Dan is het gezag over 'Ernie' eenhoofdig ouderlijk gezag met ouder 'Gerda'
 
   Regel: De partner behoudt gezag ook na nietigverklaring van het huwelijk
     De nietigverklaring heeft terugwerkende kracht tot het tijdstip van de huwelijkssluiting of het aangaan van het geregistreerde partnerschap.

@@ -4,14 +4,8 @@
 package nl.rijksoverheid.mev.brp.brpv.generated;
 
 
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.Lo3Pl;
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.Lo3PlGezagsverhouding;
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.Lo3PlPersoon;
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.Lo3PlVerblijfplaats;
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.Lo3PlGezagsverhoudingRecord;
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.Lo3PlPersoonRecord;
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.Lo3PlRecord;
-import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.Lo3PlVerblijfplaatsRecord;
+import nl.rijksoverheid.mev.brp.brpv.generated.tables.*;
+import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.*;
 import org.jooq.TableField;
 import org.jooq.UniqueKey;
 import org.jooq.impl.DSL;
@@ -33,4 +27,5 @@ public class Keys {
     public static final UniqueKey<Lo3PlGezagsverhoudingRecord> LO3_PL_GEZAGSVERHOUDING_PK = Internal.createUniqueKey(Lo3PlGezagsverhouding.LO3_PL_GEZAGSVERHOUDING, DSL.name("lo3_pl_gezagsverhouding_pk"), new TableField[] { Lo3PlGezagsverhouding.LO3_PL_GEZAGSVERHOUDING.PL_ID, Lo3PlGezagsverhouding.LO3_PL_GEZAGSVERHOUDING.VOLG_NR }, true);
     public static final UniqueKey<Lo3PlPersoonRecord> LO3_PL_PERSOON_PK = Internal.createUniqueKey(Lo3PlPersoon.LO3_PL_PERSOON, DSL.name("lo3_pl_persoon_pk"), new TableField[] { Lo3PlPersoon.LO3_PL_PERSOON.PL_ID, Lo3PlPersoon.LO3_PL_PERSOON.PERSOON_TYPE, Lo3PlPersoon.LO3_PL_PERSOON.STAPEL_NR, Lo3PlPersoon.LO3_PL_PERSOON.VOLG_NR }, true);
     public static final UniqueKey<Lo3PlVerblijfplaatsRecord> LO3_PL_VERBLIJFPLAATS_PK = Internal.createUniqueKey(Lo3PlVerblijfplaats.LO3_PL_VERBLIJFPLAATS, DSL.name("lo3_pl_verblijfplaats_pk"), new TableField[] { Lo3PlVerblijfplaats.LO3_PL_VERBLIJFPLAATS.PL_ID, Lo3PlVerblijfplaats.LO3_PL_VERBLIJFPLAATS.VOLG_NR }, true);
+    public static final UniqueKey<Lo3TitelPredicaatRecord> LO3_TITEL_PREDICAAT_PK = Internal.createUniqueKey(Lo3TitelPredicaat.LO3_TITEL_PREDICAAT, DSL.name("lo3_titel_predicaat_pk"), new TableField[] { Lo3TitelPredicaat.LO3_TITEL_PREDICAAT.TITEL_PREDICAAT }, true);
 }

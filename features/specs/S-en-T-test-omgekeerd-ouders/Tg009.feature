@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
 
 

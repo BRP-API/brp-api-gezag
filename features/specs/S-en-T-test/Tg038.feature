@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 erkend  en 1 geadopteerd kind, moeder overleden
 
 

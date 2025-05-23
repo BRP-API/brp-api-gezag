@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
 
 

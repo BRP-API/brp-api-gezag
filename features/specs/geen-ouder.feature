@@ -12,13 +12,6 @@ Functionaliteit: Geen ouder
   Regel: Als er geen of alleen onbekende ouders zijn, dan is er tijdelijk geen gezag
 
     @to-do @skip-verify
-    Voorbeeld: De ouders zijn onbekend
-      Gegeven persoon 'Bert'
-      * is met onbekende ouders ingeschreven
-      Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat beide ouders onbekend zijn'
-
-    @to-do @skip-verify
     Voorbeeld: Er is een onbekende ouder
       Gegeven persoon 'Bert'
       * is 1 jaar geleden als vondeling geboren

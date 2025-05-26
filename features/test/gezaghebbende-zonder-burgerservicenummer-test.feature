@@ -86,7 +86,7 @@ Functionaliteit: het gezag kan worden bepaald voor een minderjarige waarvan een 
       Als 'gezag' wordt gevraagd van 'Minderjarige'
       Dan is het gezag over 'Minderjarige' gezamenlijk ouderlijk gezag met ouder 'Moeder' en ouder 'Adoptievader'
 
-    Voorbeeld: twee ouders en in gerechtelijke uitspraak is het gezag toegewezen aan beide ouders
+    Voorbeeld: twee ouders en in gerechtelijke uitspraak is het gezag toegewezen aan <gerechtelijke uitspraak>
       Gegeven de persoon 'Moeder' met burgerservicenummer '000000012'
       * is meerderjarig
       * is een vrouw

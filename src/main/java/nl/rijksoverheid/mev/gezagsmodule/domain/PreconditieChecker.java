@@ -3,16 +3,12 @@ package nl.rijksoverheid.mev.gezagsmodule.domain;
 import nl.rijksoverheid.mev.exception.AfleidingsregelException;
 import nl.rijksoverheid.mev.exception.GezagException;
 import nl.rijksoverheid.mev.gezagsmodule.domain.gezagvraag.GezagsBepaling;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
 
 /**
  * Controleerd of aan verschillende precondities is voldaan
  */
 public class PreconditieChecker {
-
-    private static final Logger logger = LoggerFactory.getLogger(PreconditieChecker.class);
 
     private PreconditieChecker() {}
 

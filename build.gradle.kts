@@ -160,6 +160,9 @@ openApiGenerate {
 }
 
 tasks.register<GenerateTask>("openApiGenerate2") {
+    description = "Generates the Spring Boot implementation of an OpenAPI Specification"
+    group = "build"
+
     generatorName = "spring"
     inputSpec = "${projectDir}/src/main/resources/brp-api-gezag-2.0.yaml"
     outputDir = "${buildDir}/generate-resources/openapi/v2"

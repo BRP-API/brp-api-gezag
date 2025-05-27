@@ -4,20 +4,19 @@ Functionaliteit: Twee ouders geen relatie
 
   Achtergrond:
     Gegeven de meerderjarige vrouw 'Gerda'
-    En de meerderjarige man 'Aart'
+    En de meerderjarige man 'Bert'
     En de meerderjarige vrouw 'Ariana'
 
   Regel: Als de minderjarige is geadopteerd door één of beide ouders dan hebben de ouders samen gezamenlijk ouderlijk gezag
 
     Voorbeeld: Minderjarige is geadopteerd door beide ouders
-      Gegeven de minderjarige inwoner 'Bert'
+      Gegeven de minderjarige persoon 'Bert' geboren in het buitenland met niet-ingezeten ouders 'Tommie' en 'Zoe'
       En 'Bert' is geadopteerd door 'Gerda' en 'Aart'
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
 
     Voorbeeld: Minderjarige is geadopteerd door de stiefouder
-      Gegeven de minderjarige inwoner 'Bert'
-      * heeft 'Gerda' als ouder
+      Gegeven de minderjarige persoon 'Bert' met één ouder 'Gerda'
       En 'Bert' is geadopteerd door 'Aart'
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
@@ -25,14 +24,12 @@ Functionaliteit: Twee ouders geen relatie
   Regel: Als de minderjarige is erkend na 1 januari 2023 dan hebben de ouders samen gezamenlijk ouderlijk gezag
 
     Voorbeeld: Minderjarige is als ongeboren vrucht erkend na 1 januari 2023
-      Gegeven de gisteren geboren inwoner 'Bert'
-      * heeft 'Aart' en 'Gerda' als ouders vanaf de geboortedatum
+      Gegeven de 1 jaar geleden geboren persoon 'Bert' met twee ouders 'Aart' en 'Gerda' die ten tijde van de geboorte van de minderjarige niet met elkaar gehuwd waren
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
 
     Voorbeeld: Minderjarige is erkend na 1 januari 2023
-      Gegeven de op 29-12-2022 geboren inwoner 'Bert'
-      * heeft 'Gerda' als ouder vanaf de geboortedatum
+      Gegeven de op 29-12-2022 geboren persoon 'Bert' met één ouder 'Gerda'
       En 'Bert' is erkend door 'Aart' op 3-1-2023
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
@@ -40,36 +37,31 @@ Functionaliteit: Twee ouders geen relatie
   Regel: Als de ouders na de geboorte van minderjarige niet met elkaar gehuwd zijn (geweest) en geen partnerschap hebben (gehad) en de minderjarige is erkend voor 1 januari 2023 dan heeft de geboortemoeder eenhoofdig ouderlijk gezag
 
     Voorbeeld: Ouders zijn nooit met elkaar gehuwd geweest en minderjarige is erkend voor 1 januari 2023
-      Gegeven de op 29-12-2022 geboren inwoner 'Bert'
-      * heeft 'Gerda' als ouder vanaf de geboortedatum
+      Gegeven de op 29-12-2022 geboren persoon 'Bert' met één ouder 'Gerda'
       En 'Bert' is erkend door 'Aart' op 30-12-2022
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
 
     Voorbeeld: Minderjarige is als ongeboren vrucht erkend voor 1 januari 2023
-      Gegeven de op 30-11-2022 geboren inwoner 'Bert'
-      * heeft 'Aart' en 'Gerda' als ouders vanaf de geboortedatum
+      Gegeven de op 30-11-2022 geboren persoon 'Bert' met twee ouders 'Gerda' en 'Aart' die ten tijde van de geboorte van de minderjarige niet met elkaar gehuwd waren
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
 
     Voorbeeld: Ouders waren met elkaar gehuwd en zijn voor geboorte van de minderjarige gescheiden
       Gegeven 'Gerda' en 'Aart' zijn gehuwd op 1-6-2015
       En 'Gerda' en 'Aart' zijn op 1-7-2020 gescheiden
-      En de op 30-11-2022 geboren inwoner 'Bert'
-      * heeft 'Aart' en 'Gerda' als ouders vanaf de geboortedatum
+      En de op 30-11-2022 geboren persoon 'Bert' met twee ouders 'Gerda' en 'Aart' die ten tijde van de geboorte van de minderjarige niet met elkaar gehuwd waren
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
 
     Voorbeeld: Minderjarige is geboren voor 1 januari 2023 en is als ongeboren vrucht erkend door andere ouder
-      Gegeven de op 30-11-2022 geboren inwoner 'Bert'
-      * heeft 'Ariana' en 'Gerda' als ouders vanaf de geboortedatum
+      Gegeven de op 30-11-2022 geboren persoon 'Bert' met twee ouders 'Ariana' en 'Gerda' die ten tijde van de geboorte van de minderjarige niet met elkaar gehuwd waren
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is.'
 
     Voorbeeld: Minderjarige is geboren voor 1 januari 2023 in een huwelijk van twee vrouwen en is als ongeboren vrucht erkend door de bekende donor
       Gegeven 'Gerda' en 'Ariana' zijn gehuwd op 1-6-2019
-      En de op 30-11-2022 geboren inwoner 'Bert'
-      * heeft 'Aart' en 'Gerda' als ouders vanaf de geboortedatum
+      En de op 30-11-2022 geboren persoon 'Bert' met twee ouders 'Gerda' en 'Aart' die ten tijde van de geboorte van de minderjarige niet met elkaar gehuwd waren
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
 
@@ -99,16 +91,14 @@ Functionaliteit: Twee ouders geen relatie
 
     Voorbeeld: Minderjarige is na 1 januari 2023 en bij geboorteaangifte erkend door de bekende donor en moeder is gehuwd met een vrouw
       Gegeven 'Gerda' en 'Ariana' zijn 2 jaar geleden gehuwd
-      En de 1 jaar geleden geboren inwoner 'Bert'
-      * heeft 'Gerda' als ouder vanaf de geboortedatum
+      En de 1 jaar geleden geboren persoon 'Bert' met één ouder 'Gerda'
       En 'Bert' is erkend door 'Aart' bij geboorteaangifte
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en ouder 'Ariana'
 
     Voorbeeld: Minderjarige is na 1 januari 2023 en na geboorte erkend door bekende donor en moeder is gehuwd met een vrouw
       Gegeven 'Gerda' en 'Ariana' zijn gehuwd op 28-9-2022
-      En de op 4-1-2023 geboren inwoner 'Bert'
-      * heeft 'Gerda' als ouder vanaf de geboortedatum
+      En de op 4-1-2023 geboren persoon 'Bert' met één ouder 'Gerda'
       En 'Bert' is erkend door 'Aart' na geboorteaangifte op 3-2-2023
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en derde 'Ariana'
@@ -117,8 +107,7 @@ Functionaliteit: Twee ouders geen relatie
 
     Voorbeeld: Minderjarige is na 1 januari 2023 en na de geboorte erkend door de vrouwelijke partner van de moeder (meemoeder)
       Gegeven 'Gerda' en 'Ariana' zijn gehuwd op 28-9-2022
-      En de op 4-1-2023 geboren inwoner 'Bert'
-      * heeft 'Gerda' als ouder vanaf de geboortedatum
+      En de op 4-1-2023 geboren persoon 'Bert' met één ouder 'Gerda'
       En 'Bert' is erkend door 'Ariana' na geboorteaangifte op 3-2-2023
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Ariana'

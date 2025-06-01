@@ -69,6 +69,7 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die nooit
       * is meerderjarig
       En de minderjarige persoon 'minderjarige' met twee ouders 'moeder' en 'erkenner' die ten tijde van de geboorte van de minderjarige niet met elkaar gehuwd waren
       * is geboren op 10-02-2023
+      En 'minderjarige' is erkend door 'erkenner' als ongeboren vrucht op 09-02-2023
       En 'moeder' en 'partner' zijn een geregistreerd partnerschap aangegaan op 28-09-2006
       Als 'gezag' wordt gevraagd van 'minderjarige'
       Dan is het gezag over 'minderjarige' gezamenlijk ouderlijk gezag met ouder 'moeder' en ouder 'erkenner'

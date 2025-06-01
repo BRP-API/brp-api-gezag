@@ -68,6 +68,7 @@ Functionaliteit: het gezag kan worden bepaald voor een minderjarige waarvan een 
       * is op 14-10-2022 geboren
       * is ingeschreven in een Nederlandse gemeente
       * heeft 'Moeder' en 'Vader' als ouders
+      En 'Minderjarige' is erkend door 'Vader' na geboorteaangifte op 14-01-2023
       Als 'gezag' wordt gevraagd van 'Minderjarige'
       Dan is het gezag over 'Minderjarige' gezamenlijk ouderlijk gezag met ouder 'Moeder' en ouder 'Vader'
 

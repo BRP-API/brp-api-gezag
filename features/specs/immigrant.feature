@@ -186,3 +186,10 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verbleven heb
       En de 10 jaar geleden geboren persoon 'Bert' met één ouder 'Gerda'
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en derde 'Ariana' met de toelichting 'gezag is bepaald op basis van onvolledige gegevens van Ariana. Feiten die bepalend zijn voor het gezag van Ariana kunnen betrokkenen in het gezagsregister dan wel bij je woongemeente laten inschrijven, zodat zij worden meegenomen in de gezagsbepaling van minderjarige.'
+
+    @to-do @skip-verify
+    Voorbeeld: Minderjarige heeft ouder die gehuwd is en de ouder is overleden en de partner is niet ingeschreven in de BRP
+      Gegeven de minderjarige persoon 'Bert' met één ouder 'Gerda' die gehuwd is met 'Ariana'
+      En 'Gerda' is overleden
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' voogdij met derde 'Ariana' met de toelichting 'gezag is bepaald op basis van onvolledige gegevens van Ariana. Feiten die bepalend zijn voor het gezag van Ariana kunnen betrokkenen in het gezagsregister dan wel bij je woongemeente laten inschrijven, zodat zij worden meegenomen in de gezagsbepaling van minderjarige.'

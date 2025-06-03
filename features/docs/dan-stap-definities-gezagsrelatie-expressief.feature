@@ -7,11 +7,11 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
     Gegeven de persoon 'Gerda' met burgerservicenummer '000000012'
     En de persoon 'Aart' met burgerservicenummer '000000024'
     En de persoon 'Bert' heeft de volgende gegevens
-      | burgerservicenummer (01.20) | geslachtsnaam (02.40) | geboortedatum (03.10) | geslachtsaanduiding (04.10) |
-      |                   000000036 | Jansen                | gisteren - 2 jaar     | M                           |
+      | burgerservicenummer (01.20) | geslachtsnaam (02.40) | geboortedatum (03.10) |
+      |                   000000036 | Jansen                | gisteren - 2 jaar     |
     En de persoon 'Jeanette' heeft de volgende gegevens
-      | voornamen (02.10) | geslachtsnaam (02.40) | geslachtsaanduiding (04.10) |
-      | Jeanette          | Sanders               | V                           |
+      | voornamen (02.10) | geslachtsnaam (02.40) |
+      | Jeanette          | Sanders               |
 
   Regel: Dan is het gezag over '{aanduiding minderjarige}' gezamenlijk ouderlijk gezag met ouder '{aanduiding ouder}' en ouder '{aanduiding ouder}'
     De volgorde waarin ouders genoemd worden is willekeurig en niet relevant
@@ -73,9 +73,6 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
                     "naam": {
                       "geslachtsnaam": "Jansen"
                     },
-                    "geslacht": {
-                      "code": "M"
-                    },
                     "geboorte": {
                       "datum": "20221201"
                     }
@@ -120,9 +117,6 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
                     "burgerservicenummer": "000000036",
                     "naam": {
                       "geslachtsnaam": "Jansen"
-                    },
-                    "geslacht": {
-                      "code": "M"
                     },
                     "geboorte": {
                       "datum": "20221201"
@@ -237,9 +231,6 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
                     "naam": {
                       "geslachtsnaam": "Jansen"
                     },
-                    "geslacht": {
-                      "code": "M"
-                    },
                     "geboorte": {
                       "datum": "20221201"
                     }
@@ -255,9 +246,6 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
                       "naam": {
                         "voornamen": "Jeanette",
                         "geslachtsnaam": "Sanders"
-                      },
-                      "geslacht": {
-                        "code": "V"
                       }
                     }
                   ]
@@ -288,9 +276,6 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
                     "naam": {
                       "geslachtsnaam": "Jansen"
                     },
-                    "geslacht": {
-                      "code": "M"
-                    },
                     "geboorte": {
                       "datum": "20221201"
                     }
@@ -306,9 +291,6 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
                       "naam": {
                         "voornamen": "Jeanette",
                         "geslachtsnaam": "Sanders"
-                      },
-                      "geslacht": {
-                        "code": "V"
                       }
                     }
                   ]
@@ -606,95 +588,16 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         """
       Dan heeft 'Bert' geen gezaghouder
 
-  Regel: Dan heeft '{aanduidingMeerderjarige}' de volgende gezagsrelaties En het gezag over '{aanduidingMinderjarige}' is ...
-    Dat kan de minderjarige zijn, maar ook een ouder of derde.
+  Regel: De response kan meerdere gezagsrelaties bevatten
 
     @deprecated @gezag-api
-    Scenario: het gezag van de <omschrijving> met gezamenlijk ouderlijk gezag wordt gevraagd
+    Scenario: meerdere gezagsrelaties van één persoon
       Gegeven de response body is gelijk aan
         """
         {
           "personen": [
             {
-              "burgerservicenummer": "<burgerservicenummer>",
-              "gezag": [
-                {
-                  "type": "TweehoofdigOuderlijkGezag",
-                  "minderjarige": {
-                    "burgerservicenummer": "000000036"
-                  },
-                  "ouders": [
-                    {
-                      "burgerservicenummer": "000000012"
-                    },
-                    {
-                      "burgerservicenummer": "000000024"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-        """
-      Dan heeft '<naam>' de volgende gezagsrelaties
-      * het gezag over 'Bert' is gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
-
-      Voorbeelden:
-        | naam  | burgerservicenummer | omschrijving |
-        | Gerda |           000000012 | ouder 1      |
-        | Aart  |           000000024 | ouder 2      |
-        | Bert  |           000000036 | minderjarige |
-
-    @deprecated @gezag-api
-    Scenario: het gezag van de <omschrijving> met gezamenlijk gezag wordt gevraagd
-      Gegeven de response body is gelijk aan
-        """
-        {
-          "personen": [
-            {
-              "burgerservicenummer": "<burgerservicenummer>",
-              "gezag": [
-                {
-                  "type": "GezamenlijkGezag",
-                  "minderjarige": {
-                    "burgerservicenummer": "000000036"
-                  },
-                  "ouder": {
-                    "burgerservicenummer": "000000012"
-                  },
-                  "derde": {
-                    "type": "BekendeDerde",
-                    "burgerservicenummer": "000000024"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-        """
-      Dan heeft '<naam>' de volgende gezagsrelaties
-      * het gezag over 'Bert' is gezamenlijk gezag met ouder 'Gerda' en derde 'Aart'
-
-      Voorbeelden:
-        | naam  | burgerservicenummer | omschrijving |
-        | Gerda |           000000012 | ouder        |
-        | Aart  |           000000024 | derde        |
-        | Bert  |           000000036 | minderjarige |
-
-    @deprecated @gezag-api
-    Abstract Scenario: meerdere gezagsrelaties van één persoon
-      Gegeven de persoon 'Ernie' met burgerservicenummer '000000048'
-      En de persoon 'Ieniemienie' met burgerservicenummer '000000061'
-      En de persoon 'Pino' met burgerservicenummer '000000073'
-      En de persoon 'Tommy' met burgerservicenummer '000000085'
-      En de persoon 'Kermit' met burgerservicenummer '000000097'
-      Gegeven de response body is gelijk aan
-        """
-        {
-          "personen": [
-            {
-              "burgerservicenummer": "<burgerservicenummer>",
+              "burgerservicenummer": "000000036",
               "gezag": [
                 {
                   "type": "TweehoofdigOuderlijkGezag",
@@ -713,7 +616,7 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
                 {
                   "type": "EenhoofdigOuderlijkGezag",
                   "minderjarige": {
-                    "burgerservicenummer": "000000048"
+                    "burgerservicenummer": "000000036"
                   },
                   "ouder": {
                     "burgerservicenummer": "000000012"
@@ -722,7 +625,7 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
                 {
                   "type": "GezamenlijkGezag",
                   "minderjarige": {
-                    "burgerservicenummer": "000000061"
+                    "burgerservicenummer": "000000036"
                   },
                   "ouder": {
                     "burgerservicenummer": "000000012"
@@ -735,7 +638,7 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
                 {
                   "type": "GezamenlijkGezag",
                   "minderjarige": {
-                    "burgerservicenummer": "000000073"
+                    "burgerservicenummer": "000000036"
                   },
                   "ouder": {
                     "burgerservicenummer": "000000012"
@@ -747,14 +650,14 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
                 {
                   "type": "Voogdij",
                   "minderjarige": {
-                    "burgerservicenummer": "000000085"
+                    "burgerservicenummer": "000000036"
                   },
                   "derden": []
                 },
                 {
                   "type": "Voogdij",
                   "minderjarige": {
-                    "burgerservicenummer": "000000097"
+                    "burgerservicenummer": "000000036"
                   },
                   "derden": [
                     {
@@ -768,36 +671,15 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
           ]
         }
         """
-      Dan heeft '<naam>' de volgende gezagsrelaties
-      * het gezag over 'Bert' is gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
-      * het gezag over 'Ernie' is eenhoofdig ouderlijk gezag met ouder 'Gerda'
-      * het gezag over 'Ieniemienie' is gezamenlijk gezag met ouder 'Gerda' en derde 'Aart'
-      * het gezag over 'Pino' is gezamenlijk gezag met ouder 'Gerda' en een onbekende derde
-      * het gezag over 'Tommy' is voogdij
-      * het gezag over 'Kermit' is voogdij met derde 'Aart'
-
-      Voorbeelden:
-        | naam  | burgerservicenummer |
-        | Gerda |           000000012 |
-        | Aart  |           000000024 |
+      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
+      En is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+      En is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en derde 'Aart'
+      En is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en een onbekende derde
+      En is het gezag over 'Bert' voogdij
+      En is het gezag over 'Bert' voogdij met derde 'Aart'
 
     @info-api
-    Abstract Scenario: meerdere gezagsrelaties van één persoon
-      Gegeven de persoon 'Ernie' heeft de volgende gegevens
-        | burgerservicenummer (01.20) | geslachtsnaam (02.40) | geboortedatum (03.10) |
-        |                   000000048 | Ernie                 | gisteren - 3 jaar     |
-      En de persoon 'Ieniemienie' heeft de volgende gegevens
-        | burgerservicenummer (01.20) | geslachtsnaam (02.40) | geboortedatum (03.10) |
-        |                   000000061 | Ieniemienie           | gisteren - 4 jaar     |
-      En de persoon 'Pino' heeft de volgende gegevens
-        | burgerservicenummer (01.20) | geslachtsnaam (02.40) | geboortedatum (03.10) |
-        |                   000000073 | Pino                  | gisteren - 5 jaar     |
-      En de persoon 'Tommy' heeft de volgende gegevens
-        | burgerservicenummer (01.20) | geslachtsnaam (02.40) | geboortedatum (03.10) |
-        |                   000000085 | Tommy                 | gisteren - 6 jaar     |
-      En de persoon 'Kermit' heeft de volgende gegevens
-        | burgerservicenummer (01.20) | geslachtsnaam (02.40) | geboortedatum (03.10) |
-        |                   000000097 | Kermit                | gisteren - 7 jaar     |
+    Scenario: meerdere gezagsrelaties van één persoon
       Gegeven de response body is gelijk aan
         """
         {
@@ -831,11 +713,11 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
                 {
                   "type": "EenhoofdigOuderlijkGezag",
                   "minderjarige": {
-                    "burgerservicenummer": "000000048",
+                    "burgerservicenummer": "000000036",
                     "naam": {
-                      "volledigeNaam": "Ernie"
+                      "volledigeNaam": "Jansen"
                     },
-                    "leeftijd": 3
+                    "leeftijd": 2
                   },
                   "ouder": {
                     "burgerservicenummer": "000000012",
@@ -847,11 +729,11 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
                 {
                   "type": "GezamenlijkGezag",
                   "minderjarige": {
-                    "burgerservicenummer": "000000061",
+                    "burgerservicenummer": "000000036",
                     "naam": {
-                      "volledigeNaam": "Ieniemienie"
+                      "volledigeNaam": "Jansen"
                     },
-                    "leeftijd": 4
+                    "leeftijd": 2
                   },
                   "ouder": {
                     "burgerservicenummer": "000000012",
@@ -870,11 +752,11 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
                 {
                   "type": "GezamenlijkGezag",
                   "minderjarige": {
-                    "burgerservicenummer": "000000073",
+                    "burgerservicenummer": "000000036",
                     "naam": {
-                      "volledigeNaam": "Pino"
+                      "volledigeNaam": "Jansen"
                     },
-                    "leeftijd": 5
+                    "leeftijd": 2
                   },
                   "ouder": {
                     "burgerservicenummer": "000000012",
@@ -889,22 +771,22 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
                 {
                   "type": "Voogdij",
                   "minderjarige": {
-                    "burgerservicenummer": "000000085",
+                    "burgerservicenummer": "000000036",
                     "naam": {
-                      "volledigeNaam": "Tommy"
+                      "volledigeNaam": "Jansen"
                     },
-                    "leeftijd": 6
+                    "leeftijd": 2
                   },
                   "derden": []
                 },
                 {
                   "type": "Voogdij",
                   "minderjarige": {
-                    "burgerservicenummer": "000000097",
+                    "burgerservicenummer": "000000036",
                     "naam": {
-                      "volledigeNaam": "Kermit"
+                      "volledigeNaam": "Jansen"
                     },
-                    "leeftijd": 7
+                    "leeftijd": 2
                   },
                   "derden": [
                     {
@@ -921,18 +803,12 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
           ]
         }
         """
-      Dan heeft '<naam>' de volgende gezagsrelaties
-      * het gezag over 'Bert' is gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
-      * het gezag over 'Ernie' is eenhoofdig ouderlijk gezag met ouder 'Gerda'
-      * het gezag over 'Ieniemienie' is gezamenlijk gezag met ouder 'Gerda' en derde 'Aart'
-      * het gezag over 'Pino' is gezamenlijk gezag met ouder 'Gerda' en een onbekende derde
-      * het gezag over 'Tommy' is voogdij
-      * het gezag over 'Kermit' is voogdij met derde 'Aart'
-
-      Voorbeelden:
-        | naam  | burgerservicenummer |
-        | Gerda |           000000012 |
-        | Aart  |           000000024 |
+      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
+      En is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+      En is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en derde 'Aart'
+      En is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en een onbekende derde
+      En is het gezag over 'Bert' voogdij
+      En is het gezag over 'Bert' voogdij met derde 'Aart'
 
   Regel: Dan is het gezag in onderzoek
 
@@ -995,9 +871,6 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
                     "naam": {
                       "geslachtsnaam": "Jansen"
                     },
-                    "geslacht": {
-                      "code": "M"
-                    },
                     "geboorte": {
                       "datum": "20221201"
                     }
@@ -1045,9 +918,6 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
                     "naam": {
                       "geslachtsnaam": "Jansen"
                     },
-                    "geslacht": {
-                      "code": "M"
-                    },
                     "geboorte": {
                       "datum": "20221201"
                     }
@@ -1107,47 +977,3 @@ Functionaliteit: Stap definities ten behoeve van specificeren gezagsrelaties
         """
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
       En is het gezag in onderzoek
-
-    @deprecated @gezag-api
-    Scenario: vragen gezag meerderjarige en één van de gezagsrelaties verwacht inOnderzoek
-      Gegeven de persoon 'Ernie' met burgerservicenummer '000000048'
-      Gegeven de response body is gelijk aan
-        """
-        {
-          "personen": [
-            {
-              "burgerservicenummer": "000000048",
-              "gezag": [
-                {
-                  "type": "TweehoofdigOuderlijkGezag",
-                  "minderjarige": {
-                    "burgerservicenummer": "000000036"
-                  },
-                  "ouders": [
-                    {
-                      "burgerservicenummer": "000000012"
-                    },
-                    {
-                      "burgerservicenummer": "000000024"
-                    }
-                  ],
-                  "inOnderzoek": true
-                },
-                {
-                  "type": "EenhoofdigOuderlijkGezag",
-                  "minderjarige": {
-                    "burgerservicenummer": "000000048"
-                  },
-                  "ouder": {
-                    "burgerservicenummer": "000000012"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-        """
-      Dan heeft 'Ernie' de volgende gezagsrelaties
-      * het gezag over 'Bert' is gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
-      En is het gezag in onderzoek
-      * het gezag over 'Ernie' is eenhoofdig ouderlijk gezag met ouder 'Gerda'

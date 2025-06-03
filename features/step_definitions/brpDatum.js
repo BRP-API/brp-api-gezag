@@ -75,13 +75,7 @@ function createJaarMaandDatum(result, dateAsDate) {
     const date = new Date();
 
     date.setFullYear(date.getFullYear() + result.jaar);
-
-    if(result.maand === -1) { // vorige maand
-        date.setDate(0); // Zet de datum op de laatste dag van de vorige maand
-    }
-    else {
-        date.setMonth(date.getMonth() + result.maand);
-    }
+    date.setMonth(date.getMonth() + result.maand);
 
     const jaar = date.getFullYear();
     const maand = date.getMonth() + 1;

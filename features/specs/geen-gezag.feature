@@ -4,31 +4,17 @@ Functionaliteit: Geen gezag
 
   Gezag over een minderjarige stopt als het kind 18 jaar wordt of is overleden. 
 
-  Achtergrond:
-    Gegeven de persoon 'Gerda' met burgerservicenummer '000000012'
-    * is meerderjarig
-    En de persoon 'Aart' met burgerservicenummer '000000024'
-    * is meerderjarig
-    En de persoon 'Bert' met burgerservicenummer '000000036'
-    * is in Nederland geboren
-    * is ingeschreven in een Nederlandse gemeente
-    * heeft 'Gerda' en 'Aart' als ouders
-
   Regel: Als de persoon meerderjarig is, dan is er geen sprake van gezag
 
-    @to-do @skip-verify
     Voorbeeld: De persoon is meerderjarig
-      Gegeven persoon 'Bert'
-      * is meerderjarig
+      Gegeven de meerderjarige persoon 'Bert' met twee gehuwde ouders 'Gerda' en 'Aart'
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan heeft 'Bert' geen gezaghouder
 
   Regel: Als de persoon overleden is, dan is er geen sprake van gezag
 
-    @to-do @skip-verify
     Voorbeeld: De persoon is overleden
-      Gegeven persoon 'Bert'
-      * is minderjarig
+      Gegeven de minderjarige persoon 'Bert' met twee gehuwde ouders 'Gerda' en 'Aart'
       * is overleden
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan heeft 'Bert' geen gezaghouder

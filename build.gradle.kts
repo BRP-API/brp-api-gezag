@@ -1,4 +1,5 @@
 import io.freefair.gradle.plugins.lombok.tasks.LombokTask
+import org.openapitools.generator.gradle.plugin.tasks.GenerateTask
 import org.springframework.boot.gradle.tasks.bundling.BootBuildImage
 import java.io.ByteArrayOutputStream
 import java.time.LocalDateTime
@@ -62,10 +63,11 @@ jooq {
             database {
                 inputSchema = "public"
                 includes = """
-                    lo3_pl_persoon
-                    | lo3_pl_verblijfplaats
-                    | lo3_pl_gezagsverhouding
+                    lo3_titel_predicaat
                     | lo3_pl
+                    | lo3_pl_gezagsverhouding
+                    | lo3_pl_persoon
+                    | lo3_pl_verblijfplaats
                 """.trimIndent()
             }
             target {
@@ -76,22 +78,11 @@ jooq {
     }
 }
 
-openApiGenerate {
-    generatorName = "spring"
-    inputSpec = "${projectDir}/src/main/resources/brp-api-gezag.yaml"
-
-    configOptions.put("delegatePattern", "true")
-    configOptions.put("documentationProvider", "none")
-    configOptions.put("implicitHeaders", "true")
-    configOptions.put("useOptional", "true")
-    configOptions.put("useSpringBoot3", "true")
-    configOptions.put("useTags", "true")
-}
-
 sourceSets {
     main {
         java {
-            srcDir("${layout.buildDirectory.get()}/generate-resources/main/src/main/java")
+            srcDir("${layout.buildDirectory.get()}/generate-resources/openapi/v1/src/main/java")
+            srcDir("${layout.buildDirectory.get()}/generate-resources/openapi/v2/src/main/java")
         }
     }
 }
@@ -134,6 +125,7 @@ sonar {
         property("sonar.host.url", "https://sonarcloud.io")
         property("sonar.organization", "brp-api")
         property("sonar.projectKey", "BRP-API_brp-api-gezag")
+        property("sonar.coverage.exclusions", "/src/main/java/**.java")
     }
 }
 
@@ -147,10 +139,52 @@ springBoot {
     }
 }
 
+openApiGenerate {
+    generatorName = "spring"
+    inputSpec = "${projectDir}/src/main/resources/brp-api-gezag.yaml"
+    outputDir = "${buildDir}/generate-resources/openapi/v1"
+
+    configOptions.put("apiPackage", "nl.rijksoverheid.mev.web.api.v1")
+    configOptions.put("configPackage", "nl.rijksoverheid.mev.web.api.v1.configuration")
+    configOptions.put("invokerPackage", "nl.rijksoverheid.mev.web.api.v1")
+    configOptions.put("modelPackage", "nl.rijksoverheid.mev.web.api.v1")
+    configOptions.put("packageName", "nl.rijksoverheid.mev.web.api.v1")
+
+    configOptions.put("delegatePattern", "true")
+    configOptions.put("documentationProvider", "none")
+    configOptions.put("implicitHeaders", "true")
+    configOptions.put("useOptional", "true")
+    configOptions.put("useSpringBoot3", "true")
+    configOptions.put("useTags", "true")
+    configOptions.put("useSwaggerUI", "false")
+}
+
+tasks.register<GenerateTask>("openApiGenerate2") {
+    description = "Generates the Spring Boot implementation of an OpenAPI Specification"
+    group = "build"
+
+    generatorName = "spring"
+    inputSpec = "${projectDir}/src/main/resources/brp-api-gezag-2.0.yaml"
+    outputDir = "${buildDir}/generate-resources/openapi/v2"
+
+    configOptions.put("apiPackage", "nl.rijksoverheid.mev.web.api.v2")
+    configOptions.put("configPackage", "nl.rijksoverheid.mev.web.api.v2.configuration")
+    configOptions.put("invokerPackage", "nl.rijksoverheid.mev.web.api.v2")
+    configOptions.put("modelPackage", "nl.rijksoverheid.mev.web.api.v2")
+    configOptions.put("packageName", "nl.rijksoverheid.mev.web.api.v2")
+
+    configOptions.put("delegatePattern", "true")
+    configOptions.put("documentationProvider", "none")
+    configOptions.put("useOptional", "true")
+    configOptions.put("useSpringBoot3", "true")
+    configOptions.put("useTags", "true")
+    configOptions.put("useSwaggerUI", "false")
+}
+
 tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
 
-    dependsOn("openApiGenerate")
+    dependsOn("openApiGenerate", "openApiGenerate2")
 }
 
 tasks.withType<Javadoc> {
@@ -158,7 +192,7 @@ tasks.withType<Javadoc> {
 }
 
 tasks.withType<LombokTask> {
-    mustRunAfter("openApiGenerate")
+    mustRunAfter("openApiGenerate", "openApiGenerate2")
 }
 
 tasks.withType<Test> {

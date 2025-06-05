@@ -17,13 +17,8 @@ Functionaliteit: Leveren gezag wanneer er een persoonslijst wordt gevonden met o
     * is in Nederland geboren
     * heeft 'Hakim' als ouder 1
     En de persoonslijst van 'Bert' is opgeschort met reden '<opschorting reden>'
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    En heeft de persoon geen gezag
+    Als 'gezag' wordt gevraagd van 'Bert'
+    Dan heeft 'Bert' geen gezaghouder
 
     Voorbeelden:
       | opschorting reden | omschrijving |
@@ -52,22 +47,8 @@ Functionaliteit: Leveren gezag wanneer er een persoonslijst wordt gevonden met o
     * is in Nederland geboren
     * heeft 'Gerda' als ouder 1
     * heeft 'Aart' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000048                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Ernie'
+    Dan is het gezag over 'Ernie' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
 
     Voorbeelden:
       | opschorting reden | omschrijving |

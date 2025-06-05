@@ -1,4 +1,4 @@
-package nl.rijksoverheid.mev.gmapi;
+package nl.rijksoverheid.mev.web.api;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

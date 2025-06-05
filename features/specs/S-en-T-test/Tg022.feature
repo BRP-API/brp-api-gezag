@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg022 - Barakat-Idilbi - Ouders met een onvolledige huwelijksdatum
 
 

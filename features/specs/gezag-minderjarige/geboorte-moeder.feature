@@ -53,6 +53,8 @@ Functionaliteit: Wie is de geboortemoeder van het kind?
     Dan is het gezag over 'Vanessa' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is.'
 
   Scenario: Voor een kind waarvan een ouder de geslachtsaanduiding vrouw heeft, kan worden bepaald wie gezag heeft er is sprake van EenhoofdigOuderlijkGezag
+    Gegeven persoon 'Noah'
+    * is een vrouw
     Gegeven persoon 'Vanessa'
     * heeft 'Noah' als ouder 1 met de volgende gegevens
       | geslachtsaanduiding (04.10) | datum ingang familierechtelijke betrekking (62.10) |
@@ -62,6 +64,8 @@ Functionaliteit: Wie is de geboortemoeder van het kind?
     Dan is het gezag over 'Vanessa' eenhoofdig ouderlijk gezag met ouder 'Noah'
 
   Scenario: Voor een kind waarvan de tweede ouder de geslachtsaanduiding vrouw heeft, kan worden bepaald wie gezag heeft er is sprake van EenhoofdigOuderlijkGezag
+    Gegeven persoon 'Marijn'
+    * is een vrouw
     Gegeven persoon 'Vanessa'
     * heeft 'Noah' als ouder 1
     * heeft 'Marijn' als ouder 2 met de volgende gegevens
@@ -71,6 +75,10 @@ Functionaliteit: Wie is de geboortemoeder van het kind?
     Dan is het gezag over 'Vanessa' eenhoofdig ouderlijk gezag met ouder 'Marijn'
 
   Scenario: Voor een kind waarvan een ouder de geslachtsaanduiding vrouw heeft en de andere man, kan worden bepaald wie gezag heeft er is sprake van EenhoofdigOuderlijkGezag
+    Gegeven persoon 'Noah'
+    * is een vrouw
+    Gegeven persoon 'Marijn'
+    * is een vrouw
     Gegeven persoon 'Vanessa'
     * heeft 'Noah' als ouder 1 met de volgende gegevens
       | geslachtsaanduiding (04.10) | datum ingang familierechtelijke betrekking (62.10) |
@@ -82,6 +90,10 @@ Functionaliteit: Wie is de geboortemoeder van het kind?
     Dan is het gezag over 'Vanessa' eenhoofdig ouderlijk gezag met ouder 'Noah'
 
   Scenario: Voor een kind waarvan beide ouders de geslachtsaanduiding vrouw hebben, kan niet worden bepaald wie gezag heeft er is sprake van GezagNietTeBepalen
+    Gegeven persoon 'Noah'
+    * is een vrouw
+    Gegeven persoon 'Marijn'
+    * is een vrouw
     Gegeven persoon 'Vanessa'
     * heeft 'Noah' als ouder 1 met de volgende gegevens
       | geslachtsaanduiding (04.10) | datum ingang familierechtelijke betrekking (62.10) |

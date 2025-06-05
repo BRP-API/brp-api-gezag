@@ -209,8 +209,10 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die nooit
     Scenario: minderjarige is erkend als ongeboren vrucht en erkenner is een man
       Gegeven de persoon 'ouder1' met burgerservicenummer '000000012'
       * is meerderjarig
+      * is een <geslacht ouder 1>
       En de persoon 'ouder2' met burgerservicenummer '000000024'
       * is meerderjarig
+      * is een <geslacht ouder 2>
       En de persoon 'minderjarige' met burgerservicenummer '000000036'
       * is minderjarig
       * is ingeschreven in een Nederlandse gemeente
@@ -229,9 +231,9 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die nooit
       Dan is het gezag over 'minderjarige' eenhoofdig ouderlijk gezag met ouder '<gezaghebbende ouder>'
 
       Voorbeelden:
-        | code geslacht ouder 1 | code geslacht ouder 2 | omschrijving                  | gezaghebbende ouder |
-        | V                     | M                     | erkenner (ouder 2) is een man | ouder1              |
-        | M                     | V                     | erkenner (ouder 1) is een man | ouder2              |
+        | geslacht ouder 1 | code geslacht ouder 1 | geslacht ouder 2 | code geslacht ouder 2 | omschrijving                  | gezaghebbende ouder |
+        | vrouw            | V                     | man              | M                     | erkenner (ouder 2) is een man | ouder1              |
+        | man              | M                     | vrouw            | V                     | erkenner (ouder 1) is een man | ouder2              |
 
     Scenario: minderjarige is erkend als ongeboren vrucht en beide ouders zijn vrouw
       Gegeven de persoon 'ouder1' met burgerservicenummer '000000012'

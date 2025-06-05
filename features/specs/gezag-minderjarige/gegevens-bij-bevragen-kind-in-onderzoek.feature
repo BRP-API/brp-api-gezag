@@ -181,6 +181,10 @@ Functionaliteit: wanneer gegevens van het kind in onderzoek staan wordt een geza
       | 030000               | hele groep                                 |
 
   Scenario: gezag wordt bepaald met gegeven geslachtsnaam van ouder 1 in onderzoek, er is sprake van EenhoofdigOuderlijkGezag
+    Gegeven persoon 'Jorine'
+    * is een vrouw
+    Gegeven persoon 'Bastiaan'
+    * is een man
     Gegeven persoon 'Nandy'
     * heeft 'Jorine' als ouder 1 met de volgende gegevens
       | geslachtsaanduiding (04.10) | datum ingang familierechtelijke betrekking (62.10) | aanduiding in onderzoek (83.10) |
@@ -193,6 +197,10 @@ Functionaliteit: wanneer gegevens van het kind in onderzoek staan wordt een geza
     En is het gezag in onderzoek
 
   Scenario: gezag wordt bepaald met gegeven geslachtsnaam van ouder 2 in onderzoek, er is sprake van EenhoofdigOuderlijkGezag
+    Gegeven persoon 'Jorine'
+    * is een vrouw
+    Gegeven persoon 'Bastiaan'
+    * is een man
     Gegeven persoon 'Nandy'
     * heeft 'Jorine' als ouder 1 met de volgende gegevens
       | geslachtsaanduiding (04.10) | datum ingang familierechtelijke betrekking (62.10) |

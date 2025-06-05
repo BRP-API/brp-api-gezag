@@ -4,7 +4,7 @@ Functionaliteit: Twee ouders geen relatie
 
   Achtergrond:
     Gegeven de meerderjarige vrouw 'Gerda'
-    En de meerderjarige man 'Bert'
+    En de meerderjarige man 'Aart'
     En de meerderjarige vrouw 'Ariana'
 
   Regel: Als de minderjarige is geadopteerd door één of beide ouders dan hebben de ouders samen gezamenlijk ouderlijk gezag

@@ -193,7 +193,7 @@ Functionaliteit: het gezag kan worden bepaald voor een minderjarige waarvan een 
       * is ingeschreven in een Nederlandse gemeente
       * heeft 'Moeder' en 'Vader' als ouders
       Als 'gezag' wordt gevraagd van 'Minderjarige'
-      Dan is het gezag over 'minderjarige' gezamenlijk ouderlijk gezag met ouder 'moeder' en ouder 'Vader'
+      Dan is het gezag over 'Minderjarige' gezamenlijk ouderlijk gezag met ouder 'Moeder' en ouder 'Vader'
 
     Voorbeeld: vader staat niet ingeschreven in de BRP en moeder was gehuwd met vader
       Gegeven de persoon 'Moeder' met burgerservicenummer '000000012'

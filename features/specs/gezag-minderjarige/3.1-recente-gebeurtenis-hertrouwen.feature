@@ -68,22 +68,8 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - hertrouwen
     En 'Laura' en 'Lido' zijn met elkaar gehuwd met de volgende gegevens
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10) |
       | gisteren - 2 jaar                                                  |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Linda'
+    Dan is het gezag over 'Linda' gezamenlijk ouderlijk gezag met ouder 'Laura' en ouder 'Lido'
 
     Voorbeelden:
       | indicatie gezag |
@@ -103,22 +89,8 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - hertrouwen
     En 'Laura' en 'Lido' zijn met elkaar gehuwd met de volgende gegevens
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10) |
       | gisteren - 2 jaar                                                  |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Linda'
+    Dan is het gezag over 'Linda' gezamenlijk ouderlijk gezag met ouder 'Laura' en ouder 'Lido'
 
     Voorbeelden:
       | datum aangaan 1e huwelijk | datum ontbinding 1e huwelijk | omschrijving                                                                             |
@@ -133,17 +105,8 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - hertrouwen
     En 'Laura' en 'Lido' zijn met elkaar gehuwd met de volgende gegevens
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10) |
       | gisteren - 3 jaar                                                  |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Linda'
+    Dan is het gezag over 'Linda' eenhoofdig ouderlijk gezag met ouder 'Laura'
 
   Scenario: geen 'recente gebeurtenis' omdat de ouders na het 'herstelhuwelijk' weer zijn gescheiden er is sprake van EenhoofdigOuderlijkGezag
     Gegeven voor 'Linda' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
@@ -158,22 +121,8 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - hertrouwen
     En 'Laura' en 'Lido' zijn met elkaar gehuwd met de volgende gegevens
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10) | datum ontbinding huwelijk/geregistreerd partnerschap (07.10) |
       | gisteren - 2 jaar                                                  | gisteren - 1 jaar                                            |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Linda'
+    Dan is het gezag over 'Linda' gezamenlijk ouderlijk gezag met ouder 'Laura' en ouder 'Lido'
 
   Scenario: geen 'recente gebeurtenis' omdat de ouders getrouwd zijn met een andere derde persoon (niet de ander ouder) er is sprake van EenhoofdigOuderlijkGezag
     Gegeven voor 'Linda' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
@@ -191,17 +140,8 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - hertrouwen
     En 'Lido' en 'Janine' zijn met elkaar gehuwd met de volgende gegevens
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10) |
       | gisteren - 4 jaar                                                  |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Linda'
+    Dan is het gezag over 'Linda' eenhoofdig ouderlijk gezag met ouder 'Laura'
 
   Scenario: geen 'recente gebeurtenis' omdat de ouders al voor de uitspraak met elkaar hertrouwd zijn er is sprake van EenhoofdigOuderlijkGezag
     Gegeven voor 'Linda' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
@@ -216,17 +156,8 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - hertrouwen
     En 'Laura' en 'Lido' zijn met elkaar gehuwd met de volgende gegevens
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10) |
       | gisteren - 6 jaar                                                  |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Linda'
+    Dan is het gezag over 'Linda' eenhoofdig ouderlijk gezag met ouder 'Laura'
 
   Scenario: geen 'recente gebeurtenis' omdat de gerechtelijke uitspraak tot gezag een derde is er is sprake van Voogdij
     Gegeven voor 'Linda' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
@@ -241,19 +172,10 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - hertrouwen
     En 'Laura' en 'Lido' zijn met elkaar gehuwd met de volgende gegevens
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10) |
       | gisteren - 2 jaar                                                  |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000036 |
-    En heeft 'gezag' geen derden
+    Als 'gezag' wordt gevraagd van 'Linda'
+    Dan is het gezag over 'Linda' voogdij
 
-  Scenario: geen 'recente gebeurtenis' omdat de gerechtelijke uitspraak tot gezag <omschrijving uitspraak> is er is sprake van GezamenlijkGezag
+  Abstract Scenario: : geen 'recente gebeurtenis' omdat de gerechtelijke uitspraak tot gezag <omschrijving uitspraak> is er is sprake van GezamenlijkGezag
     Gegeven voor 'Linda' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
       | indicatie gezag minderjarige (32.10) | ingangsdatum geldigheid (85.10) |
       | <indicatie gezag>                    | gisteren - 5 jaar               |
@@ -266,23 +188,13 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - hertrouwen
     En 'Laura' en 'Lido' zijn met elkaar gehuwd met de volgende gegevens
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10) |
       | gisteren - 2 jaar                                                  |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde           |
-      | type                             | GezamenlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036        |
-      | ouder.burgerservicenummer        | <ouder>          |
-      | derde.type                       | OnbekendeDerde   |
+    Als 'gezag' wordt gevraagd van 'Linda'
+    Dan is het gezag over 'Linda' gezamenlijk gezag met ouder '<ouder>' en een onbekende derde
 
     Voorbeelden:
-      | indicatie gezag | omschrijving uitspraak | ouder     |
-      | 1D              | ouder 1 en een derde   | 000000012 |
-      | 2D              | ouder 2 en een derde   | 000000024 |
+      | indicatie gezag | omschrijving uitspraak | ouder |
+      | 1D              | ouder 1 en een derde   | Laura |
+      | 2D              | ouder 2 en een derde   | Lido  |
 
   Regel: Onjuist opgenomen (gecorrigeerde) huwelijks- of partnerschapsgegevens worden genegeerd
 
@@ -304,17 +216,8 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - hertrouwen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  |        |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) |        |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   |        |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Linda'
+    Dan is het gezag over 'Linda' eenhoofdig ouderlijk gezag met ouder 'Laura'
 
   Scenario: geen 'recente gebeurtenis' wanneer het eerste huwelijk met een correctie volledig is verwijderd er is sprake van EenhoofdigOuderlijkGezag
     Gegeven voor 'Linda' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
@@ -331,17 +234,8 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - hertrouwen
     En 'Laura' en 'Lido' zijn met elkaar gehuwd met de volgende gegevens
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10) |
       | gisteren - 2 jaar                                                  |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Linda'
+    Dan is het gezag over 'Linda' eenhoofdig ouderlijk gezag met ouder 'Laura'
 
   Scenario: geen 'recente gebeurtenis' wanneer de datum huwelijkssluiting van het eerste en enige huwelijk is gecorrigeerd er is sprake van EenhoofdigOuderlijkGezag
     Gegeven voor 'Linda' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
@@ -353,17 +247,8 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - hertrouwen
     En is het huwelijk van 'Laura' en 'Lido' gecorrigeerd met de volgende gegevens
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10) |
       | vandaag - 2 jaar                                                   |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Linda'
+    Dan is het gezag over 'Linda' eenhoofdig ouderlijk gezag met ouder 'Laura'
 
   Regel: Als het huwelijk of partnerschap in staat onderzoek, is het gezag wel te bepalen
 
@@ -380,22 +265,8 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - hertrouwen
     En 'Laura' en 'Lido' zijn met elkaar gehuwd met de volgende gegevens
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10) | aanduiding in onderzoek (83.10) |
       | gisteren - 2 jaar                                                  | <aanduiding onderzoek>          |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Linda'
+    Dan is het gezag over 'Linda' gezamenlijk ouderlijk gezag met ouder 'Laura' en ouder 'Lido'
 
     Voorbeelden:
       | aanduiding onderzoek | omschrijving                            |
@@ -418,23 +289,9 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - hertrouwen
     En 'Laura' en 'Lido' zijn met elkaar gehuwd met de volgende gegevens
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10) | aanduiding in onderzoek (83.10) |
       | gisteren - 2 jaar                                                  | <aanduiding onderzoek>          |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-      | inOnderzoek                      | true                      |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Linda'
+    Dan is het gezag over 'Linda' gezamenlijk ouderlijk gezag met ouder 'Laura' en ouder 'Lido'
+    En is het gezag in onderzoek
 
     Voorbeelden:
       | aanduiding onderzoek | omschrijving                                |

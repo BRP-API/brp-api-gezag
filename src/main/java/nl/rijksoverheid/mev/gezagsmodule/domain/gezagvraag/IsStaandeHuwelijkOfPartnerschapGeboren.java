@@ -1,9 +1,6 @@
 package nl.rijksoverheid.mev.gezagsmodule.domain.gezagvraag;
 
-import nl.rijksoverheid.mev.gezagsmodule.domain.Ouder1;
-import nl.rijksoverheid.mev.gezagsmodule.domain.Ouder2;
-import nl.rijksoverheid.mev.gezagsmodule.domain.Persoonslijst;
-import nl.rijksoverheid.mev.gezagsmodule.domain.PreconditieChecker;
+import nl.rijksoverheid.mev.gezagsmodule.domain.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -44,7 +41,7 @@ public class IsStaandeHuwelijkOfPartnerschapGeboren implements GezagVraag {
         if (lOuder1 != null && isValideGeslachtsnaam(lOuder1.getGeslachtsnaam())) {
             final var plOuder1 = gezagsBepaling.getPlOuder1();
             PreconditieChecker.preconditieCheckGeregistreerd(OUDER_1, plOuder1);
-            if (heeftOuderRelatieBijGeboorteKind(plOuder1, geboorteDatumKind)
+            if (heeftOuderRelatieBijGeboorteKind(plOuder1, geboorteDatumKind, gezagsBepaling)
                 && !plPersoon.ontkenningOuderschapDoorOuder2()) {
                 answer = V2B_1_JA;
             }
@@ -52,7 +49,7 @@ public class IsStaandeHuwelijkOfPartnerschapGeboren implements GezagVraag {
         if (lOuder2 != null && isValideGeslachtsnaam(lOuder2.getGeslachtsnaam())) {
             final var plOuder2 = gezagsBepaling.getPlOuder2();
             PreconditieChecker.preconditieCheckGeregistreerd(OUDER_2, plOuder2);
-            if (heeftOuderRelatieBijGeboorteKind(plOuder2, geboorteDatumKind)
+            if (heeftOuderRelatieBijGeboorteKind(plOuder2, geboorteDatumKind, gezagsBepaling)
                 && !plPersoon.ontkenningOuderschapDoorOuder1()) {
                 answer = V2B_1_JA;
             }
@@ -65,15 +62,24 @@ public class IsStaandeHuwelijkOfPartnerschapGeboren implements GezagVraag {
         return new GezagVraagResult(QUESTION_ID, answer);
     }
 
-    public boolean heeftOuderRelatieBijGeboorteKind(final Persoonslijst plOuder,
-                                                    final String geboortedatum) {
-        final var hopPlOuder = plOuder.getHuwelijkOfPartnerschappen();
-        if (!hopPlOuder.isEmpty() && hopPlOuder.get(0).getBsnPartner() != null) {
-            final var hopRelaties = plOuder.getHopRelaties();
-            final var geborenInRelatie =
-                hopRelaties.geborenInRelatie(Integer.parseInt(geboortedatum));
-            return geborenInRelatie != null;
+    public boolean heeftOuderRelatieBijGeboorteKind(
+        Persoonslijst plOuder,
+        String geboortedatum,
+        GezagsBepaling gezagsBepaling
+    ) {
+        var huwelijkOfPartnerschappen = plOuder.getHuwelijkOfPartnerschappen();
+        if (huwelijkOfPartnerschappen.isEmpty()) return false;
+
+        var hopRelaties = plOuder.getHopRelaties();
+        var hopRelatie = hopRelaties.findRelatieByDate(Integer.parseInt(geboortedatum));
+        var isKindGeborenTijdensRelatie = hopRelatie != null;
+        if (isKindGeborenTijdensRelatie) {
+            var relatieStartDatumAsString = String.valueOf(hopRelatie.getStartDatum());
+            huwelijkOfPartnerschappen.stream()
+                .filter(it -> relatieStartDatumAsString.equals(it.getDatumVoltrokken()))
+                .findAny()
+                .ifPresent(gezagsBepaling::setNietOuder);
         }
-        return false;
+        return isKindGeborenTijdensRelatie;
     }
 }

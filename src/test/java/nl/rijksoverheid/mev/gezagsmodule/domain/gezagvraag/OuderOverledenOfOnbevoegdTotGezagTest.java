@@ -95,9 +95,9 @@ class OuderOverledenOfOnbevoegdTotGezagTest {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
         when(ouder1.getBurgerservicenummer()).thenReturn(BURGERSERVICENUMMER);
         persoonslijst.setOuder1(ouder1);
+        when(gezagsBepaling.fetchPersoonslijstVanOuder1()).thenReturn(Optional.of(persoonslijstOuder1));
         when(persoonslijstOuder1.isOverledenOfOnbevoegd()).thenReturn(true);
         when(persoonslijstOuder1.isOverledenOfOnbevoegdEncoded()).thenReturn(Optional.of('o'));
-        when(gezagsBepaling.getPlOuder1()).thenReturn(persoonslijstOuder1);
 
         var antwoord = classUnderTest.perform(gezagsBepaling);
 
@@ -109,9 +109,9 @@ class OuderOverledenOfOnbevoegdTotGezagTest {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
         when(ouder2.getBurgerservicenummer()).thenReturn(BURGERSERVICENUMMER);
         persoonslijst.setOuder2(ouder2);
+        when(gezagsBepaling.fetchPersoonslijstVanOuder2()).thenReturn(Optional.of(persoonslijstOuder2));
         when(persoonslijstOuder2.isOverledenOfOnbevoegd()).thenReturn(true);
         when(persoonslijstOuder2.isOverledenOfOnbevoegdEncoded()).thenReturn(Optional.of('o'));
-        when(gezagsBepaling.getPlOuder2()).thenReturn(persoonslijstOuder2);
 
         var antwoord = classUnderTest.perform(gezagsBepaling);
 
@@ -123,8 +123,8 @@ class OuderOverledenOfOnbevoegdTotGezagTest {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
         when(ouder1.getBurgerservicenummer()).thenReturn(BURGERSERVICENUMMER);
         persoonslijst.setOuder1(ouder1);
+        when(gezagsBepaling.fetchPersoonslijstVanOuder1()).thenReturn(Optional.of(persoonslijstOuder1));
         when(persoonslijstOuder1.isOverledenOfOnbevoegd()).thenReturn(false);
-        when(gezagsBepaling.getPlOuder1()).thenReturn(persoonslijstOuder1);
 
         var antwoord = classUnderTest.perform(gezagsBepaling);
 
@@ -136,8 +136,8 @@ class OuderOverledenOfOnbevoegdTotGezagTest {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
         when(ouder2.getBurgerservicenummer()).thenReturn(BURGERSERVICENUMMER);
         persoonslijst.setOuder2(ouder2);
+        when(gezagsBepaling.fetchPersoonslijstVanOuder2()).thenReturn(Optional.of(persoonslijstOuder2));
         when(persoonslijstOuder2.isOverledenOfOnbevoegd()).thenReturn(false);
-        when(gezagsBepaling.getPlOuder2()).thenReturn(persoonslijstOuder2);
 
         var antwoord = classUnderTest.perform(gezagsBepaling);
 
@@ -149,10 +149,10 @@ class OuderOverledenOfOnbevoegdTotGezagTest {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
         when(ouder1.getBurgerservicenummer()).thenReturn(BURGERSERVICENUMMER);
         persoonslijst.setOuder1(ouder1);
+        when(gezagsBepaling.fetchPersoonslijstVanOuder1()).thenReturn(Optional.of(persoonslijstOuder1));
         when(persoonslijstOuder1.isOverledenOfOnbevoegd()).thenReturn(false);
-        when(gezagsBepaling.getPlOuder1()).thenReturn(persoonslijstOuder1);
+        when(gezagsBepaling.fetchPersoonslijstVanOuder2()).thenReturn(Optional.of(persoonslijstOuder2));
         when(persoonslijstOuder2.isOverledenOfOnbevoegd()).thenReturn(false);
-        when(gezagsBepaling.getPlOuder2()).thenReturn(persoonslijstOuder2);
 
         var antwoord = classUnderTest.perform(gezagsBepaling);
 

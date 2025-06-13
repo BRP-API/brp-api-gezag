@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
 
 

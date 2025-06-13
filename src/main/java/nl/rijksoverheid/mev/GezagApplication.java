@@ -1,15 +1,17 @@
 package nl.rijksoverheid.mev;
 
-import org.openapitools.OpenApiGeneratorApplication;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
+import org.springframework.context.annotation.FullyQualifiedAnnotationBeanNameGenerator;
 
 /**
  * Springboot applicatie
  */
 @ConfigurationPropertiesScan
-@SpringBootApplication
+@SpringBootApplication(
+    nameGenerator = FullyQualifiedAnnotationBeanNameGenerator.class
+)
 public class GezagApplication {
 
     /**
@@ -18,6 +20,6 @@ public class GezagApplication {
      * @param args argumenten voor de applicatie
      */
     public static void main(final String[] args) {
-        SpringApplication.run(new Class[]{GezagApplication.class, OpenApiGeneratorApplication.class}, args);
+        SpringApplication.run(new Class[]{GezagApplication.class}, args);
     }
 }

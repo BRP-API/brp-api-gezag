@@ -10,6 +10,8 @@ import org.slf4j.MDC;
  */
 public class PreconditieChecker {
 
+    public static final String IS_EEN_OUDER_NIET_GEREGISTREERD_MISSEND_VELD = "isEenOuderNietGeregistreerdMissendVeld";
+
     private PreconditieChecker() {}
 
     /**
@@ -28,12 +30,12 @@ public class PreconditieChecker {
         }
         var persoonslijstOuder1 = gezagsBepaling.getPlOuder1();
         if (persoonslijstOuder1 == null) {
-            MDC.put("isEenOuderNietGeregistreerdMissendVeld", "ouder1 van bevraagde persoon is niet in BRP geregistreerd");
+            MDC.put(IS_EEN_OUDER_NIET_GEREGISTREERD_MISSEND_VELD, "ouder1 van bevraagde persoon is niet in BRP geregistreerd");
             return;
         }
         var persoonslijstOuder2 = gezagsBepaling.getPlOuder2();
         if (persoonslijstOuder2 == null) {
-            MDC.put("isEenOuderNietGeregistreerdMissendVeld", "ouder2 van bevraagde persoon is niet in BRP geregistreerd");
+            MDC.put(IS_EEN_OUDER_NIET_GEREGISTREERD_MISSEND_VELD, "ouder2 van bevraagde persoon is niet in BRP geregistreerd");
             return;
         }
 
@@ -49,10 +51,15 @@ public class PreconditieChecker {
      * @throws AfleidingsregelException wanneer de ouder niet is geregistreerd
      */
     public static void preconditieCheckGeregistreerd(final String beschrijving, final Persoonslijst plOuder) throws AfleidingsregelException {
-        boolean ouderGeregistreerdInBrp =
-            plOuder != null
-                && plOuder.isNietIngeschrevenInRNI()
-                && plOuder.isNietGeemigreerd();
+        if (plOuder == null) { // move into #getPlNietOuder()?
+            var missendVeld = MDC.get(IS_EEN_OUDER_NIET_GEREGISTREERD_MISSEND_VELD);
+            if (missendVeld == null) {
+                MDC.put(IS_EEN_OUDER_NIET_GEREGISTREERD_MISSEND_VELD, "%s van bevraagde persoon is niet in BRP geregistreerd".formatted(beschrijving));
+            }
+            return;
+        }
+
+        boolean ouderGeregistreerdInBrp = plOuder.isNietIngeschrevenInRNI() && plOuder.isNietGeemigreerd();
         if (!ouderGeregistreerdInBrp) {
             throw new AfleidingsregelException(
                 "Preconditie: " + beschrijving + " moet in BRP geregistreerd staan",

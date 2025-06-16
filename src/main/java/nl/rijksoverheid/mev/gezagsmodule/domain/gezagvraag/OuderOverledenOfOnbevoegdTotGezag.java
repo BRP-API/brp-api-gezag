@@ -1,16 +1,15 @@
 package nl.rijksoverheid.mev.gezagsmodule.domain.gezagvraag;
 
-import nl.rijksoverheid.mev.exception.AfleidingsregelException;
 import nl.rijksoverheid.mev.gezagsmodule.domain.Ouder1;
 import nl.rijksoverheid.mev.gezagsmodule.domain.Ouder2;
 import nl.rijksoverheid.mev.gezagsmodule.domain.Persoonslijst;
+import nl.rijksoverheid.mev.gezagsmodule.domain.PreconditieChecker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 import java.util.Map;
-import java.util.Optional;
 
 /**
  * v4a_3 "Ja" / "Nee" in verschillende varianten,
@@ -20,10 +19,8 @@ public class OuderOverledenOfOnbevoegdTotGezag implements GezagVraag {
 
     private static final Logger logger = LoggerFactory.getLogger(OuderOverledenOfOnbevoegdTotGezag.class);
     private static final String QUESTION_ID = "v4a.3";
-    private static final String V4A_3_NEE_OUDER1 = "Nee_ouder1";
-    private static final String V4A_3_NEE_OUDER2 = "Nee_ouder2";
-    private static final String V4A_3_NEE = "Nee";
-    private static final Map<String, String> JA_ANTWOORDEN = Map.of(
+    private static final Map<String, String> ANTWOORDEN = Map.of(
+        "??", "Nee",
         "?c", "Ja_ouder_onder_curatele",
         "?m", "Ja_ouder_minderjarig",
         "?o", "Ja_ouder_overleden",
@@ -42,56 +39,30 @@ public class OuderOverledenOfOnbevoegdTotGezag implements GezagVraag {
 
     @Override
     public GezagVraagResult perform(final GezagsBepaling gezagsBepaling) {
-        String answer = null;
-        final var plPersoon = gezagsBepaling.getPlPersoon();
-        final var heeftOuder1Burgerservicenummer =
-            plPersoon.getOuder1AsOptional().map(Ouder1::getBurgerservicenummer).isPresent();
-        final var heeftOuder2Burgerservicenummer =
-            plPersoon.getOuder2AsOptional().map(Ouder2::getBurgerservicenummer).isPresent();
-        if (!heeftOuder1Burgerservicenummer && !heeftOuder2Burgerservicenummer) {
-            throw new AfleidingsregelException(
-                "Preconditie: Ouder moet een BSN hebben",
-                "Ouder moet een BSN hebben"
-            );
-        }
-
+        var isOuder1Irrelevant = isOuder1Irrelevant(gezagsBepaling);
         var optionalPersoonslijstOuder1 = gezagsBepaling.fetchPersoonslijstVanOuder1();
+        var isOuder1OverledenOfOnbevoegdToken = isOuder1Irrelevant ? '?' : optionalPersoonslijstOuder1
+            .map(Persoonslijst::isOverledenOfOnbevoegdEncoded)
+            .orElseGet(() -> gezagsBepaling.getPlPersoon().getOuder1AsOptional().flatMap(Ouder1::isMinderjarigEncoded))
+            .orElse('?');
+
+        var isOuder2Irrelevant = isOuder2Irrelevant(gezagsBepaling);
         var optionalPersoonslijstOuder2 = gezagsBepaling.fetchPersoonslijstVanOuder2();
-        if (optionalPersoonslijstOuder1.isEmpty() && optionalPersoonslijstOuder2.isEmpty()) {
-            throw new AfleidingsregelException(
-                "Preconditie: Ouder moet geregistreerd staan in het BRP",
-                "Minimaal 1 ouder van de bevraagde persoon moet geregistreerd staan in het BRP"
-            );
-        }
+        if (isOuder2Irrelevant) PreconditieChecker.preconditieCheckGeregistreerd("ouder2", optionalPersoonslijstOuder2.orElse(null));
+        var isOuder2OverledenOfOnbevoegdToken = isOuder2Irrelevant ? '?' : optionalPersoonslijstOuder2
+            .map(Persoonslijst::isOverledenOfOnbevoegdEncoded)
+            .orElseGet(() -> gezagsBepaling.getPlPersoon().getOuder2AsOptional().flatMap(Ouder2::isMinderjarigEncoded))
+            .orElse('?');
 
-        boolean isOuder1OverledenOfOnbevoegd = optionalPersoonslijstOuder1
-            .map(Persoonslijst::isOverledenOfOnbevoegd)
-            .orElse(true);
-        if (gezagsBepaling.isOuder1AanwezigMaarNietIngeschreven() || !isOuder1OverledenOfOnbevoegd) {
-            answer = V4A_3_NEE_OUDER1;
-        }
+        var key = constructKey(isOuder1OverledenOfOnbevoegdToken, isOuder2OverledenOfOnbevoegdToken);
+        var answer = ANTWOORDEN.get(key);
 
-        boolean isOuder2OverledenOfOnbevoegd = optionalPersoonslijstOuder2
-            .map(Persoonslijst::isOverledenOfOnbevoegd)
-            .orElse(true);
-        if (gezagsBepaling.isOuder2AanwezigMaarNietIngeschreven() || !isOuder2OverledenOfOnbevoegd) {
-            if (V4A_3_NEE_OUDER1.equals(answer)) {
-                answer = V4A_3_NEE;
-            } else {
-                answer = V4A_3_NEE_OUDER2;
-            }
-        } else if (answer == null) {
-            final var isOuder1OverledenOfOnbevoegdToken = optionalPersoonslijstOuder1
-                .flatMap(Persoonslijst::isOverledenOfOnbevoegdEncoded)
-                .orElse('?');
-            final var isOuder2OverledenOfOnbevoegdToken = optionalPersoonslijstOuder2
-                .flatMap(Persoonslijst::isOverledenOfOnbevoegdEncoded)
-                .orElse('?');
-            final var tokenArray = new char[]{isOuder1OverledenOfOnbevoegdToken,
-                isOuder2OverledenOfOnbevoegdToken};
-            Arrays.sort(tokenArray);
-            final var key = new String(tokenArray);
-            answer = JA_ANTWOORDEN.get(key);
+        if (isOuder1Irrelevant) {
+            PreconditieChecker.preconditieCheckGeregistreerd("ouder2", optionalPersoonslijstOuder2.orElse(null));
+            answer = answer.equals("Nee") ? "Nee_ouder2" : answer;
+        } else if (isOuder2Irrelevant) {
+            PreconditieChecker.preconditieCheckGeregistreerd("ouder1", optionalPersoonslijstOuder1.orElse(null));
+            answer = answer.equals("Nee") ? "Nee_ouder1" : answer;
         }
 
         logger.debug("""
@@ -99,5 +70,27 @@ public class OuderOverledenOfOnbevoegdTotGezag implements GezagVraag {
             {}""", answer);
         gezagsBepaling.getArAntwoordenModel().setV04A03(answer);
         return new GezagVraagResult(QUESTION_ID, answer);
+    }
+
+    private boolean isOuder1Irrelevant(GezagsBepaling gezagsBepaling) {
+        var antwoordenModel = gezagsBepaling.getArAntwoordenModel();
+        var antwoordErkenning = antwoordenModel.getV02A03();
+        var antwoordIndicatieGezag = antwoordenModel.getV0302();
+
+        return "Voor_ouder2".equals(antwoordErkenning) || "2".equals(antwoordIndicatieGezag) || gezagsBepaling.isOuder1Afwezig();
+    }
+
+    private boolean isOuder2Irrelevant(GezagsBepaling gezagsBepaling) {
+        var antwoordenModel = gezagsBepaling.getArAntwoordenModel();
+        var antwoordErkenning = antwoordenModel.getV02A03();
+        var antwoordIndicatieGezag = antwoordenModel.getV0302();
+
+        return "Voor_ouder1".equals(antwoordErkenning) || "1".equals(antwoordIndicatieGezag) || gezagsBepaling.isOuder2Afwezig();
+    }
+
+    private String constructKey(char token1, char token2) {
+        var tokenArray = new char[]{token1, token2};
+        Arrays.sort(tokenArray);
+        return new String(tokenArray);
     }
 }

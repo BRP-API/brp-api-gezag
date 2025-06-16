@@ -1,5 +1,7 @@
 package nl.rijksoverheid.mev.gezagsmodule.domain.gezagvraag;
 
+import nl.rijksoverheid.mev.gezagsmodule.domain.Ouder1;
+import nl.rijksoverheid.mev.gezagsmodule.domain.Ouder2;
 import nl.rijksoverheid.mev.gezagsmodule.domain.Persoonslijst;
 import nl.rijksoverheid.mev.gezagsmodule.domain.PreconditieChecker;
 import org.slf4j.Logger;
@@ -42,9 +44,11 @@ public class OudersOverledenOfOnbevoegdTotGezag implements GezagVraag {
         PreconditieChecker.preconditieCheckOudersGeregistreerd(gezagsBepaling);
 
         final var optionalIsOuder1OverledenOfOnbevoegdToken = gezagsBepaling.fetchPersoonslijstVanOuder1()
-            .flatMap(Persoonslijst::isOverledenOfOnbevoegdEncoded);
+            .map(Persoonslijst::isOverledenOfOnbevoegdEncoded)
+            .orElseGet(() -> gezagsBepaling.getPlPersoon().getOuder1AsOptional().flatMap(Ouder1::isMinderjarigEncoded));
         final var optionalIsOuder2OverledenOfOnbevoegdToken = gezagsBepaling.fetchPersoonslijstVanOuder2()
-            .flatMap(Persoonslijst::isOverledenOfOnbevoegdEncoded);
+            .map(Persoonslijst::isOverledenOfOnbevoegdEncoded)
+            .orElseGet(() -> gezagsBepaling.getPlPersoon().getOuder2AsOptional().flatMap(Ouder2::isMinderjarigEncoded));
         final var isOuder1OverledenOfOnbevoegd = optionalIsOuder1OverledenOfOnbevoegdToken.isPresent();
         final var isOuder2OverledenOfOnbevoegd = optionalIsOuder2OverledenOfOnbevoegdToken.isPresent();
 

@@ -4,6 +4,7 @@ import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.Lo3PlPersoonRecord
 import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.Lo3TitelPredicaatRecord;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 
+import java.time.LocalDate;
 import java.util.Objects;
 import java.util.Optional;
 
@@ -14,6 +15,7 @@ import java.util.Optional;
 public class Ouder1 extends PotentieelInOnderzoek implements WithAktenummer {
 
     private static final String ONBEKEND = ".";
+    private static final int MEERDERJARIGE_LEEFTIJD = 180000;
 
     @VeldNummer(number = "020120", name = "burgerservicenummer van ouder 1")
     private final String burgerservicenummer;
@@ -62,6 +64,19 @@ public class Ouder1 extends PotentieelInOnderzoek implements WithAktenummer {
         this.datumIngangFamilieBetrekking = Objects.toString(lo3PlPersoonRecord.getFamilieBetrekStartDatum(), null);
         this.aanduidingGegevensInOnderzoek = onderzoekGegevensAanduidingAsString;
         this.datumEindeOnderzoek = Objects.toString(lo3PlPersoonRecord.getOnderzoekEindDatum(), null);
+    }
+
+    public Optional<Character> isMinderjarigEncoded() {
+        return isMinderjarig() ? Optional.of('m') : Optional.empty();
+    }
+
+    public boolean isMinderjarig() {
+        if (geboortedatum == null) {
+            return false;
+        }
+        int minderjarigTotInt = Integer.parseInt(geboortedatum) + MEERDERJARIGE_LEEFTIJD;
+        int datumVandaag = Integer.parseInt(LocalDate.now().format(FORMATTER));
+        return minderjarigTotInt > datumVandaag;
     }
 
     public String getBurgerservicenummer() {

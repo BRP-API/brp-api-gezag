@@ -16,10 +16,13 @@ import java.util.*;
 public class GezagsBepaling {
 
     private static final Logger logger = LoggerFactory.getLogger(GezagsBepaling.class);
+
+    private static final String GESLACHTNAAM_AANDUIDING_PUNT_OUDER = ".";
     private static final Set<String> TE_NEGEREN_VELDEN_IN_ONDERZOEK = Set.of(
         "burgerservicenummer van persoon",
         "gemeente van inschrijving"
     );
+
     @Getter
     private UUID errorTraceCode;
     @Getter
@@ -169,12 +172,26 @@ public class GezagsBepaling {
         missendeGegegevens.add(missendGegegeven);
     }
 
-    public boolean isOuder1AanwezigMaarNietIngeschreven() {
-        return plPersoon.getOuder1AsOptional().isPresent() && fetchPersoonslijstVanOuder1().isEmpty();
+    public boolean isOuder1Aanwezig() {
+        return plPersoon.getOuder1AsOptional()
+            .map(Ouder1::getGeslachtsnaam)
+            .filter(it -> !it.equals(GESLACHTNAAM_AANDUIDING_PUNT_OUDER))
+            .isPresent();
     }
 
-    public boolean isOuder2AanwezigMaarNietIngeschreven() {
-        return plPersoon.getOuder2AsOptional().isPresent() && fetchPersoonslijstVanOuder2().isEmpty();
+    public boolean isOuder1Afwezig() {
+        return !isOuder1Aanwezig();
+    }
+
+    public boolean isOuder2Aanwezig() {
+        return plPersoon.getOuder2AsOptional()
+            .map(Ouder2::getGeslachtsnaam)
+            .filter(it -> !it.equals(GESLACHTNAAM_AANDUIDING_PUNT_OUDER))
+            .isPresent();
+    }
+
+    public boolean isOuder2Afwezig() {
+        return !isOuder2Aanwezig();
     }
 
     public Optional<Persoonslijst> fetchPersoonslijstVanOuder1() {

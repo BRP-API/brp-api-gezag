@@ -102,7 +102,7 @@ public class GezagsrelatieService {
         String burgerservicenummerOuder2 = gezagsBepaling.getBurgerservicenummerOuder2();
         var minderjarige = gezagsBepaling.getPlPersoon().getPersoon();
 
-        if (arAntwoordenModel.hasOuder1Gezag() && bevraagdePersoonIsDeMinderjarige || burgerservicenummerPersoon.equals(burgerservicenummerOuder1) || burgerservicenummerOuder1 == null) {
+        if (arAntwoordenModel.hasOuder1Gezag() && (bevraagdePersoonIsDeMinderjarige || burgerservicenummerPersoon.equals(burgerservicenummerOuder1) || burgerservicenummerOuder1 == null)) {
             var ouder1 = gezagsBepaling.getPlPersoon().getOuder1AsOptional().orElseThrow();
 
             return new EenhoofdigOuderlijkGezag()
@@ -110,7 +110,7 @@ public class GezagsrelatieService {
                 .minderjarige(Gezagsrelaties.Minderjarigen.from(minderjarige))
                 .type(TYPE_EENHOOFDIG_OUDERLIJK_GEZAG);
         }
-        if (arAntwoordenModel.hasOuder2Gezag() && bevraagdePersoonIsDeMinderjarige || burgerservicenummerPersoon.equals(burgerservicenummerOuder2) || burgerservicenummerOuder2 == null) {
+        if (arAntwoordenModel.hasOuder2Gezag() && (bevraagdePersoonIsDeMinderjarige || burgerservicenummerPersoon.equals(burgerservicenummerOuder2) || burgerservicenummerOuder2 == null)) {
             var ouder2 = gezagsBepaling.getPlPersoon().getOuder2AsOptional().orElseThrow();
 
             return new EenhoofdigOuderlijkGezag()

@@ -58,7 +58,7 @@ Functionaliteit: het gezag kan worden bepaald voor een minderjarige waarvan een 
       * is ingeschreven in een Nederlandse gemeente
       * heeft 'Moeder' en 'Vader' als ouders
       Als 'gezag' wordt gevraagd van 'Minderjarige'
-      Dan is het gezag over 'Minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd'
+      Dan is het gezag over 'Minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd'
 
     @nieuw
     Voorbeeld: twee ouders, vader is ongehuwd, moeder staat niet ingeschreven in de BRP en vader heeft erkend voor 1-1-2023
@@ -88,7 +88,7 @@ Functionaliteit: het gezag kan worden bepaald voor een minderjarige waarvan een 
       * is ingeschreven in een Nederlandse gemeente
       * heeft 'Moeder' en 'Vader' als ouders
       Als 'gezag' wordt gevraagd van 'Minderjarige'
-      Dan is het gezag over 'Minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd'
+      Dan is het gezag over 'Minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd'
 
     @nieuw
     Voorbeeld: vader staat niet ingeschreven in de BRP en heeft erkend na 1-1-2023
@@ -135,7 +135,7 @@ Functionaliteit: het gezag kan worden bepaald voor een minderjarige waarvan een 
       * heeft 'Moeder' als ouder
       En 'Minderjarige' is morgen 14 jaar geleden geadopteerd door 'Adoptievader'
       Als 'gezag' wordt gevraagd van 'Minderjarige'
-      Dan is het gezag over 'Minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd'
+      Dan is het gezag over 'Minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd'
 
     @nieuw
     Voorbeeld: moeder staat niet ingeschreven in de BRP en vader heeft geadopteerd
@@ -240,7 +240,7 @@ Functionaliteit: het gezag kan worden bepaald voor een minderjarige waarvan een 
       * is ingeschreven in een Nederlandse gemeente
       * heeft 'Moeder' en 'Vader' als ouders
       Als 'gezag' wordt gevraagd van 'Minderjarige'
-      Dan is het gezag over 'Minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd'
+      Dan is het gezag over 'Minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd'
 
     @nieuw
     Voorbeeld: vader staat niet ingeschreven in de BRP en moeder is gehuwd met vader

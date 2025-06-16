@@ -186,10 +186,9 @@ public class GezagsrelatieService {
             .type(TYPE_VOOGDIJ);
 
         if (heeftNietOuderGezag) {
-            var bekendeDerde = optionalNietOuder
+            optionalNietOuder
                 .map(Gezagsrelaties.Derden::from)
-                .orElseThrow(() -> new IllegalStateException("niet ouder heeft gezag maar is niet aanwezig"));
-            voogdij.addDerdenItem(bekendeDerde);
+                .ifPresent(voogdij::addDerdenItem);
         }
 
         return voogdij;

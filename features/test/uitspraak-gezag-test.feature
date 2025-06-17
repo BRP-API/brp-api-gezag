@@ -200,25 +200,7 @@ Functionaliteit: Test gezagsuitspraak bij gerechtelijke uitspraak gezag
     | 3.2(2D)&4b.1 | uitspraak gezag voor ouder 2 en een derde en ouder 1 onder curatele en ouder 2 is minderjarig          | curatele    | minderjarig | 5o1            | voogdij zonder derde                      |
     | 3.2(2D)&4b.1 | uitspraak gezag voor ouder 2 en een derde en ouder 2 onder curatele en ouder 1 is minderjarig          | minderjarig | curatele    | 5o1            | voogdij zonder derde                      |
     | 3.2(2D)&4b.1 | uitspraak gezag voor ouder 2 en een derde en beide ouders zijn minderjarig                             | minderjarig | minderjarig | 5o1            | voogdij zonder derde                      |
-    # https://github.com/BRP-API/brp-api-gezag/issues/327 levert nu Voogdij
 
-    @deprecated
-    Scenario: uitspraak gezag ouder 2 en een derde en de andere ouder <reden onbevoegd>
-      Gegeven de minderjarige persoon 'minderjarige' met twee gehuwde ouders 'moeder' en 'vader'
-      * 5 jaar geleden is in een gerechtelijke uitspraak het gezag toegewezen aan 'vader' en een derde
-      En persoon 'moeder'
-      * <reden onbevoegd>
-      Als 'gezag' wordt gevraagd van 'minderjarige'
-      Dan is het gezag over 'minderjarige' voogdij
-
-      Voorbeelden:
-        | reden onbevoegd      |
-        | is overleden         |
-        | staat onder curatele |
-        | is minderjarig       |
-      # https://github.com/BRP-API/brp-api-gezag/issues/327 voorbeelden leveren nu voogdij in plaats van GezamenlijkGezag voor vader en onbekende derde
-
-    @nieuw
     Scenario: uitspraak gezag ouder 2 en een derde en de andere ouder <reden onbevoegd>
       Gegeven de minderjarige persoon 'minderjarige' met twee gehuwde ouders 'moeder' en 'vader'
       * 5 jaar geleden is in een gerechtelijke uitspraak het gezag toegewezen aan 'vader' en een derde

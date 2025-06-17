@@ -51,7 +51,7 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die gehuw
       Als 'gezag' wordt gevraagd van 'minderjarige'
       Dan is het gezag over 'minderjarige' eenhoofdig ouderlijk gezag met ouder 'moeder'
 
-    @deprecated @https://github.com/BRP-API/brp-api-gezag/issues/338
+    @https://github.com/BRP-API/brp-api-gezag/issues/338
     Scenario: ouders zijn gehuwd en weer gescheiden voor geboorte
       Gegeven de minderjarige persoon 'minderjarige' met twee ouders 'moeder' en 'vader' die ten tijde van de geboorte van de minderjarige niet met elkaar gehuwd waren
       En 'moeder' en 'vader' zijn 25 jaar geleden gehuwd
@@ -164,7 +164,6 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die gehuw
     | 4a.2  | minderjarige heeft twee gehuwde ouders en ouder 1 geboortedatum is onbekend |                | gezamenlijk ouderlijk gezag |
     | 4a.2  | minderjarige heeft twee gehuwde ouders en ouder 2 geboortedatum is onbekend |                | gezamenlijk ouderlijk gezag |
 
-    @deprecated
     Scenario: <omschrijving>
       Gegeven de minderjarige persoon 'minderjarige' met twee gehuwde ouders 'moeder' en 'vader'
       En persoon '<ouder>'
@@ -173,9 +172,9 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die gehuw
       Dan is het gezag over 'minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: geboortedatum'
 
       Voorbeelden:
-        | ouder  | uitspraak gezag                               | omschrijving                      |
-        | moeder | eenhoofdig ouderlijk gezag met ouder 'vader'  | ouder 1 geboortedatum is onbekend |
-        | vader  | eenhoofdig ouderlijk gezag met ouder 'moeder' | ouder 2 geboortedatum is onbekend |
+        | ouder  | omschrijving                      |
+        | moeder | ouder 1 geboortedatum is onbekend |
+        | vader  | ouder 2 geboortedatum is onbekend |
 
     @skip-verify @to-do
     Scenario: <omschrijving>
@@ -183,12 +182,12 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die gehuw
       En persoon '<ouder>'
       * is op een onbekende datum geboren
       Als 'gezag' wordt gevraagd van 'minderjarige'
-      Dan is het gezag over 'minderjarige' <uitspraak gezag>
+      Dan is het gezag over 'minderjarige' eenhoofdig ouderlijk gezag met ouder 'moeder'
 
       Voorbeelden:
-        | ouder  | uitspraak gezag                               | omschrijving                      |
-        | moeder | eenhoofdig ouderlijk gezag met ouder 'vader'  | ouder 1 geboortedatum is onbekend |
-        | vader  | eenhoofdig ouderlijk gezag met ouder 'moeder' | ouder 2 geboortedatum is onbekend |
+        | ouder  | omschrijving                      |
+        | moeder | ouder 1 geboortedatum is onbekend |
+        | vader  | ouder 2 geboortedatum is onbekend |
 
   Regel: Als beide ouders zijn overleden of onbevoegd zijn voor gezag, dan is er tijdelijk geen gezag
     | vraag | ouder 1     | ouder 2     | logische situatie                                            | verwacht route | verwacht resultaat         |

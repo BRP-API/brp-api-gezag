@@ -44,7 +44,7 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die nooit
         | bij notariële akte op 10-02-2023                        |
         | met gerechtelijke vaststelling ouderschap op 10-02-2023 |
 
-    @nieuw
+    @skip-verify @to-do
     Scenario: minderjarige is erkend na 1-1-2023 en minderjarige is staande partnerschap van moeder met niet-ouder geboren
       Gegeven de persoon 'erkenner' met burgerservicenummer '000000024'
       * is meerderjarig

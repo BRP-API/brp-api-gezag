@@ -15,22 +15,6 @@ Functionaliteit: het gezag kan worden bepaald voor een minderjarige waarvan een 
 
   Regel: een ouder zonder burgerservicenummer kan gezag krijgen op basis van gegevens van de minderjarige en van de ouder die wel in de BRP een persoonslijst heeft
 
-    @deprecated
-    Voorbeeld: twee ouders, moeder is ongehuwd, vader staat niet ingeschreven in de BRP en heeft erkend voor 1-1-2023
-      Gegeven de persoon 'Moeder' met burgerservicenummer '000000012'
-      * is meerderjarig
-      * is een vrouw
-      En de persoon 'Vader' zonder burgerservicenummer
-      * is meerderjarig
-      * is een man
-      En de persoon 'Minderjarige' met burgerservicenummer '000000036'
-      * is op 14-10-2022 geboren
-      * is ingeschreven in een Nederlandse gemeente
-      * heeft 'Moeder' en 'Vader' als ouders
-      Als 'gezag' wordt gevraagd van 'Minderjarige'
-      Dan is het gezag over 'Minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd'
-
-    @nieuw
     Voorbeeld: twee ouders, moeder is ongehuwd, vader staat niet ingeschreven in de BRP en heeft erkend voor 1-1-2023
       Gegeven de persoon 'Moeder' met burgerservicenummer '000000012'
       * is meerderjarig

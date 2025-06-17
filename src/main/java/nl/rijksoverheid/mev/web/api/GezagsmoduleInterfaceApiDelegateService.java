@@ -1,16 +1,16 @@
-package nl.rijksoverheid.mev.gmapi;
+package nl.rijksoverheid.mev.web.api;
 
 import nl.rijksoverheid.mev.exception.GezagException;
-import org.openapitools.api.GezagsmoduleInterfaceApiDelegate;
-import org.openapitools.model.GezagRequest;
-import org.openapitools.model.GezagResponse;
-import org.openapitools.model.Persoon;
+import nl.rijksoverheid.mev.gmapi.BevoegdheidTotGezagService;
+import nl.rijksoverheid.mev.web.api.v1.GezagRequest;
+import nl.rijksoverheid.mev.web.api.v1.GezagResponse;
+import nl.rijksoverheid.mev.web.api.v1.GezagsmoduleInterfaceApiDelegate;
+import org.slf4j.MDC;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.NativeWebRequest;
 
-import java.util.List;
 import java.util.Optional;
 
 /**
@@ -33,19 +33,25 @@ public class GezagsmoduleInterfaceApiDelegateService implements GezagsmoduleInte
     /**
      * Opvragen bevoegdheid to gezag (meerder / minderjarig)
      *
-     * @param gezagRequest de aanvraag
+     * @param gezagRequestV1 de aanvraag
      * @throws nl.rijksoverheid.mev.exception.GezagException wanneer een
      * exceptie optreed bij BRP communcatie of bij het bepalen van gezag in de
      * gezagmodule
      * @return gezagsrelaties of leeg
      */
     @Override
-    public ResponseEntity<GezagResponse> opvragenBevoegdheidTotGezag(final GezagRequest gezagRequest) {
-        List<Persoon> gezagsrelaties = bevoegdheidTotGezagService.bepaalBevoegdheidTotGezag(gezagRequest);
+    public ResponseEntity<GezagResponse> opvragenBevoegdheidTotGezag(final GezagRequest gezagRequestV1) {
+        MDC.put("metadata.apiVersion", "1");
 
-        GezagResponse response = new GezagResponse();
-        response.setPersonen(gezagsrelaties);
-        return ResponseEntity.ok(response);
+        var gezagRequestV2 = BackwardsCompatibility.upgrade(gezagRequestV1);
+        var personenV2 = bevoegdheidTotGezagService.bepaalBevoegdheidTotGezag(gezagRequestV2);
+        var personenV1 = personenV2.stream()
+            .map(BackwardsCompatibility::downgrade)
+            .toList();
+
+        var gezagResponse = new GezagResponse();
+        gezagResponse.setPersonen(personenV1);
+        return ResponseEntity.ok(gezagResponse);
     }
 
     @ExceptionHandler

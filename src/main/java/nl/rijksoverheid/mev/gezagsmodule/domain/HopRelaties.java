@@ -96,7 +96,7 @@ public class HopRelaties {
      - een einddatum > dan de geboortedatum van het kind hebben of
      - geen einddatum hebben
      */
-    public HopRelatie geborenInRelatie(Integer geboorteDatum) {
+    public HopRelatie findRelatieByDate(Integer geboorteDatum) {
         for (HopRelatie relatie : relaties) {
             if ((relatie.getStartDatum() != null) && (relatie.getStartDatum() <= geboorteDatum)) {
                 Integer eindDatum = relatie.getEindDatum();

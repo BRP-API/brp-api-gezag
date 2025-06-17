@@ -23,17 +23,8 @@ Functionaliteit: gezag van een meerderjarige die niet in de BRP staat ingeschrev
     * is niet geëmigreerd geweest
     * heeft 'Marlies' als ouder 1
     * heeft 'Mark' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                    |
-      | type                             | GezagNietTeBepalen                                                        |
-      | minderjarige.burgerservicenummer | 000000036                                                                 |
-      | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige niet in Nederland woont. |
+    Als 'gezag' wordt gevraagd van 'Mees'
+    Dan is het gezag over 'Mees' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat minderjarige niet in Nederland woont.'
 
   Scenario: een meerderjarig persoon in RNI en zonder kinderen
     Gegeven de persoon 'Mees' met burgerservicenummer '000000036'
@@ -43,13 +34,9 @@ Functionaliteit: gezag van een meerderjarige die niet in de BRP staat ingeschrev
     * is niet geëmigreerd geweest
     * heeft 'Marlies' als ouder 1
     * heeft 'Mark' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon geen gezag
+    Als 'gezag' wordt gevraagd van 'Mees'
+    Dan heeft 'Mees' de volgende gezagsrelaties
+    * heeft de persoon geen gezag
 
   Scenario: meerderjarige persoon in RNI met gezag over kind
     Gegeven de persoon 'Michiel' met burgerservicenummer '000000048'
@@ -66,23 +53,9 @@ Functionaliteit: gezag van een meerderjarige die niet in de BRP staat ingeschrev
     * is niet geëmigreerd geweest
     * heeft 'Marielle' als ouder 1
     * heeft 'Michiel' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000061 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000061 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000048 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000061 |
-
+    Als 'gezag' wordt gevraagd van 'Marielle'
+    Dan heeft 'Marielle' de volgende gezagsrelaties
+    * is het gezag over 'Maud' gezamenlijk ouderlijk gezag met ouder 'Michiel' en ouder 'Marielle'
 
   Regel: een persoon die in RNI staat ingeschreven met een onvolledige geboortedatum krijgt gezag niet te bepalen geleverd wanneer de persoon op de eerste dag van de onzekerheidsperiode niet ouder dan 18 jaar is
     # leeftijd wordt berekend op basis van een fixtieve geboortedatum gelijk aan de eerste dag van de onzekerheidsperiode
@@ -99,17 +72,8 @@ Functionaliteit: gezag van een meerderjarige die niet in de BRP staat ingeschrev
     * is niet geëmigreerd geweest
     * heeft 'Marlies' als ouder 1
     * heeft 'Mark' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                                                                    |
-      | type                             | GezagNietTeBepalen                                                        |
-      | minderjarige.burgerservicenummer | 000000036                                                                 |
-      | toelichting                      | Gezag kan niet worden bepaald omdat minderjarige niet in Nederland woont. |
+    Als 'gezag' wordt gevraagd van 'Mees'
+    Dan is het gezag over 'Mees' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat minderjarige niet in Nederland woont.'
 
     Voorbeelden:
       | geboortedatum            | leeftijd      | omschrijving                                                                             |
@@ -128,13 +92,9 @@ Functionaliteit: gezag van een meerderjarige die niet in de BRP staat ingeschrev
     * is niet geëmigreerd geweest
     * heeft 'Marlies' als ouder 1
     * heeft 'Mark' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon geen gezag
+    Als 'gezag' wordt gevraagd van 'Mees'
+    Dan heeft 'Mees' de volgende gezagsrelaties
+    * heeft de persoon geen gezag
 
     Voorbeelden:
       | geboortedatum          | leeftijd      | omschrijving                                                                            |
@@ -159,10 +119,6 @@ Functionaliteit: gezag van een meerderjarige die niet in de BRP staat ingeschrev
     * is niet geëmigreerd geweest
     * heeft 'Marlies' als ouder 1
     * heeft 'Mark' als ouder 2
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon geen gezag
+    Als 'gezag' wordt gevraagd van 'Mees'
+    Dan heeft 'Mees' de volgende gezagsrelaties
+    * heeft de persoon geen gezag

@@ -7,21 +7,17 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.slf4j.MDC;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.when;
 
-/**
- * TODO: verdere testen schrijven
- */
 @ExtendWith(MockitoExtension.class)
 class ZijnJuridischeOudersNuMetElkaarGehuwdOfPartnersTest {
 
     private static final String INDICATION_EXCEPTION_TWO_PARENTS = "Preconditie: Kind moet twee ouders hebben";
-    private static final String INDICATION_EXCEPTION_PARENT_ONE_NOT_REGISTERED = "Preconditie: ouder1 moet in BRP geregistreerd staan";
-    private static final String INDICATION_EXCEPTION_PARENT_TWO_NOT_REGISTERED = "Preconditie: ouder2 moet in BRP geregistreerd staan";
     private static final String GESLACHTSNAAM = "mock";
     private static final String V2A_1_NEE_NA_GEBOORTE_NOOIT_GEHUWD_PARTNERS_GEWEEST_MET_ELKAAR = "Nee_nooit";
     @Mock
@@ -80,31 +76,33 @@ class ZijnJuridischeOudersNuMetElkaarGehuwdOfPartnersTest {
 
     @Test
     void zijnJuridischeOudersNuMetElkaarGehuwdOfPartnersWithParentsHavingGeslachtsnaam() {
+        when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
         when(ouder1.getGeslachtsnaam()).thenReturn(GESLACHTSNAAM);
         when(ouder2.getGeslachtsnaam()).thenReturn(GESLACHTSNAAM);
         persoonslijst.setOuder1(ouder1);
         persoonslijst.setOuder2(ouder2);
 
-        AfleidingsregelException exception = assertThrows(AfleidingsregelException.class,
-            () -> classUnderTest.perform(gezagsBepaling));
+        var antwoord = classUnderTest.perform(gezagsBepaling);
+        var missendVeld = MDC.get("isEenOuderNietGeregistreerdMissendVeld");
 
-        assertTrue(exception.getMessage().contains(INDICATION_EXCEPTION_PARENT_ONE_NOT_REGISTERED));
+        assertThat(antwoord.answer()).isEqualTo(V2A_1_NEE_NA_GEBOORTE_NOOIT_GEHUWD_PARTNERS_GEWEEST_MET_ELKAAR);
+        assertThat(missendVeld).isEqualTo("ouder1 van bevraagde persoon is niet in BRP geregistreerd");
     }
 
     @Test
     void zijnJuridischeOudersNuMetElkaarGehuwdOfPartnersWithOneParent() {
+        when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
         when(ouder1.getGeslachtsnaam()).thenReturn(GESLACHTSNAAM);
         when(ouder2.getGeslachtsnaam()).thenReturn(GESLACHTSNAAM);
         persoonslijst.setOuder1(ouder1);
         persoonslijst.setOuder2(ouder2);
-        when(persoonslijstOuder1.isNietIngeschrevenInRNI()).thenReturn(true);
-        when(persoonslijstOuder1.isNietGeemigreerd()).thenReturn(true);
         when(gezagsBepaling.getPlOuder1()).thenReturn(persoonslijstOuder1);
 
-        AfleidingsregelException exception = assertThrows(AfleidingsregelException.class,
-            () -> classUnderTest.perform(gezagsBepaling));
+        var antwoord = classUnderTest.perform(gezagsBepaling);
+        var missendVeld = MDC.get("isEenOuderNietGeregistreerdMissendVeld");
 
-        assertTrue(exception.getMessage().contains(INDICATION_EXCEPTION_PARENT_TWO_NOT_REGISTERED));
+        assertThat(antwoord.answer()).isEqualTo(V2A_1_NEE_NA_GEBOORTE_NOOIT_GEHUWD_PARTNERS_GEWEEST_MET_ELKAAR);
+        assertThat(missendVeld).isEqualTo("ouder2 van bevraagde persoon is niet in BRP geregistreerd");
     }
 
     @Test
@@ -126,5 +124,3 @@ class ZijnJuridischeOudersNuMetElkaarGehuwdOfPartnersTest {
         assertThat(antwoord.answer()).isEqualTo(V2A_1_NEE_NA_GEBOORTE_NOOIT_GEHUWD_PARTNERS_GEWEEST_MET_ELKAAR);
     }
 }
-
-

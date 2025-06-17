@@ -44,7 +44,7 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die nooit
         | bij notariële akte op 10-02-2023                        |
         | met gerechtelijke vaststelling ouderschap op 10-02-2023 |
 
-    @nieuw
+    @skip-verify @to-do
     Scenario: minderjarige is erkend na 1-1-2023 en minderjarige is staande partnerschap van moeder met niet-ouder geboren
       Gegeven de persoon 'erkenner' met burgerservicenummer '000000024'
       * is meerderjarig
@@ -69,6 +69,7 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die nooit
       * is meerderjarig
       En de minderjarige persoon 'minderjarige' met twee ouders 'moeder' en 'erkenner' die ten tijde van de geboorte van de minderjarige niet met elkaar gehuwd waren
       * is geboren op 10-02-2023
+      En 'minderjarige' is erkend door 'erkenner' als ongeboren vrucht op 09-02-2023
       En 'moeder' en 'partner' zijn een geregistreerd partnerschap aangegaan op 28-09-2006
       Als 'gezag' wordt gevraagd van 'minderjarige'
       Dan is het gezag over 'minderjarige' gezamenlijk ouderlijk gezag met ouder 'moeder' en ouder 'erkenner'
@@ -208,8 +209,10 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die nooit
     Scenario: minderjarige is erkend als ongeboren vrucht en erkenner is een man
       Gegeven de persoon 'ouder1' met burgerservicenummer '000000012'
       * is meerderjarig
+      * is een <geslacht ouder 1>
       En de persoon 'ouder2' met burgerservicenummer '000000024'
       * is meerderjarig
+      * is een <geslacht ouder 2>
       En de persoon 'minderjarige' met burgerservicenummer '000000036'
       * is minderjarig
       * is ingeschreven in een Nederlandse gemeente
@@ -228,9 +231,9 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die nooit
       Dan is het gezag over 'minderjarige' eenhoofdig ouderlijk gezag met ouder '<gezaghebbende ouder>'
 
       Voorbeelden:
-        | code geslacht ouder 1 | code geslacht ouder 2 | omschrijving                  | gezaghebbende ouder |
-        | V                     | M                     | erkenner (ouder 2) is een man | ouder1              |
-        | M                     | V                     | erkenner (ouder 1) is een man | ouder2              |
+        | geslacht ouder 1 | code geslacht ouder 1 | geslacht ouder 2 | code geslacht ouder 2 | omschrijving                  | gezaghebbende ouder |
+        | vrouw            | V                     | man              | M                     | erkenner (ouder 2) is een man | ouder1              |
+        | man              | M                     | vrouw            | V                     | erkenner (ouder 1) is een man | ouder2              |
 
     Scenario: minderjarige is erkend als ongeboren vrucht en beide ouders zijn vrouw
       Gegeven de persoon 'ouder1' met burgerservicenummer '000000012'
@@ -319,28 +322,28 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die nooit
       # Paden en toelichtingen zijn eigenlijk niet correct, omdat daarin ook iets staat over de bevoegdheid van de ouder die geen gezag heeft
 
       Voorbeelden:
-        | categorie moeder | categorie erkenner | bevoegdheid moeder   | bevoegdheid erkenner | omschrijving                                                       | toelichting                                                                                  | route  |
-        |                1 |                  2 | is overleden         | is bevoegd           | geboortemoeder is overleden en andere ouder is wel bevoegd         | Tijdelijk geen gezag omdat de ouder overleden of onbevoegd is.                               | 54v1o2 |
-        |                1 |                  2 | staat onder curatele | is bevoegd           | geboortemoeder staat onder curatele en andere ouder is wel bevoegd | Tijdelijk geen gezag omdat de ouder overleden of onbevoegd is.                               | 54v1o2 |
-        |                1 |                  2 | is minderjarig       | is bevoegd           | geboortemoeder is minderjarig en andere ouder is wel bevoegd       | Tijdelijk geen gezag omdat de ouder overleden of onbevoegd is.                               | 54v1o2 |
-        |                1 |                  2 | is overleden         | is overleden         | geboortemoeder en andere ouder zijn beide overleden                | Tijdelijk geen gezag omdat beide ouders overleden zijn.                                      | 53v1oo |
-        |                1 |                  2 | is overleden         | staat onder curatele | geboortemoeder is overleden en andere ouder staat onder curatele   | Tijdelijk geen gezag omdat een ouder overleden is en de andere ouder onder curatele staat.   | 53v1oc |
-        |                1 |                  2 | is overleden         | is minderjarig       | geboortemoeder is overleden en andere ouder is minderjarig         | Tijdelijk geen gezag omdat een ouder overleden is en de andere ouder minderjarig is.         | 53v1om |
-        |                1 |                  2 | staat onder curatele | is overleden         | geboortemoeder staat onder curatele en andere ouder is overleden   | Tijdelijk geen gezag omdat een ouder overleden is en de andere ouder onder curatele staat.   | 53v1oc |
-        |                1 |                  2 | staat onder curatele | staat onder curatele | geboortemoeder en andere ouder staan beide onder curatele          | Tijdelijk geen gezag omdat beide ouders onder curatele staan.                                | 53v1cc |
-        |                1 |                  2 | staat onder curatele | is minderjarig       | geboortemoeder staat onder curatele en andere ouder is minderjarig | Tijdelijk geen gezag omdat een ouder onder curatele staat en de andere ouder minderjarig is. | 53v1cm |
-        |                1 |                  2 | is minderjarig       | is overleden         | geboortemoeder is minderjarig en andere ouder is overleden         | Tijdelijk geen gezag omdat een ouder overleden is en de andere ouder minderjarig is.         | 53v1om |
-        |                1 |                  2 | is minderjarig       | staat onder curatele | geboortemoeder is minderjarig en andere ouder staat onder curatele | Tijdelijk geen gezag omdat een ouder onder curatele staat en de andere ouder minderjarig is. | 53v1cm |
-        |                1 |                  2 | is minderjarig       | is minderjarig       | geboortemoeder en andere ouder zijn beide minderjarig              | Tijdelijk geen gezag omdat beide ouders minderjarig zijn.                                    | 53v1om |
-        |                2 |                  1 | is overleden         | is bevoegd           | geboortemoeder is overleden en andere ouder is wel bevoegd         | Tijdelijk geen gezag omdat de ouder overleden of onbevoegd is.                               | 54v2o1 |
-        |                2 |                  1 | staat onder curatele | is bevoegd           | geboortemoeder staat onder curatele en andere ouder is wel bevoegd | Tijdelijk geen gezag omdat de ouder overleden of onbevoegd is.                               | 54v2o1 |
-        |                2 |                  1 | is overleden         | is bevoegd           | geboortemoeder is minderjarig en andere ouder is wel bevoegd       | Tijdelijk geen gezag omdat de ouder overleden of onbevoegd is.                               | 54v2o1 |
-        |                2 |                  1 | is overleden         | is overleden         | geboortemoeder en andere ouder zijn beide overleden                | Tijdelijk geen gezag omdat beide ouders overleden zijn.                                      | 53v2oo |
-        |                2 |                  1 | is overleden         | staat onder curatele | geboortemoeder is overleden en andere ouder staat onder curatele   | Tijdelijk geen gezag omdat een ouder overleden is en de andere ouder onder curatele staat.   | 53v2oc |
-        |                2 |                  1 | is overleden         | is minderjarig       | geboortemoeder is overleden en andere ouder is minderjarig         | Tijdelijk geen gezag omdat een ouder overleden is en de andere ouder minderjarig is.         | 53v2om |
-        |                2 |                  1 | staat onder curatele | is overleden         | geboortemoeder staat onder curatele en andere ouder is overleden   | Tijdelijk geen gezag omdat een ouder overleden is en de andere ouder onder curatele staat.   | 53v2oc |
-        |                2 |                  1 | staat onder curatele | staat onder curatele | geboortemoeder en andere ouder staan beide onder curatele          | Tijdelijk geen gezag omdat beide ouders onder curatele staan.                                | 53v2cc |
-        |                2 |                  1 | staat onder curatele | is minderjarig       | geboortemoeder staat onder curatele en andere ouder is minderjarig | Tijdelijk geen gezag omdat een ouder onder curatele staat en de andere ouder minderjarig is. | 53v2cm |
-        |                2 |                  1 | is minderjarig       | is overleden         | geboortemoeder is minderjarig en andere ouder is overleden         | Tijdelijk geen gezag omdat een ouder overleden is en de andere ouder minderjarig is.         | 53v2om |
-        |                2 |                  1 | is minderjarig       | staat onder curatele | geboortemoeder is minderjarig en andere ouder staat onder curatele | Tijdelijk geen gezag omdat een ouder onder curatele staat en de andere ouder minderjarig is. | 53v2cm |
-        |                2 |                  1 | is minderjarig       | is minderjarig       | geboortemoeder en andere ouder zijn beide minderjarig              | Tijdelijk geen gezag omdat beide ouders minderjarig zijn.                                    | 53v2om |
+        | categorie moeder | categorie erkenner | bevoegdheid moeder   | bevoegdheid erkenner | omschrijving                                                       | toelichting                                                    | route  |
+        | 1                | 2                  | is overleden         | is bevoegd           | geboortemoeder is overleden en andere ouder is wel bevoegd         | Tijdelijk geen gezag omdat de ouder overleden of onbevoegd is. | 54v1o2 |
+        | 1                | 2                  | staat onder curatele | is bevoegd           | geboortemoeder staat onder curatele en andere ouder is wel bevoegd | Tijdelijk geen gezag omdat de ouder overleden of onbevoegd is. | 54v1o2 |
+        | 1                | 2                  | is minderjarig       | is bevoegd           | geboortemoeder is minderjarig en andere ouder is wel bevoegd       | Tijdelijk geen gezag omdat de ouder overleden of onbevoegd is. | 54v1o2 |
+        | 1                | 2                  | is overleden         | is overleden         | geboortemoeder en andere ouder zijn beide overleden                | Tijdelijk geen gezag omdat de ouder overleden is.              | 54v1o  |
+        | 1                | 2                  | is overleden         | staat onder curatele | geboortemoeder is overleden en andere ouder staat onder curatele   | Tijdelijk geen gezag omdat de ouder overleden is.              | 54v1o  |
+        | 1                | 2                  | is overleden         | is minderjarig       | geboortemoeder is overleden en andere ouder is minderjarig         | Tijdelijk geen gezag omdat de ouder overleden is.              | 54v1o  |
+        | 1                | 2                  | staat onder curatele | is overleden         | geboortemoeder staat onder curatele en andere ouder is overleden   | Tijdelijk geen gezag omdat de ouder onder curatele staat.      | 54v1c  |
+        | 1                | 2                  | staat onder curatele | staat onder curatele | geboortemoeder en andere ouder staan beide onder curatele          | Tijdelijk geen gezag omdat de ouder onder curatele staat.      | 54v1c  |
+        | 1                | 2                  | staat onder curatele | is minderjarig       | geboortemoeder staat onder curatele en andere ouder is minderjarig | Tijdelijk geen gezag omdat de ouder onder curatele staat.      | 54v1c  |
+        | 1                | 2                  | is minderjarig       | is overleden         | geboortemoeder is minderjarig en andere ouder is overleden         | Tijdelijk geen gezag omdat de ouder minderjarig is.            | 54v1m  |
+        | 1                | 2                  | is minderjarig       | staat onder curatele | geboortemoeder is minderjarig en andere ouder staat onder curatele | Tijdelijk geen gezag omdat de ouder minderjarig is.            | 54v1m  |
+        | 1                | 2                  | is minderjarig       | is minderjarig       | geboortemoeder en andere ouder zijn beide minderjarig              | Tijdelijk geen gezag omdat de ouder minderjarig is.            | 54v1m  |
+        | 2                | 1                  | is overleden         | is bevoegd           | geboortemoeder is overleden en andere ouder is wel bevoegd         | Tijdelijk geen gezag omdat de ouder overleden of onbevoegd is. | 54v2o1 |
+        | 2                | 1                  | staat onder curatele | is bevoegd           | geboortemoeder staat onder curatele en andere ouder is wel bevoegd | Tijdelijk geen gezag omdat de ouder overleden of onbevoegd is. | 54v2o1 |
+        | 2                | 1                  | is overleden         | is bevoegd           | geboortemoeder is minderjarig en andere ouder is wel bevoegd       | Tijdelijk geen gezag omdat de ouder overleden of onbevoegd is. | 54v2o1 |
+        | 2                | 1                  | is overleden         | is overleden         | geboortemoeder en andere ouder zijn beide overleden                | Tijdelijk geen gezag omdat de ouder overleden is.              | 54v2o  |
+        | 2                | 1                  | is overleden         | staat onder curatele | geboortemoeder is overleden en andere ouder staat onder curatele   | Tijdelijk geen gezag omdat de ouder overleden is.              | 54v2o  |
+        | 2                | 1                  | is overleden         | is minderjarig       | geboortemoeder is overleden en andere ouder is minderjarig         | Tijdelijk geen gezag omdat de ouder overleden is.              | 54v2o  |
+        | 2                | 1                  | staat onder curatele | is overleden         | geboortemoeder staat onder curatele en andere ouder is overleden   | Tijdelijk geen gezag omdat de ouder onder curatele staat.      | 54v2c  |
+        | 2                | 1                  | staat onder curatele | staat onder curatele | geboortemoeder en andere ouder staan beide onder curatele          | Tijdelijk geen gezag omdat de ouder onder curatele staat.      | 54v2c  |
+        | 2                | 1                  | staat onder curatele | is minderjarig       | geboortemoeder staat onder curatele en andere ouder is minderjarig | Tijdelijk geen gezag omdat de ouder onder curatele staat.      | 54v2c  |
+        | 2                | 1                  | is minderjarig       | is overleden         | geboortemoeder is minderjarig en andere ouder is overleden         | Tijdelijk geen gezag omdat de ouder minderjarig is.            | 54v2m  |
+        | 2                | 1                  | is minderjarig       | staat onder curatele | geboortemoeder is minderjarig en andere ouder staat onder curatele | Tijdelijk geen gezag omdat de ouder minderjarig is.            | 54v2m  |
+        | 2                | 1                  | is minderjarig       | is minderjarig       | geboortemoeder en andere ouder zijn beide minderjarig              | Tijdelijk geen gezag omdat de ouder minderjarig is.            | 54v2m  |

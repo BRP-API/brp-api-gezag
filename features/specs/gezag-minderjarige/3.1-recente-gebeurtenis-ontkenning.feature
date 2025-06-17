@@ -60,28 +60,19 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - ontkenning
       | geboortedatum (03.10)                              |              |
       | datum ingang familierechtelijke betrekking (62.10) |              |
       | aktenummer (81.20)                                 | 1AF0100      |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | <ouder bsn>              |
+    Als 'gezag' wordt gevraagd van 'Kees'
+    Dan is het gezag over 'Kees' eenhoofdig ouderlijk gezag met ouder '<ouder naam>'
 
     Voorbeelden:
-      | ouder | naam ouder | soort wijziging | ouder bsn |
-      | 1     |            | gewijzigd       | 000000024 |
-      | 1     | .          | gewijzigd       | 000000024 |
-      | 1     |            | gecorrigeerd    | 000000024 |
-      | 1     | .          | gecorrigeerd    | 000000024 |
-      | 2     |            | gewijzigd       | 000000012 |
-      | 2     | .          | gewijzigd       | 000000012 |
-      | 2     |            | gecorrigeerd    | 000000012 |
-      | 2     | .          | gecorrigeerd    | 000000012 |
+      | ouder | naam ouder | soort wijziging | ouder naam |
+      | 1     |            | gewijzigd       | Johnnie    |
+      | 1     | .          | gewijzigd       | Johnnie    |
+      | 1     |            | gecorrigeerd    | Johnnie    |
+      | 1     | .          | gecorrigeerd    | Johnnie    |
+      | 2     |            | gewijzigd       | Nelly      |
+      | 2     | .          | gewijzigd       | Nelly      |
+      | 2     |            | gecorrigeerd    | Nelly      |
+      | 2     | .          | gecorrigeerd    | Nelly      |
 
   Abstract Scenario: er is uitspraak gezag voogdij en erkenning door ouder 2 is ontkend of vernietigd er is sprake van Voogdij
     Gegeven voor 'Kees' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
@@ -94,17 +85,8 @@ Functionaliteit: 3.1 - is er sprake van een recente gebeurtenis - ontkenning
       | geboortedatum (03.10)                              |              |
       | datum ingang familierechtelijke betrekking (62.10) |              |
       | aktenummer (81.20)                                 | 1AF0100      |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000036 |
-    En heeft 'gezag' geen derden
+    Als 'gezag' wordt gevraagd van 'Kees'
+    Dan is het gezag over 'Kees' voogdij
 
     Voorbeelden:
       | ouder | naam ouder | soort wijziging |

@@ -147,10 +147,10 @@ public class GezagsrelatieService {
             ? ouder1.map(Gezagsrelaties.GezagOuders::from).orElseThrow()
             : ouder2.map(Gezagsrelaties.GezagOuders::from).orElseThrow();
 
-        var nietOuder = gezagsBepaling.getNietOuder();
+        var relatieNietOuder = gezagsBepaling.getRelatieNietOuder();
         Derde derde;
-        if (nietOuder != null) {
-            derde = Gezagsrelaties.Derden.from(nietOuder);
+        if (relatieNietOuder != null) {
+            derde = Gezagsrelaties.Derden.from(relatieNietOuder);
         } else {
             derde = burgerservicenummerNietOuder == null || arAntwoordenModel.isGezamenlijkGezagVanwegeGerechtelijkeUitspraak()
                 ? Gezagsrelaties.Derden.from()

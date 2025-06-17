@@ -41,7 +41,7 @@ public class GezagsBepaling {
     private final Map<String, GezagVraag> vragenMap;
     @Getter
     private final ARAntwoordenModel arAntwoordenModel;
-    private HuwelijkOfPartnerschap nietOuder;
+    private HuwelijkOfPartnerschap relatieNietOuder;
     private Character v02B01Ouder;
 
     public GezagsBepaling(
@@ -292,12 +292,12 @@ public class GezagsBepaling {
         return Optional.ofNullable(hopRelaties.findRelatieByDate(geboortedatum));
     }
 
-    public HuwelijkOfPartnerschap getNietOuder() {
-        return nietOuder;
+    public HuwelijkOfPartnerschap getRelatieNietOuder() {
+        return relatieNietOuder;
     }
 
-    public void setNietOuder(HuwelijkOfPartnerschap nietOuder) {
-        this.nietOuder = nietOuder;
+    public void setRelatieNietOuder(HuwelijkOfPartnerschap relatieNietOuder) {
+        this.relatieNietOuder = relatieNietOuder;
     }
 
     public Optional<Character> getV02B01Ouder() {

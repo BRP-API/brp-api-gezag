@@ -80,7 +80,7 @@ public class IsStaandeHuwelijkOfPartnerschapGeboren implements GezagVraag {
             huwelijkOfPartnerschappen.stream()
                 .filter(it -> relatieStartDatumAsString.equals(it.getDatumVoltrokken()))
                 .findAny()
-                .ifPresent(gezagsBepaling::setNietOuder);
+                .ifPresent(gezagsBepaling::setRelatieNietOuder);
         }
         return isKindGeborenTijdensRelatie;
     }

@@ -42,6 +42,7 @@ public class GezagsBepaling {
     @Getter
     private final ARAntwoordenModel arAntwoordenModel;
     private HuwelijkOfPartnerschap nietOuder;
+    private Character v02B01Ouder;
 
     public GezagsBepaling(
         final String burgerservicenummer,
@@ -297,5 +298,13 @@ public class GezagsBepaling {
 
     public void setNietOuder(HuwelijkOfPartnerschap nietOuder) {
         this.nietOuder = nietOuder;
+    }
+
+    public Optional<Character> getV02B01Ouder() {
+        return Optional.ofNullable(v02B01Ouder);
+    }
+
+    public void setV02B01Ouder(Character v02B01Ouder) {
+        this.v02B01Ouder = v02B01Ouder;
     }
 }

@@ -44,6 +44,7 @@ public class IsStaandeHuwelijkOfPartnerschapGeboren implements GezagVraag {
             if (heeftOuderRelatieBijGeboorteKind(plOuder1, geboorteDatumKind, gezagsBepaling)
                 && !plPersoon.ontkenningOuderschapDoorOuder2()) {
                 answer = V2B_1_JA;
+                gezagsBepaling.setV02B01Ouder('1');
             }
         }
         if (lOuder2 != null && isValideGeslachtsnaam(lOuder2.getGeslachtsnaam())) {
@@ -52,6 +53,7 @@ public class IsStaandeHuwelijkOfPartnerschapGeboren implements GezagVraag {
             if (heeftOuderRelatieBijGeboorteKind(plOuder2, geboorteDatumKind, gezagsBepaling)
                 && !plPersoon.ontkenningOuderschapDoorOuder1()) {
                 answer = V2B_1_JA;
+                gezagsBepaling.setV02B01Ouder('2');
             }
         }
 

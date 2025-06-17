@@ -48,7 +48,6 @@ public class OuderOverledenOfOnbevoegdTotGezag implements GezagVraag {
 
         var isOuder2Irrelevant = isOuder2Irrelevant(gezagsBepaling);
         var optionalPersoonslijstOuder2 = gezagsBepaling.fetchPersoonslijstVanOuder2();
-        if (isOuder2Irrelevant) PreconditieChecker.preconditieCheckGeregistreerd("ouder2", optionalPersoonslijstOuder2.orElse(null));
         var isOuder2OverledenOfOnbevoegdToken = isOuder2Irrelevant ? '?' : optionalPersoonslijstOuder2
             .map(Persoonslijst::isOverledenOfOnbevoegdEncoded)
             .orElseGet(() -> gezagsBepaling.getPlPersoon().getOuder2AsOptional().flatMap(Ouder2::isMinderjarigEncoded))

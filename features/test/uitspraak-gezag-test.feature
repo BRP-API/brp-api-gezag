@@ -458,13 +458,13 @@ Functionaliteit: Test gezagsuitspraak bij gerechtelijke uitspraak gezag
       En persoon 'moeder'
       * <bevoegdheid moeder>
       Als 'gezag' wordt gevraagd van 'minderjarige'
-      Dan is het gezag over 'minderjarige' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat de ouder overleden of onbevoegd is.'
+      Dan is het gezag over 'minderjarige' tijdelijk geen gezag met de toelichting '<toelichting>'
 
       Voorbeelden:
-        | bevoegdheid moeder   |
-        | is overleden         |
-        | staat onder curatele |
-        | is minderjarig       |
+        | bevoegdheid moeder   | toelichting                                               |
+        | is overleden         | Tijdelijk geen gezag omdat de ouder overleden is.         |
+        | staat onder curatele | Tijdelijk geen gezag omdat de ouder onder curatele staat. |
+        | is minderjarig       | Tijdelijk geen gezag omdat de ouder minderjarig is.       |
 
     @deprecated
     Scenario: uitspraak gezag voor ouder 1 en <toelichting>
@@ -499,19 +499,19 @@ Functionaliteit: Test gezagsuitspraak bij gerechtelijke uitspraak gezag
       En persoon 'vader'
       * <bevoegdheid vader>
       Als 'gezag' wordt gevraagd van 'minderjarige'
-      Dan is het gezag over 'minderjarige' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat de ouder overleden of onbevoegd is.'
+      Dan is het gezag over 'minderjarige' tijdelijk geen gezag met de toelichting '<toelichting>'
 
       Voorbeelden:
-        | bevoegdheid moeder   | bevoegdheid vader    |
-        | is overleden         | is overleden         |
-        | is overleden         | staat onder curatele |
-        | is overleden         | is minderjarig       |
-        | staat onder curatele | is overleden         |
-        | staat onder curatele | staat onder curatele |
-        | staat onder curatele | is minderjarig       |
-        | is minderjarig       | is overleden         |
-        | is minderjarig       | is minderjarig       |
-        | is minderjarig       | staat onder curatele |
+        | bevoegdheid moeder   | bevoegdheid vader    | toelichting                                               |
+        | is overleden         | is overleden         | Tijdelijk geen gezag omdat de ouder overleden is.         |
+        | is overleden         | staat onder curatele | Tijdelijk geen gezag omdat de ouder overleden is.         |
+        | is overleden         | is minderjarig       | Tijdelijk geen gezag omdat de ouder overleden is.         |
+        | staat onder curatele | is overleden         | Tijdelijk geen gezag omdat de ouder onder curatele staat. |
+        | staat onder curatele | staat onder curatele | Tijdelijk geen gezag omdat de ouder onder curatele staat. |
+        | staat onder curatele | is minderjarig       | Tijdelijk geen gezag omdat de ouder onder curatele staat. |
+        | is minderjarig       | is overleden         | Tijdelijk geen gezag omdat de ouder minderjarig is.       |
+        | is minderjarig       | is minderjarig       | Tijdelijk geen gezag omdat de ouder minderjarig is.       |
+        | is minderjarig       | staat onder curatele | Tijdelijk geen gezag omdat de ouder minderjarig is.       |
 
     Scenario: uitspraak gezag voor ouder 1 en er is geen andere ouder en de ouder <reden onbevoegd>
       Gegeven de minderjarige persoon 'minderjarige' met <beginsituatie>

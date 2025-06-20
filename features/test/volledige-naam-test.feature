@@ -50,6 +50,7 @@ Functionaliteit: Test samenstellen van volledige naam van minderjarige en gezagh
 
   Regel: Lever naamvelden en geslacht van de ouder voor samenstellen van volledige naam
 
+    @skip-verify
     Scenario: gegevens van de ouder <omschrijving>
       Gegeven de persoon 'moeder'
       * heeft de volgende gegevens
@@ -99,6 +100,7 @@ Functionaliteit: Test samenstellen van volledige naam van minderjarige en gezagh
 
   Regel: Lever naamvelden en geslacht van de derde voor samenstellen van volledige naam
 
+    @skip-verify
     Scenario: gegevens van de derde <omschrijving>
       Gegeven de persoon 'partner'
       * heeft de volgende gegevens

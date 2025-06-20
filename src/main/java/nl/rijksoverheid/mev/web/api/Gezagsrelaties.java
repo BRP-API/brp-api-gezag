@@ -123,7 +123,7 @@ public class Gezagsrelaties {
             return new AdellijkeTitelPredicaatType()
                 .code(adellijkeTitelPredicaat.code())
                 .omschrijving(adellijkeTitelPredicaat.omschrijving())
-                .soort(AdellijkeTitelPredicaatSoort.valueOf(adellijkeTitelPredicaat.soort()));
+                .soort(AdellijkeTitelPredicaatSoort.fromValue(adellijkeTitelPredicaat.soort()));
         }
     }
 

@@ -1,8 +1,12 @@
 package nl.rijksoverheid.mev.gezagsmodule.domain.gezagvraag;
 
+import jakarta.annotation.Nullable;
+import nl.rijksoverheid.mev.exception.AfleidingsregelException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
+
+import java.util.Objects;
 
 /**
  * v1_3 "Ja" als de persoon (die in NL geboren is) ooit naar buitenland geëmigreerd is geweest,
@@ -22,15 +26,39 @@ public class IsNaarBuitenlandGeemigreerdGeweest implements GezagVraag {
 
     @Override
     public GezagVraagResult perform(final GezagsBepaling gezagsBepaling) {
+        var answer = doPerform(gezagsBepaling);
+
+        logger.debug("""
+            1.3 Is minderjarige naar het buitenland geëmigreerd geweest?
+            {}""", answer);
+        gezagsBepaling.getArAntwoordenModel().setV0103(answer);
+        return new GezagVraagResult(QUESTION_ID, answer);
+    }
+
+    @Nullable
+    private String doPerform(GezagsBepaling gezagsBepaling) {
+        logger.debug("Interne aanroep naar vraag v2a.1 (buiten het stroomschema om) vanwege #393");
+        try {
+            var zijnJuridischeOudersGehuwdAsString = new ZijnJuridischeOudersNuMetElkaarGehuwdOfPartners().doPerform(gezagsBepaling);
+            var zijnJuridischeOudersGehuwd = Objects.equals(zijnJuridischeOudersGehuwdAsString, ZijnJuridischeOudersNuMetElkaarGehuwdOfPartners.V2A_1_JA_GEHUWD_OF_PARTNERS);
+            if (zijnJuridischeOudersGehuwd) {
+                return V1_3_NEE; // answer V1_3_NEE to skip this question, but actual answer should be "V1_3_JA, but skip this question"
+            }
+        } catch (AfleidingsregelException e) {
+            // ignore exception; zijnJuridischeOudersGehuwd == false
+        }
+
         final var plPersoon = gezagsBepaling.getPlPersoon();
         final var geboorteland = plPersoon.getPersoon().getGeboorteland();
         final var verblijfplaats = plPersoon.getVerblijfplaats();
 
-        String answer = null;
+        String answer;
         if (geboorteland == null || geboorteland.isEmpty()) {
             gezagsBepaling.addMissendeGegegevens("Geboorteland van bevraagde persoon");
+            answer = null;
         } else if (verblijfplaats == null) {
             gezagsBepaling.addMissendeGegegevens("Verblijfplaats van bevraagde persoon");
+            answer = null;
         } else if (geboorteland.equals("6030")
             && verblijfplaats.getDatumVestigingInNederland() != null
             && !verblijfplaats.getDatumVestigingInNederland().isEmpty()) {
@@ -38,11 +66,6 @@ public class IsNaarBuitenlandGeemigreerdGeweest implements GezagVraag {
         } else {
             answer = V1_3_NEE;
         }
-
-        logger.debug("""
-            1.3 Is minderjarige naar het buitenland geëmigreerd geweest?
-            {}""", answer);
-        gezagsBepaling.getArAntwoordenModel().setV0103(answer);
-        return new GezagVraagResult(QUESTION_ID, answer);
+        return answer;
     }
 }

@@ -21,15 +21,14 @@ Functionaliteit: wanneer gegevens van het kind in onderzoek staan wordt een geza
     * heeft 'Bastiaan' als ouder 2
     En 'Jorine' en 'Bastiaan' zijn met elkaar gehuwd
     Als 'gezag' wordt gevraagd van 'Nandy'
-
     Dan is het gezag over 'Nandy' gezamenlijk ouderlijk gezag met ouder 'Jorine' en ouder 'Bastiaan'
     En is het gezag in onderzoek
 
     Voorbeelden:
-      | aanduiding onderzoek | omschrijving   |
-      | 010310               | geboortedatum  |
-      | 010330               | geboorteland   |
-      | 010000               | hele categorie |
+      | aanduiding onderzoek | omschrijving        |
+      | 010310               | geboortedatum       |
+      | 010410               | geslachtsaanduiding |
+      | 010000               | hele categorie      |
 
   Scenario: gezag wordt bepaald met aktenummer van persoon in onderzoek er is sprake van GezamenlijkOuderlijkGezag
     Gegeven persoon 'Nandy'

@@ -106,4 +106,4 @@ Functionaliteit: gezag van een meerderjarige over een kind
     * heeft 'Aart' als ouder 2
     Als 'gezag' wordt gevraagd van 'Aart'
     Dan heeft 'Aart' de volgende gezagsrelaties
-    * heeft de persoon geen gezag
+    * is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Aart' en ouder 'Gerda'

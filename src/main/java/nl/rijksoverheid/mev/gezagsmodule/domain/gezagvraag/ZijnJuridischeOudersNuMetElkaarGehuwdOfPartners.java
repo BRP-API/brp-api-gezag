@@ -16,9 +16,10 @@ import java.util.Objects;
 @Component
 public class ZijnJuridischeOudersNuMetElkaarGehuwdOfPartners implements GezagVraag {
 
+    public static final String V2A_1_JA_GEHUWD_OF_PARTNERS = "Ja";
+
     private static final Logger logger = LoggerFactory.getLogger(ZijnJuridischeOudersNuMetElkaarGehuwdOfPartners.class);
     private static final String QUESTION_ID = "v2a.1";
-    private static final String V2A_1_JA_GEHUWD_OF_PARTNERS = "Ja";
     private static final String V2A_1_NEE = "Nee";
     private static final String V2A_1_NEE_NA_GEBOORTE_NOOIT_GEHUWD_PARTNERS_GEWEEST_MET_ELKAAR = "Nee_nooit";
 
@@ -29,6 +30,16 @@ public class ZijnJuridischeOudersNuMetElkaarGehuwdOfPartners implements GezagVra
 
     @Override
     public GezagVraagResult perform(final GezagsBepaling gezagsBepaling) {
+        var answer = doPerform(gezagsBepaling);
+
+        logger.debug("""
+            2a.1 Zijn beide juridische ouders nu met elkaar gehuwd/partners?
+            {}""", answer);
+        gezagsBepaling.getArAntwoordenModel().setV02A01(answer);
+        return new GezagVraagResult(QUESTION_ID, answer);
+    }
+
+    public String doPerform(GezagsBepaling gezagsBepaling) {
         final var plPersoon = gezagsBepaling.getPlPersoon();
         final var geboortedatumKind = plPersoon.getPersoon().getGeboortedatum();
         PreconditieChecker.preconditieCheckOudersGeregistreerd(gezagsBepaling);
@@ -37,10 +48,7 @@ public class ZijnJuridischeOudersNuMetElkaarGehuwdOfPartners implements GezagVra
         final var plOuder2 = gezagsBepaling.getPlOuder2();
 
         var answer = bepaalWanneerEenOuderNietIsIngeschreven(plPersoon, plOuder1, plOuder2);
-        if (answer != null) {
-            gezagsBepaling.getArAntwoordenModel().setV02A01(answer);
-            return new GezagVraagResult(QUESTION_ID, answer);
-        }
+        if (answer != null) return answer;
 
         final var hopOuder1 = getOuderHuwelijkOfPartnerschap(plOuder1, plOuder2);
         final var hopOuder2 = getOuderHuwelijkOfPartnerschap(plOuder2, plOuder1);
@@ -58,12 +66,7 @@ public class ZijnJuridischeOudersNuMetElkaarGehuwdOfPartners implements GezagVra
         } else {
             answer = V2A_1_NEE;
         }
-
-        logger.debug("""
-            2a.1 Zijn beide juridische ouders nu met elkaar gehuwd/partners?
-            {}""", answer);
-        gezagsBepaling.getArAntwoordenModel().setV02A01(answer);
-        return new GezagVraagResult(QUESTION_ID, answer);
+        return answer;
     }
 
     private String bepaalWanneerEenOuderNietIsIngeschreven(

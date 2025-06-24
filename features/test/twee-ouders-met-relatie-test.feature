@@ -176,13 +176,12 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die gehuw
         | moeder | ouder 1 geboortedatum is onbekend |
         | vader  | ouder 2 geboortedatum is onbekend |
 
-    @skip-verify @to-do
     Scenario: <omschrijving>
       Gegeven de minderjarige persoon 'minderjarige' met twee gehuwde ouders 'moeder' en 'vader'
       En persoon '<ouder>'
       * is op een onbekende datum geboren
       Als 'gezag' wordt gevraagd van 'minderjarige'
-      Dan is het gezag over 'minderjarige' eenhoofdig ouderlijk gezag met ouder 'moeder'
+      Dan is het gezag over 'minderjarige' gezamenlijk ouderlijk gezag met ouder 'moeder' en ouder 'vader'
 
       Voorbeelden:
         | ouder  | omschrijving                      |

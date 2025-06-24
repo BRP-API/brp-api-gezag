@@ -338,8 +338,7 @@ public class Persoonslijst {
 
         var geboortedatumAsString = persoon.getGeboortedatum();
         int geboortedatum = Optional.ofNullable(geboortedatumAsString).map(Integer::parseInt).orElse(0);
-        if (geboortedatum == 0)
-            throw new AfleidingsregelException("Preconditie: geboortedatum mag niet onbekend zijn", "geboortedatum");
+        if (geboortedatum == 0) return false;
 
         int datumVolwassenVanaf = Integer.parseInt(LocalDate.now().format(FORMATTER)) - MEERDERJARIGE_LEEFTIJD;
         return geboortedatum > datumVolwassenVanaf;

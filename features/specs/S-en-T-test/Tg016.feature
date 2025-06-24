@@ -220,7 +220,7 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20131201 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 1D                          |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |

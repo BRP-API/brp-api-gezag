@@ -40,10 +40,10 @@ Functionaliteit: wanneer gegevens in onderzoek staan wordt een gezag uitspraak g
     * is het gezag over 'Rijk' gezamenlijk ouderlijk gezag met ouder 'Rianne' en ouder 'Roel'
 
     Voorbeelden:
-      | aanduiding onderzoek | omschrijving   |
-      | 010310               | geboortedatum  |
-      | 010330               | geboorteland   |
-      | 010000               | hele categorie |
+      | aanduiding onderzoek | omschrijving        |
+      | 010310               | geboortedatum       |
+      | 010410               | geslachtsaanduiding |
+      | 010000               | hele categorie      |
 
   Abstract Scenario: gezag wordt bepaald met gegeven van de ouder 2: <omschrijving> in onderzoek er is sprake van GezamenlijkOuderlijkGezag
     Gegeven persoon '<persoon>'

@@ -337,23 +337,25 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
 
 
   Scenario: Lg01_139 - test op inlezen in de toekomst met geboortejaar 2023 (is inlezen in toekomst mogelijk)
-    # Route: 54n (OG2) - geen BSN ouder - (N)
+    # Route: 45e
     Als 'gezag' wordt gevraagd van 'Hinke'
     Dan is het gezag over 'Hinke' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd'
 
   Scenario: Lg01_140 - 3 kinderen in 2023, 1 erkend als ongeboren vrucht, 1 erkend bij geboorteaangifte, 1 erkend na geboorteaangifte
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Hans'
-    Dan is het gezag over 'Harold' gezamenlijk ouderlijk gezag met ouder 'Hans' en ouder 'Helga'
-    Dan is het gezag over 'Harm' gezamenlijk ouderlijk gezag met ouder 'Hans' en ouder 'Helga'
-    Dan is het gezag over 'Harry' gezamenlijk ouderlijk gezag met ouder 'Hans' en ouder 'Helga'
+    Dan heeft 'Hans' de volgende gezagsrelaties
+    * is het gezag over 'Harold' gezamenlijk ouderlijk gezag met ouder 'Hans' en ouder 'Helga'
+    * is het gezag over 'Harm' gezamenlijk ouderlijk gezag met ouder 'Hans' en ouder 'Helga'
+    * is het gezag over 'Harry' gezamenlijk ouderlijk gezag met ouder 'Hans' en ouder 'Helga'
 
   Scenario: Lg01_141 - 3 kinderen in 2023, 1 erkend als ongeboren vrucht, 1 erkend bij geboorteaangifte, 1 erkend na geboorteaangifte
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Helga'
-    Dan is het gezag over 'Harold' gezamenlijk ouderlijk gezag met ouder 'Hans' en ouder 'Helga'
-    Dan is het gezag over 'Harm' gezamenlijk ouderlijk gezag met ouder 'Hans' en ouder 'Helga'
-    Dan is het gezag over 'Harry' gezamenlijk ouderlijk gezag met ouder 'Hans' en ouder 'Helga'
+    Dan heeft 'Helga' de volgende gezagsrelaties
+    * is het gezag over 'Harold' gezamenlijk ouderlijk gezag met ouder 'Hans' en ouder 'Helga'
+    * is het gezag over 'Harm' gezamenlijk ouderlijk gezag met ouder 'Hans' en ouder 'Helga'
+    * is het gezag over 'Harry' gezamenlijk ouderlijk gezag met ouder 'Hans' en ouder 'Helga'
 
   Scenario: Lg01_142 - kind geboren uit ongehuwde ouders in 2023, erkenning na de geboorteaangifte (akteaanduiding C)
     # Route: 54n

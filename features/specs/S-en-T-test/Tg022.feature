@@ -32,7 +32,7 @@ Functionaliteit: Tg022 - Barakat-Idilbi - Ouders met een onvolledige huwelijksda
       | beschrijving document (82.30)                      | voe    |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En heeft een partner 'Maryana' met de volgende gegevens
+    En heeft een partner 'Maryana-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Maryana   |
@@ -84,7 +84,7 @@ Functionaliteit: Tg022 - Barakat-Idilbi - Ouders met een onvolledige huwelijksda
       | beschrijving document (82.30)                      | voe    |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En heeft een partner 'Saadallah' met de volgende gegevens
+    En heeft een partner 'Saadallah-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Saadallah |
@@ -155,12 +155,14 @@ Functionaliteit: Tg022 - Barakat-Idilbi - Ouders met een onvolledige huwelijksda
   Scenario: Lg01_122 - alleen huwelijksjaar bekend
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Saadallah'
-    Dan is het gezag over 'Salim' gezamenlijk ouderlijk gezag met ouder 'Saadallah' en ouder 'Maryana'
+    Dan heeft 'Saadallah' de volgende gezagsrelaties
+    * is het gezag over 'Salim' gezamenlijk ouderlijk gezag met ouder 'Saadallah' en ouder 'Maryana'
 
   Scenario: Lg01_123 - alleen huwelijksjaar bekend
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Maryana'
-    Dan is het gezag over 'Salim' gezamenlijk ouderlijk gezag met ouder 'Saadallah' en ouder 'Maryana'
+    Dan heeft 'Maryana' de volgende gezagsrelaties
+    * is het gezag over 'Salim' gezamenlijk ouderlijk gezag met ouder 'Saadallah' en ouder 'Maryana'
 
   Scenario: Lg01_124 - ouders geboren en gehuwd in buitenland, alleen jaar bekend, kind in Nederland geboren
     # Route: 49

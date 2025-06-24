@@ -40,7 +40,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een partner 'Fabian' met de volgende gegevens
+    En heeft een partner 'Fabian-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Fabian    |
@@ -107,7 +107,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Fieke' met de volgende gegevens
+    En heeft een partner 'Fieke-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Fieke     |
@@ -142,7 +142,7 @@ Functionaliteit: Tg007 - Frederiks-Faassen
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0300   |
       | ingangsdatum geldigheid (85.10) | 20181201  |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                               | waarde                      |
       | indicatie curateleregister (33.10) | 1                           |
       | beschrijving document (82.30)      | uittreksel curateleregister |
@@ -228,8 +228,9 @@ Functionaliteit: Tg007 - Frederiks-Faassen
   Scenario: Lg01_028 - gehuwd, 1 minderjarig kind erkend vóór huwelijk, 1 minderjarig kind geboren ná huwelijk, echtgenoot onder curatele
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Fieke'
-    Dan is het gezag over 'Frans' eenhoofdig ouderlijk gezag met ouder 'Fieke'
-    Dan is het gezag over 'Frits' eenhoofdig ouderlijk gezag met ouder 'Fieke'
+    Dan heeft 'Fieke' de volgende gezagsrelaties
+    * is het gezag over 'Frans' eenhoofdig ouderlijk gezag met ouder 'Fieke'
+    * is het gezag over 'Frits' eenhoofdig ouderlijk gezag met ouder 'Fieke'
 
   Scenario: Lg01_029 - gehuwd, 1 minderjarig kind erkend vóór huwelijk, 1 minderjarig kind geboren ná huwelijk, onder curatele
     # Meerderjarig

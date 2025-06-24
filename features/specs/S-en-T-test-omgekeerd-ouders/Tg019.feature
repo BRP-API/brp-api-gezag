@@ -42,7 +42,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een partner 'Astrid' met de volgende gegevens
+    En heeft een partner 'Astrid-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Astrid    |
@@ -140,7 +140,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een partner 'Arend' met de volgende gegevens
+    En heeft een partner 'Arend-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Arend     |
@@ -154,7 +154,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20001020  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Arend' is gewijzigd naar de volgende gegevens
+    En partner 'Arend-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000012 |
       | voornamen (02.10)                                             | Arend     |
@@ -313,7 +313,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 2                           |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -358,7 +358,7 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | D                           |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -381,9 +381,9 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
     Dan is het gezag over 'Annabel' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat beide ouders overleden zijn.'
 
   Scenario: Lg01_104 - gehuwde ouders beiden overleden, indicatie gezag 1 geplaatst vóór overlijden Ouder1
-    # Route: 12oo
+    # Route: 12o
     Als 'gezag' wordt gevraagd van 'Annalies'
-    Dan is het gezag over 'Annalies' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat beide ouders overleden zijn.'
+    Dan is het gezag over 'Annalies' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat de ouder overleden is.'
 
   Scenario: Lg01_105 - gehuwde ouders beiden overleden, indicatie D geplaatst ná overlijden Ouders
     # Route: 6

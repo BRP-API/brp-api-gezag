@@ -40,7 +40,7 @@ Functionaliteit: Tg001 - Adema-Arendsen - Gehuwd met kinderen geboren voor en na
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Adam' met de volgende gegevens
+    En heeft een partner 'Adam-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Adam      |
@@ -189,7 +189,7 @@ Functionaliteit: Tg001 - Adema-Arendsen - Gehuwd met kinderen geboren voor en na
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een partner 'Annet' met de volgende gegevens
+    En heeft een partner 'Annet-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Annet     |
@@ -478,7 +478,7 @@ Functionaliteit: Tg001 - Adema-Arendsen - Gehuwd met kinderen geboren voor en na
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20161231 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                    |
       | indicatie gezag minderjarige (32.10) | 1                         |
       | beschrijving document (82.30)        | mededeling gezagsregister |
@@ -535,7 +535,7 @@ Functionaliteit: Tg001 - Adema-Arendsen - Gehuwd met kinderen geboren voor en na
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 2                           |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -592,7 +592,7 @@ Functionaliteit: Tg001 - Adema-Arendsen - Gehuwd met kinderen geboren voor en na
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 2D                          |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -649,7 +649,7 @@ Functionaliteit: Tg001 - Adema-Arendsen - Gehuwd met kinderen geboren voor en na
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 2D                          |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -659,20 +659,22 @@ Functionaliteit: Tg001 - Adema-Arendsen - Gehuwd met kinderen geboren voor en na
   Scenario: Lg01_001 - gehuwd, 4 minderjarige kinderen geboren vóór huwelijk, 2 minderjarige kinderen geboren ná huwelijk, 1 overleden kind, 1 meerderjarig kind, 4 kinderen onder gezag
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Annet'
-    Dan is het gezag over 'Axel' gezamenlijk ouderlijk gezag met ouder 'Annet' en ouder 'Adam'
-    Dan is het gezag over 'Alicia' gezamenlijk ouderlijk gezag met ouder 'Annet' en ouder 'Adam'
-    Dan is het gezag over 'Alexa' gezamenlijk ouderlijk gezag met ouder 'Annet' en ouder 'Adam'
-    Dan is het gezag over 'Ariana' eenhoofdig ouderlijk gezag met ouder 'Annet'
-    Dan is het gezag over 'Astrid' gezamenlijk gezag met ouder 'Annet' en een onbekende derde
-    Dan is het gezag over 'Xandra' gezamenlijk gezag met ouder 'Annet' en een onbekende derde
+    Dan heeft 'Annet' de volgende gezagsrelaties
+    * is het gezag over 'Axel' gezamenlijk ouderlijk gezag met ouder 'Annet' en ouder 'Adam'
+    * is het gezag over 'Alicia' gezamenlijk ouderlijk gezag met ouder 'Annet' en ouder 'Adam'
+    * is het gezag over 'Alexa' gezamenlijk ouderlijk gezag met ouder 'Annet' en ouder 'Adam'
+    * is het gezag over 'Ariana' eenhoofdig ouderlijk gezag met ouder 'Annet'
+    * is het gezag over 'Astrid' gezamenlijk gezag met ouder 'Annet' en een onbekende derde
+    * is het gezag over 'Xandra' gezamenlijk gezag met ouder 'Annet' en een onbekende derde
 
   Scenario: Lg01_002 - gehuwd, 4 minderjarige kinderen geboren vóór huwelijk, 2 minderjarige kinderen geboren ná huwelijk, 1 overleden kind, 1 meerderjarig kind, 4 kinderen onder gezag
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Adam'
-    Dan is het gezag over 'Axel' gezamenlijk ouderlijk gezag met ouder 'Annet' en ouder 'Adam'
-    Dan is het gezag over 'Alicia' gezamenlijk ouderlijk gezag met ouder 'Annet' en ouder 'Adam'
-    Dan is het gezag over 'Alexa' gezamenlijk ouderlijk gezag met ouder 'Annet' en ouder 'Adam'
-    Dan is het gezag over 'Amalia' eenhoofdig ouderlijk gezag met ouder 'Adam'
+    Dan heeft 'Adam' de volgende gezagsrelaties
+    * is het gezag over 'Axel' gezamenlijk ouderlijk gezag met ouder 'Annet' en ouder 'Adam'
+    * is het gezag over 'Alicia' gezamenlijk ouderlijk gezag met ouder 'Annet' en ouder 'Adam'
+    * is het gezag over 'Alexa' gezamenlijk ouderlijk gezag met ouder 'Annet' en ouder 'Adam'
+    * is het gezag over 'Amalia' eenhoofdig ouderlijk gezag met ouder 'Adam'
 
   Scenario: Lg01_003 - minderjarig, ouders gehuwd op moment geboorte, geen categorie 11
     # Route: 49

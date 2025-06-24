@@ -40,7 +40,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Nout' met de volgende gegevens
+    En heeft een partner 'Nout-0' met de volgende gegevens
       | naam                                                                | waarde           |
       | burgerservicenummer (01.20)                                         | 000000024        |
       | voornamen (02.10)                                                   | Nout             |
@@ -108,7 +108,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | beschrijving document (82.30)                      | PK               |
       | ingangsdatum geldigheid (85.10)                    | 0                |
       | datum ingang familierechtelijke betrekking (62.10) | 0                |
-    En heeft een partner 'Nicolien' met de volgende gegevens
+    En heeft een partner 'Nicolien-0' met de volgende gegevens
       | naam                                                                | waarde     |
       | burgerservicenummer (01.20)                                         | 000000012  |
       | voornamen (02.10)                                                   | Nicolien   |
@@ -121,7 +121,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20120901   |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518       |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030       |
-    En partner 'Nicolien' is gewijzigd naar de volgende gegevens
+    En partner 'Nicolien-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde     |
       | burgerservicenummer (01.20)                                   | 000000012  |
       | voornamen (02.10)                                             | Nicolien   |
@@ -211,7 +211,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Nienke' met de volgende gegevens
+    En heeft een partner 'Nienke-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000061 |
       | voornamen (02.10)                                                   | Nienke    |
@@ -269,7 +269,7 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Norah' met de volgende gegevens
+    En heeft een partner 'Norah-0' met de volgende gegevens
       | naam                                                                | waarde     |
       | burgerservicenummer (01.20)                                         | 000000048  |
       | voornamen (02.10)                                                   | Norah      |
@@ -334,7 +334,8 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
   Scenario: Lg01_079 - geregistreerd partnerschap, partner heeft minderjarig, niet erkend kind geboren vóór 01-04-2014, partner overleden
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Nout'
-    Dan is het gezag over 'Naomi' voogdij met derde 'Nout'
+    Dan heeft 'Nout' de volgende gezagsrelaties
+    * is het gezag over 'Naomi' voogdij met derde 'Nout'
 
   Scenario: Lg01_080 - moeder geregistreerd partnerschap, niet erkend, geen categorie 11, moeder overleden geregistreerd partner van moeder automatisch gezag
     # Route: 43o1
@@ -344,7 +345,8 @@ Functionaliteit: Tg014 - Nicolaesen-Niemandsverdiet-Nijman
   Scenario: Lg01_081 - huwelijk personen gelijk geslacht (V), 1 minderjarig kind erkend als ongeboren vrucht door vader
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Norah'
-    Dan is het gezag over 'Noralie' eenhoofdig ouderlijk gezag met ouder 'Norah'
+    Dan heeft 'Norah' de volgende gezagsrelaties
+    * is het gezag over 'Noralie' eenhoofdig ouderlijk gezag met ouder 'Norah'
 
   Scenario: Lg01_082 - huwelijk personen gelijk geslacht (V), echtgenote 1 minderjarig kind erkend als ongeboren vrucht door vader
     # Meerderjarig

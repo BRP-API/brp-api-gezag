@@ -46,7 +46,7 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Priscilla' met de volgende gegevens
+    En heeft een partner 'Priscilla-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Priscilla |
@@ -105,11 +105,11 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'partner-1' met de volgende gegevens
+    En heeft een partner 'partner-1-0' met de volgende gegevens
       | naam                            | waarde   |
       | aktenummer (81.20)              | 5AA0100  |
       | ingangsdatum geldigheid (85.10) | 20130201 |
-    En partner 'partner-1' is gewijzigd naar de volgende gegevens
+    En partner 'partner-1-0' is gewijzigd naar de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Peter     |
@@ -220,7 +220,7 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20131201 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 2D                          |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -251,7 +251,7 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een partner 'Pieta' met de volgende gegevens
+    En heeft een partner 'Pieta-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000073 |
       | voornamen (02.10)                                                   | Pieta     |
@@ -264,7 +264,7 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20130201  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Pieta' is gewijzigd naar de volgende gegevens
+    En partner 'Pieta-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000073 |
       | voornamen (02.10)                                             | Pieta     |
@@ -317,7 +317,7 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Patricia' met de volgende gegevens
+    En heeft een partner 'Patricia-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000061 |
       | voornamen (02.10)                                                   | Patricia  |
@@ -408,7 +408,7 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een partner 'Paula' met de volgende gegevens
+    En heeft een partner 'Paula-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000103 |
       | voornamen (02.10)                                                   | Paula     |
@@ -421,7 +421,7 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20160301  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Paula' is gewijzigd naar de volgende gegevens
+    En partner 'Paula-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000103 |
       | voornamen (02.10)                                             | Paula     |
@@ -490,7 +490,7 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
       | beschrijving document (82.30)                      | PK         |
       | ingangsdatum geldigheid (85.10)                    | 0          |
       | datum ingang familierechtelijke betrekking (62.10) | 0          |
-    En heeft een partner 'Pauwel' met de volgende gegevens
+    En heeft een partner 'Pauwel-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000097 |
       | voornamen (02.10)                                                   | Pauwel    |
@@ -588,7 +588,8 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
   Scenario: Lg01_091 - huwelijk tussen 2 vrouwen vóór 01-04-2014, huwelijkspartner niet automatisch ouder van kind, partner overleden
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Patricia'
-    Dan is het gezag over 'Pepita' eenhoofdig ouderlijk gezag met ouder 'Patricia'
+    Dan heeft 'Patricia' de volgende gezagsrelaties
+    * is het gezag over 'Pepita' eenhoofdig ouderlijk gezag met ouder 'Patricia'
 
   Scenario: Lg01_092 - huwelijk tussen 2 vrouwen vóór 01-04-2014, huwelijkspartner niet automatisch ouder van kind, overleden
     # Meerderjarig

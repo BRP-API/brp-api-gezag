@@ -43,7 +43,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Govert' met de volgende gegevens
+    En heeft een partner 'Govert-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Govert    |
@@ -57,7 +57,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20120801  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Govert' is gewijzigd naar de volgende gegevens
+    En partner 'Govert-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000024 |
       | voornamen (02.10)                                             | Govert    |
@@ -139,7 +139,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een partner 'Gea' met de volgende gegevens
+    En heeft een partner 'Gea-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Gea       |
@@ -152,7 +152,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20120801  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Gea' is gewijzigd naar de volgende gegevens
+    En partner 'Gea-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000012 |
       | voornamen (02.10)                                             | Gea       |
@@ -253,7 +253,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 12                          |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -330,7 +330,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Gert-Jan' met de volgende gegevens
+    En heeft een partner 'Gert-Jan-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000073 |
       | voornamen (02.10)                                                   | Gert-Jan  |
@@ -344,7 +344,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20060801  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Gert-Jan' is gewijzigd naar de volgende gegevens
+    En partner 'Gert-Jan-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000073 |
       | voornamen (02.10)                                             | Gert-Jan  |
@@ -445,7 +445,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Gerda' met de volgende gegevens
+    En heeft een partner 'Gerda-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000061 |
       | voornamen (02.10)                                                   | Gerda     |
@@ -458,7 +458,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20060801  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Gerda' is gewijzigd naar de volgende gegevens
+    En partner 'Gerda-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000061 |
       | voornamen (02.10)                                             | Gerda     |
@@ -632,7 +632,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20130801 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 12                          |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -677,7 +677,7 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20140801 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | D                           |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -687,14 +687,16 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
   Scenario: Lg01_032 - gescheiden, 1 minderjarig kind erkend vóór huwelijk, 1 minderjarig kind tijdens huwelijk
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Gea'
-    Dan is het gezag over 'Gabriel' gezamenlijk ouderlijk gezag met ouder 'Gea' en ouder 'Govert'
-    Dan is het gezag over 'Gaston' gezamenlijk ouderlijk gezag met ouder 'Gea' en ouder 'Govert'
+    Dan heeft 'Gea' de volgende gezagsrelaties
+    * is het gezag over 'Gabriel' gezamenlijk ouderlijk gezag met ouder 'Gea' en ouder 'Govert'
+    * is het gezag over 'Gaston' gezamenlijk ouderlijk gezag met ouder 'Gea' en ouder 'Govert'
 
   Scenario: Lg01_033 - gescheiden, 1 minderjarig kind erkend vóór huwelijk, 1 minderjarig kind tijdens huwelijk
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Govert'
-    Dan is het gezag over 'Gabriel' gezamenlijk ouderlijk gezag met ouder 'Gea' en ouder 'Govert'
-    Dan is het gezag over 'Gaston' gezamenlijk ouderlijk gezag met ouder 'Gea' en ouder 'Govert'
+    Dan heeft 'Govert' de volgende gezagsrelaties
+    * is het gezag over 'Gabriel' gezamenlijk ouderlijk gezag met ouder 'Gea' en ouder 'Govert'
+    * is het gezag over 'Gaston' gezamenlijk ouderlijk gezag met ouder 'Gea' en ouder 'Govert'
 
   Scenario: Lg01_034 - minderjarig kind, erkend ná de geboorte, ouders vervolgens gehuwd en weer gescheiden, categorie 11 met 12 vóór huwelijk ouders
     # Route: 7
@@ -709,13 +711,15 @@ Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
   Scenario: Lg01_036 - gescheiden, 1 minderjarig erkend kind geboren ná de echtscheiding
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Gerda'
-    Dan is het gezag over 'Gigi' eenhoofdig ouderlijk gezag met ouder 'Gerda'
-    Dan is het gezag over 'Gina' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Gert-Jan'
+    Dan heeft 'Gerda' de volgende gezagsrelaties
+    * is het gezag over 'Gigi' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+    * is het gezag over 'Gina' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Gert-Jan'
 
   Scenario: Lg01_037 - gescheiden, 1 minderjarig erkend kind geboren ná de echtscheiding
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Gert-Jan'
-    Dan is het gezag over 'Gina' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Gert-Jan'
+    Dan heeft 'Gert-Jan' de volgende gezagsrelaties
+    * is het gezag over 'Gina' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Gert-Jan'
 
   Scenario: Lg01_038 - erkend kind, ouders gescheiden vóór de geboortedatum, geen categorie 11
     # Route: 54v2

@@ -44,7 +44,7 @@ Functionaliteit: Tg035 - Saasveld-Suijdema - Vanuit gezamenlijk gezag komt moede
       | aktenummer (81.20)                                 | 1AA0202  |
       | ingangsdatum geldigheid (85.10)                    | 19981201 |
       | datum ingang familierechtelijke betrekking (62.10) | 19981201 |
-    En heeft een partner 'Saskia' met de volgende gegevens
+    En heeft een partner 'Saskia-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Saskia    |
@@ -106,7 +106,7 @@ Functionaliteit: Tg035 - Saasveld-Suijdema - Vanuit gezamenlijk gezag komt moede
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Simone' met de volgende gegevens
+    En heeft een partner 'Simone-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Simone    |
@@ -164,7 +164,8 @@ Functionaliteit: Tg035 - Saasveld-Suijdema - Vanuit gezamenlijk gezag komt moede
   Scenario: Lg01_186 - huwelijkspartner van vrouw, van rechtswege gezag
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Saskia'
-    Dan is het gezag over 'Sanne' voogdij met derde 'Saskia'
+    Dan heeft 'Saskia' de volgende gezagsrelaties
+    * is het gezag over 'Sanne' voogdij met derde 'Saskia'
 
   Scenario: Lg01_187 - 1 ouder, moeder gehuwd, meemoeder geen ouder, moeder overleden
     # Route: 43o1

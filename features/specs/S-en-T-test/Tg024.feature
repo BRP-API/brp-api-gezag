@@ -42,7 +42,7 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Francien' met de volgende gegevens
+    En heeft een partner 'Francien-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Francien  |
@@ -55,7 +55,7 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20131001  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Francien' is gewijzigd naar de volgende gegevens
+    En partner 'Francien-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000024 |
       | voornamen (02.10)                                             | Francien  |
@@ -129,7 +129,7 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Frederik' met de volgende gegevens
+    En heeft een partner 'Frederik-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Frederik  |
@@ -143,7 +143,7 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20131001  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Frederik' is gewijzigd naar de volgende gegevens
+    En partner 'Frederik-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000012 |
       | voornamen (02.10)                                             | Frederik  |
@@ -313,13 +313,15 @@ Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig v
   Scenario: Lg01_130 - kind geboren tijdens huwelijk dat later nietig is verklaard, ander kind erkend en erkenning is vernietigd
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Frederik'
-    Dan is het gezag over 'Felicia' gezamenlijk ouderlijk gezag met ouder 'Francien' en ouder 'Frederik'
+    Dan heeft 'Frederik' de volgende gezagsrelaties
+    * is het gezag over 'Felicia' gezamenlijk ouderlijk gezag met ouder 'Francien' en ouder 'Frederik'
 
   Scenario: Lg01_131 - kind geboren tijdens huwelijk dat later nietig is verklaard, ander kind erkend en erkenning is vernietigd
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Francien'
-    Dan is het gezag over 'Felicia' gezamenlijk ouderlijk gezag met ouder 'Francien' en ouder 'Frederik'
-    Dan is het gezag over 'Fabienne' eenhoofdig ouderlijk gezag met ouder 'Francien'
+    Dan heeft 'Francien' de volgende gezagsrelaties
+    * is het gezag over 'Felicia' gezamenlijk ouderlijk gezag met ouder 'Francien' en ouder 'Frederik'
+    * is het gezag over 'Fabienne' eenhoofdig ouderlijk gezag met ouder 'Francien'
 
   Scenario: Lg01_132 - geboren uit huwelijk ouders wat later nietig is verklaard
     # Route: 45

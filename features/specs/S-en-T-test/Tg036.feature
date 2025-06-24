@@ -213,12 +213,13 @@ Functionaliteit: Tg036 - Taher – Gegevens in onderzoek
   Scenario: Lg01_188 - moeder van minderjarig kind, 010100 in onderzoek
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Tasnim'
-    Dan is het gezag over 'Thurayya' eenhoofdig ouderlijk gezag met ouder 'Tasnim'
+    Dan heeft 'Tasnim' de volgende gezagsrelaties
+    * is het gezag over 'Thurayya' eenhoofdig ouderlijk gezag met ouder 'Tasnim'
     En is het gezag in onderzoek
-    Dan is het gezag over 'Tayeh' eenhoofdig ouderlijk gezag met ouder 'Tasnim'
-    Dan is het gezag over 'Tamineh' eenhoofdig ouderlijk gezag met ouder 'Tasnim'
+    * is het gezag over 'Tayeh' eenhoofdig ouderlijk gezag met ouder 'Tasnim'
+    * is het gezag over 'Tamineh' eenhoofdig ouderlijk gezag met ouder 'Tasnim'
     En is het gezag in onderzoek
-    Dan is het gezag over 'Thaliya' eenhoofdig ouderlijk gezag met ouder 'Tasnim'
+    * is het gezag over 'Thaliya' eenhoofdig ouderlijk gezag met ouder 'Tasnim'
 
   Scenario: Lg01_189 - minderjarig kind, 010000 in onderzoek
     # Route: 40o1i

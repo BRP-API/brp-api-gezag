@@ -183,7 +183,8 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
   Scenario: Lg01_015 - ongehuwde meerderjarige moeder met 1 minderjarig niet-erkend kind,bij geboorte minderjarig inmiddels meerderjarig
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Carice'
-    Dan is het gezag over 'Carlijn' eenhoofdig ouderlijk gezag met ouder 'Carice'
+    Dan heeft 'Carice' de volgende gezagsrelaties
+    * is het gezag over 'Carlijn' eenhoofdig ouderlijk gezag met ouder 'Carice'
 
   Scenario: Lg01_016 - minderjarig niet erkend kind, moeder minderjarig, bij geboorte, inmiddels meerderjarig, geen categorie 11
     # Route: 40o1

@@ -41,7 +41,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Ria' met de volgende gegevens
+    En heeft een partner 'Ria-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Ria       |
@@ -54,7 +54,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20081201  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Ria' is gecorrigeerd naar de volgende gegevens
+    En partner 'Ria-0' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde          |
       | beschrijving document (82.30)   | nietig huwelijk |
       | ingangsdatum geldigheid (85.10) | 20081201        |
@@ -108,7 +108,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Richard' met de volgende gegevens
+    En heeft een partner 'Richard-0' met de volgende gegevens
       | naam                                                                | waarde     |
       | burgerservicenummer (01.20)                                         | 000000012  |
       | voornamen (02.10)                                                   | Richard    |
@@ -121,7 +121,7 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20081201   |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518       |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030       |
-    En partner 'Richard' is gecorrigeerd naar de volgende gegevens
+    En partner 'Richard-0' is gecorrigeerd naar de volgende gegevens
       | naam                            | waarde          |
       | beschrijving document (82.30)   | nietig huwelijk |
       | ingangsdatum geldigheid (85.10) | 20081201        |
@@ -209,7 +209,8 @@ Functionaliteit: Tg037 - Reijmersma-Rozenburg - Ouders met een vernietigd huweli
   Scenario: Lg01_201 - gehuwd, kind geboren tijdens huwelijk, huwelijk nadien nietig (gecorrigeerd)
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Ria'
-    Dan is het gezag over 'Ronny' eenhoofdig ouderlijk gezag met ouder 'Ria'
+    Dan heeft 'Ria' de volgende gezagsrelaties
+    * is het gezag over 'Ronny' eenhoofdig ouderlijk gezag met ouder 'Ria'
 
   Scenario: Lg01_202 - geboren tijdens huwelijk ouders, huwelijk ouders nietig, categorie 03 aangepast in juridisch geen ouder
     # Route: 40o1

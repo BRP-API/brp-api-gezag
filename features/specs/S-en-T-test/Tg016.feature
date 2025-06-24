@@ -588,7 +588,8 @@ Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
   Scenario: Lg01_091 - huwelijk tussen 2 vrouwen vóór 01-04-2014, huwelijkspartner niet automatisch ouder van kind, partner overleden
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Patricia'
-    Dan is het gezag over 'Pepita' eenhoofdig ouderlijk gezag met ouder 'Patricia'
+    Dan heeft 'Patricia' de volgende gezagsrelaties
+    * het gezag over 'Pepita' is eenhoofdig ouderlijk gezag met ouder 'Patricia'
 
   Scenario: Lg01_092 - huwelijk tussen 2 vrouwen vóór 01-04-2014, huwelijkspartner niet automatisch ouder van kind, overleden
     # Meerderjarig

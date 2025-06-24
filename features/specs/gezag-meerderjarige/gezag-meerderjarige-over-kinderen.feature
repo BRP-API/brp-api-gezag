@@ -41,6 +41,25 @@ Functionaliteit: gezag van een meerderjarige over een kind
     Dan heeft 'Gerda' de volgende gezagsrelaties
     * is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
 
+  Scenario: vader heeft geen gezag over minderjarig kind omdat gezag niet kan worden bepaald
+    Gegeven de persoon 'Aart' met burgerservicenummer '000000012'
+    * is ingeschreven in de BRP
+    * is meerderjarig
+    En de persoon 'Gerda' met burgerservicenummer '000000024'
+    * is ingeschreven in de BRP
+    * is meerderjarig
+    En 'Aart' en 'Gerda' zijn met elkaar gehuwd
+    En de persoon 'Bert' met burgerservicenummer '000000036'
+    * is ingeschreven in de BRP
+    * is minderjarig
+    * is in Nederland geboren
+    * is geëmigreerd geweest
+    * heeft 'Gerda' als ouder 1
+    * heeft 'Aart' als ouder 2
+    Als 'gezag' wordt gevraagd van 'Aart'
+    Dan heeft 'Aart' de volgende gezagsrelaties
+    * is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Aart' en ouder 'Gerda'
+
   Regel: een meerderjarige die geen gezag heeft over een minderjarig kind krijgt de gezagsrelatie niet geleverd
 
   Scenario: vader heeft geen gezag over minderjarig kind omdat deze niet gehuwd is noch partnerschap heeft met de moeder
@@ -88,22 +107,3 @@ Functionaliteit: gezag van een meerderjarige over een kind
       | D               | een derde                    |
       | 1               | de andere ouder              |
       | 1D              | de andere ouder en een derde |
-
-  Abstract Scenario: vader heeft geen gezag over minderjarig kind omdat gezag niet kan worden bepaald
-    Gegeven de persoon 'Aart' met burgerservicenummer '000000012'
-    * is ingeschreven in de BRP
-    * is meerderjarig
-    En de persoon 'Gerda' met burgerservicenummer '000000024'
-    * is ingeschreven in de BRP
-    * is meerderjarig
-    En 'Aart' en 'Gerda' zijn met elkaar gehuwd
-    En de persoon 'Bert' met burgerservicenummer '000000036'
-    * is ingeschreven in de BRP
-    * is minderjarig
-    * is in Nederland geboren
-    * is geëmigreerd geweest
-    * heeft 'Gerda' als ouder 1
-    * heeft 'Aart' als ouder 2
-    Als 'gezag' wordt gevraagd van 'Aart'
-    Dan heeft 'Aart' de volgende gezagsrelaties
-    * is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Aart' en ouder 'Gerda'

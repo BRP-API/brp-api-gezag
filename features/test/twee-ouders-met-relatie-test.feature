@@ -51,15 +51,6 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die gehuw
       Als 'gezag' wordt gevraagd van 'minderjarige'
       Dan is het gezag over 'minderjarige' eenhoofdig ouderlijk gezag met ouder 'moeder'
 
-    @https://github.com/BRP-API/brp-api-gezag/issues/338
-    Scenario: ouders zijn gehuwd en weer gescheiden voor geboorte
-      Gegeven de minderjarige persoon 'minderjarige' met twee ouders 'moeder' en 'vader' die ten tijde van de geboorte van de minderjarige niet met elkaar gehuwd waren
-      En 'moeder' en 'vader' zijn 25 jaar geleden gehuwd
-      En 'moeder' en 'vader' zijn 19 jaar geleden gescheiden
-      Als 'gezag' wordt gevraagd van 'minderjarige'
-      Dan is het gezag over 'minderjarige' gezamenlijk ouderlijk gezag met ouder 'moeder' en ouder 'vader'
-
-    @skip-verify @to-do @https://github.com/BRP-API/brp-api-gezag/issues/338
     Scenario: ouders zijn gehuwd en weer gescheiden voor geboorte
       Gegeven de minderjarige persoon 'minderjarige' met twee ouders 'moeder' en 'vader' die ten tijde van de geboorte van de minderjarige niet met elkaar gehuwd waren
       En 'moeder' en 'vader' zijn 25 jaar geleden gehuwd

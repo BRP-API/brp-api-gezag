@@ -169,18 +169,6 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die gehuw
       En persoon '<ouder>'
       * is op een onbekende datum geboren
       Als 'gezag' wordt gevraagd van 'minderjarige'
-      Dan is het gezag over 'minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van de bevoegdheid van een ouder. Het gaat om de volgende gegevens: geboortedatum'
-
-      Voorbeelden:
-        | ouder  | omschrijving                      |
-        | moeder | ouder 1 geboortedatum is onbekend |
-        | vader  | ouder 2 geboortedatum is onbekend |
-
-    Scenario: <omschrijving>
-      Gegeven de minderjarige persoon 'minderjarige' met twee gehuwde ouders 'moeder' en 'vader'
-      En persoon '<ouder>'
-      * is op een onbekende datum geboren
-      Als 'gezag' wordt gevraagd van 'minderjarige'
       Dan is het gezag over 'minderjarige' gezamenlijk ouderlijk gezag met ouder 'moeder' en ouder 'vader'
 
       Voorbeelden:

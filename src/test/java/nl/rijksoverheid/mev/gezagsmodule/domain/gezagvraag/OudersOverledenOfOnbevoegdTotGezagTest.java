@@ -26,8 +26,6 @@ class OudersOverledenOfOnbevoegdTotGezagTest {
     private static final String V4A_2_BEIDEN_OVERLEDEN = "Ja_beiden_overleden";
     private static final String V4A_2_NEE = "Nee";
     private static final String INDICATION_EXCEPTION_NOT_TWO_PARENTS = "Preconditie: Kind moet twee ouders hebben";
-    private static final String INDICATION_EXCEPTION_PARENT_ONE_NOT_REGISTERED = "Preconditie: ouder1 moet in BRP geregistreerd staan";
-    private static final String INDICATION_EXCEPTION_PARENT_TWO_NOT_REGISTERED = "Preconditie: ouder2 moet in BRP geregistreerd staan";
     private static final String GESLACHTSNAAM = "mock";
     @Mock
     private GezagsBepaling gezagsBepaling;
@@ -81,47 +79,14 @@ class OudersOverledenOfOnbevoegdTotGezagTest {
     }
 
     @Test
-    void ouderOverledenOfOnbevoegdTotGezagWithTwoParentsWithGeslachtsnaam() {
-        when(ouder1.getGeslachtsnaam()).thenReturn(GESLACHTSNAAM);
-        when(ouder2.getGeslachtsnaam()).thenReturn(GESLACHTSNAAM);
-        persoonslijst.setOuder1(ouder1);
-        persoonslijst.setOuder2(ouder2);
-
-        AfleidingsregelException exception = assertThrows(AfleidingsregelException.class,
-            () -> classUnderTest.perform(gezagsBepaling));
-
-        assertTrue(exception.getMessage().contains(INDICATION_EXCEPTION_PARENT_ONE_NOT_REGISTERED));
-    }
-
-    @Test
-    void ouderOverledenOfOnbevoegdTotGezagWithTwoParentsWithGeslachtsnaamOuder1Registered() {
-        when(ouder1.getGeslachtsnaam()).thenReturn(GESLACHTSNAAM);
-        when(ouder2.getGeslachtsnaam()).thenReturn(GESLACHTSNAAM);
-        persoonslijst.setOuder1(ouder1);
-        persoonslijst.setOuder2(ouder2);
-        when(persoonslijstOuder1.isNietIngeschrevenInRNI()).thenReturn(true);
-        when(persoonslijstOuder1.isNietGeemigreerd()).thenReturn(true);
-        when(gezagsBepaling.getPlOuder1()).thenReturn(persoonslijstOuder1);
-
-        AfleidingsregelException exception = assertThrows(AfleidingsregelException.class,
-            () -> classUnderTest.perform(gezagsBepaling));
-
-        assertTrue(exception.getMessage().contains(INDICATION_EXCEPTION_PARENT_TWO_NOT_REGISTERED));
-    }
-
-    @Test
     void ouderOverledenOfOnbevoegdTotGezagWithTwoParentsRegistered() {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
         when(ouder1.getGeslachtsnaam()).thenReturn(GESLACHTSNAAM);
         when(ouder2.getGeslachtsnaam()).thenReturn(GESLACHTSNAAM);
         persoonslijst.setOuder1(ouder1);
         persoonslijst.setOuder2(ouder2);
-        when(persoonslijstOuder1.isNietIngeschrevenInRNI()).thenReturn(true);
-        when(persoonslijstOuder1.isNietGeemigreerd()).thenReturn(true);
-        when(gezagsBepaling.getPlOuder1()).thenReturn(persoonslijstOuder1);
-        when(persoonslijstOuder2.isNietIngeschrevenInRNI()).thenReturn(true);
-        when(persoonslijstOuder2.isNietGeemigreerd()).thenReturn(true);
-        when(gezagsBepaling.getPlOuder2()).thenReturn(persoonslijstOuder2);
+        when(gezagsBepaling.fetchPersoonslijstVanOuder1()).thenReturn(Optional.of(persoonslijstOuder1));
+        when(gezagsBepaling.fetchPersoonslijstVanOuder2()).thenReturn(Optional.of(persoonslijstOuder2));
 
         var antwoord = classUnderTest.perform(gezagsBepaling);
 
@@ -135,13 +100,9 @@ class OudersOverledenOfOnbevoegdTotGezagTest {
         when(ouder2.getGeslachtsnaam()).thenReturn(GESLACHTSNAAM);
         persoonslijst.setOuder1(ouder1);
         persoonslijst.setOuder2(ouder2);
-        when(persoonslijstOuder1.isNietIngeschrevenInRNI()).thenReturn(true);
-        when(persoonslijstOuder1.isNietGeemigreerd()).thenReturn(true);
         when(persoonslijstOuder1.isOverledenOfOnbevoegdEncoded()).thenReturn(Optional.of('o'));
-        when(gezagsBepaling.getPlOuder1()).thenReturn(persoonslijstOuder1);
-        when(persoonslijstOuder2.isNietIngeschrevenInRNI()).thenReturn(true);
-        when(persoonslijstOuder2.isNietGeemigreerd()).thenReturn(true);
-        when(gezagsBepaling.getPlOuder2()).thenReturn(persoonslijstOuder2);
+        when(gezagsBepaling.fetchPersoonslijstVanOuder1()).thenReturn(Optional.of(persoonslijstOuder1));
+        when(gezagsBepaling.fetchPersoonslijstVanOuder2()).thenReturn(Optional.of(persoonslijstOuder2));
 
         var antwoord = classUnderTest.perform(gezagsBepaling);
 
@@ -155,13 +116,9 @@ class OudersOverledenOfOnbevoegdTotGezagTest {
         when(ouder2.getGeslachtsnaam()).thenReturn(GESLACHTSNAAM);
         persoonslijst.setOuder1(ouder1);
         persoonslijst.setOuder2(ouder2);
-        when(persoonslijstOuder1.isNietIngeschrevenInRNI()).thenReturn(true);
-        when(persoonslijstOuder1.isNietGeemigreerd()).thenReturn(true);
-        when(gezagsBepaling.getPlOuder1()).thenReturn(persoonslijstOuder1);
-        when(persoonslijstOuder2.isNietIngeschrevenInRNI()).thenReturn(true);
-        when(persoonslijstOuder2.isNietGeemigreerd()).thenReturn(true);
+        when(gezagsBepaling.fetchPersoonslijstVanOuder1()).thenReturn(Optional.of(persoonslijstOuder1));
         when(persoonslijstOuder2.isOverledenOfOnbevoegdEncoded()).thenReturn(Optional.of('o'));
-        when(gezagsBepaling.getPlOuder2()).thenReturn(persoonslijstOuder2);
+        when(gezagsBepaling.fetchPersoonslijstVanOuder2()).thenReturn(Optional.of(persoonslijstOuder2));
 
         var antwoord = classUnderTest.perform(gezagsBepaling);
 
@@ -175,14 +132,10 @@ class OudersOverledenOfOnbevoegdTotGezagTest {
         when(ouder2.getGeslachtsnaam()).thenReturn(GESLACHTSNAAM);
         persoonslijst.setOuder1(ouder1);
         persoonslijst.setOuder2(ouder2);
-        when(persoonslijstOuder1.isNietIngeschrevenInRNI()).thenReturn(true);
-        when(persoonslijstOuder1.isNietGeemigreerd()).thenReturn(true);
         when(persoonslijstOuder1.isOverledenOfOnbevoegdEncoded()).thenReturn(Optional.of('o'));
-        when(gezagsBepaling.getPlOuder1()).thenReturn(persoonslijstOuder1);
-        when(persoonslijstOuder2.isNietIngeschrevenInRNI()).thenReturn(true);
-        when(persoonslijstOuder2.isNietGeemigreerd()).thenReturn(true);
+        when(gezagsBepaling.fetchPersoonslijstVanOuder1()).thenReturn(Optional.of(persoonslijstOuder1));
         when(persoonslijstOuder2.isOverledenOfOnbevoegdEncoded()).thenReturn(Optional.of('o'));
-        when(gezagsBepaling.getPlOuder2()).thenReturn(persoonslijstOuder2);
+        when(gezagsBepaling.fetchPersoonslijstVanOuder2()).thenReturn(Optional.of(persoonslijstOuder2));
 
         var antwoord = classUnderTest.perform(gezagsBepaling);
 

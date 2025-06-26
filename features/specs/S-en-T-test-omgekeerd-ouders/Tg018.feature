@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg018 - Vondeling - Kind zonder ouders
 
 

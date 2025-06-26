@@ -1,6 +1,7 @@
 package nl.rijksoverheid.mev.brp.brpv;
 
 import nl.rijksoverheid.mev.brp.PersoonslijstFinder;
+import nl.rijksoverheid.mev.brp.TitelPredicaatFinder;
 import nl.rijksoverheid.mev.brp.brpv.generated.tables.Lo3PlGezagsverhouding;
 import nl.rijksoverheid.mev.brp.brpv.generated.tables.Lo3PlVerblijfplaats;
 import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.Lo3PlGezagsverhoudingRecord;
@@ -37,10 +38,16 @@ public class JooqPersoonslijstFinder implements PersoonslijstFinder {
 
     private final DSLContext create;
     private final LoggingContext loggingContext;
+    private final TitelPredicaatFinder titelPredicaatFinder;
 
-    public JooqPersoonslijstFinder(DSLContext create, LoggingContext loggingContext) {
+    public JooqPersoonslijstFinder(
+        DSLContext create,
+        LoggingContext loggingContext,
+        TitelPredicaatFinder titelPredicaatFinder
+    ) {
         this.create = create;
         this.loggingContext = loggingContext;
+        this.titelPredicaatFinder = titelPredicaatFinder;
     }
 
     @Override
@@ -64,7 +71,12 @@ public class JooqPersoonslijstFinder implements PersoonslijstFinder {
         var plPersoonPersoon = lo3PlPersoonRecordsByPersoonType.getOrDefault(PERSOON, Collections.emptyList());
         if (!plPersoonPersoon.isEmpty()) {
             var plPersoonPersoonRecent = plPersoonPersoon.getFirst();
-            result.addPersoon(plPersoonPersoonRecent);
+            var titelPredicaatCode = plPersoonPersoonRecent.getTitelPredicaat();
+            var titelPredicaat = Optional.ofNullable(titelPredicaatCode)
+                .flatMap(titelPredicaatFinder::findBy)
+                .orElse(null);
+
+            result.addPersoon(plPersoonPersoonRecent, titelPredicaat);
             plPersoonPersoon.stream()
                 .skip(1)
                 .forEach(result::addPersoonGeschiedenis);
@@ -73,7 +85,12 @@ public class JooqPersoonslijstFinder implements PersoonslijstFinder {
         var plPersoonOuder1 = lo3PlPersoonRecordsByPersoonType.getOrDefault(OUDER_1, Collections.emptyList());
         if (!plPersoonOuder1.isEmpty()) {
             var plPersoonOuder1Recent = plPersoonOuder1.getFirst();
-            result.addOuder1(plPersoonOuder1Recent);
+            var titelPredicaatCode = plPersoonOuder1Recent.getTitelPredicaat();
+            var titelPredicaat = Optional.ofNullable(titelPredicaatCode)
+                .flatMap(titelPredicaatFinder::findBy)
+                .orElse(null);
+
+            result.addOuder1(plPersoonOuder1Recent, titelPredicaat);
             plPersoonOuder1.stream()
                 .skip(1)
                 .forEach(result::addOuder1Geschiedenis);
@@ -82,7 +99,12 @@ public class JooqPersoonslijstFinder implements PersoonslijstFinder {
         var plPersoonOuder2 = lo3PlPersoonRecordsByPersoonType.getOrDefault(OUDER_2, Collections.emptyList());
         if (!plPersoonOuder2.isEmpty()) {
             var plPersoonOuder2Recent = plPersoonOuder2.getFirst();
-            result.addOuder2(plPersoonOuder2Recent);
+            var titelPredicaatCode = plPersoonOuder2Recent.getTitelPredicaat();
+            var titelPredicaat = Optional.ofNullable(titelPredicaatCode)
+                .flatMap(titelPredicaatFinder::findBy)
+                .orElse(null);
+
+            result.addOuder2(plPersoonOuder2Recent, titelPredicaat);
             plPersoonOuder2.stream()
                 .skip(1)
                 .forEach(result::addOuder2Geschiedenis);
@@ -94,7 +116,14 @@ public class JooqPersoonslijstFinder implements PersoonslijstFinder {
         plPersoonKinderenZonderGeschiedenis.forEach(result::addKind);
 
         var plPersoonRelaties = lo3PlPersoonRecordsByPersoonType.getOrDefault(RELATIE, Collections.emptyList());
-        plPersoonRelaties.forEach(result::addRelatie);
+        plPersoonRelaties.forEach(relatie -> {
+            var titelPredicaatCode = relatie.getTitelPredicaat();
+            var titelPredicaat = Optional.ofNullable(titelPredicaatCode)
+                .flatMap(titelPredicaatFinder::findBy)
+                .orElse(null);
+
+            result.addRelatie(relatie, titelPredicaat);
+        });
 
         var optionalPlVerblijfplaats = findPlVerblijfplaatsByPlId(plId);
         optionalPlVerblijfplaats.ifPresent(result::addVerblijfplaats);

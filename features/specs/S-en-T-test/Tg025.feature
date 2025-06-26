@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
 
 

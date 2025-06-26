@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische ouders - ex-juridische moeder
 
 

@@ -52,22 +52,8 @@ Functionaliteit: 3.2 - Achterhalen gezag na uitspraak
     Gegeven voor 'Nathan' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
       | indicatie gezag minderjarige (32.10) | ingangsdatum geldigheid (85.10) |
       | 12                                   | 20230101                        |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                    |
-      | type                             | GezamenlijkOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft 'gezag' een 'ouder' met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000024 |
+    Als 'gezag' wordt gevraagd van 'Nathan'
+    Dan is het gezag over 'Nathan' gezamenlijk ouderlijk gezag met ouder 'Klaartje' en ouder 'Arjan'
 
   Regel: Uitspraak gezag met indicatie dat één ouder gezag heeft is opgenomen vanuit het Gezagsregister
 
@@ -75,33 +61,15 @@ Functionaliteit: 3.2 - Achterhalen gezag na uitspraak
     Gegeven voor 'Nathan' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
       | indicatie gezag minderjarige (32.10) | ingangsdatum geldigheid (85.10) |
       | 1                                    | 20230101                        |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000012                |
+    Als 'gezag' wordt gevraagd van 'Nathan'
+    Dan is het gezag over 'Nathan' eenhoofdig ouderlijk gezag met ouder 'Klaartje'
 
   Scenario: Alleen de vader heeft gezag over het kind
     Gegeven voor 'Nathan' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
       | indicatie gezag minderjarige (32.10) | ingangsdatum geldigheid (85.10) |
       | 2                                    | 20230101                        |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde                   |
-      | type                             | EenhoofdigOuderlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036                |
-      | ouder.burgerservicenummer        | 000000024                |
+    Als 'gezag' wordt gevraagd van 'Nathan'
+    Dan is het gezag over 'Nathan' eenhoofdig ouderlijk gezag met ouder 'Arjan'
 
   Regel: Uitspraak gezag met indicatie dat er sprake is van gezamelijk gezag is opgenomen vanuit het Gezagsregister
 
@@ -109,18 +77,8 @@ Functionaliteit: 3.2 - Achterhalen gezag na uitspraak
     Gegeven voor 'Nathan' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
       | indicatie gezag minderjarige (32.10) | ingangsdatum geldigheid (85.10) |
       | 1D                                   | 20230101                        |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde           |
-      | type                             | GezamenlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036        |
-      | ouder.burgerservicenummer        | 000000012        |
-      | derde.type                       | OnbekendeDerde   |
+    Als 'gezag' wordt gevraagd van 'Nathan'
+    Dan is het gezag over 'Nathan' gezamenlijk gezag met ouder 'Klaartje' en een onbekende derde
 
   Scenario: De moeder heeft samen met een onbekende derde gezamenlijk gezag over het kind resulteert in GezamenlijkGezag
     Gegeven de persoon 'Iefke' met burgerservicenummer '000000061'
@@ -141,35 +99,15 @@ Functionaliteit: 3.2 - Achterhalen gezag na uitspraak
     Gegeven voor 'Bea' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
       | indicatie gezag minderjarige (32.10) | ingangsdatum geldigheid (85.10) |
       | 1D                                   | 20230404                        |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000091 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000091 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde           |
-      | type                             | GezamenlijkGezag |
-      | minderjarige.burgerservicenummer | 000000091        |
-      | ouder.burgerservicenummer        | 000000061        |
-      | derde.type                       | OnbekendeDerde   |
+    Als 'gezag' wordt gevraagd van 'Bea'
+    Dan is het gezag over 'Bea' gezamenlijk gezag met ouder 'Iefke' en een onbekende derde
 
   Scenario: De vader heeft samen met een onbekende derde gezamenlijk gezag over het kind resulteert in GezamenlijkGezag
     Gegeven voor 'Nathan' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
       | indicatie gezag minderjarige (32.10) | ingangsdatum geldigheid (85.10) |
       | 2D                                   | 20230101                        |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde           |
-      | type                             | GezamenlijkGezag |
-      | minderjarige.burgerservicenummer | 000000036        |
-      | ouder.burgerservicenummer        | 000000024        |
-      | derde.type                       | OnbekendeDerde   |
+    Als 'gezag' wordt gevraagd van 'Nathan'
+    Dan is het gezag over 'Nathan' gezamenlijk gezag met ouder 'Arjan' en een onbekende derde
 
   Scenario: De vader als niet ouder heeft gezag over het kind resulteerd in Voogdij
     Gegeven de persoon 'Iefke' met burgerservicenummer '000000061'
@@ -190,18 +128,8 @@ Functionaliteit: 3.2 - Achterhalen gezag na uitspraak
     Gegeven voor 'Bea' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
       | indicatie gezag minderjarige (32.10) | ingangsdatum geldigheid (85.10) |
       | 2D                                   | 20230404                        |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000091 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000091 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde           |
-      | type                             | GezamenlijkGezag |
-      | minderjarige.burgerservicenummer | 000000091        |
-      | ouder.burgerservicenummer        | 000000085        |
-      | derde.type                       | OnbekendeDerde   |
+    Als 'gezag' wordt gevraagd van 'Bea'
+    Dan is het gezag over 'Bea' gezamenlijk gezag met ouder 'Paul' en een onbekende derde
 
   Regel: Uitspraak gezag met indicatie dat er sprake is van voogdij opgenomen vanuit het Gezagsregister
 
@@ -209,14 +137,5 @@ Functionaliteit: 3.2 - Achterhalen gezag na uitspraak
     Gegeven voor 'Nathan' is een gerechtelijke uitspraak over het gezag gedaan met de volgende gegevens
       | indicatie gezag minderjarige (32.10) | ingangsdatum geldigheid (85.10) |
       | D                                    | 20230101                        |
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000036 |
-    En heeft de persoon een 'gezag' met de volgende gegevens
-      | naam                             | waarde    |
-      | type                             | Voogdij   |
-      | minderjarige.burgerservicenummer | 000000036 |
-    En heeft 'gezag' geen derden
+    Als 'gezag' wordt gevraagd van 'Nathan'
+    Dan is het gezag over 'Nathan' voogdij

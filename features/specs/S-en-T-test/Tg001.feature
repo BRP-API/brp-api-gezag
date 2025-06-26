@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg001 - Adema-Arendsen - Gehuwd met kinderen geboren voor en na huwelijksvoltrekking.
 
 

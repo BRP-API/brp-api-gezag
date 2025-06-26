@@ -1,5 +1,6 @@
 #language: nl
 
+@deprecated @gezag-api
 Functionaliteit: Tg008 - Gerritsen-Groningen-Gouda
 
 

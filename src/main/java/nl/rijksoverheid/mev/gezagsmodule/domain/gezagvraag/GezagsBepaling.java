@@ -16,10 +16,13 @@ import java.util.*;
 public class GezagsBepaling {
 
     private static final Logger logger = LoggerFactory.getLogger(GezagsBepaling.class);
+
+    private static final String GESLACHTNAAM_AANDUIDING_PUNT_OUDER = ".";
     private static final Set<String> TE_NEGEREN_VELDEN_IN_ONDERZOEK = Set.of(
         "burgerservicenummer van persoon",
         "gemeente van inschrijving"
     );
+
     @Getter
     private UUID errorTraceCode;
     @Getter
@@ -38,6 +41,8 @@ public class GezagsBepaling {
     private final Map<String, GezagVraag> vragenMap;
     @Getter
     private final ARAntwoordenModel arAntwoordenModel;
+    private HuwelijkOfPartnerschap relatieNietOuder;
+    private Character v02B01Ouder;
 
     public GezagsBepaling(
         final String burgerservicenummer,
@@ -168,6 +173,32 @@ public class GezagsBepaling {
         missendeGegegevens.add(missendGegegeven);
     }
 
+    public boolean isOuder1Aanwezig() {
+        return plPersoon.getOuder1AsOptional()
+            .map(Ouder1::getGeslachtsnaam)
+            .filter(it -> !it.equals(GESLACHTNAAM_AANDUIDING_PUNT_OUDER))
+            .isPresent();
+    }
+
+    public boolean isOuder1Afwezig() {
+        return !isOuder1Aanwezig();
+    }
+
+    public boolean isOuder2Aanwezig() {
+        return plPersoon.getOuder2AsOptional()
+            .map(Ouder2::getGeslachtsnaam)
+            .filter(it -> !it.equals(GESLACHTNAAM_AANDUIDING_PUNT_OUDER))
+            .isPresent();
+    }
+
+    public boolean isOuder2Afwezig() {
+        return !isOuder2Aanwezig();
+    }
+
+    public Optional<Persoonslijst> fetchPersoonslijstVanOuder1() {
+        return Optional.ofNullable(getPlOuder1());
+    }
+
     /**
      * @return ouder 1 of null
      */
@@ -189,6 +220,10 @@ public class GezagsBepaling {
             }
         }
         return plOuder1;
+    }
+
+    public Optional<Persoonslijst> fetchPersoonslijstVanOuder2() {
+        return Optional.ofNullable(getPlOuder2());
     }
 
     /**
@@ -237,6 +272,10 @@ public class GezagsBepaling {
         return plNietOuder;
     }
 
+    public Optional<Persoonslijst> fetchPersoonslijstVanNietOuder() {
+        return Optional.ofNullable(getPlNietOuder());
+    }
+
     private boolean isValidPersoon(Persoonslijst plPersoon) {
         return plPersoon != null && plPersoon.getPersoon() != null
             && plPersoon.getPersoon().getGeboortedatum() != null;
@@ -250,6 +289,22 @@ public class GezagsBepaling {
         var hopRelaties = ouder.getHopRelaties();
         if (hopRelaties == null) return Optional.empty();
 
-        return Optional.ofNullable(hopRelaties.geborenInRelatie(geboortedatum));
+        return Optional.ofNullable(hopRelaties.findRelatieByDate(geboortedatum));
+    }
+
+    public HuwelijkOfPartnerschap getRelatieNietOuder() {
+        return relatieNietOuder;
+    }
+
+    public void setRelatieNietOuder(HuwelijkOfPartnerschap relatieNietOuder) {
+        this.relatieNietOuder = relatieNietOuder;
+    }
+
+    public Optional<Character> getV02B01Ouder() {
+        return Optional.ofNullable(v02B01Ouder);
+    }
+
+    public void setV02B01Ouder(Character v02B01Ouder) {
+        this.v02B01Ouder = v02B01Ouder;
     }
 }

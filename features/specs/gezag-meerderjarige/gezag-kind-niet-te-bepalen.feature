@@ -13,10 +13,6 @@ Functionaliteit: gezag van een meerderjarige over een kind wanneer gezag niet te
     * is in Nederland geboren
     * is geëmigreerd geweest
     * heeft 'Gerda' als ouder 1
-    Als gezag wordt gezocht met de volgende parameters
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    Dan heeft de response een persoon met de volgende gegevens
-      | naam                | waarde    |
-      | burgerservicenummer | 000000012 |
-    En heeft de persoon geen gezag
+    Als 'gezag' wordt gevraagd van 'Gerda'
+    Dan heeft 'Gerda' de volgende gezagsrelaties
+    * heeft de persoon geen gezag

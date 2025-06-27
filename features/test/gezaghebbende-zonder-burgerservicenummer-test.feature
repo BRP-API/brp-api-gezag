@@ -180,7 +180,6 @@ Functionaliteit: het gezag kan worden bepaald voor een minderjarige waarvan een 
         | 'Vader'                 | eenhoofdig ouderlijk gezag met ouder 'Vader'                    |
         | 'Vader' en een derde    | gezamenlijk gezag met ouder 'Vader' en een onbekende derde      |
 
-
     @nieuw
     Voorbeeld: twee ouders en in gerechtelijke uitspraak is het gezag toegewezen aan <gerechtelijke uitspraak>
       Gegeven de persoon 'Moeder' met burgerservicenummer '000000012'
@@ -336,13 +335,35 @@ Functionaliteit: het gezag kan worden bepaald voor een minderjarige waarvan een 
   Regel: als minderjarige één ouder heeft en staande huwelijk is geboren, dan hebben geboortemoeder en haar partner het gezag
 
     @deprecated
-    Voorbeeld: minderjarige heeft één ouder en is staande huwelijk geboren en partner van moeder staat niet ingeschreven in de BRP
+    Voorbeeld: minderjarige heeft één ouder en is staande huwelijk geboren en partner van moeder staat niet ingeschreven in de BRP en gezag wordt gevraagd van minderjarige
       Gegeven de persoon 'Partner' zonder burgerservicenummer
       * is meerderjarig
       * is een vrouw
       En de minderjarige persoon 'Minderjarige' met één ouder 'Moeder' die gehuwd is met 'Partner'
       Als 'gezag' wordt gevraagd van 'Minderjarige'
       Dan is het gezag over 'Minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: niet-ouder van bevraagde persoon is niet in BRP geregistreerd'
+
+    @deprecated
+    Voorbeeld: minderjarige heeft één ouder en is staande huwelijk geboren en partner van moeder staat niet ingeschreven in de BRP en gezag wordt gevraagd van moeder
+      Gegeven de persoon 'Partner' zonder burgerservicenummer
+      * is meerderjarig
+      * is een vrouw
+      En de minderjarige persoon 'Minderjarige' met één ouder 'Moeder' die gehuwd is met 'Partner'
+      Als 'gezag' wordt gevraagd van 'Moeder'
+      Dan heeft 'Moeder' de volgende gezagsrelaties
+      * heeft de persoon geen gezag
+      
+    @deprecated
+    Voorbeeld: minderjarige heeft één ouder en is staande huwelijk geboren en partner van moeder staat niet ingeschreven in de BRP en gezag wordt gevraagd van moeder én minderjarige
+      Gegeven de persoon 'Partner' zonder burgerservicenummer
+      * is meerderjarig
+      * is een vrouw
+      En de minderjarige persoon 'Minderjarige' met één ouder 'Moeder' die gehuwd is met 'Partner'
+      Als 'gezag' wordt gevraagd van 'Minderjarige en Moeder'
+      Dan heeft 'Moeder' de volgende gezagsrelaties
+      * heeft de persoon geen gezag
+      En heeft 'Minderjarige' de volgende gezagsrelaties
+      * is het gezag over 'Minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: niet-ouder van bevraagde persoon is niet in BRP geregistreerd'
 
     @nieuw
     Voorbeeld: minderjarige heeft één ouder en is staande huwelijk geboren en partner van moeder staat niet ingeschreven in de BRP

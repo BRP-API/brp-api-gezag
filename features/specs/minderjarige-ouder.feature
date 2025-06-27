@@ -96,7 +96,7 @@ Functionaliteit: Minderjarige ouder
       * het gezag over 'Bert' is eenhoofdig ouderlijk gezag met ouder 'Zoe'
 
   Regel: Gezag van een erkenner kan alleen van rechtswege ontstaan uit gezamenlijk ouderlijk gezag
-    Een erkenner die meerderjarig is (geworden) krijgt alleen gezag vanaf het moment dat de moeder ook meerderjarig is (verklaard).
+    Een erkenner die meerderjarig is (geworden) krijgt alleen gezag vanaf het moment dat de moeder meerderjarig is geworden of meerderjarig is verklaard.
 
     Voorbeeld: De minderjarige heeft een minderjarige moeder (niet bevoegd) en daarom heeft de meerderjarige erkenner (nog) geen gezag
       Gegeven de 17 jaar geleden geboren vrouw 'Gerda'

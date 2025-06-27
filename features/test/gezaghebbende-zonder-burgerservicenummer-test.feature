@@ -335,18 +335,20 @@ Functionaliteit: het gezag kan worden bepaald voor een minderjarige waarvan een 
 
   Regel: als minderjarige één ouder heeft en staande huwelijk is geboren, dan hebben geboortemoeder en haar partner het gezag
 
+    @deprecated
+    Voorbeeld: minderjarige heeft één ouder en is staande huwelijk geboren en partner van moeder staat niet ingeschreven in de BRP
+      Gegeven de persoon 'Partner' zonder burgerservicenummer
+      * is meerderjarig
+      * is een vrouw
+      En de minderjarige persoon 'Minderjarige' met één ouder 'Moeder' die gehuwd is met 'Partner'
+      Als 'gezag' wordt gevraagd van 'Minderjarige'
+      Dan is het gezag over 'Minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: niet-ouder van bevraagde persoon is niet in BRP geregistreerd'
+
     @nieuw
     Voorbeeld: minderjarige heeft één ouder en is staande huwelijk geboren en partner van moeder staat niet ingeschreven in de BRP
-      Gegeven de persoon 'Moeder' met burgerservicenummer '000000012'
+      Gegeven de persoon 'Partner' zonder burgerservicenummer
       * is meerderjarig
       * is een vrouw
-      En de persoon 'Partner' zonder burgerservicenummer
-      * is meerderjarig
-      * is een vrouw
-      En 'Moeder' en 'Partner' zijn met elkaar gehuwd
-      En de persoon 'Minderjarige' met burgerservicenummer '000000036'
-      * is op 14-10-2022 geboren
-      * is ingeschreven in een Nederlandse gemeente
-      * heeft 'Moeder' als ouder
+      En de minderjarige persoon 'Minderjarige' met één ouder 'Moeder' die gehuwd is met 'Partner'
       Als 'gezag' wordt gevraagd van 'Minderjarige'
       Dan is het gezag over 'Minderjarige' gezamenlijk gezag met ouder 'Moeder' en derde 'Partner'

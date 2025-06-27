@@ -43,7 +43,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Koosje' met de volgende gegevens
+    En heeft een partner 'Koosje-2' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Koosje    |
@@ -57,7 +57,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20110401  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Koosje' is gewijzigd naar de volgende gegevens
+    En partner 'Koosje-2' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000024 |
       | voornamen (02.10)                                             | Koosje    |
@@ -72,7 +72,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | plaats ontbinding huwelijk/geregistreerd partnerschap (07.20) | 0518      |
       | land ontbinding huwelijk/geregistreerd partnerschap (07.30)   | 6030      |
       | reden ontbinding huwelijk/geregistreerd partnerschap (07.40)  | S         |
-    En heeft een partner 'Karolien' met de volgende gegevens
+    En heeft een partner 'Karolien-1' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000103 |
       | voornamen (02.10)                                                   | Karolien  |
@@ -85,7 +85,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20180401  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Karolien' is gewijzigd naar de volgende gegevens
+    En partner 'Karolien-1' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000103 |
       | voornamen (02.10)                                             | Karolien  |
@@ -99,7 +99,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | plaats ontbinding huwelijk/geregistreerd partnerschap (07.20) | 0518      |
       | land ontbinding huwelijk/geregistreerd partnerschap (07.30)   | 6030      |
       | reden ontbinding huwelijk/geregistreerd partnerschap (07.40)  | S         |
-    En heeft een partner 'Koosje' met de volgende gegevens
+    En heeft een partner 'Koosje-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Koosje    |
@@ -196,7 +196,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Karel' met de volgende gegevens
+    En heeft een partner 'Karel-2' met de volgende gegevens
       | naam                                                                | waarde      |
       | burgerservicenummer (01.20)                                         | 000000012   |
       | voornamen (02.10)                                                   | Karel       |
@@ -209,7 +209,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20110401    |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518        |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030        |
-    En partner 'Karel' is gewijzigd naar de volgende gegevens
+    En partner 'Karel-2' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde      |
       | burgerservicenummer (01.20)                                   | 000000012   |
       | voornamen (02.10)                                             | Karel       |
@@ -223,7 +223,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | plaats ontbinding huwelijk/geregistreerd partnerschap (07.20) | 0518        |
       | land ontbinding huwelijk/geregistreerd partnerschap (07.30)   | 6030        |
       | reden ontbinding huwelijk/geregistreerd partnerschap (07.40)  | S           |
-    En heeft een partner 'Kobus' met de volgende gegevens
+    En heeft een partner 'Kobus-1' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000085 |
       | voornamen (02.10)                                                   | Kobus     |
@@ -236,7 +236,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20190401  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Kobus' is gewijzigd naar de volgende gegevens
+    En partner 'Kobus-1' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000085 |
       | voornamen (02.10)                                             | Kobus     |
@@ -250,7 +250,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | plaats ontbinding huwelijk/geregistreerd partnerschap (07.20) | 0518      |
       | land ontbinding huwelijk/geregistreerd partnerschap (07.30)   | 6030      |
       | reden ontbinding huwelijk/geregistreerd partnerschap (07.40)  | O         |
-    En heeft een partner 'Karel' met de volgende gegevens
+    En heeft een partner 'Karel-0' met de volgende gegevens
       | naam                                                                | waarde      |
       | burgerservicenummer (01.20)                                         | 000000012   |
       | voornamen (02.10)                                                   | Karel       |
@@ -371,7 +371,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20120401 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | D                           |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -415,7 +415,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20130401 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 2                           |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -459,7 +459,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20140401 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 2                           |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -508,7 +508,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20150401 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 2                           |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -539,7 +539,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een partner 'Koosje' met de volgende gegevens
+    En heeft een partner 'Koosje-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Koosje    |
@@ -641,7 +641,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Karel' met de volgende gegevens
+    En heeft een partner 'Karel-0' met de volgende gegevens
       | naam                                                                | waarde      |
       | burgerservicenummer (01.20)                                         | 000000012   |
       | voornamen (02.10)                                                   | Karel       |
@@ -654,7 +654,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20180401    |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518        |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030        |
-    En partner 'Karel' is gewijzigd naar de volgende gegevens
+    En partner 'Karel-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde      |
       | burgerservicenummer (01.20)                                   | 000000012   |
       | voornamen (02.10)                                             | Karel       |
@@ -719,7 +719,7 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20190401 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 1                           |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -795,16 +795,18 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
   Scenario: Lg01_055 - 3x gehuwd (1x reparatiehuwelijk), 2x gescheiden, 5 minderjarige kinderen
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Karel'
-    Dan is het gezag over 'Kylian' gezamenlijk ouderlijk gezag met ouder 'Koosje' en ouder 'Karel'
+    Dan heeft 'Karel' de volgende gezagsrelaties
+    * is het gezag over 'Kylian' gezamenlijk ouderlijk gezag met ouder 'Koosje' en ouder 'Karel'
 
   Scenario: Lg01_056 - 2x gehuwd (1x reparatiehuwelijk), 1x partnerschap. 1x gescheiden, 1x weduwe, 7 minderjarige kinderen waarvan 2 geboren buiten de huwelijken om
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Koosje'
-    Dan is het gezag over 'Kelvin' eenhoofdig ouderlijk gezag met ouder 'Koosje'
-    Dan is het gezag over 'Kylian' gezamenlijk ouderlijk gezag met ouder 'Koosje' en ouder 'Karel'
-    Dan is het gezag over 'Kyra' eenhoofdig ouderlijk gezag met ouder 'Koosje'
-    Dan is het gezag over 'Karina' eenhoofdig ouderlijk gezag met ouder 'Koosje'
-    Dan is het gezag over 'Kaylee' eenhoofdig ouderlijk gezag met ouder 'Koosje'
+    Dan heeft 'Koosje' de volgende gezagsrelaties
+    * is het gezag over 'Kelvin' eenhoofdig ouderlijk gezag met ouder 'Koosje'
+    * is het gezag over 'Kylian' gezamenlijk ouderlijk gezag met ouder 'Koosje' en ouder 'Karel'
+    * is het gezag over 'Kyra' eenhoofdig ouderlijk gezag met ouder 'Koosje'
+    * is het gezag over 'Karina' eenhoofdig ouderlijk gezag met ouder 'Koosje'
+    * is het gezag over 'Kaylee' eenhoofdig ouderlijk gezag met ouder 'Koosje'
 
   Scenario: Lg01_057 - onder gezag derde, geldigheid vóór scheiding ouders
     # Route: 6
@@ -839,7 +841,8 @@ Functionaliteit: Tg011 - Kornelissen-Krabben-Krelissen
   Scenario: Lg01_063 - gescheiden, 1 minderjarig kind
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Karolien'
-    Dan is het gezag over 'Kyona' eenhoofdig ouderlijk gezag met ouder 'Karolien'
+    Dan heeft 'Karolien' de volgende gezagsrelaties
+    * is het gezag over 'Kyona' eenhoofdig ouderlijk gezag met ouder 'Karolien'
 
   Scenario: Lg01_064 - ouders gescheiden, moeder gezag vóór scheiding
     # Route: 13

@@ -277,7 +277,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20230106 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde            |
       | indicatie gezag minderjarige (32.10) | 1                 |
       | beschrijving document (82.30)        | overgangsregeling |
@@ -424,7 +424,7 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20211201 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde             |
       | indicatie gezag minderjarige (32.10) | 1                  |
       | beschrijving document (82.30)        | kennisgeving gezag |
@@ -590,19 +590,21 @@ Functionaliteit: Tg027 - Janssen-Joosten- Erkenning voor, bij en na geboorteaang
   Scenario: Lg01_145 - ongehuwde ouders met 6 kinderen geboren voor en na 01-01-2023, 5 kinderen erkend, 2 kinderen vaststelling vaderschap
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Joop'
-    Dan is het gezag over 'Jolanda' gezamenlijk ouderlijk gezag met ouder 'Josephien' en ouder 'Joop'
-    Dan is het gezag over 'Janneke' gezamenlijk ouderlijk gezag met ouder 'Josephien' en ouder 'Joop'
+    Dan heeft 'Joop' de volgende gezagsrelaties
+    * is het gezag over 'Jolanda' gezamenlijk ouderlijk gezag met ouder 'Josephien' en ouder 'Joop'
+    * is het gezag over 'Janneke' gezamenlijk ouderlijk gezag met ouder 'Josephien' en ouder 'Joop'
 
   Scenario: Lg01_146 - ongehuwde ouders met 6 kinderen geboren voor en na 01-01-2023, 5 kinderen erkend, 2 kinderen vaststelling vaderschap
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Josephien'
-    Dan is het gezag over 'Jacoba' eenhoofdig ouderlijk gezag met ouder 'Josephien'
-    Dan is het gezag over 'Jolanda' gezamenlijk ouderlijk gezag met ouder 'Josephien' en ouder 'Joop'
-    Dan is het gezag over 'Johanna' eenhoofdig ouderlijk gezag met ouder 'Josephien'
-    Dan is het gezag over 'Jantina' eenhoofdig ouderlijk gezag met ouder 'Josephien'
-    Dan is het gezag over 'Janneke' gezamenlijk ouderlijk gezag met ouder 'Josephien' en ouder 'Joop'
-    Dan is het gezag over 'Jettie' eenhoofdig ouderlijk gezag met ouder 'Josephien'
-    Dan is het gezag over 'Joy' eenhoofdig ouderlijk gezag met ouder 'Josephien'
+    Dan heeft 'Josephien' de volgende gezagsrelaties
+    * is het gezag over 'Jacoba' eenhoofdig ouderlijk gezag met ouder 'Josephien'
+    * is het gezag over 'Jolanda' gezamenlijk ouderlijk gezag met ouder 'Josephien' en ouder 'Joop'
+    * is het gezag over 'Johanna' eenhoofdig ouderlijk gezag met ouder 'Josephien'
+    * is het gezag over 'Jantina' eenhoofdig ouderlijk gezag met ouder 'Josephien'
+    * is het gezag over 'Janneke' gezamenlijk ouderlijk gezag met ouder 'Josephien' en ouder 'Joop'
+    * is het gezag over 'Jettie' eenhoofdig ouderlijk gezag met ouder 'Josephien'
+    * is het gezag over 'Joy' eenhoofdig ouderlijk gezag met ouder 'Josephien'
 
   Scenario: Lg01_147 - kind geboren uit ongehuwde ouders na 01-01- 2023, erkenning ongeboren vrucht,  indicatie gezag
     # Route: 11

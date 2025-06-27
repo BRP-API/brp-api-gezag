@@ -42,7 +42,7 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een partner 'Trudy' met de volgende gegevens
+    En heeft een partner 'Trudy-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Trudy     |
@@ -56,7 +56,7 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20200201  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Trudy' is gewijzigd naar de volgende gegevens
+    En partner 'Trudy-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000024 |
       | voornamen (02.10)                                             | Trudy     |
@@ -129,7 +129,7 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Tina' met de volgende gegevens
+    En heeft een partner 'Tina-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Tina      |
@@ -314,10 +314,11 @@ Functionaliteit: Tg039 - Tubbergen-Tintelen – 2 vrouwen met geregistreerd part
   Scenario: Lg01_209 - geregistreerd partnerschap met vrouw, partner overleden, minderjarig kind van bekende donor
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Tina'
-    Dan is het gezag over 'Trinette' eenhoofdig ouderlijk gezag met ouder 'Tina'
-    Dan is het gezag over 'Trudetty' eenhoofdig ouderlijk gezag met ouder 'Tina'
-    Dan is het gezag over 'Tim' voogdij met derde 'Tina'
-    Dan is het gezag over 'Tom' voogdij met derde 'Tina'
+    Dan heeft 'Tina' de volgende gezagsrelaties
+    * is het gezag over 'Trinette' eenhoofdig ouderlijk gezag met ouder 'Tina'
+    * is het gezag over 'Trudetty' eenhoofdig ouderlijk gezag met ouder 'Tina'
+    * is het gezag over 'Tim' voogdij met derde 'Tina'
+    * is het gezag over 'Tom' voogdij met derde 'Tina'
 
   Scenario: Lg01_210 - geregistreerd partnerschap met vrouw, overleden
     # Meerderjarig

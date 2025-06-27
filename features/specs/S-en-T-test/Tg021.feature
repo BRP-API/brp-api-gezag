@@ -41,7 +41,7 @@ Functionaliteit: Tg021 - Doornenbal-Doodewaard
       | beschrijving document (82.30)                      | PK         |
       | ingangsdatum geldigheid (85.10)                    | 0          |
       | datum ingang familierechtelijke betrekking (62.10) | 0          |
-    En heeft een partner 'Delilah' met de volgende gegevens
+    En heeft een partner 'Delilah-0' met de volgende gegevens
       | naam                                                                | waarde     |
       | burgerservicenummer (01.20)                                         | 000000024  |
       | voornamen (02.10)                                                   | Delilah    |
@@ -55,7 +55,7 @@ Functionaliteit: Tg021 - Doornenbal-Doodewaard
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20021201   |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518       |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030       |
-    En partner 'Delilah' is gewijzigd naar de volgende gegevens
+    En partner 'Delilah-0' is gewijzigd naar de volgende gegevens
       | naam                                                                | waarde           |
       | burgerservicenummer (01.20)                                         | 000000024        |
       | voornamen (02.10)                                                   | Delilah          |
@@ -107,7 +107,7 @@ Functionaliteit: Tg021 - Doornenbal-Doodewaard
       | beschrijving document (82.30)                      | PK         |
       | ingangsdatum geldigheid (85.10)                    | 0          |
       | datum ingang familierechtelijke betrekking (62.10) | 0          |
-    En heeft een partner 'Daniel' met de volgende gegevens
+    En heeft een partner 'Daniel-0' met de volgende gegevens
       | naam                                                                | waarde     |
       | burgerservicenummer (01.20)                                         | 000000012  |
       | voornamen (02.10)                                                   | Daniel     |
@@ -120,7 +120,7 @@ Functionaliteit: Tg021 - Doornenbal-Doodewaard
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20021201   |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518       |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030       |
-    En partner 'Daniel' is gewijzigd naar de volgende gegevens
+    En partner 'Daniel-0' is gewijzigd naar de volgende gegevens
       | naam                                                                | waarde           |
       | burgerservicenummer (01.20)                                         | 000000012        |
       | voornamen (02.10)                                                   | Daniel           |
@@ -183,12 +183,14 @@ Functionaliteit: Tg021 - Doornenbal-Doodewaard
   Scenario: Lg01_119 - geregistreerd partnerschap omgezet in huwelijk
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Daniel'
-    Dan is het gezag over 'Daan' gezamenlijk gezag met ouder 'Delilah' en derde 'Daniel'
+    Dan heeft 'Daniel' de volgende gezagsrelaties
+    * is het gezag over 'Daan' gezamenlijk gezag met ouder 'Delilah' en derde 'Daniel'
 
   Scenario: Lg01_120 - geregistreerd partnerschap omgezet in huwelijk
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Delilah'
-    Dan is het gezag over 'Daan' gezamenlijk gezag met ouder 'Delilah' en derde 'Daniel'
+    Dan heeft 'Delilah' de volgende gezagsrelaties
+    * is het gezag over 'Daan' gezamenlijk gezag met ouder 'Delilah' en derde 'Daniel'
 
   Scenario: Lg01_121 - ouders geregistreerd partnerschap vóór 01-04-2014, alleen Ouder1 gevuld. Na geboorte kind hebben ouders geregistreerd partnerschap omgezet in een huwelijk.
     # Route: 41

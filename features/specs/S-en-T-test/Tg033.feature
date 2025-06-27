@@ -47,7 +47,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | naam                            | waarde   |
       | aktenummer (81.20)              | 1AA0200  |
       | ingangsdatum geldigheid (85.10) | 19981201 |
-    En heeft een partner 'Pia' met de volgende gegevens
+    En heeft een partner 'Pia-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Pia       |
@@ -130,7 +130,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | naam                            | waarde |
       | beschrijving document (82.30)   | PK     |
       | ingangsdatum geldigheid (85.10) | 0      |
-    En heeft een partner 'Petronella' met de volgende gegevens
+    En heeft een partner 'Petronella-0' met de volgende gegevens
       | naam                                                                | waarde     |
       | burgerservicenummer (01.20)                                         | 000000012  |
       | voornamen (02.10)                                                   | Petronella |
@@ -214,7 +214,7 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20170901 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 1D                          |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -343,15 +343,17 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
   Scenario: Lg01_176 - vrouw gehuwd met vrouw, 4 kinderen (2 van bekende donor tijdens huwelijken 1 voor het huwelijk en 1 na 01-01-2023 erkend voor geboorte door ander dan partner))
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Petronella'
-    Dan is het gezag over 'Peet' gezamenlijk gezag met ouder 'Petronella' en derde 'Pia'
-    Dan is het gezag over 'Pelle' gezamenlijk gezag met ouder 'Petronella' en een onbekende derde
-    Dan is het gezag over 'Pep' eenhoofdig ouderlijk gezag met ouder 'Petronella'
-    Dan is het gezag over 'Pero' gezamenlijk ouderlijk gezag met ouder 'Petronella' en ouder 'Peterjan'
+    Dan heeft 'Petronella' de volgende gezagsrelaties
+    * is het gezag over 'Peet' gezamenlijk gezag met ouder 'Petronella' en derde 'Pia'
+    * is het gezag over 'Pelle' gezamenlijk gezag met ouder 'Petronella' en een onbekende derde
+    * is het gezag over 'Pep' eenhoofdig ouderlijk gezag met ouder 'Petronella'
+    * is het gezag over 'Pero' gezamenlijk ouderlijk gezag met ouder 'Petronella' en ouder 'Peterjan'
 
   Scenario: Lg01_177 - huwelijkspartner van vrouw, geen meemoeder van de kinderen, bij 1 kind gezamenlijk gezag
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Pia'
-    Dan is het gezag over 'Peet' gezamenlijk gezag met ouder 'Petronella' en derde 'Pia'
+    Dan heeft 'Pia' de volgende gezagsrelaties
+    * is het gezag over 'Peet' gezamenlijk gezag met ouder 'Petronella' en derde 'Pia'
 
   Scenario: Lg01_178 - 1 ouder, moeder gehuwd, gezamenlijk gezag moeder en meemoeder
     # Route: 41
@@ -376,4 +378,5 @@ Functionaliteit: Tg033 - Paassen-Pauw - Twee gehuwde vrouwen met 4 kinderen
   Scenario: Lg01_199 - erkenner (voor geboorte) van minderjarig kind van gehuwde moeder en bekende donor
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Peterjan'
-    Dan is het gezag over 'Pero' gezamenlijk ouderlijk gezag met ouder 'Petronella' en ouder 'Peterjan'
+    Dan heeft 'Peterjan' de volgende gezagsrelaties
+    * is het gezag over 'Pero' gezamenlijk ouderlijk gezag met ouder 'Petronella' en ouder 'Peterjan'

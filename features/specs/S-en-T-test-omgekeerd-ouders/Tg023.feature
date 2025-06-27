@@ -215,7 +215,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20150801 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 12                          |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -271,7 +271,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20180401 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 12                          |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -329,7 +329,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20200501 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 12                          |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -339,14 +339,16 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
   Scenario: Lg01_125 - 3 erkende kinderen
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Ewald'
-    Dan is het gezag over 'Esther' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
-    Dan is het gezag over 'Esmee' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
+    Dan heeft 'Ewald' de volgende gezagsrelaties
+    * is het gezag over 'Esther' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
+    * is het gezag over 'Esmee' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
 
   Scenario: Lg01_126 - 3 erkende kinderen
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Edwina'
-    Dan is het gezag over 'Esther' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
-    Dan is het gezag over 'Esmee' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
+    Dan heeft 'Edwina' de volgende gezagsrelaties
+    * is het gezag over 'Esther' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
+    * is het gezag over 'Esmee' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
 
   Scenario: Lg01_127 - erkend, categorie 09 op PL vader/erkenner zonder SoFi-nr/BSN, indicatie gezag 12
     # Route: 7

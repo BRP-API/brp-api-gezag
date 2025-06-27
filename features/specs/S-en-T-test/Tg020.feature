@@ -40,7 +40,7 @@ Functionaliteit: Tg020 - Carolussen-Charbon
       | beschrijving document (82.30)                      | PK         |
       | ingangsdatum geldigheid (85.10)                    | 0          |
       | datum ingang familierechtelijke betrekking (62.10) | 0          |
-    En heeft een partner 'Charlotte' met de volgende gegevens
+    En heeft een partner 'Charlotte-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Charlotte |
@@ -98,7 +98,7 @@ Functionaliteit: Tg020 - Carolussen-Charbon
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Carel' met de volgende gegevens
+    En heeft een partner 'Carel-0' met de volgende gegevens
       | naam                                                                | waarde     |
       | burgerservicenummer (01.20)                                         | 000000012  |
       | voornamen (02.10)                                                   | Carel      |
@@ -247,16 +247,18 @@ Functionaliteit: Tg020 - Carolussen-Charbon
   Scenario: Lg01_114 - geregistreerd partnerschap vóór 01-04-2014, 2 minderjarige kinderen vóór 01-04-2014 en 1 minderjarig kind daarna
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Carel'
-    Dan is het gezag over 'Cecilia' gezamenlijk gezag met ouder 'Charlotte' en derde 'Carel'
-    Dan is het gezag over 'Chantal' gezamenlijk gezag met ouder 'Charlotte' en derde 'Carel'
-    Dan is het gezag over 'Christiaan' gezamenlijk ouderlijk gezag met ouder 'Charlotte' en ouder 'Carel'
+    Dan heeft 'Carel' de volgende gezagsrelaties
+    * is het gezag over 'Cecilia' gezamenlijk gezag met ouder 'Charlotte' en derde 'Carel'
+    * is het gezag over 'Chantal' gezamenlijk gezag met ouder 'Charlotte' en derde 'Carel'
+    * is het gezag over 'Christiaan' gezamenlijk ouderlijk gezag met ouder 'Charlotte' en ouder 'Carel'
 
   Scenario: Lg01_115 - geregistreerd partnerschap vóór 01-04-2014, 2 minderjarige kinderen vóór 01-04-2014 en 1 minderjarig kind daarna
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Charlotte'
-    Dan is het gezag over 'Cecilia' gezamenlijk gezag met ouder 'Charlotte' en derde 'Carel'
-    Dan is het gezag over 'Chantal' gezamenlijk gezag met ouder 'Charlotte' en derde 'Carel'
-    Dan is het gezag over 'Christiaan' gezamenlijk ouderlijk gezag met ouder 'Charlotte' en ouder 'Carel'
+    Dan heeft 'Charlotte' de volgende gezagsrelaties
+    * is het gezag over 'Cecilia' gezamenlijk gezag met ouder 'Charlotte' en derde 'Carel'
+    * is het gezag over 'Chantal' gezamenlijk gezag met ouder 'Charlotte' en derde 'Carel'
+    * is het gezag over 'Christiaan' gezamenlijk ouderlijk gezag met ouder 'Charlotte' en ouder 'Carel'
 
   Scenario: Lg01_116 - ouders geregistreerd partnerschap vóór 01-04-204, alleen Ouder1 gevuld
     # Route: 41

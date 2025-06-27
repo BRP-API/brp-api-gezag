@@ -42,7 +42,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Karla' met de volgende gegevens
+    En heeft een partner 'Karla-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Karla     |
@@ -55,7 +55,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20180920  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Karla' is gewijzigd naar de volgende gegevens
+    En partner 'Karla-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000024 |
       | voornamen (02.10)                                             | Karla     |
@@ -165,7 +165,7 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een partner 'Kim' met de volgende gegevens
+    En heeft een partner 'Kim-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Kim       |
@@ -406,8 +406,9 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
   Scenario: Lg01_156 - vrouw, huwelijk met vrouw, 2 kinderen maar echtgenote geen duomoeder, echtgenote wel gezag, echtgenote overleden, kinderen worden in 2023 erkend
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Kim'
-    Dan is het gezag over 'Kyrolina' gezamenlijk ouderlijk gezag met ouder 'Kim' en ouder 'Kees'
-    Dan is het gezag over 'Karolina' gezamenlijk ouderlijk gezag met ouder 'Kim' en ouder 'Kees'
+    Dan heeft 'Kim' de volgende gezagsrelaties
+    * is het gezag over 'Kyrolina' gezamenlijk ouderlijk gezag met ouder 'Kim' en ouder 'Kees'
+    * is het gezag over 'Karolina' gezamenlijk ouderlijk gezag met ouder 'Kim' en ouder 'Kees'
 
   Scenario: Lg01_157 - vrouw, huwelijk met vrouw, echtgenote krijgt 2 kinderen (geen anonieme donor), overleden
     # Meerderjarig
@@ -422,8 +423,9 @@ Functionaliteit: Tg029 - Kootwijk-Kruiswijk-Klapwijk - Huwelijk tussen vrouwen e
   Scenario: Lg01_159 - erkenner van 2 kinderen waarvan de moeder gehuwd was met een vrouw die niet de meemoeder is van de kinderen (geen anonieme donor). Huwelijkspartner moeder overleden
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Kees'
-    Dan is het gezag over 'Kyrolina' gezamenlijk ouderlijk gezag met ouder 'Kim' en ouder 'Kees'
-    Dan is het gezag over 'Karolina' gezamenlijk ouderlijk gezag met ouder 'Kim' en ouder 'Kees'
+    Dan heeft 'Kees' de volgende gezagsrelaties
+    * is het gezag over 'Kyrolina' gezamenlijk ouderlijk gezag met ouder 'Kim' en ouder 'Kees'
+    * is het gezag over 'Karolina' gezamenlijk ouderlijk gezag met ouder 'Kim' en ouder 'Kees'
 
   Scenario: Lg01_160 - alleen moeder, moeder wel gehuwd maar geen anonieme donor, na overlijden huwelijkspartner moeder erkend in 2023, akteaanduiding C in historische categorie bij persoon en ouder2
     # Route: 54n

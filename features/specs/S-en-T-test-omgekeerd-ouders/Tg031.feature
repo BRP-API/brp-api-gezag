@@ -195,7 +195,7 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20200101 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                     |
       | indicatie gezag minderjarige (32.10) | 2D                         |
       | beschrijving document (82.30)        | kennsigeving gezagregister |
@@ -273,7 +273,7 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20190101 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                     |
       | indicatie gezag minderjarige (32.10) | 12                         |
       | beschrijving document (82.30)        | kennsigeving gezagregister |
@@ -283,13 +283,15 @@ Functionaliteit: Tg031 - Nooitgedacht-Nimwegen - Cat.11 en adoptie of ontkenning
   Scenario: Lg01_169 - vrouw niet gehuwd/GP, 1 minderjarig kind geadopteerd, 1 minderjarig kind erkend en later erkenning vernietigd
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Nicolette'
-    Dan is het gezag over 'Nicolas' gezamenlijk ouderlijk gezag met ouder 'Nicolette' en ouder 'Nicodemus'
-    Dan is het gezag over 'Niels' eenhoofdig ouderlijk gezag met ouder 'Nicolette'
+    Dan heeft 'Nicolette' de volgende gezagsrelaties
+    * is het gezag over 'Nicolas' gezamenlijk ouderlijk gezag met ouder 'Nicolette' en ouder 'Nicodemus'
+    * is het gezag over 'Niels' eenhoofdig ouderlijk gezag met ouder 'Nicolette'
 
   Scenario: Lg01_170 - man niet gehuwd/GP, 1 minderjarig kind geadopteerd, 1 minderjarig kind erkend en later erkenning vernietigd
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Nicodemus'
-    Dan is het gezag over 'Nicolas' gezamenlijk ouderlijk gezag met ouder 'Nicolette' en ouder 'Nicodemus'
+    Dan heeft 'Nicodemus' de volgende gezagsrelaties
+    * is het gezag over 'Nicolas' gezamenlijk ouderlijk gezag met ouder 'Nicolette' en ouder 'Nicodemus'
 
   Scenario: Lg01_171 - kind, geboren uit alleen moeder, vervolgens gezag 1D, later geactualiseerd in 1, en vervolgens 1-ouder adoptie
     # Route: 33

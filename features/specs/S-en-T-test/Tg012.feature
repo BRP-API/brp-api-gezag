@@ -260,7 +260,7 @@ Functionaliteit: Tg012 - Loon-Liebeek
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20140501 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 12                          |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -309,14 +309,16 @@ Functionaliteit: Tg012 - Loon-Liebeek
   Scenario: Lg01_065 - ongehuwde vrouw, 3 minderjarige kinderen samen met ongehuwde vrouw
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Leonie'
-    Dan is het gezag over 'Luc' gezamenlijk ouderlijk gezag met ouder 'Lieke' en ouder 'Leonie'
-    Dan is het gezag over 'Lex' gezamenlijk ouderlijk gezag met ouder 'Leonie' en ouder 'Lieke'
+    Dan heeft 'Leonie' de volgende gezagsrelaties
+    * is het gezag over 'Luc' gezamenlijk ouderlijk gezag met ouder 'Lieke' en ouder 'Leonie'
+    * is het gezag over 'Lex' gezamenlijk ouderlijk gezag met ouder 'Leonie' en ouder 'Lieke'
 
   Scenario: Lg01_066 - ongehuwde vrouw, 3 minderjarige kinderen samen met ongehuwde vrouw
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Lieke'
-    Dan is het gezag over 'Luc' gezamenlijk ouderlijk gezag met ouder 'Lieke' en ouder 'Leonie'
-    Dan is het gezag over 'Lex' gezamenlijk ouderlijk gezag met ouder 'Leonie' en ouder 'Lieke'
+    Dan heeft 'Lieke' de volgende gezagsrelaties
+    * is het gezag over 'Luc' gezamenlijk ouderlijk gezag met ouder 'Lieke' en ouder 'Leonie'
+    * is het gezag over 'Lex' gezamenlijk ouderlijk gezag met ouder 'Leonie' en ouder 'Lieke'
 
   Scenario: Lg01_067 - geboorte uit ongehuwde vrouw, adoptie met terugwerkende kracht tot geboortedatum door duo-moeder
     # Route: 55

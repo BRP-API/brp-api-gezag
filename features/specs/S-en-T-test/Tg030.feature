@@ -250,7 +250,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20220901 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 1D                          |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -309,7 +309,7 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20220901 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 1D                          |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -319,8 +319,9 @@ Functionaliteit: Tg030 - Leeuwen-Luiten-Leijten - Cat.11 en latere erkenning
   Scenario: Lg01_161 - moeder van 2 erkende kinderen
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Laurentien'
-    Dan is het gezag over 'Larissa' gezamenlijk gezag met ouder 'Laurentien' en een onbekende derde
-    Dan is het gezag over 'Laeticia' gezamenlijk gezag met ouder 'Laurentien' en een onbekende derde
+    Dan heeft 'Laurentien' de volgende gezagsrelaties
+    * is het gezag over 'Larissa' gezamenlijk gezag met ouder 'Laurentien' en een onbekende derde
+    * is het gezag over 'Laeticia' gezamenlijk gezag met ouder 'Laurentien' en een onbekende derde
 
   Scenario: Lg01_162 - voogd van 2 minderjarige kinderen (1D), 1 kind door hem later erkend
     # Meerderjarig

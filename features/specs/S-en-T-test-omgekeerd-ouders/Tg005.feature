@@ -43,7 +43,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 19900301 |
-    En heeft een partner 'Damon' met de volgende gegevens
+    En heeft een partner 'Damon-0' met de volgende gegevens
       | naam                                                                | waarde        |
       | voornamen (02.10)                                                   | Damon         |
       | geslachtsnaam (02.40)                                               | Dangor        |
@@ -137,7 +137,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 19900301 |
-    En heeft een partner 'Dag' met de volgende gegevens
+    En heeft een partner 'Dag-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000048 |
       | voornamen (02.10)                                                   | Dag       |
@@ -218,7 +218,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | beschrijving document (82.30)                      | ga 6027  |
       | ingangsdatum geldigheid (85.10)                    | 19821201 |
       | datum ingang familierechtelijke betrekking (62.10) | 19821201 |
-    En heeft een partner 'Donna' met de volgende gegevens
+    En heeft een partner 'Donna-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000036 |
       | voornamen (02.10)                                                   | Donna     |
@@ -444,12 +444,12 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
   Scenario: Lg01_017 - gehuwd, echtgenoot niet ingeschreven in Nederland, minderjarig kind geboren tijdens huwelijk
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Desiree'
-    Dan heeft 'Daryl' eenhoofdig ouderlijk gezag met ouder 'Desiree'
+    Dan heeft 'Desiree' geen gezaghouder
 
   Scenario: Lg01_018 - minderjarig kind, geboren tijdens huwelijk ouders, geen categorie 11, vader niet ingeschreven in BRP, kind Nederlandse nationaliteit + Beëindigde vreemde nationaliteit
     # Route: 45e
     Als 'gezag' wordt gevraagd van 'Daryl'
-    Dan heeft 'Daryl' eenhoofdig ouderlijk gezag met ouder 'Desiree'
+    Dan is het gezag over 'Daryl' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd'
 
   Scenario: Lg01_019 - gehuwd, 3 minderjarige kinderen geboren tijdens huwelijk ouders, echtgenoot en 2 kinderen geëmigreerd (RNI), 1 kind weer teruggekeerd (immigratie)
     # Meerderjarig

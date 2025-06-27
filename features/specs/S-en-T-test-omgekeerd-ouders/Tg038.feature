@@ -202,7 +202,7 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20220601 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 12                          |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -271,8 +271,9 @@ Functionaliteit: Tg038 - Savelskoul-Steenbergen - twee ongehuwde ouders  met 1 e
   Scenario: Lg01_204 - ongehuwd, 2 kinderen (1 g erkend voor 01-01-2023 en 1 erkend na 01-01-2023
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Sjoerd'
-    Dan is het gezag over 'Sjoukje' eenhoofdig ouderlijk gezag met ouder 'Sjoerd'
-    Dan is het gezag over 'Sytse' eenhoofdig ouderlijk gezag met ouder 'Sjoerd'
+    Dan heeft 'Sjoerd' de volgende gezagsrelaties
+    * is het gezag over 'Sjoukje' eenhoofdig ouderlijk gezag met ouder 'Sjoerd'
+    * is het gezag over 'Sytse' eenhoofdig ouderlijk gezag met ouder 'Sjoerd'
 
   Scenario: Lg01_205 - geadopteerd door niet gehuwde ouders, indicatie gezag 12,  adoptiemoeder overleden,  indicatie gezag 12
     # Route: 8

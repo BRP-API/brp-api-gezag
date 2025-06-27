@@ -43,7 +43,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Harald' met de volgende gegevens
+    En heeft een partner 'Harald-3' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000073 |
       | voornamen (02.10)                                                   | Harald    |
@@ -56,7 +56,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 19950601  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Harald' is gewijzigd naar de volgende gegevens
+    En partner 'Harald-3' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000073 |
       | voornamen (02.10)                                             | Harald    |
@@ -70,7 +70,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | plaats ontbinding huwelijk/geregistreerd partnerschap (07.20) | 0518      |
       | land ontbinding huwelijk/geregistreerd partnerschap (07.30)   | 6030      |
       | reden ontbinding huwelijk/geregistreerd partnerschap (07.40)  | S         |
-    En heeft een partner 'Hendrik' met de volgende gegevens
+    En heeft een partner 'Hendrik-2' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000048 |
       | voornamen (02.10)                                                   | Hendrik   |
@@ -84,7 +84,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20020701  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Hendrik' is gewijzigd naar de volgende gegevens
+    En partner 'Hendrik-2' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000048 |
       | voornamen (02.10)                                             | Hendrik   |
@@ -99,7 +99,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | plaats ontbinding huwelijk/geregistreerd partnerschap (07.20) | 0518      |
       | land ontbinding huwelijk/geregistreerd partnerschap (07.30)   | 6030      |
       | reden ontbinding huwelijk/geregistreerd partnerschap (07.40)  | S         |
-    En heeft een partner 'Hessel' met de volgende gegevens
+    En heeft een partner 'Hessel-1' met de volgende gegevens
       | naam                                                                | waarde     |
       | burgerservicenummer (01.20)                                         | 000000024  |
       | voornamen (02.10)                                                   | Hessel     |
@@ -113,7 +113,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20120801   |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518       |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030       |
-    En heeft een partner 'Hans' met de volgende gegevens
+    En heeft een partner 'Hans-0' met de volgende gegevens
       | naam                                                                | waarde   |
       | voornamen (02.10)                                                   | Hans     |
       | geslachtsnaam (02.40)                                               | Hovink   |
@@ -125,7 +125,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 19910501 |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518     |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030     |
-    En partner 'Hans' is gewijzigd naar de volgende gegevens
+    En partner 'Hans-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde   |
       | voornamen (02.10)                                             | Hans     |
       | geslachtsnaam (02.40)                                         | Hovink   |
@@ -138,7 +138,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | plaats ontbinding huwelijk/geregistreerd partnerschap (07.20) | 0518     |
       | land ontbinding huwelijk/geregistreerd partnerschap (07.30)   | 6030     |
       | reden ontbinding huwelijk/geregistreerd partnerschap (07.40)  | S        |
-    En partner 'Hans' is gewijzigd naar de volgende gegevens
+    En partner 'Hans-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde          |
       | burgerservicenummer (01.20)                                   | 999998730       |
       | voornamen (02.10)                                             | Hans            |
@@ -235,7 +235,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een partner 'Hedwig' met de volgende gegevens
+    En heeft een partner 'Hedwig-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Hedwig    |
@@ -336,7 +336,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een partner 'Hedwig' met de volgende gegevens
+    En heeft een partner 'Hedwig-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Hedwig    |
@@ -349,7 +349,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20020701  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Hedwig' is gewijzigd naar de volgende gegevens
+    En partner 'Hedwig-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000012 |
       | voornamen (02.10)                                             | Hedwig    |
@@ -463,7 +463,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een partner 'Hedwig' met de volgende gegevens
+    En heeft een partner 'Hedwig-1' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Hedwig    |
@@ -476,7 +476,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 19950601  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Hedwig' is gewijzigd naar de volgende gegevens
+    En partner 'Hedwig-1' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000012 |
       | voornamen (02.10)                                             | Hedwig    |
@@ -490,7 +490,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | plaats ontbinding huwelijk/geregistreerd partnerschap (07.20) | 0518      |
       | land ontbinding huwelijk/geregistreerd partnerschap (07.30)   | 6030      |
       | reden ontbinding huwelijk/geregistreerd partnerschap (07.40)  | S         |
-    En heeft een partner 'Irini' met de volgende gegevens
+    En heeft een partner 'Irini-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000085 |
       | voornamen (02.10)                                                   | Irini     |
@@ -557,7 +557,7 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
       | beschrijving document (82.30)                      | .      |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En heeft een partner 'Harald' met de volgende gegevens
+    En heeft een partner 'Harald-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000073 |
       | voornamen (02.10)                                                   | Harald    |
@@ -693,12 +693,14 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
   Scenario: Lg01_041 - 2 ontbonden huwelijken, 1 ontbonden partnerschap, 1 actueel huwelijk. In eerste ontbonden huwelijk is in 2020 relatie gelegd waardoor deze 'bovenaan' ligt. Totaal 4 kinderen, waarvan 2 ouder dan 18 en 2 jonger dan 18
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Hedwig'
-    Dan is het gezag over 'Hilde' gezamenlijk ouderlijk gezag met ouder 'Hedwig' en ouder 'Hessel'
+    Dan heeft 'Hedwig' de volgende gezagsrelaties
+    * is het gezag over 'Hilde' gezamenlijk ouderlijk gezag met ouder 'Hedwig' en ouder 'Hessel'
 
   Scenario: Lg01_042 - gehuwd, 1 minderjarig kind
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Hessel'
-    Dan is het gezag over 'Hilde' gezamenlijk ouderlijk gezag met ouder 'Hedwig' en ouder 'Hessel'
+    Dan heeft 'Hessel' de volgende gezagsrelaties
+    * is het gezag over 'Hilde' gezamenlijk ouderlijk gezag met ouder 'Hedwig' en ouder 'Hessel'
 
   Scenario: Lg01_043 - minderjarig kind uit gehuwde ouders (moeder meerdere ontbonden huwelijken)
     # Route: 49
@@ -718,12 +720,14 @@ Functionaliteit: Tg009 - Harmsen-Henegouwen-Hapert-Hanssen
   Scenario: Lg01_046 - actueel gehuwd en gescheiden, 1 meerderjarig kind, 1 minderjarig erkend kind
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Harald'
-    Dan is het gezag over 'Ioanna' gezamenlijk ouderlijk gezag met ouder 'Irini' en ouder 'Harald'
+    Dan heeft 'Harald' de volgende gezagsrelaties
+    * is het gezag over 'Ioanna' gezamenlijk ouderlijk gezag met ouder 'Irini' en ouder 'Harald'
 
   Scenario: Lg01_047 - actueel gehuwd, 1 minderjarige kind met 2 vreemde nationaliteiten, 1 minderjarig erkend kind met Nederlandse nationaliteit door erkenning
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Irini'
-    Dan is het gezag over 'Ioanna' gezamenlijk ouderlijk gezag met ouder 'Irini' en ouder 'Harald'
+    Dan heeft 'Irini' de volgende gezagsrelaties
+    * is het gezag over 'Ioanna' gezamenlijk ouderlijk gezag met ouder 'Irini' en ouder 'Harald'
 
   Scenario: Lg01_048 - minderjarige, erkend, vervolgens ouders gehuwd, 2 beëindigde vreemde nationaliteiten, Nederlandse nationaliteit vanaf geboorte
     # Route: 49

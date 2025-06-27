@@ -226,7 +226,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20140201 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                            | waarde                 |
       | beschrijving document (82.30)   | vernietiging erkenning |
       | ingangsdatum geldigheid (85.10) | 20140401               |
@@ -311,7 +311,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Manfred' met de volgende gegevens
+    En heeft een partner 'Manfred-0' met de volgende gegevens
       | naam                                                                | waarde        |
       | voornamen (02.10)                                                   | Manfred       |
       | geslachtsnaam (02.40)                                               | Mann          |
@@ -323,7 +323,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20140201      |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | Altleiningen  |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 9089          |
-    En partner 'Manfred' is gewijzigd naar de volgende gegevens
+    En partner 'Manfred-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde   |
       | voornamen (02.10)                                             | Manfred  |
       | geslachtsnaam (02.40)                                         | Mann     |
@@ -336,7 +336,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | plaats ontbinding huwelijk/geregistreerd partnerschap (07.20) | 0518     |
       | land ontbinding huwelijk/geregistreerd partnerschap (07.30)   | 6030     |
       | reden ontbinding huwelijk/geregistreerd partnerschap (07.40)  | S        |
-    En partner 'Manfred' is gewijzigd naar de volgende gegevens
+    En partner 'Manfred-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde          |
       | burgerservicenummer (01.20)                                   | 000000097       |
       | voornamen (02.10)                                             | Manfred         |
@@ -633,7 +633,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | beschrijving document (82.30)                      | ga 9089  |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Manon' met de volgende gegevens
+    En heeft een partner 'Manon-0' met de volgende gegevens
       | naam                                                                | waarde        |
       | burgerservicenummer (01.20)                                         | 000000061     |
       | voornamen (02.10)                                                   | Manon         |
@@ -646,7 +646,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20140201      |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | Altleiningen  |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 9089          |
-    En partner 'Manon' is gewijzigd naar de volgende gegevens
+    En partner 'Manon-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000061 |
       | voornamen (02.10)                                             | Manon     |
@@ -862,7 +862,7 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20170101 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                     |
       | indicatie gezag minderjarige (32.10) | 12                         |
       | beschrijving document (82.30)        | kennsigeving gezagregister |
@@ -872,7 +872,8 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
   Scenario: Lg01_070 - ongehuwde vrouw met 1 minderjarig kind (erkend, erkenning vernietigd en opnieuw erkend)
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Monique'
-    Dan is het gezag over 'Mark' eenhoofdig ouderlijk gezag met ouder 'Monique'
+    Dan heeft 'Monique' de volgende gezagsrelaties
+    * is het gezag over 'Mark' eenhoofdig ouderlijk gezag met ouder 'Monique'
 
   Scenario: Lg01_071 - ongehuwde man met vernietiging erkenning
     # Meerderjarig
@@ -892,10 +893,11 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
   Scenario: Lg01_074 - gescheiden vrouw, relatielegging ná ontbinding huwelijk, 1 minderjarig kind, correctie geboorte en erkenning (gehuwd op datum geboorte kind), ontkenning vaderschap, opnieuw erkenning door eerste erkenner, vervolgens een kind wat ontkend is (en niet opnieuw erkend) en 2 kinderen waarbij ouderschap vastgesteld is.
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Manon'
-    Dan is het gezag over 'Mirthe' eenhoofdig ouderlijk gezag met ouder 'Manon'
-    Dan is het gezag over 'Maya' eenhoofdig ouderlijk gezag met ouder 'Manon'
-    Dan is het gezag over 'Mira' eenhoofdig ouderlijk gezag met ouder 'Manon'
-    Dan is het gezag over 'Meike' gezamenlijk ouderlijk gezag met ouder 'Manon' en ouder 'Manfred'
+    Dan heeft 'Manon' de volgende gezagsrelaties
+    * is het gezag over 'Mirthe' eenhoofdig ouderlijk gezag met ouder 'Manon'
+    * is het gezag over 'Maya' eenhoofdig ouderlijk gezag met ouder 'Manon'
+    * is het gezag over 'Mira' eenhoofdig ouderlijk gezag met ouder 'Manon'
+    * is het gezag over 'Meike' gezamenlijk ouderlijk gezag met ouder 'Manon' en ouder 'Manfred'
 
   Scenario: Lg01_075 - ongehuwde man, kind erkend, geboorteakte kind gecorrigeerd (erkenning daardoor onjuist), na ontkenning vaderschap opnieuw erkend
     # Meerderjarig
@@ -910,7 +912,8 @@ Functionaliteit: Tg013 - Maasland-Meindersma-Meer-Meulengraaf-Mann - Bijzondere 
   Scenario: Lg01_077 - latere vestiging in Nederland, gescheiden, vaderschap ontkend van 2 minderjarige kinderen, bij 2 kinderen ouderschap vastgesteld
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Manfred'
-    Dan is het gezag over 'Meike' gezamenlijk ouderlijk gezag met ouder 'Manon' en ouder 'Manfred'
+    Dan heeft 'Manfred' de volgende gezagsrelaties
+    * is het gezag over 'Meike' gezamenlijk ouderlijk gezag met ouder 'Manon' en ouder 'Manfred'
 
   Scenario: Lg01_166 - ontkenning vaderschap, juridisch geen ouder1, wel ouder2
     # Route: 40o2

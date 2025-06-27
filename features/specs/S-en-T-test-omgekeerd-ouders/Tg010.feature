@@ -996,7 +996,6 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
     * is het gezag over 'Jasper' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
     * is het gezag over 'Jasmin-Jin' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
     * is het gezag over 'Jiali' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    En is het gezag in onderzoek
     * is het gezag over 'Jia' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
     * is het gezag over 'Jinthe' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
 
@@ -1009,7 +1008,6 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
     * is het gezag over 'Jasper' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
     * is het gezag over 'Jasmin-Jin' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
     * is het gezag over 'Jiali' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    En is het gezag in onderzoek
     * is het gezag over 'Jia' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
     * is het gezag over 'Jinthe' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
 
@@ -1032,7 +1030,6 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
     # Route: 49a
     Als 'gezag' wordt gevraagd van 'Jiali'
     Dan is het gezag over 'Jiali' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    En is het gezag in onderzoek
 
   Scenario: Lg01_195 - buitenland geboren, geadopteerd met Nederlandse Q-akte in historie, onderzoek in 536200
     # Route: 49a

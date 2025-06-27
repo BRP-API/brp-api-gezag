@@ -47,8 +47,8 @@ Functionaliteit: Minderjarige ouder
     Als een meerderjarigheidsverklaring van een moeder wordt geregistreerd als gerechtelijke uitspraak gezag voor de moeder bij het kind
     dan kan nooit het gezag voor erkenner van rechtswege ontstaan als moeder en erkenner meerderjarig zijn geworden.
     Dit pleit voor registratie meerderjarigheidsverklaring bij de moeder en niet toestaan van bovenstaande werkwijze.
-    Tot het mogelijk is om een meerderjarigheidsverklaring in de BRP te registreren kan een gemeente invullen dat gezag aan de moeder is toegewezen indicatie gezag bij het kind
-    en deze door de gemeente wordt verwijderd op de dag dat de moeder 18 jaar oud wordt.
+    Tot het mogelijk is om een meerderjarigheidsverklaring in de BRP te registreren, kan een gemeente bij het kind bij "indicatie gezag" invullen dat gezag aan de moeder is toegewezen. 
+    Deze moet door de gemeente worden verwijderd op de dag dat de moeder 18 jaar oud wordt.
     
     # Dit moet dan ook als controle worden toegevoegd aan de Bestands Controle Module (BCM), zodat de gemeente hierop geattendeerd wordt.
 

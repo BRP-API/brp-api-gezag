@@ -106,7 +106,7 @@ Functionaliteit: het gezag kan worden bepaald voor een minderjarige waarvan een 
       Dan heeft 'Moeder' de volgende gezagsrelaties
       * heeft de persoon geen gezag
       En heeft 'Minderjarige' de volgende gezagsrelaties
-      * s het gezag over 'Minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd'
+      * is het gezag over 'Minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd'
 
     @nieuw
     Voorbeeld: vader staat niet ingeschreven in de BRP en heeft erkend na 1-1-2023

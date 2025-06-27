@@ -55,41 +55,41 @@ public class OuderOfPartnerOverledenOfOnbevoegdTotGezag implements GezagVraag {
     @Override
     public GezagVraagResult perform(final GezagsBepaling gezagsBepaling) {
         var optionalPersoonslijstOuder1 = gezagsBepaling.fetchPersoonslijstVanOuder1();
-        var isOuder1OverledenOfOnbevoegdToken = optionalPersoonslijstOuder1
+        var optionalOuder1OverledenOfOnbevoegdToken = optionalPersoonslijstOuder1
             .map(Persoonslijst::isOverledenOfOnbevoegdEncoded)
             .orElseGet(() -> gezagsBepaling.getPlPersoon().getOuder1AsOptional().flatMap(Ouder1::isMinderjarigEncoded));
 
         var optionalPersoonslijstOuder2 = gezagsBepaling.fetchPersoonslijstVanOuder2();
-        var isOuder2OverledenOfOnbevoegdToken = optionalPersoonslijstOuder2
+        var optionalOuder2OverledenOfOnbevoegdToken = optionalPersoonslijstOuder2
             .map(Persoonslijst::isOverledenOfOnbevoegdEncoded)
             .orElseGet(() -> gezagsBepaling.getPlPersoon().getOuder2AsOptional().flatMap(Ouder2::isMinderjarigEncoded));
 
         final var persoonslijstNietOuder = gezagsBepaling.isGezamenlijkGezagVanwegeGerechtelijkeUitspraak()
             ? null
             : fetchPersoonslijstNietOuder(gezagsBepaling);
-        final var optionalIsNietOuderOverledenOfOnbevoegdToken = persoonslijstNietOuder == null
+        final var optionalNietOuderOverledenOfOnbevoegdToken = persoonslijstNietOuder == null
             ? Optional.<Character>empty()
             : persoonslijstNietOuder.isOverledenOfOnbevoegdEncoded();
-        boolean isNietOuderOverledenOfOnbevoegd = optionalIsNietOuderOverledenOfOnbevoegdToken.isPresent();
+        boolean isNietOuderOverledenOfOnbevoegd = optionalNietOuderOverledenOfOnbevoegdToken.isPresent();
 
         var isOuder2Irrelevant = isOuder2Irrelevant(gezagsBepaling);
         String key = isOuder2Irrelevant
-            ? "ouder1," + isOuder1OverledenOfOnbevoegdToken.isPresent() + "," + isNietOuderOverledenOfOnbevoegd
-            : "ouder2," + isOuder2OverledenOfOnbevoegdToken.isPresent() + "," + isNietOuderOverledenOfOnbevoegd;
+            ? "ouder1," + optionalOuder1OverledenOfOnbevoegdToken.isPresent() + "," + isNietOuderOverledenOfOnbevoegd
+            : "ouder2," + optionalOuder2OverledenOfOnbevoegdToken.isPresent() + "," + isNietOuderOverledenOfOnbevoegd;
         var answer = ouderOfPartnerOverledenOfOnbevoegdTotGezagMap.get(key);
 
-        Optional<Character> optionalIsOuderOverledenOfOnbevoegdToken;
+        Optional<Character> optionalOuderOverledenOfOnbevoegdToken;
         if (isOuder2Irrelevant) {
             PreconditieChecker.preconditieCheckGeregistreerd("ouder1", optionalPersoonslijstOuder1.orElse(null));
-            optionalIsOuderOverledenOfOnbevoegdToken = isOuder1OverledenOfOnbevoegdToken;
+            optionalOuderOverledenOfOnbevoegdToken = optionalOuder1OverledenOfOnbevoegdToken;
         } else { // isOuder1Irrelevant == true
             PreconditieChecker.preconditieCheckGeregistreerd("ouder2", optionalPersoonslijstOuder2.orElse(null));
-            optionalIsOuderOverledenOfOnbevoegdToken = isOuder2OverledenOfOnbevoegdToken;
+            optionalOuderOverledenOfOnbevoegdToken = optionalOuder2OverledenOfOnbevoegdToken;
         }
         if (V4B_1_JA_BEIDEN.equals(answer)) {
-            var isOuderOverledenOfOnbevoegdToken = optionalIsOuderOverledenOfOnbevoegdToken.orElseThrow();
-            var isNietOuderOverledenOfOnbevoegdToken = optionalIsNietOuderOverledenOfOnbevoegdToken.orElseThrow();
-            var key2 = "%c%c".formatted(isOuderOverledenOfOnbevoegdToken, isNietOuderOverledenOfOnbevoegdToken);
+            var ouderOverledenOfOnbevoegdToken = optionalOuderOverledenOfOnbevoegdToken.orElseThrow();
+            var nietOuderOverledenOfOnbevoegdToken = optionalNietOuderOverledenOfOnbevoegdToken.orElseThrow();
+            var key2 = "%c%c".formatted(ouderOverledenOfOnbevoegdToken, nietOuderOverledenOfOnbevoegdToken);
             answer = JA_BEIDEN_ANTWOORDEN.get(key2);
         }
 

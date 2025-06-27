@@ -78,17 +78,17 @@ public class OuderOfPartnerOverledenOfOnbevoegdTotGezag implements GezagVraag {
             : "ouder2," + isOuder2OverledenOfOnbevoegdToken.isPresent() + "," + isNietOuderOverledenOfOnbevoegd;
         var answer = ouderOfPartnerOverledenOfOnbevoegdTotGezagMap.get(key);
 
-        Optional<Character> isOuderOverledenOfOnbevoegdToken;
+        Optional<Character> optionalIsOuderOverledenOfOnbevoegdToken;
         if (isOuder2Irrelevant) {
             PreconditieChecker.preconditieCheckGeregistreerd("ouder1", optionalPersoonslijstOuder1.orElse(null));
-            isOuderOverledenOfOnbevoegdToken = isOuder1OverledenOfOnbevoegdToken;
+            optionalIsOuderOverledenOfOnbevoegdToken = isOuder1OverledenOfOnbevoegdToken;
         } else { // isOuder1Irrelevant == true
             PreconditieChecker.preconditieCheckGeregistreerd("ouder2", optionalPersoonslijstOuder2.orElse(null));
-            isOuderOverledenOfOnbevoegdToken = isOuder2OverledenOfOnbevoegdToken;
+            optionalIsOuderOverledenOfOnbevoegdToken = isOuder2OverledenOfOnbevoegdToken;
         }
         if (V4B_1_JA_BEIDEN.equals(answer)) {
-            var isNietOuderOverledenOfOnbevoegdToken =
-                optionalIsNietOuderOverledenOfOnbevoegdToken.orElseThrow();
+            var isOuderOverledenOfOnbevoegdToken = optionalIsOuderOverledenOfOnbevoegdToken.orElseThrow();
+            var isNietOuderOverledenOfOnbevoegdToken = optionalIsNietOuderOverledenOfOnbevoegdToken.orElseThrow();
             var key2 = "%c%c".formatted(isOuderOverledenOfOnbevoegdToken, isNietOuderOverledenOfOnbevoegdToken);
             answer = JA_BEIDEN_ANTWOORDEN.get(key2);
         }

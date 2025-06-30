@@ -369,6 +369,8 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
     Dan heeft 'Grada' de volgende gezagsrelaties
     * is het gezag over 'Gerdien' gezamenlijk ouderlijk gezag met ouder 'Govert' en ouder 'Grada'
     En is het gezag in onderzoek
+    * is het gezag over 'Gijs' eenhoofdig ouderlijk gezag met ouder 'Grada'
+    En is het gezag in onderzoek
 
   Scenario: Lg01_136 - kind geboren tijdens huwelijk, in onderzoek 010310, 026210, 030210, 080920, 613210, historische indicatie gezag
     # Route: 49i
@@ -379,7 +381,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
   Scenario: Lg01_137 - kind geboren tijdens huwelijk in onderzoek 010330 (voorvoegsel ontbreekt), 040510, 081420, 113210
     # Route: 3ai
     Als 'gezag' wordt gevraagd van 'Gijs'
-    Dan is het gezag over 'Gijs' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren.'
+    Dan is het gezag over 'Gijs' eenhoofdig ouderlijk gezag met ouder 'Grada'
     En is het gezag in onderzoek
 
   Scenario: Lg01_138 - kind geboren tijdens huwelijk, overleden, gezag is niet van toepassing

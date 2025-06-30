@@ -205,11 +205,6 @@ public class Persoonslijst {
         return !(inschrijving != null && Objects.equals(inschrijving.getRedenOpschortingBijhouding(), "R"));
     }
 
-    public boolean isNietGeemigreerd() {
-        // PL 1/2 : 07.67.20
-        return !(inschrijving != null && Objects.equals(inschrijving.getRedenOpschortingBijhouding(), "E"));
-    }
-
     public boolean onderCurateleGesteld() {
         return gezagsverhouding != null
             && isNotBlank(gezagsverhouding.getIndicatieCurateleRegister());

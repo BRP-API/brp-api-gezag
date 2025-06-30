@@ -113,10 +113,8 @@ class ZijnJuridischeOudersNuMetElkaarGehuwdOfPartnersTest {
         persoonslijst.setOuder1(ouder1);
         persoonslijst.setOuder2(ouder2);
         when(persoonslijstOuder1.isNietIngeschrevenInRNI()).thenReturn(true);
-        when(persoonslijstOuder1.isNietGeemigreerd()).thenReturn(true);
         when(gezagsBepaling.getPlOuder1()).thenReturn(persoonslijstOuder1);
         when(persoonslijstOuder2.isNietIngeschrevenInRNI()).thenReturn(true);
-        when(persoonslijstOuder2.isNietGeemigreerd()).thenReturn(true);
         when(gezagsBepaling.getPlOuder2()).thenReturn(persoonslijstOuder2);
 
         var antwoord = classUnderTest.perform(gezagsBepaling);

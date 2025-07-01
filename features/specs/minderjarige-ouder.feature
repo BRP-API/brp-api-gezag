@@ -6,8 +6,7 @@ Functionaliteit: Minderjarige ouder
     Er wordt mogelijk geen verklaring over het gezag vastgelegd in deze situatie, omdat dit op moment van erkennen geen rechtsgevolg heeft.
     Bij meerderjarig worden van moeder/de erkenner ontstaat dan mogelijk ten onrechte van rechtswege gezamenlijk gezag van moeder en erkenner.
     # hoe ziet zo'n verklaring vastgelegd in het gezagsregister eruit in de BRP? Wordt dit gezet in indicatie gezag met de gezaghebbende ouders?
-    # zijn de regels voor gezag met minderjarigheid van een ouder in combinatie erkenning veranderd op enig moment (afgezien van 1-1-2023 voor gezag erkenner)?
-
+    
   Regel: Als de moeder minderjarig is en er is geen voogd, dan is er tijdelijk geen gezag
     # Dit kan bijvoorbeeld wanneer de minderjarige moeder bijna 18 is. Dan kan worden besloten te wachten op het meerderjarig worden van de moeder.
     # Dit kan ook een tijdelijke situatie zijn in afwachting van de (registratie van) de gerechtelijke uitspraak.
@@ -36,13 +35,6 @@ Functionaliteit: Minderjarige ouder
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat de ouder minderjarig is.'
 
-    Voorbeeld: Het gezag wordt gevraagd van een minderjarige met een kind
-      Gegeven de 17 jaar geleden geboren 'Zoe' met twee gehuwde ouders 'Gerda' en 'Aart'
-      En de 1 jaar geleden geboren 'Bert' met één ouder 'Zoe'
-      Als 'gezag' wordt gevraagd van 'Zoe'
-      Dan is het gezag over 'Zoe' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Ariana'
-
-
   Regel: Een meerderjarigheidsverklaring van een minderjarige moeder mag worden vastgelegd in de BRP als gerechtelijke uitspraak over het gezag, tot een meerderjarigheidsverklaring in de BRP kan worden vastgelegd
     Als een meerderjarigheidsverklaring van een moeder wordt geregistreerd als gerechtelijke uitspraak gezag voor de moeder bij het kind
     dan kan nooit het gezag voor erkenner van rechtswege ontstaan als moeder en erkenner meerderjarig zijn geworden.
@@ -60,7 +52,7 @@ Functionaliteit: Minderjarige ouder
       Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
       # Vraag: kan het ook voorkomen dat er wél echt een gerechtelijke uitspraak is over gezag die niet uitsluitend een meerderjarigheidsverklaring is?
 
-    Voorbeeld: De minderjarige heeft twee ouders die beide minderjarig waren bij geboorte en in een gerechtelijke uitspraak is de moeder meerderjarig verklaard en beide ouders zijn inmiddels meerderjarig
+    Voorbeeld: De meerderjarigheidsverklaring die is geregistreerd als gerechtelijke uitspraak bij het kind is niet tijdig weggehaald, waardoor voor erkenner geen gezag kan ontstaan
       Gegeven de 18 jaar geleden geboren vrouw 'Gerda'
       En de 18 jaar geleden geboren man 'Aart'
       En de 2 jaar geleden geboren persoon 'Bert' met twee ongehuwde ouders 'Gerda' en 'Aart'
@@ -87,13 +79,23 @@ Functionaliteit: Minderjarige ouder
 
       # zijn er nog andere situaties? meerderjarigheidsverklaring van erkenner? ...
 
+  Regel: Als een meerderjarigheidsverklaring is vastgelegd als gerechtelijke uitspraak, dan hebben de ouders geen gezag over hun meerderjarig verklaarde kind
+
     Voorbeeld: Het gezag wordt gevraagd van een minderjarige die zelf een minderjarig kind heeft en in een gerechtelijke uitspraak zij meerderjarig verklaard en heeft het gezag gekregen
-      Gegeven de 17 jaar geleden geboren 'Zoe' met twee gehuwde ouders 'Gerda' en 'Aart'
-      En de 1 jaar geleden geboren 'Bert' met één ouder 'Zoe'
-      En 1 jaar geleden is in een gerechtelijke uitspraak het gezag toegewezen aan 'Zoe'
+      Gegeven de 17 jaar geleden geboren persoon 'Zoe' met twee gehuwde ouders 'Gerda' en 'Aart'
+      En de 1 jaar geleden geboren persoon 'Bert' met één ouder 'Zoe'
+      En 1 jaar geleden is de meerderjarigheidsverklaring geregistreerd als een gerechtelijke uitspraak met het gezag toegewezen aan 'Zoe'
       Als 'gezag' wordt gevraagd van 'Zoe'
       Dan heeft 'Zoe' de volgende gezagsrelaties
       * het gezag over 'Bert' is eenhoofdig ouderlijk gezag met ouder 'Zoe'
+
+    Voorbeeld: Het gezag wordt gevraagd van een ouder van een minderjarige die zelf een minderjarig kind heeft en die in een gerechtelijke uitspraak meerderjarig verklaard is
+      Gegeven de 17 jaar geleden geboren persoon 'Zoe' met twee gehuwde ouders 'Gerda' en 'Aart'
+      En de 1 jaar geleden geboren persoon 'Bert' met één ouder 'Zoe'
+      En 1 jaar geleden is de meerderjarigheidsverklaring geregistreerd als een gerechtelijke uitspraak met het gezag toegewezen aan 'Zoe'
+      Als 'gezag' wordt gevraagd van 'Gerda'
+      Dan heeft 'Gerda' de volgende gezagsrelaties
+      * heeft de persoon geen gezag
 
   Regel: Gezag van een erkenner kan alleen van rechtswege ontstaan uit gezamenlijk ouderlijk gezag
     Een erkenner die meerderjarig is (geworden) krijgt alleen gezag vanaf het moment dat de moeder meerderjarig is geworden of meerderjarig is verklaard.

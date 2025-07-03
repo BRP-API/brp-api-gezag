@@ -33,7 +33,7 @@ Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
       | beschrijving document (82.30)                      | PK     |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En heeft een partner 'partner-1' met de volgende gegevens
+    En heeft een partner 'partner-1-0' met de volgende gegevens
       | naam                                                                | waarde                |
       | burgerservicenummer (01.20)                                         | 000000024             |
       | geslachtsnaam (02.40)                                               | Amina Hassan Mohammed |
@@ -84,7 +84,7 @@ Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
       | beschrijving document (82.30)                      | PK     |
       | ingangsdatum geldigheid (85.10)                    | 0      |
       | datum ingang familierechtelijke betrekking (62.10) | 0      |
-    En heeft een partner 'partner-1' met de volgende gegevens
+    En heeft een partner 'partner-1-0' met de volgende gegevens
       | naam                                                                | waarde                 |
       | burgerservicenummer (01.20)                                         | 000000012              |
       | geslachtsnaam (02.40)                                               | Mohamed Farooq Hussein |
@@ -150,12 +150,14 @@ Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
   Scenario: Lg01_153 - onvolledige geboortedatum, namenreeks, gehuwd, 1 minderjarig kind met namenreeks
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Mohamed'
-    Dan is het gezag over 'Kamal' gezamenlijk ouderlijk gezag met ouder 'Amina' en ouder 'Mohamed'
+    Dan heeft 'Mohamed' de volgende gezagsrelaties
+    * is het gezag over 'Kamal' gezamenlijk ouderlijk gezag met ouder 'Amina' en ouder 'Mohamed'
 
   Scenario: Lg01_154 - onvolledige geboortedatum, namenreeks, gehuwd, 1 minderjarig kind met namenreeks
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Amina'
-    Dan is het gezag over 'Kamal' gezamenlijk ouderlijk gezag met ouder 'Amina' en ouder 'Mohamed'
+    Dan heeft 'Amina' de volgende gezagsrelaties
+    * is het gezag over 'Kamal' gezamenlijk ouderlijk gezag met ouder 'Amina' en ouder 'Mohamed'
 
   Scenario: Lg01_155 - in Nederland geboren kind met namenreeks, ouders onvolledige geboortedatum
     # Route: 49

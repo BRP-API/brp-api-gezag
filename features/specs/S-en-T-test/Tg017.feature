@@ -40,7 +40,7 @@ Functionaliteit: Tg017 - Rooyakkers-Ros - Getrouwd met kind in Cat.11 1D
       | beschrijving document (82.30)                      | PK         |
       | ingangsdatum geldigheid (85.10)                    | 0          |
       | datum ingang familierechtelijke betrekking (62.10) | 19700201   |
-    En heeft een partner 'Rianne' met de volgende gegevens
+    En heeft een partner 'Rianne-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Rianne    |
@@ -98,7 +98,7 @@ Functionaliteit: Tg017 - Rooyakkers-Ros - Getrouwd met kind in Cat.11 1D
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 19821101 |
-    En heeft een partner 'Reinier' met de volgende gegevens
+    En heeft een partner 'Reinier-0' met de volgende gegevens
       | naam                                                                | waarde     |
       | burgerservicenummer (01.20)                                         | 000000012  |
       | voornamen (02.10)                                                   | Reinier    |
@@ -162,7 +162,7 @@ Functionaliteit: Tg017 - Rooyakkers-Ros - Getrouwd met kind in Cat.11 1D
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20111101 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 1D                          |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -177,7 +177,8 @@ Functionaliteit: Tg017 - Rooyakkers-Ros - Getrouwd met kind in Cat.11 1D
   Scenario: Lg01_098 - gehuwd, 1 minderjarig kind, gerechtelijke uitspraak 1D
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Rianne'
-    Dan is het gezag over 'Raghnild' gezamenlijk gezag met ouder 'Rianne' en een onbekende derde
+    Dan heeft 'Rianne' de volgende gezagsrelaties
+    * is het gezag over 'Raghnild' gezamenlijk gezag met ouder 'Rianne' en een onbekende derde
 
   Scenario: Lg01_099 - ouders gehuwd, indicatie gezag 1D
     # Route: 4

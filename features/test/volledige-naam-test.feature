@@ -1,4 +1,5 @@
 # language: nl
+@nieuw
 Functionaliteit: Test samenstellen van volledige naam van minderjarige en gezaghebbenden
 
   Regel: Lever naamvelden en geslacht van de minderjarige voor samenstellen van volledige naam

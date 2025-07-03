@@ -158,7 +158,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20181201 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | D                           |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -196,7 +196,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Jeroen' met de volgende gegevens
+    En heeft een partner 'Jeroen-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000048 |
       | voornamen (02.10)                                                   | Jeroen    |
@@ -344,7 +344,7 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Jaqueline' met de volgende gegevens
+    En heeft een partner 'Jaqueline-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000036 |
       | voornamen (02.10)                                                   | Jaqueline |
@@ -990,26 +990,26 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
   Scenario: Lg01_052 - gehuwd + 7 adoptiekinderen
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Jaqueline'
-    Dan is het gezag over 'Jorik' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    Dan is het gezag over 'Li' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    Dan is het gezag over 'Jasper' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    Dan is het gezag over 'Jasmin-Jin' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    Dan is het gezag over 'Jiali' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    En is het gezag in onderzoek
-    Dan is het gezag over 'Jia' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    Dan is het gezag over 'Jinthe' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
+    Dan heeft 'Jaqueline' de volgende gezagsrelaties
+    * is het gezag over 'Jorik' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
+    * is het gezag over 'Li' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
+    * is het gezag over 'Jasper' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
+    * is het gezag over 'Jasmin-Jin' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
+    * is het gezag over 'Jiali' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
+    * is het gezag over 'Jia' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
+    * is het gezag over 'Jinthe' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
 
   Scenario: Lg01_053 - gehuwd + 7 adoptiekinderen
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Jeroen'
-    Dan is het gezag over 'Jorik' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    Dan is het gezag over 'Li' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    Dan is het gezag over 'Jasper' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    Dan is het gezag over 'Jasmin-Jin' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    Dan is het gezag over 'Jiali' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    En is het gezag in onderzoek
-    Dan is het gezag over 'Jia' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    Dan is het gezag over 'Jinthe' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
+    Dan heeft 'Jeroen' de volgende gezagsrelaties
+    * is het gezag over 'Jorik' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
+    * is het gezag over 'Li' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
+    * is het gezag over 'Jasper' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
+    * is het gezag over 'Jasmin-Jin' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
+    * is het gezag over 'Jiali' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
+    * is het gezag over 'Jia' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
+    * is het gezag over 'Jinthe' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
 
   Scenario: Lg01_054 - minderjarig kind, geadopteerd uit buitenland, Nederlandse adoptieakte
     # Route: 49a
@@ -1030,7 +1030,6 @@ Functionaliteit: Tg010 - Janssen-Jozefs en Hanssen - adoptie, gehuwde juridische
     # Route: 49a
     Als 'gezag' wordt gevraagd van 'Jiali'
     Dan is het gezag over 'Jiali' gezamenlijk ouderlijk gezag met ouder 'Jaqueline' en ouder 'Jeroen'
-    En is het gezag in onderzoek
 
   Scenario: Lg01_195 - buitenland geboren, geadopteerd met Nederlandse Q-akte in historie, onderzoek in 536200
     # Route: 49a

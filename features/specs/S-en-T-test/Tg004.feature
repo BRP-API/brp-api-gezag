@@ -173,7 +173,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
   Scenario: Lg01_013 - ongehuwde minderjarige moeder met 1 minderjarig niet erkend kind
     # Route: 39e
     Als 'gezag' wordt gevraagd van 'Cindy'
-    Dan is het gezag over 'Cindy' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd'
+    Dan is het gezag over 'Cindy' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd'
 
   Scenario: Lg01_014 - minderjarig niet erkend kind, moeder ook minderjarig, geen categorie 11
     # Route: 39m
@@ -183,7 +183,8 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
   Scenario: Lg01_015 - ongehuwde meerderjarige moeder met 1 minderjarig niet-erkend kind,bij geboorte minderjarig inmiddels meerderjarig
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Carice'
-    Dan is het gezag over 'Carlijn' eenhoofdig ouderlijk gezag met ouder 'Carice'
+    Dan heeft 'Carice' de volgende gezagsrelaties
+    * is het gezag over 'Carlijn' eenhoofdig ouderlijk gezag met ouder 'Carice'
 
   Scenario: Lg01_016 - minderjarig niet erkend kind, moeder minderjarig, bij geboorte, inmiddels meerderjarig, geen categorie 11
     # Route: 40o1

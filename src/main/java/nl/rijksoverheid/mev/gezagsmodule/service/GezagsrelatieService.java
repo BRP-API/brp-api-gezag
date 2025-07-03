@@ -47,7 +47,10 @@ public class GezagsrelatieService {
         String burgerservicenummerNietOuder = gezagsBepaling.getBurgerservicenummerNietOuder();
 
         boolean bevraagdePersoonIsDeMinderjarige = burgerservicenummer.equals(burgerservicenummerPersoon);
-        MDC.put("isBevraagdePersoonDeMinderjarige", String.valueOf(bevraagdePersoonIsDeMinderjarige));
+        var isBevraagdePersoonDeMinderjarige = MDC.get("isBevraagdePersoonDeMinderjarige");
+        if (isBevraagdePersoonDeMinderjarige == null) {
+            MDC.put("isBevraagdePersoonDeMinderjarige", String.valueOf(bevraagdePersoonIsDeMinderjarige));
+        }
 
         if (tenminsteEenRelatieMetPersoon(bevraagdePersoonIsDeMinderjarige, burgerservicenummerPersoon, burgerservicenummerOuder1, burgerservicenummerOuder2, burgerservicenummerNietOuder, arAntwoordenModel)) {
             String soortGezag = arAntwoordenModel.getSoortGezag();

@@ -41,7 +41,7 @@ Functionaliteit: Tg006 - Elbertsen-Eizenga
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 19801001 |
-    En heeft een partner 'Evert' met de volgende gegevens
+    En heeft een partner 'Evert-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000024 |
       | voornamen (02.10)                                                   | Evert     |
@@ -54,7 +54,7 @@ Functionaliteit: Tg006 - Elbertsen-Eizenga
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20060601  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Evert' is gewijzigd naar de volgende gegevens
+    En partner 'Evert-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000024 |
       | voornamen (02.10)                                             | Evert     |
@@ -122,7 +122,7 @@ Functionaliteit: Tg006 - Elbertsen-Eizenga
       | beschrijving document (82.30)                      | PK         |
       | ingangsdatum geldigheid (85.10)                    | 0          |
       | datum ingang familierechtelijke betrekking (62.10) | 19781001   |
-    En heeft een partner 'Erica' met de volgende gegevens
+    En heeft een partner 'Erica-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Erica     |
@@ -205,7 +205,7 @@ Functionaliteit: Tg006 - Elbertsen-Eizenga
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20131001 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | D                           |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -253,7 +253,8 @@ Functionaliteit: Tg006 - Elbertsen-Eizenga
   Scenario: Lg01_024 - gehuwd, echtgenoot overleden, 2 minderjarige kinderen
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Erica'
-    Dan is het gezag over 'Emilia' eenhoofdig ouderlijk gezag met ouder 'Erica'
+    Dan heeft 'Erica' de volgende gezagsrelaties
+    * is het gezag over 'Emilia' eenhoofdig ouderlijk gezag met ouder 'Erica'
 
   Scenario: Lg01_025 - gehuwd, 2 minderjarige kinderen, overleden
     # Meerderjarig

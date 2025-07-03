@@ -59,8 +59,7 @@ public class PreconditieChecker {
             return;
         }
 
-        boolean ouderGeregistreerdInBrp = plOuder.isNietIngeschrevenInRNI() && plOuder.isNietGeemigreerd();
-        if (!ouderGeregistreerdInBrp) {
+        if (plOuder.isIngeschrevenInRNI()) {
             throw new AfleidingsregelException(
                 "Preconditie: " + beschrijving + " moet in BRP geregistreerd staan",
                 beschrijving + " van bevraagde persoon is niet in BRP geregistreerd");

@@ -159,7 +159,7 @@ Functionaliteit: Tg003 - Bloem-Berendsen-Bolder - Ongehuwd met niet-erkende kind
       | beschrijving document (82.30)                      | PK        |
       | ingangsdatum geldigheid (85.10)                    | 0         |
       | datum ingang familierechtelijke betrekking (62.10) | 0         |
-    En heeft een partner 'Baukje' met de volgende gegevens
+    En heeft een partner 'Baukje-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000061 |
       | voornamen (02.10)                                                   | Baukje    |
@@ -236,7 +236,7 @@ Functionaliteit: Tg003 - Bloem-Berendsen-Bolder - Ongehuwd met niet-erkende kind
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Brand' met de volgende gegevens
+    En heeft een partner 'Brand-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000048 |
       | voornamen (02.10)                                                   | Brand     |
@@ -249,7 +249,7 @@ Functionaliteit: Tg003 - Bloem-Berendsen-Bolder - Ongehuwd met niet-erkende kind
       | datum huwelijkssluiting/aangaan geregistreerd partnerschap (06.10)  | 20100904  |
       | plaats huwelijkssluiting/aangaan geregistreerd partnerschap (06.20) | 0518      |
       | land huwelijkssluiting/aangaan geregistreerd partnerschap (06.30)   | 6030      |
-    En partner 'Brand' is gewijzigd naar de volgende gegevens
+    En partner 'Brand-0' is gewijzigd naar de volgende gegevens
       | naam                                                          | waarde    |
       | burgerservicenummer (01.20)                                   | 000000048 |
       | voornamen (02.10)                                             | Brand     |
@@ -285,7 +285,7 @@ Functionaliteit: Tg003 - Bloem-Berendsen-Bolder - Ongehuwd met niet-erkende kind
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0105   |
       | ingangsdatum geldigheid (85.10) | 20141205  |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                               | waarde                      |
       | indicatie curateleregister (33.10) | 1                           |
       | beschrijving document (82.30)      | mededeling curateleregister |
@@ -366,7 +366,7 @@ Functionaliteit: Tg003 - Bloem-Berendsen-Bolder - Ongehuwd met niet-erkende kind
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |
       | ingangsdatum geldigheid (85.10)   | 20141205 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                    |
       | indicatie gezag minderjarige (32.10) | D                         |
       | beschrijving document (82.30)        | mededeling gezagsregister |
@@ -376,8 +376,9 @@ Functionaliteit: Tg003 - Bloem-Berendsen-Bolder - Ongehuwd met niet-erkende kind
   Scenario: Lg01_010 - ongehuwde meerderjarige moeder met 2 minderjarige niet erkende kinderen
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Bianca'
-    Dan is het gezag over 'Bram' eenhoofdig ouderlijk gezag met ouder 'Bianca'
-    Dan is het gezag over 'Benno' eenhoofdig ouderlijk gezag met ouder 'Bianca'
+    Dan heeft 'Bianca' de volgende gezagsrelaties
+    * is het gezag over 'Bram' eenhoofdig ouderlijk gezag met ouder 'Bianca'
+    * is het gezag over 'Benno' eenhoofdig ouderlijk gezag met ouder 'Bianca'
 
   Scenario: Lg01_011 - moeder opgenomen in categorie 02, categorie 03 leeg, geen categorie 11
     # Route: 40o1

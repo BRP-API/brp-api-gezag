@@ -200,14 +200,9 @@ public class Persoonslijst {
             && "O".equals(inschrijving.getRedenOpschortingBijhouding());
     }
 
-    public boolean isNietIngeschrevenInRNI() {
+    public boolean isIngeschrevenInRNI() {
         // PL 1/2 : 07.67.20
-        return !(inschrijving != null && Objects.equals(inschrijving.getRedenOpschortingBijhouding(), "R"));
-    }
-
-    public boolean isNietGeemigreerd() {
-        // PL 1/2 : 07.67.20
-        return !(inschrijving != null && Objects.equals(inschrijving.getRedenOpschortingBijhouding(), "E"));
+        return inschrijving != null && Objects.equals(inschrijving.getRedenOpschortingBijhouding(), "R");
     }
 
     public boolean onderCurateleGesteld() {

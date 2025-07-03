@@ -49,7 +49,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | datum ingang onderzoek (83.20)                     | 20220825 |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 0        |
-    En heeft een partner 'Grada' met de volgende gegevens
+    En heeft een partner 'Grada-0' met de volgende gegevens
       | naam                                                                | waarde     |
       | burgerservicenummer (01.20)                                         | 000000024  |
       | voornamen (02.10)                                                   | Grada      |
@@ -133,7 +133,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | datum ingang onderzoek (83.20)                     | 20220825   |
       | ingangsdatum geldigheid (85.10)                    | 0          |
       | datum ingang familierechtelijke betrekking (62.10) | 0          |
-    En heeft een partner 'Govert' met de volgende gegevens
+    En heeft een partner 'Govert-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000012 |
       | voornamen (02.10)                                                   | Govert    |
@@ -234,7 +234,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | aanduiding in onderzoek (83.10)   | 80920    |
       | datum ingang onderzoek (83.20)    | 20220825 |
       | ingangsdatum geldigheid (85.10)   | 20160607 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | D                           |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -289,7 +289,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
       | aanduiding in onderzoek (83.10)      | 81420    |
       | datum ingang onderzoek (83.20)       | 20220825 |
       | ingangsdatum geldigheid (85.10)      | 20191205 |
-    En heeft gezagsverhouding met de volgende gegevens
+    En heeft de volgende gezagsverhouding gegevens
       | naam                                 | waarde                      |
       | indicatie gezag minderjarige (32.10) | 2                           |
       | beschrijving document (82.30)        | kennisgeving gezagsregister |
@@ -359,13 +359,17 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
   Scenario: Lg01_134 - gehuwd, kinderen, in onderzoek 010300, 020000, 030310, 050610, 089999, 090000, 090300
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Govert'
-    Dan is het gezag over 'Gerdien' gezamenlijk ouderlijk gezag met ouder 'Govert' en ouder 'Grada'
+    Dan heeft 'Govert' de volgende gezagsrelaties
+    * is het gezag over 'Gerdien' gezamenlijk ouderlijk gezag met ouder 'Govert' en ouder 'Grada'
     En is het gezag in onderzoek
 
   Scenario: Lg01_135 - gehuwd, kinderen, in onderzoek 026210, 030000, 050200, 080000, 090330
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Grada'
-    Dan is het gezag over 'Gerdien' gezamenlijk ouderlijk gezag met ouder 'Govert' en ouder 'Grada'
+    Dan heeft 'Grada' de volgende gezagsrelaties
+    * is het gezag over 'Gerdien' gezamenlijk ouderlijk gezag met ouder 'Govert' en ouder 'Grada'
+    En is het gezag in onderzoek
+    * is het gezag over 'Gijs' eenhoofdig ouderlijk gezag met ouder 'Grada'
     En is het gezag in onderzoek
 
   Scenario: Lg01_136 - kind geboren tijdens huwelijk, in onderzoek 010310, 026210, 030210, 080920, 613210, historische indicatie gezag
@@ -377,7 +381,7 @@ Functionaliteit: Tg025 - Geus-Goverwelle - Gegevens in onderzoek
   Scenario: Lg01_137 - kind geboren tijdens huwelijk in onderzoek 010330 (voorvoegsel ontbreekt), 040510, 081420, 113210
     # Route: 3ai
     Als 'gezag' wordt gevraagd van 'Gijs'
-    Dan is het gezag over 'Gijs' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat minderjarige in het buitenland is geboren.'
+    Dan is het gezag over 'Gijs' eenhoofdig ouderlijk gezag met ouder 'Grada'
     En is het gezag in onderzoek
 
   Scenario: Lg01_138 - kind geboren tijdens huwelijk, overleden, gezag is niet van toepassing

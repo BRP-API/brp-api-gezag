@@ -43,7 +43,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 19900301 |
-    En heeft een partner 'Damon' met de volgende gegevens
+    En heeft een partner 'Damon-0' met de volgende gegevens
       | naam                                                                | waarde        |
       | voornamen (02.10)                                                   | Damon         |
       | geslachtsnaam (02.40)                                               | Dangor        |
@@ -137,7 +137,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | beschrijving document (82.30)                      | PK       |
       | ingangsdatum geldigheid (85.10)                    | 0        |
       | datum ingang familierechtelijke betrekking (62.10) | 19900301 |
-    En heeft een partner 'Dag' met de volgende gegevens
+    En heeft een partner 'Dag-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000048 |
       | voornamen (02.10)                                                   | Dag       |
@@ -218,7 +218,7 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | beschrijving document (82.30)                      | ga 6027  |
       | ingangsdatum geldigheid (85.10)                    | 19821201 |
       | datum ingang familierechtelijke betrekking (62.10) | 19821201 |
-    En heeft een partner 'Donna' met de volgende gegevens
+    En heeft een partner 'Donna-0' met de volgende gegevens
       | naam                                                                | waarde    |
       | burgerservicenummer (01.20)                                         | 000000036 |
       | voornamen (02.10)                                                   | Donna     |
@@ -444,27 +444,34 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
   Scenario: Lg01_017 - gehuwd, echtgenoot niet ingeschreven in Nederland, minderjarig kind geboren tijdens huwelijk
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Desiree'
-    Dan heeft 'Daryl' eenhoofdig ouderlijk gezag met ouder 'Desiree'
+    Dan heeft 'Desiree' geen gezaghouder
 
+  @deprecated
   Scenario: Lg01_018 - minderjarig kind, geboren tijdens huwelijk ouders, geen categorie 11, vader niet ingeschreven in BRP, kind Nederlandse nationaliteit + Beëindigde vreemde nationaliteit
-    # Route: 45e
+    # Route: 49
     Als 'gezag' wordt gevraagd van 'Daryl'
-    Dan heeft 'Daryl' eenhoofdig ouderlijk gezag met ouder 'Desiree'
+    Dan is het gezag over 'Daryl' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd'
 
   Scenario: Lg01_019 - gehuwd, 3 minderjarige kinderen geboren tijdens huwelijk ouders, echtgenoot en 2 kinderen geëmigreerd (RNI), 1 kind weer teruggekeerd (immigratie)
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Donna'
-    Dan heeft 'Donna' geen gezaghouder
+    Dan heeft 'Donna' de volgende gezagsrelaties
+    * is het gezag over 'Darian' gezamenlijk ouderlijk gezag met ouder 'Donna' en ouder 'Dag'
+    * is het gezag over 'Dorian' gezamenlijk ouderlijk gezag met ouder 'Donna' en ouder 'Dag'
+    * is het gezag over 'Duko' gezamenlijk ouderlijk gezag met ouder 'Donna' en ouder 'Dag'
 
   Scenario: Lg01_020 - gehuwd, 2 minderjarige kinderen geboren tijdens huwelijk ouders, zelf + 2 kinderen geëmigreerd (RNI), 1 kind weer teruggekeerd (immigratie).
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Dag'
-    Dan heeft 'Dag' geen gezaghouder
+    Dan heeft 'Dag' de volgende gezagsrelaties
+    * is het gezag over 'Darian' gezamenlijk ouderlijk gezag met ouder 'Donna' en ouder 'Dag'
+    * is het gezag over 'Dorian' gezamenlijk ouderlijk gezag met ouder 'Donna' en ouder 'Dag'
+    * is het gezag over 'Duko' gezamenlijk ouderlijk gezag met ouder 'Donna' en ouder 'Dag'
 
   Scenario: Lg01_021 - minderjarig kind, geboren tijdens huwelijk ouders, geen categorie 11, vader ingeschreven in RNI, kind Nederlandse nationaliteit
-    # Route: 45e
+    # Route: 49
     Als 'gezag' wordt gevraagd van 'Darian'
-    Dan is het gezag over 'Darian' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd'
+    Dan is het gezag over 'Darian' gezamenlijk ouderlijk gezag met ouder 'Donna' en ouder 'Dag'
 
   Scenario: Lg01_022 - minderjarig kind, geboren tijdens huwelijk ouders, geen categorie 11, geëmigreerd, ingeschreven in RNI evenals vader
     # Route: 1
@@ -472,11 +479,11 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
     Dan is het gezag over 'Ditmar' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat minderjarige niet in Nederland woont.'
 
   Scenario: Lg01_023 - minderjarig kind, geboren tijdens huwelijk ouders, geen categorie 11, vader ingeschreven in de RNI, kind Nederlandse nationaliteit, geëmigreerd geweest en geïmmigreerd
-    # Route: 3
+    # Route: 49
     Als 'gezag' wordt gevraagd van 'Duko'
-    Dan is het gezag over 'Duko' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat minderjarige buiten Nederland heeft verbleven.'
+    Dan is het gezag over 'Duko' gezamenlijk ouderlijk gezag met ouder 'Donna' en ouder 'Dag'
 
   Scenario: Lg01_197 - minderjarig kind, geboren in Nederland, moeder ingezetene, vader RNI
-    # Route: 45e
+    # Route: 49
     Als 'gezag' wordt gevraagd van 'Dorian'
-    Dan is het gezag over 'Dorian' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd'
+    Dan is het gezag over 'Dorian' gezamenlijk ouderlijk gezag met ouder 'Donna' en ouder 'Dag'

@@ -1,5 +1,6 @@
 package nl.rijksoverheid.mev.gezagsmodule.domain.gezagvraag;
 
+import jakarta.annotation.Nullable;
 import nl.rijksoverheid.mev.gezagsmodule.domain.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -64,11 +65,12 @@ public class IsStaandeHuwelijkOfPartnerschapGeboren implements GezagVraag {
         return new GezagVraagResult(QUESTION_ID, answer);
     }
 
-    public boolean heeftOuderRelatieBijGeboorteKind(
-        Persoonslijst plOuder,
+    private boolean heeftOuderRelatieBijGeboorteKind(
+        @Nullable Persoonslijst plOuder,
         String geboortedatum,
         GezagsBepaling gezagsBepaling
     ) {
+        if (plOuder == null) return false;
         var huwelijkOfPartnerschappen = plOuder.getHuwelijkOfPartnerschappen();
         if (huwelijkOfPartnerschappen.isEmpty()) return false;
 

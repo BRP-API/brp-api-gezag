@@ -6,7 +6,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
 
-import java.util.Objects;
 import java.util.Optional;
 
 /**
@@ -66,9 +65,6 @@ class BackwardsCompatibility {
                     throw new IllegalArgumentException("Unexpected gezagsrelatie type: " + gezagsrelatie.getClass().getName());
             };
         } catch (BurgerservicenummerAbsentException e) {
-            var isBevraagdePersoonMeerderjarig = Objects.equals(MDC.get("isBevraagdePersoonDeMinderjarige"), "false");
-            MDC.remove("isBevraagdePersoonDeMinderjarige");
-            if (isBevraagdePersoonMeerderjarig) return Optional.empty();
             logger.info("Transformeer gezag uitspraak {} (v2) naar GezagNietTeBepalen (v1) omdat een ouder van de minderjarige het burgerservicenummer mist", gezagsrelatie.getType());
 
             var minderjarige = BackwardsCompatibility.downgrade(gezagsrelatie.getMinderjarige());

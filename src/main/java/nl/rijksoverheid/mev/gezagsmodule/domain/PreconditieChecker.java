@@ -17,8 +17,6 @@ import java.util.Map;
 @Component
 public class PreconditieChecker {
 
-    public static final String IS_EEN_OUDER_NIET_GEREGISTREERD_MISSEND_VELD = "isEenOuderNietGeregistreerdMissendVeld";
-
     private final Map<String, String> missendGegevensByBurgservicenummer = new HashMap<>();
 
     /**

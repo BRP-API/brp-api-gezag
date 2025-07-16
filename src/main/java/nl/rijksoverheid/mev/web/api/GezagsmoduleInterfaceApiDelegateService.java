@@ -1,6 +1,7 @@
 package nl.rijksoverheid.mev.web.api;
 
 import nl.rijksoverheid.mev.exception.GezagException;
+import nl.rijksoverheid.mev.gezagsmodule.domain.PreconditieChecker;
 import nl.rijksoverheid.mev.gmapi.BevoegdheidTotGezagService;
 import nl.rijksoverheid.mev.web.api.v1.*;
 import org.slf4j.MDC;
@@ -18,9 +19,14 @@ import java.util.Optional;
 public class GezagsmoduleInterfaceApiDelegateService implements GezagsmoduleInterfaceApiDelegate {
 
     private final BevoegdheidTotGezagService bevoegdheidTotGezagService;
+    private final PreconditieChecker preconditieChecker;
 
-    public GezagsmoduleInterfaceApiDelegateService(BevoegdheidTotGezagService bevoegdheidTotGezagService) {
+    public GezagsmoduleInterfaceApiDelegateService(
+        BevoegdheidTotGezagService bevoegdheidTotGezagService,
+        PreconditieChecker preconditieChecker
+    ) {
         this.bevoegdheidTotGezagService = bevoegdheidTotGezagService;
+        this.preconditieChecker = preconditieChecker;
     }
 
     @Override
@@ -43,8 +49,7 @@ public class GezagsmoduleInterfaceApiDelegateService implements GezagsmoduleInte
 
         var gezagRequestV2 = BackwardsCompatibility.upgrade(gezagRequestV1);
         var personenV2 = bevoegdheidTotGezagService.bepaalBevoegdheidTotGezag(gezagRequestV2);
-        var personenV1 = personenV2.stream()
-            .map(BackwardsCompatibility::downgrade)
+        var personenV1 = BackwardsCompatibility.downgrade(personenV2, preconditieChecker).stream()
             .map(this::excludeIndirectGezagsrelaties)
             .toList();
 

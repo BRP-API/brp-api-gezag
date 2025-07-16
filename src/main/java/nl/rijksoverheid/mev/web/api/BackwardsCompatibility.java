@@ -1,11 +1,12 @@
 package nl.rijksoverheid.mev.web.api;
 
+import nl.rijksoverheid.mev.gezagsmodule.domain.PreconditieChecker;
 import nl.rijksoverheid.mev.web.api.v1.AbstractGezagsrelatie;
 import nl.rijksoverheid.mev.web.api.v2.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.slf4j.MDC;
 
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -30,14 +31,26 @@ class BackwardsCompatibility {
     }
 
     /**
-     * Downgrades <i>persoon</i> (v2) to <i>persoon</i> (v1) to enable backwards compatibility.
+     * Downgrades <i>personen</i> (v2) to <i>personen</i> (v1) to enable backwards compatibility.
      *
-     * @param persoon persoon (v2)
-     * @return a persoon (v1)
+     * @param personen personen (v2) to downgrade to v1
+     * @return personen (v1)
      */
-    static nl.rijksoverheid.mev.web.api.v1.Persoon downgrade(Persoon persoon) {
+    static List<nl.rijksoverheid.mev.web.api.v1.Persoon> downgrade(
+        List<Persoon> personen,
+        PreconditieChecker preconditieChecker
+    ) {
+        return personen.stream()
+            .map(it -> downgrade(it, preconditieChecker))
+            .toList();
+    }
+
+    private static nl.rijksoverheid.mev.web.api.v1.Persoon downgrade(
+        Persoon persoon,
+        PreconditieChecker preconditieChecker
+    ) {
         var gezagsrelaties = persoon.getGezag().stream()
-            .map(BackwardsCompatibility::downgrade)
+            .map(gezagsrelatie -> downgrade(gezagsrelatie, preconditieChecker))
             .flatMap(Optional::stream)
             .toList();
 
@@ -48,10 +61,10 @@ class BackwardsCompatibility {
         return result;
     }
 
-    private static Optional<AbstractGezagsrelatie> downgrade(Gezagsrelatie gezagsrelatie) {
-        var isEenOuderNietGeregistreerdMissendVeld = MDC.get("isEenOuderNietGeregistreerdMissendVeld");
-        MDC.remove("isEenOuderNietGeregistreerdMissendVeld");
-
+    private static Optional<AbstractGezagsrelatie> downgrade(
+        Gezagsrelatie gezagsrelatie,
+        PreconditieChecker preconditieChecker
+    ) {
         nl.rijksoverheid.mev.web.api.v1.AbstractGezagsrelatie result;
         try {
             result = switch (gezagsrelatie) {
@@ -68,7 +81,8 @@ class BackwardsCompatibility {
             logger.info("Transformeer gezag uitspraak {} (v2) naar GezagNietTeBepalen (v1) omdat een ouder van de minderjarige het burgerservicenummer mist", gezagsrelatie.getType());
 
             var minderjarige = BackwardsCompatibility.downgrade(gezagsrelatie.getMinderjarige());
-            var toelichting = "Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: " + isEenOuderNietGeregistreerdMissendVeld;
+            var missendGegeven = preconditieChecker.getMissendGegevenByBurgservicenummer(minderjarige.getBurgerservicenummer());
+            var toelichting = "Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: " + missendGegeven;
 
             result = new nl.rijksoverheid.mev.web.api.v1.GezagNietTeBepalen()
                 .minderjarige(minderjarige)

@@ -49,40 +49,11 @@ public class GezagsmoduleInterfaceApiDelegateService implements GezagsmoduleInte
 
         var gezagRequestV2 = BackwardsCompatibility.upgrade(gezagRequestV1);
         var personenV2 = bevoegdheidTotGezagService.bepaalBevoegdheidTotGezag(gezagRequestV2);
-        var personenV1 = BackwardsCompatibility.downgrade(personenV2, preconditieChecker).stream()
-            .map(this::excludeIndirectGezagsrelaties)
-            .toList();
+        var personenV1 = BackwardsCompatibility.downgrade(personenV2, preconditieChecker);
 
         var gezagResponse = new GezagResponse();
         gezagResponse.setPersonen(personenV1);
         return ResponseEntity.ok(gezagResponse);
-    }
-
-    /**
-     * Exclude irrelevant <i>gezagsrelaties</i>.
-     * <p>
-     * <i>Gezagsrelaties</i> are irrelevant when <code>minderjarige.burgerservicenummer</code> is not equal to
-     * <code>persoon.burgservicenummer</code> and its type is the following:
-     * <ul>
-     *   <li>GezagNietTeBepalen</li>
-     *   <li>TijdelijkGeenGezag</li>
-     * </ul>
-     *
-     * @param persoon <i>persoon</i> whose gezagsrelaties to filter
-     * @return <i>persoon</i> without irrelevant <i>gezagsrelaties</i>
-     */
-    private Persoon excludeIndirectGezagsrelaties(Persoon persoon) {
-        var gezagsrelaties = persoon.getGezag().stream()
-            .filter(gezagsrelatie ->
-                switch (gezagsrelatie) {
-                    case GezagNietTeBepalen it -> it.getMinderjarige().map(Minderjarige::getBurgerservicenummer).equals(persoon.getBurgerservicenummer());
-                    case TijdelijkGeenGezag it -> it.getMinderjarige().map(Minderjarige::getBurgerservicenummer).equals(persoon.getBurgerservicenummer());
-                    default -> true;
-
-            })
-            .toList();
-        persoon.setGezag(gezagsrelaties);
-        return persoon;
     }
 
     @ExceptionHandler

@@ -1,12 +1,12 @@
 package nl.rijksoverheid.mev.web.api;
 
+import nl.rijksoverheid.mev.gezagsmodule.domain.PreconditieChecker;
 import nl.rijksoverheid.mev.web.api.v1.AbstractGezagsrelatie;
 import nl.rijksoverheid.mev.web.api.v2.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.slf4j.MDC;
 
-import java.util.Objects;
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -31,14 +31,58 @@ class BackwardsCompatibility {
     }
 
     /**
-     * Downgrades <i>persoon</i> (v2) to <i>persoon</i> (v1) to enable backwards compatibility.
+     * Downgrades <i>personen</i> (v2) to <i>personen</i> (v1) to enable backwards compatibility.
      *
-     * @param persoon persoon (v2)
-     * @return a persoon (v1)
+     * @param personen personen (v2) to downgrade to v1
+     * @return personen (v1)
      */
-    static nl.rijksoverheid.mev.web.api.v1.Persoon downgrade(Persoon persoon) {
+    static List<nl.rijksoverheid.mev.web.api.v1.Persoon> downgrade(
+        List<Persoon> personen,
+        PreconditieChecker preconditieChecker
+    ) {
+        return personen.stream()
+            .map(it -> downgrade(it, preconditieChecker))
+            .map(BackwardsCompatibility::excludeIndirectGezagsrelaties)
+            .toList();
+    }
+
+    /**
+     * Exclude irrelevant <i>gezagsrelaties</i>.
+     * <p>
+     * <i>Gezagsrelaties</i> are irrelevant when <code>minderjarige.burgerservicenummer</code> is not equal to
+     * <code>persoon.burgservicenummer</code> and its type is the following:
+     * <ul>
+     *   <li>GezagNietTeBepalen</li>
+     *   <li>TijdelijkGeenGezag</li>
+     * </ul>
+     *
+     * @param persoon <i>persoon</i> whose gezagsrelaties to filter
+     * @return <i>persoon</i> without irrelevant <i>gezagsrelaties</i>
+     */
+    private static nl.rijksoverheid.mev.web.api.v1.Persoon excludeIndirectGezagsrelaties(
+        nl.rijksoverheid.mev.web.api.v1.Persoon persoon
+    ) {
         var gezagsrelaties = persoon.getGezag().stream()
-            .map(BackwardsCompatibility::downgrade)
+            .filter(gezagsrelatie ->
+                switch (gezagsrelatie) {
+                    case nl.rijksoverheid.mev.web.api.v1.GezagNietTeBepalen it ->
+                        it.getMinderjarige().map(nl.rijksoverheid.mev.web.api.v1.Minderjarige::getBurgerservicenummer).equals(persoon.getBurgerservicenummer());
+                    case nl.rijksoverheid.mev.web.api.v1.TijdelijkGeenGezag it ->
+                        it.getMinderjarige().map(nl.rijksoverheid.mev.web.api.v1.Minderjarige::getBurgerservicenummer).equals(persoon.getBurgerservicenummer());
+                    default -> true;
+
+                })
+            .toList();
+        persoon.setGezag(gezagsrelaties);
+        return persoon;
+    }
+
+    private static nl.rijksoverheid.mev.web.api.v1.Persoon downgrade(
+        Persoon persoon,
+        PreconditieChecker preconditieChecker
+    ) {
+        var gezagsrelaties = persoon.getGezag().stream()
+            .map(gezagsrelatie -> downgrade(gezagsrelatie, preconditieChecker))
             .flatMap(Optional::stream)
             .toList();
 
@@ -49,10 +93,10 @@ class BackwardsCompatibility {
         return result;
     }
 
-    private static Optional<AbstractGezagsrelatie> downgrade(Gezagsrelatie gezagsrelatie) {
-        var isEenOuderNietGeregistreerdMissendVeld = MDC.get("isEenOuderNietGeregistreerdMissendVeld");
-        MDC.remove("isEenOuderNietGeregistreerdMissendVeld");
-
+    private static Optional<AbstractGezagsrelatie> downgrade(
+        Gezagsrelatie gezagsrelatie,
+        PreconditieChecker preconditieChecker
+    ) {
         nl.rijksoverheid.mev.web.api.v1.AbstractGezagsrelatie result;
         try {
             result = switch (gezagsrelatie) {
@@ -66,13 +110,11 @@ class BackwardsCompatibility {
                     throw new IllegalArgumentException("Unexpected gezagsrelatie type: " + gezagsrelatie.getClass().getName());
             };
         } catch (BurgerservicenummerAbsentException e) {
-            var isBevraagdePersoonMeerderjarig = Objects.equals(MDC.get("isBevraagdePersoonDeMinderjarige"), "false");
-            MDC.remove("isBevraagdePersoonDeMinderjarige");
-            if (isBevraagdePersoonMeerderjarig) return Optional.empty();
             logger.info("Transformeer gezag uitspraak {} (v2) naar GezagNietTeBepalen (v1) omdat een ouder van de minderjarige het burgerservicenummer mist", gezagsrelatie.getType());
 
             var minderjarige = BackwardsCompatibility.downgrade(gezagsrelatie.getMinderjarige());
-            var toelichting = "Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: " + isEenOuderNietGeregistreerdMissendVeld;
+            var missendGegeven = preconditieChecker.getMissendGegevenByBurgservicenummer(minderjarige.getBurgerservicenummer());
+            var toelichting = "Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: " + missendGegeven;
 
             result = new nl.rijksoverheid.mev.web.api.v1.GezagNietTeBepalen()
                 .minderjarige(minderjarige)

@@ -3,6 +3,7 @@ package nl.rijksoverheid.mev.gezagsmodule.domain.gezagvraag;
 import nl.rijksoverheid.mev.gezagsmodule.domain.ARAntwoordenModel;
 import nl.rijksoverheid.mev.gezagsmodule.domain.Persoon;
 import nl.rijksoverheid.mev.gezagsmodule.domain.Persoonslijst;
+import nl.rijksoverheid.mev.gezagsmodule.domain.PreconditieChecker;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -31,7 +32,7 @@ class IsStaandeHuwelijkOfPartnerschapGeborenTest {
         persoonslijst.setPersoon(persoon);
         when(gezagsBepaling.getPlPersoon()).thenReturn(persoonslijst);
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
-        classUnderTest = new IsStaandeHuwelijkOfPartnerschapGeboren();
+        classUnderTest = new IsStaandeHuwelijkOfPartnerschapGeboren(new PreconditieChecker());
     }
 
     @Test

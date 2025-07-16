@@ -20,6 +20,12 @@ public class IsGeborenInBuitenland implements GezagVraag {
     private static final String V1_3A_JA = "Ja";
     private static final String V1_3A_NEE = "Nee";
 
+    private final ZijnJuridischeOudersNuMetElkaarGehuwdOfPartners zijnJuridischeOudersNuMetElkaarGehuwdOfPartners;
+
+    public IsGeborenInBuitenland(ZijnJuridischeOudersNuMetElkaarGehuwdOfPartners zijnJuridischeOudersNuMetElkaarGehuwdOfPartners) {
+        this.zijnJuridischeOudersNuMetElkaarGehuwdOfPartners = zijnJuridischeOudersNuMetElkaarGehuwdOfPartners;
+    }
+
     @Override
     public String getQuestionId() {
         return QUESTION_ID;
@@ -40,7 +46,7 @@ public class IsGeborenInBuitenland implements GezagVraag {
     private String doPerform(GezagsBepaling gezagsBepaling) {
         logger.debug("Interne aanroep naar vraag v2a.1 (buiten het stroomschema om) vanwege #393");
         try {
-            var zijnJuridischeOudersGehuwdAsString = new ZijnJuridischeOudersNuMetElkaarGehuwdOfPartners().doPerform(gezagsBepaling);
+            var zijnJuridischeOudersGehuwdAsString = zijnJuridischeOudersNuMetElkaarGehuwdOfPartners.doPerform(gezagsBepaling);
             var zijnJuridischeOudersGehuwd = Objects.equals(zijnJuridischeOudersGehuwdAsString, ZijnJuridischeOudersNuMetElkaarGehuwdOfPartners.V2A_1_JA_GEHUWD_OF_PARTNERS);
             if (zijnJuridischeOudersGehuwd) {
                 return V1_3A_NEE; // answer V1_3A_NEE to skip this question, but actual answer should be "V1_3A_JA, but skip this question"

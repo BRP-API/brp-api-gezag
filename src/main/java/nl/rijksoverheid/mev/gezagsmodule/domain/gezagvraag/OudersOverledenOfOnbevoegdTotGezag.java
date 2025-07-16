@@ -34,6 +34,12 @@ public class OudersOverledenOfOnbevoegdTotGezag implements GezagVraag {
         "oo", "Ja_beiden_overleden"
     );
 
+    private final PreconditieChecker preconditieChecker;
+
+    public OudersOverledenOfOnbevoegdTotGezag(PreconditieChecker preconditieChecker) {
+        this.preconditieChecker = preconditieChecker;
+    }
+
     @Override
     public String getQuestionId() {
         return QUESTION_ID;
@@ -41,7 +47,7 @@ public class OudersOverledenOfOnbevoegdTotGezag implements GezagVraag {
 
     @Override
     public GezagVraagResult perform(final GezagsBepaling gezagsBepaling) {
-        PreconditieChecker.preconditieCheckOudersGeregistreerd(gezagsBepaling);
+        preconditieChecker.preconditieCheckOudersGeregistreerd(gezagsBepaling);
 
         final var optionalIsOuder1OverledenOfOnbevoegdToken = gezagsBepaling.fetchPersoonslijstVanOuder1()
             .map(Persoonslijst::isOverledenOfOnbevoegdEncoded)

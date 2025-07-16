@@ -26,6 +26,12 @@ public class IsStaandeHuwelijkOfPartnerschapGeboren implements GezagVraag {
     private static final String OUDER_1 = "ouder1";
     private static final String OUDER_2 = "ouder2";
 
+    private final PreconditieChecker preconditieChecker;
+
+    public IsStaandeHuwelijkOfPartnerschapGeboren(PreconditieChecker preconditieChecker) {
+        this.preconditieChecker = preconditieChecker;
+    }
+
     @Override
     public String getQuestionId() {
         return QUESTION_ID;
@@ -41,7 +47,7 @@ public class IsStaandeHuwelijkOfPartnerschapGeboren implements GezagVraag {
         Ouder2 lOuder2 = plPersoon.getOuder2();
         if (lOuder1 != null && isValideGeslachtsnaam(lOuder1.getGeslachtsnaam())) {
             final var plOuder1 = gezagsBepaling.getPlOuder1();
-            PreconditieChecker.preconditieCheckGeregistreerd(OUDER_1, plOuder1);
+            preconditieChecker.preconditieCheckGeregistreerd(OUDER_1, plPersoon, plOuder1);
             if (heeftOuderRelatieBijGeboorteKind(plOuder1, geboorteDatumKind, gezagsBepaling)
                 && !plPersoon.ontkenningOuderschapDoorOuder2()) {
                 answer = V2B_1_JA;
@@ -50,7 +56,7 @@ public class IsStaandeHuwelijkOfPartnerschapGeboren implements GezagVraag {
         }
         if (lOuder2 != null && isValideGeslachtsnaam(lOuder2.getGeslachtsnaam())) {
             final var plOuder2 = gezagsBepaling.getPlOuder2();
-            PreconditieChecker.preconditieCheckGeregistreerd(OUDER_2, plOuder2);
+            preconditieChecker.preconditieCheckGeregistreerd(OUDER_2, plPersoon, plOuder2);
             if (heeftOuderRelatieBijGeboorteKind(plOuder2, geboorteDatumKind, gezagsBepaling)
                 && !plPersoon.ontkenningOuderschapDoorOuder1()) {
                 answer = V2B_1_JA;

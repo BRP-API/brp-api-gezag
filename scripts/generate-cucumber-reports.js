@@ -18,8 +18,16 @@ report.generate({
 
 report.generate({
     jsonDir: 'test-reports/cucumber-js/gezag',
-    reportPath: 'test-reports/cucumber-js/reports/gezag/gezag-service',
+    reportPath: 'test-reports/cucumber-js/reports/gezag',
     reportName: 'Gezag service features',
+    hideMetadata: true,
+    customData: customData
+});
+
+report.generate({
+    jsonDir: 'test-reports/cucumber-js/gezag-deprecated',
+    reportPath: 'test-reports/cucumber-js/reports/gezag-deprecated',
+    reportName: 'Gezag service features (deprecated)',
     hideMetadata: true,
     customData: customData
 });

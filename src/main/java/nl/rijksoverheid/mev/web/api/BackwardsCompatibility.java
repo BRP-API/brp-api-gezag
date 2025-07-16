@@ -42,7 +42,39 @@ class BackwardsCompatibility {
     ) {
         return personen.stream()
             .map(it -> downgrade(it, preconditieChecker))
+            .map(BackwardsCompatibility::excludeIndirectGezagsrelaties)
             .toList();
+    }
+
+    /**
+     * Exclude irrelevant <i>gezagsrelaties</i>.
+     * <p>
+     * <i>Gezagsrelaties</i> are irrelevant when <code>minderjarige.burgerservicenummer</code> is not equal to
+     * <code>persoon.burgservicenummer</code> and its type is the following:
+     * <ul>
+     *   <li>GezagNietTeBepalen</li>
+     *   <li>TijdelijkGeenGezag</li>
+     * </ul>
+     *
+     * @param persoon <i>persoon</i> whose gezagsrelaties to filter
+     * @return <i>persoon</i> without irrelevant <i>gezagsrelaties</i>
+     */
+    private static nl.rijksoverheid.mev.web.api.v1.Persoon excludeIndirectGezagsrelaties(
+        nl.rijksoverheid.mev.web.api.v1.Persoon persoon
+    ) {
+        var gezagsrelaties = persoon.getGezag().stream()
+            .filter(gezagsrelatie ->
+                switch (gezagsrelatie) {
+                    case nl.rijksoverheid.mev.web.api.v1.GezagNietTeBepalen it ->
+                        it.getMinderjarige().map(nl.rijksoverheid.mev.web.api.v1.Minderjarige::getBurgerservicenummer).equals(persoon.getBurgerservicenummer());
+                    case nl.rijksoverheid.mev.web.api.v1.TijdelijkGeenGezag it ->
+                        it.getMinderjarige().map(nl.rijksoverheid.mev.web.api.v1.Minderjarige::getBurgerservicenummer).equals(persoon.getBurgerservicenummer());
+                    default -> true;
+
+                })
+            .toList();
+        persoon.setGezag(gezagsrelaties);
+        return persoon;
     }
 
     private static nl.rijksoverheid.mev.web.api.v1.Persoon downgrade(

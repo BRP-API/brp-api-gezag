@@ -128,7 +128,7 @@ Functionaliteit: Tg032 - Oostingh - Alleen maar minderjarigen incl. moeder
   Scenario: Lg01_173 - minderjarige moeder, gezag niet te bepalen BSN moeder ontbreekt
     # Route: 39e
     Als 'gezag' wordt gevraagd van 'Olga'
-    Dan is het gezag over 'Olga' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken bij het bepalen van het huwelijk/partnerschap van de ouder(s). Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd'
+    Dan is het gezag over 'Olga' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd'
 
   Scenario: Lg01_174 - minderjarige moeder, geen categorie 11
     # Route: 39m

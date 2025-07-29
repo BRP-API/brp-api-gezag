@@ -88,7 +88,7 @@ sourceSets {
 }
 
 group = "nl.rijksoverheid.mev"
-version = "2.0.3"
+version = "2.0.5"
 description = "Het gezag component van BRP-API"
 java.sourceCompatibility = JavaVersion.VERSION_21
 

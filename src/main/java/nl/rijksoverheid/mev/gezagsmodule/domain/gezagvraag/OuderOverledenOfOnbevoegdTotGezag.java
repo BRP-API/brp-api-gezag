@@ -32,6 +32,12 @@ public class OuderOverledenOfOnbevoegdTotGezag implements GezagVraag {
         "oo", "Ja_beiden_overleden"
     );
 
+    private final PreconditieChecker preconditieChecker;
+
+    public OuderOverledenOfOnbevoegdTotGezag(PreconditieChecker preconditieChecker) {
+        this.preconditieChecker = preconditieChecker;
+    }
+
     @Override
     public String getQuestionId() {
         return QUESTION_ID;
@@ -56,11 +62,14 @@ public class OuderOverledenOfOnbevoegdTotGezag implements GezagVraag {
         var key = constructKey(isOuder1OverledenOfOnbevoegdToken, isOuder2OverledenOfOnbevoegdToken);
         var answer = ANTWOORDEN.get(key);
 
+        var persoonslijstPersoon = gezagsBepaling.getPlPersoon();
         if (isOuder1Irrelevant) {
-            PreconditieChecker.preconditieCheckGeregistreerd("ouder2", optionalPersoonslijstOuder2.orElse(null));
+            var persoonslijstOuder2 = optionalPersoonslijstOuder2.orElse(null);
+            preconditieChecker.preconditieCheckGeregistreerd("ouder2", persoonslijstPersoon, persoonslijstOuder2);
             answer = answer.equals("Nee") ? "Nee_ouder2" : answer;
         } else if (isOuder2Irrelevant) {
-            PreconditieChecker.preconditieCheckGeregistreerd("ouder1", optionalPersoonslijstOuder1.orElse(null));
+            var persoonslijstOuder1 = optionalPersoonslijstOuder1.orElse(null);
+            preconditieChecker.preconditieCheckGeregistreerd("ouder1", persoonslijstPersoon, persoonslijstOuder1);
             answer = answer.equals("Nee") ? "Nee_ouder1" : answer;
         }
 

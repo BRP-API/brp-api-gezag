@@ -47,6 +47,12 @@ public class OuderOfPartnerOverledenOfOnbevoegdTotGezag implements GezagVraag {
         "oo", "Ja_beiden_overleden"
     );
 
+    private final PreconditieChecker preconditieChecker;
+
+    public OuderOfPartnerOverledenOfOnbevoegdTotGezag(PreconditieChecker preconditieChecker) {
+        this.preconditieChecker = preconditieChecker;
+    }
+
     @Override
     public String getQuestionId() {
         return QUESTION_ID;
@@ -78,12 +84,15 @@ public class OuderOfPartnerOverledenOfOnbevoegdTotGezag implements GezagVraag {
             : "ouder2," + optionalOuder2OverledenOfOnbevoegdToken.isPresent() + "," + isNietOuderOverledenOfOnbevoegd;
         var answer = ouderOfPartnerOverledenOfOnbevoegdTotGezagMap.get(key);
 
+        var persoonslijstPersoon = gezagsBepaling.getPlPersoon();
         Optional<Character> optionalOuderOverledenOfOnbevoegdToken;
         if (isOuder2Irrelevant) {
-            PreconditieChecker.preconditieCheckGeregistreerd("ouder1", optionalPersoonslijstOuder1.orElse(null));
+            var persoonslijstOuder1 = optionalPersoonslijstOuder1.orElse(null);
+            preconditieChecker.preconditieCheckGeregistreerd("ouder1", persoonslijstPersoon, persoonslijstOuder1);
             optionalOuderOverledenOfOnbevoegdToken = optionalOuder1OverledenOfOnbevoegdToken;
         } else { // isOuder1Irrelevant == true
-            PreconditieChecker.preconditieCheckGeregistreerd("ouder2", optionalPersoonslijstOuder2.orElse(null));
+            var persoonslijstOuder2 = optionalPersoonslijstOuder2.orElse(null);
+            preconditieChecker.preconditieCheckGeregistreerd("ouder2", persoonslijstPersoon, persoonslijstOuder2);
             optionalOuderOverledenOfOnbevoegdToken = optionalOuder2OverledenOfOnbevoegdToken;
         }
         if (V4B_1_JA_BEIDEN.equals(answer)) {
@@ -109,8 +118,9 @@ public class OuderOfPartnerOverledenOfOnbevoegdTotGezag implements GezagVraag {
     }
 
     private Persoonslijst fetchPersoonslijstNietOuder(GezagsBepaling gezagsBepaling) {
-        var result = gezagsBepaling.getPlNietOuder();
-        PreconditieChecker.preconditieCheckGeregistreerd("niet-ouder", result);
-        return result;
+        var persoonLijstPersoon = gezagsBepaling.getPlPersoon();
+        var persoonslijstNietOuder = gezagsBepaling.getPlNietOuder();
+        preconditieChecker.preconditieCheckGeregistreerd("niet-ouder", persoonLijstPersoon, persoonslijstNietOuder);
+        return persoonslijstNietOuder;
     }
 }

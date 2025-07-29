@@ -1,10 +1,7 @@
 package nl.rijksoverheid.mev.gezagsmodule.domain.gezagvraag;
 
 import nl.rijksoverheid.mev.exception.AfleidingsregelException;
-import nl.rijksoverheid.mev.gezagsmodule.domain.ARAntwoordenModel;
-import nl.rijksoverheid.mev.gezagsmodule.domain.Ouder1;
-import nl.rijksoverheid.mev.gezagsmodule.domain.Ouder2;
-import nl.rijksoverheid.mev.gezagsmodule.domain.Persoonslijst;
+import nl.rijksoverheid.mev.gezagsmodule.domain.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -32,6 +29,8 @@ class OudersOverledenOfOnbevoegdTotGezagTest {
     @Mock
     private ARAntwoordenModel arAntwoordenModel;
     @Mock
+    private Persoon persoon;
+    @Mock
     private Ouder1 ouder1;
     @Mock
     private Ouder2 ouder2;
@@ -45,8 +44,10 @@ class OudersOverledenOfOnbevoegdTotGezagTest {
     @BeforeEach
     public void setup() {
         persoonslijst = new Persoonslijst();
+        persoonslijst.setPersoon(persoon);
         when(gezagsBepaling.getPlPersoon()).thenReturn(persoonslijst);
-        classUnderTest = new OudersOverledenOfOnbevoegdTotGezag();
+
+        classUnderTest = new OudersOverledenOfOnbevoegdTotGezag(new PreconditieChecker());
     }
 
     @Test

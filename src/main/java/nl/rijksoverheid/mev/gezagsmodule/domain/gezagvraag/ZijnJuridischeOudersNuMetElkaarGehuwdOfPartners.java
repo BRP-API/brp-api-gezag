@@ -23,6 +23,12 @@ public class ZijnJuridischeOudersNuMetElkaarGehuwdOfPartners implements GezagVra
     private static final String V2A_1_NEE = "Nee";
     private static final String V2A_1_NEE_NA_GEBOORTE_NOOIT_GEHUWD_PARTNERS_GEWEEST_MET_ELKAAR = "Nee_nooit";
 
+    private final PreconditieChecker preconditieChecker;
+
+    public ZijnJuridischeOudersNuMetElkaarGehuwdOfPartners(PreconditieChecker preconditieChecker) {
+        this.preconditieChecker = preconditieChecker;
+    }
+
     @Override
     public String getQuestionId() {
         return QUESTION_ID;
@@ -42,7 +48,7 @@ public class ZijnJuridischeOudersNuMetElkaarGehuwdOfPartners implements GezagVra
     public String doPerform(GezagsBepaling gezagsBepaling) {
         final var plPersoon = gezagsBepaling.getPlPersoon();
         final var geboortedatumKind = plPersoon.getPersoon().getGeboortedatum();
-        PreconditieChecker.preconditieCheckOudersGeregistreerd(gezagsBepaling);
+        preconditieChecker.preconditieCheckOudersGeregistreerd(gezagsBepaling);
 
         final var plOuder1 = gezagsBepaling.getPlOuder1();
         final var plOuder2 = gezagsBepaling.getPlOuder2();

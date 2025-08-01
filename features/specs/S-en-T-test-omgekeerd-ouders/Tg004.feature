@@ -1,6 +1,6 @@
 #language: nl
 
-@deprecated @gezag-api
+@gezag-api
 Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
 
 

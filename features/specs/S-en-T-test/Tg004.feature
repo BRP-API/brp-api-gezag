@@ -179,7 +179,7 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
 
   @deprecated
   Scenario: Lg01_013 - ongehuwde minderjarige moeder met 1 minderjarig niet erkend kind
-    # Route: Transformeer gezag uitspraak EenhoofdigOuderlijkGezag (v2) naar GezagNietTeBepalen (v1) omdat een ouder van de minderjarige het burgerservicenummer mist"
+    # Route: Transformeer gezag uitspraak EenhoofdigOuderlijkGezag (v2) naar GezagNietTeBepalen (v1) omdat een ouder van de minderjarige het burgerservicenummer mist
     Als 'gezag' wordt gevraagd van 'Cindy'
     Dan is het gezag over 'Cindy' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd'
 

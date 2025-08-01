@@ -343,6 +343,7 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
     * is het gezag over 'Esther' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
     * is het gezag over 'Esmee' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
 
+  @deprecated
   Scenario: Lg01_126 - 3 erkende kinderen
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Edwina'
@@ -350,16 +351,32 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
     * is het gezag over 'Esther' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
     * is het gezag over 'Esmee' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
 
+  @nieuw
+  Scenario: Lg01_126 - 3 erkende kinderen
+    # Meerderjarig
+    Als 'gezag' wordt gevraagd van 'Edwina'
+    Dan heeft 'Edwina' de volgende gezagsrelaties
+    * is het gezag over 'Esther' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
+    * is het gezag over 'Esmee' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
+    * is het gezag over 'Eveline' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Egberts'
+
   Scenario: Lg01_127 - erkend, categorie 09 op PL vader/erkenner zonder SoFi-nr/BSN, indicatie gezag 12
     # Route: 7
     Als 'gezag' wordt gevraagd van 'Esther'
     Dan is het gezag over 'Esther' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
 
+  @deprecated
   Scenario: Lg01_128 - erkend, categorie 03 op PL kind zonder SoFi-nr/BSN, wel A-nr/BSN in categorie 09 PL vader/erkenner, indicatie gezag 12
-    # Route: 7e
+    # Route: Transformeer gezag uitspraak GezamenlijkOuderlijkGezag (v2) naar GezagNietTeBepalen (v1) omdat een ouder van de minderjarige het burgerservicenummer mist
     Als 'gezag' wordt gevraagd van 'Eveline'
     Dan is het gezag over 'Eveline' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd'
 
+  @nieuw
+  Scenario: Lg01_128 - erkend, categorie 03 op PL kind zonder SoFi-nr/BSN, wel A-nr/BSN in categorie 09 PL vader/erkenner, indicatie gezag 12
+    # Route: 7
+    Als 'gezag' wordt gevraagd van 'Eveline'
+    Dan is het gezag over 'Eveline' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Egberts'
+    
   Scenario: Lg01_129 - erkend categorie 03 op PL kind met Anr/BSN, categorie 09 ontbreekt bij vader, indicatie gezag 12
     # Route: 7
     Als 'gezag' wordt gevraagd van 'Esmee'

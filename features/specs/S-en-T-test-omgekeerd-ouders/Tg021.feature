@@ -165,7 +165,7 @@ Functionaliteit: Tg021 - Doornenbal-Doodewaard
     En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde           |
       | burgerservicenummer (01.20)                        | 000000024        |
-      | voornamen (02.10)                                  | Daan             |
+      | voornamen (02.10)                                  | Delilah          |
       | voorvoegsel (02.30)                                | van              |
       | geslachtsnaam (02.40)                              | Doodewaard       |
       | geboortedatum (03.10)                              | 19741201         |

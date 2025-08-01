@@ -12,7 +12,21 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | gemeentecode (92.10) | straatnaam (11.10) | huisnummer (11.20) | identificatiecode nummeraanduiding (11.90) |
       | 518                  | Turfmarkt          | 59                 | 0518200000583560                           |
     
-    # Lg01_139 - test op inlezen in de toekomst met geboortejaar 2023 (is inlezen in toekomst mogelijk)
+    Gegeven de persoon 'Hiske' zonder burgerservicenummer heeft de volgende gegevens
+      | naam                        | waarde   |
+      | voornamen (02.10)           | Hiske    |
+      | geslachtsnaam (02.40)       | Hamersma |
+      | geboortedatum (03.10)       | 19901201 |
+      | geslachtsaanduiding (04.10) | V        |
+      
+    Gegeven de persoon 'Harald' zonder burgerservicenummer heeft de volgende gegevens
+      | naam                        | waarde     |
+      | voornamen (02.10)           | Harald     |
+      | geslachtsnaam (02.40)       | Hendrikman |
+      | geboortedatum (03.10)       |   19890705 |
+      | geslachtsaanduiding (04.10) | M          |
+
+    # Lg01_139 - geboren en erkend exact op 1 januari 2023, beide ouders hebben geen burgerservicenummer
     Gegeven de persoon 'Hinke' met burgerservicenummer '000000012'
     * heeft de volgende gegevens
       | naam                            | waarde     |
@@ -336,10 +350,17 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | ingangsdatum geldigheid (85.10)   | 20230110 |
 
 
-  Scenario: Lg01_139 - test op inlezen in de toekomst met geboortejaar 2023 (is inlezen in toekomst mogelijk)
-    # Route: 45e
+  @deprecated
+  Scenario: Lg01_139 - geboren en erkend exact op 1 januari 2023, beide ouders hebben geen burgerservicenummer
+    # Route: Transformeer gezag uitspraak GezamenlijkOuderlijkGezag (v2) naar GezagNietTeBepalen (v1) omdat een ouder van de minderjarige het burgerservicenummer mist
     Als 'gezag' wordt gevraagd van 'Hinke'
     Dan is het gezag over 'Hinke' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder1 van bevraagde persoon is niet in BRP geregistreerd'
+
+  @nieuw
+  Scenario: Lg01_139 - geboren en erkend exact op 1 januari 2023, beide ouders hebben geen burgerservicenummer
+    # Route: 54n
+    Als 'gezag' wordt gevraagd van 'Hinke'
+    Dan is het gezag over 'Hinke' gezamenlijk ouderlijk gezag met ouder 'Hiske' en ouder 'Harald'
 
   Scenario: Lg01_140 - 3 kinderen in 2023, 1 erkend als ongeboren vrucht, 1 erkend bij geboorteaangifte, 1 erkend na geboorteaangifte
     # Meerderjarig

@@ -9,6 +9,13 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | gemeentecode (92.10) | straatnaam (11.10) | huisnummer (11.20) | identificatiecode nummeraanduiding (11.90) |
       | 518                  | Turfmarkt          | 5                  | 0518200000583529                           |
     
+    Gegeven de persoon 'Carola' zonder burgerservicenummer heeft de volgende gegevens
+      | naam                                               | waarde           |
+      | voornamen (02.10)                                  | Carola           |
+      | geslachtsnaam (02.40)                              | Custers          |
+      | geboortedatum (03.10)                              | 19840401         |
+      | geslachtsaanduiding (04.10)                        | V                |
+
     # Lg01_013 - ongehuwde minderjarige moeder met 1 minderjarig niet erkend kind
     Gegeven de persoon 'Cindy' met burgerservicenummer '000000012'
     * heeft de volgende gegevens
@@ -170,10 +177,17 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | ingangsdatum geldigheid (85.10)   | 20190501 |
 
 
+  @deprecated
   Scenario: Lg01_013 - ongehuwde minderjarige moeder met 1 minderjarig niet erkend kind
-    # Route: 39e
+    # Route: Transformeer gezag uitspraak EenhoofdigOuderlijkGezag (v2) naar GezagNietTeBepalen (v1) omdat een ouder van de minderjarige het burgerservicenummer mist
     Als 'gezag' wordt gevraagd van 'Cindy'
     Dan is het gezag over 'Cindy' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd'
+
+  @nieuw
+  Scenario: Lg01_013 - ongehuwde minderjarige moeder met 1 minderjarig niet erkend kind
+    # Route: 40o1
+    Als 'gezag' wordt gevraagd van 'Cindy'
+    Dan is het gezag over 'Cindy' eenhoofdig ouderlijk gezag met ouder 'Carola'
 
   Scenario: Lg01_014 - minderjarig niet erkend kind, moeder ook minderjarig, geen categorie 11
     # Route: 39m

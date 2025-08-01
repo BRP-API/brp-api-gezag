@@ -11,6 +11,13 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
     Gegeven adres 'A2'
       | gemeentecode (92.10) | straatnaam (11.10) | huisnummer (11.20) | huisletter (11.30) | identificatiecode nummeraanduiding (11.90) |
       | 518                  | Turfmarkt          | 7                  | a                  | 0518200000583531                           |
+
+    Gegeven de persoon 'Damon' zonder burgerservicenummer heeft de volgende gegevens
+      | naam                                                                | waarde        |
+      | voornamen (02.10)                                                   | Damon         |
+      | geslachtsnaam (02.40)                                               | Dangor        |
+      | geboortedatum (03.10)                                               | 19881201      |
+      | geslachtsaanduiding (04.10)                                         | M             |
     
     # Lg01_017 - gehuwd, echtgenoot niet ingeschreven in Nederland, minderjarig kind geboren tijdens huwelijk
     Gegeven de persoon 'Desiree' met burgerservicenummer '000000012'
@@ -441,16 +448,31 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | ingangsdatum geldigheid (85.10)   | 20181201 |
 
 
+  @deprecated
   Scenario: Lg01_017 - gehuwd, echtgenoot niet ingeschreven in Nederland, minderjarig kind geboren tijdens huwelijk
     # Meerderjarig
+    # Route: Transformeer gezag uitspraak GezamenlijkOuderlijkGezag (v2) naar GezagNietTeBepalen (v1) omdat een ouder van de minderjarige het burgerservicenummer mist
     Als 'gezag' wordt gevraagd van 'Desiree'
     Dan heeft 'Desiree' geen gezaghouder
 
+  @nieuw
+  Scenario: Lg01_017 - gehuwd, echtgenoot niet ingeschreven in Nederland, minderjarig kind geboren tijdens huwelijk
+    # Meerderjarig
+    Als 'gezag' wordt gevraagd van 'Desiree'
+    Dan heeft 'Desiree' de volgende gezagsrelaties
+    * is het gezag over 'Daryl' gezamenlijk ouderlijk gezag met ouder 'Desiree' en ouder 'Damon'
+
   @deprecated
   Scenario: Lg01_018 - minderjarig kind, geboren tijdens huwelijk ouders, geen categorie 11, vader niet ingeschreven in BRP, kind Nederlandse nationaliteit + Beëindigde vreemde nationaliteit
-    # Route: 49
+    # Route: Transformeer gezag uitspraak GezamenlijkOuderlijkGezag (v2) naar GezagNietTeBepalen (v1) omdat een ouder van de minderjarige het burgerservicenummer mist
     Als 'gezag' wordt gevraagd van 'Daryl'
     Dan is het gezag over 'Daryl' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat relevante gegevens ontbreken. Het gaat om de volgende gegevens: ouder2 van bevraagde persoon is niet in BRP geregistreerd'
+
+  @nieuw
+  Scenario: Lg01_018 - minderjarig kind, geboren tijdens huwelijk ouders, geen categorie 11, vader niet ingeschreven in BRP, kind Nederlandse nationaliteit + Beëindigde vreemde nationaliteit
+    # Route: Transformeer gezag uitspraak GezamenlijkOuderlijkGezag (v2) naar GezagNietTeBepalen (v1) omdat een ouder van de minderjarige het burgerservicenummer mist
+    Als 'gezag' wordt gevraagd van 'Daryl'
+    Dan is het gezag over 'Daryl' gezamenlijk ouderlijk gezag met ouder 'Desiree' en ouder 'Damon'
 
   Scenario: Lg01_019 - gehuwd, 3 minderjarige kinderen geboren tijdens huwelijk ouders, echtgenoot en 2 kinderen geëmigreerd (RNI), 1 kind weer teruggekeerd (immigratie)
     # Meerderjarig

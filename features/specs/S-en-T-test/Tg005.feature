@@ -1,6 +1,6 @@
 #language: nl
 
-@deprecated @gezag-api
+@gezag-api
 Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
 
 

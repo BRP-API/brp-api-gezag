@@ -1,6 +1,6 @@
 #language: nl
 
-@deprecated @gezag-api
+@gezag-api
 Functionaliteit: Tg016 - Petersen-Perquin & Peereboom-Peek & Pauwels-Platje
 
 

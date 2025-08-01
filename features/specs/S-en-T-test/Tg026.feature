@@ -1,6 +1,6 @@
 #language: nl
 
-@deprecated @gezag-api
+@gezag-api
 Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en na geboorteaangifte en ongehuwde ouders
 
 

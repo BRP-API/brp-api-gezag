@@ -4,7 +4,7 @@ Functionaliteit: Gezag bepalen bij een meerderjarig verklaarde ouder jonger dan 
   Er zijn drie mogelijkheden:
   1. De meerderjarigheidsverklaring kan nog niet worden geregistreerd in de BRP.
   2. De meerderjarigheidsverklaring kan nog niet worden geregistreerd in de BRP en als word-around is gezag voor de moeder geregistreerd bij het kind.
-  3. De meerderjarigheidsverklaring wordt geregistreert bij de meerderjarigverklaarde.
+  3. De meerderjarigheidsverklaring wordt geregistreerd bij de meerderjarigverklaarde.
 
   Ad 1. Niet registreren van de meerderjarigheidsverklaring
     Dit heeft de volgende gevolgen voor de gezagsbepaling:

@@ -83,7 +83,7 @@ Functionaliteit: Gezag bepalen bij een meerderjarig verklaarde ouder jonger dan 
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' voogdij
 
-    Voorbeeld: Eerst is de moeder meerderjarig verklaard en daarna is het gezag toegewezen beide ouders
+    Voorbeeld: Eerst is de moeder meerderjarig verklaard en daarna is het gezag toegewezen aan beide ouders
       Gegeven de 17 jaar geleden geboren persoon 'Gerda'
       En de 19 jaar geleden geboren persoon 'Aart'
       En de 1 jaar geleden geboren persoon 'Bert' met twee ongehuwde ouders 'Gerda' en 'Aart'

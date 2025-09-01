@@ -11,7 +11,6 @@ Functionaliteit: Gerechtelijke uitspraak
   Regel: Als er een gerechtelijke uitspraak is dat één ouder het gezag heeft, en de ouders zijn daarna (opnieuw) met elkaar gehuwd, dan is er gezamenlijk ouderlijk gezag
     Opmerking: dit is niet altijd zo. als het gezag is beëindigd door een gezagsbeëindigende maatregel van de kinderrechter, dan herstelt het reparatiehuwelijk het gezag niet
 
-    @to-do @skip-verify
     Voorbeeld: ouders zijn opnieuw met elkaar gehuwd (reparatiehuwelijk) na de gerechtelijke uitspraak
       Gegeven de minderjarige persoon 'Bert' met twee gehuwde ouders 'Gerda' en 'Aart'
       En 'Gerda' en 'Aart' zijn 7 jaar geleden gescheiden
@@ -39,7 +38,6 @@ Functionaliteit: Gerechtelijke uitspraak
 
   Regel: Als er een gerechtelijke uitspraak is, en daarna is de minderjarige geadopteerd, dan wordt het gezag bepaald van rechtswege
 
-    @to-do @skip-verify
     Voorbeeld: na de gerechtelijke uitspraak is de minderjarige geadopteerd
       Gegeven de minderjarige persoon 'Bert' met één ouder 'Gerda'
       En 6 jaar geleden is in een gerechtelijke uitspraak het gezag toegewezen aan een voogdijinstelling
@@ -56,9 +54,8 @@ Functionaliteit: Gerechtelijke uitspraak
 
   Regel: Als er een gerechtelijke uitspraak is dat beide ouders gezag hebben, en het ouderschap is ontkend, dan heeft de overgebleven ouder eenhoofdig ouderlijk gezag
 
-    @to-do @skip-verify
     Voorbeeld: na uitspraak over gezag aan beide ouders heeft vader ouderschap ontkend
-      Gegeven de minderjarige persoon 'Bert' met twee ouders 'Gerda' en 'Aart' die ten tijde van de geboorte van de minderjarige niet met elkaar gehuwd waren
+      Gegeven de minderjarige persoon 'Bert' met twee gehuwde ouders 'Gerda' en 'Aart'
       En 6 jaar geleden is in een gerechtelijke uitspraak het gezag toegewezen aan beide ouders
       En 4 jaar geleden heeft 'Aart' het ouderschap ontkend
       Als 'gezag' wordt gevraagd van 'Bert'
@@ -66,7 +63,7 @@ Functionaliteit: Gerechtelijke uitspraak
 
     @to-do @skip-verify
     Voorbeeld: na uitspraak over gezag aan vader heeft vader ouderschap ontkend
-      Gegeven de minderjarige persoon 'Bert' met twee ouders 'Gerda' en 'Aart' die ten tijde van de geboorte van de minderjarige niet met elkaar gehuwd waren
+      Gegeven de minderjarige persoon 'Bert' met twee gehuwde ouders 'Gerda' en 'Aart'
       En 6 jaar geleden is in een gerechtelijke uitspraak het gezag toegewezen aan 'Aart'
       En 4 jaar geleden heeft 'Aart' het ouderschap ontkend
       Als 'gezag' wordt gevraagd van 'Bert'

@@ -58,6 +58,12 @@ Functionaliteit: Bevoegdheid tot gezag
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' voogdij
 
+    Voorbeeld: Minderjarige heeft ouder die gehuwd is en de ouder is overleden
+      Gegeven de minderjarige persoon 'Bert' met één ouder 'Gerda' die gehuwd is met 'Ariana'
+      En 'Gerda' is overleden
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' voogdij met derde 'Ariana'
+
   Regel: Er is sprake van eenhoofdig ouderlijk gezag als de partner met gezamenlijk gezag overleden of niet bevoegd is
 
     Voorbeeld: Minderjarige heeft ouder die gehuwd is en de partner staat onder curatele

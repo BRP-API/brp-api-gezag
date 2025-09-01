@@ -63,7 +63,6 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven
         | ouder 'Gerda' en een derde | gezamenlijk gezag met ouder 'Gerda' en een onbekende derde    |
         | ouder 'Aart' en een derde  | gezamenlijk gezag met ouder 'Aart' en een onbekende derde     |
 
-  @to-do @skip-verify
   Regel: Gezag als er sprake is van opschorting bijhouding ministerieel besluit
 
     Voorbeeld: Bijhouding is opgeschort voor minderjarig kind van NAVO militair
@@ -71,7 +70,6 @@ Functionaliteit: Gezag bepalen voor personen die in het buitenland verblijven
       En persoon 'Bert'
       * heeft 'Aart' en 'Gerda' als ouders
       * is geboren in Nederland
-      En 'Bert' is 1 jaar geleden geëmigreerd met onbekende bestemming
       En 1 jaar geleden is geconstateerd dat 'Aart' behoort tot de categorie NAVO-militair
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' niet te bepalen met de toelichting 'gezag is niet te bepalen omdat minderjarige niet Nederland als gewone verblijfplaats heeft.'

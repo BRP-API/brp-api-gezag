@@ -8,7 +8,7 @@ Functionaliteit: Gezag bepalen bij een meerderjarig verklaarde ouder jonger dan 
   Ad 1. Niet registreren van de meerderjarigheidsverklaring
     Dit heeft de volgende gevolgen voor de gezagsbepaling:
     - de meerderjarig verklaarde ouder krijgt geen gezag, terwijl ze dat juridisch wel heeft
-    - de gezagsdrager(s) van de meerderjarig verklaarde ouder behouden het gezag over de meerderjarig verklaarde, terwijl ze dat juridisch wel hebben
+    - de gezagsdrager(s) van de meerderjarig verklaarde ouder behouden het gezag over de meerderjarig verklaarde, terwijl ze dat juridisch niet hebben
 
   Ad 2. De meerderjarigheidsverklaring registreren als gerechtelijke uitspraak gezag
     Dit wordt in de BRP bij het pasgeboren kind vastgelegd als indicatie gezag '1' (ouder 1 heeft het gezag) of '2' (ouder 2 heeft het gezag).

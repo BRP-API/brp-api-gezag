@@ -25,7 +25,7 @@ Functionaliteit: Gezag bepalen bij een meerderjarig verklaarde ouder jonger dan 
     - Een erkenner van het kind krijgt geen gezag wanneer de erkenning heeft plaatsgevonden vóór de meerderjarigheidsverklaring, omdat de moeder op dat moment niet bevoegd was
     - Een erkenner van het kind krijgt van rechtswege gezag wanneer de erkenning heeft plaatsgevonden na de meerderjarigheidsverklaring
 
-  Regel: Als de meerderjarigheidsverklaring is geregistreerd in de BRP bij de minderjarige moeder, dan is er eenhoofdig ouderlijk gezag voor de moeder
+  Regel: Als de meerderjarigheidsverklaring is geregistreerd in de BRP bij de minderjarige moeder, dan is er eenhoofdig ouderlijk gezag voor de moeder en verliezen de ouders van de moeder het gezag over de moeder
 
     Voorbeeld: De meerderjarig verklaarde moeder heeft gezag over haar kind
       Gegeven de 17 jaar geleden geboren persoon 'Zoe' met twee gehuwde ouders 'Gerda' en 'Aart'
@@ -42,14 +42,35 @@ Functionaliteit: Gezag bepalen bij een meerderjarig verklaarde ouder jonger dan 
       Dan heeft 'Zoe' de volgende gezagsrelaties
       * het gezag over 'Bert' is eenhoofdig ouderlijk gezag met ouder 'Zoe'
 
-    Voorbeeld: De ouders van de meerderjarig verklaarde hebben geen gezag over de meerderjarigheidsverklaarde
+    Voorbeeld: De ouders van de meerderjarig verklaarde hebben geen gezag over de meerderjarigverklaarde
       Gegeven de 17 jaar geleden geboren persoon 'Zoe' met twee gehuwde ouders 'Gerda' en 'Aart'
       En de 3 maanden geleden geboren persoon 'Bert' met één ouder 'Zoe'
       En 1 maand geleden is 'Zoe' meerderjarig verklaard
       Als 'gezag' wordt gevraagd van 'Gerda'
       Dan heeft 'Gerda' geen gezag
 
-  Regel: Een meerderjarigheidsverklaring maakt een eerdere uitspraak gezag over het kind ongeldig
+  Regel: Een gerechtelijke uitspraak gezag voor toewijzing van gezag aan een minderjarige moeder geeft de moeder alleen gezag in combinatie met een meerderjarigheidsverklaring
+
+    Voorbeeld: Eerst is er voogdij uitgesproken over het kind en daarna is de moeder meerderjarig verklaard en is zij in een uitspraak met het gezag belast
+      Gegeven de 17 jaar geleden geboren persoon 'Gerda'
+      En de 1 jaar geleden geboren persoon 'Bert' met één ouder 'Gerda'
+      En 10 maanden geleden is in een gerechtelijke uitspraak het gezag toegewezen aan een derde
+      En 1 maand geleden is 'Gerda' meerderjarig verklaard
+      En 1 maand geleden is in een gerechtelijke uitspraak het gezag toegewezen aan 'Gerda'
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+
+    Voorbeeld: Eerst is er voogdij uitgesproken over het kind en daarna is zij in een uitspraak met het gezag belast zonder haar eerst meerderjarig te verklaren
+      # volgende voorbeeld mag niet voorkomen, toch? 
+      # @Dirk @Heidi @Xander komt dit voor?
+      Gegeven de 17 jaar geleden geboren persoon 'Gerda'
+      En de 1 jaar geleden geboren persoon 'Bert' met één ouder 'Gerda'
+      En 10 maanden geleden is in een gerechtelijke uitspraak het gezag toegewezen aan een derde
+      En 1 maand geleden is in een gerechtelijke uitspraak het gezag toegewezen aan 'Gerda'
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat de ouder minderjarig is.'
+
+  Regel: meerderjarigheidsverklaring van moeder laat eerdere uitspraak gezag voogdij niet vervallen
 
     Voorbeeld: Eerst is er voogdij uitgesproken over het kind en daarna is de moeder meerderjarig verklaard
       Gegeven de 17 jaar geleden geboren persoon 'Gerda'
@@ -57,50 +78,9 @@ Functionaliteit: Gezag bepalen bij een meerderjarig verklaarde ouder jonger dan 
       En 10 maanden geleden is in een gerechtelijke uitspraak het gezag toegewezen aan een derde
       En 1 maand geleden is 'Gerda' meerderjarig verklaard
       Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
-
-    Voorbeeld: Eerst is gezag toegewezen aan de erkenner en daarna is de moeder meerderjarig verklaard
-      Gegeven de 17 jaar geleden geboren persoon 'Gerda'
-      En de 19 jaar geleden geboren persoon 'Aart'
-      En de 1 jaar geleden geboren persoon 'Bert' met twee ongehuwde ouders 'Gerda' en 'Aart'
-      En 10 maanden geleden is in een gerechtelijke uitspraak het gezag toegewezen aan 'Aart'
-      En 1 maand geleden is 'Gerda' meerderjarig verklaard
-      Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
-
-    Voorbeeld: Eerst is er voogdij uitgesproken over het kind en daarna is de moeder meerderjarig geworden
-      Gegeven de 19 jaar geleden geboren persoon 'Gerda'
-      En de 3 jaar geleden geboren persoon 'Bert' met één ouder 'Gerda'
-      En 3 jaar geleden is in een gerechtelijke uitspraak het gezag toegewezen aan een derde
-      Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' voogdij
-
-    Voorbeeld: Eerst is de moeder meerderjarig verklaard en daarna is het gezag toegewezen aan een voogd
-      Gegeven de 17 jaar geleden geboren persoon 'Gerda'
-      En de 1 jaar geleden geboren persoon 'Bert' met één ouder 'Gerda'
-      En 10 maanden geleden is 'Gerda' meerderjarig verklaard
-      En 2 maanden geleden is in een gerechtelijke uitspraak het gezag toegewezen aan een derde
-      Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' voogdij
-
-    Voorbeeld: Eerst is de moeder meerderjarig verklaard en daarna is het gezag toegewezen aan beide ouders
-      Gegeven de 17 jaar geleden geboren persoon 'Gerda'
-      En de 19 jaar geleden geboren persoon 'Aart'
-      En de 1 jaar geleden geboren persoon 'Bert' met twee ongehuwde ouders 'Gerda' en 'Aart'
-      En 3 maanden geleden is 'Gerda' meerderjarig verklaard
-      En 2 maanden geleden is in een gerechtelijke uitspraak het gezag toegewezen aan beide ouders
-      Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
 
   Regel: Als een ouder erkend heeft op het moment dat moeder het gezag had en de erkennende ouder was bevoegd, dan is er gezamenlijk gezag voor de moeder en de erkenner
-    Een erkenner krijgt van rechtswege het gezag wanneer aan de volgende twee voorwaarden is voldaan:
-    1. op het moment van erkennen heeft de moeder het gezag, dus er is geen uitspraak gezag én de moeder: 
-       - is meerderjarig of is meerderjarig verklaard 
-       - staat niet onder curatele
-       - is op dat moment in leven
-    2. op het moment van erkennen is de erkenner bevoegd, dus de erkenner: 
-       - is meerderjarig
-       - staat niet onder curatele
 
     Voorbeeld: Het kind is erkend nadat de moeder meerderjarig is verklaard en de erkenner was bij erkenning meerderjarig
       Gegeven de 17 jaar geleden geboren persoon 'Gerda'
@@ -201,3 +181,27 @@ Functionaliteit: Gezag bepalen bij een meerderjarig verklaarde ouder jonger dan 
       En 1 maand geleden is de curatele voor 'Aart' beëindigd
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+
+  Regel: Erkenner krijgt van rechtswege het gezag op het moment dat de ouders met elkaar zijn gehuwd of een geregistreerd partnerschap zijn aangegaan
+
+    Voorbeeld: Het kind is erkend nadat de moeder meerderjarig is verklaard en erkenner was bij erkenning nog minderjarig en daarna zijn de ouders met elkaar gehuwd
+      Gegeven de 17 jaar geleden geboren persoon 'Gerda'
+      En de 18 jaar geleden geboren persoon 'Aart'
+      En de 10 maanden geleden geboren persoon 'Bert' met één ouder 'Gerda'
+      En 9 maanden geleden is 'Gerda' meerderjarig verklaard
+      En 8 maanden geleden is 'Bert' erkend door 'Aart'
+      En 'Gerda' en 'Aart' zijn 7 maanden geleden gehuwd
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
+
+    Voorbeeld: De ouders zijn met elkaar gehuwd en moeder stond op dat moment onder curatele
+      Gegeven de 17 jaar geleden geboren persoon 'Gerda'
+      En de 18 jaar geleden geboren persoon 'Aart'
+      En de 10 maanden geleden geboren persoon 'Bert' met één ouder 'Gerda'
+      En 9 maanden geleden is 'Gerda' meerderjarig verklaard
+      En 8 maanden geleden is 'Bert' erkend door 'Aart'
+      En 7 maanden geleden is 'Gerda' onder curatele gesteld
+      En 'Gerda' en 'Aart' zijn 6 maanden geleden gehuwd
+      En 1 maand geleden is de curatele voor 'Gerda' beëindigd
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'

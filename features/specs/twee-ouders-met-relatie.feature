@@ -50,3 +50,27 @@ Functionaliteit: Twee ouders met relatie
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
  
+  Regel: Er ontstaat geen gezamenlijk gezag wanneer op het moment van huwen of partnerschap aangaan een van de ouders niet bevoegdhist tot gezag
+
+    Voorbeeld: Op het moment van huwen stond de vader onder curatele
+      Gegeven 'Bert' is 15 jaar geleden geboren
+      En 6 jaar geleden is 'Aart' onder curatele gesteld
+      En 'Gerda' en 'Aart' zijn 5 jaar geleden gehuwd
+      En 4 jaar geleden is de curatele van 'Aart' beëindigd
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+
+    Voorbeeld: Sinds voor het sluiten van het huwelijk staat de moeder onder curatele
+      Gegeven 'Bert' is 15 jaar geleden geboren
+      En 2 maanden geleden is 'Gerda' onder curatele gesteld
+      En 'Gerda' en 'Aart' zijn 1 maand geleden gehuwd
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat de ouder onder curatele staat.'
+
+    Voorbeeld: Op het moment van huwen stond de moeder onder curatele
+      Gegeven 'Bert' is 15 jaar geleden geboren
+      En 6 jaar geleden is 'Gerda' onder curatele gesteld
+      En 'Gerda' en 'Aart' zijn 5 jaar geleden gehuwd
+      En 4 jaar geleden is de curatele van 'Gerda' beëindigd
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'

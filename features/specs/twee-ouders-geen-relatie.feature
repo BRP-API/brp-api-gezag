@@ -134,3 +134,13 @@ Functionaliteit: Twee ouders geen relatie
       En 'Bert' is erkend door 'Ariana' na geboorteaangifte op 3-2-2023
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Ariana'
+
+  Regel: Als er een gerechtelijke vaststelling ouderschap van de andere ouder is, dan heeft alleen de moeder het gezag
+
+    Voorbeeld: Er is een gerechtelijke vaststelling ouderschap
+      Gegeven persoon 'Bert'
+      * is 2 jaar geleden geboren
+      * heeft 'Gerda' als ouder vanaf de geboortedatum
+      En 1 jaar geleden is 'Aart' ouder geworden na een gerechtelijke vaststelling ouderschap
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'

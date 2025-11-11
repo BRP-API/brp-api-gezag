@@ -50,7 +50,7 @@ Functionaliteit: Twee ouders met relatie
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
  
-  Regel: Er ontstaat geen gezamenlijk gezag wanneer op het moment van huwen of partnerschap aangaan een van de ouders niet bevoegdhist tot gezag
+  Regel: Er ontstaat geen gezamenlijk gezag wanneer op het moment van huwen of partnerschap aangaan een van de ouders niet bevoegd is tot gezag
 
     Voorbeeld: Op het moment van huwen stond de vader onder curatele
       Gegeven 'Bert' is 15 jaar geleden geboren

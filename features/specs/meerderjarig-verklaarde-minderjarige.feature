@@ -49,38 +49,18 @@ Functionaliteit: Gezag bepalen bij een meerderjarig verklaarde ouder jonger dan 
       Als 'gezag' wordt gevraagd van 'Gerda'
       Dan heeft 'Gerda' geen gezag
 
-  Regel: Een gerechtelijke uitspraak gezag voor toewijzing van gezag aan een minderjarige moeder geeft de moeder alleen gezag in combinatie met een meerderjarigheidsverklaring
+  Regel: Een meerderjarigheidsverklaring geeft de moeder altijd gezag omdat de rechter ook het gezag toewijst als dat nodig is omdat er eerst sprake was van voogdij
 
-    Voorbeeld: Eerst is er voogdij uitgesproken over het kind en daarna is de moeder meerderjarig verklaard en is zij in een uitspraak met het gezag belast
+    Voorbeeld: Eerst is er voogdij uitgesproken over het kind en daarna is de moeder meerderjarig verklaard
       Gegeven de 17 jaar geleden geboren persoon 'Gerda'
-      En de 1 jaar geleden geboren persoon 'Bert' met één ouder 'Gerda'
+      En de 1 jaar geleden geboren persoon 'Bert' met één ouder 'Gerda
       En 10 maanden geleden is in een gerechtelijke uitspraak het gezag toegewezen aan een derde
       En 1 maand geleden is 'Gerda' meerderjarig verklaard
       En 1 maand geleden is in een gerechtelijke uitspraak het gezag toegewezen aan 'Gerda'
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
 
-    Voorbeeld: Eerst is er voogdij uitgesproken over het kind en daarna is zij in een uitspraak met het gezag belast zonder haar eerst meerderjarig te verklaren
-      # volgende voorbeeld mag niet voorkomen, toch? 
-      # @Dirk @Heidi @Xander komt dit voor?
-      Gegeven de 17 jaar geleden geboren persoon 'Gerda'
-      En de 1 jaar geleden geboren persoon 'Bert' met één ouder 'Gerda'
-      En 10 maanden geleden is in een gerechtelijke uitspraak het gezag toegewezen aan een derde
-      En 1 maand geleden is in een gerechtelijke uitspraak het gezag toegewezen aan 'Gerda'
-      Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat de ouder minderjarig is.'
-
-  Regel: meerderjarigheidsverklaring van moeder laat eerdere uitspraak gezag voogdij niet vervallen
-
-    Voorbeeld: Eerst is er voogdij uitgesproken over het kind en daarna is de moeder meerderjarig verklaard
-      Gegeven de 17 jaar geleden geboren persoon 'Gerda'
-      En de 1 jaar geleden geboren persoon 'Bert' met één ouder 'Gerda'
-      En 10 maanden geleden is in een gerechtelijke uitspraak het gezag toegewezen aan een derde
-      En 1 maand geleden is 'Gerda' meerderjarig verklaard
-      Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' voogdij
-
-  Regel: Als een ouder erkend heeft op het moment dat moeder het gezag had en de erkennende ouder was bevoegd, dan is er gezamenlijk gezag voor de moeder en de erkenner
+   Regel: Als een ouder erkend heeft op het moment dat moeder het gezag had en de erkennende ouder was bevoegd, dan is er gezamenlijk gezag voor de moeder en de erkenner
 
     Voorbeeld: Het kind is erkend nadat de moeder meerderjarig is verklaard en de erkenner was bij erkenning meerderjarig
       Gegeven de 17 jaar geleden geboren persoon 'Gerda'

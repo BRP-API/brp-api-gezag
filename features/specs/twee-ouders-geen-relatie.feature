@@ -135,6 +135,98 @@ Functionaliteit: Twee ouders geen relatie
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Ariana'
 
+  Regel: Als een ouder erkend heeft op het moment dat moeder het gezag had en de erkennende ouder was bevoegd, dan is er gezamenlijk gezag voor de moeder en de erkenner
+
+    Voorbeeld: Het kind is erkend nadat de moeder meerderjarig is verklaard en de erkenner was bij erkenning meerderjarig
+      Gegeven de 17 jaar geleden geboren persoon 'Gerda'
+      En de 19 jaar geleden geboren persoon 'Aart'
+      En de 3 maanden geleden geboren persoon 'Bert' met één ouder 'Gerda'
+      En 2 maanden geleden is 'Gerda' meerderjarig verklaard
+      En 1 maand geleden is 'Bert' erkend door 'Aart'
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
+
+    Voorbeeld: Het kind is erkend nadat de moeder meerderjarig is geworden en de erkenner was bij erkenning meerderjarig
+      Gegeven de 19 jaar geleden geboren persoon 'Gerda'
+      En de 21 jaar geleden geboren persoon 'Aart'
+      En de 2 jaar geleden geboren persoon 'Bert' met één ouder 'Gerda'
+      En 3 maanden geleden is 'Bert' erkend door 'Aart'
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
+
+  Regel: Als een ouder erkend heeft op een moment dat de moeder niet het gezag had, dan kan er geen gezamenlijk gezag met de erkenner ontstaan
+    Tenzij dit in een gerechtelijke uitspraak is besloten (gerechtelijke-uitspraak.feature), of de moeder en erkenner huwelijk of partnerschap aangaan (twee-ouders-met-relatie.feature)
+
+    Voorbeeld: Het kind is erkend voordat de moeder meerderjarig is verklaard
+      Gegeven de 17 jaar geleden geboren persoon 'Gerda'
+      En de 19 jaar geleden geboren persoon 'Aart'
+      En de 3 maanden geleden geboren persoon 'Bert' met één ouder 'Gerda'
+      En 2 maanden geleden is 'Bert' erkend door 'Aart'
+      En 1 maand geleden is 'Gerda' meerderjarig verklaard
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+
+    Voorbeeld: Het kind is erkend voordat de moeder meerderjarig is geworden
+      Gegeven de 19 jaar geleden geboren persoon 'Gerda'
+      En de 21 jaar geleden geboren persoon 'Aart'
+      En de 2 jaar geleden geboren persoon 'Bert' met één ouder 'Gerda'
+      En 2 jaar geleden is 'Bert' erkend door 'Aart'
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+
+    Voorbeeld: Het kind is erkend op een moment dat het gezag was toegewezen aan een voogd
+      Gegeven de 19 jaar geleden geboren persoon 'Gerda'
+      En de 21 jaar geleden geboren persoon 'Aart'
+      En de 1 jaar geleden geboren persoon 'Bert' met één ouder 'Gerda'
+      En 11 maanden geleden is het gezag toegewezen aan een voogd
+      En 8 maanden geleden is 'Bert' erkend door 'Aart'
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' voogdij
+
+    Voorbeeld: Het kind is erkend op een moment dat de moeder onder curatele stond
+      Gegeven de 19 jaar geleden geboren persoon 'Gerda'
+      En de 21 jaar geleden geboren persoon 'Aart'
+      En de 3 jaar geleden geboren persoon 'Bert' met één ouder 'Gerda'
+      En 2 jaar geleden is 'Gerda' meerderjarig verklaard
+      En 1 jaar geleden is 'Gerda' onder curatele gesteld
+      En 8 maanden geleden is 'Bert' erkend door 'Aart'
+      En 1 maand geleden is de curatele voor 'Gerda' beëindigd
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+
+    Voorbeeld: Het kind is erkend nadat de moeder is overleden
+      Gegeven de 19 jaar geleden geboren persoon 'Gerda'
+      En de 21 jaar geleden geboren persoon 'Aart'
+      En de 2 jaar geleden geboren persoon 'Bert' met één ouder 'Gerda'
+      En 2 jaar geleden is 'Gerda' meerderjarig verklaard
+      En 3 maanden geleden is 'Gerda' overleden
+      En 1 maand geleden is 'Bert' erkend door 'Aart'
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat de ouder overleden is.'
+
+  Regel: Als een ouder erkend heeft op een moment dat de erkenner niet bevoegd was tot gezag, dan kan er geen gezamenlijk gezag met de erkenner ontstaan
+    Tenzij dit in een gerechtelijke uitspraak is besloten (gerechtelijke-uitspraak.feature), of de moeder en erkenner huwelijk of partnerschap aangaan (twee-ouders-met-relatie.feature)
+
+    Voorbeeld: Het kind is erkend nadat de moeder meerderjarig is verklaard en meerderjarig geworden erkenner was bij erkenning nog minderjarig
+      Gegeven de 17 jaar geleden geboren persoon 'Gerda'
+      En de 18 jaar geleden geboren persoon 'Aart'
+      En de 10 maanden geleden geboren persoon 'Bert' met één ouder 'Gerda'
+      En 9 maanden geleden is 'Gerda' meerderjarig verklaard
+      En 8 maanden geleden is 'Bert' erkend door 'Aart'
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+
+    Voorbeeld: Het kind is erkend op een moment dat de erkenner onder curatele stond
+      Gegeven de 19 jaar geleden geboren persoon 'Gerda'
+      En de 21 jaar geleden geboren persoon 'Aart'
+      En de 3 jaar geleden geboren persoon 'Bert' met één ouder 'Gerda'
+      En 2 jaar geleden is 'Gerda' meerderjarig verklaard
+      En 1 jaar geleden is 'Aart' onder curatele gesteld
+      En 8 maanden geleden is 'Bert' erkend door 'Aart'
+      En 1 maand geleden is de curatele voor 'Aart' beëindigd
+      Als 'gezag' wordt gevraagd van 'Bert'
+      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+
   Regel: Als er een gerechtelijke vaststelling ouderschap van de andere ouder is, dan heeft alleen de moeder het gezag
 
     Voorbeeld: Er is een gerechtelijke vaststelling ouderschap

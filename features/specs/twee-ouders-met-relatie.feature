@@ -80,4 +80,4 @@ Functionaliteit: Twee ouders met relatie
       En 'Gerda' en 'Aart' zijn 5 jaar geleden gehuwd
       En 1 maanden geleden is 'Gerda' onder curatele gesteld
       Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Aart' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+      Dan is het gezag over 'Aart' eenhoofdig ouderlijk gezag met ouder 'Aart'

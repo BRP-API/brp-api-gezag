@@ -65,7 +65,7 @@ Functionaliteit: Twee ouders met relatie
       En 2 maanden geleden is 'Gerda' onder curatele gesteld
       En 'Gerda' en 'Aart' zijn 1 maand geleden gehuwd
       Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' tijdelijk geen gezag met de toelichting 'Tijdelijk geen gezag omdat de ouder onder curatele staat.'
+      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Aart'
 
     Voorbeeld: Op het moment van huwen stond de moeder onder curatele
       Gegeven 'Bert' is 15 jaar geleden geboren

@@ -50,8 +50,6 @@ Functionaliteit: Twee ouders met relatie
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
  
-  Regel: Erkenner krijgt van rechtswege gezag wanneer op het moment van huwelijkssluiting dan wel aangaan partnerschap met elkaar de moeder het gezag had en de erkenner bevoegd was tot gezag
-
     Voorbeeld: Op het moment van huwen stond de vader onder curatele
       Gegeven 'Bert' is 15 jaar geleden geboren
       En 6 jaar geleden is 'Aart' onder curatele gesteld
@@ -67,7 +65,7 @@ Functionaliteit: Twee ouders met relatie
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Aart'
 
-    Voorbeeld: Op het moment van huwen stond de moeder onder curatele
+    Voorbeeld: Op het moment van huwen stond de moeder onder curatele en curatele is beëindigd
       Gegeven 'Bert' is 15 jaar geleden geboren
       En 6 jaar geleden is 'Gerda' onder curatele gesteld
       En 'Gerda' en 'Aart' zijn 5 jaar geleden gehuwd
@@ -75,9 +73,4 @@ Functionaliteit: Twee ouders met relatie
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
 
-    Voorbeeld: Sinds na het sluiten van het huwelijk staat de moeder onder curatele
-      Gegeven 'Bert' is 15 jaar geleden geboren
-      En 'Gerda' en 'Aart' zijn 5 jaar geleden gehuwd
-      En 1 maanden geleden is 'Gerda' onder curatele gesteld
-      Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Aart' eenhoofdig ouderlijk gezag met ouder 'Aart'
+

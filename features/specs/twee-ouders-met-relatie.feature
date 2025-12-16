@@ -58,7 +58,7 @@ Functionaliteit: Twee ouders met relatie
       En 'Gerda' en 'Aart' zijn 5 jaar geleden gehuwd
       En 4 jaar geleden is de curatele van 'Aart' beëindigd
       Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+      Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
 
     Voorbeeld: Sinds voor het sluiten van het huwelijk staat de moeder onder curatele
       Gegeven 'Bert' is 15 jaar geleden geboren

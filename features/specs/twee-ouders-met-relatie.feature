@@ -49,11 +49,14 @@ Functionaliteit: Twee ouders met relatie
       En 'Gerda' en 'Aart' zijn 2 jaar geleden gescheiden
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
+
+Regel: Wanneer een ouder onder curatele staat wordt het gezag gedurende de periode van onder curatelestelling opgeschort. 
+Een persoon onder curatele kan trouwen met toestemming van de kantonrechter.
  
     Voorbeeld: Op het moment van huwen stond de vader onder curatele
       Gegeven 'Bert' is 15 jaar geleden geboren
       En 6 jaar geleden is 'Aart' onder curatele gesteld
-      En 'Gerda' en 'Aart' zijn 5 jaar geleden gehuwd (met toestemming van de kantonrechter)
+      En 'Gerda' en 'Aart' zijn 5 jaar geleden gehuwd 
       En 4 jaar geleden is de curatele van 'Aart' beëindigd
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'
@@ -61,14 +64,14 @@ Functionaliteit: Twee ouders met relatie
     Voorbeeld: Sinds voor het sluiten van het huwelijk staat de moeder onder curatele
       Gegeven 'Bert' is 15 jaar geleden geboren
       En 2 maanden geleden is 'Gerda' onder curatele gesteld
-      En 'Gerda' en 'Aart' zijn 1 maand geleden gehuwd (met toestemming van de kantonrechter)
+      En 'Gerda' en 'Aart' zijn 1 maand geleden gehuwd 
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Aart'
 
     Voorbeeld: Op het moment van huwen stond de moeder onder curatele en curatele is beëindigd
       Gegeven 'Bert' is 15 jaar geleden geboren
       En 6 jaar geleden is 'Gerda' onder curatele gesteld
-      En 'Gerda' en 'Aart' zijn 5 jaar geleden gehuwd (met toestemming van de kantonrechter)
+      En 'Gerda' en 'Aart' zijn 5 jaar geleden gehuwd 
       En 4 jaar geleden is de curatele van 'Gerda' beëindigd
       Als 'gezag' wordt gevraagd van 'Bert'
       Dan is het gezag over 'Bert' gezamenlijk ouderlijk gezag met ouder 'Gerda' en ouder 'Aart'

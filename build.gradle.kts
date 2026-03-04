@@ -92,29 +92,6 @@ version = "2.0.5"
 description = "Het gezag component van BRP-API"
 java.sourceCompatibility = JavaVersion.VERSION_21
 
-val nonSnapshotVersion = project.version.toString().removeSuffix("-snapshot")
-val timestamp: String = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss"))
-val customVersion = "$nonSnapshotVersion-$timestamp"
-
-tasks.withType<BootBuildImage> {
-    builder.set("paketobuildpacks/builder-jammy-buildpackless-tiny")
-    buildpacks.add("docker.io/paketobuildpacks/java")
-
-    imageName.set("ghcr.io/brp-api/${project.name}:latest")
-    tags.set(listOf(
-        "ghcr.io/brp-api/${project.name}:${project.version}",
-        "ghcr.io/brp-api/${project.name}:$customVersion",
-        "ghcr.io/brp-api/${project.name}:${getGitHash()}",
-    ))
-
-    docker {
-        publishRegistry {
-            username.set(System.getenv("GITHUB_ACTOR"))
-            password.set(System.getenv("GITHUB_TOKEN"))
-        }
-    }
-}
-
 sonar {
     properties {
         property("sonar.cpd.exclusions", listOf(
@@ -128,6 +105,10 @@ sonar {
         property("sonar.coverage.exclusions", "/src/main/java/**.java")
     }
 }
+
+val nonSnapshotVersion = project.version.toString().removeSuffix("-snapshot")
+val timestamp: String = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss"))
+val customVersion = "$nonSnapshotVersion-$timestamp"
 
 springBoot {
     buildInfo {
@@ -199,6 +180,24 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
+tasks.withType<BootBuildImage> {
+    builder.set("paketobuildpacks/builder-jammy-buildpackless-tiny")
+    buildpacks.add("docker.io/paketobuildpacks/java")
+
+    imageName.set("ghcr.io/brp-api/${project.name}:latest")
+    tags.set(listOf(
+        "ghcr.io/brp-api/${project.name}:${project.version}",
+        "ghcr.io/brp-api/${project.name}:$customVersion",
+        "ghcr.io/brp-api/${project.name}:${getGitHash()}",
+    ))
+
+    docker {
+        publishRegistry {
+            username.set(System.getenv("GITHUB_ACTOR"))
+            password.set(System.getenv("GITHUB_TOKEN"))
+        }
+    }
+}
 fun getGitHash(): String {
     val stdout = ByteArrayOutputStream()
     exec {

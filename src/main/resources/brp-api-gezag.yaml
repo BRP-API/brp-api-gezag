@@ -76,7 +76,7 @@ components:
           items:
             $ref: "#/components/schemas/Burgerservicenummer"
           minItems: 1
-          maxItems: 20
+          maxItems: 30
     GezagResponse:
       type: object
       properties:

@@ -1,7 +1,5 @@
 const { When } = require('@cucumber/cucumber');
-const fs = require('node:fs');
-const { promisify } = require('node:util');
-const writeFile = promisify(fs.writeFile);
+const fsPromises = require('node:fs/promises');
 const { executeSqlStatements } = require('./postgresqlHelpers');
 const { execute } = require('./postgresqlHelpers-2');
 const { generateSqlStatementsFrom } = require('./sqlStatementsFactory');
@@ -92,7 +90,7 @@ async function execSqlStatements(context) {
 
     if(context.data) {
         const sqlStatements = generateSqlStatementsFrom(context.data);
-        global.logger.info('uit te voeren sql statements', sqlStatements);
+        globalThis.logger.info('uit te voeren sql statements', sqlStatements);
 
         if(!context.isStapDocumentatieScenario) {
             await execute(sqlStatements);
@@ -101,7 +99,7 @@ async function execSqlStatements(context) {
         }
     }
     else if(!context.isStapDocumentatieScenario) {
-        await executeSqlStatements(context.sql, context.sqlData, global.pool);
+        await executeSqlStatements(context.sql, context.sqlData, globalThis.pool);
     }
 }
 
@@ -225,26 +223,34 @@ function createDataTableForRequest(parameterNames, fields) {
     }
 }
 
+async function writeFileSync(filePath, data) {
+    const fileHandle = await fsPromises.open(filePath, 'w');
+    try {
+        await fileHandle.writeFile(data);
+        await fileHandle.sync(); // Force flush to disk
+    } finally {
+        await fileHandle.close();
+    }
+}
+
+async function writeContextDataToFiles(context) {
+    if(context.gezag !== undefined) {
+        await writeFileSync(context.gezagDataPath, JSON.stringify(context.gezag, null, '\t'));
+    }
+    if(context.downstreamApiResponseHeaders !== undefined) {
+        await writeFileSync(context.downstreamApiDataPath + '/response-headers.json',
+                         JSON.stringify(context.downstreamApiResponseHeaders[0], null, '\t'));
+    }
+    if(context.downstreamApiResponseBody !== undefined) {
+        await writeFileSync(context.downstreamApiDataPath + '/response-body.json',
+                         context.downstreamApiResponseBody);
+    }
+}
+
 async function handleRequestWithParameters(context, endpoint, parametersDataTable) {
     initializeAfnemerIdAndGemeenteCode(context);
 
-    const writePromises = [];
-
-    if(context.gezag !== undefined) {
-        writePromises.push(writeFile(context.gezagDataPath, JSON.stringify(context.gezag, null, '\t')));
-    }
-    if(context.downstreamApiResponseHeaders !== undefined) {
-        writePromises.push(writeFile(context.downstreamApiDataPath + '/response-headers.json',
-                         JSON.stringify(context.downstreamApiResponseHeaders[0], null, '\t')));
-    }
-    if(context.downstreamApiResponseBody !== undefined) {
-        writePromises.push(writeFile(context.downstreamApiDataPath + '/response-body.json',
-                         context.downstreamApiResponseBody));
-    }
-    if(writePromises.length > 0) {
-        // wait for all files to be written before the request is made
-        await Promise.all(writePromises);
-    }
+    await writeContextDataToFiles(context);
 
     addDefaultAutorisatieSettings(context, context.afnemerID);
 
@@ -256,7 +262,7 @@ async function handleRequestWithParameters(context, endpoint, parametersDataTabl
 }
 
 When(/^([a-zA-Z-]*) wordt gezocht met de volgende parameters$/, async function (endpoint, dataTable) {
-    global.logger.info(`als ${endpoint} wordt gezocht met de volgende parameters`);
+    globalThis.logger.info(`als ${endpoint} wordt gezocht met de volgende parameters`);
 
     await handleRequestWithParameters(this.context, endpoint, dataTable);
 });

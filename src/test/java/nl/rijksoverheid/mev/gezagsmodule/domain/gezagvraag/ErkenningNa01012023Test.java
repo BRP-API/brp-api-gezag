@@ -102,6 +102,7 @@ class ErkenningNa01012023Test {
         persoonslijst.setOuder1(ouder1);
         persoonslijst.setOuder2(ouder2);
         when(persoon.getAktenummer()).thenReturn(AKTE_ERKENNING_BIJ_DE_GEBOORTE_AANGIFTE);
+        when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
 
         classUnderTest.perform(gezagsBepaling);
 
@@ -111,6 +112,7 @@ class ErkenningNa01012023Test {
     @Test
     void erkenningNa01012023HavingOuder2NotHavingDatumIngangAndAktenummerIndicatingErkenning() {
         when(ouder1.getDatumIngangFamiliebetrekking()).thenReturn(DATE_BEFORE_01012023);
+        when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
         persoonslijst.setOuder1(ouder1);
         persoonslijst.setOuder2(ouder2);
         when(persoon.getAktenummer()).thenReturn(AKTE_ERKENNING_BIJ_DE_GEBOORTE_AANGIFTE);

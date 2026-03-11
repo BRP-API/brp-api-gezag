@@ -1,5 +1,6 @@
 package nl.rijksoverheid.mev.gezagsmodule.domain.gezagvraag;
 
+import jakarta.annotation.Nullable;
 import nl.rijksoverheid.mev.exception.AfleidingsregelException;
 import nl.rijksoverheid.mev.gezagsmodule.domain.Ouder1;
 import nl.rijksoverheid.mev.gezagsmodule.domain.Ouder2;
@@ -32,19 +33,29 @@ public class ErkenningNa01012023 implements GezagVraag {
 
     @Override
     public GezagVraagResult perform(final GezagsBepaling gezagsBepaling) {
-        String answer = null;
+        var answer = doPerform(gezagsBepaling);
+
+        logger.debug("""
+            2a.3 Erkenning voor of na 1-1-2023?
+            {}""", answer);
+        gezagsBepaling.getArAntwoordenModel().setV02A03(answer);
+        return new GezagVraagResult(QUESTION_ID, answer);
+    }
+
+    @Nullable
+    private String doPerform(final GezagsBepaling gezagsBepaling) {
         final var plPersoon = gezagsBepaling.getPlPersoon();
         Ouder1 persoonOuder1 = plPersoon.getOuder1();
         Ouder2 persoonOuder2 = plPersoon.getOuder2();
-
         final var persoonErkend = plPersoon.ongeborenVruchtErkendOfGerechtelijkeVaststelling();
         final var persoonOngeborenVruchtErkend = plPersoon.ongeborenVruchtErkend();
         final var isPersoonErkend = persoonErkend || persoonOngeborenVruchtErkend;
+
         if (!requirementsForRuleAreMet(persoonOuder1, persoonOuder2, isPersoonErkend, gezagsBepaling)) {
-            return new GezagVraagResult(QUESTION_ID, answer);
+            return null;
         }
 
-        answer = isPersoonErkendOpOfNa01012023(isPersoonErkend, persoonOuder1, persoonOuder2);
+        var answer = isPersoonErkendOpOfNa01012023(isPersoonErkend, persoonOuder1, persoonOuder2);
         if (answer == null) {
             answer = doorWelkeOuderErkend(plPersoon);
         }
@@ -55,11 +66,7 @@ public class ErkenningNa01012023 implements GezagVraag {
             answer = V2A_3_NA;
         }
 
-        logger.debug("""
-            2a.3 Erkenning voor of na 1-1-2023?
-            {}""", answer);
-        gezagsBepaling.getArAntwoordenModel().setV02A03(answer);
-        return new GezagVraagResult(QUESTION_ID, answer);
+        return answer;
     }
 
     private boolean requirementsForRuleAreMet(

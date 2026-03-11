@@ -44,24 +44,24 @@ public class ErkenningNa01012023 implements GezagVraag {
 
     @Nullable
     private String doPerform(final GezagsBepaling gezagsBepaling) {
-        final var plPersoon = gezagsBepaling.getPlPersoon();
-        Ouder1 persoonOuder1 = plPersoon.getOuder1();
-        Ouder2 persoonOuder2 = plPersoon.getOuder2();
-        final var persoonErkend = plPersoon.ongeborenVruchtErkendOfGerechtelijkeVaststelling();
-        final var persoonOngeborenVruchtErkend = plPersoon.ongeborenVruchtErkend();
+        final var minderjarige = gezagsBepaling.getPlPersoon();
+        final var ouder1 = minderjarige.getOuder1();
+        final var ouder2 = minderjarige.getOuder2();
+        final var persoonErkend = minderjarige.ongeborenVruchtErkendOfGerechtelijkeVaststelling();
+        final var persoonOngeborenVruchtErkend = minderjarige.ongeborenVruchtErkend();
         final var isPersoonErkend = persoonErkend || persoonOngeborenVruchtErkend;
 
-        if (!requirementsForRuleAreMet(persoonOuder1, persoonOuder2, isPersoonErkend, gezagsBepaling)) {
+        if (!requirementsForRuleAreMet(ouder1, ouder2, isPersoonErkend, gezagsBepaling)) {
             return null;
         }
 
-        var answer = isPersoonErkendOpOfNa01012023(isPersoonErkend, persoonOuder1, persoonOuder2);
+        var answer = isPersoonErkendOpOfNa01012023(isPersoonErkend, ouder1, ouder2);
         if (answer == null) {
-            answer = doorWelkeOuderErkend(plPersoon);
+            answer = doorWelkeOuderErkend(minderjarige);
         }
-        boolean persoonGeborenVoor01012023 = isPersoonGeborenVoor01012023(persoonErkend, persoonOngeborenVruchtErkend, plPersoon, answer);
+        boolean persoonGeborenVoor01012023 = isPersoonGeborenVoor01012023(persoonErkend, persoonOngeborenVruchtErkend, minderjarige, answer);
         if (persoonGeborenVoor01012023) {
-            answer = bepaalGezagOpBasisVanGeboortemoeder(persoonOuder1, persoonOuder2);
+            answer = bepaalGezagOpBasisVanGeboortemoeder(ouder1, ouder2);
         } else if(answer == null){
             answer = V2A_3_NA;
         }
@@ -70,24 +70,24 @@ public class ErkenningNa01012023 implements GezagVraag {
     }
 
     private boolean requirementsForRuleAreMet(
-        final Ouder1 persoonOuder1,
-        final Ouder2 persoonOuder2,
+        final Ouder1 ouder1,
+        final Ouder2 ouder2,
         final boolean isPersoonErkend,
         final GezagsBepaling gezagsBepaling
     ) {
-        if (persoonOuder1 == null || persoonOuder2 == null) {
+        if (ouder1 == null || ouder2 == null) {
             throw new AfleidingsregelException(
                 "Preconditie: vraag 2a.3 - Geen twee ouders bij erkenning",
-                persoonOuder1 == null && persoonOuder2 == null
+                ouder1 == null && ouder2 == null
                     ? "beide ouders van bevraagde persoon"
                     : "een ouder van de bevraagde persoon"
             );
         }
 
-        if (isPersoonErkend && persoonOuder1.getDatumIngangFamiliebetrekking() == null) {
+        if (isPersoonErkend && ouder1.getDatumIngangFamiliebetrekking() == null) {
             gezagsBepaling.addMissendeGegegevens("datum ingang familiebetrekking van ouder 1");
             return false;
-        } else if (isPersoonErkend && persoonOuder2.getDatumIngangFamiliebetrekking() == null) {
+        } else if (isPersoonErkend && ouder2.getDatumIngangFamiliebetrekking() == null) {
             gezagsBepaling.addMissendeGegegevens("datum ingang familiebetrekking van ouder 2");
             return false;
         }
@@ -96,12 +96,12 @@ public class ErkenningNa01012023 implements GezagVraag {
 
     private String isPersoonErkendOpOfNa01012023(
         final boolean isPersoonErkend,
-        final Ouder1 persoonOuder1,
-        final Ouder2 persoonOuder2
+        final Ouder1 ouder1,
+        final Ouder2 ouder2
     ) {
         if (isPersoonErkend) {
-            boolean ouder1ErkendOpOfNa01012023 = Integer.parseInt(persoonOuder1.getDatumIngangFamiliebetrekking()) >= DATE_JAN_1_2023;
-            boolean ouder2ErkendOpOfNa01012023 = Integer.parseInt(persoonOuder2.getDatumIngangFamiliebetrekking()) >= DATE_JAN_1_2023;
+            boolean ouder1ErkendOpOfNa01012023 = Integer.parseInt(ouder1.getDatumIngangFamiliebetrekking()) >= DATE_JAN_1_2023;
+            boolean ouder2ErkendOpOfNa01012023 = Integer.parseInt(ouder2.getDatumIngangFamiliebetrekking()) >= DATE_JAN_1_2023;
             if (ouder1ErkendOpOfNa01012023 || ouder2ErkendOpOfNa01012023) {
                 return V2A_3_NA;
             }
@@ -135,11 +135,11 @@ public class ErkenningNa01012023 implements GezagVraag {
     }
 
     private String bepaalGezagOpBasisVanGeboortemoeder(
-        final Ouder1 persoonOuder1,
-        final Ouder2 persoonOuder2
+        final Ouder1 ouder1,
+        final Ouder2 ouder2
     ) {
-        boolean isOuder1Vrouw = persoonOuder1.getGeslachtsAanduiding().map(this::isVrouw).orElse(false);
-        boolean isOuder2Vrouw = persoonOuder2.getGeslachtsAanduiding().map(this::isVrouw).orElse(false);
+        boolean isOuder1Vrouw = ouder1.getGeslachtsAanduiding().map(this::isVrouw).orElse(false);
+        boolean isOuder2Vrouw = ouder2.getGeslachtsAanduiding().map(this::isVrouw).orElse(false);
 
         if (eenVanDeOudersVrouw(isOuder1Vrouw, isOuder2Vrouw)) {
             return isOuder1Vrouw ? V2A_3_VOOR_OUDER1 : V2A_3_VOOR_OUDER2;

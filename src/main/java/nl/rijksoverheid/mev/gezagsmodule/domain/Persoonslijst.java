@@ -218,10 +218,6 @@ public class Persoonslijst {
         return Optional.empty();
     }
 
-    public boolean isOverledenOfOnbevoegd() throws AfleidingsregelException {
-        return isOverleden() || minderjarig() || onderCurateleGesteld();
-    }
-
     public boolean alsMinderjarigeOverleden() throws AfleidingsregelException {
         if (isOverleden()) {
             int datumOpschorting = Integer.parseInt(inschrijving.getDatumOpschortingBijhouding());

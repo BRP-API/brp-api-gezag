@@ -243,6 +243,25 @@ public class Persoonslijst {
         return str != null && !str.isBlank() && !str.equals(PUNTOUDER_INDICATIE);
     }
 
+
+    /**
+     * Returns {@code true} if <i>deze persoon erkend is</i>.
+     * <p>
+     * Een persoon is erkend als hij/zij voldoet aan een van de volgende voorwaarde:
+     * <ul>
+     *     <li>Erkenning ongeboren vrucht</li>
+     *     <li>Erkenning geboren vrucht</li>
+     *     <li>Erkenning door gerechtelijke vaststelling ouderschap</li>
+     * </ul>
+     *
+     * @return {@code true} if <i>deze persoon erkend is</i>
+     * @see #ongeborenVruchtErkend
+     * @see #ongeborenVruchtErkendOfGerechtelijkeVaststelling
+     */
+    public boolean isErkend() {
+        return ongeborenVruchtErkend() || ongeborenVruchtErkendOfGerechtelijkeVaststelling();
+    }
+
     public boolean ongeborenVruchtErkendOfGerechtelijkeVaststelling() {
         return AktenummerAfleiding
             .ongeborenVruchtErkendOfGerechtelijkeVaststelling(persoon, new ArrayList<>(geschiedenisPersoon));

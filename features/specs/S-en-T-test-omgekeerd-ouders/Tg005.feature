@@ -1,6 +1,6 @@
 #language: nl
 
-@deprecated @gezag-api
+@gezag-api
 Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
 
 
@@ -441,12 +441,15 @@ Functionaliteit: Tg005 - Donkers-Dangor-Dass - Gezag kan niet bepaald worden
       | ingangsdatum geldigheid (85.10)   | 20181201 |
 
 
+  @skip-verify
+  # gezag API kan inmiddels gezag leveren, maar automatisering onder opzet S&T test ondersteunt dit nog niet
   Scenario: Lg01_017 - gehuwd, echtgenoot niet ingeschreven in Nederland, minderjarig kind geboren tijdens huwelijk
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Desiree'
     Dan heeft 'Desiree' geen gezaghouder
 
-  @deprecated
+  @deprecated @skip-verify
+  # gezag API kan inmiddels gezag leveren, maar automatisering onder opzet S&T test ondersteunt dit nog niet
   Scenario: Lg01_018 - minderjarig kind, geboren tijdens huwelijk ouders, geen categorie 11, vader niet ingeschreven in BRP, kind Nederlandse nationaliteit + Beëindigde vreemde nationaliteit
     # Route: 49
     Als 'gezag' wordt gevraagd van 'Daryl'

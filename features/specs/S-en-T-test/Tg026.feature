@@ -1,6 +1,6 @@
 #language: nl
 
-@deprecated @gezag-api
+@gezag-api
 Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en na geboorteaangifte en ongehuwde ouders
 
 
@@ -336,6 +336,8 @@ Functionaliteit: Tg026 - Hendriksman-Hamersma-Huisman - Erkenning voor, bij en n
       | ingangsdatum geldigheid (85.10)   | 20230110 |
 
 
+  @skip-verify
+  # gezag API kan inmiddels gezag leveren, maar automatisering onder opzet S&T test ondersteunt dit nog niet
   Scenario: Lg01_139 - test op inlezen in de toekomst met geboortejaar 2023 (is inlezen in toekomst mogelijk)
     # Route: 45e
     Als 'gezag' wordt gevraagd van 'Hinke'

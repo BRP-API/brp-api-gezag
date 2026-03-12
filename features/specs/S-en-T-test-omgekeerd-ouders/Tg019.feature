@@ -1,6 +1,6 @@
 #language: nl
 
-@deprecated @gezag-api
+@gezag-api
 Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
 
 
@@ -85,10 +85,10 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | voornamen (02.10)               | Annalies  |
       | voorvoegsel (02.30)             | van der   |
       | geslachtsnaam (02.40)           | Aa        |
-      | geboortedatum (03.10)           | 20080116  |
+      | geboortedatum (03.10)           | 20200116  |
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0102   |
-      | ingangsdatum geldigheid (85.10) | 20080116  |
+      | ingangsdatum geldigheid (85.10) | 20200116  |
     En heeft een kind 'Annabel' met de volgende gegevens
       | naam                            | waarde           |
       | voornamen (02.10)               | Annabel          |
@@ -199,10 +199,10 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | voornamen (02.10)               | Annalies  |
       | voorvoegsel (02.30)             | van der   |
       | geslachtsnaam (02.40)           | Aa        |
-      | geboortedatum (03.10)           | 20080116  |
+      | geboortedatum (03.10)           | 20200116  |
       | geboorteland (03.30)            | 6030      |
       | aktenummer (81.20)              | 1AA0102   |
-      | ingangsdatum geldigheid (85.10) | 20080116  |
+      | ingangsdatum geldigheid (85.10) | 20200116  |
     En heeft een kind 'Annabel' met de volgende gegevens
       | naam                            | waarde           |
       | voornamen (02.10)               | Annabel          |
@@ -281,11 +281,11 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | voornamen (02.10)               | Annalies |
       | voorvoegsel (02.30)             | van der  |
       | geslachtsnaam (02.40)           | Aa       |
-      | geboortedatum (03.10)           | 20080116 |
+      | geboortedatum (03.10)           | 20200116 |
       | geboorteland (03.30)            | 6030     |
       | geslachtsaanduiding (04.10)     | V        |
       | aktenummer (81.20)              | 1AA0102  |
-      | ingangsdatum geldigheid (85.10) | 20080116 |
+      | ingangsdatum geldigheid (85.10) | 20200116 |
     En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000012 |
@@ -296,8 +296,8 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | geboorteland (03.30)                               | 6030      |
       | geslachtsaanduiding (04.10)                        | M         |
       | aktenummer (81.20)                                 | 1AA0102   |
-      | ingangsdatum geldigheid (85.10)                    | 20080116  |
-      | datum ingang familierechtelijke betrekking (62.10) | 20080116  |
+      | ingangsdatum geldigheid (85.10)                    | 20200116  |
+      | datum ingang familierechtelijke betrekking (62.10) | 20200116  |
     En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde    |
       | burgerservicenummer (01.20)                        | 000000024 |
@@ -307,8 +307,8 @@ Functionaliteit: Tg019 - Aa-Abels - Ouders overleden zelfde dag
       | geboorteland (03.30)                               | 6030      |
       | geslachtsaanduiding (04.10)                        | V         |
       | aktenummer (81.20)                                 | 1AA0102   |
-      | ingangsdatum geldigheid (85.10)                    | 20080116  |
-      | datum ingang familierechtelijke betrekking (62.10) | 20080116  |
+      | ingangsdatum geldigheid (85.10)                    | 20200116  |
+      | datum ingang familierechtelijke betrekking (62.10) | 20200116  |
     En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |

@@ -1,6 +1,6 @@
 #language: nl
 
-@deprecated @gezag-api
+@gezag-api
 Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
 
 
@@ -343,6 +343,8 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
     * is het gezag over 'Esther' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
     * is het gezag over 'Esmee' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
 
+  @skip-verify
+  # kind 'Eveline' heeft ouder 2 zonder burgerservicenummer, maar automatisering onder opzet S&T test ondersteunt dit nog niet. Wordt elders gecontroleerd
   Scenario: Lg01_126 - 3 erkende kinderen
     # Meerderjarig
     Als 'gezag' wordt gevraagd van 'Edwina'
@@ -355,6 +357,8 @@ Functionaliteit: Tg023 - Egberts-Ederveen Cat.11 = 12
     Als 'gezag' wordt gevraagd van 'Esther'
     Dan is het gezag over 'Esther' gezamenlijk ouderlijk gezag met ouder 'Edwina' en ouder 'Ewald'
 
+  @skip-verify
+  # gezag API kan inmiddels gezag leveren, maar automatisering onder opzet S&T test ondersteunt dit nog niet
   Scenario: Lg01_128 - erkend, categorie 03 op PL kind zonder SoFi-nr/BSN, wel A-nr/BSN in categorie 09 PL vader/erkenner, indicatie gezag 12
     # Route: 7e
     Als 'gezag' wordt gevraagd van 'Eveline'

@@ -78,6 +78,40 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met één ouder die ten t
         | morgen - 6 jaar | ruim na geboorte van minderjarige  |
         | morgen - 8 jaar | 1 dag na geboorte van minderjarige |
 
+  Voorbeeld: Beide ouders waren gehuwd en gescheiden voor geboorte van het kind en zijn na geboorte hertrouwd
+    Gegeven de persoon 'Gerda' met burgerservicenummer '000000012'
+    * is meerderjarig
+    * is een vrouw
+    En de persoon 'Aart' met burgerservicenummer '000000024'
+    * is meerderjarig
+    * is een man
+    En 'Gerda' en 'Aart' zijn 20 jaar geleden gehuwd
+    En 'Gerda' en 'Aart' zijn 15 jaar geleden gescheiden
+    En de persoon 'Bert' met burgerservicenummer '000000048'
+    * is ingeschreven in de BRP
+    * 'Bert' is 14 jaar geleden geboren
+    * heeft 'Gerda' als ouder
+    En 'Gerda' en 'Aart' zijn 10 jaar geleden gehuwd
+    Als 'gezag' wordt gevraagd van 'Bert'
+    Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+
+  Voorbeeld: Beide ouders waren gehuwd en gescheiden voor geboorte van het kind en zijn na geboorte hertrouwd - relatie in omgekeerde volgorde opgevoerd
+    Gegeven de persoon 'Gerda' met burgerservicenummer '000000012'
+    * is meerderjarig
+    * is een vrouw
+    En de persoon 'Aart' met burgerservicenummer '000000024'
+    * is meerderjarig
+    * is een man
+    En 'Gerda' en 'Aart' zijn 10 jaar geleden gehuwd
+    En 'Gerda' en 'Aart' zijn 20 jaar geleden gehuwd
+    En 'Gerda' en 'Aart' zijn 15 jaar geleden gescheiden
+    En de persoon 'Bert' met burgerservicenummer '000000048'
+    * is ingeschreven in de BRP
+    * 'Bert' is 14 jaar geleden geboren
+    * heeft 'Gerda' als ouder
+    Als 'gezag' wordt gevraagd van 'Bert'
+    Dan is het gezag over 'Bert' eenhoofdig ouderlijk gezag met ouder 'Gerda'
+
   Regel: Als de minderjarige tijdens het huwelijk of partnerschap van de juridische ouder is geadopteerd, dan hebben de ouder en diens (toenmalige) partner gezamenlijk gezag
 
   Regel: Als de minderjarige tijdens het huwelijk of partnerschap van de juridische ouder geboren is en er sprake is van ontkenning vaderschap, dan heeft de ouder eenhoofdig ouderlijk gezag

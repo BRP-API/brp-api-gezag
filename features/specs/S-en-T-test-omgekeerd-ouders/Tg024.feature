@@ -1,6 +1,6 @@
 #language: nl
 
-@deprecated @gezag-api
+@gezag-api
 Functionaliteit: Tg024 - Felsen-Freitag - Nietig verklaring huwelijk en Nietig verklaring erkenning
 
 

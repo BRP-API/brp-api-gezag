@@ -1,6 +1,6 @@
 #language: nl
 
-@deprecated @gezag-api
+@gezag-api
 Functionaliteit: Tg032 - Oostingh - Alleen maar minderjarigen incl. moeder
 
 
@@ -125,6 +125,8 @@ Functionaliteit: Tg032 - Oostingh - Alleen maar minderjarigen incl. moeder
       | ingangsdatum geldigheid (85.10)      | 20221101                    |
 
 
+  @skip-verify
+  # gezag API kan inmiddels gezag leveren, maar automatisering onder opzet S&T test ondersteunt dit nog niet
   Scenario: Lg01_173 - minderjarige moeder, gezag niet te bepalen BSN moeder ontbreekt
     # Route: 39e
     Als 'gezag' wordt gevraagd van 'Olga'

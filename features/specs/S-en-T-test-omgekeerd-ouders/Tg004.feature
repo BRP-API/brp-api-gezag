@@ -1,6 +1,6 @@
 #language: nl
 
-@deprecated @gezag-api
+@gezag-api
 Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
 
 
@@ -170,6 +170,8 @@ Functionaliteit: Tg004 - Custers - Bij geboorte minderjarige moeders
       | ingangsdatum geldigheid (85.10)   | 20190501 |
 
 
+  @skip-verify
+  # gezag API kan inmiddels gezag leveren, maar automatisering onder opzet S&T test ondersteunt dit nog niet
   Scenario: Lg01_013 - ongehuwde minderjarige moeder met 1 minderjarig niet erkend kind
     # Route: 39e
     Als 'gezag' wordt gevraagd van 'Cindy'

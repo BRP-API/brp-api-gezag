@@ -1,6 +1,6 @@
 #language: nl
 
-@deprecated @gezag-api
+@gezag-api
 Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
 
 
@@ -55,10 +55,10 @@ Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
       | naam                            | waarde                |
       | burgerservicenummer (01.20)     | 000000036             |
       | geslachtsnaam (02.40)           | Kamal Mohammed Farroq |
-      | geboortedatum (03.10)           | 20071201              |
+      | geboortedatum (03.10)           | 20201201              |
       | geboorteland (03.30)            | 6030                  |
       | aktenummer (81.20)              | 1AA0800               |
-      | ingangsdatum geldigheid (85.10) | 20071201              |
+      | ingangsdatum geldigheid (85.10) | 20201201              |
     
     # Lg01_154 - onvolledige geboortedatum, namenreeks, gehuwd, 1 minderjarig kind met namenreeks
     Gegeven de persoon 'Amina' met burgerservicenummer '000000024'
@@ -106,21 +106,21 @@ Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
       | naam                            | waarde                |
       | burgerservicenummer (01.20)     | 000000036             |
       | geslachtsnaam (02.40)           | Kamal Mohammed Farroq |
-      | geboortedatum (03.10)           | 20071201              |
+      | geboortedatum (03.10)           | 20201201              |
       | geboorteland (03.30)            | 6030                  |
       | aktenummer (81.20)              | 1AA0800               |
-      | ingangsdatum geldigheid (85.10) | 20071201              |
+      | ingangsdatum geldigheid (85.10) | 20201201              |
     
     # Lg01_155 - in Nederland geboren kind met namenreeks, ouders onvolledige geboortedatum
     Gegeven de persoon 'Kamal' met burgerservicenummer '000000036'
     * heeft de volgende gegevens
       | naam                            | waarde                |
       | geslachtsnaam (02.40)           | Kamal Mohammed Farroq |
-      | geboortedatum (03.10)           | 20071201              |
+      | geboortedatum (03.10)           | 20201201              |
       | geboorteland (03.30)            | 6030                  |
       | geslachtsaanduiding (04.10)     | M                     |
       | aktenummer (81.20)              | 1AA0800               |
-      | ingangsdatum geldigheid (85.10) | 20071201              |
+      | ingangsdatum geldigheid (85.10) | 20201201              |
     En heeft een ouder 1 met de volgende gegevens
       | naam                                               | waarde                |
       | burgerservicenummer (01.20)                        | 000000024             |
@@ -129,8 +129,8 @@ Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
       | geboorteland (03.30)                               | 6013                  |
       | geslachtsaanduiding (04.10)                        | V                     |
       | aktenummer (81.20)                                 | 1AA0800               |
-      | ingangsdatum geldigheid (85.10)                    | 20071201              |
-      | datum ingang familierechtelijke betrekking (62.10) | 20071201              |
+      | ingangsdatum geldigheid (85.10)                    | 20201201              |
+      | datum ingang familierechtelijke betrekking (62.10) | 20201201              |
     En heeft een ouder 2 met de volgende gegevens
       | naam                                               | waarde                 |
       | burgerservicenummer (01.20)                        | 000000012              |
@@ -139,8 +139,8 @@ Functionaliteit: Tg028 - Geen voornamen, geslachtsnaam is een namenreeks
       | geboorteland (03.30)                               | 6013                   |
       | geslachtsaanduiding (04.10)                        | M                      |
       | aktenummer (81.20)                                 | 1AA0800                |
-      | ingangsdatum geldigheid (85.10)                    | 20071201               |
-      | datum ingang familierechtelijke betrekking (62.10) | 20071201               |
+      | ingangsdatum geldigheid (85.10)                    | 20201201               |
+      | datum ingang familierechtelijke betrekking (62.10) | 20201201               |
     En is ingeschreven op adres 'A1' met de volgende gegevens
       | naam                              | waarde   |
       | gemeente van inschrijving (09.10) | 518      |

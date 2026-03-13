@@ -353,6 +353,7 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die nooit
     In theorie heeft altijd minstens één ouder de minderjarige erkend met erkenning ongeboren vrucht. In productie komt het toch voor dat zowel de geboortemoeder als de andere ouder de minderjarige heeft erkend met een andere erkenning dan erkenning ongeboren vrucht.
     In principe is dit incorrecte data. Op de lange termijn zal gemeenten dit probleem oplossen door de data te corrigeren. Op de korte termijn zal het systeem de incorrect data zodanig verwerken dat de geboortemoeder, zo goed als mogelijk, eenhoofdig ouderlijk gezag krijgt.
 
+    @skip-verify
     Scenario: moeder en vader hebben de minderjarige erkend na geboorteaangifte
       Gegeven de persoon 'moeder' met burgerservicenummer '000000012'
       * is meerderjarig

@@ -86,8 +86,9 @@ class ErkenningNa01012023Test {
     }
 
     @Test
-    void erkenningNa01012023HavingBothParentsAndNoAktenummer() {
+    void erkenningNa01012023HavingBothParentsAndNoAktenummerAndBornAfterDate() {
         when(gezagsBepaling.getArAntwoordenModel()).thenReturn(arAntwoordenModel);
+        when(persoon.getGeboortedatum()).thenReturn(DATE_AFTER_01012023);
         persoonslijst.setOuder1(ouder1);
         persoonslijst.setOuder2(ouder2);
 

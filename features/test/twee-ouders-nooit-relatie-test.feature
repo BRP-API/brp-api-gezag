@@ -347,3 +347,40 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die nooit
         |                2 |                  1 | is minderjarig       | is overleden         | geboortemoeder is minderjarig en andere ouder is overleden         | Tijdelijk geen gezag omdat de ouder minderjarig is.       |  54v2m |
         |                2 |                  1 | is minderjarig       | staat onder curatele | geboortemoeder is minderjarig en andere ouder staat onder curatele | Tijdelijk geen gezag omdat de ouder minderjarig is.       |  54v2m |
         |                2 |                  1 | is minderjarig       | is minderjarig       | geboortemoeder en andere ouder zijn beide minderjarig              | Tijdelijk geen gezag omdat de ouder minderjarig is.       |  54v2m |
+
+  Regel: Wanneer de ouders nooit met elkaar gehuwd waren en het kind is erkend voor 1-1-2023 en zowel de geboortemoeder als de andere ouder hebben een aktenummer die ongelijk is aan erkenning ongeboren vrucht, dan heeft geboortemoeder eenhoofdige ouderlijk gezag
+
+    In theorie heeft altijd minstens één ouder de minderjarige erkend met erkenning ongeboren vrucht. In productie komt het toch voor dat zowel de geboortemoeder als de andere ouder de minderjarige heeft erkend met een andere erkenning dan erkenning ongeboren vrucht.
+    In principe is dit incorrecte data. Op de lange termijn zal gemeenten dit probleem oplossen door de data te corrigeren. Op de korte termijn zal het systeem de incorrect data zodanig verwerken dat de geboortemoeder, zo goed als mogelijk, eenhoofdig ouderlijk gezag krijgt.
+
+    Scenario: moeder en vader hebben de minderjarige erkend na geboorteaangifte
+      Gegeven de persoon 'moeder' met burgerservicenummer '000000012'
+      * is meerderjarig
+      * is een vrouw
+      En de persoon 'vader' met burgerservicenummer '000000024'
+      * is meerderjarig
+      * is een man
+      En de persoon 'minderjarige' met burgerservicenummer '000000036'
+      * is minderjarig
+      * is ingeschreven in een Nederlandse gemeente
+      * is in Nederland geboren
+      * is erkend door 'moeder' als ouder 1 met erkenning na geboorteaangifte op 15-3-2022
+      * is erkend door 'vader' als ouder 2 met erkenning na geboorteaangifte op 15-3-2022
+      Als 'gezag' wordt gevraagd van 'minderjarige'
+      Dan is het gezag over 'minderjarige' eenhoofdig ouderlijk gezag met ouder 'moeder'
+
+    Scenario: geboortemoeder en moeder hebben de minderjarige erkend na geboorteaangifte
+      Gegeven de persoon 'geboortemoeder' met burgerservicenummer '000000012'
+      * is meerderjarig
+      * is een vrouw
+      En de persoon 'moeder' met burgerservicenummer '000000024'
+      * is meerderjarig
+      * is een vrouw
+      En de persoon 'minderjarige' met burgerservicenummer '000000036'
+      * is minderjarig
+      * is ingeschreven in een Nederlandse gemeente
+      * is in Nederland geboren
+      * is erkend door 'geboortemoeder' als ouder 1 met erkenning na geboorteaangifte op 15-3-2022
+      * is erkend door 'moeder' als ouder 2 met erkenning na geboorteaangifte op 15-3-2022
+      Als 'gezag' wordt gevraagd van 'minderjarige'
+      Dan is het gezag over 'minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is.'

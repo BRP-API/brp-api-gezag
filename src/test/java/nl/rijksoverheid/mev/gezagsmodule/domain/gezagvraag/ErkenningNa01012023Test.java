@@ -47,7 +47,7 @@ class ErkenningNa01012023Test {
     private ErkenningNa01012023 classUnderTest;
 
     @BeforeEach
-    public void setup() {
+    void setup() {
         persoonslijst = new Persoonslijst();
         persoonslijst.setPersoon(persoon);
         when(gezagsBepaling.getPlPersoon()).thenReturn(persoonslijst);

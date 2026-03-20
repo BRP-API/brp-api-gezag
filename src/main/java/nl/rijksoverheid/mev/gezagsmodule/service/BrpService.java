@@ -46,7 +46,7 @@ public class BrpService {
         var optionalPersoonslijstOuder = finder.opvragenPersoonslijst(bsn);
         List<Persoonslijst> partners = optionalPersoonslijstOuder.stream()
             .map(Persoonslijst::getHuwelijkOfPartnerschappen)
-            .flatMap(List::stream)
+            .flatMap(Set::stream)
             .map(HuwelijkOfPartnerschap::getBsnPartner)
             .filter(Objects::nonNull)
             .map(finder::opvragenPersoonslijst)

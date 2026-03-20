@@ -9,7 +9,7 @@ net-logstash-logback-logstash-logback-encoder = "8.0"
 org-apache-commons-commons-lang3 = "3.18.0"
 org-json-json = "20240303"
 org-openapitools-jackson-databind-nullable = "0.2.6"
-org-postgresql-postgresql = "42.7.4"
+org-postgresql-postgresql = "42.7.10"
 
 [libraries]
 co-elastic-logging-logback-ecs-encoder = { module = "co.elastic.logging:logback-ecs-encoder", version.ref = "co-elastic-logging-logback-ecs-encoder" }

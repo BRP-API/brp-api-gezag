@@ -8,6 +8,6 @@ logging:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/rvig_brp_api_testdata
+    url: jdbc:postgresql://localhost:5432/rvig_haalcentraal_testdata
     username: root
     password: root

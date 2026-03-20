@@ -125,6 +125,7 @@ public class JooqPersoonslijstFinder implements PersoonslijstFinder {
                     .orElse(null);
                 return new HuwelijkOfPartnerschap(lo3PlPersoonRecord, titelPredicaat);
             })
+            .filter(HuwelijkOfPartnerschap::isNietVerwijderdNaCorrectie)
             .forEach(result::add);
 
         var optionalPlVerblijfplaats = findPlVerblijfplaatsByPlId(plId);

@@ -88,6 +88,15 @@ public class HuwelijkOfPartnerschap extends PotentieelInOnderzoek implements Com
         this.redenOntbinding = lo3PlPersoonRecord.getRelatieEindReden();
         this.aanduidingGegevensInOnderzoek = onderzoekGegevensAanduidingAsString;
         this.datumEindeOnderzoek = Objects.toString(lo3PlPersoonRecord.getOnderzoekEindDatum(), null);
+        this.geldigheidStartDatum = Objects.toString(lo3PlPersoonRecord.getGeldigheidStartDatum(), null);
+    }
+
+    public boolean isNietVerwijderdNaCorrectie() {
+        return !isVerwijderdNaCorrectie();
+    }
+
+    public boolean isVerwijderdNaCorrectie() {
+        return datumVoltrokken == null && datumOntbinding == null && geldigheidStartDatum == null;
     }
 
     public String getBsnPartner() {

@@ -8,6 +8,7 @@ import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.Lo3PlGezagsverhoud
 import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.Lo3PlPersoonRecord;
 import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.Lo3PlRecord;
 import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.Lo3PlVerblijfplaatsRecord;
+import nl.rijksoverheid.mev.gezagsmodule.domain.HuwelijkOfPartnerschap;
 import nl.rijksoverheid.mev.gezagsmodule.domain.Persoonslijst;
 import nl.rijksoverheid.mev.gezagsmodule.model.Burgerservicenummer;
 import nl.rijksoverheid.mev.logging.LoggingContext;
@@ -116,14 +117,15 @@ public class JooqPersoonslijstFinder implements PersoonslijstFinder {
         plPersoonKinderenZonderGeschiedenis.forEach(result::addKind);
 
         var plPersoonRelaties = lo3PlPersoonRecordsByPersoonType.getOrDefault(RELATIE, Collections.emptyList());
-        plPersoonRelaties.forEach(relatie -> {
-            var titelPredicaatCode = relatie.getTitelPredicaat();
-            var titelPredicaat = Optional.ofNullable(titelPredicaatCode)
-                .flatMap(titelPredicaatFinder::findBy)
-                .orElse(null);
-
-            result.addRelatie(relatie, titelPredicaat);
-        });
+        plPersoonRelaties.stream()
+            .map(lo3PlPersoonRecord -> {
+                var titelPredicaatCode = lo3PlPersoonRecord.getTitelPredicaat();
+                var titelPredicaat = Optional.ofNullable(titelPredicaatCode)
+                    .flatMap(titelPredicaatFinder::findBy)
+                    .orElse(null);
+                return new HuwelijkOfPartnerschap(lo3PlPersoonRecord, titelPredicaat);
+            })
+            .forEach(result::add);
 
         var optionalPlVerblijfplaats = findPlVerblijfplaatsByPlId(plId);
         optionalPlVerblijfplaats.ifPresent(result::addVerblijfplaats);

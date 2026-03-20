@@ -42,7 +42,7 @@ public class Persoonslijst {
     @Getter
     private Verblijfplaats verblijfplaats;
     @Getter
-    private List<HuwelijkOfPartnerschap> huwelijkOfPartnerschappen;
+    private Set<HuwelijkOfPartnerschap> huwelijkOfPartnerschappen;
     private List<Kind> kinderen;
     @Getter
     private Ouder1 ouder1;
@@ -55,7 +55,7 @@ public class Persoonslijst {
     private HopRelaties hopRelaties;
 
     public Persoonslijst() {
-        huwelijkOfPartnerschappen = new ArrayList<>();
+        huwelijkOfPartnerschappen = new TreeSet<>(Comparator.reverseOrder());
         kinderen = new ArrayList<>();
         geschiedenisOuder1 = new ArrayList<>();
         geschiedenisOuder2 = new ArrayList<>();
@@ -70,11 +70,8 @@ public class Persoonslijst {
         verblijfplaats = new Verblijfplaats(lo3PlVerblijfplaatsRecord);
     }
 
-    public void addRelatie(
-        Lo3PlPersoonRecord lo3PlPersoonRecord,
-        @Nullable Lo3TitelPredicaatRecord lo3TitelPredicaatRecord
-    ) {
-        huwelijkOfPartnerschappen.add(new HuwelijkOfPartnerschap(lo3PlPersoonRecord, lo3TitelPredicaatRecord));
+    public boolean add(HuwelijkOfPartnerschap huwelijkOfPartnerschap) {
+        return huwelijkOfPartnerschappen.add(huwelijkOfPartnerschap);
     }
 
     public void addKind(final Lo3PlPersoonRecord lo3PlPersoonRecord) {

@@ -1,8 +1,8 @@
 package nl.rijksoverheid.mev.gezagsmodule.domain;
 
+import jakarta.validation.constraints.NotNull;
 import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.Lo3PlPersoonRecord;
 import nl.rijksoverheid.mev.brp.brpv.generated.tables.records.Lo3TitelPredicaatRecord;
-import org.apache.commons.lang3.builder.EqualsBuilder;
 
 import java.util.Objects;
 import java.util.Optional;
@@ -11,7 +11,7 @@ import java.util.Optional;
  * Huwelijk of partnerschap
  */
 @Categorie(number = "05", name = "relatie")
-public class HuwelijkOfPartnerschap extends PotentieelInOnderzoek {
+public class HuwelijkOfPartnerschap extends PotentieelInOnderzoek implements Comparable<HuwelijkOfPartnerschap> {
 
     private static final String ONBEKEND = ".";
 
@@ -62,6 +62,8 @@ public class HuwelijkOfPartnerschap extends PotentieelInOnderzoek {
      */
     @VeldNummer(number = "050740", name = "reden ontbinding van relatie")
     private final String redenOntbinding;
+
+    private final String geldigheidStartDatum;
 
     public HuwelijkOfPartnerschap(final Lo3PlPersoonRecord lo3PlPersoonRecord, Lo3TitelPredicaatRecord lo3TitelPredicaatRecord) {
         var burgerServiceNr = lo3PlPersoonRecord.getBurgerServiceNr();
@@ -162,19 +164,50 @@ public class HuwelijkOfPartnerschap extends PotentieelInOnderzoek {
         return redenOntbinding;
     }
 
+
     @Override
     public boolean equals(Object o) {
-        return EqualsBuilder.reflectionEquals(this, o);
+        if (o == null || getClass() != o.getClass()) return false;
+        HuwelijkOfPartnerschap that = (HuwelijkOfPartnerschap) o;
+        return Objects.equals(burgerservicenummer, that.burgerservicenummer)
+            && Objects.equals(datumVoltrokken, that.datumVoltrokken)
+            && Objects.equals(datumOntbinding, that.datumOntbinding)
+            && Objects.equals(geldigheidStartDatum, that.geldigheidStartDatum);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(
-            getBsnPartner(),
-            getDatumVoltrokken(),
-            getDatumOntbinding(),
-            getRedenOntbinding(),
-            getAanduidingGegevensInOnderzoek(),
-            getDatumEindeOnderzoek());
+        return Objects.hash(burgerservicenummer, datumVoltrokken, datumOntbinding, geldigheidStartDatum);
+    }
+
+    /**
+     * Compares this HuwelijkOfPartnerschap with another HuwelijkOfPartnerschap based on chronologic order of events.
+     * <p>
+     * The comparison assumes every HuwelijkOfPartnerschap has a present {@code datumVoltrokken}
+     * exclusive or {@code datumOntbinding}. The two present dates are then compared to determine
+     * the chronological order of events.
+     * <p>
+     * Note: this class has a natural ordering that is inconsistent with equals.
+     *
+     * @param o the object to be compared.
+     * @return a negative integer, zero, or a positive integer as this object
+     *         is less than, equal to, or greater than the specified object.
+     */
+    @Override
+    public int compareTo(@NotNull HuwelijkOfPartnerschap o) {
+        Objects.requireNonNull(o);
+
+        if (Objects.equals(this.datumVoltrokken, o.datumVoltrokken) && Objects.equals(this.datumOntbinding, o.datumOntbinding))
+            return 0;
+
+        var thisDate = Optional.ofNullable(this.datumVoltrokken).orElseGet(() -> Optional.ofNullable(this.datumOntbinding).orElse(this.geldigheidStartDatum));
+        var thatDate = Optional.ofNullable(o.datumVoltrokken).orElseGet(() -> Optional.ofNullable(o.datumOntbinding).orElse(o.geldigheidStartDatum));
+
+        var result = thisDate.compareTo(thatDate);
+        if (result == 0) { // datumVoltrokken == datumOntbinding
+            return this.datumVoltrokken != null ? -1 : 1;
+        } else {
+            return result;
+        }
     }
 }

@@ -3,7 +3,7 @@
 [versions]
 co-elastic-logging-logback-ecs-encoder = "1.6.0"
 com-fasterxml-jackson-dataformat-jackson-dataformat-yaml = "2.18.2"
-com-opencsv-opencsv = "5.9"
+com-opencsv-opencsv = "5.12.0"
 io-micrometer-micrometer-registry-prometheus = "1.14.1"
 net-logstash-logback-logstash-logback-encoder = "8.0"
 org-apache-commons-commons-lang3 = "3.18.0"

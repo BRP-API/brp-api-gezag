@@ -37,7 +37,7 @@ Functionaliteit: Als gebruiker wil ik het gezag van meerdere personen in één r
       | burgerservicenummer | 000000036 |
       En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
+      | type                             | GezamenlijkOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000036                 |
       En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
@@ -55,7 +55,7 @@ Functionaliteit: Als gebruiker wil ik het gezag van meerdere personen in één r
       | burgerservicenummer | 000000012 |
       En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
+      | type                             | GezamenlijkOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000036                 |
       En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
@@ -73,7 +73,7 @@ Functionaliteit: Als gebruiker wil ik het gezag van meerdere personen in één r
       | burgerservicenummer | 000000036 |
       En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
+      | type                             | GezamenlijkOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000036                 |
       En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
@@ -86,7 +86,7 @@ Functionaliteit: Als gebruiker wil ik het gezag van meerdere personen in één r
       | burgerservicenummer | 000000012 |
       En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
+      | type                             | GezamenlijkOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000036                 |
       En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |
@@ -104,7 +104,7 @@ Functionaliteit: Als gebruiker wil ik het gezag van meerdere personen in één r
       | burgerservicenummer | 000000036 |
       En heeft de persoon een 'gezag' met de volgende gegevens
       | naam                             | waarde                    |
-      | type                             | TweehoofdigOuderlijkGezag |
+      | type                             | GezamenlijkOuderlijkGezag |
       | minderjarige.burgerservicenummer | 000000036                 |
       En heeft 'gezag' een 'ouder' met de volgende gegevens
       | naam                | waarde    |

@@ -215,10 +215,6 @@ public class Persoonslijst {
         return Optional.empty();
     }
 
-    public boolean isOverledenOfOnbevoegd() throws AfleidingsregelException {
-        return isOverleden() || minderjarig() || onderCurateleGesteld();
-    }
-
     public boolean alsMinderjarigeOverleden() throws AfleidingsregelException {
         if (isOverleden()) {
             int datumOpschorting = Integer.parseInt(inschrijving.getDatumOpschortingBijhouding());
@@ -238,6 +234,25 @@ public class Persoonslijst {
 
     public static boolean isValideGeslachtsnaam(String str) {
         return str != null && !str.isBlank() && !str.equals(PUNTOUDER_INDICATIE);
+    }
+
+
+    /**
+     * Returns {@code true} if <i>deze persoon erkend is</i>.
+     * <p>
+     * Een persoon is erkend als hij/zij voldoet aan een van de volgende voorwaarde:
+     * <ul>
+     *     <li>Erkenning ongeboren vrucht</li>
+     *     <li>Erkenning geboren vrucht</li>
+     *     <li>Erkenning door gerechtelijke vaststelling ouderschap</li>
+     * </ul>
+     *
+     * @return {@code true} if <i>deze persoon erkend is</i>
+     * @see #ongeborenVruchtErkend
+     * @see #ongeborenVruchtErkendOfGerechtelijkeVaststelling
+     */
+    public boolean isErkend() {
+        return ongeborenVruchtErkend() || ongeborenVruchtErkendOfGerechtelijkeVaststelling();
     }
 
     public boolean ongeborenVruchtErkendOfGerechtelijkeVaststelling() {

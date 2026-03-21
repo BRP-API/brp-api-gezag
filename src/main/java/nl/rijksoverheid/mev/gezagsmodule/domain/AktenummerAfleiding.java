@@ -14,11 +14,12 @@ public class AktenummerAfleiding {
     private static final char TABEL_39_AKTEAANDUIDING_ADOPTIE = 'Q';
     private static final char TABEL_39_AKTEAANDUIDING_GEBOORTE = 'A';
     private static final char TABEL_39_AKTEAANDUIDING_GERECHTELIJKE_VASTSTELLING_OUDERSCHAP = 'V';
-    private static final Set<Character> erkenningsCodes = new HashSet<>(Arrays.asList(
+    private static final Set<Character> erkenningsCodes = Set.of(
         TABEL_39_AKTEAANDUIDING_ERKENNING_BIJ_DE_GEBOORTE_AANGIFTE,
         TABEL_39_AKTEAANDUIDING_ERKENNING_NA_DE_GEBOORTEAANGIFTE,
         TABEL_39_AKTEAANDUIDING_NOTARIELE_AKTE_VAN_ERKENNING,
-        TABEL_39_AKTEAANDUIDING_GERECHTELIJKE_VASTSTELLING_OUDERSCHAP));
+        TABEL_39_AKTEAANDUIDING_GERECHTELIJKE_VASTSTELLING_OUDERSCHAP
+    );
 
     private static final int AKTE_NUMMER_LENGTE = 3;
 

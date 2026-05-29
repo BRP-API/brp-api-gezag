@@ -94,7 +94,7 @@ Functionaliteit: Twee ouders geen relatie
       En de 1 jaar geleden geboren persoon 'Bert' met één ouder 'Gerda'
       En 'Bert' is erkend door 'Aart' bij geboorteaangifte
       Als 'gezag' wordt gevraagd van 'Bert'
-      Dan is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en ouder 'Ariana'
+      Dan is het gezag over 'Bert' gezamenlijk gezag met ouder 'Gerda' en ouder 'Aart'
 
     Voorbeeld: Minderjarige is na 1 januari 2023 en na geboorte erkend door bekende donor en moeder is gehuwd met een vrouw
       Gegeven 'Gerda' en 'Ariana' zijn gehuwd op 28-9-2022

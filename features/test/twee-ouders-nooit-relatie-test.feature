@@ -259,6 +259,59 @@ Functionaliteit: Test gezagsuitspraak bij minderjarige met twee ouders die nooit
       Als 'gezag' wordt gevraagd van 'minderjarige'
       Dan is het gezag over 'minderjarige' niet te bepalen met de toelichting 'Gezag kan niet worden bepaald omdat niet kan worden vastgesteld welke ouder de geboortemoeder is.'
 
+    Abstract Scenario: minderjarige is erkend na 1-1-2023 door niet ingezeten ouder en <omschrijving>
+      Gegeven adres 'A1'
+        | gemeentecode (92.10) | straatnaam (11.10) | huisnummer (11.20) | identificatiecode nummeraanduiding (11.90) |
+        |                  518 | Turfmarkt          |                  1 |                           0518200000583526 |
+      Gegeven de persoon 'Moeder' met burgerservicenummer '000000012'
+      * heeft de volgende gegevens
+        | naam                        | waarde   |
+        | geslachtsnaam (02.40)       | Moeder   |
+        | geboortedatum (03.10)       | 19820101 |
+        | geslachtsaanduiding (04.10) | V        |
+      Gegeven de persoon 'Vader' zonder burgerservicenummer
+      * heeft de volgende gegevens
+        | naam                        | waarde   |
+        | geslachtsnaam (02.40)       | Vader    |
+        | geboortedatum (03.10)       | 19800701 |
+        | geslachtsaanduiding (04.10) | M        |
+      Gegeven de persoon 'Minderjarige' met burgerservicenummer '000000024'
+      * heeft de volgende gegevens
+        | naam                          | waarde   |
+        | geslachtsnaam (02.40)         | Moeder   |
+        | geboortedatum (03.10)         | 20221203 |
+        | geboorteland (03.30)          |     6030 |
+        | beschrijving document (82.30) | PIVA PL  |
+        | aktenummer (81.20)            |          |
+      En heeft een ouder 1 met de volgende gegevens
+        | naam                                               | waarde    |
+        | burgerservicenummer (01.20)                        | 000000012 |
+        | geslachtsnaam (02.40)                              | Moeder    |
+        | geboortedatum (03.10)                              |  19820101 |
+        | geslachtsaanduiding (04.10)                        | V         |
+        | datum ingang familierechtelijke betrekking (62.10) |  20221203 |
+        | beschrijving document (82.30)                      | PIVA PL   |
+      En heeft een ouder 2 met de volgende gegevens
+        | naam                                               | waarde                 |
+        | geslachtsnaam (02.40)                              | Vader                  |
+        | geboortedatum (03.10)                              |               19800701 |
+        | geslachtsaanduiding (04.10)                        | M                      |
+        | datum ingang familierechtelijke betrekking (62.10) | <datum erkenning>      |
+        | beschrijving document (82.30)                      | PIVA PL                |
+        | aktenummer (81.20)                                 | <aktenummer erkenning> |
+      En is ingeschreven op adres 'A1' met de volgende gegevens
+        | naam                              | waarde |
+        | gemeente van inschrijving (09.10) |    518 |
+      Als 'gezag' wordt gevraagd van 'Minderjarige'
+      Dan is het gezag over 'Minderjarige' <verwacht gezag>
+
+      Voorbeelden:
+        | aktenummer erkenning | omschrijving                          | datum erkenning | omschrijving datum erkenning | verwacht gezag                                                  |
+        |              1AC0100 | erkend met Nederlandse erkenningsakte |        20221227 | voor 1-1-2023                | eenhoofdig ouderlijk gezag met ouder 'Moeder'                   |
+        |                      | erkenning overgenomen van PIVA PL     |        20221227 | voor 1-1-2023                | eenhoofdig ouderlijk gezag met ouder 'Moeder'                   |
+        |              1AC0100 | erkend met Nederlandse erkenningsakte |        20240401 | na 1-1-2023                  | gezamenlijk ouderlijk gezag met ouder 'Moeder' en ouder 'Vader' |
+        |                      | erkenning overgenomen van PIVA PL     |        20240401 | na 1-1-2023                  | gezamenlijk ouderlijk gezag met ouder 'Moeder' en ouder 'Vader' |
+
   Regel: Wanneer de ouders nooit met elkaar gehuwd waren en het kind is erkend voor 1-1-2023 en de geboortemoeder is overleden of onbevoegd, dan is er tijdelijk geen gezag
     | vraag     | geboortemoeder | andere ouder | logische situatie                                                  | verwacht route | verwacht resultaat         |
     | 2a.3&4a.3 | bevoegd        | bevoegd      | geboortemoeder is bevoegd                                          | 54v1/54v2      | eenhoofdig ouderlijk gezag |

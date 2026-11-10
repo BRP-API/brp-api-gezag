@@ -1,7 +1,6 @@
 import io.freefair.gradle.plugins.lombok.tasks.LombokTask
 import org.openapitools.generator.gradle.plugin.tasks.GenerateTask
 import org.springframework.boot.gradle.tasks.bundling.BootBuildImage
-import java.io.ByteArrayOutputStream
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
@@ -88,7 +87,8 @@ sourceSets {
 }
 
 group = "nl.rijksoverheid.mev"
-version = "2.0.5"
+version = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss"))
+    .let { timestamp -> "2.0.5-$timestamp" }
 description = "Het gezag component van BRP-API"
 java.sourceCompatibility = JavaVersion.VERSION_21
 
@@ -184,12 +184,17 @@ tasks.withType<BootBuildImage> {
     builder.set("paketobuildpacks/builder-jammy-buildpackless-tiny")
     buildpacks.add("docker.io/paketobuildpacks/java")
 
-    imageName.set("ghcr.io/brp-api/${project.name}:latest")
-    tags.set(listOf(
-        "ghcr.io/brp-api/${project.name}:${project.version}",
-        "ghcr.io/brp-api/${project.name}:$customVersion",
-        "ghcr.io/brp-api/${project.name}:${getGitHash()}",
-    ))
+    val baseImageName = "ghcr.io/brp-api/${project.name}"
+    imageName.set("$baseImageName:latest")
+
+    val process = ProcessBuilder("git", "rev-parse", "HEAD").start()
+    val gitHash = process.inputReader().use { it.readText() }.trim()
+    tags.set(
+        listOf(
+            "$baseImageName:${project.version}",
+            "$baseImageName:$gitHash"
+        )
+    )
 
     docker {
         publishRegistry {
@@ -197,12 +202,4 @@ tasks.withType<BootBuildImage> {
             password.set(System.getenv("GITHUB_TOKEN"))
         }
     }
-}
-fun getGitHash(): String {
-    val stdout = ByteArrayOutputStream()
-    exec {
-        commandLine = listOf("git", "rev-parse", "HEAD")
-        standardOutput = stdout
-    }
-    return stdout.toString().trim()
 }

@@ -7,7 +7,6 @@ com-opencsv-opencsv = "5.12.0"
 io-micrometer-micrometer-registry-prometheus = "1.14.1"
 net-logstash-logback-logstash-logback-encoder = "8.0"
 org-apache-commons-commons-lang3 = "3.18.0"
-org-json-json = "20240303"
 org-openapitools-jackson-databind-nullable = "0.2.6"
 org-postgresql-postgresql = "42.7.14"
 
@@ -18,7 +17,6 @@ com-opencsv-opencsv = { module = "com.opencsv:opencsv", version.ref = "com-openc
 io-micrometer-micrometer-registry-prometheus = { module = "io.micrometer:micrometer-registry-prometheus", version.ref = "io-micrometer-micrometer-registry-prometheus" }
 net-logstash-logback-logstash-logback-encoder = { module = "net.logstash.logback:logstash-logback-encoder", version.ref = "net-logstash-logback-logstash-logback-encoder" }
 org-apache-commons-commons-lang3 = { module = "org.apache.commons:commons-lang3", version.ref = "org-apache-commons-commons-lang3" }
-org-json-json = { module = "org.json:json", version.ref = "org-json-json" }
 org-openapitools-jackson-databind-nullable = { module = "org.openapitools:jackson-databind-nullable", version.ref = "org-openapitools-jackson-databind-nullable" }
 org-postgresql-postgresql = { module = "org.postgresql:postgresql", version.ref = "org-postgresql-postgresql" }
 org-springframework-boot-spring-boot-starter-actuator = { module = "org.springframework.boot:spring-boot-starter-actuator" }

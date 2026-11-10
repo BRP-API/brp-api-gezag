@@ -1,4 +1,4 @@
-const report = require('multiple-cucumber-html-reporter');
+import {generate} from 'multiple-cucumber-html-reporter';
 
 const customData = {
     title: 'BRP API',
@@ -9,14 +9,14 @@ const customData = {
         { label: 'Branch', value: `${process.argv[4]}`}
     ]
 };
-report.generate({
+await generate({
     jsonDir: 'test-reports/cucumber-js/step-definitions',
     reportPath: 'test-reports/cucumber-js/reports/step-definitions',
     reportName: 'Stap definities tests',
     hideMetadata: true
 });
 
-report.generate({
+await generate({
     jsonDir: 'test-reports/cucumber-js/gezag',
     reportPath: 'test-reports/cucumber-js/reports/gezag',
     reportName: 'Gezag service features',
@@ -24,7 +24,7 @@ report.generate({
     customData: customData
 });
 
-report.generate({
+await generate({
     jsonDir: 'test-reports/cucumber-js/gezag-deprecated',
     reportPath: 'test-reports/cucumber-js/reports/gezag-deprecated',
     reportName: 'Gezag service features (deprecated)',

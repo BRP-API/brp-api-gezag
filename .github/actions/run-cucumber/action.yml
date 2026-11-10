@@ -54,7 +54,7 @@ runs:
     - name: Generate test report
       if: always()
       run: |
-        node ./scripts/generate-cucumber-reports.js
+        node ./scripts/generate-cucumber-reports.mjs
       shell: bash
 
     - name: Upload test report

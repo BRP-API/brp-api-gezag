@@ -6,11 +6,9 @@ import java.time.format.DateTimeFormatter
 
 plugins {
     application
-//    id("com.github.spotbugs") version "6.0.21"
     id("io.freefair.lombok") version "8.11"
     id("org.jooq.jooq-codegen-gradle") version "3.19.15"
     id("org.openapi.generator") version "7.10.0"
-//    id("org.owasp.dependencycheck") version "10.0.3"
     id("org.sonarqube") version "7.5.0.8588"
     id("org.springframework.boot") version "3.5.16"
 }

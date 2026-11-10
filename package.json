@@ -26,5 +26,8 @@
     "nswag": "^14.7.1",
     "pg": "^8.22.0",
     "winston": "^3.19.0"
+  },
+  "dependencies": {
+    "multiple-cucumber-html-reporter": "^4.6.0"
   }
 }

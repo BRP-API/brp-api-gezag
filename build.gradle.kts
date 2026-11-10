@@ -12,7 +12,7 @@ plugins {
     id("org.openapi.generator") version "7.10.0"
 //    id("org.owasp.dependencycheck") version "10.0.3"
     id("org.sonarqube") version "6.1.0.5360"
-    id("org.springframework.boot") version "3.5.12"
+    id("org.springframework.boot") version "3.5.16"
 }
 
 repositories {

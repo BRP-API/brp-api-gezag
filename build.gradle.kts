@@ -121,7 +121,7 @@ springBoot {
 openApiGenerate {
     generatorName = "spring"
     inputSpec.set(file("${projectDir}/src/main/resources/brp-api-gezag.yaml"))
-    outputDir.set(file("${buildDir}/generate-resources/openapi/v1"))
+    outputDir.set(file("${layout.buildDirectory.get()}/generate-resources/openapi/v1"))
 
     configOptions.put("apiPackage", "nl.rijksoverheid.mev.web.api.v1")
     configOptions.put("configPackage", "nl.rijksoverheid.mev.web.api.v1.configuration")
@@ -144,7 +144,7 @@ tasks.register<GenerateTask>("openApiGenerate2") {
 
     generatorName = "spring"
     inputSpec.set("${projectDir}/src/main/resources/brp-api-gezag-2.0.yaml")
-    outputDir.set("${buildDir}/generate-resources/openapi/v2")
+    outputDir.set("${layout.buildDirectory.get()}/generate-resources/openapi/v2")
 
     configOptions.put("apiPackage", "nl.rijksoverheid.mev.web.api.v2")
     configOptions.put("configPackage", "nl.rijksoverheid.mev.web.api.v2.configuration")

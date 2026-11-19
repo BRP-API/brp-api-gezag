@@ -10,7 +10,7 @@ plugins {
     id("org.jooq.jooq-codegen-gradle") version "3.19.15"
     id("org.openapi.generator") version "7.10.0"
     id("org.sonarqube") version "7.5.0.8588"
-    id("org.springframework.boot") version "3.5.16"
+    id("org.springframework.boot") version "4.1.2"
 }
 
 repositories {
@@ -38,6 +38,7 @@ dependencies {
     runtimeOnly(libs.org.postgresql.postgresql)
     testImplementation(libs.org.springframework.boot.spring.boot.starter.test)
     testImplementation(libs.com.opencsv.opencsv)
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:6.1.3")
 
     jooqCodegen(libs.org.postgresql.postgresql)
 }

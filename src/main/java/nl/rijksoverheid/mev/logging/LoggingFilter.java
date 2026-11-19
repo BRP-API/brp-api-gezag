@@ -1,7 +1,6 @@
 package nl.rijksoverheid.mev.logging;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.ObjectMapper;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -12,12 +11,13 @@ import org.slf4j.MDC;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
-import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 import org.springframework.web.filter.AbstractRequestLoggingFilter;
 import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.web.util.ContentCachingRequestWrapper;
 import org.springframework.web.util.ContentCachingResponseWrapper;
 import org.springframework.web.util.WebUtils;
+import tools.jackson.core.JacksonException;
+import tools.jackson.databind.json.JsonMapper;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -42,15 +42,15 @@ public class LoggingFilter extends OncePerRequestFilter implements ApplicationCo
 
     private ApplicationContext applicationContext;
 
-    public LoggingFilter(Jackson2ObjectMapperBuilder jackson2ObjectMapperBuilder) {
-        this.objectMapper = jackson2ObjectMapperBuilder.build();
+    public LoggingFilter(JsonMapper.Builder jsonMapperBuilder) {
+        this.objectMapper = jsonMapperBuilder.build();
     }
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         var isFirstRequest = !isAsyncDispatch(request);
         var cachedRequest = isFirstRequest && !(request instanceof ContentCachingRequestWrapper)
-            ? new ContentCachingRequestWrapper(request)
+            ? new ContentCachingRequestWrapper(request, 0)
             : request;
         var cachedResponse = isFirstRequest && !(response instanceof ContentCachingResponseWrapper)
             ? new ContentCachingResponseWrapper(response)
@@ -167,7 +167,7 @@ public class LoggingFilter extends OncePerRequestFilter implements ApplicationCo
 
             metadata.put("response.body", responseBody);
             metadata.put("request.body", requestBody);
-        } catch (JsonProcessingException e) {
+        } catch (JacksonException e) {
             log.error("Failed to serialize HTTP body to JSON; fallback to writing headers as Java object", e);
             metadata.put("response.body", responseBodyAsJsonString);
             metadata.put("request.body", requestBodyAsJsonString);

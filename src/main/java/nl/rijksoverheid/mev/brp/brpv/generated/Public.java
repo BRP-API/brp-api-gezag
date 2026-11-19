@@ -9,6 +9,7 @@ import org.jooq.Catalog;
 import org.jooq.Table;
 import org.jooq.impl.SchemaImpl;
 
+import java.io.Serial;
 import java.util.Arrays;
 import java.util.List;
 
@@ -19,6 +20,7 @@ import java.util.List;
 @SuppressWarnings({ "all", "unchecked", "rawtypes", "this-escape" })
 public class Public extends SchemaImpl {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
     /**

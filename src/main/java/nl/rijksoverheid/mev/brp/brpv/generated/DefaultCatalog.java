@@ -8,6 +8,7 @@ import org.jooq.Constants;
 import org.jooq.Schema;
 import org.jooq.impl.CatalogImpl;
 
+import java.io.Serial;
 import java.util.Arrays;
 import java.util.List;
 
@@ -18,6 +19,7 @@ import java.util.List;
 @SuppressWarnings({ "all", "unchecked", "rawtypes", "this-escape" })
 public class DefaultCatalog extends CatalogImpl {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
     /**

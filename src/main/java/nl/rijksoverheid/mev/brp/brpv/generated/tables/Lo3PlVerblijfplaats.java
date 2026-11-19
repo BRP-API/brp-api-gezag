@@ -13,6 +13,7 @@ import org.jooq.impl.DSL;
 import org.jooq.impl.SQLDataType;
 import org.jooq.impl.TableImpl;
 
+import java.io.Serial;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
@@ -24,6 +25,7 @@ import java.util.List;
 @SuppressWarnings({ "all", "unchecked", "rawtypes", "this-escape" })
 public class Lo3PlVerblijfplaats extends TableImpl<Lo3PlVerblijfplaatsRecord> {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
     /**

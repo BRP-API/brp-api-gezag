@@ -12,6 +12,7 @@ import org.jooq.impl.DSL;
 import org.jooq.impl.SQLDataType;
 import org.jooq.impl.TableImpl;
 
+import java.io.Serial;
 import java.time.LocalDateTime;
 import java.util.Collection;
 
@@ -22,6 +23,7 @@ import java.util.Collection;
 @SuppressWarnings({ "all", "unchecked", "rawtypes", "this-escape" })
 public class Lo3TitelPredicaat extends TableImpl<Lo3TitelPredicaatRecord> {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
     /**

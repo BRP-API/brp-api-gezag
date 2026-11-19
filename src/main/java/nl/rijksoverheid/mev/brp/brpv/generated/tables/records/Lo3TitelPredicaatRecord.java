@@ -8,6 +8,7 @@ import nl.rijksoverheid.mev.brp.brpv.generated.tables.Lo3TitelPredicaat;
 import org.jooq.Record1;
 import org.jooq.impl.UpdatableRecordImpl;
 
+import java.io.Serial;
 import java.time.LocalDateTime;
 
 
@@ -17,6 +18,7 @@ import java.time.LocalDateTime;
 @SuppressWarnings({ "all", "unchecked", "rawtypes", "this-escape" })
 public class Lo3TitelPredicaatRecord extends UpdatableRecordImpl<Lo3TitelPredicaatRecord> {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
     /**

@@ -8,7 +8,7 @@ plugins {
     application
     id("io.freefair.lombok") version "8.11"
     id("org.jooq.jooq-codegen-gradle") version "3.19.15"
-    id("org.openapi.generator") version "7.10.0"
+    id("org.openapi.generator") version "7.27.0"
     id("org.sonarqube") version "7.5.0.8588"
     id("org.springframework.boot") version "4.1.2"
 }
@@ -120,8 +120,8 @@ springBoot {
 
 openApiGenerate {
     generatorName = "spring"
-    inputSpec = "${projectDir}/src/main/resources/brp-api-gezag.yaml"
-    outputDir = "${buildDir}/generate-resources/openapi/v1"
+    inputSpec.set(file("${projectDir}/src/main/resources/brp-api-gezag.yaml"))
+    outputDir.set(file("${buildDir}/generate-resources/openapi/v1"))
 
     configOptions.put("apiPackage", "nl.rijksoverheid.mev.web.api.v1")
     configOptions.put("configPackage", "nl.rijksoverheid.mev.web.api.v1.configuration")
@@ -143,8 +143,8 @@ tasks.register<GenerateTask>("openApiGenerate2") {
     group = "build"
 
     generatorName = "spring"
-    inputSpec = "${projectDir}/src/main/resources/brp-api-gezag-2.0.yaml"
-    outputDir = "${buildDir}/generate-resources/openapi/v2"
+    inputSpec.set("${projectDir}/src/main/resources/brp-api-gezag-2.0.yaml")
+    outputDir.set("${buildDir}/generate-resources/openapi/v2")
 
     configOptions.put("apiPackage", "nl.rijksoverheid.mev.web.api.v2")
     configOptions.put("configPackage", "nl.rijksoverheid.mev.web.api.v2.configuration")
